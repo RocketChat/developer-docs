@@ -1,2 +1,0 @@
-# Google Season of Docs
-

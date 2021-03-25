@@ -23,7 +23,7 @@ Creates an integration, if the callee has the permissions. Requires `manage-inco
 | `avatar` | `http://res.guggy.com/logo_128.png` | Optional   Default: `''` | The logo to apply to the messages that this integration sends. |
 | `emoji` | `:ghost:` | Optional   Default: `''` | The emoji which should be displayed as the avatar for messages from this integration. |
 | `token` | `8DFS89DMKLWEN` | Optional   Default: `''` | If your integration requires a special token from the server \(api key\), use this. |
-| `script` | [Integrations](../../../../guides/administrator-guides/integrations/) | Optional | Script triggered when this integration is triggered. |
+| `script` | [Integrations]() | Optional | Script triggered when this integration is triggered. |
 
 ## Example Call
 

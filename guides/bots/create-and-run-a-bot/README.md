@@ -4,7 +4,7 @@ This document outlines the steps required to create your first bot with Rocket.C
 
 ## Prerequisites
 
-* [Running Rocket.Chat server](../../../installation/)
+* [Running Rocket.Chat server]()
 * User with admin privileges
 
 ## Steps

@@ -67,7 +67,7 @@ The Rocket.Chat code base is very large. You may need to increase this [system p
 
 ## On Windows
 
-Using Windows to develop is not recommended at this time, instead is better to create a Linux virtual machine and follow the steps mentioned above, but if for some reason you really need to build Rocket.Chat on Windows you can find a community supported guide over [here](../../installation/community-supported-installation/windows-server.md).
+Using Windows to develop is not recommended at this time, instead is better to create a Linux virtual machine and follow the steps mentioned above, but if for some reason you really need to build Rocket.Chat on Windows you can find a community supported guide over [here]().
 
 We look forward to the official release of Windows Subsystem for Linux 2 \(WSL 2\) when Rocket.Chat development on Linux may finally become viable.
 
@@ -75,5 +75,5 @@ We look forward to the official release of Windows Subsystem for Linux 2 \(WSL 2
 
 * [Supporting SSL for Mobile Apps](mobile-apps/supporting-ssl.md)
 * [Development Troubleshooting](troubleshooting.md)
-* [Deployment Methods](../../installation/paas-deployments/)
+* [Deployment Methods]()
 

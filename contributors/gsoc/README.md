@@ -1,2 +1,0 @@
-# Google Summer of Code
-

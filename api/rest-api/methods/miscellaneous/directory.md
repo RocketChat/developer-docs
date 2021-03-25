@@ -10,7 +10,7 @@ A method, that searches by users or channels on all users and channels available
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `query` | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` \(default\) or `all`. `workspace=all` will work only if [Federation](../../../../guides/administrator-guides/federation.md) is enabled. |
+| `query` | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` \(default\) or `all`. `workspace=all` will work only if [Federation]() is enabled. |
 
 ## Example Call
 
