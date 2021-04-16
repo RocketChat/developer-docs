@@ -428,3 +428,7 @@
   * [Slack Compatibility Layer's unsupported properties](apps-development/uikit/slack-compatibility-layers-unsupported-properties.md)
 * [Apps-Engine API Reference](https://rocketchat.github.io/Rocket.Chat.Apps-engine)
 
+## Fuselage
+
+* [Contributing](fuselage/contributing.md)
+
