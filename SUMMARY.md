@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Rocket.Chat Developer Docs](README.md)
+* [Rocket.Chat Developer](README.md)
 
 ## Guides
 
