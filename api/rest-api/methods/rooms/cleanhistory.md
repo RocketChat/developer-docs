@@ -16,15 +16,112 @@ Cleans up a room, removing messages from the provided time range.
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The room's id |
-| `latest` | `2016-09-30T13:42:25.304Z` | Required | The end of time range of messages to clean |
-| `oldest` | `2016-05-30T13:42:25.304Z` | Required | The start of the time range of messages to clean |
-| `inclusive` | `true` | Optional   Default: `false` | Whether messages which land on latest and oldest should be included |
-| `excludePinned` | `true` | Optional   Default: `false` | Whether pinned messages should be deleted |
-| `filesOnly` | `true` | Optional   Default: `false` | Whether to only delete files and keep messages intact |
-| `users` | `["vynmera", "ggazzo"]` | Optional   Default: `[]` \(everyone\) | Specific set of users whose content to delete |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Argument</th>
+      <th style="text-align:left">Example</th>
+      <th style="text-align:left">Required</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>roomId</code>
+      </td>
+      <td style="text-align:left"><code>ByehQjC44FwMeiLbX</code>
+      </td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">The room&apos;s id</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>latest</code>
+      </td>
+      <td style="text-align:left"><code>2016-09-30T13:42:25.304Z</code>
+      </td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">The end of time range of messages to clean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>oldest</code>
+      </td>
+      <td style="text-align:left"><code>2016-05-30T13:42:25.304Z</code>
+      </td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">The start of the time range of messages to clean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>inclusive</code>
+      </td>
+      <td style="text-align:left"><code>true</code>
+      </td>
+      <td style="text-align:left">Optional Default: <code>false</code>
+      </td>
+      <td style="text-align:left">Whether messages which land on latest and oldest should be included</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>excludePinned</code>
+      </td>
+      <td style="text-align:left"><code>true</code>
+      </td>
+      <td style="text-align:left">Optional Default: <code>false</code>
+      </td>
+      <td style="text-align:left">Whether pinned messages should be deleted</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>filesOnly</code>
+      </td>
+      <td style="text-align:left"><code>true</code>
+      </td>
+      <td style="text-align:left">Optional Default: <code>false</code>
+      </td>
+      <td style="text-align:left">Whether to only delete files and keep messages intact</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>users</code>
+      </td>
+      <td style="text-align:left"><code>[&quot;vynmera&quot;, &quot;ggazzo&quot;]</code>
+      </td>
+      <td style="text-align:left">Optional Default: <code>[]</code> (everyone)</td>
+      <td style="text-align:left">Specific set of users whose content to delete</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>limit</code>
+      </td>
+      <td style="text-align:left"><code>10</code>
+      </td>
+      <td style="text-align:left">
+        <p>Optional</p>
+        <p>Default: <code>0</code> (all)</p>
+      </td>
+      <td style="text-align:left">The amount of messages to prune</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ignoreDiscussion</code>
+      </td>
+      <td style="text-align:left"><code>true</code>
+      </td>
+      <td style="text-align:left">
+        <p>Optional</p>
+        <p>Default: <code>true</code>
+        </p>
+      </td>
+      <td style="text-align:left">Determines if messages from discussions should be pruned</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ignoreThreads</code>
+      </td>
+      <td style="text-align:left"><code>true</code>
+      </td>
+      <td style="text-align:left">
+        <p>Optional</p>
+        <p>Default: <code>true</code>
+        </p>
+      </td>
+      <td style="text-align:left">Determines if messages from threads should be pruned</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Example Call
 
