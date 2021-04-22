@@ -15,6 +15,9 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
 1. Install tools required
 
    `sudo apt install g++ build-essential git curl python-minimal`
+  
+    (you may run into an error "python-minimal has no installation candidate") 
+    To resolve this you can go to [Python Minimal error](https://github.com/RocketChat/developer-docs/blob/master/guides/developer/possible-error.md)
 
 2. Install meteor
 
