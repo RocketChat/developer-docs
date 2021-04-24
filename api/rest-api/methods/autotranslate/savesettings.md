@@ -8,7 +8,7 @@ Save some settings about autotranslate.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `/api/v1/autotranslate.saveSetttings` | `yes` | `POST` |
+| `/api/v1/autotranslate.saveSettings` | `yes` | `POST` |
 
 ## Payload
 
@@ -25,7 +25,7 @@ Save some settings about autotranslate.
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: Z3cpiYN6CNK2oXWKv" \
      -H "Content-type:application/json" \
-     http://localhost:3000/api/v1/autotranslate.saveSetttings \
+     http://localhost:3000/api/v1/autotranslate.saveSettings \
      -d '{ "roomId": "7aDSXtjMA3KPLxLjt", "field": "autoTranslate", "value": true }'
 ```
 
