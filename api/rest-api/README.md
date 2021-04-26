@@ -40,7 +40,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/autotranslate.getSupportedLanguages` | Get the supported languages by the autotranslate. | [Link](methods/autotranslate/getsupportedlanguages.md) |
-| `/api/v1/autotranslate.saveSetttings` | Save some settings about autotranslate. | [Link](methods/autotranslate/savesettings.md) |
+| `/api/v1/autotranslate.saveSettings` | Save some settings about autotranslate. | [Link](methods/autotranslate/savesettings.md) |
 | `/api/v1/autotranslate.translateMessage` | Translate the message. | [Link](methods/autotranslate/translatemessage.md) |
 
 ### Authentication
