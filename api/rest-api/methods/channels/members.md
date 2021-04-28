@@ -2,6 +2,10 @@
 
 Lists all channel users. It supports the [Offset, Count, and Sort Query Parameters](../../offset-and-count-and-sort-info.md).
 
+{% hint style="info" %}
+The list of elements a user can use to sort the list is limited. The current sortable element is:`username`
+{% endhint %}
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/channels.members` | `yes` | `GET` |
