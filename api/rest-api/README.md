@@ -298,6 +298,28 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/rooms.saveNotification` | Sets the notifications settings of specific channel. | [Link](methods/rooms/savenotification.md) |
 | `/api/v1/rooms.upload/:rid` | Upload a message with attached file. | [Link](methods/rooms/upload.md) |
 
+### Teams
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](methods/teams/add-members.md) |
+| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](methods/teams/add-rooms.md) |
+| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](methods/teams/autocomplete.md) |
+| `/api/v1/teams.create` | Creates a new team. | [Link](methods/teams/create.md) |
+| `/api/v1/teams.delete` | Removes a team. | [Link](methods/teams/delete.md) |
+| `/api/v1/teams.info` | Gets a team's information. | [Link](methods/teams/info.md) |
+| `/api/v1/teams.leave` | Leaves a team. | [Link](methods/teams/leave.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](methods/teams/list.md) |
+| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](methods/teams/list-all.md) |
+| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](methods/teams/list-rooms.md) |
+| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](methods/teams/list-rooms-of-user.md) |
+| `/api/v1/teams.members` | Retrieves all team members. | [Link](methods/teams/members.md) |
+| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](methods/teams/remove-member.md) |
+| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](methods/teams/remove-room.md) |
+| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](methods/teams/update.md) |
+| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](methods/teams/update-member.md) |
+| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](methods/teams/update-room.md) |
+
 ### Command Methods
 
 | Url | Short Description | Details Page |

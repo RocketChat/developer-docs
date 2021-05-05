@@ -4,7 +4,7 @@ description: REST API Leave Methods
 
 # Leave
 
-Causes the callee to be removed from the room.
+Causes the caller to be removed from the room.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
