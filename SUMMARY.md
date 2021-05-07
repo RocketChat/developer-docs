@@ -419,7 +419,6 @@
 
 ## Apps Development
 
-* [Getting Started](apps-development/getting-started.md)
 * [Rocket.Chat App](apps-development/rocket.chat-app/README.md)
   * [Rocket.Chat App Engine CLI](apps-development/rocket.chat-app/rocket.chat-app-engine-cli.md)
   * [Creating an App](apps-development/rocket.chat-app/creating-an-app.md)
