@@ -5,3 +5,4 @@
 _site
 _book
 vendor/**
+node_modules
