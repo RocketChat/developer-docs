@@ -39,9 +39,7 @@
     * [Run a Botkit Bot](guides/bots/create-and-run-a-bot/botkit-bot.md)
     * [Run a Rocket.Chat SDK Bot](guides/bots/create-and-run-a-bot/rocketchat-sdk-bot.md)
     * [Run a Botpress Bot](guides/bots/create-and-run-a-bot/botpress-bot.md)
-    * [Running a bBot Bot](guides/bots/create-and-run-a-bot/running-a-bbot-bot.md)
     * [Run a Rasa Bot](guides/bots/create-and-run-a-bot/rasa-bot.md)
-    * [Running a Rasa Bot](guides/bots/create-and-run-a-bot/running-a-rasa-bot.md)
   * [Bot Glossary](guides/bots/bot-glossary.md)
 
 ## API
