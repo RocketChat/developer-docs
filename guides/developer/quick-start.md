@@ -15,9 +15,8 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
 1. Install tools required
 
    `sudo apt install g++ build-essential git curl python-minimal`
-  
-    (If you are using other OS (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate") 
-    To resolve this you can go to [Python Minimal error](https://github.com/RocketChat/developer-docs/blob/master/guides/developer/possible-error.md)
+
+   \(If you are using other OS \(like Ubuntu 20.04 etc\) you may run into an error "python-minimal has no installation candidate"\) To resolve this you can go to [Python Minimal error](https://github.com/RocketChat/developer-docs/blob/master/guides/developer/possible-error.md)
 
 2. Install meteor
 
@@ -70,7 +69,7 @@ The Rocket.Chat code base is very large. You may need to increase this [system p
 
 ## On Windows
 
-Using Windows to develop is not recommended at this time, instead is better to create a Linux virtual machine and follow the steps mentioned above, but if for some reason you really need to build Rocket.Chat on Windows you can find a community supported guide over [here]().
+Using Windows to develop is not recommended at this time, instead is better to create a Linux virtual machine and follow the steps mentioned above, but if for some reason you really need to build Rocket.Chat on Windows you can find a community supported guide over [here](quick-start.md).
 
 We look forward to the official release of Windows Subsystem for Linux 2 \(WSL 2\) when Rocket.Chat development on Linux may finally become viable.
 
@@ -78,5 +77,5 @@ We look forward to the official release of Windows Subsystem for Linux 2 \(WSL 2
 
 * [Supporting SSL for Mobile Apps](mobile-apps/supporting-ssl.md)
 * [Development Troubleshooting](troubleshooting.md)
-* [Deployment Methods]()
+* [Deployment Methods](quick-start.md)
 

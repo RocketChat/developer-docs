@@ -34,7 +34,7 @@ These are the basic steps for using bots with Rocket.Chat:
 1. A bot user is [created by an admin](create-and-run-a-bot/) on the server;
 2. The bot is running as [a separate process](bots-architecture.md) using your chosen framework or platform;
 3. The bot environment is pre-configured with [environment variables](configure-bot-environment.md);
-4. The bot's behavior is defined via scripts according to the requirements of your framework. For example, check the details on how to [run a bBot bot](running-a-bbot-bot.md).
+4. The bot's behavior is defined via scripts according to the requirements of your framework. For example, check the details on how to [run a bBot bot](create-and-run-a-bot/running-a-bbot-bot.md).
 
 ## Next steps
 
@@ -48,7 +48,7 @@ Get yourself familiar with [Bots Architecture](bots-architecture.md).
 * [Running a Hubot Bot](create-and-run-a-bot/hubot-bot.md)
 * [Running a Botpress Bot](create-and-run-a-bot/botpress-bot.md)
 * [Running a Rasa Bot](create-and-run-a-bot/rasa-bot.md)
-* [Running a bBot Bot](running-a-bbot-bot.md)
+* [Running a bBot Bot](create-and-run-a-bot/running-a-bbot-bot.md)
 
 ## References
 
