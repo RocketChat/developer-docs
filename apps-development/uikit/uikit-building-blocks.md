@@ -46,7 +46,7 @@
 
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
-| type | String | Yes | The type of the block element, that is this case is 'button' |
+| type | String | Yes | The type of the block element, that in this case is 'button' |
 | text | Object | Yes | The `text object` to be displayed in the button. Can be either `plain_text` or `mrkdwn` |
 | value | String | No | A value sent along with the button information when an action is made upon the element |
 | url | String | No | An URL \* |
@@ -72,7 +72,7 @@
 
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
-| type | String | Yes | The type of the block element, that is this case is 'image' |
+| type | String | Yes | The type of the block element, that in this case is 'image' |
 | imageUrl | String | Yes | The URL of the image |
 | altText | String | Yes | A text describing the image being displayed |
 
@@ -90,7 +90,7 @@
 
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
-| type | String | Yes | The type of the block element, that is this case is 'overflow' |
+| type | String | Yes | The type of the block element, that in this case is 'overflow' |
 | options | Array | Yes | An array with the possible options \(the option object\) |
 | actionId | String | Yes | An unique identifier for an action make upon the element |
 
@@ -125,7 +125,7 @@
 
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
-| type | String | Yes | The type of the block element, that is this case is 'plain\_text\_input' |
+| type | String | Yes | The type of the block element, that in this case is 'plain\_text\_input' |
 | actionId | String | Yes | An unique identifier for an action make upon the element |
 | placeholder | Object | Yes | A placeholder text for the input \(plain text object\) |
 | initialValue | String | No | The initial value of the field |
@@ -151,7 +151,7 @@
 
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
-| type | String | Yes | The type of the block element, that is this case is 'static\_select' |
+| type | String | Yes | The type of the block element, that in this case is 'static\_select' |
 | actionId | String | Yes | An unique identifier for an action make upon the element |
 | placeholder | Object | Yes | A placeholder text for the input \(plain text object\) |
 | initialValue | String | No | The initial value selected \(`value` field from the option object\) |
@@ -193,7 +193,7 @@
 
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
-| type | String | Yes | The type of the block element, that is this case is 'multi\_static\_select' |
+| type | String | Yes | The type of the block element, that in this case is 'multi\_static\_select' |
 | actionId | String | Yes | An unique identifier for an action make upon the element |
 | placeholder | Object | Yes | A placeholder text for the input \(plain text object\) |
 | initialValue | Array of strings | No | The initial values selected \(`value` field from the option object\) |
@@ -238,7 +238,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'section' |
+| type | String | Yes | The type of the block, that in this case is 'section' |
 | text | Object | Yes | The `text object` to be displayed in the button. Can be either `plain_text` or `mrkdwn` |
 | accessory | Object | No | One element that can be a `button element`, an `image element` or a `overflow menu` |
 
@@ -262,7 +262,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'divider' |
+| type | String | Yes | The type of the block, that in this case is 'divider' |
 
 #### Example
 
@@ -278,7 +278,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'image' |
+| type | String | Yes | The type of the block, that in this case is 'image' |
 | imageUrl | String | Yes | The URL of the image |
 | altText | String | Yes | A text describing the image being displayed |
 | title | Object | No | The `text object` to be displayed as the image's title. Can be either `plain_text` or `mrkdwn` |
@@ -304,7 +304,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'actions' |
+| type | String | Yes | The type of the block, that in this case is 'actions' |
 | elements | Array | Yes | A list of interactive block elements |
 
 #### Example
@@ -322,7 +322,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'context' |
+| type | String | Yes | The type of the block, that in this case is 'context' |
 | elements | Array | Yes | A list of block elements. Allowed elements are `plain text object` and `image element` |
 
 #### Example
@@ -340,7 +340,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'input' |
+| type | String | Yes | The type of the block, that in this case is 'input' |
 | element | Array | Yes | The input element, that can be `plain text input`, `static select menu` and `multi static select menu` |
 
 #### Example
