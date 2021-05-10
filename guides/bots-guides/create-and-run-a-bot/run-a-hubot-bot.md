@@ -136,7 +136,7 @@ There are executables for different environments that all run the Hubot binary:
 
 Before running, make sure your production environment has the required environment variables for the adapter, url, user, name and pass. As an alternative, you can add them as command-line parameters, like `-a rocketchat`.
 
-Environmental variables should be populated on the server before the launch \(see [configuration](hubot-bot.md#configuration)\). The launcher will also install npm dependencies on every run, in case it is booting in a fresh container \(this isn't required when working locally\).
+Environmental variables should be populated on the server before the launch \(see [configuration](run-a-hubot-bot.md#configuration)\). The launcher will also install npm dependencies on every run, in case it is booting in a fresh container \(this isn't required when working locally\).
 
 See more information on deployment configurations [here](https://hubot.github.com/docs/deploying/).
 
@@ -321,7 +321,7 @@ Rocket.Chat adapter v1 uses CoffeeScript, which makes extention of classes in Ja
 
 v1 versions of the adapter are only compatible with 0.37.1 and higher of Rocket.Chat Server. However, you should be able to continue using v1 adapter and CoffeeScript bots with the most up-to-date version of the server.
 
-If you are writing CoffeeScript bots, you need Hubot v2.x and v1.x.x or v0.x.x of the adapter. Please see [instructions for v1.x.x and v0.x.x of the adapter](hubot-bot.md#v1xx-and-v0xx).
+If you are writing CoffeeScript bots, you need Hubot v2.x and v1.x.x or v0.x.x of the adapter. Please see [instructions for v1.x.x and v0.x.x of the adapter](run-a-hubot-bot.md#v1xx-and-v0xx).
 
 ## Additional information
 

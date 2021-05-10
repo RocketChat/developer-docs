@@ -44,10 +44,10 @@ Get yourself familiar with [Bots Architecture](bots-architecture.md).
 
 * [Configure the Bot Environment](configure-bot-environment.md)
 * [Create a Bot](create-and-run-a-bot/)
-* [Running a Botkit Bot](create-and-run-a-bot/botkit-bot.md)
-* [Running a Hubot Bot](create-and-run-a-bot/hubot-bot.md)
-* [Running a Botpress Bot](create-and-run-a-bot/botpress-bot.md)
-* [Running a Rasa Bot](create-and-run-a-bot/rasa-bot.md)
+* [Running a Botkit Bot](create-and-run-a-bot/run-a-botkit-bot.md)
+* [Running a Hubot Bot](create-and-run-a-bot/run-a-hubot-bot.md)
+* [Running a Botpress Bot](create-and-run-a-bot/run-a-botpress-bot.md)
+* [Running a Rasa Bot](create-and-run-a-bot/run-a-rasa-bot.md)
 * [Running a bBot Bot](./)
 
 ## References
