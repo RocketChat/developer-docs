@@ -322,7 +322,7 @@
 | Field | Type | Required? | Description |
 | :--- | :--- | :--- | :--- |
 | blockId | String | No | An unique identifier for the block |
-| type | String | Yes | The type of the block, that is this case is 'actions' |
+| type | String | Yes | The type of the block, that is this case is 'context' |
 | elements | Array | Yes | A list of block elements. Allowed elements are `plain text object` and `image element` |
 
 #### Example
