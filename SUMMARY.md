@@ -46,9 +46,9 @@
 
 * [Schema Definition](api/schema-definition/README.md)
   * [User](api/schema-definition/user.md)
-  * [Room](api/schema-definition/the-room-object.md)
+  * [Room](api/schema-definition/room.md)
   * [Subscriptions](api/schema-definition/subscriptions.md)
-  * [Message](api/schema-definition/the-message-object.md)
+  * [Message](api/schema-definition/message.md)
 * [Schema Definition v2 \(Draft\)](api/schema-definition-v2/README.md)
   * [Events](api/schema-definition-v2/events/README.md)
     * [EventContext](api/schema-definition-v2/events/eventcontext.md)
