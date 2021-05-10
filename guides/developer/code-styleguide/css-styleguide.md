@@ -1,10 +1,10 @@
 # CSS Styleguide
 
-* [Comments](less.md#comments)
-* [Formatting](less.md#formatting)
-* [Selectors](less.md#selectors)
-* [Properties](less.md#properties)
-* [Colors](less.md#colors)
+* [Comments](css-styleguide.md#comments)
+* [Formatting](css-styleguide.md#formatting)
+* [Selectors](css-styleguide.md#selectors)
+* [Properties](css-styleguide.md#properties)
+* [Colors](css-styleguide.md#colors)
 
 ## Comments
 

@@ -2,7 +2,7 @@
 
 {% page-ref page="contributors-instant-start-on-gitpod.md" %}
 
-{% page-ref page="quick-start.md" %}
+{% page-ref page="quick-start-on-linux.md" %}
 
 {% page-ref page="mobile-apps/" %}
 
