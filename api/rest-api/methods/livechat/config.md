@@ -10,14 +10,18 @@ Get Livechat widget configuration info and additional visitor data
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `token` | `iNKE8a6k6cjbqWhWd` | Optional | The visitor's `token`. |
-| `department` | `department` | Optional | The visitor's `department`. |
+| `token` | `iNKE8a6k6cjbqWhWd` | Optional | The visitor `token`. |
 
-## Example Calls
+## Example Call
 
 ```bash
 curl http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd
 ```
+
+```bash
+curl http://localhost:3000/api/v1/livechat/config?department=department
+```
+
 
 ## Example Result
 
@@ -106,6 +110,7 @@ curl http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd
   "success": true
 }
 ```
+
 
 ## Change Log
 
