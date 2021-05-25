@@ -34,6 +34,8 @@ Here we use temporary variable count for storing the number of messages sent ret
 
 In this way, even in a cluster environment, your app inside each Rocket.Chat instance can share data from a single data source - Rocket.Chat persistence storage and maintain the data consistency.
 
+[Check the full demo here for more details!](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/recipes/managing-internal-state)
+
 ### Message customFields
 
 Besides Persistence APIs,  `customFields`  is a public way of stroing data related to a message. You can attach some custom "attributes" \(called customFields\) to a message by creating/modifying the message. You should only use the `customFields` if you're ok with potentially having them read and overwritten by someone else!
