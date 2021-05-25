@@ -1,4 +1,12 @@
+---
+description: Get Livechat widget configuration info and additional visitor data.
+---
+
 # Config
+
+
+
+Get Livechat widget configuration info and additional visitor data
 
 Get Livechat widget configuration info and additional visitor data
 
@@ -10,10 +18,32 @@ Get Livechat widget configuration info and additional visitor data
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
+| `token` | `iNKE8a6k6cjbqWhWd` | Optional | The visitor's `token`. |
+| `department` | `department` | Optional | The visitor's `department` |
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `token` | `iNKE8a6k6cjbqWhWd` | Optional | The visitor `token`. |
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
 | `token` | `iNKE8a6k6cjbqWhWd` | Optional | The visitor `token`. |
 | `department` | `department` | Optional | The visitor's `department`. |
 
 ## Example Calls
+
+## Example Call
+
+## Example Calls
+
+```bash
+curl http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd
+curl http://localhost:3000/api/v1/livechat/config?department=department
+```
+
+```bash
+curl http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd
+```
 
 ```bash
 curl http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd
