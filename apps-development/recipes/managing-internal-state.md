@@ -8,9 +8,9 @@ It's a common need to manage internal state in your app.  **Storing app's state 
 
 ### Persistence APIs \(Recommended\)
 
-There's [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors_ipersistence.ipersistence.html) interface provided for creating/updating records in the persistence storage and [IPersistenceRead](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors_ipersistenceread.ipersistenceread.html) interface provided for reading records.
+There's [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors_ipersistence.ipersistence.html) interface provided for creating/updating records in the persistence storage and [IPersistenceRead](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors_ipersistenceread.ipersistenceread.html) interface provided for reading records. In the exmaple below, we'll teach you how to manage your app's internal state using persistence APIs.
 
-Assuming that we're creating an app that records how many messages on the server sent, we can write a post message sent event handler like bellow:
+Assuming that we're creating an app which records how many messages on the server sent, we can write a PostMessageSent event handler like bellow:
 
 ```typescript
 public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence, modify: IModify): Promise<void> {
@@ -30,7 +30,7 @@ public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp,
 }
 ```
 
-Here we use temporary variable count for storing the number of messages sent retrieving from the persistence. Every time the handler executePostMessageSent called, we increase the count by 1 and then store it back to the persistence storage. 
+Here, the internal state is "count" but not the count variable whose data stored in the memory. We use the temporary variable "count" for storing the number of messages sent retrieving from the persistence. Every time the handler executePostMessageSent called, we increase the count by 1 and then store it back to the persistence storage. 
 
 In this way, even in a cluster environment, your app inside each Rocket.Chat instance can share data from a single data source - Rocket.Chat persistence storage and maintain the data consistency.
 
