@@ -435,6 +435,7 @@
   * [Making HTTP Requests](apps-development/recipes/making-http-requests.md)
   * [Storing User Input](apps-development/recipes/storing-user-input.md)
   * [Registering API endpoints](apps-development/recipes/registering-api-endpoints.md)
+  * [Managing Internal State](apps-development/recipes/managing-internal-state.md)
 * [Slack Compatibility](apps-development/slack-compatibility.md)
 * [Permission System](apps-development/permission-system.md)
 * [UIKit](apps-development/uikit/README.md)
