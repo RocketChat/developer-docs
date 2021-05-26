@@ -38,5 +38,5 @@ In this way, even in a cluster environment, your app inside each Rocket.Chat ins
 
 ### Message customFields
 
-Besides Persistence APIs,  `customFields`  is a public way of stroing data related to a message. You can attach some custom "attributes" \(called customFields\) to a message by creating/modifying the message. You should only use the `customFields` if you're ok with potentially having them read and overwritten by someone else!
+Besides Persistence APIs,  `customFields`  is a public way of storing data related to a message. You can attach some custom "attributes" \(called customFields\) to a message by creating/modifying the message. You should only use the `customFields` if you're ok with potentially having them read and overwritten by someone else!
 
