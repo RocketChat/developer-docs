@@ -11,7 +11,7 @@ The WhatsApp app allows you to send template messages to a target user.
 In order to send a template message, you have 2 options
 
 1. Via the endpoint
-   * REST API Documentation for this endpoint can be found [here](https://github.com/RocketChat/Apps.WhatsApp/blob/main/docs/TemplateMessage.md)
+   * REST API Documentation for this endpoint can be found [here](https://developer.rocket.chat/api/rest-api/methods/apps-endpoints/whatsapp-endpoints/template-message)
 2. Via the Slash Command and UI
    * You can send the template message in a more user-friendly way using the GUI form.
    * To trigger the GUI, open a WhatsApp contact room and run the following command
