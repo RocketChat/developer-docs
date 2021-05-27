@@ -303,7 +303,6 @@
       * [Agents available for service time](api/rest-api/methods/livechat/agents-available-for-service-time.md)
       * [Agent Info](api/rest-api/methods/livechat/agent.md)
       * [Appearance](api/rest-api/methods/livechat/appearance.md)
-      * [Canned Responses](api/rest-api/methods/livechat/canned-responses.md)
       * [Config](api/rest-api/methods/livechat/config.md)
       * [Custom Field](api/rest-api/methods/livechat/custom-fields.md)
       * [Department](api/rest-api/methods/livechat/department.md)
