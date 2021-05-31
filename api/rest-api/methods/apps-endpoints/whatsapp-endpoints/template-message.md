@@ -45,9 +45,9 @@ description: Endpoint to send a template message
 ```text
 {
     "phoneNumbers": [
-        "917785887264", "551452001478"
+        "+917785887264", "+551452001478"
     ],
-    "connectedWhatsAppNo": "565412001234",
+    "connectedWhatsAppNo": "+565412001234",
     "targetAgent": "murtaza98",
     "targetDepartment": "SalesDepartment",
     "template": {
@@ -98,11 +98,14 @@ description: Endpoint to send a template message
 
 | **Param Name** | **Param Type** | **Description** | **Dependency** | **Example** |
 | :--- | :--- | :--- | :--- | :--- |
-| `phoneNumbers` | Array of String | Recipient WhatsApp Id\(s\) where you want to send the template message. Note you can validate a WhatsApp id from [here](https://developers.facebook.com/docs/whatsapp/api/contacts) | Required | `"phoneNumbers": [ "917785887264", "551452001478" ]` |
-| `connectedWhatsAppNo` | String | The WhatsApp Number from which you want to send this template message | Required | `"connectedWhatsAppNo": "565412001234"` |
+| `phoneNumbers` | Array of String | Recipient WhatsApp Id\(s\) where you want to send the template message. Note you can validate a WhatsApp id from [here](https://developers.facebook.com/docs/whatsapp/api/contacts) | Required | `"phoneNumbers": [ "+917785887264", "+551452001478" ]` |
+| `connectedWhatsAppNo` | String | The WhatsApp Number from which you want to send this template message | Required | `"connectedWhatsAppNo": "+565412001234"` |
 | `targetAgent` | String | Username of the targetAgent you wish to transfer the chat to when the WhatsApp user replies back | Optional | `"targetAgent": "murtaza98"` |
 | `targetDepartment` | String | Department Name or Id where you wish to transfer the chat to when the WhatsApp user replies back | Optional | `"targetDepartment": "SalesDepartment"` |
 | `template` | Same as [WhatsApp-template-object](https://developers.facebook.com/docs/whatsapp/api/messages/message-templates#the-template-object) | Provide information about the template message you wish to send | Required | Please refer to the template property in above examp |
+
+:warning: | We strongly recommend including the '+' prefix for the all PhoneNumbers in the payload. While you _can_ submit numbers without the leading '+' we have encountered cases where WhatsApp will return 'invalid' despite the number being in use.
+:---: | :---
 
 ## **Sample Call**
 
@@ -113,9 +116,9 @@ description: Endpoint to send a template message
   --header 'Content-Type: application/json' \
   --data-raw '{
       "phoneNumbers": [
-          "917738772967"
+          "+917738772967"
       ],
-    "connectedWhatsAppNo": "565412001234",
+    "connectedWhatsAppNo": "+565412001234",
       "targetAgent": "murtaza98",
       "targetDepartment": "SalesDepartment",
       "template": {
@@ -139,9 +142,9 @@ description: Endpoint to send a template message
 
   {
     "phoneNumbers": [
-        "917738772967"
+        "+917738772967"
     ],
-    "connectedWhatsAppNo": "565412001234",
+    "connectedWhatsAppNo": "+565412001234",
     "targetAgent": "murtaza98",
     "targetDepartment": "SalesDepartment",
     "template": {
