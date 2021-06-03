@@ -29,7 +29,7 @@
       * [Testing the iFrame Authentication](guides/developer/iframe-integration/what-is-iframe-auth/testing-the-iframe-authentication.md)
     * [Iframe Events](guides/developer/iframe-integration/iframe-events.md)
     * [Iframe integration: Sending commands](guides/developer/iframe-integration/iframe-integration-sending-commands.md)
-  * [Adding a Rocket.Chat Chat Room to your WebApp](guides/developer/adding-a-rocket.chat-chat-room-to-your-webapp.md)
+  * [Adding a Rocket.Chat Chat Room to your Web App](guides/developer/adding-a-rocket.chat-chat-room-to-your-web-app.md)
   * [Two Factor Authentication](guides/developer/two-factor-authentication.md)
   * [Apps Dev Guides](guides/developer/apps-dev-guides/README.md)
     * [WhatsApp Integration](guides/developer/apps-dev-guides/whatsapp-integration.md)

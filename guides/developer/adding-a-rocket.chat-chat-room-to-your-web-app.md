@@ -4,7 +4,7 @@ description: >-
   your website/web app in a few minutes.
 ---
 
-# Adding a Rocket.Chat Chat Room to your WebApp
+# Adding a Rocket.Chat Chat Room to your Web App
 
 ## **Requirements**
 
