@@ -32,6 +32,7 @@
   * [Two Factor Authentication](guides/developer/two-factor-authentication.md)
   * [Apps Dev Guides](guides/developer/apps-dev-guides/README.md)
     * [WhatsApp Integration](guides/developer/apps-dev-guides/whatsapp-integration.md)
+  * [Adding a Rocket.Chat Chat Room to your WebApp](guides/developer/adding-a-rocket.chat-chat-room-to-your-webapp.md)
   * [Troubleshooting](guides/developer/troubleshooting.md)
 * [Bots Guides](guides/bots-guides/README.md)
   * [Bots Architecture](guides/bots-guides/bots-architecture.md)

@@ -112,10 +112,10 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ```javascript
 {
-	"shortcut": "my-new-canned",
-	"text": "This is an example",
-	"scope": "global",
-	"tags": ["tag1", "tag2"]
+    "shortcut": "my-new-canned",
+    "text": "This is an example",
+    "scope": "global",
+    "tags": ["tag1", "tag2"]
 }
 ```
 
@@ -127,7 +127,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -X POST \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/canned-responses \
-    -d '{	"shortcut": "my-new-canned", "text": "This is an example", "scope": "global", "tags": ["tag1", "tag2"] }'
+    -d '{    "shortcut": "my-new-canned", "text": "This is an example", "scope": "global", "tags": ["tag1", "tag2"] }'
 ```
 
 ## Example Result
@@ -154,11 +154,11 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ```javascript
 {
-	"_id": "N5D2posu4fCqamjae",
-	"shortcut": "my-new-canned",
-	"text": "This is an example",
-	"scope": "global",
-	"tags": ["tag1", "tag2"]
+    "_id": "N5D2posu4fCqamjae",
+    "shortcut": "my-new-canned",
+    "text": "This is an example",
+    "scope": "global",
+    "tags": ["tag1", "tag2"]
 }
 ```
 
@@ -170,7 +170,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -X POST \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/canned-responses \
-    -d '{	"_id": "N5D2posu4fCqamjae", "shortcut": "my-new-canned", "text": "This is an example", "scope": "global", "tags": ["tag1", "tag2"] }'
+    -d '{    "_id": "N5D2posu4fCqamjae", "shortcut": "my-new-canned", "text": "This is an example", "scope": "global", "tags": ["tag1", "tag2"] }'
 ```
 
 ## Example Result
@@ -223,3 +223,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 | Version | Description |
 | :--- | :--- |
 | 1.0.0 | Added |
+
