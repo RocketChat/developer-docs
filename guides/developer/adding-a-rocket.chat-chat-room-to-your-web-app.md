@@ -9,24 +9,24 @@ description: >-
 ## **Requirements**
 
 You start with the creation of the Rocket.Chat server and then move on to the integration. A demo app is used to show how to do it concretely.  
-To get started you need at least one room and a running Rocket.Chat server. 
+To get started, you need at least one room and a running Rocket.Chat server. 
 
 In addition to adding a chat room to your web app, this article demonstrates :
 
-* How Rocket.Chat can identify a user through the iframe and therefore handle a login token
-* How Rocket.Chat can use an endpoint in your application to identify/create a user
+* How Rocket.Chat can identify a user through the iframe and therefore handle a login token.
+* How Rocket.Chat can use an endpoint in your application to identify/create a user.
 * Use cases with commands and events provided by the RC code once the room has been installed. 
 
 ### Create a Rocket.Chat server
 
-There are many ways to create a Rocket.Chat server. A very quick way to do this is via snaps. To start a [server via snaps](https://docs.rocket.chat/installing-and-updating/snaps) on Ubuntu, type in your terminal:
+There are many ways to create a Rocket.Chat server. A quick way to do this is via snaps. To start a [server via snaps](https://docs.rocket.chat/installing-and-updating/snaps) on Ubuntu, type in your terminal:
 
 `sudo snap install rocketchat-server`  
 
 
 Then go to http://localhost:3000 and add the information & settings to launch the Rocket.Chat server.  
 
-## **Part I: Activate the Iframe integration**
+## **Part I: Activate the Iframe Integration**
 
 To get started, you need to enable the iframe integration setting in your Rocket.Chat server.  
 To do so:
@@ -39,10 +39,10 @@ To do so:
 
 ![](https://lh5.googleusercontent.com/eWLSuNcpCXOjUMHTdAHq2L5mGJb3n9_t1-BYcV_8tMa04MkFFx6A0Dqg4e5QRLfOVJu_taiuCesdH4R6uQ8tTj-EmRIhp9KXKjB7iuVjr1RYgAhrNUKVakQh19lmcJ1Nma679KaG)
 
-3. In account scroll to the iframe menu and click on the button to enable iframe integration. 
+3. In account, scroll to the iframe menu and click on the button to enable iframe integration. 
 
 {% hint style="info" %}
-This will allow you to integrate iframes from your Rocket.chat server on other websites/web apps
+This will allow you to integrate iframes from your Rocket.chat server on other websites/web apps.
 {% endhint %}
 
 ![](https://lh3.googleusercontent.com/oJX9R6ItV17TWI8yjmdiTSEBGSYaYAFwUaLnyA1mrOf8KZjfiyM5xvkPPgvsbYtgEq8qKLTcwrp5fB1we5AQH04GsyBzVRTJk-yb15un2fGv2Ilq-K7BR3bjrX43NU0lVEP_eqDG)
@@ -57,10 +57,10 @@ Now that iframe integration is enabled in your Rocket.Chat server, we can connec
 
 5. The second URL we put in is the API URL. It is used so that Rocket.Chat can verify that a user is logged into our application. 
 
-When a user from your website/web app goes to a web page containing the Rockat.chat Room iframe, the Rocket.Chat server will use this API endpoint to verify:
+When a user from your website/web app goes to a web page containing the Rockat.Chat Room iframe, the Rocket.Chat server will use this API endpoint to verify:
 
-1. The user is identified on your web app
-2.  They use the credentials provided to attempt to login into the Rocket.chat server
+1. The user is identified on your web app.
+2.  They use the credentials provided to attempt to login into the Rocket.Chat server.
 
 ![](https://lh6.googleusercontent.com/6MIGxTdpld4fcMzUUZ70mcuBkLs6VkOr3yZ5BCdW8HZVvSKkOalu92u1RRHrwwlZ3CrV8v1mRlzvV1uLegBoqXvBHmes41V9C3JHXcFEgdw7ibX9nBtea6K2-8K5W5h0qRwSkU8T)
 
@@ -80,7 +80,7 @@ To do so:
 
 ## **Part II: iframe authentification**
 
-In order to use the iframe, the user must have an account and be identified. In this scenario, there are two possibilities:
+To use the iframe, the user must have an account and be identified. In this scenario, there are two possibilities:
 
 1. The user already has a Rocket.Chat account
 2. The user does not have a Rocket.Chat account
@@ -111,28 +111,308 @@ Do not launch the demo app directly yet because we will modify it a bit!
 
 ## **Part III Modifying the demo code:**
 
-Here we will see how to manage to add the iframe to our code. We'll show you how to do this by modifying the demo.
-
-1. Delete from line 129-136 inclusive and replace with:
-
-`res.redirect(“/home”)` 
-
-We do this because we will redirect the user to our home page containing the iframe once he pressed the login button.  
+Here we will see how to manage to add the iframe to our code. We'll show you how to do this by modifying the demo.  
 
 
-2. On line 89 add:
+### 1. Replace the code of the _index.js_ file with this code:
+
+`var express = require('express');`
+
+`var bodyParser = require('body-parser');`
+
+`var axios = require('axios');`
+
+`var fs = require('fs');`
+
+`var app = express();`  
+
+
+`app.use(bodyParser.urlencoded({ extended: false }));`
+
+`app.use(bodyParser.json());`  
+
+
+`// CORS in case you need`
+
+`app.use((req, res, next) => {`
+
+ `res.set('Access-Control-Allow-Origin', 'http://localhost:3000'); // this is the rocket.chat URL`
+
+ `res.set('Access-Control-Allow-Credentials', 'true');`  
+
+
+ `next();`
+
+`});`  
+
+
+`// this is the endpoint configured as API URL`
+
+`app.post('/sso', function (req, res) {`  
+
+
+ `// add your own app logic here to validate user session (check cookies, headers, etc)`  
+
+
+ `// if the user is not already logged in on your system, respond with a 401 status`
+
+ `var notLoggedIn = false;`
+
+ `if (notLoggedIn) {`
+
+ `return res.sendStatus(401);`
+
+ `}`  
+
+
+ `// you can save the token on your database as well, if so just return it`
+
+ `// MongoDB - services.iframe.token`
+
+ `var savedToken = null;`
+
+ `if (savedToken) {`
+
+ `return res.json({`
+
+ `token: savedToken`
+
+ `});`
+
+ `}`  
+
+
+ `// if dont have the user created on rocket.chat end yet, you can now create it`
+
+ `var currentUsername = true;`
+
+ `if (!currentUsername) {`
+
+ `axios.post('http://localhost:3000/api/v1/users.register', {`
+
+ `username: 'new-user',`
+
+ `email: 'mynewuser@email.com',`
+
+ `pass: 'new-users-passw0rd',`
+
+ `name: 'New User'`
+
+ `}).then(function (response) {`  
+
+
+ ``// after creation you need to log the user in to get the `authToken```
+
+ `if (response.data.success) {`
+
+ `return axios.post('http://localhost:3000/api/v1/login', {`
+
+ `username: 'new-user',`
+
+ `password: 'new-users-passw0rd'`
+
+ `});`
+
+ `}`
+
+ `}).then(function (response) {`
+
+ `if (response.data.status === 'success') {`
+
+ `res.json({`
+
+ `loginToken: response.data.data.authToken`
+
+ `});`
+
+ `}`
+
+ `}).catch(function (error) {`
+
+ `res.sendStatus(401);`
+
+ `});`
+
+ `} else {`  
+
+
+ `// otherwise create a rocket.chat session using rocket.chat's API`
+
+ `axios.post('http://localhost:3000/api/v1/login', {`
+
+ `username: 'new-user',`
+
+ `password: 'new-users-passw0rd'`
+
+ `}).then(function (response) {`
+
+ `if (response.data.status === 'success') {`
+
+ `res.json({`
+
+ `loginToken: response.data.data.authToken`
+
+ `});`
+
+ `}`
+
+ `}).catch(function() {`
+
+ `res.sendStatus(401);`
+
+ `});`
+
+ `}`
+
+`});`  
+
+
+`// just render the form for the user authenticate with us`
+
+`app.get('/login', function (req, res) {`
+
+ `res.set('Content-Type', 'text/html');`
+
+ `fs.createReadStream('login.html').pipe(res);`
+
+`});`  
+
 
 `app.get('/home', function (req, res) {`
 
  `res.set('Content-Type', 'text/html');`
 
- `fs.createReadStream('/home.html').pipe(res);`
+ `fs.createReadStream('home.html').pipe(res);`
 
 `});`  
 
 
-3. Add a page in ./ called home.html containing this code:  
+`// receives login information`
 
+`app.post('/login', function (req, res) {`  
+
+
+ `// do your own authentication process`  
+
+
+ `// after user is authenticated we can proceed with authenticating him on rocket.chat side`  
+
+
+ `//`
+
+ `//`
+
+ `// the code bellow is exact the same as the on /sso endpoint, excepts for its response`
+
+ `// it was duplicated for understanding purpose`
+
+ `// the authentication process and being a well designed app =)`
+
+ `//`
+
+ `//`  
+
+
+ `// if dont have the user created on rocket.chat end yet, you can now create it`
+
+ `var currentUsername = null;`
+
+ `if (!currentUsername) {`
+
+ `axios.post('http://localhost:3000/api/v1/users.register', {`
+
+ `username: 'new-user',`
+
+ `email: 'mynewuser@email.com',`
+
+ `pass: 'new-users-passw0rd',`
+
+ `name: 'New User'`
+
+ `}).then(function (response) {`  
+
+
+ ``// after creation you need to log the user in to get the `authToken```
+
+ `if (response.data.success) {`
+
+ `return axios.post('http://localhost:3000/api/v1/login', {`
+
+ `username: 'new-user',`
+
+ `password: 'new-users-passw0rd'`
+
+ `});`
+
+ `}`
+
+ `}).then(function (response) {`
+
+ `if (response.data.status === 'success') {`
+
+ `res.redirect('/home')`
+
+ `}`
+
+ `}).catch(function (error) {`
+
+ `res.sendStatus(401);`
+
+ `});`
+
+ `} else {`  
+
+
+ `// otherwise create a rocket.chat session using rocket.chat's API`
+
+ `axios.post('http://localhost:3000/api/v1/login', {`
+
+ `username: 'username-set-previously',`
+
+ `password: 'password-set-previously'`
+
+ `}).then(function (response) {`
+
+ `if (response.data.status === 'success') {`  
+
+
+ ``// since this endpoint is loaded within the iframe, we need to communicate back to rocket.chat using `postMessage` API``
+
+ `res.set('Content-Type', 'text/html');`
+
+ ``res.send(`<script>``
+
+ `window.parent.postMessage({`
+
+ `event: 'login-with-token',`
+
+ `loginToken: '${ response.data.data.authToken }'`
+
+ `}, 'http://localhost:3000'); // rocket.chat's URL`
+
+ ``</script>`);``
+
+ `}`
+
+ `}).catch(function() {`
+
+ `res.sendStatus(401);`
+
+ `});`
+
+ `}`
+
+`});`  
+
+
+`app.listen(3030, function () {`
+
+  `console.log('Example app listening on port 3030!');`
+
+`});`  
+
+
+### 2. Add a file in ./ called home.html containing this code: 
 
 `<!DOCTYPE html>`
 
@@ -183,67 +463,48 @@ We do this because we will redirect the user to our home page containing the ifr
 `</html>`  
 
 
-So now that a new user is created, they will be redirected to our home.html page.
+So now that a new user is created, they will be redirected to our home.html page.  
+
 
 {% hint style="info" %}
-In the Rocket.Chat iframe configuration, we have left POST in the API method. This needs to be tuned with the request methods in our backend for the link we put in the API URL.   
+In the Rocket.Chat **Administration** &gt;&gt; **Iframe Configuration**, we have left POST in the API method. This needs to be tuned with the request methods in our backend for the link we put in the API URL.  \(The demo backend for handling the Rocket.Chat server's /sso POST request\)  
 {% endhint %}
 
-It is demo backend for handling the Rocket.Chat server's /sso POST request.   
-****The /sso code in our backend will run once the user has been on the page containing the iframe, in this case, it is home.html.  
+In index.js, the app.post\('/sso' code in our backend will only be run once the user has been on the page containing the iframe, in this case, it is home.html.  
 
 
-4. For the demo we will change line 25 to :
+Also in index.js, the app.post\('/sso' code, we're going to verify that the user is logged into Rocket.Chat. The code from axios.post\('http://localhost:3000/api/v1/login' onwards shows us that to verify this, we make a post request to the Rocket.Chat server API with the user's credentials.   
 
-var notLoggedIn = false;  
-
-
-as the user will be logged in as they arrive at this page.    
-
-
-5. And the line 40:
-
-var currentUsername = true;
-
-Because the user will already be logged in. As a reminder, this only serves the demo code. 
-
-So in this part of the code with /sso, we're going to verify that the user is logged into Rocket.Chat. The code from line 68 onwards shows us that to verify this, we make a post request to the Rocket.Chat server API with the user's credentials. 
 
 {% hint style="info" %}
 The login credentials must match those previously entered by the user. For the demo we will put them back as we created them.
 {% endhint %}
 
-6. Line 69 and 70, we will put:
-
-`username: 'new-user',`
-
-`password: 'new-users-passw0rd'`  
-
-
-They were hardcoded for the demo.   
-
-
+  
 After these modifications, the code is ready for the demonstration.
 
 Type in your console:
 
 `npm run`
 
-This will launch the demo app.  
+This will launch the demo app.
+
+Let’s dive a little bit more in the code:
+
+The demo application is currently running on channel 3030. 
+
+There is the index.js file, that's the backend of our demo. And we also have login.html which is the front-end of the demo.
+
+In the index.js file, let's take a closer look at the content of the POST /login and POST /sso endpoints which are very important for the iframe integration.  
 
 
-**Let’s dive a little bit into the code.**
-
-The demo application is currently running on channel 3030. There is the index.js file, that's the backend of our demo. And we also have login.html which is the front-end of the demo.  
-Go to the index.js file and look for the get request code on line 84. We see that this code renders the login.html file. In the index.js file, let's take a closer look at the content of the POST /login and POST /sso endpoints which are very important for the iframe integration.
-
-In the code, we see that, after receiving the credentials via the frontend form, we need to pass them through the auth logic of the demo. Here there is no code because it is in a demo, but in your web app, you will certainly have code to manage the auth of your application. 
+In the code we see that, after receiving the credentials via the frontend form, we need to pass them through the auth logic of the demo. Here there is no code because it is in a demo, but in your web app you will certainly have code to manage the auth of your application. 
 
 Once passed into the demo/web app auth logic, the credentials are used to do two things:   
 
 
-* Either they are used to connect to the Rocket.Chat app via the Rocket.Chat server endpoint /login \(you can copy and paste the demo code into your own app\)
-* If Rocket.Chat has not found a user, it creates one with the identifiers received by your application
+* Either they are used to connect to the Rocket.chat app via the Rocket.Chat server endpoint /login \(you can copy and paste the demo code into your own app\)
+* If Rocket.chat has not found a user, it creates one with the identifiers received by your application
 
 The home.html file has two important points:
 
@@ -255,38 +516,36 @@ http://localhost:3030/sso
 
 The code does this to check if the user is logged in or not. This will be handled by the demo backend. 
 
-Once successfully identified Rocket.Chat's code will store a token in its DB to say that the user has logged in \(as usual\) and it will also store the user's credentials in the user's browser local storage.   
+Once successfully identified, Rocket.Chat's code will store a token in its db to say that the user has logged in \(as usual\) and it will also store the user's credentials in the user's browser localstorage.   
 
 
-So now go to localhost:3030/login and enter any credentials and press Submit:
+So now go to localhost:3030/login and enter any crendentials and hit Submit:
 
 {% hint style="info" %}
-You have to go to a browser in private mode so that the iframe doesn't take your identifiers that are in your local storage, otherwise you will connect with your own account instead of the one that has just been created by our demo app.
+ You have to go to a browser in private mode so that the iframe doesn't take your identifiers that are in your local storage, because otherwise you will connect with your own account instead of the one that has just been created by our demo app.
 {% endhint %}
 
 ![](https://lh3.googleusercontent.com/KySYP2MYiHnRMkupsVjzpuVM5vSVEdw59-4l6AdeAv3j2U-JGxx5elvFlEgkHjsYIu75a9DKI_K6uprxHavGbuP1Z0Uh3C_8tBOxJ3SnnDjx-jTsiVmvY-cVZyW74IAucjCn60lI)
 
-After doing all this, you should have the home view in your web app, as shown below:
-
-![](https://lh4.googleusercontent.com/em7OoD309yaQOVI4RjAphBQsuZjVIg-CVdai3rXc6utiMaX7clQqURczLDIc_Oi8I3ZaXWC9LziaMlxVb7Gg3i1CCqId0XuDWPkXP1MX8h_RCz6_vC85wmkT808hOH-P5W_82VC7)
+You can see Rocket.Chat's home screen in your web app.
 
 That's a great first step. In the next part, we'll see how to enable fast-loading to switch between rooms.
 
-## **Part 4: Enabling fast-loading for the embedded RC room** 
+## **Part IV: Enabling fast-loading for the embedded RC room** 
 
 {% hint style="info" %}
-Rocket.Chat is a client side rendered application, so when the user arrives on Rocket.Chat, the whole application loads in their browser, avoiding loading waits when the user changes room for example. 
+Rocket.Chat is a client-side rendered application, so when the user arrives on Rocket.Chat, the whole application loads in their browser, avoiding loading waits when the user changes room. 
 {% endhint %}
 
-Rocket.Chat is a client-side rendered application, so when the user arrives on Rocket.Chat, the whole application loads in their browser, avoiding loading waits when the user changes room for example. 
+Rocket.Chat is a client-side rendered application, so when the user arrives on Rocket.Chat, the whole application loads in their browser, avoiding loading waits when the user changes room.
 
 The problem is that this is not the case in the iframe. So if the user switches rooms in the iframe, there will be latency. We want to remove this latency and make the iframe load completely when the user goes to the page. 
 
-Rocket.Chat provides commands for iframe integration. In these commands, there is postMessage\(\). Using this command in your client-side code, the iframe contentWindow will client-side route to a chat room thus making the switching instant without any loading.
+Rocket.Chat provides commands for iframe integration. In these commands, there is postMessage\(\). Using this command in your client-side code, the iframe content Window will client-side route to a chat room, making the switching instant without any loading.
 
 {% embed url="https://developer.rocket.chat/guides/developer/iframe-integration/iframe-integration-sending-commands" %}
 
-In order to use these commands, which we will demonstrate next, you need to change a setting in your Rocket.Chat server. To change it:  
+To use these commands, which we will demonstrate next, you need to change a setting in your Rocket.Chat server. To change it:  
 
 
 1. Go to **Administration**:
@@ -328,22 +587,22 @@ This command will go directly to the general room of the Rocket.chat server.
 
 So now, once permission has been enabled in your server, it allows you to change rooms without loading. 
 
-And there you have it, you are now ready to add a chat room to your web app.  
+And there you have it; you are now ready to add a chat room to your web app.  
   
 
 
-However, Rocket.Chat provides more than just the ability to have an embedded room. Indeed, using the  application code and server permissions, one can use certain commands \(like the go to room we used\) and events triggered by the embedded application. 
+However, Rocket.Chat provides more than just the ability to have an embedded room. Indeed, using the application code and server permissions, one can use certain commands \(like the go-to room we used\) and events triggered by the embedded application. 
 
-For more details about events and commands go to:  
+For more details about events and commands, go to:  
 
 
 {% embed url="https://developer.rocket.chat/guides/developer/iframe-integration/iframe-integration-sending-commands" %}
 
 {% embed url="https://developer.rocket.chat/guides/developer/iframe-integration/iframe-events" %}
 
-We will see some use cases of how to use them in the next points
+We will see some use cases of how to use them in the next points.
 
-## **Part 5: Uses cases**
+## **Part V: Uses cases**
 
 ### **Use case 1 - Commands: Change your user status**
 
@@ -371,7 +630,7 @@ Then replace the &lt;button&gt; line in home.html with:
 &lt;button style="margin-bottom: auto;" onclick={x\(\)}&gt;Set away status&lt;/button&gt;  
 
 
-Now once you are in the embedded room, you can click on the button and it will change your status. ****
+Once you are in the embedded room, you can click on the button and change your status. ****
 
 ### **Use case 2 : Events: Adding code for Rocket.Chat iframe events**
 
@@ -421,7 +680,7 @@ Now, if you click on the link and thus open a new room, an alert should appear o
 
 ### **Use Case 3 - Enable / Disable embedded layout**
 
-Currently, we see that the application is in embedded mode. That is, we only see the room we are in and the left sidebar and room header are not present. 
+Currently, we see that the application is in embedded mode. We only see the room we are in and the left sidebar and room header are not present. 
 
 However, we can make the user see your whole Rocket.Chat application in your web app. 
 
