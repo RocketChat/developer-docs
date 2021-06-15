@@ -18,6 +18,8 @@ Create a new role in the system.
 | `name` | `newRole` | Required | The name of the new role. |
 | `scope` | `Subscriptions` | Optional   Default: `Users` | The scope of the new role. |
 | `description` | `Role description` | Optional | A description for the new role. |
+| `mandatory2fa` | `true` | Optional Default: `false` | Whether the role should have a mandatory 2 Factor Authentication. |
+
 
 ## Example Call
 
