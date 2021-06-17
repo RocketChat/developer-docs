@@ -63,7 +63,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/users.createToken` | Create a user authentication token. | [Link](methods/users/createtoken.md) |
 | `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](methods/users/deactivateidle.md) |
 | `/api/v1/users.delete` | Deletes an existing user. | [Link](methods/users/delete.md) |
-| `/api/v1/users.deleteOwnAccount` | Deletes your own user. | [Link](methods/users/deleteownaccount.md) |
+| `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](methods/users/deleteownaccount.md) |
 | `/api/v1/users.forgotPassword` | Send email to reset your password. | [Link](methods/users/forgotpassword.md) |
 | `/api/v1/users.generatePersonalAccessToken` | Generate Personal Access Token. | [Link](methods/users/generatepersonalaccesstoken.md) |
 | `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](methods/users/getavatar.md) |
