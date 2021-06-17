@@ -44,6 +44,7 @@
     * [Run a Botpress Bot](guides/bots-guides/create-and-run-a-bot/run-a-botpress-bot.md)
     * [Run a Rasa Bot](guides/bots-guides/create-and-run-a-bot/run-a-rasa-bot.md)
   * [Bot Glossary](guides/bots-guides/bot-glossary.md)
+  * [Readme](guides/bots-guides/readme.md)
 
 ## API
 

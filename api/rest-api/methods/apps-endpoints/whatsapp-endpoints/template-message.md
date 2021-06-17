@@ -4,41 +4,9 @@ description: Endpoint to send a template message
 
 # Template Message
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">URL</th>
-      <th style="text-align:left">
-        <p></p>
-        <p><b>Method</b>
-        </p>
-      </th>
-      <th style="text-align:left">
-        <p></p>
-        <p><b>Input Data Format</b>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">REST API URL can be found on Apps Page
-        <br />Sample Url for eg:
-        <br /><code>http://localhost:3000/api/apps/public/30bf52a3-d65b-4ab1-9b11-7cfdddf1ef29/templateMessage</code>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p><code>POST</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p><code>JSON</code>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| URL | **Method** | **Input Data Format** |
+| :--- | :--- | :--- |
+| REST API URL can be found on Apps Page Sample Url for eg: `http://localhost:3000/api/apps/public/30bf52a3-d65b-4ab1-9b11-7cfdddf1ef29/templateMessage` | `POST` | `JSON` |
 
 ### Request structure
 
@@ -104,8 +72,9 @@ description: Endpoint to send a template message
 | `targetDepartment` | String | Department Name or Id where you wish to transfer the chat to when the WhatsApp user replies back | Optional | `"targetDepartment": "SalesDepartment"` |
 | `template` | Same as [WhatsApp-template-object](https://developers.facebook.com/docs/whatsapp/api/messages/message-templates#the-template-object) | Provide information about the template message you wish to send | Required | Please refer to the template property in above examp |
 
-:warning: | We strongly recommend including the '+' prefix for the all PhoneNumbers in the payload. While you _can_ submit numbers without the leading '+' we have encountered cases where WhatsApp will return 'invalid' despite the number being in use.
-:---: | :---
+| :warning: | We strongly recommend including the '+' prefix for the all PhoneNumbers in the payload. While you _can_ submit numbers without the leading '+' we have encountered cases where WhatsApp will return 'invalid' despite the number being in use. |
+| :---: | :--- |
+
 
 ## **Sample Call**
 
@@ -160,86 +129,15 @@ description: Endpoint to send a template message
 
 ## Response
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Success Response</th>
-      <th style="text-align:left">Error Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>Code:</b> 200
-          <br /><b>Content:</b>  <code>{ success: true }</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>Code:</b> 400 BAD REQUEST
-          <br /><b>Content:</b>
-          <br /><code>{ &quot;success&quot;: false, error: &quot;Too many phone numbers! Please make sure that phoneNumbers are &lt;= 250&quot; }</code>
-        </p>
-        <p></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>Code:</b> 200
-          <br /><b>Content:</b>
-          <br /><code>{ &quot;success&quot;: true, &quot;invalidContacts&quot;: [ &quot;917738772967&quot; ] }</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>Code:</b> 400 BAD REQUEST
-          <br /><b>Content:</b>
-          <br /><code>{ &quot;success&quot;: false, error: &quot;No Agent found with username abc98&quot; }</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>Code:</b> 400 BAD REQUEST
-          <br /><b>Content:</b>
-          <br /><code>{ &quot;success&quot;: false, error: &quot;No Department found with id/Name SalesDepartment&quot; }</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"><b>Code:</b> 400 BAD REQUEST
-        <br /><b>Content:</b>
-        <br /><code>{ &quot;success&quot;: false, error: &quot;Error! Missing &quot;connectedWhatsAppNo&quot; field within the request&quot; }</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"><b>Code:</b> 400 BAD REQUEST
-        <br /><b>Content:</b>
-        <br /><code>{ &quot;success&quot;: false, error: &quot;Connected WhatsApp Number (connectedWhatsAppNo) i.e. 565412001234 is not a valid WhatsApp contact. Contact Status is invalid&quot; }</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"><b>Code:</b> 400 BAD REQUEST
-        <br /><b>Content:</b>
-        <br /><code>{ &quot;success&quot;: false, error: &quot;Error! Connected WhatsApp Number (connectedWhatsAppNo) i.e. 565412001234 has not been registered yet on Rocket.Chat. Please goto #omnichannel-whatsapp-setup channel and connect this WhatsApp number first there before sending this request again.&quot; }</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"><b>Code:</b> 500 Internal Server Error
-        <br /><b>Content:</b>
-        <br /><code>{ &quot;success&quot;: false, error : &quot;Error occurred while processing request. Details: [Error Details]&quot; }</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Success Response | Error Response |
+| :--- | :--- |
+| **Code:** 200 **Content:** `{ success: true }` | **Code:** 400 BAD REQUEST **Content:** `{ "success": false, error: "Too many phone numbers! Please make sure that phoneNumbers are <= 250" }` |
+| **Code:** 200 **Content:** `{ "success": true, "invalidContacts": [ "917738772967" ] }` | **Code:** 400 BAD REQUEST **Content:** `{ "success": false, error: "No Agent found with username abc98" }` |
+|  | **Code:** 400 BAD REQUEST **Content:** `{ "success": false, error: "No Department found with id/Name SalesDepartment" }` |
+|  | **Code:** 400 BAD REQUEST **Content:** `{ "success": false, error: "Error! Missing "connectedWhatsAppNo" field within the request" }` |
+|  | **Code:** 400 BAD REQUEST **Content:** `{ "success": false, error: "Connected WhatsApp Number (connectedWhatsAppNo) i.e. 565412001234 is not a valid WhatsApp contact. Contact Status is invalid" }` |
+|  | **Code:** 400 BAD REQUEST **Content:** `{ "success": false, error: "Error! Connected WhatsApp Number (connectedWhatsAppNo) i.e. 565412001234 has not been registered yet on Rocket.Chat. Please goto #omnichannel-whatsapp-setup channel and connect this WhatsApp number first there before sending this request again." }` |
+|  | **Code:** 500 Internal Server Error **Content:** `{ "success": false, error : "Error occurred while processing request. Details: [Error Details]" }` |
 
 ## \*\*\*\*
 
