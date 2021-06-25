@@ -20,7 +20,6 @@ Create a new role in the system.
 | `description` | `Role description` | Optional | A description for the new role. |
 | `mandatory2fa` | `true` | Optional Default: `false` | Whether the role should have a mandatory 2 Factor Authentication. |
 
-
 ## Example Call
 
 ```bash

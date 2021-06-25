@@ -20,360 +20,360 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/info` | Information about the Rocket.Chat server. | [Link](methods/miscellaneous/info.md) |
-| `/api/v1/directory` | Search by all users and channels available on server. | [Link](methods/miscellaneous/directory.md) |
-| `/api/v1/shield.svg` | Gets the shield svg\(badge\) to add in your website. | [Link](methods/miscellaneous/shield-svg.md) |
-| `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](methods/miscellaneous/spotlight.md) |
-| `/api/v1/statistics` | Statistics about the Rocket.Chat server. | [Link](methods/miscellaneous/statistics.md) |
-| `/api/v1/statistics.list` | Selectable statistics about the Rocket.Chat server. | [Link](methods/miscellaneous/statistics-list.md) |
+| `/api/info` | Information about the Rocket.Chat server. | [Link](endpoints/miscellaneous/info.md) |
+| `/api/v1/directory` | Search by all users and channels available on server. | [Link](endpoints/miscellaneous/directory.md) |
+| `/api/v1/shield.svg` | Gets the shield svg\(badge\) to add in your website. | [Link](endpoints/miscellaneous/shield-svg.md) |
+| `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](endpoints/miscellaneous/spotlight.md) |
+| `/api/v1/statistics` | Statistics about the Rocket.Chat server. | [Link](endpoints/miscellaneous/statistics.md) |
+| `/api/v1/statistics.list` | Selectable statistics about the Rocket.Chat server. | [Link](endpoints/miscellaneous/statistics-list.md) |
 | `/api/v1/instances.get` | Gets all running instances. | [Link](https://github.com/RocketChat/docs/tree/06af028aecca9430169baa3f517704a68deb6278/api/rest-api/methods/miscellaneous/instances-get.md) |
 
 ### Assets
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/assets.setAsset` | Set an asset image by name. | [Link](methods/assets/setasset.md) |
-| `/api/v1/assets.unsetAsset` | Unset an asset by name | [Link](methods/assets/unsetasset.md) |
+| `/api/v1/assets.setAsset` | Set an asset image by name. | [Link](endpoints/assets/setasset.md) |
+| `/api/v1/assets.unsetAsset` | Unset an asset by name | [Link](endpoints/assets/unsetasset.md) |
 
 ### AutoTranslate
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/autotranslate.getSupportedLanguages` | Get the supported languages by the autotranslate. | [Link](methods/autotranslate/getsupportedlanguages.md) |
-| `/api/v1/autotranslate.saveSettings` | Save some settings about autotranslate. | [Link](methods/autotranslate/savesettings.md) |
-| `/api/v1/autotranslate.translateMessage` | Translate the message. | [Link](methods/autotranslate/translatemessage.md) |
+| `/api/v1/autotranslate.getSupportedLanguages` | Get the supported languages by the autotranslate. | [Link](endpoints/autotranslate/getsupportedlanguages.md) |
+| `/api/v1/autotranslate.saveSettings` | Save some settings about autotranslate. | [Link](endpoints/autotranslate/savesettings.md) |
+| `/api/v1/autotranslate.translateMessage` | Translate the message. | [Link](endpoints/autotranslate/translatemessage.md) |
 
 ### Authentication
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/login` | Authenticate with the REST API. | [Link](methods/authentication/login.md) |
-| `/api/v1/login` | Authenticate with google. | [Link](methods/authentication/google.md) |
-| `/api/v1/login` | Authenticate with facebook. | [Link](methods/authentication/facebook.md) |
-| `/api/v1/login` | Authenticate with twitter. | [Link](methods/authentication/twitter.md) |
-| `/api/v1/logout` | Invalidate your REST API authentication token. | [Link](methods/authentication/logout.md) |
-| `/api/v1/me` | Displays information about the authenticated user. | [Link](methods/authentication/me.md) |
+| `/api/v1/login` | Authenticate with the REST API. | [Link](endpoints/authentication/login.md) |
+| `/api/v1/login` | Authenticate with google. | [Link](endpoints/authentication/google.md) |
+| `/api/v1/login` | Authenticate with facebook. | [Link](endpoints/authentication/facebook.md) |
+| `/api/v1/login` | Authenticate with twitter. | [Link](endpoints/authentication/twitter.md) |
+| `/api/v1/logout` | Invalidate your REST API authentication token. | [Link](endpoints/authentication/logout.md) |
+| `/api/v1/me` | Displays information about the authenticated user. | [Link](endpoints/authentication/me.md) |
 
 ### Users
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/users.presence` | Gets all connected users presence. | [Link](methods/users/presence.md) |
-| `/api/v1/users.create` | Create a new user. | [Link](methods/users/create.md) |
-| `/api/v1/users.createToken` | Create a user authentication token. | [Link](methods/users/createtoken.md) |
-| `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](methods/users/deactivateidle.md) |
-| `/api/v1/users.delete` | Deletes an existing user. | [Link](methods/users/delete.md) |
-| `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](methods/users/deleteownaccount.md) |
-| `/api/v1/users.forgotPassword` | Send email to reset your password. | [Link](methods/users/forgotpassword.md) |
-| `/api/v1/users.generatePersonalAccessToken` | Generate Personal Access Token. | [Link](methods/users/generatepersonalaccesstoken.md) |
-| `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](methods/users/getavatar.md) |
-| `/api/v1/users.getPersonalAccessTokens` | Gets the user's personal access tokens. | [Link](methods/users/getpersonalaccesstokens.md) |
-| `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](methods/users/get-preferences.md) |
-| `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](methods/users/getpresence.md) |
-| `/api/v1/users.getStatus` | Gets the user's status. | [Link](methods/users/getstatus.md) |
-| `/api/v1/users.getUsernameSuggestion` | Gets a suggestion a new username to user. | [Link](methods/users/getusernamesuggestion.md) |
-| `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](methods/users/info.md) |
-| `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](methods/users/list.md) |
-| `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](methods/users/regeneratepersonalaccesstoken.md) |
-| `/api/v1/users.register` | Register a new user. | [Link](methods/users/register.md) |
-| `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](methods/users/removeothertokens.md) |
-| `/api/v1/users.removePersonalAccessToken` | Remove a personal access token. | [Link](methods/users/removepersonalaccesstoken.md) |
-| `/api/v1/users.requestDataDownload` | Request users download data. | [Link](methods/users/requestdatadownload.md) |
-| `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](methods/users/resetavatar.md) |
-| `/api/v1/users.setAvatar` | Set a user's avatar | [Link](methods/users/setavatar.md) |
-| `/api/v1/users.setPreferences` | Set user's preferences | [Link](methods/users/set-preferences.md) |
-| `/api/v1/users.setStatus` | Set the user's status | [Link](methods/users/setstatus.md) |
-| `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](methods/users/setactivestatus.md) |
-| `/api/v1/users.update` | Update an existing user. | [Link](methods/users/update.md) |
-| `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](methods/users/updateownbasicinfo.md) |
+| `/api/v1/users.presence` | Gets all connected users presence. | [Link](endpoints/users/presence.md) |
+| `/api/v1/users.create` | Create a new user. | [Link](endpoints/users/create.md) |
+| `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/users/createtoken.md) |
+| `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/users/deactivateidle.md) |
+| `/api/v1/users.delete` | Deletes an existing user. | [Link](endpoints/users/delete.md) |
+| `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](endpoints/users/deleteownaccount.md) |
+| `/api/v1/users.forgotPassword` | Send email to reset your password. | [Link](endpoints/users/forgotpassword.md) |
+| `/api/v1/users.generatePersonalAccessToken` | Generate Personal Access Token. | [Link](endpoints/users/generatepersonalaccesstoken.md) |
+| `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](endpoints/users/getavatar.md) |
+| `/api/v1/users.getPersonalAccessTokens` | Gets the user's personal access tokens. | [Link](endpoints/users/getpersonalaccesstokens.md) |
+| `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](endpoints/users/get-preferences.md) |
+| `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](endpoints/users/getpresence.md) |
+| `/api/v1/users.getStatus` | Gets the user's status. | [Link](endpoints/users/getstatus.md) |
+| `/api/v1/users.getUsernameSuggestion` | Gets a suggestion a new username to user. | [Link](endpoints/users/getusernamesuggestion.md) |
+| `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](endpoints/users/info.md) |
+| `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/users/list.md) |
+| `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](endpoints/users/regeneratepersonalaccesstoken.md) |
+| `/api/v1/users.register` | Register a new user. | [Link](endpoints/users/register.md) |
+| `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](endpoints/users/removeothertokens.md) |
+| `/api/v1/users.removePersonalAccessToken` | Remove a personal access token. | [Link](endpoints/users/removepersonalaccesstoken.md) |
+| `/api/v1/users.requestDataDownload` | Request users download data. | [Link](endpoints/users/requestdatadownload.md) |
+| `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](endpoints/users/resetavatar.md) |
+| `/api/v1/users.setAvatar` | Set a user's avatar | [Link](endpoints/users/setavatar.md) |
+| `/api/v1/users.setPreferences` | Set user's preferences | [Link](endpoints/users/set-preferences.md) |
+| `/api/v1/users.setStatus` | Set the user's status | [Link](endpoints/users/setstatus.md) |
+| `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](endpoints/users/setactivestatus.md) |
+| `/api/v1/users.update` | Update an existing user. | [Link](endpoints/users/update.md) |
+| `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](endpoints/users/updateownbasicinfo.md) |
 
 ### Channels
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/channels.addAll` | Adds all of the users on the server to a channel. | [Link](methods/channels/addall.md) |
-| `/api/v1/channels.addLeader` | Gives the role of Leader for a user in the current channel. | [Link](methods/channels/addleader.md) |
-| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](methods/channels/addowner.md) |
-| `/api/v1/channels.anonymousread` | Gets the messages in public channels to an anonymous user | [Link](methods/channels/anonymousread.md) |
-| `/api/v1/channels.archive` | Archives a channel. | [Link](methods/channels/archive.md) |
-| `/api/v1/channels.close` | Removes a channel from a user's list of channels. | [Link](methods/channels/close.md) |
-| `/api/v1/channels.counters` | Gets channel counters. | [Link](methods/channels/counters.md) |
-| `/api/v1/channels.create` | Creates a new channel. | [Link](methods/channels/create.md) |
-| `/api/v1/channels.delete` | Removes a channel. | [Link](methods/channels/delete.md) |
-| `/api/v1/channels.files` | Gets a list of files from a channel. | [Link](methods/channels/files.md) |
-| `/api/v1/channels.getAllUserMentionsByChannel` | Gets all the mentions of a channel. | [Link](methods/channels/getallusermentionsbychannel.md) |
-| `/api/v1/channels.getIntegrations` | Gets the channel's integration. | [Link](methods/channels/getintegrations.md) |
-| `/api/v1/channels.history` | Retrieves the messages from a channel. | [Link](methods/channels/history.md) |
-| `/api/v1/channels.info` | Gets a channel's information. | [Link](methods/channels/info.md) |
-| `/api/v1/channels.invite` | Adds a user to a channel. | [Link](methods/channels/invite.md) |
-| `/api/v1/channels.join` | Joins yourself to a channel. | [Link](methods/channels/join.md) |
-| `/api/v1/channels.kick` | Removes a user from a channel. | [Link](methods/channels/kick.md) |
-| `/api/v1/channels.leave` | Removes the calling user from a channel. | [Link](methods/channels/leave.md) |
-| `/api/v1/channels.list` | Retrieves all of the channels from the server. | [Link](methods/channels/list.md) |
-| `/api/v1/channels.list.joined` | Gets only the channels the calling user has joined. | [Link](methods/channels/list-joined.md) |
-| `/api/v1/channels.members` | Retrieves all channel users. | [Link](methods/channels/members.md) |
-| `/api/v1/channels.messages` | Retrieves all channel messages. | [Link](methods/channels/messages.md) |
-| `/api/v1/channels.moderators` | List all moderators of a channel. | [Link](methods/channels/moderators.md) |
-| `/api/v1/channels.online` | List all online users of a channel. | [Link](methods/channels/online.md) |
-| `/api/v1/channels.open` | Adds the channel back to the user's list of channels. | [Link](methods/channels/open.md) |
-| `/api/v1/channels.removeleader` | Removes the role of Leader for a user in the current channel. | [Link](methods/channels/removeleader.md) |
-| `/api/v1/channels.rename` | Changes a channel's name. | [Link](methods/channels/rename.md) |
-| `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](methods/channels/roles.md) |
-| `/api/v1/channels.setCustomFields` | Sets a channel's custom fields. | [Link](methods/channels/setcustomfields.md) |
-| `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](methods/channels/setannouncement.md) |
-| `/api/v1/channels.setDefault` | Sets whether a channel is a default channel or not. | [Link](methods/channels/setdefault.md) |
-| `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](methods/channels/setdescription.md) |
-| `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](methods/channels/setjoincode.md) |
-| `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](methods/channels/setpurpose.md) |
-| `/api/v1/channels.setReadOnly` | Sets whether a channel is read only or not. | [Link](methods/channels/setreadonly.md) |
-| `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](methods/channels/settopic.md) |
-| `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](methods/channels/settype.md) |
-| `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](methods/channels/unarchive.md) |
-| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](methods/channels/addowner.md) |
-| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in the current channel. | [Link](methods/channels/removeowner.md) |
+| `/api/v1/channels.addAll` | Adds all of the users on the server to a channel. | [Link](endpoints/channels/addall.md) |
+| `/api/v1/channels.addLeader` | Gives the role of Leader for a user in the current channel. | [Link](endpoints/channels/addleader.md) |
+| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](endpoints/channels/addowner.md) |
+| `/api/v1/channels.anonymousread` | Gets the messages in public channels to an anonymous user | [Link](endpoints/channels/anonymousread.md) |
+| `/api/v1/channels.archive` | Archives a channel. | [Link](endpoints/channels/archive.md) |
+| `/api/v1/channels.close` | Removes a channel from a user's list of channels. | [Link](endpoints/channels/close.md) |
+| `/api/v1/channels.counters` | Gets channel counters. | [Link](endpoints/channels/counters.md) |
+| `/api/v1/channels.create` | Creates a new channel. | [Link](endpoints/channels/create.md) |
+| `/api/v1/channels.delete` | Removes a channel. | [Link](endpoints/channels/delete.md) |
+| `/api/v1/channels.files` | Gets a list of files from a channel. | [Link](endpoints/channels/files.md) |
+| `/api/v1/channels.getAllUserMentionsByChannel` | Gets all the mentions of a channel. | [Link](endpoints/channels/getallusermentionsbychannel.md) |
+| `/api/v1/channels.getIntegrations` | Gets the channel's integration. | [Link](endpoints/channels/getintegrations.md) |
+| `/api/v1/channels.history` | Retrieves the messages from a channel. | [Link](endpoints/channels/history.md) |
+| `/api/v1/channels.info` | Gets a channel's information. | [Link](endpoints/channels/info.md) |
+| `/api/v1/channels.invite` | Adds a user to a channel. | [Link](endpoints/channels/invite.md) |
+| `/api/v1/channels.join` | Joins yourself to a channel. | [Link](endpoints/channels/join.md) |
+| `/api/v1/channels.kick` | Removes a user from a channel. | [Link](endpoints/channels/kick.md) |
+| `/api/v1/channels.leave` | Removes the calling user from a channel. | [Link](endpoints/channels/leave.md) |
+| `/api/v1/channels.list` | Retrieves all of the channels from the server. | [Link](endpoints/channels/list.md) |
+| `/api/v1/channels.list.joined` | Gets only the channels the calling user has joined. | [Link](endpoints/channels/list-joined.md) |
+| `/api/v1/channels.members` | Retrieves all channel users. | [Link](endpoints/channels/members.md) |
+| `/api/v1/channels.messages` | Retrieves all channel messages. | [Link](endpoints/channels/messages.md) |
+| `/api/v1/channels.moderators` | List all moderators of a channel. | [Link](endpoints/channels/moderators.md) |
+| `/api/v1/channels.online` | List all online users of a channel. | [Link](endpoints/channels/online.md) |
+| `/api/v1/channels.open` | Adds the channel back to the user's list of channels. | [Link](endpoints/channels/open.md) |
+| `/api/v1/channels.removeleader` | Removes the role of Leader for a user in the current channel. | [Link](endpoints/channels/removeleader.md) |
+| `/api/v1/channels.rename` | Changes a channel's name. | [Link](endpoints/channels/rename.md) |
+| `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](endpoints/channels/roles.md) |
+| `/api/v1/channels.setCustomFields` | Sets a channel's custom fields. | [Link](endpoints/channels/setcustomfields.md) |
+| `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](endpoints/channels/setannouncement.md) |
+| `/api/v1/channels.setDefault` | Sets whether a channel is a default channel or not. | [Link](endpoints/channels/setdefault.md) |
+| `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](endpoints/channels/setdescription.md) |
+| `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](endpoints/channels/setjoincode.md) |
+| `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](endpoints/channels/setpurpose.md) |
+| `/api/v1/channels.setReadOnly` | Sets whether a channel is read only or not. | [Link](endpoints/channels/setreadonly.md) |
+| `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](endpoints/channels/settopic.md) |
+| `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](endpoints/channels/settype.md) |
+| `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](endpoints/channels/unarchive.md) |
+| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](endpoints/channels/addowner.md) |
+| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in the current channel. | [Link](endpoints/channels/removeowner.md) |
 
 ### Groups
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/groups.archive` | Archives a private group. | [Link](methods/groups/archive.md) |
-| `/api/v1/groups.addLeader` | Gives the role of Leader for a user in the current group. | [Link](methods/groups/addleader.md) |
-| `/api/v1/groups.close` | Removes a private group from the list of groups. | [Link](methods/groups/close.md) |
-| `/api/v1/groups.counters` | Gets group counters. | [Link](methods/groups/counters.md) |
-| `/api/v1/groups.create` | Creates a new private group. | [Link](methods/groups/create.md) |
-| `/api/v1/groups.delete` | Removes a private group. | [Link](methods/groups/delete.md) |
-| `/api/v1/groups.files` | Gets a list of files from a private group. | [Link](methods/groups/files.md) |
-| `/api/v1/groups.history` | Retrieves the messages from a private group. | [Link](methods/groups/history.md) |
-| `/api/v1/groups.info` | Gets the information about a private group. | [Link](methods/groups/info.md) |
-| `/api/v1/groups.invite` | Adds a user to the private group. | [Link](methods/groups/invite.md) |
-| `/api/v1/groups.kick` | Removes a user from a private group. | [Link](methods/groups/kick.md) |
-| `/api/v1/groups.leave` | Removes the calling user from the private group. | [Link](methods/groups/leave.md) |
-| `/api/v1/groups.list` | List the private groups the caller is part of. | [Link](methods/groups/list.md) |
-| `/api/v1/groups.listAll` | List all the private groups. | [Link](methods/groups/listall.md) |
-| `/api/v1/groups.members` | Gets the users of participants of a private group. | [Link](methods/groups/members.md) |
-| `/api/v1/groups.messages` | Retrieves all group messages. | [Link](methods/groups/messages.md) |
-| `/api/v1/groups.moderators` | List all moderators of a group. | [Link](methods/groups/moderators.md) |
+| `/api/v1/groups.archive` | Archives a private group. | [Link](endpoints/groups/archive.md) |
+| `/api/v1/groups.addLeader` | Gives the role of Leader for a user in the current group. | [Link](endpoints/groups/addleader.md) |
+| `/api/v1/groups.close` | Removes a private group from the list of groups. | [Link](endpoints/groups/close.md) |
+| `/api/v1/groups.counters` | Gets group counters. | [Link](endpoints/groups/counters.md) |
+| `/api/v1/groups.create` | Creates a new private group. | [Link](endpoints/groups/create.md) |
+| `/api/v1/groups.delete` | Removes a private group. | [Link](endpoints/groups/delete.md) |
+| `/api/v1/groups.files` | Gets a list of files from a private group. | [Link](endpoints/groups/files.md) |
+| `/api/v1/groups.history` | Retrieves the messages from a private group. | [Link](endpoints/groups/history.md) |
+| `/api/v1/groups.info` | Gets the information about a private group. | [Link](endpoints/groups/info.md) |
+| `/api/v1/groups.invite` | Adds a user to the private group. | [Link](endpoints/groups/invite.md) |
+| `/api/v1/groups.kick` | Removes a user from a private group. | [Link](endpoints/groups/kick.md) |
+| `/api/v1/groups.leave` | Removes the calling user from the private group. | [Link](endpoints/groups/leave.md) |
+| `/api/v1/groups.list` | List the private groups the caller is part of. | [Link](endpoints/groups/list.md) |
+| `/api/v1/groups.listAll` | List all the private groups. | [Link](endpoints/groups/listall.md) |
+| `/api/v1/groups.members` | Gets the users of participants of a private group. | [Link](endpoints/groups/members.md) |
+| `/api/v1/groups.messages` | Retrieves all group messages. | [Link](endpoints/groups/messages.md) |
+| `/api/v1/groups.moderators` | List all moderators of a group. | [Link](endpoints/groups/moderators.md) |
 | `/api/v1/groups.online` | List all online users of a group. | [Link](https://github.com/RocketChat/docs/tree/aeb4dd8de5017b7cd9c9d9367a0e2155f911ba5a/api/rest-api/methods/groups/online.md) |
-| `/api/v1/groups.open` | Adds the private group back to the list of groups. | [Link](methods/groups/open.md) |
-| `/api/v1/groups.removeLeader` | Removes the role of Leader for a user in the current group. | [Link](methods/groups/removeleader.md) |
-| `/api/v1/groups.rename` | Changes the name of the private group. | [Link](methods/groups/rename.md) |
-| `/api/v1/groups.roles` | Gets the user's roles in the private group. | [Link](methods/groups/roles.md) |
-| `/api/v1/groups.setAnnouncement` | Sets a group's announcement. | [Link](methods/groups/setannouncement.md) |
-| `/api/v1/groups.setCustomFields` | Sets private group's custom fields. | [Link](methods/groups/setcustomfields.md) |
-| `/api/v1/groups.setDescription` | Sets a private group's description. | [Link](methods/groups/setdescription.md) |
-| `/api/v1/groups.setPurpose` | Sets a private group's description. | [Link](methods/groups/setpurpose.md) |
-| `/api/v1/groups.setReadOnly` | Sets whether the room is read only or not. | [Link](methods/groups/setreadonly.md) |
-| `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](methods/groups/settopic.md) |
-| `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](methods/groups/settype.md) |
-| `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](methods/groups/unarchive.md) |
-| `/api/v1/groups.addOwner` | Gives the role of owner for a user in the current group. | [Link](methods/groups/addowner.md) |
-| `/api/v1/groups.removeOwner` | Removes the role of owner from a user in the current Group. | [Link](methods/groups/removeowner.md) |
+| `/api/v1/groups.open` | Adds the private group back to the list of groups. | [Link](endpoints/groups/open.md) |
+| `/api/v1/groups.removeLeader` | Removes the role of Leader for a user in the current group. | [Link](endpoints/groups/removeleader.md) |
+| `/api/v1/groups.rename` | Changes the name of the private group. | [Link](endpoints/groups/rename.md) |
+| `/api/v1/groups.roles` | Gets the user's roles in the private group. | [Link](endpoints/groups/roles.md) |
+| `/api/v1/groups.setAnnouncement` | Sets a group's announcement. | [Link](endpoints/groups/setannouncement.md) |
+| `/api/v1/groups.setCustomFields` | Sets private group's custom fields. | [Link](endpoints/groups/setcustomfields.md) |
+| `/api/v1/groups.setDescription` | Sets a private group's description. | [Link](endpoints/groups/setdescription.md) |
+| `/api/v1/groups.setPurpose` | Sets a private group's description. | [Link](endpoints/groups/setpurpose.md) |
+| `/api/v1/groups.setReadOnly` | Sets whether the room is read only or not. | [Link](endpoints/groups/setreadonly.md) |
+| `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](endpoints/groups/settopic.md) |
+| `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](endpoints/groups/settype.md) |
+| `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](endpoints/groups/unarchive.md) |
+| `/api/v1/groups.addOwner` | Gives the role of owner for a user in the current group. | [Link](endpoints/groups/addowner.md) |
+| `/api/v1/groups.removeOwner` | Removes the role of owner from a user in the current Group. | [Link](endpoints/groups/removeowner.md) |
 
 ### Chat
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](methods/chat/delete.md) |
-| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](methods/chat/followmessage.md) |
-| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages since specific date. | [Link](methods/chat/getdeletedmessages.md) |
-| `/api/v1/chat.getDiscussions` | Retrieves the discussions messages of a room. | [Link](methods/chat/getdiscussions.md) |
-| `/api/v1/chat.getMentionedMessages` | Retrieves mentioned messages. | [Link](methods/chat/getmentionedmessages.md) |
-| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](methods/chat/getmessage.md) |
-| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](methods/chat/getmessagereadreceipts.md) |
-| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](methods/chat/getpinnedmessages.md) |
-| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](methods/chat/getsnippetedmessages.md) |
-| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](methods/chat/getsnippetedmessagebyid.md) |
-| `/api/v1/chat.getStarredMessages` | Retrieves starred messages. | [Link](methods/chat/getstarredmessages.md) |
-| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](methods/chat/getthreadmessages.md) |
-| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](methods/chat/getthreadslist.md) |
-| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](methods/chat/ignoreuser.md) |
-| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](methods/chat/pinmessage.md) |
-| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](methods/chat/postmessage.md) |
-| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](methods/chat/react.md) |
-| `/api/v1/chat.reportMessage` | Reports a message. | [Link](methods/chat/reportmessage.md) |
-| `/api/v1/chat.search` | Search for messages in a channel. | [Link](methods/chat/search.md) |
-| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](methods/chat/starmessage.md) |
-| `/api/v1/chat.sendMessage` | Send new chat message. | [Link](methods/chat/sendmessage.md) |
-| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](methods/chat/syncthreadmessages.md) |
-| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](methods/chat/syncthreadslist.md) |
-| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](methods/chat/unfollowmessage.md) |
-| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](methods/chat/unpinmessage.md) |
-| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](methods/chat/unstarmessage.md) |
-| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](methods/chat/update.md) |
+| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](endpoints/chat/delete.md) |
+| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](endpoints/chat/followmessage.md) |
+| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages since specific date. | [Link](endpoints/chat/getdeletedmessages.md) |
+| `/api/v1/chat.getDiscussions` | Retrieves the discussions messages of a room. | [Link](endpoints/chat/getdiscussions.md) |
+| `/api/v1/chat.getMentionedMessages` | Retrieves mentioned messages. | [Link](endpoints/chat/getmentionedmessages.md) |
+| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](endpoints/chat/getmessage.md) |
+| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](endpoints/chat/getmessagereadreceipts.md) |
+| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](endpoints/chat/getpinnedmessages.md) |
+| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](endpoints/chat/getsnippetedmessages.md) |
+| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](endpoints/chat/getsnippetedmessagebyid.md) |
+| `/api/v1/chat.getStarredMessages` | Retrieves starred messages. | [Link](endpoints/chat/getstarredmessages.md) |
+| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](endpoints/chat/getthreadmessages.md) |
+| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](endpoints/chat/getthreadslist.md) |
+| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](endpoints/chat/ignoreuser.md) |
+| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](endpoints/chat/pinmessage.md) |
+| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](endpoints/chat/postmessage.md) |
+| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](endpoints/chat/react.md) |
+| `/api/v1/chat.reportMessage` | Reports a message. | [Link](endpoints/chat/reportmessage.md) |
+| `/api/v1/chat.search` | Search for messages in a channel. | [Link](endpoints/chat/search.md) |
+| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](endpoints/chat/starmessage.md) |
+| `/api/v1/chat.sendMessage` | Send new chat message. | [Link](endpoints/chat/sendmessage.md) |
+| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](endpoints/chat/syncthreadmessages.md) |
+| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](endpoints/chat/syncthreadslist.md) |
+| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](endpoints/chat/unfollowmessage.md) |
+| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](endpoints/chat/unpinmessage.md) |
+| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](endpoints/chat/unstarmessage.md) |
+| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](endpoints/chat/update.md) |
 
 ### Custom Sounds
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](methods/custom-sounds/list.md) |
+| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](endpoints/custom-sounds/list.md) |
 
 ### IM
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](methods/im/close.md) |
-| `/api/v1/im.counters` | Gets counters of direct messages. | [Link](methods/im/counters.md) |
-| `/api/v1/im.create` | Create a direct message session with another user. | [Link](methods/im/create.md) |
-| `/api/v1/im.history` | Retrieves the messages from a direct message. | [Link](methods/im/history.md) |
-| `/api/v1/im.files` | Retrieves a list of files from a direct message. | [Link](methods/im/files.md) |
-| `/api/v1/im.members` | Retrieves the users of participants of a direct message. | [Link](methods/im/members.md) |
-| `/api/v1/im.messages` | Retrieves the messages from specific direct message. | [Link](methods/im/messages.md) |
-| `/api/v1/im.messages.others` | Retrieves the messages from any direct message in the server. | [Link](methods/im/messages-others.md) |
-| `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](methods/im/list.md) |
-| `/api/v1/im.list.everyone` | List all direct message the caller in the server. | [Link](methods/im/list-everyone.md) |
-| `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](methods/im/open.md) |
-| `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](methods/im/settopic.md) |
+| `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](endpoints/im/close.md) |
+| `/api/v1/im.counters` | Gets counters of direct messages. | [Link](endpoints/im/counters.md) |
+| `/api/v1/im.create` | Create a direct message session with another user. | [Link](endpoints/im/create.md) |
+| `/api/v1/im.history` | Retrieves the messages from a direct message. | [Link](endpoints/im/history.md) |
+| `/api/v1/im.files` | Retrieves a list of files from a direct message. | [Link](endpoints/im/files.md) |
+| `/api/v1/im.members` | Retrieves the users of participants of a direct message. | [Link](endpoints/im/members.md) |
+| `/api/v1/im.messages` | Retrieves the messages from specific direct message. | [Link](endpoints/im/messages.md) |
+| `/api/v1/im.messages.others` | Retrieves the messages from any direct message in the server. | [Link](endpoints/im/messages-others.md) |
+| `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](endpoints/im/list.md) |
+| `/api/v1/im.list.everyone` | List all direct message the caller in the server. | [Link](endpoints/im/list-everyone.md) |
+| `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](endpoints/im/open.md) |
+| `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](endpoints/im/settopic.md) |
 
 ### Integrations
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/integrations.create` | Creates an integration. | [Link](methods/integration/create.md) |
-| `/api/v1/integrations.get` | Gets an integration. | [Link](methods/integration/get.md) |
-| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](methods/integration/history.md) |
-| `/api/v1/integrations.list` | Lists all of the integrations. | [Link](methods/integration/list.md) |
-| `/api/v1/integrations.remove` | Removes an integration. | [Link](methods/integration/remove.md) |
+| `/api/v1/integrations.create` | Creates an integration. | [Link](endpoints/integration/create.md) |
+| `/api/v1/integrations.get` | Gets an integration. | [Link](endpoints/integration/get.md) |
+| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](endpoints/integration/history.md) |
+| `/api/v1/integrations.list` | Lists all of the integrations. | [Link](endpoints/integration/list.md) |
+| `/api/v1/integrations.remove` | Removes an integration. | [Link](endpoints/integration/remove.md) |
 
 ### Invites
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/findOrCreateInvite` | Created a new Invite or returns an existing one with the same parameters. | [Link](methods/invites/findorcreateinvite.md) |
-| `/api/v1/listInvites` | Lists all of the invite tokens. | [Link](methods/invites/listinvites.md) |
-| `/api/v1/removeInvite` | Removes an invite. | [Link](methods/invites/removeinvite.md) |
-| `/api/v1/useInviteToken` | Report to the server that an invite token was used. | [Link](methods/invites/useinvitetoken.md) |
-| `/api/v1/validateInviteToken` | Checks if an invite token is valid. | [Link](methods/invites/validateinvitetoken.md) |
+| `/api/v1/findOrCreateInvite` | Created a new Invite or returns an existing one with the same parameters. | [Link](endpoints/invites/findorcreateinvite.md) |
+| `/api/v1/listInvites` | Lists all of the invite tokens. | [Link](endpoints/invites/listinvites.md) |
+| `/api/v1/removeInvite` | Removes an invite. | [Link](endpoints/invites/removeinvite.md) |
+| `/api/v1/useInviteToken` | Report to the server that an invite token was used. | [Link](endpoints/invites/useinvitetoken.md) |
+| `/api/v1/validateInviteToken` | Checks if an invite token is valid. | [Link](endpoints/invites/validateinvitetoken.md) |
 
 ### Livechat
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/livechat/inquiries.list` | Retrieves a list of open inquiries. | [Link](methods/livechat/inquiries.md#inquiries-list) |
-| `/api/v1/livechat/inquiries.take` | Take an open inquiry. | [Link](methods/livechat/inquiries.md#livechat-take-inquiry) |
-| `/api/v1/livechat/rooms` | Retrieves a list of livechat rooms. | [Link](methods/livechat/rooms.md) |
+| `/api/v1/livechat/inquiries.list` | Retrieves a list of open inquiries. | [Link](endpoints/livechat/inquiries.md#inquiries-list) |
+| `/api/v1/livechat/inquiries.take` | Take an open inquiry. | [Link](endpoints/livechat/inquiries.md#livechat-take-inquiry) |
+| `/api/v1/livechat/rooms` | Retrieves a list of livechat rooms. | [Link](endpoints/livechat/rooms.md) |
 
 ### OAuthApps
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id. | [Link](methods/oauthapps/get.md) |
-| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps. | [Link](methods/oauthapps/list.md) |
+| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id. | [Link](endpoints/oauthapps/get.md) |
+| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps. | [Link](endpoints/oauthapps/list.md) |
 
 ### Permissions
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](methods/permissions/listall.md) |
-| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](methods/permissions/update.md) |
+| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](endpoints/permissions/listall.md) |
+| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](endpoints/permissions/update.md) |
 
 ### Roles
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/roles.create` | Create a new role in the system. | [Link](methods/roles/create.md) |
-| `/api/v1/roles.list` | Gets all the roles in the system. | [Link](methods/roles/list.md) |
-| `/api/v1/roles.sync` | Gets all the roles in the system which are updated after a given date. | [Link](methods/roles/sync.md) |
-| `/api/v1/roles.addUserToRole` | Assign a role to an user. | [Link](methods/roles/addusertorole.md) |
-| `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](methods/roles/getusersinrole.md) |
+| `/api/v1/roles.create` | Create a new role in the system. | [Link](endpoints/roles/create.md) |
+| `/api/v1/roles.list` | Gets all the roles in the system. | [Link](endpoints/roles/list.md) |
+| `/api/v1/roles.sync` | Gets all the roles in the system which are updated after a given date. | [Link](endpoints/roles/sync.md) |
+| `/api/v1/roles.addUserToRole` | Assign a role to an user. | [Link](endpoints/roles/addusertorole.md) |
+| `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](endpoints/roles/getusersinrole.md) |
 
 ### Push Token
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/push.token` | `POST` | Saves push token. | [Link](methods/push/push-token.md) |
-| `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](methods/push/deletepushtoken.md) |
+| `/api/v1/push.token` | `POST` | Saves push token. | [Link](endpoints/push/push-token.md) |
+| `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](endpoints/push/deletepushtoken.md) |
 
 ### Rooms
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/rooms.adminRooms` | Retrieve all rooms \(requires special permission\). | [Link](methods/rooms/adminrooms.md) |
-| `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](methods/rooms/cleanhistory.md) |
-| `/api/v1/rooms.createDiscussion` | Creates a new discussion. | [Link](methods/rooms/creatediscussion.md) |
-| `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](methods/rooms/favorite.md) |
-| `/api/v1/rooms.get` | Gets rooms. | [Link](methods/rooms/get.md) |
-| `/api/v1/rooms.getDiscussions` | Gets room's discussions. | [Link](methods/rooms/getdiscussions.md) |
-| `/api/v1/rooms.info` | Gets info from a room. | [Link](methods/rooms/info.md) |
-| `/api/v1/rooms.leave` | Leaves a room. | [Link](methods/rooms/leave.md) |
-| `/api/v1/rooms.saveNotification` | Sets the notifications settings of specific channel. | [Link](methods/rooms/savenotification.md) |
-| `/api/v1/rooms.upload/:rid` | Upload a message with attached file. | [Link](methods/rooms/upload.md) |
+| `/api/v1/rooms.adminRooms` | Retrieve all rooms \(requires special permission\). | [Link](endpoints/rooms/adminrooms.md) |
+| `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](endpoints/rooms/cleanhistory.md) |
+| `/api/v1/rooms.createDiscussion` | Creates a new discussion. | [Link](endpoints/rooms/creatediscussion.md) |
+| `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](endpoints/rooms/favorite.md) |
+| `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/rooms/get.md) |
+| `/api/v1/rooms.getDiscussions` | Gets room's discussions. | [Link](endpoints/rooms/getdiscussions.md) |
+| `/api/v1/rooms.info` | Gets info from a room. | [Link](endpoints/rooms/info.md) |
+| `/api/v1/rooms.leave` | Leaves a room. | [Link](endpoints/rooms/leave.md) |
+| `/api/v1/rooms.saveNotification` | Sets the notifications settings of specific channel. | [Link](endpoints/rooms/savenotification.md) |
+| `/api/v1/rooms.upload/:rid` | Upload a message with attached file. | [Link](endpoints/rooms/upload.md) |
 
 ### Teams
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](methods/teams/add-members.md) |
-| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](methods/teams/add-rooms.md) |
-| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](methods/teams/autocomplete.md) |
-| `/api/v1/teams.create` | Creates a new team. | [Link](methods/teams/create.md) |
-| `/api/v1/teams.delete` | Removes a team. | [Link](methods/teams/delete.md) |
-| `/api/v1/teams.info` | Gets a team's information. | [Link](methods/teams/info.md) |
-| `/api/v1/teams.leave` | Leaves a team. | [Link](methods/teams/leave.md) |
-| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](methods/teams/list.md) |
-| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](methods/teams/list-all.md) |
-| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](methods/teams/list-rooms.md) |
-| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](methods/teams/list-rooms-of-user.md) |
-| `/api/v1/teams.members` | Retrieves all team members. | [Link](methods/teams/members.md) |
-| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](methods/teams/remove-member.md) |
-| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](methods/teams/remove-room.md) |
-| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](methods/teams/update.md) |
-| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](methods/teams/update-member.md) |
-| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](methods/teams/update-room.md) |
+| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](endpoints/teams/add-members.md) |
+| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](endpoints/teams/add-rooms.md) |
+| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](endpoints/teams/autocomplete.md) |
+| `/api/v1/teams.create` | Creates a new team. | [Link](endpoints/teams/create.md) |
+| `/api/v1/teams.delete` | Removes a team. | [Link](endpoints/teams/delete.md) |
+| `/api/v1/teams.info` | Gets a team's information. | [Link](endpoints/teams/info.md) |
+| `/api/v1/teams.leave` | Leaves a team. | [Link](endpoints/teams/leave.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/teams/list.md) |
+| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/teams/list-all.md) |
+| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/teams/list-rooms.md) |
+| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/teams/list-rooms-of-user.md) |
+| `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/teams/members.md) |
+| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](endpoints/teams/remove-member.md) |
+| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/teams/remove-room.md) |
+| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](endpoints/teams/update.md) |
+| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](endpoints/teams/update-member.md) |
+| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](endpoints/teams/update-room.md) |
 
 ### Command Methods
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/commands.get` | Get specification of the slash command. | [Link](methods/commands/get.md) |
-| `/api/v1/commands.list` | Lists all available slash commands. | [Link](methods/commands/list.md) |
-| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](methods/commands/run.md) |
+| `/api/v1/commands.get` | Get specification of the slash command. | [Link](endpoints/commands/get.md) |
+| `/api/v1/commands.list` | Lists all available slash commands. | [Link](endpoints/commands/list.md) |
+| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](endpoints/commands/run.md) |
 
 ### Custom User Status
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](methods/custom-user-status/list.md) |
+| `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](endpoints/custom-user-status/list.md) |
 
 ### Emoji Custom
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/emoji-custom.list` | List the custom emojis available. | [Link](methods/emoji-custom/list.md) |
-| `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](methods/emoji-custom/create.md) |
-| `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](methods/emoji-custom/delete.md) |
-| `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](methods/emoji-custom/update.md) |
+| `/api/v1/emoji-custom.list` | List the custom emojis available. | [Link](endpoints/emoji-custom/list.md) |
+| `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](endpoints/emoji-custom/create.md) |
+| `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](endpoints/emoji-custom/delete.md) |
+| `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](endpoints/emoji-custom/update.md) |
 
 ### Settings
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](methods/settings/get.md) |
-| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](methods/settings/public.md) |
-| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](methods/settings/oauth.md) |
-| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](methods/settings/service-configuration.md) |
-| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](methods/settings/get-by-id.md) |
-| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](methods/settings/update.md) |
+| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](endpoints/settings/get.md) |
+| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](endpoints/settings/public.md) |
+| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](endpoints/settings/oauth.md) |
+| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](endpoints/settings/service-configuration.md) |
+| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](endpoints/settings/get-by-id.md) |
+| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](endpoints/settings/update.md) |
 
 ### Subscriptions
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/subscriptions.get` | `GET` | Get all subscriptions. | [Link](methods/subscriptions/get.md) |
-| `/api/v1/subscriptions.getOne` | `GET` | Get the subscription by room Id. | [Link](methods/subscriptions/getone.md) |
-| `/api/v1/subscriptions.read` | `POST` | Mark a room as read. | [Link](methods/subscriptions/read.md) |
-| `/api/v1/subscriptions.unread` | `POST` | Mark messages as unread. | [Link](methods/subscriptions/unread.md) |
+| `/api/v1/subscriptions.get` | `GET` | Get all subscriptions. | [Link](endpoints/subscriptions/get.md) |
+| `/api/v1/subscriptions.getOne` | `GET` | Get the subscription by room Id. | [Link](endpoints/subscriptions/getone.md) |
+| `/api/v1/subscriptions.read` | `POST` | Mark a room as read. | [Link](endpoints/subscriptions/read.md) |
+| `/api/v1/subscriptions.unread` | `POST` | Mark messages as unread. | [Link](endpoints/subscriptions/unread.md) |
 
 ### Video Conference
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](methods/video-conference/jitsi-update-timeout.md) |
+| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](endpoints/video-conference/jitsi-update-timeout.md) |
 
 ### Webdav
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts. | [Link](methods/webdav/getmyaccounts.md) |
+| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts. | [Link](endpoints/webdav/getmyaccounts.md) |
 
 ### Licenses
 
