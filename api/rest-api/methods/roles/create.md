@@ -6,6 +6,11 @@ Create a new role in the system.
 | :--- | :--- | :--- |
 | `/api/v1/roles.create` | `yes` | `POST` |
 
+**Note:**
+
+* This endpoint **don't** update existing roles. For that use `roles.update`.
+* It's **not allowed** to create new roles with the same name of existing roles. For example: creating a new role with the `admin` name **is not** possible.
+
 ## Payload
 
 | Argument | Example | Required | Description |
@@ -13,6 +18,8 @@ Create a new role in the system.
 | `name` | `newRole` | Required | The name of the new role. |
 | `scope` | `Subscriptions` | Optional   Default: `Users` | The scope of the new role. |
 | `description` | `Role description` | Optional | A description for the new role. |
+| `mandatory2fa` | `true` | Optional Default: `false` | Whether the role should have a mandatory 2 Factor Authentication. |
+
 
 ## Example Call
 
@@ -46,4 +53,5 @@ curl -H "Content-type:application/json" \
 | Version | Description |
 | :--- | :--- |
 | 0.70.0 | Added |
+| 3.15.0 | Is no longer used to update roles |
 
