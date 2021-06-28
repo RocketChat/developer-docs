@@ -4,6 +4,8 @@ description: Gives list of units
 
 # List of Unit
 
+
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/units.list` | `YES` | `GET` |
