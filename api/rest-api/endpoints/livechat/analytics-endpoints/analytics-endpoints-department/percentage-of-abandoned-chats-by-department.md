@@ -1,12 +1,12 @@
 ---
-description: Return the list of agents and their available time for the provided time frame
+description: Gives back the percentage of abandoned chats per department
 ---
 
-# Agents available for service history
+# Percentage of abandoned chats by department
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/livechat/analytics/agents/available-for-service-history` | `YES` | `GET` |
+| `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | `YES` | `GET` |
 
 ## Headers
 
@@ -29,7 +29,7 @@ description: Return the list of agents and their available time for the provided
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/agents/available-for-service-history?start=2020-09-09T00:11:22.345Z&end=2020-09-10T23:59:22.345Z' \
+curl --location --request GET 'http://localhost:3000//api/v1/livechat/analytics/departments/percentage-abandoned-chats?start=2020-02-12T00:11:22.345Z&end=2020-02-18T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -38,27 +38,10 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/a
 
 ```javascript
 {
-    "agents": [
-        {
-            "availableTimeInSeconds": 102117,
-            "username": "andres.mauricio"
-        },
-        {
-            "availableTimeInSeconds": 280,
-            "username": "bruna.martins"
-        },
-        {
-            "availableTimeInSeconds": 40242,
-            "username": "marina"
-        },
-        {
-            "availableTimeInSeconds": 1,
-            "username": "rogerio"
-        }
-    ],
-    "count": 4,
+    "departments": [],
+    "count": 0,
     "offset": 0,
-    "total": 4,
+    "total": 0,
     "success": true
 }
 ```
