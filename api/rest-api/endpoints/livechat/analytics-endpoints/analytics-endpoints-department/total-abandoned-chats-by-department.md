@@ -29,7 +29,7 @@ description: Gives the total of abandoned chats by department
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/total-abandoned-chats?start=2020-02-12T00:11:22.345Z&end=2021-02-18T23:59:22.345Z' \
+curl --location --request GET 'https://multiverse.rocket.chat/api/v1/livechat/analytics/departments/total-abandoned-chats?start=2020-09-10T23:59:22.345Z&end=2021-09-10T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -38,10 +38,39 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/d
 
 ```javascript
 {
-    "departments": [],
-    "count": 0,
+    "departments": [
+        {
+            "abandonedRooms": 3,
+            "_id": "4LCeYmCHHnQ3EDBgf"
+        },
+        {
+            "abandonedRooms": 1,
+            "_id": "8MGLTfaKLCbE9CqR8"
+        },
+        {
+            "abandonedRooms": 1,
+            "_id": "Yi87Ju7eTHiZQ7CJt"
+        },
+        {
+            "abandonedRooms": 77,
+            "_id": "GgYvrkAF63aeQmsh4"
+        },
+        {
+            "abandonedRooms": 12,
+            "_id": "sLYp3ry7CRizaP3rJ"
+        },
+        {
+            "abandonedRooms": 12,
+            "_id": "BiqbQav59HD2LzXEY"
+        },
+        {
+            "abandonedRooms": 6,
+            "_id": "CAJioQNAvLnYWTy8i"
+        }
+    ],
+    "count": 7,
     "offset": 0,
-    "total": 0,
+    "total": 7,
     "success": true
 }
 ```
