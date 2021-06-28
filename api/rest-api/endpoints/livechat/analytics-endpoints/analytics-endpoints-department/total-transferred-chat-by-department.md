@@ -71,5 +71,3 @@ curl --location --request GET 'https://multiverse.rocket.chat/api/v1/livechat/an
 }
 ```
 
-## 
-
