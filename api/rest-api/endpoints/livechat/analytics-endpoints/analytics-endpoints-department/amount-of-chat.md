@@ -30,6 +30,7 @@ The API will return a blank page if the correct headers are not sent
 
 ```bash
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/amount-of-chats?start=2020-01-10T23:59:22.345Z&end=2021-02-10T23:59:22.345Z \
+--header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
 

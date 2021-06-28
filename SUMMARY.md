@@ -308,6 +308,8 @@
         * [Agents average service time](api/rest-api/endpoints/livechat/analytics-endpoints/agents-average-service-time.md)
         * [Agents total service time](api/rest-api/endpoints/livechat/analytics-endpoints/agents-total-service-time.md)
       * [Agent Info](api/rest-api/endpoints/livechat/agent.md)
+      * [Units](api/rest-api/endpoints/livechat/units/README.md)
+        * [List of Unit](api/rest-api/endpoints/livechat/units/list-of-unit.md)
       * [Appearance](api/rest-api/endpoints/livechat/appearance.md)
       * [Canned Responses](api/rest-api/endpoints/livechat/canned-responses.md)
       * [Config](api/rest-api/endpoints/livechat/config.md)
