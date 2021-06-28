@@ -296,6 +296,7 @@
     * [Omnichannel](api/rest-api/endpoints/livechat/README.md)
       * [Analytics Endpoints](api/rest-api/endpoints/livechat/analytics-endpoints/README.md)
         * [Analytics Endpoints Department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/README.md)
+          * [Average service time by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/average-service-time-by-department.md)
           * [Total service time by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/total-service-time-by-department.md)
           * [Average waiting time by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/average-waiting-time-by-department.md)
           * [Average chat duration time by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/average-chat-duration-time-by-department.md)
