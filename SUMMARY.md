@@ -300,6 +300,7 @@
           * [Average waiting time by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/average-waiting-time-by-department.md)
           * [Average chat duration time by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/average-chat-duration-time-by-department.md)
           * [Total abandoned chats by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/total-abandoned-chats-by-department.md)
+          * [Total transferred chat by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/total-transferred-chat-by-department.md)
           * [Percentage of abandoned chats by department](api/rest-api/endpoints/livechat/analytics-endpoints/analytics-endpoints-department/percentage-of-abandoned-chats-by-department.md)
         * [Agents available for service history](api/rest-api/endpoints/livechat/analytics-endpoints/agents-available-for-service-time.md)
         * [Agents average service time](api/rest-api/endpoints/livechat/analytics-endpoints/agents-average-service-time.md)

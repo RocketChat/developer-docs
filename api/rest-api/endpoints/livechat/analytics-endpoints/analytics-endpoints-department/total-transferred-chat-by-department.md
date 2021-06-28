@@ -1,12 +1,14 @@
 ---
-description: Gives the total of abandoned chats by department
+description: Gives the total of transferred chats by department
 ---
 
-# Total abandoned chats by department
+# Total transferred chat by department
+
+
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/livechat/analytics/departments/total-transferred-chats` | `YES` | `GET` |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats` | `YES` | `GET` |
 
 ## Headers
 
@@ -20,7 +22,7 @@ description: Gives the total of abandoned chats by department
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `start` | `2020-09-09T00:11:22.345Z` | Required | start date |
-| `end` | `2021-09-10T23:59:22.345Z` | Required | end date |
+| `end` | `2020-09-10T23:59:22.345Z` | Required | end date |
 
 ### Notes
 
@@ -29,7 +31,7 @@ description: Gives the total of abandoned chats by department
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/total-transferred-chats?start=2020-02-12T00:11:22.345Z&end=2021-02-18T23:59:22.345Z' \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/total-abandoned-chats?start=2020-02-12T00:11:22.345Z&end=2020-02-18T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -46,5 +48,5 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/d
 }
 ```
 
-## Change Log
+## 
 
