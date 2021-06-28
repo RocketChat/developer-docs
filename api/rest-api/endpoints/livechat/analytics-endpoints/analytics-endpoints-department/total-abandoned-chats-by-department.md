@@ -6,7 +6,7 @@ description: Gives the total of abandoned chats by department
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/livechat/analytics/departments/total-transferred-chats` | `YES` | `GET` |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats` | `YES` | `GET` |
 
 ## Headers
 
@@ -29,7 +29,7 @@ description: Gives the total of abandoned chats by department
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/total-transferred-chats?start=2020-02-12T00:11:22.345Z&end=2021-02-18T23:59:22.345Z' \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/total-abandoned-chats?start=2020-02-12T00:11:22.345Z&end=2021-02-18T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
