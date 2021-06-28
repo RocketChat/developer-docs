@@ -6,7 +6,7 @@ description: Gives the total of transferred chats by department
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| api/v1/livechat/analytics/departments/total-transferred-chats | `YES` | `GET` |
+| `api/v1/livechat/analytics/departments/total-transferred-chats` | `YES` | `GET` |
 
 ## Headers
 
