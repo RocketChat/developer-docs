@@ -310,7 +310,7 @@
       * [Agent Info](api/rest-api/endpoints/livechat/agent.md)
       * [Units](api/rest-api/endpoints/livechat/units/README.md)
         * [List of Unit](api/rest-api/endpoints/livechat/units/list-of-unit.md)
-        * [Untitled](api/rest-api/endpoints/livechat/units/untitled.md)
+        * [List of unit monitors](api/rest-api/endpoints/livechat/units/untitled.md)
       * [Appearance](api/rest-api/endpoints/livechat/appearance.md)
       * [Canned Responses](api/rest-api/endpoints/livechat/canned-responses.md)
       * [Config](api/rest-api/endpoints/livechat/config.md)
