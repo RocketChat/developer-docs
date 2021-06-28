@@ -29,7 +29,7 @@ The API will return a blank page if the correct headers are not sent
 ## Example Call
 
 ```bash
-curl --location --request GET 'https://multiverse.rocket.chat/api/v1/livechat/analytics/departments/total-transferred-chats?start=2020-09-10T23:59:22.345Z&end=2021-09-10T23:59:22.345Z' \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/total-transferred-chats?start=2020-09-10T23:59:22.345Z&end=2021-09-10T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
