@@ -294,6 +294,7 @@
       * [Open](api/rest-api/endpoints/im/open.md)
       * [Set Topic](api/rest-api/endpoints/im/settopic.md)
     * [Omnichannel](api/rest-api/endpoints/livechat/README.md)
+      * [Livechat Endpoints](api/rest-api/endpoints/livechat/livechat-endpoints.md)
       * [Community Edition Endpoints](api/rest-api/endpoints/livechat/community-edition-endpoints.md)
       * [Enterprise Edition Endpoints](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/README.md)
         * [Agent Analytics](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/README.md)
