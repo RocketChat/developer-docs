@@ -28,10 +28,44 @@
 | `/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://docs.rocket.chat/api/rest-api/methods/livechat/total-abandoned-chats-by-department) |
 | `/livechat/analytics/departments/percentage-abandoned-chats` | percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
+## Inquiries
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat` | API doc under development | Info |
+
+## Monitors
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat` | API doc under development | Info |
+
+## Priorities
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat` | API doc under development | Info |
+
+## Room On-hold
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat` | API doc under development | Info |
+
 ## Livechat Tags
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `api/v1/livechat/tags.list` | Retrieves a list of tags | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/list-of-tags) |
 | `livechat/tags.getOne` | Retrieves details of a tag | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/get-one-tag) |
+
+## Units
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat/units.list` | Gives a list of units | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit) |
+| `api/v1/livechat/units.getOne` | Retrieves details of a unit | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/get-one-unit) |
+| `api/v1/livechat/unitMonitors.list` | Gives a list of unit monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit-monitors) |
+
+
 

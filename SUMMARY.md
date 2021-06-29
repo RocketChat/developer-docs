@@ -312,7 +312,7 @@
           * [Percentage of abandoned chats by department](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/departments-analytics/percentage-of-abandoned-chats-by-department.md)
           * [Departments available by unit Id](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/departments-analytics/departments-available-by-unit-id.md)
           * [Departments by Unit Id](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/departments-analytics/departments-by-unit-id.md)
-        * [Inquiry](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/inquiry.md)
+        * [Inquiries](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/inquiries.md)
         * [Monitors](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/monitors.md)
         * [Priorities](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/priorities.md)
         * [Room Onhold](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/room-onhold.md)
