@@ -317,6 +317,7 @@
         * [List of unit monitors](api/rest-api/endpoints/livechat/units/list-of-unit-monitors.md)
       * [Livechat Tags](api/rest-api/endpoints/livechat/livechat-tags/README.md)
         * [List of Tags](api/rest-api/endpoints/livechat/livechat-tags/list-of-tags.md)
+        * [Get one Tag](api/rest-api/endpoints/livechat/livechat-tags/get-one-tag.md)
       * [Appearance](api/rest-api/endpoints/livechat/appearance.md)
       * [Canned Responses](api/rest-api/endpoints/livechat/canned-responses.md)
       * [Config](api/rest-api/endpoints/livechat/config.md)
