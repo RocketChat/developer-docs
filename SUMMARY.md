@@ -295,6 +295,8 @@
       * [Set Topic](api/rest-api/endpoints/im/settopic.md)
     * [Omnichannel](api/rest-api/endpoints/livechat/README.md)
       * [Enterprise Edition Endpoints](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/README.md)
+        * [Business Hours](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/business-hours/README.md)
+          * [Business Hours List](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/business-hours/business-hours-list.md)
         * [Agent Analytics](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/README.md)
           * [Agents average service time](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/agents-average-service-time.md)
           * [Agents total service time](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/agents-total-service-time.md)
