@@ -85,3 +85,18 @@
 | `/api/v1/livechat/inquiries.take` | Take an open inquiry. | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
 | `/api/v1/livechat/rooms` | Retrieves a list of livechat rooms. | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/rooms.md) |
 
+## Unit
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat/units.list` | Retrieves a list of units | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/units/list-of-unit) |
+| `api/v1/livechat/units.getOne` | Retrieves details of a unit | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
+| `api/v1/livechat/unitMonitors.list` | Retrieves a list of unit monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/units/list-of-unit-monitors) |
+
+## Livechat Tags
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `api/v1/livechat/tags.list` | Retrieves a list of tags | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/list-of-tags) |
+| `livechat/tags.getOne` | Retrieves details of a tag | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/get-one-tag) |
+
