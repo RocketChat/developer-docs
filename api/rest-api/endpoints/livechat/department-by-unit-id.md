@@ -4,8 +4,6 @@ description: Gives departments by unit id
 
 # Department by Unit Id
 
-
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/departments.by-unit/:unitId` | `YES` | `GET` |
