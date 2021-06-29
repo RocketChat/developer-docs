@@ -18,9 +18,9 @@
 | `/api/v1/livechat/inquiries.getOne` | `GET` | Get one inquiry by room id. | [info](inquiries.md#livechat-get-one-inquiry-by-room-id) |
 | `/api/v1/livechat/integrations.settings` | `GET` | Retrieves a list of integration settings. | [info](integrations-settings.md) |
 | `/api/v1/livechat/sms-incoming/:service` | `POST` | Send SMS messages to Rocket.Chat. | [info](sms-incoming.md) |
-| `/api/v1/livechat/agent.info/:rid/:token` | `GET` | Retrieve the current Omnichannel agent data. | [info](livechat-endpoints/agent.md) |
-| `/api/v1/livechat/agent.next/:token` | `GET` | Request the next Omnichannel agent available. | [info](livechat-endpoints/agent.md#request-the-next-livechat-agent-available) |
-| `/api/v1/livechat/agents/:agentId/departments` | `GET` | Get the agent departments. | [info](livechat-endpoints/agent.md#get-agent-departments) |
+| `/api/v1/livechat/agent.info/:rid/:token` | `GET` | Retrieve the current Omnichannel agent data. | [info](livechat-endpoints/livechat-agent/agent.md) |
+| `/api/v1/livechat/agent.next/:token` | `GET` | Request the next Omnichannel agent available. | [info](livechat-endpoints/livechat-agent/agent.md#request-the-next-livechat-agent-available) |
+| `/api/v1/livechat/agents/:agentId/departments` | `GET` | Get the agent departments. | [info](livechat-endpoints/livechat-agent/agent.md#get-agent-departments) |
 | `/api/v1/livechat/config/:token` | `GET` | Get basic Livechat widget configuration info and additional visitor data. | [info](config.md) |
 | `/api/v1/livechat/custom.field` | `POST` | Send an Omnichannel custom field. | [info](custom-fields.md#send-a-livechat-custom-field) |
 | `/api/v1/livechat/custom.fields` | `POST` | Send an array of Omnichannel custom fields. | [info](custom-fields.md#send-an-array-of-livechat-custom-fields) |
