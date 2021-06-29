@@ -1,2 +1,0 @@
-# Analytics Endpoints Department
-
