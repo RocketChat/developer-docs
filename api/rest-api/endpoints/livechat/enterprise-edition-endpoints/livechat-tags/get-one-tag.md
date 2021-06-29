@@ -1,5 +1,5 @@
 ---
-description: Gives details of a tag
+description: Gives the details of a tag
 ---
 
 # Get one Tag

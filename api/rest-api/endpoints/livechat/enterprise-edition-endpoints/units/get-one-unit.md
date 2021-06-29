@@ -1,5 +1,5 @@
 ---
-description: Gives details of a unit
+description: Gives the details of a unit
 ---
 
 # Get one Unit

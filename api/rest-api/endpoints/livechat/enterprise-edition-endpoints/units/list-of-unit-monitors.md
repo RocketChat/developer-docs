@@ -1,5 +1,5 @@
 ---
-description: Gives list of unit monitors
+description: Gives a list of unit monitors
 ---
 
 # List of unit monitors

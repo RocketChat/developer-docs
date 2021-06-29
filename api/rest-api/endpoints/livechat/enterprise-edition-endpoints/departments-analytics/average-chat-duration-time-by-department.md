@@ -1,5 +1,5 @@
 ---
-description: Returns the Average chat duration of each department
+description: Returns the average chat duration of each department
 ---
 
 # Average chat duration time by department

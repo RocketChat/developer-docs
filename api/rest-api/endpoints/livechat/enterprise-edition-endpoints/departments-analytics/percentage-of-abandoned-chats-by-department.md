@@ -1,5 +1,5 @@
 ---
-description: Gives back the percentage of abandoned chats per department
+description: Gives the percentage of abandoned chats per department
 ---
 
 # Percentage of abandoned chats by department

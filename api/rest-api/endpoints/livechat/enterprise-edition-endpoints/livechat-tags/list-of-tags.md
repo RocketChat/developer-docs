@@ -1,5 +1,5 @@
 ---
-description: Gives list of tags
+description: Gives a list of tags
 ---
 
 # List of Tags

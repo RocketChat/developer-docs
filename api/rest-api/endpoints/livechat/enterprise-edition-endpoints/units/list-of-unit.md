@@ -1,5 +1,5 @@
 ---
-description: Gives list of units
+description: Gives a list of units
 ---
 
 # List of Unit
