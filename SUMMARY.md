@@ -308,6 +308,7 @@
         * [Agents average service time](api/rest-api/endpoints/livechat/analytics-endpoints/agents-average-service-time.md)
         * [Agents total service time](api/rest-api/endpoints/livechat/analytics-endpoints/agents-total-service-time.md)
       * [Department available by unit Id](api/rest-api/endpoints/livechat/department-available-by-unit-id.md)
+      * [Department by Unit Id](api/rest-api/endpoints/livechat/department-by-unit-id.md)
       * [Agent Info](api/rest-api/endpoints/livechat/agent.md)
       * [Units](api/rest-api/endpoints/livechat/units/README.md)
         * [List of Unit](api/rest-api/endpoints/livechat/units/list-of-unit.md)
