@@ -314,6 +314,7 @@
           * [Departments by Unit Id](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/departments-analytics/departments-by-unit-id.md)
         * [Inquiries](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/inquiries.md)
         * [Monitors](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/monitors/README.md)
+          * [Get one Monitor](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/monitors/get-one-monitor.md)
           * [List of Monitors](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/monitors/list-of-monitors.md)
         * [Priorities](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/priorities.md)
         * [Room Onhold](api/rest-api/endpoints/livechat/enterprise-edition-endpoints/room-onhold.md)
