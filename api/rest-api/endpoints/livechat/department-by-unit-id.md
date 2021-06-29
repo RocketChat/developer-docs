@@ -2,7 +2,7 @@
 description: Gives departments by unit id
 ---
 
-# Department by Unit Id
+# Departments by Unit Id
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
