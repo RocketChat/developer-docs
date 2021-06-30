@@ -1,4 +1,4 @@
-# Omnichannel
+# Omnichannel Endpoints
 
 {% page-ref page="omnichannel-livechat-endpoints/" %}
 
