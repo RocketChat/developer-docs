@@ -19,12 +19,12 @@ description: Gives the details of a tag
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `tagId` | `pXkCRLGxD34y2FEZq` | Required | Unit ID |
+| `tagId` | `pXkCRLGxD34y2FEZq` | Required | Tag ID |
 
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/https://multiverse.rocket.chat/api/v1/livechat/tags.getOne?tagId=pXkCRLGxD34y2FEZq\
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags.getOne?tagId=pXkCRLGxD34y2FEZq\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
