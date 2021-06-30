@@ -12,7 +12,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/` | API doc under development   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/list-of-tags) |
+| `api/v1/livechat/` | Gives a list of existing business hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/business-hours/business-hours-list) |
 
 ## Departments Analytics
 
@@ -45,13 +45,14 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat` | API doc under development | Info |
+| `livechat/priorities.list` | Gives a list of priorities | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/list-of-priorities) |
+| `livechat/priority.getOne` | Gives the details of a priority | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/get-one-priority) |
 
 ## Room On-hold
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat` | API doc under development | Info |
+| `api/v1/livechat/room.onHold` | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/room-onhold) |
 
 ## Livechat Tags
 
