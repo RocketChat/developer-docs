@@ -1,5 +1,5 @@
 ---
-description: Gives the details of a tag
+description: Gives the details of a Priority
 ---
 
 # Get one Priority
