@@ -4,8 +4,6 @@ description: Gives a list of tags
 
 # List of Tags
 
-
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/tags.list` | `YES` | `GET` |
