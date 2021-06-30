@@ -342,6 +342,7 @@
           * [List of Monitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/monitors/list-of-monitors.md)
           * [Get one Monitor](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/monitors/get-one-monitor.md)
         * [Priorities](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/README.md)
+          * [Get one Priority](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/get-one-priority.md)
           * [List of Priorities](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/list-of-priorities.md)
         * [Room Onhold](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/room-onhold.md)
         * [Livechat Tags](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/livechat-tags/README.md)
