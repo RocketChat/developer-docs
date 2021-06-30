@@ -248,9 +248,9 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/livechat/inquiries.list` | Retrieves a list of open inquiries. | [Link](endpoints/livechat/inquiries.md#inquiries-list) |
-| `/api/v1/livechat/inquiries.take` | Take an open inquiry. | [Link](endpoints/livechat/inquiries.md#livechat-take-inquiry) |
-| `/api/v1/livechat/rooms` | Retrieves a list of livechat rooms. | [Link](endpoints/livechat/rooms.md) |
+| `/api/v1/livechat/inquiries.list` | Retrieves a list of open inquiries. | [Link](endpoints/livechat/omnichannel-community-edition-endpoints/inquiries.md#inquiries-list) |
+| `/api/v1/livechat/inquiries.take` | Take an open inquiry. | [Link](endpoints/livechat/omnichannel-community-edition-endpoints/inquiries.md#livechat-take-inquiry) |
+| `/api/v1/livechat/rooms` | Retrieves a list of livechat rooms. | [Link](endpoints/livechat/omnichannel-community-edition-endpoints/rooms.md) |
 
 ### OAuthApps
 
