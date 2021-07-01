@@ -26,7 +26,7 @@ description: Puts an active livechat conversation on hold
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/room.onHold \
+curl --location --request POST 'http://localhost:3000/api/v1/livechat/room.onHold \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 -d "roomId=Z7223PfNPwH7ihQPh"
