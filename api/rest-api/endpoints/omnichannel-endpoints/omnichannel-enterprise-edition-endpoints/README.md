@@ -19,7 +19,7 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `livechat/departments.available-by-unit/:unitId` |  Retrieves departments available by unit Id | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id) |
-| `livechat/analytics/departments/amount-of-chats` | Retrieves number of incoming chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat) |
+| `livechat/analytics/departments/amount-of-chats` | Retrieves the number of incoming chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat) |
 | `/livechat/analytics/departments/average-service-time` | Retrieves average service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-service-time-by-department) |
 | `/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-chat-duration-time-by-department) |
 | `/livechat/analytics/departments/total-service-time` | Retrieves total service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-service-time-by-department) |
