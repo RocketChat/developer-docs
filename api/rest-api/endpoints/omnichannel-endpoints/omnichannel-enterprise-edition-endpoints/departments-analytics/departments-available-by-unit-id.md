@@ -1,5 +1,5 @@
 ---
-description: Gives departments available by unit Id
+description: Gives departments that have not been associated to another unit yet
 ---
 
 # Departments available by unit Id
