@@ -337,7 +337,7 @@
           * [Percentage of abandoned chats by department](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/departments-analytics/percentage-of-abandoned-chats-by-department.md)
           * [Departments available by unit Id](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/departments-analytics/departments-available-by-unit-id.md)
           * [Departments by Unit Id](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/departments-analytics/departments-by-unit-id.md)
-        * [Inquiry Prioritize](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/inquiries.md)
+        * [Inquiry Prioritize](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/inquiry-prioritize.md)
         * [Monitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/monitors/README.md)
           * [List of Monitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/monitors/list-of-monitors.md)
           * [Get one Monitor](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/monitors/get-one-monitor.md)
