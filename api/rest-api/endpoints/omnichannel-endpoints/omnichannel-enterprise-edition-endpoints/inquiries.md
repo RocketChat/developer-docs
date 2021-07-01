@@ -1,6 +1,14 @@
-# Inquiries
+---
+description: Sets the priority of an inquiry
+---
+
+# Inquiry Prioritize
 
 ![](../../../../../.gitbook/assets/enterprise.jpg)
+
+{% hint style="info" %}
+An incoming chat, that has not yet been taken by the agent is called an 'inquiry'. After it's been taken by the agent it is referred to as 'room'.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
@@ -40,8 +48,4 @@ curl --location --request PUT 'http://localhost:3000/api/v1/livechat/inquiry.pri
     "success": true
 }
 ```
-
-{% hint style="info" %}
-An incoming chat, that has not yet been taken by the agent is called an 'inquiry'. After it's been taken by the agent it is referred to as 'room'.
-{% endhint %}
 
