@@ -4,6 +4,8 @@ description: Gives the details of a unit
 
 # Get one Unit
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/units.getOne` | `YES` | `GET` |

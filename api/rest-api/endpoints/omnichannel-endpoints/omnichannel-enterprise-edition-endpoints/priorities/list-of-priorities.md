@@ -4,6 +4,8 @@ description: Gives a list of priorities
 
 # List of Priorities
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `livechat/priorities.list` | `YES` | `GET` |

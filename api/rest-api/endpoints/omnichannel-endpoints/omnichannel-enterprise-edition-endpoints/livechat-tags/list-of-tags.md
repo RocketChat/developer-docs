@@ -4,6 +4,8 @@ description: Gives a list of tags
 
 # List of Tags
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/tags.list` | `YES` | `GET` |

@@ -4,6 +4,8 @@ description: Gives the details of a tag
 
 # Get one Tag
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `livechat/tags.getOne` | `YES` | `GET` |

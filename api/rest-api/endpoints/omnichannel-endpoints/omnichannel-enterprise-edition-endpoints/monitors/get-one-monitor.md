@@ -4,6 +4,8 @@ description: Gives the details of a monitor
 
 # Get one Monitor
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/monitors.getOne` | `YES` | `GET` |

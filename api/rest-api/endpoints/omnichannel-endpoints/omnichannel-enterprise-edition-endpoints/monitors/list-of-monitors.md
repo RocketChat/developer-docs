@@ -4,6 +4,8 @@ description: Retrieves a list of monitors
 
 # List of Monitors
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/monitors.list` | `YES` | `GET` |

@@ -4,6 +4,8 @@ description: Gives a list of units
 
 # List of Unit
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/units.list` | `YES` | `GET` |
