@@ -4,6 +4,8 @@ description: Gives the total service time sorted by agent
 
 # Agents total service time
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/agents/total-service-time` | `YES` | `GET` |

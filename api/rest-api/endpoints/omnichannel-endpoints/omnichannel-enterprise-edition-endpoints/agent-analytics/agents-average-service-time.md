@@ -4,6 +4,8 @@ description: Gives the average service time per agent
 
 # Agents average service time
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/agents/average-service-time` | `YES` | `GET` |

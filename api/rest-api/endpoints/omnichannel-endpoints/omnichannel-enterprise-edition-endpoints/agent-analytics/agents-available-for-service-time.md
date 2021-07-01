@@ -4,6 +4,8 @@ description: Return the list of agents and their available time for the provided
 
 # Agents available for service history
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/agents/available-for-service-history` | `YES` | `GET` |
