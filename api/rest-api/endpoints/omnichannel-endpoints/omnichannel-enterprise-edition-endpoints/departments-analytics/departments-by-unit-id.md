@@ -1,8 +1,10 @@
 ---
-description: Gives departments by unit id
+description: Gives departments included in a specific unit id
 ---
 
 # Departments by Unit Id
+
+![](../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

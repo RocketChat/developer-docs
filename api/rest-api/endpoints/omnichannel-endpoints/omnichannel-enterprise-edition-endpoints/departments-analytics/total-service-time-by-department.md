@@ -4,6 +4,8 @@ description: Gives the total service time sorted by department
 
 # Total service time by department
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/departments/total-service-time` | `YES` | `GET` |

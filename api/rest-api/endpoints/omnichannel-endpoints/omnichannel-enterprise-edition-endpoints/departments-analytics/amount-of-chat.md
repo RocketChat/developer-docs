@@ -4,6 +4,8 @@ description: Gives the number of incoming chats (chat rooms) by department
 
 # Amount of chat
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/departments/amount-of-chats` | `YES` | `GET` |

@@ -4,6 +4,8 @@ description: Gives the average waiting time sorted by department
 
 # Average waiting time by department
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/departments/average-waiting-time` | `YES` | `GET` |

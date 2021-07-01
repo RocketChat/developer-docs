@@ -4,6 +4,8 @@ description: Returns average of service time chats by department
 
 # Average service time by department
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/departments/average-service-time` | `YES` | `GET` |

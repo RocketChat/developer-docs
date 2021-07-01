@@ -4,6 +4,8 @@ description: Gives the total of abandoned chats by department
 
 # Total abandoned chats by department
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/departments/total-abandoned-chats` | `YES` | `GET` |

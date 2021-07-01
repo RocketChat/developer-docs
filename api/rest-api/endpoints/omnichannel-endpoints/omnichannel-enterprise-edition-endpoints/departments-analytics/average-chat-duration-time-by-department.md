@@ -4,6 +4,8 @@ description: Returns the average chat duration of each department
 
 # Average chat duration time by department
 
+![](../../../../../../.gitbook/assets/enterprise.jpg)
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/analytics/departments/average-chat-duration-time` | `YES` | `GET` |
