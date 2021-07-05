@@ -55,4 +55,4 @@ curl -H "Content-type:application/json" \
 
 | Version | Description |
 | :--- | :--- |
-| 3.15.0 | Added |
+| 3.16.0 | Added |

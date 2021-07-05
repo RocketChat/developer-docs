@@ -11,4 +11,5 @@ description: REST API Roles Methods
 | `/api/v1/roles.create` | Create a new role. | [Link](create.md) |
 | `/api/v1/roles.addUserToRole` | Edits permissions on the server. | [Link](addusertorole.md) |
 | `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](getusersinrole.md) |
-
+| `/api/v1/roles.update` | Update an existing role in the system. | [Link](update.md) |
+| `/api/v1/roles.delete` | Delete a role. | [Link](delete.md) |

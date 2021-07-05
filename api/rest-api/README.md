@@ -275,6 +275,8 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/roles.sync` | Gets all the roles in the system which are updated after a given date. | [Link](endpoints/roles/sync.md) |
 | `/api/v1/roles.addUserToRole` | Assign a role to an user. | [Link](endpoints/roles/addusertorole.md) |
 | `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](endpoints/roles/getusersinrole.md) |
+| `/api/v1/roles.update` | Update an existing role in the system. | [Link](endpoints/roles/update.md) |
+| `/api/v1/roles.delete` | Delete a role. | [Link](endpoints/roles/delete.md) |
 
 ### Push Token
 
