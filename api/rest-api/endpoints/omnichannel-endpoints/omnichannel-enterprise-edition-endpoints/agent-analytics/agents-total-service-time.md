@@ -24,9 +24,9 @@ description: Gives the total service time sorted by agent
 | `start` | `2020-09-09T00:11:22.345Z` | Required | start date |
 | `end` | `2020-09-10T23:59:22.345Z` | Required | end date |
 
-### Notes
-
-* The API will return a blank page if the correct headers are not sent
+{% hint style="info" %}
+Service time means how long time the agent is online and available. It doesn't mean how long time the agent was busy serving chats.
+{% endhint %}
 
 ## Example Call
 
