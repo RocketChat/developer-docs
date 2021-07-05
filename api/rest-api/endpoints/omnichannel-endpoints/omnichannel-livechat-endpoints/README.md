@@ -1,6 +1,8 @@
 # Omnichannel Livechat Endpoints
 
-### Manage Livechat related data:
+### Livechat Agent
+
+
 
 | Url | HTTP Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |

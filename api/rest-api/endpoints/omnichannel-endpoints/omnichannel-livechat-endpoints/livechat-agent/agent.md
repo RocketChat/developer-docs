@@ -1,12 +1,14 @@
-# Agent Info
+---
+description: Retrieve the current Livechat agent data.
+---
 
-Retrieve the current Livechat agent data.
+# Agent Info
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/livechat/agent.info/:rid/:token` | `no` | `GET` |
 
-## Payload
+## Parameters 
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
