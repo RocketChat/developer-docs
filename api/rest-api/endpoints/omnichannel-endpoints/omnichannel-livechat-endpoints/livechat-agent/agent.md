@@ -1,5 +1,5 @@
 ---
-description: Retrieve the current Livechat agent data.
+description: Retrieves the current Livechat agent data.
 ---
 
 # Agent Info
