@@ -8,7 +8,7 @@ description: Retrieve the current Livechat agent data.
 | :--- | :--- | :--- |
 | `/api/v1/livechat/agent.info/:rid/:token` | `no` | `GET` |
 
-## Parameters 
+## Path Variables 
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
