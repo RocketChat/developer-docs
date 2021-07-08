@@ -52,5 +52,3 @@ curl --location --request GET 'http://localhost:3000/api/v1/omnichannel/contact?
 }
 ```
 
-## Change Log
-
