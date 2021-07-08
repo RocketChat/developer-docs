@@ -4,7 +4,7 @@ description: Retrieves the data of agent available next for an incoming conversa
 
 # Next Agent
 
-Under devdevelopment 
+Under development 
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
