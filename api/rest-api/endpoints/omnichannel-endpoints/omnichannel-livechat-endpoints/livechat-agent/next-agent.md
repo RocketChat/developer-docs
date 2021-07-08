@@ -1,14 +1,14 @@
 ---
-description: Retrieves the current Livechat agent data.
+description: Retrieves the data of agent available next for an incoming conversation.
 ---
 
-# Agent Info
+# Next Agent
 
-
+Under devdevelopment 
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `/api/v1/livechat/agent.info/:rid/:token` | `no` | `GET` |
+| `/api/v1/livechat/agent.next/:token` | `no` | `GET` |
 
 ## Path Variables 
 

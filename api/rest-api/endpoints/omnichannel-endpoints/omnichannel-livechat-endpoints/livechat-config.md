@@ -4,7 +4,7 @@ description: Get Livechat widget configuration info and additional visitor data.
 
 # Livechat Config
 
-Get Livechat widget configuration info and additional visitor data
+
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
