@@ -4,8 +4,6 @@ description: Retrieves a contact information.
 
 # Omnichannel Fetch Contact
 
-
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/omnichannel/contact` | `YES` | `GET` |

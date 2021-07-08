@@ -302,7 +302,7 @@
         * [Livechat Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/README.md)
           * [Omnichannel Search Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-search-contact.md)
           * [Omnichannel Fetch Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-fetch-contact.md)
-          * [Omnichannel Contact Create](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-contact-create.md)
+          * [Register Omnichannel Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/register-omnichannel-contact.md)
         * [Livechat Custom Field](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields.md)
         * [Livechat Message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/message.md)
         * [Livechat Offline Message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-offline-message.md)
