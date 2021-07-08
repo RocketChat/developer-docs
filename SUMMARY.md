@@ -300,7 +300,7 @@
           * [Agent Info](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent.md)
         * [Livechat Config](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-config.md)
         * [Livechat Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/README.md)
-          * [Untitled](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/untitled.md)
+          * [Omnichannel Search Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-search-contact.md)
           * [Omnichannel Fetch Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-fetch-contact.md)
           * [Omnichannel Contact Create](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-contact-create.md)
         * [Livechat Custom Field](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields.md)

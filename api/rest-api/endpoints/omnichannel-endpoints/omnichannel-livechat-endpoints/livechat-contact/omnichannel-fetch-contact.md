@@ -1,3 +1,7 @@
+---
+description: Retrieves a contact information.
+---
+
 # Omnichannel Fetch Contact
 
 
