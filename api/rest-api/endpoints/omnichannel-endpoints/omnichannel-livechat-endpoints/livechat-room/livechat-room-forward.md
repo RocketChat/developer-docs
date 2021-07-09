@@ -1,7 +1,5 @@
 # Livechat Room Forward
 
-## Forward Livechat room
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/livechat/room.forward` | `yes` | `POST` |
@@ -55,12 +53,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
   "success": true
 }
 ```
-
-## Change Log
-
-| Version | Description |
-| :--- | :--- |
-| 0.74.1 | Added |
 
 ## 
 
