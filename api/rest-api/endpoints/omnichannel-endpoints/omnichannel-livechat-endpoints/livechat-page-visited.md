@@ -1,4 +1,6 @@
-# Livechat Page Visited
+---
+description: Retrieves the pages your omnichannel user navigated on your website.
+---
 
-document under development
+# Livechat Page Visited
 
