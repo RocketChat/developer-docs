@@ -49,9 +49,5 @@ curl -X POST \
 }
 ```
 
-## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.70.0 | Added |
 
