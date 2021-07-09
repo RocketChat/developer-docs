@@ -116,13 +116,3 @@ curl http://localhost:3000/api/v1/livechat/room?token=8s7e9ony6ctl27e1qf8kue&rid
 }
 ```
 
-## 
-
-## 
-
-Version
-
-| Description |  |
-| :--- | :--- |
-| 3.6.0 | Added |
-
