@@ -4,6 +4,8 @@ description: Gives a list of existing business hours
 
 # Business Hours List
 
+
+
 ![](../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL | Requires Auth | HTTP Method |
