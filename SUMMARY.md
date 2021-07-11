@@ -323,6 +323,7 @@
         * [Livechat Video Call](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-video-call.md)
         * [Livechat Visitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/README.md)
           * [Search for Visitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/search-for-visitors.md)
+          * [Get the visitor chat history](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/get-the-visitor-chat-history.md)
       * [Omnichannel Community Edition Endpoints](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/README.md)
         * [Users](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users.md)
         * [Office Hours](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/office-hours.md)
