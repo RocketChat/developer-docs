@@ -305,6 +305,7 @@
           * [Omnichannel Search Contact](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-search-contact.md)
         * [Livechat Custom Field](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields.md)
         * [Livechat Message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/README.md)
+          * [Update a Livechat message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message.md)
           * [Remove a Livechat message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message.md)
           * [Load Livechat messages history](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history.md)
           * [Livechat Offline Message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-offline-message.md)

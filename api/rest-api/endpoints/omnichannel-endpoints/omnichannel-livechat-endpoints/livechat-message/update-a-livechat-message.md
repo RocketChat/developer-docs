@@ -1,22 +1,21 @@
 ---
-description: Send a new Livechat message
+description: Updates a Livechat message
 ---
 
-# Livechat Send New Message
+# Update a Livechat message
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `/api/v1/livechat/message` | `no` | `POST` |
+| `/api/v1/livechat/message/:_id` | `no` | `PUT` |
 
 ## Payload
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
+| `_id` | `ZKWP8LfGnRHQ3ozWa` | Required | Message `_id`. |
 | `token` | `iNKE8a6k6cjbqWhWd` | Required | Visitor `token`. |
 | `rid` | `zRAeTszXor8CCPceB` | Required | Room `_id`. |
-| `msg` | `sending livechat message..` | Required | Message `text`. |
-| `_id` |  | Optional | Message `_id`. |
-| `agent` |  | Optional | Room `agent`. |
+| `msg` | `editing a livechat message..` | Required | Message `text`. |
 
 ## Example payload
 
@@ -24,17 +23,17 @@ description: Send a new Livechat message
 {
   "token": "iNKE8a6k6cjbqWhWd",
   "rid": "zRAeTszXor8CCPceB",
-  "msg": "sending livechat message.."
+  "msg": "editing a livechat message.."
 }
 ```
 
 ## Example Call
 
 ```bash
-curl -X POST \
+curl -X PUT \
      -H "Content-type:application/json" \
-     http://localhost:3000/api/v1/livechat/message \
-     -d '{"token": "iNKE8a6k6cjbqWhWd", "rid": "zRAeTszXor8CCPceB", "msg": "sending livechat message.."}'
+     http://localhost:3000/api/v1/livechat/message/ZKWP8LfGnRHQ3ozWa \
+     -d '{"token": "iNKE8a6k6cjbqWhWd", "rid": "zRAeTszXor8CCPceB", "msg": "editing a livechat message.."}'
 ```
 
 ## Example Result
@@ -43,9 +42,9 @@ curl -X POST \
 {
   "message": {
     "_id": "ZKWP8LfGnRHQ3ozWa",
-    "msg": "sending livechat message..",
+    "msg": "editing livechat message..",
     "u": {
-      "_id": "iNKE8a6k6cjbqWhWd",
+      "_id": "YgEoq2djbGdjjZnsL",
       "username": "guest-4",
       "name": "Livechat Visitor"
     },
@@ -54,12 +53,6 @@ curl -X POST \
   "success": true
 }
 ```
-
-## Change Log
-
-| Version | Description |
-| :--- | :--- |
-| 0.70.0 | Added |
 
 
 
