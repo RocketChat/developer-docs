@@ -39,7 +39,7 @@
 | `livechat/message/:_id` | Update a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
 | `livechat/message/:_id` | Removes a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
 | `livechat/messages.history/:rid` | Retrieve livechat messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
-| `livechat/messages` | post |  |
+| `livechat/messages` | Send multiple messages at once | Link |
 
 ## Offline Message
 
