@@ -314,6 +314,7 @@
           * [Update a Livechat message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message.md)
           * [Remove a Livechat message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message.md)
           * [Load Livechat messages history](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history.md)
+          * [Send an array of messages](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/send-an-array-of-messages.md)
         * [Livechat Offline Message](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-offline-message.md)
         * [Livechat Page Visited](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-page-visited/README.md)
           * [Get the visitor chat history](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-page-visited/get-the-visitor-chat-history.md)
