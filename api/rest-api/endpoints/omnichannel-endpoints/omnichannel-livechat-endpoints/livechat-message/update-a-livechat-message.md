@@ -4,6 +4,8 @@ description: Updates a Livechat message
 
 # Update a Livechat message
 
+
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/livechat/message/:_id` | `no` | `PUT` |
