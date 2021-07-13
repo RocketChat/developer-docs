@@ -4,8 +4,6 @@ description: Retrieves the data of agent available next for an incoming conversa
 
 # Next Agent
 
-Under development 
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/livechat/agent.next/:token` | `no` | `GET` |
@@ -20,25 +18,29 @@ Under development
 ## Example Call
 
 ```bash
-curl http://localhost:3000/api/v1/livechat/agent.info/zRAeTszXor8CCPceB/iNKE8a6k6cjbqWhWd
+curl http://localhost:3000/api/v1/livechat/agent.info/:rid/:token
 ```
 
 ## Example Result
 
 ```javascript
 {
-  "agent": {
-    "_id": "7Gm3PoFCJWTCJ68XR",
-    "emails": [
-      {
-        "address": "agent@rocket.chat",
-        "verified": true
-      }
-    ],
-    "name": "Livechat Agent",
-    "username": "livechat.agent"
-  },
-  "success": true
+    "agent": {
+        "_id": "XycfA5CetCPuEjqxw",
+        "emails": [
+            {
+                "address": "faria@rocket.chat",
+                "verified": true
+            }
+        ],
+        "status": "online",
+        "name": "Faria",
+        "username": "faria.masood",
+        "livechat": {
+            "maxNumberSimultaneousChat": "5"
+        }
+    },
+    "success": true
 }
 ```
 
