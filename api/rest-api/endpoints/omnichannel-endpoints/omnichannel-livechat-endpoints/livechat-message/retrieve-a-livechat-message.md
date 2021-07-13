@@ -4,8 +4,6 @@ description: Retrieve a specific message
 
 # Retrieve a Livechat message
 
-
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/livechat/message/:_id` | `no` | `GET` |
