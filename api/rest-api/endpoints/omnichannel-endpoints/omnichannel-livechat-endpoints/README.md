@@ -51,7 +51,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/page.visited` | post | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
+| `livechat/page.visited` | post | Link |
 
 ## Room
 
