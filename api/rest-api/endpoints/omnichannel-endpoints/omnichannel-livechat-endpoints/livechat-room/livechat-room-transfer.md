@@ -1,3 +1,7 @@
+---
+description: Transfer an omnichannel conversation
+---
+
 # Livechat Room Transfer
 
 | URL | Requires Auth | HTTP Method |

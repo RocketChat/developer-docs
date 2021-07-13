@@ -4,7 +4,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/agent.info/:rid/:token` | Retrieves the current Livechat agent data | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
+| `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
 | `livechat/agent.next/:token` | Retrieves the data of next available agent   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
 
 ## Configuration 
@@ -27,18 +27,18 @@
 | :--- | :--- | :--- |
 | `livechat/custom.field` | Send a custom field | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/send-a-livechat-custom-field) |
 | `livechat/custom.fields` | Send an array of custom field | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/send-an-array-of-livechat-custom-fields) |
-| `livechat/custom-fields` | Get a list of Livechat custom fields | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/list-livechat-custom-fields) |
+| `livechat/custom-fields` | Get a list of omnichannel custom fields | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/list-livechat-custom-fields) |
 | `livechat/custom-fields/:_id` | Get info about a custom field | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/get-info-about-a-custom-field) |
 
 ## Message
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/message` | Send a new Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-send-new-message) |
+| `livechat/message` | Send a new omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-send-new-message) |
 | `livechat/message/:_id` | Retrieve a specific message  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/retrieve-a-livechat-message) |
-| `livechat/message/:_id` | Update a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
-| `livechat/message/:_id` | Removes a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
-| `livechat/messages.history/:rid` | Retrieve livechat messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
+| `livechat/message/:_id` | Update a omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
+| `livechat/message/:_id` | Removes a omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
+| `livechat/messages.history/:rid` | Retrieve omnichannel messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
 | `livechat/messages` | Send multiple messages at once | Link |
 
 ## Offline Message
@@ -57,9 +57,9 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/room` | Get the Livechat room data or open a new room. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-info) |
-| `livechat/room.close` | post | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
-| `livechat/room.transfer` | post | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/rooms.md) |
+| `livechat/room` | Get the omnichannel room data or open a new conversation. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-info) |
+| `livechat/room.close` | Close a omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-close) |
+| `livechat/room.transfer` | Transfer an omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-transfer) |
 | `livechat/room.survey` | post |  |
 | `livechat/room.forward` | post |  |
 | `livechat/room.visitor` | put |  |
