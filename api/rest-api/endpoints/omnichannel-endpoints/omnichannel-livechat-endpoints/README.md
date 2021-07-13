@@ -57,7 +57,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/room` | get | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
+| `livechat/room` | Get the Livechat room data or open a new room. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-info) |
 | `livechat/room.close` | post | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
 | `livechat/room.transfer` | post | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/rooms.md) |
 | `livechat/room.survey` | post |  |

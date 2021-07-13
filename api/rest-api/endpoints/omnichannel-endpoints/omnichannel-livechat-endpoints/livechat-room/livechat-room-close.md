@@ -1,7 +1,5 @@
 # Livechat Room Close
 
-## Close Livechat room
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/livechat/room.close` | `no` | `POST` |
