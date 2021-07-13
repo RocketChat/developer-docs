@@ -4,8 +4,8 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/agent.info/:rid/:token` |  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
-| `livechat/agent.next/:token` | Retrieves the data of next available agent   | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
+| `livechat/agent.info/:rid/:token` | Retrieves the current Livechat agent data | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
+| `livechat/agent.next/:token` | Retrieves the data of next available agent   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
 
 ## Configuration 
 
