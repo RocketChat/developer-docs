@@ -1,3 +1,7 @@
+---
+description: Retrieves the pages your omnichannel user navigated on your website.
+---
+
 # Send Visitor navigation history
 
 | URL | Requires Auth | HTTP Method |
