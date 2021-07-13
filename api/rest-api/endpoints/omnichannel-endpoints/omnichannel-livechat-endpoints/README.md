@@ -35,7 +35,7 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `livechat/message` | Send a new Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-send-new-message) |
-| `livechat/message/:_id` | Retrieve a specific message  | Link |
+| `livechat/message/:_id` | Retrieve a specific message  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/retrieve-a-livechat-message) |
 | `livechat/message/:_id` | Update a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
 | `livechat/message/:_id` | Removes a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
 | `livechat/messages.history/:rid` | Retrieve livechat messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
