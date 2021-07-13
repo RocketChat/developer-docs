@@ -1,5 +1,5 @@
 ---
-description: Retrieve livechat messages history
+description: Retrieve livechat messages history (all messages in a conversation)
 ---
 
 # Load Livechat messages history
