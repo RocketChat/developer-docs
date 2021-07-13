@@ -34,11 +34,11 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/message` | post | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
+| `livechat/message` | Send a new Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-send-new-message) |
 | `livechat/message/:_id` | get  | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
-| `livechat/message/:_id` | put | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/rooms.md) |
-| `livechat/message/:_id` | delete |  |
-| `livechat/messages.history/:rid` | `get` | \`\` |
+| `livechat/message/:_id` | Update a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
+| `livechat/message/:_id` | Removes a Livechat message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
+| `livechat/messages.history/:rid` | Retrieve livechat messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
 | `livechat/messages` | post |  |
 
 ## Offline Message
