@@ -61,13 +61,13 @@
 | `livechat/room.close` | Close an omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-close) |
 | `livechat/room.transfer` | Transfer an omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-transfer) |
 | `livechat/room.forward` | Chatbot agent forwards the chat to a human agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-forward) |
-| `livechat/room.visitor` | put | Link |
+| `livechat/room.visitor` | Updates room visitor's information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/change-room-visitor) |
 
 ## Transcript
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/transcript` | post | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
+| `livechat/transcript` | Request a Livechat transcript | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transcript) |
 
 ## Transfer
 

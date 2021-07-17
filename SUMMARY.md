@@ -325,7 +325,7 @@
           * [Livechat Room Close](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-close.md)
           * [Livechat Room Transfer](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-transfer.md)
           * [Livechat Room Forward](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-forward.md)
-          * [Update Room Visitor Info](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/change-room-visitor.md)
+          * [Update Room Visitor Info](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/update-room-visitor-info.md)
         * [Livechat Transcript](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transcript.md)
         * [Livechat Transfer](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transfer.md)
         * [Livechat Visitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/README.md)
