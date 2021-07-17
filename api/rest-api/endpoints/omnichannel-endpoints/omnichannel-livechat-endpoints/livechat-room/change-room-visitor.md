@@ -1,4 +1,8 @@
-# Change Room Visitor
+---
+description: Updates room visitor's information
+---
+
+# Update Room Visitor Info
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

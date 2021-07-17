@@ -36,8 +36,8 @@
 | :--- | :--- | :--- |
 | `livechat/message` | Send a new omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-send-new-message) |
 | `livechat/message/:_id` | Retrieve a specific message  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/retrieve-a-livechat-message) |
-| `livechat/message/:_id` | Update a omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
-| `livechat/message/:_id` | Removes a omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
+| `livechat/message/:_id` | Update an omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
+| `livechat/message/:_id` | Removes an omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
 | `livechat/messages.history/:rid` | Retrieve omnichannel messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
 | `livechat/messages` | Send multiple messages at once | Link |
 
@@ -58,11 +58,10 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `livechat/room` | Get the omnichannel room data or open a new conversation. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-info) |
-| `livechat/room.close` | Close a omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-close) |
+| `livechat/room.close` | Close an omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-close) |
 | `livechat/room.transfer` | Transfer an omnichannel conversation | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-transfer) |
-| `livechat/room.survey` | post |  |
-| `livechat/room.forward` | post |  |
-| `livechat/room.visitor` | put |  |
+| `livechat/room.forward` | Chatbot agent forwards the chat to a human agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-forward) |
+| `livechat/room.visitor` | put | Link |
 
 ## Transcript
 

@@ -1,3 +1,7 @@
+---
+description: Chatbot agent forwards the chat to a human agent
+---
+
 # Livechat Room Forward
 
 | URL | Requires Auth | HTTP Method |
