@@ -82,7 +82,7 @@
 | `livechat/visitor` | Register a new visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/register-a-new-livechat-visitor) |
 | `livechat/visitor/:token` | Retrieve a visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/retrieve-a-visitor-data) |
 | `livechat/visitor/:token` | delete | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/rooms.md) |
-| `livechat/visitor/:token/room` | get |  |
+| `livechat/visitor/:token/room` | Retrieve open conversations associated with a particular visitor |  |
 | `livechat/visitor.status` | Set visitor status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/set-visitor-status) |
 
 
