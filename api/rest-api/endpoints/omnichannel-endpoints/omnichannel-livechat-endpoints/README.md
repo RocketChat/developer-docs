@@ -79,10 +79,11 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/visitor` | post | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
-| `livechat/visitor/:token` | get | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/inquiries.md#livechat-take-inquiry) |
+| `livechat/visitor` | Register a new visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/register-a-new-livechat-visitor) |
+| `livechat/visitor/:token` | Retrieve a visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/retrieve-a-visitor-data) |
 | `livechat/visitor/:token` | delete | [Link](https://github.com/RocketChat/developer-docs/tree/416477aacf3193fe1c499552e2eebe39ad0c1878/api/rest-api/methods/livechat/methods/livechat/rooms.md) |
 | `livechat/visitor/:token/room` | get |  |
+| `livechat/visitor.status` | POST |  |
 
 
 
