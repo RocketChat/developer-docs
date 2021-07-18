@@ -339,7 +339,7 @@
       * [Omnichannel Community Edition Endpoints](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/README.md)
         * [Users](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users.md)
         * [Office Hours](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/office-hours.md)
-        * [Integrations Settings](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/integrations-settings.md)
+        * [Integrations](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/integrations-settings.md)
         * [Inquiries List](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/inquiries.md)
         * [Appearance](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/appearance.md)
         * [Canned Responses](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/canned-responses.md)

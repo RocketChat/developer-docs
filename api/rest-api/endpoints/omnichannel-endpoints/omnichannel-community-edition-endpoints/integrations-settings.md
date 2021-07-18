@@ -2,7 +2,7 @@
 description: Retrieves a list of integration settings.
 ---
 
-# Integrations Settings
+# Integrations
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -56,6 +56,15 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
+| `livechat/inquiries.list` | `get` | \`\` |
+| `livechat/inquiries.take` | `post` | \`\` |
+| `livechat/inquiries.queued` | `get` | \`\` |
+| `livechat/inquiries.getOne` | `get` |  |
+
+## Integrations
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
 | `livechat/integrations.settings` | `get` |  |
 
 ## Messages
