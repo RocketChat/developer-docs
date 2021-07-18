@@ -107,7 +107,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/users/:type` | `get` | \`\` |
+| `livechat/users/:type` | Get a list of agents or managers | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users) |
 | `livechat/users/:type` | `post` | \`\` |
 | `livechat/users/:type/:_id` | `get` | \`\` |
 | `livechat/users/:type/:_id` | `delete` |  |

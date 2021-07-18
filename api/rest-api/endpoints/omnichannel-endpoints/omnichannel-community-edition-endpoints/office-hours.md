@@ -1,6 +1,8 @@
-# Office Hours
+---
+description: Get Livechat office hours
+---
 
-Get Livechat office hours
+# Office Hours
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
