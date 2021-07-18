@@ -8,6 +8,13 @@ description: Retrieve open conversations associated with a particular visitor
 | :--- | :--- | :--- |
 | `/api/v1/livechat/visitor/:token` | `Yes` | `GET` |
 
+## Headers
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+
 ## Query Parameters
 
 | Argument | Example | Required | Description |
