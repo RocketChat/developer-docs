@@ -1,5 +1,5 @@
 ---
-description: Get Livechat office hours
+description: Get omnichannel office hours
 ---
 
 # Office Hours

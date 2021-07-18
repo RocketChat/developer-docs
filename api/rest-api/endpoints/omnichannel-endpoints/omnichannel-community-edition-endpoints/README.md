@@ -68,7 +68,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/office-hours` | `get` |  |
+| `livechat/office-hours` | Get omnichannel office hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/office-hours) |
 
 ## Queue
 
