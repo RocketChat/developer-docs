@@ -65,7 +65,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/integrations.settings` | `get` |  |
+| `livechat/integrations.settings` | `get` | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/integrations) |
 
 ## Messages
 
