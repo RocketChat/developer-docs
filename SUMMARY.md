@@ -333,6 +333,7 @@
           * [Retrieve a visitor data](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/retrieve-a-visitor-data.md)
           * [Get the visitor info](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/get-the-visitor-info.md)
           * [Search for Visitors](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/search-for-visitors.md)
+          * [Delete a visitor](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/delete-a-visitor.md)
           * [Get open conversation of a visitor](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/get-open-conversation-of-a-visitor.md)
           * [Set visitor status](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/set-visitor-status.md)
       * [Omnichannel Community Edition Endpoints](api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/README.md)
