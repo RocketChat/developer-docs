@@ -144,7 +144,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/` | Retrieves a list of existing business hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/business-hours/business-hours-list) |
+| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/business-hours/business-hours-list) |
 
 ## Departments Analytics
 
