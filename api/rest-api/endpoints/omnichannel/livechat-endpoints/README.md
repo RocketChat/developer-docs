@@ -1,4 +1,4 @@
-# Omnichannel Livechat Endpoints
+# Livechat Endpoints
 
 ## Agent
 
