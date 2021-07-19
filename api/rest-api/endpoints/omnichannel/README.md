@@ -4,7 +4,5 @@
 
 {% page-ref page="omnichannel-endpoints/" %}
 
-{% page-ref page="omnichannel-enterprise-edition-endpoints/" %}
-
 
 
