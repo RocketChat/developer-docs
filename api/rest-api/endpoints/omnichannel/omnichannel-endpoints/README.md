@@ -17,6 +17,7 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `livechat/business-hour` |  |  |
+| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/business-hours/business-hours-list) |
 
 ## Dashboards
 
@@ -139,12 +140,6 @@
 | `livechat/analytics/agents/average-service-time` | Retrieves average service time per agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/agents-average-service-time) |
 | `livechat/analytics/agents/total-service-time` | Retrieves total service time sorted by agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/agents-total-service-time) |
 | `livechat/analytics/agents/available-for-service-history` | Retrieves a list of agents and their available time for the provided time frame | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/agent-analytics/agents-available-for-service-time) |
-
-## Business Hours
-
-| Url | Short Description | Details Page |
-| :--- | :--- | :--- |
-| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/business-hours/business-hours-list) |
 
 ## Departments Analytics
 
