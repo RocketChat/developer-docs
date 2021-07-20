@@ -1,14 +1,14 @@
 ---
-description: Gives the average waiting time sorted by department
+description: Gives the percentage of abandoned chats per department
 ---
 
-# Average waiting time by department
+# Percentage of abandoned chats by department
 
-![](../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/livechat/analytics/departments/average-waiting-time` | `YES` | `GET` |
+| `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | `YES` | `GET` |
 
 ## Headers
 
@@ -31,7 +31,7 @@ description: Gives the average waiting time sorted by department
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/departments/average-waiting-time?start=2020-02-12T00:11:22.345Z&end=2020-02-18T23:59:22.345Z' \
+curl --location --request GET 'http://localhost:3000//api/v1/livechat/analytics/departments/percentage-abandoned-chats?start=2020-02-12T00:11:22.345Z&end=2020-02-18T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```

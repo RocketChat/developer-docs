@@ -4,7 +4,7 @@ description: Gives the total of transferred chats by department
 
 # Total transferred chat by department
 
-![](../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -4,7 +4,7 @@ description: Gives the total of abandoned chats by department
 
 # Total abandoned chats by department
 
-![](../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
