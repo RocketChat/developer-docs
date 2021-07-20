@@ -440,6 +440,7 @@
           * [Set visitor status](api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/set-visitor-status.md)
       * [Omnichannel Endpoints](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/README.md)
         * [Agents](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/README.md)
+          * [Agent's Departments](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-departments.md)
           * [Agents average service time](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time.md)
           * [Agents total service time](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time.md)
           * [Agents available for service history](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history.md)

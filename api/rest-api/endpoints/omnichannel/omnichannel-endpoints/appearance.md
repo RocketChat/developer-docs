@@ -1,6 +1,8 @@
-# Appearance
+---
+description: Get Livechat widget settings about appearance
+---
 
-Get Livechat widget settings about appearance
+# Appearance
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
