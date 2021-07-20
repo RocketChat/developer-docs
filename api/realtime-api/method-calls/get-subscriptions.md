@@ -1,8 +1,8 @@
 # Get Subscriptions
 
-Returns a `result` with a user's subscription collection. You may pass no params or a date param with the time stamp of your last update. If a date is passed the result will only contains changes to the subscriptions.
+Returns a `result` with a user's subscription collection. You may pass no params or a date param with the timestamp of your last update. If a date is passed the result will only contain changes to the subscriptions.
 
-Example call:
+## Example call
 
 ```javascript
 {
@@ -13,7 +13,7 @@ Example call:
 }
 ```
 
-Response:
+## Response
 
 ```javascript
 {
