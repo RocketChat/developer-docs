@@ -453,6 +453,7 @@
           * [Agent Productivity Totalizers](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agent-productivity-totalizers.md)
           * [Chat Totalizers](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chat-totalizers.md)
           * [Productivity Totalizers](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/productivity-totalizers.md)
+          * [Chats Chart](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-chart.md)
         * [Department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/README.md)
           * [Departments Analytics](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-analytics/README.md)
             * [Amount of chat](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-analytics/amount-of-chat.md)
