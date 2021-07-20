@@ -4,7 +4,7 @@ description: This is an enterprise feature.
 
 # Canned Responses
 
-Get a list of canned responses. It supports the [Offset, Count, and Sort Query Parameters](../../../offset-and-count-and-sort-info.md).
+Get a list of canned responses. It supports the [Offset, Count, and Sort Query Parameters](../../team-collaboration/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

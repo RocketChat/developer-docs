@@ -2,7 +2,7 @@
 
 ## List queued chats
 
-Get the queued chats. It supports the [Offset, Count, and Sort Query Parameters](../../../offset-and-count-and-sort-info.md).
+Get the queued chats. It supports the [Offset, Count, and Sort Query Parameters](../../team-collaboration/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
