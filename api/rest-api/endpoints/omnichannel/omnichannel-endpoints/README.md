@@ -19,7 +19,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/business-hour` |  |  |
+| `livechat/business-hour` | Retrieves all the information of a particular business hour | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hour-info) |
 | `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hours-list) |
 
 ## Dashboards
