@@ -13,7 +13,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/appearance` | Get Livechat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
+| `livechat/appearance` | Get LiveChat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
 
 ## Business Hours
 
