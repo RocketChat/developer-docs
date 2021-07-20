@@ -442,7 +442,7 @@
         * [Agents](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/README.md)
           * [Agents average service time](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time.md)
           * [Agents total service time](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time.md)
-          * [Agents available for service history](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-time.md)
+          * [Agents available for service history](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history.md)
         * [Appearance](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance.md)
         * [Business Hours](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/README.md)
           * [Business Hours List](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hours-list.md)
