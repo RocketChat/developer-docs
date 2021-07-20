@@ -1,14 +1,12 @@
 ---
-description: Retrieves agent productivity totalizer for a department
+description: Retrieves productivity totalizers for a department
 ---
 
-# Agent Productivity Totalizers
-
-
+# Productivity Totalizers
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | `YES` | `GET` |
+| `api/v1/livechat/analytics/dashboards/chats-totalizers` | `YES` | `GET` |
 
 ## Headers
 
@@ -28,7 +26,7 @@ description: Retrieves agent productivity totalizer for a department
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/dashboards/agents-productivity-totalizers?departmentId=CAJioQNAvLnYWTy8i&start=2021-07-20T19:00:00.000Z&end=2021-07-21T18:59:59.000Z\
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/dashboards/productivity-totalizers?departmentId=CAJioQNAvLnYWTy8i&start=2021-07-20T19:00:00.000Z&end=2021-07-21T18:59:59.000Z\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -39,15 +37,19 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/d
 {
     "totalizers": [
         {
-            "title": "Busiest_time",
-            "value": "-"
+            "title": "Avg_response_time",
+            "value": "00:00:00"
         },
         {
-            "title": "Avg_of_available_service_time",
-            "value": "10:45:18"
+            "title": "Avg_first_response_time",
+            "value": "00:00:00"
         },
         {
-            "title": "Avg_of_service_time",
+            "title": "Avg_reaction_time",
+            "value": "00:00:00"
+        },
+        {
+            "title": "Avg_of_waiting_time",
             "value": "00:00:00"
         }
     ],

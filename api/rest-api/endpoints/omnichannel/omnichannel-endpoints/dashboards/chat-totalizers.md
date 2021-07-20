@@ -1,5 +1,5 @@
 ---
-description: Retrieves chat totalizers
+description: Retrieves chat totalizers for a department
 ---
 
 # Chat Totalizers
