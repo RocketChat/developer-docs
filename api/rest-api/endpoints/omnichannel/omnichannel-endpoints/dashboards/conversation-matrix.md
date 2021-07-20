@@ -26,7 +26,7 @@ description: Retrieves conversation totalizers
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/ivechat/analytics/dashboards/conversation-totalizers?departmentId=CAJioQNAvLnYWTy8i&start=2021-07-20T19:00:00.000Z&end=2021-07-21T18:59:59.000Z \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/dashboards/conversation-totalizers?departmentId=CAJioQNAvLnYWTy8i&start=2021-07-20T19:00:00.000Z&end=2021-07-21T18:59:59.000Z \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
