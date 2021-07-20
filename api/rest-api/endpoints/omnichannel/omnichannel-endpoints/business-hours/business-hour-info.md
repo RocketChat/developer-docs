@@ -4,6 +4,8 @@ description: Retrieves all the information of a particular business hour.
 
 # Business Hour Info
 
+
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/business-hour` | `YES` | `GET` |

@@ -449,6 +449,7 @@
           * [Business Hour Info](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hour-info.md)
           * [Business Hours List](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hours-list.md)
         * [Dashboards](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards.md)
+        * [Conversation Totalizers](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/conversation-totalizers.md)
         * [Department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/README.md)
           * [Departments Analytics](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-analytics/README.md)
             * [Amount of chat](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-analytics/amount-of-chat.md)
