@@ -20,8 +20,8 @@ description: Retrieves agent productivity matrix
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `departmentId` | `CAJioQNAvLnYWTy8i` | Required | Business Hour ID |
-| `start` | `2021-07-20T19:00:00.000Z` | Required | Start time |
-| `end` | `2021-07-21T18:59:59.000Z` | Required | End time |
+| `start` | `2021-07-20T19:00:00.000Z` | Required | Start Time |
+| `end` | `2021-07-21T18:59:59.000Z` | Required | End Time |
 
 ## Example Call
 
