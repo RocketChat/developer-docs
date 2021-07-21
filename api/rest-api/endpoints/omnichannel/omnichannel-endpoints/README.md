@@ -26,7 +26,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/analytics/dashboards/conversation-totalizers` |  |  |
+| `livechat/analytics/dashboards/conversation-totalizers` | Retrieves conversation totalizers for a department |  |
 | `livechat/analytics/dashboards/agents-productivity-totalizers` |  |  |
 | `livechat/analytics/dashboards/chats-totalizers` |  |  |
 | `livechat/analytics/dashboards/productivity-totalizers` |  |  |
