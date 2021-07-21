@@ -26,15 +26,15 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/analytics/dashboards/conversation-totalizers` | Retrieves conversation totalizers for a department |  |
-| `livechat/analytics/dashboards/agents-productivity-totalizers` |  |  |
-| `livechat/analytics/dashboards/chats-totalizers` |  |  |
-| `livechat/analytics/dashboards/productivity-totalizers` |  |  |
-| `livechat/analytics/dashboards/charts/chats` |  |  |
-| `livechat/analytics/dashboards/charts/chats-per-agent` |  |  |
-| `livechat/analytics/dashboards/charts/agents-status` |  |  |
-| `livechat/analytics/dashboards/charts/chats-per-department` |  |  |
-| `livechat/analytics/dashboards/charts/timings` |  |  |
+| `livechat/analytics/dashboards/conversation-totalizers` | Retrieves conversation totalizers for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/conversation-totalizers) |
+| `livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agent-productivity-totalizers) |
+| `livechat/analytics/dashboards/chats-totalizers` | Retrieves chat totalizers for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chat-totalizers) |
+| `livechat/analytics/dashboards/productivity-totalizers` | Retrieves productivity totalizers for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/productivity-totalizers) |
+| `livechat/analytics/dashboards/charts/chats` | Retrieves chats chat for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-chart) |
+| `livechat/analytics/dashboards/charts/chats-per-agent` | Retrieves chats per agent for a department chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-agent-chart) |
+| `livechat/analytics/dashboards/charts/agents-status` | Retrieves agent's statuses chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agents-statuses-chart) |
+| `livechat/analytics/dashboards/charts/chats-per-department` | Retrieves chats per department chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart) |
+| `livechat/analytics/dashboards/charts/timings` | Retrieves timing charts | Link |
 
 ## Message
 
