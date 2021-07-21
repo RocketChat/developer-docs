@@ -36,7 +36,7 @@
 | `livechat/analytics/dashboards/charts/chats-per-department` | Retrieves chats per department chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart) |
 | `livechat/analytics/dashboards/charts/timings` | Retrieves timing charts | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/timings-charts) |
 
-## Message
+## Departments
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
@@ -64,6 +64,7 @@
 | `livechat/inquiries.take` | `post` | \`\` |
 | `livechat/inquiries.queued` | `get` | \`\` |
 | `livechat/inquiries.getOne` | `get` |  |
+| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
 
 ## Integrations
 
@@ -94,6 +95,7 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `livechat/rooms` | get |  |
+| `api/v1/livechat/room.onHold` | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/room-onhold) |
 
 ## SMS
 
@@ -153,12 +155,6 @@
 | `/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://docs.rocket.chat/api/rest-api/methods/livechat/total-abandoned-chats-by-department) |
 | `/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
-## Inquiries
-
-| Url | Short Description | Details Page |
-| :--- | :--- | :--- |
-| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/inquiry-prioritize) |
-
 ## Monitors
 
 | Url | Short Description | Details Page |
@@ -172,12 +168,6 @@
 | :--- | :--- | :--- |
 | `livechat/priorities.list` | Gives a list of priorities | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/list-of-priorities) |
 | `livechat/priority.getOne` | Gives the details of a priority | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/get-one-priority) |
-
-## Room On-hold
-
-| Url | Short Description | Details Page |
-| :--- | :--- | :--- |
-| `api/v1/livechat/room.onHold` | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/room-onhold) |
 
 ## Livechat Tags
 
