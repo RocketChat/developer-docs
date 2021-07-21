@@ -457,7 +457,7 @@
           * [Chats per agent chart](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-agent-chart.md)
           * [Agents Statuses Chart](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agents-statuses-chart.md)
           * [Chats per department chart](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart.md)
-          * [Timings Charts](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/untitled-1.md)
+          * [Timings Charts](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/timings-charts.md)
         * [Department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/README.md)
           * [Departments Analytics](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-analytics/README.md)
             * [Amount of chat](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-analytics/amount-of-chat.md)

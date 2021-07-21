@@ -34,7 +34,7 @@
 | `livechat/analytics/dashboards/charts/chats-per-agent` | Retrieves chats per agent for a department chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-agent-chart) |
 | `livechat/analytics/dashboards/charts/agents-status` | Retrieves agent's statuses chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agents-statuses-chart) |
 | `livechat/analytics/dashboards/charts/chats-per-department` | Retrieves chats per department chart | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart) |
-| `livechat/analytics/dashboards/charts/timings` | Retrieves timing charts | Link |
+| `livechat/analytics/dashboards/charts/timings` | Retrieves timing charts | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/timings-charts) |
 
 ## Message
 
