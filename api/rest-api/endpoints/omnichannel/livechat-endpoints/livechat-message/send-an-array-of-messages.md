@@ -4,7 +4,7 @@ description: Sends an array of messages
 
 # Send an array of messages
 
-**Documentation Under Development** 
+**Document Under Development** 
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
