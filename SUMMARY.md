@@ -467,6 +467,7 @@
           * [Department autocomplete](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/department-autocomplete.md)
           * [Retrieve agents of a department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department.md)
           * [Update agents of a department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department.md)
+          * [Listing departments by ids](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids.md)
           * [Amount of chat](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/amount-of-chat.md)
           * [Average service time by department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/average-service-time-by-department.md)
           * [Average chat duration time by department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/average-chat-duration-time-by-department.md)
