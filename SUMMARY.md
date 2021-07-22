@@ -480,7 +480,7 @@
           * [Departments by Unit Id](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-by-unit-id.md)
         * [Inquiries](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/README.md)
           * [Take Inquiry](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/take-inquiry.md)
-          * [Inquiries Get One](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-get-one.md)
+          * [Inquiry Get One](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one.md)
           * [Inquiry Prioritize](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize.md)
           * [Inquiries List](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list.md)
         * [Integrations](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/integrations.md)
