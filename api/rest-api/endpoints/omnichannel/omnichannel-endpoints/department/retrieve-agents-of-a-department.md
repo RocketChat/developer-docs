@@ -2,7 +2,9 @@
 description: Returns agents of a specific department
 ---
 
-# Agents of a department
+# Retrieve agents of a department
+
+
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
