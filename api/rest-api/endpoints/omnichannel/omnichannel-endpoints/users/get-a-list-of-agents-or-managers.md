@@ -1,6 +1,10 @@
-# Users
+---
+description: Get a list of agents or managers.
+---
 
+# Get a list of agents or managers
 
+It supports the Offset, Count, and Sort Query Parameters.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
