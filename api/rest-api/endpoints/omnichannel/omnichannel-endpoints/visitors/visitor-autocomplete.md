@@ -1,12 +1,14 @@
 ---
-description: Get pages visited by livechat visitor
+description: Autocompletes visitor's name
 ---
 
-# Get pages visited by livechat visitor
+# Visitor Autocomplete
+
+**Under development**
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/livechat/visitors.pagesVisited/:roomId` | `YES` | `GET` |
+| `api/v1/livechat/visitors.autocomplete` | `YES` | `GET` |
 
 ## Headers
 
@@ -15,16 +17,17 @@ description: Get pages visited by livechat visitor
 | `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
 
-## URL Parameters
+## Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `hhMKhHnnbY79mGs9K` | Required | Livechat room id |
+| Argument | Example | Required |
+| :--- | :--- | :--- |
+| `text` |  | Required |
+| `onlyMyVisitors` | `true` | Required |
 
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/visitors.pagesVisited/:roomId \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/department?text=&onlyMyDepartments=true \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -32,12 +35,6 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/visitors.pa
 ## Result
 
 ```javascript
-{
-    "pages": [],
-    "count": 0,
-    "offset": 0,
-    "total": 0,
-    "success": true
-}
+
 ```
 

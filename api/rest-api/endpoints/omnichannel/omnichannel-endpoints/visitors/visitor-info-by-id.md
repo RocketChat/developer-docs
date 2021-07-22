@@ -24,10 +24,9 @@ description: Retrieves visitor info by ID
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/livechat/visitors.info?visitorId=yAivGTq4FcsjpvsdB \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/visitors.info?visitorId=yAivGTq4FcsjpvsdB \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
--d "roomId=Z7223PfNPwH7ihQPh"
 ```
 
 ## Result

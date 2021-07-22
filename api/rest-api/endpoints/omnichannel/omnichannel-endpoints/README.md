@@ -122,12 +122,12 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/visitors.info` | `get` | \`\` |
-| `api/v1/livechat/visitors.pagesVisited/:roomId` | `get` | \`\` |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | `get` | \`\` |
-| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | `get` | \`\` |
-| `api/v1/livechat/visitors.autocomplete` | `get` | \`\` |
-| `api/v1/livechat/visitors.search` | `get` |  |
+| `api/v1/livechat/visitors.info` | Retrieves visitor info by ID | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-info-by-id) |
+| `api/v1/livechat/visitors.pagesVisited/:roomId` | Retrieves pages visited by livechat visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-pages-visited-by-livechat-visitor) |
+| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Get livechat visitor's chat history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-livechat-visitors-chat-history) |
+| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Search a visitor's chat | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/search-a-visitors-chat) |
+| `api/v1/livechat/visitors.autocomplete` | Autocompletes visitor's name | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-autocomplete) |
+| `api/v1/livechat/visitors.search` | Search visitor by term | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitors-search) |
 
 ## Monitors
 

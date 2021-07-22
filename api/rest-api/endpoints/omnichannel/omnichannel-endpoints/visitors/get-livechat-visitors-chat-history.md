@@ -25,7 +25,7 @@ description: Get livechat visitor's chat history
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/livechat/visitors.pagesVisited/:roomId \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
