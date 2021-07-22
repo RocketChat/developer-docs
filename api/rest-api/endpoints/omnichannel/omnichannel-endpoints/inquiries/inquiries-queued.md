@@ -1,3 +1,7 @@
+---
+description: Lists queued inquiries
+---
+
 # Inquiries Queued
 
 | URL | Requires Auth | HTTP Method |

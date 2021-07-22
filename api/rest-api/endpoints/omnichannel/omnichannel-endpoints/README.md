@@ -63,10 +63,10 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/inquiries.list` | `get` | \`\` |
-| `livechat/inquiries.take` | `post` | \`\` |
-| `livechat/inquiries.queued` | `get` | \`\` |
-| `livechat/inquiries.getOne` | `get` |  |
+| `livechat/inquiries.list` | Lists all of the open livechat inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list) |
+| `livechat/inquiries.take` | Takes an open inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/take-inquiry) |
+| `livechat/inquiries.queued` | Lists queued inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-queued) |
+| `livechat/inquiries.getOne` | `get` | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one) |
 | `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
 
 ## Integrations
