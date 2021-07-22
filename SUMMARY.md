@@ -495,6 +495,7 @@
           * [Get a Livechat Trigger](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-a-livechat-trigger.md)
         * [Upload](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/upload.md)
         * [Users](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/README.md)
+          * [Get info of an agent or manager](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager.md)
           * [Remove an agent or manager](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager.md)
         * [Visitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors.md)
         * [Canned Responses](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses.md)
