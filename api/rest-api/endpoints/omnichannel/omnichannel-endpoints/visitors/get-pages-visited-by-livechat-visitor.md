@@ -19,7 +19,7 @@ description: Get pages visited by livechat visitor
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `roomId` | `8AuphbFBSNBjeZQFs` | Required | Livechat room id |
+| `roomId` | `hhMKhHnnbY79mGs9K` | Required | Livechat room id |
 
 ## Example Call
 
