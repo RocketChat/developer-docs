@@ -66,7 +66,7 @@
 | `livechat/inquiries.list` | Lists all of the open livechat inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list) |
 | `livechat/inquiries.take` | Takes an open inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/take-inquiry) |
 | `livechat/inquiries.queued` | Lists queued inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-queued) |
-| `livechat/inquiries.getOne` | `get` | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one) |
+| `livechat/inquiries.getOne` | Get one inquiry by room id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one) |
 | `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
 
 ## Integrations
