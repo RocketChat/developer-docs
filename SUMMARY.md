@@ -478,7 +478,6 @@
           * [Percentage of abandoned chats by department](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/percentage-of-abandoned-chats-by-department.md)
           * [Departments available by unit Id](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-available-by-unit-id.md)
           * [Departments by Unit Id](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/departments-by-unit-id.md)
-        * [Facebook](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/facebook.md)
         * [Inquiries](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/README.md)
           * [Inquiry Prioritize](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize.md)
           * [Inquiries List](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list.md)

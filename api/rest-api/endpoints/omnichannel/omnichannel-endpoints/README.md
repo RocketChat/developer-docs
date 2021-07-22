@@ -59,12 +59,6 @@
 | `/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://docs.rocket.chat/api/rest-api/methods/livechat/total-abandoned-chats-by-department) |
 | `/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
-## Facebook
-
-| Url | Short Description | Details Page |
-| :--- | :--- | :--- |
-| `livechat/facebook` | post |  |
-
 ## Inquiries
 
 | Url | Short Description | Details Page |
