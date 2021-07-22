@@ -501,6 +501,7 @@
           * [Remove an agent or manager](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager.md)
         * [Visitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/README.md)
           * [Visitor info by ID](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-info-by-id.md)
+          * [Get pages visited by livechat visitor](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-pages-visited-by-livechat-visitor.md)
         * [Canned Responses](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses.md)
         * [Monitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/README.md)
           * [List of Monitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/list-of-monitors.md)
