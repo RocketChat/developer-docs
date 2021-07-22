@@ -4,8 +4,6 @@ description: Sets the priority of an inquiry
 
 # Inquiry Prioritize
 
-
-
 ![](../../../../../../.gitbook/assets/enterprise.jpg)
 
 {% hint style="info" %}
