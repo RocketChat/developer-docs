@@ -40,15 +40,24 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/department` | `get` | \`\` |
-| `livechat/department` | `post` | \`\` |
-| `livechat/department/:_id` | `get` | \`\` |
-| `livechat/department/:_id` | `put` | \`\` |
-| `livechat/department/:_id` | `delete` | \`\` |
-| `livechat/department.autocomplete` | `get` | \`\` |
-| `livechat/department/:departmentId/agents` | `get` | \`\` |
-| `livechat/department/:departmentId/agents` | `post` | \`\` |
-| `livechat/department.listByIds` | get |  |
+| `livechat/department` | Retrieve a list of departments | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-a-list-of-departments) |
+| `livechat/department` | Register a new department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/register-a-new-department) |
+| `livechat/department/:_id` | Retrieve a department's info | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-info-about-a-department) |
+| `livechat/department/:_id` | Update a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-a-department) |
+| `livechat/department/:_id` | Remove a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/remove-a-department) |
+| `livechat/department.autocomplete` | Autocompletes department name | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/department-autocomplete) |
+| `livechat/department/:departmentId/agents` | Retrieve agents of a specific department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department) |
+| `livechat/department/:departmentId/agents` | `post` | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department) |
+| `livechat/department.listByIds` | get | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids) |
+| `livechat/departments.available-by-unit/:unitId` |  Retrieves departments available by unit Id | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id) |
+| `livechat/analytics/departments/amount-of-chats` | Retrieves the number of incoming chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat) |
+| `/livechat/analytics/departments/average-service-time` | Retrieves average service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-service-time-by-department) |
+| `/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-chat-duration-time-by-department) |
+| `/livechat/analytics/departments/total-service-time` | Retrieves total service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-service-time-by-department) |
+| `/livechat/analytics/departments/average-waiting-time` | Retrieves avg waiting time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-waiting-time-by-department) |
+| `/livechat/analytics/departments/total-transferred-chats` | total transferred chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-transferred-chat-by-department) |
+| `/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://docs.rocket.chat/api/rest-api/methods/livechat/total-abandoned-chats-by-department) |
+| `/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
 ## Facebook
 
@@ -140,20 +149,6 @@
 | `livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | `get` | \`\` |
 | `livechat/visitors.autocomplete` | `get` | \`\` |
 | `livechat/visitors.search` | `get` |  |
-
-## Departments Analytics
-
-| Url | Short Description | Details Page |
-| :--- | :--- | :--- |
-| `livechat/departments.available-by-unit/:unitId` |  Retrieves departments available by unit Id | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id) |
-| `livechat/analytics/departments/amount-of-chats` | Retrieves the number of incoming chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat) |
-| `/livechat/analytics/departments/average-service-time` | Retrieves average service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-service-time-by-department) |
-| `/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-chat-duration-time-by-department) |
-| `/livechat/analytics/departments/total-service-time` | Retrieves total service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-service-time-by-department) |
-| `/livechat/analytics/departments/average-waiting-time` | Retrieves avg waiting time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-waiting-time-by-department) |
-| `/livechat/analytics/departments/total-transferred-chats` | total transferred chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-transferred-chat-by-department) |
-| `/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://docs.rocket.chat/api/rest-api/methods/livechat/total-abandoned-chats-by-department) |
-| `/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
 ## Monitors
 
