@@ -10,6 +10,13 @@ It supports the [Offset, Count, and Sort Query Parameters](../../../team-collabo
 | :--- | :--- | :--- |
 | `/api/v1/livechat/inquiries.list` | `yes` | `GET` |
 
+## Headers
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+
 ## Query Parameters
 
 | Argument | Example | Required | Description |
