@@ -482,6 +482,7 @@
           * [Take Inquiry](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/take-inquiry.md)
           * [Inquiry Get One](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one.md)
           * [Inquiry Prioritize](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize.md)
+          * [Inquiries Queued](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-queued.md)
           * [Inquiries List](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list.md)
         * [Integrations](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/integrations.md)
         * [Messages](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/messages.md)

@@ -1,6 +1,10 @@
+---
+description: Lists all of the open livechat inquiries.
+---
+
 # Inquiries List
 
-Lists all of the open livechat inquiries. It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration/offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
