@@ -114,9 +114,9 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `api/v1/livechat/users/:type` | Get a list of agents or managers | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users) |
-| `api/v1/livechat/users/:type` | `post` | \`\` |
-| `api/v1/livechat/users/:type/:_id` | `get` | \`\` |
-| `api/v1/livechat/users/:type/:_id` | `delete` |  |
+| `api/v1/livechat/users/:type` | Register a new agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/register-new-agent-or-manager) |
+| `api/v1/livechat/users/:type/:_id` | Get info about an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager) |
+| `api/v1/livechat/users/:type/:_id` | Removes an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager) |
 
 ## Visitors
 
