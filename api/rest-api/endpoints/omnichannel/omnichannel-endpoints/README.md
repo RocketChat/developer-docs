@@ -133,8 +133,8 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/monitors.list` | Retrieves a list of monitors | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/monitors/list-of-monitors) |
-| `api/v1/livechat/monitors.getOne` | Gives the details of a monitor | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/monitors/get-one-monitor) |
+| `api/v1/livechat/monitors.list` | Retrieves a list of monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/list-of-monitors) |
+| `api/v1/livechat/monitors.getOne` | Gives the details of a monitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/get-one-monitor) |
 
 ## Priorities
 
