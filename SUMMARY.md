@@ -502,6 +502,7 @@
         * [Visitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/README.md)
           * [Visitor info by ID](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-info-by-id.md)
           * [Get pages visited by livechat visitor](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-pages-visited-by-livechat-visitor.md)
+          * [Get livechat visitor's chat history](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-livechat-visitors-chat-history.md)
         * [Canned Responses](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses.md)
         * [Monitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/README.md)
           * [List of Monitors](api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/list-of-monitors.md)
