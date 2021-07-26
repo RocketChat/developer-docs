@@ -1,5 +1,5 @@
 ---
-description: Retrieves array of departments by ids
+description: Retrieves a list of departments by array of department ids
 ---
 
 # Listing departments by ids
