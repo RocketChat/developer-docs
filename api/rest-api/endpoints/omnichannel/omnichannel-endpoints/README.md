@@ -56,7 +56,7 @@
 | `api/v1/livechat/analytics/departments/total-service-time` | Retrieves total service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-service-time-by-department) |
 | `api/v1/livechat/analytics/departments/average-waiting-time` | Retrieves avg waiting time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-waiting-time-by-department) |
 | `api/v1/livechat/analytics/departments/total-transferred-chats` | total transferred chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-transferred-chat-by-department) |
-| `api/v1/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://docs.rocket.chat/api/rest-api/methods/livechat/total-abandoned-chats-by-department) |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/percentage-of-abandoned-chats-by-department) |
 | `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
 ## Inquiries
