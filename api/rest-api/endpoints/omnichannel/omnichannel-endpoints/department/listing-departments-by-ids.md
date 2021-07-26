@@ -4,6 +4,8 @@ description: Retrieves a list of departments by array of department ids
 
 # Listing departments by ids
 
+
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/department.listByIds` | `YES` | `GET` |
