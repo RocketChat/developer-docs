@@ -59,9 +59,9 @@ Retrieve the visitor info
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `/api/v1/canned-responses.getOne` | `yes` | `GET` |
+| `/api/v1/canned-responses/:_id` | `yes` | `GET` |
 
-## Query Parameter
+## Path Parameter
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -72,7 +72,7 @@ Retrieve the visitor info
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/canned-responses.getOne?_id=EwmbZ9nLSx7kFamYB
+     http://localhost:3000/api/v1/canned-responses/EwmbZ9nLSx7kFamYB
 ```
 
 ## Example Result
