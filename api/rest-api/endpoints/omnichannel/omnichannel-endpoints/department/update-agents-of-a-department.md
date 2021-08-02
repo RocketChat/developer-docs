@@ -4,8 +4,6 @@ description: Update agents of a department
 
 # Update agents of a department
 
-Under development 
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/livechat/department/:departmentId/agents` | `YES` | `Post` |
@@ -21,12 +19,12 @@ Under development
 
 | Argument | Example | Required |  |
 | :--- | :--- | :--- | :--- |
-| `departmentId` | `CAJioQNAvLnYWTy8i` | Required | Department id |
+| `departmentId` | `CAJioQNAvLnYWTy8i` | Required | Department Id |
 
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/\
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/department/:departmentId/agents\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -34,6 +32,8 @@ curl --location --request GET 'http://localhost:3000/api/v1/\
 ## Result
 
 ```javascript
-
+{
+    "success": true
+}
 ```
 
