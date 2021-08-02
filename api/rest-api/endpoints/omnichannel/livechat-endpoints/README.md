@@ -5,7 +5,7 @@
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent) |
-| `livechat/agent.next/:token` | Retrieves the data of next available agent   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
+| `livechat/agent.next/:token` | Retrieves the data of the next available agent   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
 
 ## Configuration 
 
@@ -39,7 +39,7 @@
 | `livechat/message/:_id` | Update an omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message) |
 | `livechat/message/:_id` | Removes an omnichannel message | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message) |
 | `livechat/messages.history/:rid` | Retrieve omnichannel messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
-| `livechat/messages` | Send multiple messages at once | Link |
+| `livechat/messages` | Sends array of messages | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages) |
 
 ## Offline Message
 
