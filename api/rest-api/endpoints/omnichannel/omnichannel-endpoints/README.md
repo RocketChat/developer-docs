@@ -47,7 +47,7 @@
 | `api/v1/livechat/department/:_id` | Remove a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/remove-a-department) |
 | `api/v1/livechat/department.autocomplete` | Autocompletes department name | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/department-autocomplete) |
 | `api/v1/livechat/department/:departmentId/agents` | Retrieve agents of a specific department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department) |
-| `api/v1/livechat/department/:departmentId/agents` | `post` | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department) |
+| `api/v1/livechat/department/:departmentId/agents` | Update agents of a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department) |
 | `api/v1/livechat/department.listByIds` | Retrieves list of departments by an array of department ids | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids) |
 | `api/v1/livechat/departments.available-by-unit/:unitId` |  Retrieves departments available by unit Id | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id) |
 | `api/v1/livechat/analytics/departments/amount-of-chats` | Retrieves the number of incoming chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat) |
