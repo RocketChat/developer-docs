@@ -29,6 +29,21 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/department/
 --header 'X-User-Id: myuser-name'
 ```
 
+## Example payload
+
+```javascript
+{
+    "upsert": [{
+    "agentId": "fasdfav22fas",
+    "username": "username22",
+    "count": 20000,
+    "order": 20000
+    }],
+"remove": []
+}
+
+```
+
 ## Result
 
 ```javascript
@@ -36,4 +51,8 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/department/
     "success": true
 }
 ```
+
+{% hint style="info" %}
+When called, the agents in "upsert" will be assigned to the department \(in the URL param\). In case the agents are already there, their information will be updated. The agents in the "remove" key will be unassigned from the department.
+{% endhint %}
 
