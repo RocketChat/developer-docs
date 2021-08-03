@@ -51,7 +51,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `livechat/page.visited` | post | Link |
+| `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history) |
 
 ## Room
 
