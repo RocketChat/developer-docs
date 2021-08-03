@@ -37,20 +37,7 @@ curl -X POST \
 
 ```javascript
 {
-  "page": {
-    "msg": " - http://localhost:3000/packages/rocketchat_livechat/assets/demo.html#page-4",
-    "navigation": {
-      "page": {
-        "change": "url",
-        "title": "",
-        "location": {
-          "href": "http://localhost:3000/packages/rocketchat_livechat/assets/demo.html#page-4"
-        }
-      },
-      "token": "iNKE8a6k6cjbqWhWd"
-    }
-  },
-  "success": true
+    "success": true
 }
 ```
 
