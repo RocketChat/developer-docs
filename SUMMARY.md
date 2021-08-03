@@ -419,8 +419,6 @@
           * [Send an array of messages](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages.md)
         * [Livechat Offline Message](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-offline-message.md)
         * [Livechat Page Visited](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/README.md)
-          * [Get the visitor chat history](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/get-the-visitor-chat-history.md)
-          * [Livechat visitor navigation history](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/livechat-visitor-navigation-history.md)
           * [Send Visitor navigation history](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history.md)
         * [Livechat Room](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/README.md)
           * [Livechat Room Info](api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/livechat-room-info.md)
