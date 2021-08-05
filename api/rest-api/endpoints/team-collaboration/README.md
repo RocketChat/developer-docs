@@ -17,3 +17,10 @@
 
 
 
+## Banners
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/banners.getNew` | Get  | Link |
+| `/api/v1/banners.dismiss` | Post | Link |
+
