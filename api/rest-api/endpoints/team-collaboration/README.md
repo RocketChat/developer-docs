@@ -112,5 +112,12 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | :--- | :--- | :--- |
 | `/api/v1/`cloud.manualRegister | Post | Link |
 
+## Commands
 
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/commands.get` | Get the specification of the slash command. | [Link](commands/get.md) |
+| `/api/v1/commands.list` | Lists all available slash commands. | [Link](commands/list.md) |
+| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](commands/run.md) |
+| `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands/preview.md) |
 
