@@ -67,9 +67,41 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](channels/setdescription.md) |
 | `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](channels/setjoincode.md) |
 | `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](channels/setpurpose.md) |
-| `/api/v1/channels.setReadOnly` | Sets whether a channel is read only or not. | [Link](channels/setreadonly.md) |
+| `/api/v1/channels.setReadOnly` | Sets whether a channel is read-only or not. | [Link](channels/setreadonly.md) |
 | `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](channels/settopic.md) |
 | `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](channels/settype.md) |
 | `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](channels/unarchive.md) |
 | channels.convertToTeam | post |  |
+
+## Chat
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](chat/delete.md) |
+| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](chat/followmessage.md) |
+| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages from a specific date. | [Link](chat/getdeletedmessages.md) |
+| `/api/v1/chat.getDiscussions` | Retrieves the discussions of a room. | [Link](chat/getdiscussions.md) |
+| `/api/v1/chat.getMentionedMessages` | Retrieves the mentioned messages. | [Link](chat/getmentionedmessages.md) |
+| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](chat/getmessage.md) |
+| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](chat/getmessagereadreceipts.md) |
+| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](chat/getpinnedmessages.md) |
+| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](chat/getsnippetedmessages.md) |
+| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](chat/getsnippetedmessagebyid.md) |
+| `/api/v1/chat.getStarredMessages` | Retrieves the starred messages. | [Link](chat/getstarredmessages.md) |
+| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](chat/getthreadmessages.md) |
+| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](chat/getthreadslist.md) |
+| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](chat/ignoreuser.md) |
+| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](chat/pinmessage.md) |
+| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](chat/postmessage.md) |
+| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](chat/react.md) |
+| `/api/v1/chat.reportMessage` | Reports a message. | [Link](chat/reportmessage.md) |
+| `/api/v1/chat.search` | Search for messages in a channel. | [Link](chat/search.md) |
+| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](chat/starmessage.md) |
+| `/api/v1/chat.sendMessage` | Send new chat message. | [Link](chat/sendmessage.md) |
+| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](chat/syncthreadmessages.md) |
+| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](chat/syncthreadslist.md) |
+| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](chat/unfollowmessage.md) |
+| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat/unpinmessage.md) |
+| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat/unstarmessage.md) |
+| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/update.md) |
 
