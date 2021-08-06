@@ -97,7 +97,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.reportMessage` | Reports a message. | [Link](chat/reportmessage.md) |
 | `/api/v1/chat.search` | Search for messages in a channel. | [Link](chat/search.md) |
 | `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](chat/starmessage.md) |
-| `/api/v1/chat.sendMessage` | Send new chat message. | [Link](chat/sendmessage.md) |
+| `/api/v1/chat.sendMessage` | Send a new chat message. | [Link](chat/sendmessage.md) |
 | `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](chat/syncthreadmessages.md) |
 | `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](chat/syncthreadslist.md) |
 | `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](chat/unfollowmessage.md) |
@@ -105,4 +105,12 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat/unstarmessage.md) |
 | `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/update.md) |
 | chat.syncMessages | get |  |
+
+## Cloud
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/`cloud.manualRegister | Post | Link |
+
+
 

@@ -208,6 +208,7 @@
         * [Unfollow Message](api/rest-api/endpoints/team-collaboration/chat/unfollowmessage.md)
         * [Unpins Message](api/rest-api/endpoints/team-collaboration/chat/unpinmessage.md)
         * [Unstar Message](api/rest-api/endpoints/team-collaboration/chat/unstarmessage.md)
+      * [Cloud](api/rest-api/endpoints/team-collaboration/cloud.md)
       * [Access Tokens](api/rest-api/endpoints/team-collaboration/personal-access-tokens.md)
       * [Rate Limiter](api/rest-api/endpoints/team-collaboration/rate-limiter.md)
       * [Pagination](api/rest-api/endpoints/team-collaboration/offset-and-count-and-sort-info.md)
