@@ -104,4 +104,5 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat/unpinmessage.md) |
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat/unstarmessage.md) |
 | `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/update.md) |
+| chat.syncMessages | get |  |
 
