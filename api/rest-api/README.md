@@ -33,7 +33,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/assets.setAsset` | Set an asset image by name. | [Link](endpoints/team-collaboration/assets/setasset.md) |
-| `/api/v1/assets.unsetAsset` | Unset an asset by name | [Link](endpoints/team-collaboration/assets/unsetasset.md) |
+| `/api/v1/assets.unsetAsset` | Unset an asset by name | [Link](endpoints/team-collaboration/assets/unset-asset.md) |
 
 ### AutoTranslate
 
@@ -205,7 +205,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](endpoints/team-collaboration/custom-sounds/list.md) |
+| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](endpoints/team-collaboration/custom-sounds/custom-sounds-list.md) |
 
 ### IM
 
