@@ -1,6 +1,8 @@
-# Get Deleted Messages
+---
+description: Retrieves the deleted messages from a specific date.
+---
 
-Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](../offset-and-count-and-sort-info.md)
+# Get Deleted Messages
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
