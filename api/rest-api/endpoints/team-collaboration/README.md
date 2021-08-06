@@ -121,3 +121,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](commands/run.md) |
 | `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands/preview.md) |
 
+## Custom Sounds
+
+| Url | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | ​[Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list)​ |
+
