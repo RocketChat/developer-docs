@@ -1,6 +1,8 @@
-# Custom User Status List
+---
+description: Lists all available custom user's status.
+---
 
-Lists all available custom user's status.
+# Custom User Status List
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
