@@ -189,9 +189,9 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](endpoints/team-collaboration-endpoints/chat/ignoreuser.md) |
 | `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](endpoints/team-collaboration-endpoints/chat/pinmessage.md) |
 | `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](endpoints/team-collaboration-endpoints/chat/postmessage.md) |
-| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/react.md) |
+| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/chat-message-reactions.md) |
 | `/api/v1/chat.reportMessage` | Reports a message. | [Link](endpoints/team-collaboration-endpoints/chat/reportmessage.md) |
-| `/api/v1/chat.search` | Search for messages in a channel. | [Link](endpoints/team-collaboration-endpoints/chat/search.md) |
+| `/api/v1/chat.search` | Search for messages in a channel. | [Link](endpoints/team-collaboration-endpoints/chat/search-message.md) |
 | `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](endpoints/team-collaboration-endpoints/chat/starmessage.md) |
 | `/api/v1/chat.sendMessage` | Send new chat message. | [Link](endpoints/team-collaboration-endpoints/chat/sendmessage.md) |
 | `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](endpoints/team-collaboration-endpoints/chat/syncthreadmessages.md) |
@@ -199,7 +199,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/unfollowmessage.md) |
 | `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](endpoints/team-collaboration-endpoints/chat/unpinmessage.md) |
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](endpoints/team-collaboration-endpoints/chat/unstarmessage.md) |
-| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](endpoints/team-collaboration-endpoints/chat/update.md) |
+| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](endpoints/team-collaboration-endpoints/chat/message-update.md) |
 
 ### Custom Sounds
 
@@ -326,7 +326,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/commands.get` | Get specification of the slash command. | [Link](endpoints/team-collaboration-endpoints/commands/get.md) |
+| `/api/v1/commands.get` | Get specification of the slash command. | [Link](endpoints/team-collaboration-endpoints/commands/get-lash-commands.md) |
 | `/api/v1/commands.list` | Lists all available slash commands. | [Link](endpoints/team-collaboration-endpoints/commands/list.md) |
 | `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](endpoints/team-collaboration-endpoints/commands/run.md) |
 

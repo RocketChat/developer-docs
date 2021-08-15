@@ -1,4 +1,4 @@
-# List
+# List slash commands
 
 Lists all available slash commands.
 

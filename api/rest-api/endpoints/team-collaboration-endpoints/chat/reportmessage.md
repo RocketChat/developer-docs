@@ -1,6 +1,8 @@
-# Report Message
+---
+description: Reports a message
+---
 
-Reports a message.
+# Report Message
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -2,7 +2,7 @@
 description: Chat Message Delete
 ---
 
-# Delete
+# Chat Message Delete
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

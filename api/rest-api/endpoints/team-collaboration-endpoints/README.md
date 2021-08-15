@@ -93,9 +93,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](chat/ignoreuser.md) |
 | `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](chat/pinmessage.md) |
 | `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](chat/postmessage.md) |
-| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](chat/react.md) |
+| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](chat/chat-message-reactions.md) |
 | `/api/v1/chat.reportMessage` | Reports a message. | [Link](chat/reportmessage.md) |
-| `/api/v1/chat.search` | Search for messages in a channel. | [Link](chat/search.md) |
+| `/api/v1/chat.search` | Search for messages in a channel. | [Link](chat/search-message.md) |
 | `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](chat/starmessage.md) |
 | `/api/v1/chat.sendMessage` | Send a new chat message. | [Link](chat/sendmessage.md) |
 | `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](chat/syncthreadmessages.md) |
@@ -103,7 +103,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](chat/unfollowmessage.md) |
 | `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat/unpinmessage.md) |
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat/unstarmessage.md) |
-| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/update.md) |
+| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/message-update.md) |
 | chat.syncMessages | get |  |
 
 ## Cloud
@@ -116,7 +116,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/commands.get` | Get the specification of the slash command. | [Link](commands/get.md) |
+| `/api/v1/commands.get` | Get the specification of the slash command. | [Link](commands/get-lash-commands.md) |
 | `/api/v1/commands.list` | Lists all available slash commands. | [Link](commands/list.md) |
 | `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](commands/run.md) |
 | `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands/preview.md) |
