@@ -328,7 +328,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | :--- | :--- | :--- |
 | `/api/v1/commands.get` | Get specification of the slash command. | [Link](endpoints/team-collaboration-endpoints/commands/get-lash-commands.md) |
 | `/api/v1/commands.list` | Lists all available slash commands. | [Link](endpoints/team-collaboration-endpoints/commands/list.md) |
-| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](endpoints/team-collaboration-endpoints/commands/run.md) |
+| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](endpoints/team-collaboration-endpoints/commands/execute-a-slash-command.md) |
 
 ### Custom User Status
 
