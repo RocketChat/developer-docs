@@ -120,6 +120,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/commands.list` | Lists all available slash commands. | [Link](commands/list.md) |
 | `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](commands/execute-a-slash-command.md) |
 | `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands/preview.md) |
+| `/api/v1/commands.preview` | Execute command's preview item | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
 
 ## Custom Sounds
 
