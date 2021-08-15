@@ -1,6 +1,6 @@
 # Get a list of departments
 
-It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration/offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration-endpoints/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

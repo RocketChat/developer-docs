@@ -5,7 +5,7 @@ description: Get a list of Livechat custom fields.
 # List livechat custom fields
 
 {% hint style="info" %}
-It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration/offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration-endpoints/offset-and-count-and-sort-info.md).
 {% endhint %}
 
 | URL | Requires Auth | HTTP Method |
