@@ -1,13 +1,13 @@
 # Team Collaboration Endpoints
 
-## Assets
+## Assets Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/assets.setAsset` | Set an asset image by name. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset) |
 | `/api/v1/assets.unsetAsset` | Unset an asset by name. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset) |
 
-## Auto Translate
+## Auto Translate Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
@@ -15,16 +15,14 @@
 | `/api/v1/autotranslate.saveSettings` | Save some settings about auto-translate. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/savesettings) |
 | `/api/v1/autotranslate.translateMessage` | Translate the message. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/translatemessage) |
 
-
-
-## Banners
+## Banners Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/banners.getNew` | Get  | Link |
 | `/api/v1/banners.dismiss` | Post | Link |
 
-## Channels
+## Channels Endpoints
 
 These methods apply to public channels only. Use `groups.*` methods for private channels.
 
@@ -71,9 +69,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](channels/settopic.md) |
 | `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](channels/settype.md) |
 | `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](channels/unarchive.md) |
-| channels.convertToTeam | post |  |
+| `/api/v1/channels.convertToTeam` | post |  |
 
-## Chat
+## Chat Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
@@ -104,15 +102,15 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat/unpinmessage.md) |
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat/unstarmessage.md) |
 | `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/message-update.md) |
-| chat.syncMessages | get |  |
+| `/api/v1/chat.syncMessages` | get |  |
 
-## Cloud
+## Cloud Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/`cloud.manualRegister | Post | Link |
+| `/api/v1/cloud.manualRegister` | Post | Link |
 
-## Commands
+## Commands Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
@@ -122,29 +120,27 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands/preview.md) |
 | `/api/v1/commands.preview` | Execute command's preview item | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
 
-## Custom Sounds
+## Custom Sounds Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | ​[Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list)​ |
 
-## Custom User Status
+## Custom User Status Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](custom-user-status/list.md) |
-| custom-user-status.create | post |  |
-| custom-user-status.delete | post |  |
-| custom-user-status.update | post |  |
+| `/api/v1/custom-user-status.create` | post |  |
+| `/api/v1/custom-user-status.delete` | post |  |
+| `/api/v1/custom-user-status.update` | post |  |
 
-
-
-## DNS
+## DNS Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| dns.resolve.srv | get | Link |
-| dns.resolve.txt | post | Link |
+| `/api/v1/`dns.resolve.srv | get | Link |
+| `/api/v1/`dns.resolve.txt | post | Link |
 
 ## E2E Endpoints
 
@@ -152,9 +148,191 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| e2e.fetchMyKeys | get | Link |
-| e2e.getUsersOfRoomWithoutKey | post | Link |
-| e2e.setRoomKeyID | post |  |
-| e2e.setUserPublicAndPrivateKeys | post |  |
-| e2e.updateGroupKey | post |  |
+| `/api/v1/`e2e.fetchMyKeys | get | Link |
+| `/api/v1/`e2e.getUsersOfRoomWithoutKey | post | Link |
+| `/api/v1/`e2e.setRoomKeyID | post |  |
+| `/api/v1/`e2e.setUserPublicAndPrivateKeys | post |  |
+| `/api/v1/`e2e.updateGroupKey | post |  |
+
+
+
+## Email Inbox Endpoints
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/` |  | Link |
+| `/api/v1/` |  | Link |
+
+## Custom Emojis Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## Groups Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## IM Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## Imports Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Instances** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Integrations** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Invites** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Misc** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Oauth apps** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Permissions** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Push** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Roles** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Rooms** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Settings** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Stats** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Subscriptions** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Teams** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/` | ​Content | Link |
+
+## **Users** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/`users.create | ​post | Link |
+| ​`/api/v1/`users.delete | ​post | Link |
+| users.deleteOwnAccount | post |  |
+| users.getAvatar | get |  |
+| users.setActiveStatus | post |  |
+| users.deactivateIdle | post |  |
+| users.getPresence | get |  |
+| users.info | get |  |
+| users.list | get |  |
+| users.register | get |  |
+| users.resetAvatar | post |  |
+| users.setAvatar | post |  |
+| users.getStatus | get |  |
+| users.setStatus | post |  |
+| users.update | post |  |
+| users.updateOwnBasicInfo | post |  |
+| users.createToken | post |  |
+| users.getPreferences | get |  |
+| users.setPreferences | post |  |
+| users.forgotPassword | post |  |
+| users.getUsernameSuggestion | get |  |
+| users.generatePersonalAccessToken | post |  |
+| users.regeneratePersonalAccessToken | post |  |
+| users.getPersonalAccessTokens | get |  |
+| users.removePersonalAccessToken | post |  |
+| users.2fa.enableEmail | post |  |
+| users.2fa.disableEmail | post |  |
+| users.2fa.sendEmailCode | post |  |
+| users.presence | get |  |
+| users.requestDataDownload | get |  |
+| users.logoutOtherClients | post |  |
+| users.autocomplete | get |  |
+| users.removeOtherTokens | post |  |
+| users.resetE2EKey | post |  |
+| users.resetTOTP | post |  |
+| users.listTeams | get |  |
+| users.logout | post |  |
+
+## **Video Conference** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| ​`/api/v1/video-conference/jitsi.update-timeout` | ​post | Link |
+
+## **Webdav** Endpoints <a id="email-inbox-endpoints"></a>
+
+| URL | Short Description | Details Page |
+| :--- | :--- | :--- |
+| `/api/v1/webdav.getMyAccounts` | ​get | Link |
 
