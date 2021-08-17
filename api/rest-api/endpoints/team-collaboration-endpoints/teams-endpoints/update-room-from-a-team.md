@@ -1,4 +1,4 @@
-# Update Room
+# Update Room from a team
 
 Updates a room from a team. Requires `edit-team-channel` permission.
 

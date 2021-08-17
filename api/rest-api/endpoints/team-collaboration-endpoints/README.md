@@ -285,7 +285,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/teams.convertToChannel` | post |  |
 | `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms.md) |
 | `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](teams-endpoints/remove-room.md) |
-| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](teams-endpoints/update-room.md) |
+| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](teams-endpoints/update-room-from-a-team.md) |
 | `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](teams-endpoints/list-rooms-of-a-team.md) |
 | `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](teams-endpoints/list-rooms-of-user-of-a-team.md) |
 | `/api/v1/teams.members` | Retrieves all team members. | [Link](teams-endpoints/get-teams-members.md) |
