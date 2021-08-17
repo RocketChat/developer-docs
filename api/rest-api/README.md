@@ -59,7 +59,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/users.presence` | Gets all connected users presence. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/presence.md) |
-| `/api/v1/users.create` | Create a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create-user.md) |
+| `/api/v1/users.create` | Create a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint.md) |
 | `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create-users-token.md) |
 | `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users.md) |
 | `/api/v1/users.delete` | Deletes an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/delete.md) |
@@ -83,7 +83,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/users.setAvatar` | Set a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-avatar.md) |
 | `/api/v1/users.setPreferences` | Set user's preferences | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-preferences.md) |
 | `/api/v1/users.setStatus` | Set the user's status | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-status.md) |
-| `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setactivestatus.md) |
+| `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-users-status-active.md) |
 | `/api/v1/users.update` | Update an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/update-user.md) |
 | `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information.md) |
 

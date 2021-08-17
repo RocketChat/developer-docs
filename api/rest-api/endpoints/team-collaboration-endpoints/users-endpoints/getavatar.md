@@ -1,6 +1,10 @@
+---
+description: Gets the URL for a user’s avatar.
+---
+
 # Get Avatar
 
-Gets the URL for a user’s avatar.
+
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -1,4 +1,4 @@
-# Set Active Status
+# Set User's Status Active
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

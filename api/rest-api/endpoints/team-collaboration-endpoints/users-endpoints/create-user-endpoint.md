@@ -1,4 +1,4 @@
-# Create User
+# Create User Endpoint
 
 Create a new user. Requires `create-user` permission.
 
