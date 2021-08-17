@@ -480,7 +480,7 @@
         * [Update Room](api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/update-room.md)
       * [Users Endpoints](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/README.md)
         * [Create Token](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/createtoken.md)
-        * [Create](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create.md)
+        * [Create User](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user.md)
         * [Delete Own Account](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount.md)
         * [Delete](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivateidle.md)
         * [Delete](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/delete.md)

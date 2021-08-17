@@ -1,4 +1,4 @@
-# Create
+# Create User
 
 Create a new user. Requires `create-user` permission.
 
