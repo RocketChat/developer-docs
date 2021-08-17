@@ -1,4 +1,4 @@
-# Remove Room
+# Remove a room from team
 
 Removes a room from a team. Requires `remove-team-channel` permission.
 

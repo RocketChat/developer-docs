@@ -305,7 +305,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/teams.addMembers` | Adds users to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-members.md) |
-| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-rooms.md) |
+| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-rooms-to-a-team.md) |
 | `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/autocomplete-team.md) |
 | `/api/v1/teams.create` | Creates a new team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/create-a-new-team.md) |
 | `/api/v1/teams.delete` | Removes a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/delete-a-team.md) |
@@ -317,7 +317,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-user-of-a-team.md) |
 | `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/get-teams-members.md) |
 | `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-member-from-team.md) |
-| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-room.md) |
+| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-a-room-from-team.md) |
 | `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-a-team.md) |
 | `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-a-teams-member.md) |
 | `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-room-from-a-team.md) |

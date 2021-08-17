@@ -1,4 +1,4 @@
-# Add Rooms
+# Add Rooms to a Team
 
 Adds rooms to the team. Requires `add-team-channel` permission.
 

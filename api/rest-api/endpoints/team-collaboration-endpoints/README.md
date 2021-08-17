@@ -283,8 +283,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](teams-endpoints/list-all-teams-with-info.md) |
 | `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create-a-new-team.md) |
 | `/api/v1/teams.convertToChannel` | post |  |
-| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms.md) |
-| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](teams-endpoints/remove-room.md) |
+| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms-to-a-team.md) |
+| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](teams-endpoints/remove-a-room-from-team.md) |
 | `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](teams-endpoints/update-room-from-a-team.md) |
 | `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](teams-endpoints/list-rooms-of-a-team.md) |
 | `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](teams-endpoints/list-rooms-of-user-of-a-team.md) |
