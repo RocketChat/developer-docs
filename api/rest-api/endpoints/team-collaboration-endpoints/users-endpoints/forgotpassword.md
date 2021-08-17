@@ -1,6 +1,8 @@
-# Forgot Password
+---
+description: Send email to reset your password.
+---
 
-Send email to reset your password.
+# Forgot Password
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

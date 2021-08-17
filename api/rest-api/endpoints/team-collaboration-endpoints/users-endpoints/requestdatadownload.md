@@ -1,6 +1,8 @@
-# Request Data Download
+---
+description: Request the user's data for download.
+---
 
-Request the user's data for download.
+# Request Data Download
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

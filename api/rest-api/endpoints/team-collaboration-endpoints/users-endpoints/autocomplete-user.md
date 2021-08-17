@@ -1,4 +1,4 @@
-# -Logout User Endpoint-
+# Autocomplete User
 
 Document Under Development 
 

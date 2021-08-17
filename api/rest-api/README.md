@@ -61,7 +61,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/users.presence` | Gets all connected users presence. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/presence.md) |
 | `/api/v1/users.create` | Create a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create-user.md) |
 | `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/createtoken.md) |
-| `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deactivateidle.md) |
+| `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users.md) |
 | `/api/v1/users.delete` | Deletes an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/delete.md) |
 | `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount.md) |
 | `/api/v1/users.forgotPassword` | Send email to reset your password. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/forgotpassword.md) |

@@ -1,6 +1,10 @@
-# Delete
+---
+description: Deletes an existing user.
+---
 
-Deletes an existing user. Requires `delete-user` permission.
+# Delete User Endpoint
+
+Requires `delete-user` permission.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

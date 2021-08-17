@@ -1,6 +1,8 @@
-# Get Username Suggestion
+---
+description: Gets a suggestion a new username to user.
+---
 
-Gets a suggestion a new username to user.
+# Get Username Suggestion
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

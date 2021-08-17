@@ -1,6 +1,8 @@
-# Users Presence
+---
+description: Gets all connected users presence.
+---
 
-Gets all connected users presence.
+# Users Presence
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

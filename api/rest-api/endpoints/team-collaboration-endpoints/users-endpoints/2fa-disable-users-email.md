@@ -1,4 +1,4 @@
-# -Logout User Endpoint-
+# 2fa Disable Users Email
 
 Document Under Development 
 
