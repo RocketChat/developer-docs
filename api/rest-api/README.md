@@ -58,34 +58,34 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/users.presence` | Gets all connected users presence. | [Link](endpoints/team-collaboration-endpoints/users/presence.md) |
-| `/api/v1/users.create` | Create a new user. | [Link](endpoints/team-collaboration-endpoints/users/create.md) |
-| `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/team-collaboration-endpoints/users/createtoken.md) |
-| `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/team-collaboration-endpoints/users/deactivateidle.md) |
-| `/api/v1/users.delete` | Deletes an existing user. | [Link](endpoints/team-collaboration-endpoints/users/delete.md) |
-| `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](endpoints/team-collaboration-endpoints/users/deleteownaccount.md) |
-| `/api/v1/users.forgotPassword` | Send email to reset your password. | [Link](endpoints/team-collaboration-endpoints/users/forgotpassword.md) |
-| `/api/v1/users.generatePersonalAccessToken` | Generate Personal Access Token. | [Link](endpoints/team-collaboration-endpoints/users/generatepersonalaccesstoken.md) |
-| `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](endpoints/team-collaboration-endpoints/users/getavatar.md) |
-| `/api/v1/users.getPersonalAccessTokens` | Gets the user's personal access tokens. | [Link](endpoints/team-collaboration-endpoints/users/getpersonalaccesstokens.md) |
-| `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](endpoints/team-collaboration-endpoints/users/get-preferences.md) |
-| `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](endpoints/team-collaboration-endpoints/users/getpresence.md) |
-| `/api/v1/users.getStatus` | Gets the user's status. | [Link](endpoints/team-collaboration-endpoints/users/getstatus.md) |
-| `/api/v1/users.getUsernameSuggestion` | Gets a suggestion a new username to user. | [Link](endpoints/team-collaboration-endpoints/users/getusernamesuggestion.md) |
-| `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](endpoints/team-collaboration-endpoints/users/info.md) |
-| `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/users/list.md) |
-| `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](endpoints/team-collaboration-endpoints/users/regeneratepersonalaccesstoken.md) |
-| `/api/v1/users.register` | Register a new user. | [Link](endpoints/team-collaboration-endpoints/users/register.md) |
-| `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](endpoints/team-collaboration-endpoints/users/removeothertokens.md) |
-| `/api/v1/users.removePersonalAccessToken` | Remove a personal access token. | [Link](endpoints/team-collaboration-endpoints/users/removepersonalaccesstoken.md) |
-| `/api/v1/users.requestDataDownload` | Request users download data. | [Link](endpoints/team-collaboration-endpoints/users/requestdatadownload.md) |
-| `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](endpoints/team-collaboration-endpoints/users/resetavatar.md) |
-| `/api/v1/users.setAvatar` | Set a user's avatar | [Link](endpoints/team-collaboration-endpoints/users/setavatar.md) |
-| `/api/v1/users.setPreferences` | Set user's preferences | [Link](endpoints/team-collaboration-endpoints/users/set-preferences.md) |
-| `/api/v1/users.setStatus` | Set the user's status | [Link](endpoints/team-collaboration-endpoints/users/setstatus.md) |
-| `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](endpoints/team-collaboration-endpoints/users/setactivestatus.md) |
-| `/api/v1/users.update` | Update an existing user. | [Link](endpoints/team-collaboration-endpoints/users/update.md) |
-| `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](endpoints/team-collaboration-endpoints/users/updateownbasicinfo.md) |
+| `/api/v1/users.presence` | Gets all connected users presence. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/presence.md) |
+| `/api/v1/users.create` | Create a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create.md) |
+| `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/createtoken.md) |
+| `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deactivateidle.md) |
+| `/api/v1/users.delete` | Deletes an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/delete.md) |
+| `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount.md) |
+| `/api/v1/users.forgotPassword` | Send email to reset your password. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/forgotpassword.md) |
+| `/api/v1/users.generatePersonalAccessToken` | Generate Personal Access Token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/generatepersonalaccesstoken.md) |
+| `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getavatar.md) |
+| `/api/v1/users.getPersonalAccessTokens` | Gets the user's personal access tokens. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens.md) |
+| `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-preferences.md) |
+| `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getpresence.md) |
+| `/api/v1/users.getStatus` | Gets the user's status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getstatus.md) |
+| `/api/v1/users.getUsernameSuggestion` | Gets a suggestion a new username to user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion.md) |
+| `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/info.md) |
+| `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/list.md) |
+| `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken.md) |
+| `/api/v1/users.register` | Register a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/register.md) |
+| `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](endpoints/team-collaboration-endpoints/users-endpoints/removeothertokens.md) |
+| `/api/v1/users.removePersonalAccessToken` | Remove a personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken.md) |
+| `/api/v1/users.requestDataDownload` | Request users download data. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload.md) |
+| `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/resetavatar.md) |
+| `/api/v1/users.setAvatar` | Set a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setavatar.md) |
+| `/api/v1/users.setPreferences` | Set user's preferences | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-preferences.md) |
+| `/api/v1/users.setStatus` | Set the user's status | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setstatus.md) |
+| `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setactivestatus.md) |
+| `/api/v1/users.update` | Update an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/update.md) |
+| `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/updateownbasicinfo.md) |
 
 ### Channels
 
@@ -256,25 +256,25 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id. | [Link](endpoints/team-collaboration-endpoints/oauthapps/get.md) |
-| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps. | [Link](endpoints/team-collaboration-endpoints/oauthapps/list.md) |
+| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id. | [Link](endpoints/team-collaboration-endpoints/oauthapps-endpoints/get.md) |
+| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps. | [Link](endpoints/team-collaboration-endpoints/oauthapps-endpoints/list.md) |
 
 ### Permissions
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](endpoints/team-collaboration-endpoints/permissions/listall.md) |
-| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](endpoints/team-collaboration-endpoints/permissions/update.md) |
+| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](endpoints/team-collaboration-endpoints/permissions-endpoints/listall.md) |
+| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](endpoints/team-collaboration-endpoints/permissions-endpoints/update.md) |
 
 ### Roles
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/roles.create` | Create a new role in the system. | [Link](endpoints/team-collaboration-endpoints/roles/create.md) |
-| `/api/v1/roles.list` | Gets all the roles in the system. | [Link](endpoints/team-collaboration-endpoints/roles/list.md) |
-| `/api/v1/roles.sync` | Gets all the roles in the system which are updated after a given date. | [Link](endpoints/team-collaboration-endpoints/roles/sync.md) |
-| `/api/v1/roles.addUserToRole` | Assign a role to an user. | [Link](endpoints/team-collaboration-endpoints/roles/addusertorole.md) |
-| `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](endpoints/team-collaboration-endpoints/roles/getusersinrole.md) |
+| `/api/v1/roles.create` | Create a new role in the system. | [Link](endpoints/team-collaboration-endpoints/roles-endpoints/create.md) |
+| `/api/v1/roles.list` | Gets all the roles in the system. | [Link](endpoints/team-collaboration-endpoints/roles-endpoints/list.md) |
+| `/api/v1/roles.sync` | Gets all the roles in the system which are updated after a given date. | [Link](endpoints/team-collaboration-endpoints/roles-endpoints/sync.md) |
+| `/api/v1/roles.addUserToRole` | Assign a role to an user. | [Link](endpoints/team-collaboration-endpoints/roles-endpoints/addusertorole.md) |
+| `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](endpoints/team-collaboration-endpoints/roles-endpoints/getusersinrole.md) |
 | `/api/v1/roles.update` | Update an existing role in the system. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/update.md) |
 | `/api/v1/roles.delete` | Delete a role. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
 
@@ -282,45 +282,45 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/push.token` | `POST` | Saves push token. | [Link](endpoints/team-collaboration-endpoints/push/push-token.md) |
-| `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](endpoints/team-collaboration-endpoints/push/deletepushtoken.md) |
+| `/api/v1/push.token` | `POST` | Saves push token. | [Link](endpoints/team-collaboration-endpoints/push-token-endpoints/push-token.md) |
+| `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](endpoints/team-collaboration-endpoints/push-token-endpoints/deletepushtoken.md) |
 
 ### Rooms
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/rooms.adminRooms` | Retrieve all rooms \(requires special permission\). | [Link](endpoints/team-collaboration-endpoints/rooms/adminrooms.md) |
-| `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](endpoints/team-collaboration-endpoints/rooms/cleanhistory.md) |
-| `/api/v1/rooms.createDiscussion` | Creates a new discussion. | [Link](endpoints/team-collaboration-endpoints/rooms/creatediscussion.md) |
-| `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](endpoints/team-collaboration-endpoints/rooms/favorite.md) |
-| `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/team-collaboration-endpoints/rooms/get.md) |
-| `/api/v1/rooms.getDiscussions` | Gets room's discussions. | [Link](endpoints/team-collaboration-endpoints/rooms/getdiscussions.md) |
-| `/api/v1/rooms.info` | Gets info from a room. | [Link](endpoints/team-collaboration-endpoints/rooms/info.md) |
-| `/api/v1/rooms.leave` | Leaves a room. | [Link](endpoints/team-collaboration-endpoints/rooms/leave.md) |
-| `/api/v1/rooms.saveNotification` | Sets the notifications settings of specific channel. | [Link](endpoints/team-collaboration-endpoints/rooms/savenotification.md) |
-| `/api/v1/rooms.upload/:rid` | Upload a message with attached file. | [Link](endpoints/team-collaboration-endpoints/rooms/upload.md) |
+| `/api/v1/rooms.adminRooms` | Retrieve all rooms \(requires special permission\). | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/adminrooms.md) |
+| `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/cleanhistory.md) |
+| `/api/v1/rooms.createDiscussion` | Creates a new discussion. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/creatediscussion.md) |
+| `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/favorite.md) |
+| `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/get.md) |
+| `/api/v1/rooms.getDiscussions` | Gets room's discussions. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/getdiscussions.md) |
+| `/api/v1/rooms.info` | Gets info from a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/info.md) |
+| `/api/v1/rooms.leave` | Leaves a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/leave.md) |
+| `/api/v1/rooms.saveNotification` | Sets the notifications settings of specific channel. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/savenotification.md) |
+| `/api/v1/rooms.upload/:rid` | Upload a message with attached file. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/upload.md) |
 
 ### Teams
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](endpoints/team-collaboration-endpoints/teams/add-members.md) |
-| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](endpoints/team-collaboration-endpoints/teams/add-rooms.md) |
-| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](endpoints/team-collaboration-endpoints/teams/autocomplete.md) |
-| `/api/v1/teams.create` | Creates a new team. | [Link](endpoints/team-collaboration-endpoints/teams/create.md) |
-| `/api/v1/teams.delete` | Removes a team. | [Link](endpoints/team-collaboration-endpoints/teams/delete.md) |
-| `/api/v1/teams.info` | Gets a team's information. | [Link](endpoints/team-collaboration-endpoints/teams/info.md) |
-| `/api/v1/teams.leave` | Leaves a team. | [Link](endpoints/team-collaboration-endpoints/teams/leave.md) |
-| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams/list.md) |
-| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/team-collaboration-endpoints/teams/list-all.md) |
-| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/team-collaboration-endpoints/teams/list-rooms.md) |
-| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams/list-rooms-of-user.md) |
-| `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/team-collaboration-endpoints/teams/members.md) |
-| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](endpoints/team-collaboration-endpoints/teams/remove-member.md) |
-| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/team-collaboration-endpoints/teams/remove-room.md) |
-| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](endpoints/team-collaboration-endpoints/teams/update.md) |
-| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams/update-member.md) |
-| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams/update-room.md) |
+| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-members.md) |
+| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-rooms.md) |
+| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/autocomplete.md) |
+| `/api/v1/teams.create` | Creates a new team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/create.md) |
+| `/api/v1/teams.delete` | Removes a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/delete.md) |
+| `/api/v1/teams.info` | Gets a team's information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/info.md) |
+| `/api/v1/teams.leave` | Leaves a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/leave.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list.md) |
+| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-all.md) |
+| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms.md) |
+| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-user.md) |
+| `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/members.md) |
+| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-member.md) |
+| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-room.md) |
+| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update.md) |
+| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-member.md) |
+| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-room.md) |
 
 ### Command Methods
 
@@ -349,33 +349,33 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](endpoints/team-collaboration-endpoints/settings/get.md) |
-| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](endpoints/team-collaboration-endpoints/settings/public.md) |
-| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](endpoints/team-collaboration-endpoints/settings/oauth.md) |
-| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](endpoints/team-collaboration-endpoints/settings/service-configuration.md) |
-| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](endpoints/team-collaboration-endpoints/settings/get-by-id.md) |
-| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](endpoints/team-collaboration-endpoints/settings/update.md) |
+| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get.md) |
+| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/public.md) |
+| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/oauth.md) |
+| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/service-configuration.md) |
+| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-by-id.md) |
+| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/update.md) |
 
 ### Subscriptions
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/subscriptions.get` | `GET` | Get all subscriptions. | [Link](endpoints/team-collaboration-endpoints/subscriptions/get.md) |
-| `/api/v1/subscriptions.getOne` | `GET` | Get the subscription by room Id. | [Link](endpoints/team-collaboration-endpoints/subscriptions/getone.md) |
-| `/api/v1/subscriptions.read` | `POST` | Mark a room as read. | [Link](endpoints/team-collaboration-endpoints/subscriptions/read.md) |
-| `/api/v1/subscriptions.unread` | `POST` | Mark messages as unread. | [Link](endpoints/team-collaboration-endpoints/subscriptions/unread.md) |
+| `/api/v1/subscriptions.get` | `GET` | Get all subscriptions. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/get.md) |
+| `/api/v1/subscriptions.getOne` | `GET` | Get the subscription by room Id. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/getone.md) |
+| `/api/v1/subscriptions.read` | `POST` | Mark a room as read. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/read.md) |
+| `/api/v1/subscriptions.unread` | `POST` | Mark messages as unread. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/unread.md) |
 
 ### Video Conference
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](endpoints/team-collaboration-endpoints/video-conference/jitsi-update-timeout.md) |
+| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout.md) |
 
 ### Webdav
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts. | [Link](endpoints/team-collaboration-endpoints/webdav/getmyaccounts.md) |
+| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts. | [Link](endpoints/team-collaboration-endpoints/webdav-endpoint/getmyaccounts.md) |
 
 ### Licenses
 

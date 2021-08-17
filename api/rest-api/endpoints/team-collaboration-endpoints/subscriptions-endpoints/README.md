@@ -1,4 +1,4 @@
-# Subscriptions
+# Subscriptions Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

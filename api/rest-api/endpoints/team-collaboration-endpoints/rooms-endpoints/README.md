@@ -2,7 +2,7 @@
 description: REST API Rooms Methods
 ---
 
-# Rooms
+# Rooms Endpoints
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |

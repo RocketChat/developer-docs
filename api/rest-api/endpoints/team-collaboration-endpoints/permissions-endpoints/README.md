@@ -1,4 +1,4 @@
-# Permissions
+# Permissions Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

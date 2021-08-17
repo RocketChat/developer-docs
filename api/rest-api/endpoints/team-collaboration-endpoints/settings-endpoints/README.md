@@ -1,4 +1,4 @@
-# Settings
+# Settings Endpoints
 
 You can get and update the settings via the REST API, only if you have permission to.
 

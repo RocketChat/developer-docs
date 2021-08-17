@@ -2,7 +2,7 @@
 description: REST API Teams Methods
 ---
 
-# Teams
+# Teams Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

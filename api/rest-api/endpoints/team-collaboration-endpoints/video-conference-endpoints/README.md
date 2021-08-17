@@ -1,4 +1,4 @@
-# Video Conference
+# Video Conference Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

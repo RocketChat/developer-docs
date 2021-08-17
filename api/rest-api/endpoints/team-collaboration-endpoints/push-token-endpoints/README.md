@@ -2,7 +2,7 @@
 description: REST API Push Token Methods
 ---
 
-# Push Token
+# Push Token Endpoints
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |

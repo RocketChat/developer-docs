@@ -2,7 +2,7 @@
 description: REST API Roles Methods
 ---
 
-# Roles
+# Roles Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

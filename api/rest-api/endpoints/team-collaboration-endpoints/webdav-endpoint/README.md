@@ -1,4 +1,4 @@
-# Webdav
+# Webdav Endpoint
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
