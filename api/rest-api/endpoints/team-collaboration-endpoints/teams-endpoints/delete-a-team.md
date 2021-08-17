@@ -1,4 +1,4 @@
-# Delete
+# Delete a Team
 
 Removes a team. Requires `delete-team` permission.
 

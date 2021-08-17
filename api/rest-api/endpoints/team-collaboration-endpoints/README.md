@@ -291,12 +291,12 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/teams.members` | Retrieves all team members. | [Link](teams-endpoints/members.md) |
 | `/api/v1/teams.addMembers` | Adds members to the team. | [Link](teams-endpoints/add-members.md) |
 | `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](teams-endpoints/update-member.md) |
-| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](teams-endpoints/remove-member.md) |
-| `/api/v1/teams.leave` | Leaves a team. | [Link](teams-endpoints/leave.md) |
-| `/api/v1/teams.info` | Gets a team's information. | [Link](teams-endpoints/info.md) |
-| `/api/v1/teams.delete` | Removes a team. | [Link](teams-endpoints/delete.md) |
-| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](teams-endpoints/autocomplete.md) |
-| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](teams-endpoints/update.md) |
+| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](teams-endpoints/remove-member-from-team.md) |
+| `/api/v1/teams.leave` | Leaves a team. | [Link](teams-endpoints/leave-a-team.md) |
+| `/api/v1/teams.info` | Gets a team's information. | [Link](teams-endpoints/get-teams-info.md) |
+| `/api/v1/teams.delete` | Removes a team. | [Link](teams-endpoints/delete-a-team.md) |
+| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](teams-endpoints/autocomplete-team.md) |
+| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](teams-endpoints/update-a-team.md) |
 
 ## **Users** Endpoints <a id="email-inbox-endpoints"></a>
 

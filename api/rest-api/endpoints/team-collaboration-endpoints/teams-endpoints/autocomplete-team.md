@@ -1,4 +1,4 @@
-# Autocomplete
+# Autocomplete Team
 
 List the teams whose names match a given pattern.
 

@@ -1,4 +1,4 @@
-# Info
+# Get Team's Info
 
 Gets a team's information. If the team is not public, the caller user must be a member of the team.
 

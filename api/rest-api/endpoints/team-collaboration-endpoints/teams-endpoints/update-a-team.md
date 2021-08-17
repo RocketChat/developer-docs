@@ -1,4 +1,4 @@
-# Update
+# Update a Team
 
 Updates an existing team \(name and type\). Requires `edit-team`  permission.
 

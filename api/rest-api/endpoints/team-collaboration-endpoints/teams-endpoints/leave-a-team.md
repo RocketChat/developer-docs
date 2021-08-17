@@ -1,4 +1,4 @@
-# Leave
+# Leave a Team
 
 Causes the caller to be removed from the team.
 

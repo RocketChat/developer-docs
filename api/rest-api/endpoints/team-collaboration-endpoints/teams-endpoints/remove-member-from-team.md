@@ -1,4 +1,4 @@
-# Remove Member
+# Remove Member from Team
 
 Removes a member from a team. Requires `edit-team-member` permission.
 
