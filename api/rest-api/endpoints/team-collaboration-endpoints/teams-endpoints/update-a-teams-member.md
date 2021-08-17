@@ -1,4 +1,4 @@
-# Update Member
+# Update a Team's Member
 
 Updates a team member's roles. Requires `edit-team-member` permission.
 

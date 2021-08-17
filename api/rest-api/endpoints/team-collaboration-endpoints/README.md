@@ -290,7 +290,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](teams-endpoints/list-rooms-of-user.md) |
 | `/api/v1/teams.members` | Retrieves all team members. | [Link](teams-endpoints/members.md) |
 | `/api/v1/teams.addMembers` | Adds members to the team. | [Link](teams-endpoints/add-members.md) |
-| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](teams-endpoints/update-member.md) |
+| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](teams-endpoints/update-a-teams-member.md) |
 | `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](teams-endpoints/remove-member-from-team.md) |
 | `/api/v1/teams.leave` | Leaves a team. | [Link](teams-endpoints/leave-a-team.md) |
 | `/api/v1/teams.info` | Gets a team's information. | [Link](teams-endpoints/get-teams-info.md) |

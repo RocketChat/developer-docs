@@ -319,7 +319,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-member-from-team.md) |
 | `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-room.md) |
 | `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-a-team.md) |
-| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-member.md) |
+| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-a-teams-member.md) |
 | `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-room.md) |
 
 ### Command Methods
