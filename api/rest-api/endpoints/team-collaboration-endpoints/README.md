@@ -55,53 +55,53 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.online` | List all online users of a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/online) |
 | `/api/v1/channels.open` | Adds the channel back to the user's list of channels. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/open) |
 | `/api/v1/channels.removeleader` | Removes the role of Leader for a user in the current channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/removeleader) |
-| `/api/v1/channels.removeModerator` | Removes the role of moderator from a user in a channel. | [Link](channels/removemoderator.md) |
-| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in a channel. | [Link](channels/removeowner.md) |
-| `/api/v1/channels.rename` | Changes a channel's name. | [Link](channels/rename.md) |
-| `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](channels/roles.md) |
-| `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](channels/setannouncement.md) |
-| `/api/v1/channels.setCustomFields` | Sets a channel's custom fields. | [Link](channels/setcustomfields.md) |
-| `/api/v1/channels.setDefault` | Sets a channel's default status. | [Link](channels/setdefault.md) |
-| `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](channels/setdescription.md) |
-| `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](channels/setjoincode.md) |
-| `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](channels/setpurpose.md) |
-| `/api/v1/channels.setReadOnly` | Sets whether a channel is read-only or not. | [Link](channels/setreadonly.md) |
-| `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](channels/settopic.md) |
-| `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](channels/settype.md) |
-| `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](channels/unarchive.md) |
+| `/api/v1/channels.removeModerator` | Removes the role of moderator from a user in a channel. | [Link](channels-endpoints/removemoderator.md) |
+| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in a channel. | [Link](channels-endpoints/removeowner.md) |
+| `/api/v1/channels.rename` | Changes a channel's name. | [Link](channels-endpoints/rename.md) |
+| `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](channels-endpoints/roles.md) |
+| `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](channels-endpoints/setannouncement.md) |
+| `/api/v1/channels.setCustomFields` | Sets a channel's custom fields. | [Link](channels-endpoints/setcustomfields.md) |
+| `/api/v1/channels.setDefault` | Sets a channel's default status. | [Link](channels-endpoints/setdefault.md) |
+| `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](channels-endpoints/setdescription.md) |
+| `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](channels-endpoints/setjoincode.md) |
+| `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](channels-endpoints/setpurpose.md) |
+| `/api/v1/channels.setReadOnly` | Sets whether a channel is read-only or not. | [Link](channels-endpoints/setreadonly.md) |
+| `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](channels-endpoints/settopic.md) |
+| `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](channels-endpoints/settype.md) |
+| `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](channels-endpoints/unarchive.md) |
 | `/api/v1/channels.convertToTeam` | post |  |
 
 ## Chat Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](chat/delete.md) |
-| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](chat/followmessage.md) |
-| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages from a specific date. | [Link](chat/getdeletedmessages.md) |
-| `/api/v1/chat.getDiscussions` | Retrieves the discussions of a room. | [Link](chat/getdiscussions.md) |
-| `/api/v1/chat.getMentionedMessages` | Retrieves the mentioned messages. | [Link](chat/getmentionedmessages.md) |
-| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](chat/getmessage.md) |
-| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](chat/getmessagereadreceipts.md) |
-| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](chat/getpinnedmessages.md) |
-| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](chat/getsnippetedmessages.md) |
-| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](chat/getsnippetedmessagebyid.md) |
-| `/api/v1/chat.getStarredMessages` | Retrieves the starred messages. | [Link](chat/getstarredmessages.md) |
-| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](chat/getthreadmessages.md) |
-| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](chat/getthreadslist.md) |
-| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](chat/ignoreuser.md) |
-| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](chat/pinmessage.md) |
-| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](chat/postmessage.md) |
-| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](chat/chat-message-reactions.md) |
-| `/api/v1/chat.reportMessage` | Reports a message. | [Link](chat/reportmessage.md) |
-| `/api/v1/chat.search` | Search for messages in a channel. | [Link](chat/search-message.md) |
-| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](chat/starmessage.md) |
-| `/api/v1/chat.sendMessage` | Send a new chat message. | [Link](chat/sendmessage.md) |
-| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](chat/syncthreadmessages.md) |
-| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](chat/syncthreadslist.md) |
-| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](chat/unfollowmessage.md) |
-| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat/unpinmessage.md) |
-| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat/unstarmessage.md) |
-| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat/message-update.md) |
+| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](chat-endpoints/delete.md) |
+| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](chat-endpoints/followmessage.md) |
+| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages from a specific date. | [Link](chat-endpoints/getdeletedmessages.md) |
+| `/api/v1/chat.getDiscussions` | Retrieves the discussions of a room. | [Link](chat-endpoints/getdiscussions.md) |
+| `/api/v1/chat.getMentionedMessages` | Retrieves the mentioned messages. | [Link](chat-endpoints/getmentionedmessages.md) |
+| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](chat-endpoints/getmessage.md) |
+| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](chat-endpoints/getmessagereadreceipts.md) |
+| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](chat-endpoints/getpinnedmessages.md) |
+| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](chat-endpoints/getsnippetedmessages.md) |
+| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](chat-endpoints/getsnippetedmessagebyid.md) |
+| `/api/v1/chat.getStarredMessages` | Retrieves the starred messages. | [Link](chat-endpoints/getstarredmessages.md) |
+| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](chat-endpoints/getthreadmessages.md) |
+| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](chat-endpoints/getthreadslist.md) |
+| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](chat-endpoints/ignoreuser.md) |
+| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](chat-endpoints/pinmessage.md) |
+| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](chat-endpoints/postmessage.md) |
+| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](chat-endpoints/chat-message-reactions.md) |
+| `/api/v1/chat.reportMessage` | Reports a message. | [Link](chat-endpoints/reportmessage.md) |
+| `/api/v1/chat.search` | Search for messages in a channel. | [Link](chat-endpoints/search-message.md) |
+| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](chat-endpoints/starmessage.md) |
+| `/api/v1/chat.sendMessage` | Send a new chat message. | [Link](chat-endpoints/sendmessage.md) |
+| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](chat-endpoints/syncthreadmessages.md) |
+| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](chat-endpoints/syncthreadslist.md) |
+| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](chat-endpoints/unfollowmessage.md) |
+| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat-endpoints/unpinmessage.md) |
+| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat-endpoints/unstarmessage.md) |
+| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat-endpoints/message-update.md) |
 | `/api/v1/chat.syncMessages` | get |  |
 
 ## Cloud Endpoints
@@ -114,10 +114,10 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/commands.get` | Get the specification of the slash command. | [Link](commands/get-lash-commands.md) |
-| `/api/v1/commands.list` | Lists all available slash commands. | [Link](commands/list.md) |
-| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](commands/execute-a-slash-command.md) |
-| `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands/preview.md) |
+| `/api/v1/commands.get` | Get the specification of the slash command. | [Link](commands-endpoints/get-lash-commands.md) |
+| `/api/v1/commands.list` | Lists all available slash commands. | [Link](commands-endpoints/list.md) |
+| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](commands-endpoints/execute-a-slash-command.md) |
+| `/api/v1/commands.preview` | Gets the preview data for the command and executes the preview item. | [Link](commands-endpoints/preview.md) |
 | `/api/v1/commands.preview` | Execute command's preview item | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
 
 ## Custom Sounds Endpoints
@@ -130,7 +130,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](custom-user-status/list.md) |
+| `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](custom-user-status-endpoints/list.md) |
 | `/api/v1/custom-user-status.create` | post |  |
 | `/api/v1/custom-user-status.delete` | post |  |
 | `/api/v1/custom-user-status.update` | post |  |

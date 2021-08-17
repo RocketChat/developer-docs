@@ -2,7 +2,7 @@
 description: REST API Custom Emoji Methods
 ---
 
-# Custom Emoji
+# Custom Emoji Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

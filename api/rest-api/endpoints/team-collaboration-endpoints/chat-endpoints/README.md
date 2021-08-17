@@ -2,5 +2,5 @@
 description: REST API Chat Methods
 ---
 
-# Chat
+# Chat Endpoints
 

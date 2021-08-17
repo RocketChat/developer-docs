@@ -1,4 +1,4 @@
-# Access Tokens
+# Access Tokens Endpoints
 
 With the addition of the ability to generate personal access tokens, you can use the REST API without having to sign in.
 

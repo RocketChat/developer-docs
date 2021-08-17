@@ -2,5 +2,5 @@
 description: REST API Assets Methods
 ---
 
-# Assets
+# Assets Endpoints
 

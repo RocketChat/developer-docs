@@ -2,7 +2,7 @@
 description: REST API Groups Methods
 ---
 
-# Groups
+# Groups Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

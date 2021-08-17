@@ -1,4 +1,4 @@
-# Cloud
+# Cloud Endpoints
 
 Document under development
 

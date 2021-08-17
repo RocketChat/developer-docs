@@ -32,16 +32,16 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/assets.setAsset` | Set an asset image by name. | [Link](endpoints/team-collaboration-endpoints/assets/setasset.md) |
-| `/api/v1/assets.unsetAsset` | Unset an asset by name | [Link](endpoints/team-collaboration-endpoints/assets/unset-asset.md) |
+| `/api/v1/assets.setAsset` | Set an asset image by name. | [Link](endpoints/team-collaboration-endpoints/assets-endpoints/setasset.md) |
+| `/api/v1/assets.unsetAsset` | Unset an asset by name | [Link](endpoints/team-collaboration-endpoints/assets-endpoints/unset-asset.md) |
 
 ### AutoTranslate
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/autotranslate.getSupportedLanguages` | Get the supported languages by the autotranslate. | [Link](endpoints/team-collaboration-endpoints/autotranslate/getsupportedlanguages.md) |
-| `/api/v1/autotranslate.saveSettings` | Save some settings about autotranslate. | [Link](endpoints/team-collaboration-endpoints/autotranslate/savesettings.md) |
-| `/api/v1/autotranslate.translateMessage` | Translate the message. | [Link](endpoints/team-collaboration-endpoints/autotranslate/translatemessage.md) |
+| `/api/v1/autotranslate.getSupportedLanguages` | Get the supported languages by the autotranslate. | [Link](endpoints/team-collaboration-endpoints/auto-translate-endpoints/getsupportedlanguages.md) |
+| `/api/v1/autotranslate.saveSettings` | Save some settings about autotranslate. | [Link](endpoints/team-collaboration-endpoints/auto-translate-endpoints/savesettings.md) |
+| `/api/v1/autotranslate.translateMessage` | Translate the message. | [Link](endpoints/team-collaboration-endpoints/auto-translate-endpoints/translatemessage.md) |
 
 ### Authentication
 
@@ -91,121 +91,121 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/channels.addAll` | Adds all of the users on the server to a channel. | [Link](endpoints/team-collaboration-endpoints/channels/addall.md) |
-| `/api/v1/channels.addLeader` | Gives the role of Leader for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels/addleader.md) |
-| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels/addowner.md) |
-| `/api/v1/channels.anonymousread` | Gets the messages in public channels to an anonymous user | [Link](endpoints/team-collaboration-endpoints/channels/anonymousread.md) |
-| `/api/v1/channels.archive` | Archives a channel. | [Link](endpoints/team-collaboration-endpoints/channels/archive.md) |
-| `/api/v1/channels.close` | Removes a channel from a user's list of channels. | [Link](endpoints/team-collaboration-endpoints/channels/close.md) |
-| `/api/v1/channels.counters` | Gets channel counters. | [Link](endpoints/team-collaboration-endpoints/channels/counters.md) |
-| `/api/v1/channels.create` | Creates a new channel. | [Link](endpoints/team-collaboration-endpoints/channels/create.md) |
-| `/api/v1/channels.delete` | Removes a channel. | [Link](endpoints/team-collaboration-endpoints/channels/delete.md) |
-| `/api/v1/channels.files` | Gets a list of files from a channel. | [Link](endpoints/team-collaboration-endpoints/channels/files.md) |
-| `/api/v1/channels.getAllUserMentionsByChannel` | Gets all the mentions of a channel. | [Link](endpoints/team-collaboration-endpoints/channels/getallusermentionsbychannel.md) |
-| `/api/v1/channels.getIntegrations` | Gets the channel's integration. | [Link](endpoints/team-collaboration-endpoints/channels/getintegrations.md) |
-| `/api/v1/channels.history` | Retrieves the messages from a channel. | [Link](endpoints/team-collaboration-endpoints/channels/history.md) |
-| `/api/v1/channels.info` | Gets a channel's information. | [Link](endpoints/team-collaboration-endpoints/channels/info.md) |
-| `/api/v1/channels.invite` | Adds a user to a channel. | [Link](endpoints/team-collaboration-endpoints/channels/invite.md) |
-| `/api/v1/channels.join` | Joins yourself to a channel. | [Link](endpoints/team-collaboration-endpoints/channels/join.md) |
-| `/api/v1/channels.kick` | Removes a user from a channel. | [Link](endpoints/team-collaboration-endpoints/channels/kick.md) |
-| `/api/v1/channels.leave` | Removes the calling user from a channel. | [Link](endpoints/team-collaboration-endpoints/channels/leave.md) |
-| `/api/v1/channels.list` | Retrieves all of the channels from the server. | [Link](endpoints/team-collaboration-endpoints/channels/list.md) |
-| `/api/v1/channels.list.joined` | Gets only the channels the calling user has joined. | [Link](endpoints/team-collaboration-endpoints/channels/list-joined.md) |
-| `/api/v1/channels.members` | Retrieves all channel users. | [Link](endpoints/team-collaboration-endpoints/channels/members.md) |
-| `/api/v1/channels.messages` | Retrieves all channel messages. | [Link](endpoints/team-collaboration-endpoints/channels/messages.md) |
-| `/api/v1/channels.moderators` | List all moderators of a channel. | [Link](endpoints/team-collaboration-endpoints/channels/moderators.md) |
-| `/api/v1/channels.online` | List all online users of a channel. | [Link](endpoints/team-collaboration-endpoints/channels/online.md) |
-| `/api/v1/channels.open` | Adds the channel back to the user's list of channels. | [Link](endpoints/team-collaboration-endpoints/channels/open.md) |
-| `/api/v1/channels.removeleader` | Removes the role of Leader for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels/removeleader.md) |
-| `/api/v1/channels.rename` | Changes a channel's name. | [Link](endpoints/team-collaboration-endpoints/channels/rename.md) |
-| `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](endpoints/team-collaboration-endpoints/channels/roles.md) |
-| `/api/v1/channels.setCustomFields` | Sets a channel's custom fields. | [Link](endpoints/team-collaboration-endpoints/channels/setcustomfields.md) |
-| `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](endpoints/team-collaboration-endpoints/channels/setannouncement.md) |
-| `/api/v1/channels.setDefault` | Sets whether a channel is a default channel or not. | [Link](endpoints/team-collaboration-endpoints/channels/setdefault.md) |
-| `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](endpoints/team-collaboration-endpoints/channels/setdescription.md) |
-| `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](endpoints/team-collaboration-endpoints/channels/setjoincode.md) |
-| `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](endpoints/team-collaboration-endpoints/channels/setpurpose.md) |
-| `/api/v1/channels.setReadOnly` | Sets whether a channel is read only or not. | [Link](endpoints/team-collaboration-endpoints/channels/setreadonly.md) |
-| `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](endpoints/team-collaboration-endpoints/channels/settopic.md) |
-| `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](endpoints/team-collaboration-endpoints/channels/settype.md) |
-| `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](endpoints/team-collaboration-endpoints/channels/unarchive.md) |
-| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels/addowner.md) |
-| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels/removeowner.md) |
+| `/api/v1/channels.addAll` | Adds all of the users on the server to a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/addall.md) |
+| `/api/v1/channels.addLeader` | Gives the role of Leader for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/addleader.md) |
+| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/addowner.md) |
+| `/api/v1/channels.anonymousread` | Gets the messages in public channels to an anonymous user | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/anonymousread.md) |
+| `/api/v1/channels.archive` | Archives a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/archive.md) |
+| `/api/v1/channels.close` | Removes a channel from a user's list of channels. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/close.md) |
+| `/api/v1/channels.counters` | Gets channel counters. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/counters.md) |
+| `/api/v1/channels.create` | Creates a new channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/create.md) |
+| `/api/v1/channels.delete` | Removes a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/delete.md) |
+| `/api/v1/channels.files` | Gets a list of files from a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/files.md) |
+| `/api/v1/channels.getAllUserMentionsByChannel` | Gets all the mentions of a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/getallusermentionsbychannel.md) |
+| `/api/v1/channels.getIntegrations` | Gets the channel's integration. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/getintegrations.md) |
+| `/api/v1/channels.history` | Retrieves the messages from a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/history.md) |
+| `/api/v1/channels.info` | Gets a channel's information. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/info.md) |
+| `/api/v1/channels.invite` | Adds a user to a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/invite.md) |
+| `/api/v1/channels.join` | Joins yourself to a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/join.md) |
+| `/api/v1/channels.kick` | Removes a user from a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/kick.md) |
+| `/api/v1/channels.leave` | Removes the calling user from a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/leave.md) |
+| `/api/v1/channels.list` | Retrieves all of the channels from the server. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/list.md) |
+| `/api/v1/channels.list.joined` | Gets only the channels the calling user has joined. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/list-joined.md) |
+| `/api/v1/channels.members` | Retrieves all channel users. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/members.md) |
+| `/api/v1/channels.messages` | Retrieves all channel messages. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/messages.md) |
+| `/api/v1/channels.moderators` | List all moderators of a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/moderators.md) |
+| `/api/v1/channels.online` | List all online users of a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/online.md) |
+| `/api/v1/channels.open` | Adds the channel back to the user's list of channels. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/open.md) |
+| `/api/v1/channels.removeleader` | Removes the role of Leader for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/removeleader.md) |
+| `/api/v1/channels.rename` | Changes a channel's name. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/rename.md) |
+| `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/roles.md) |
+| `/api/v1/channels.setCustomFields` | Sets a channel's custom fields. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setcustomfields.md) |
+| `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setannouncement.md) |
+| `/api/v1/channels.setDefault` | Sets whether a channel is a default channel or not. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setdefault.md) |
+| `/api/v1/channels.setDescription` | Sets a channel's description. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setdescription.md) |
+| `/api/v1/channels.setJoinCode` | Sets the channel's code required to join it. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setjoincode.md) |
+| `/api/v1/channels.setPurpose` | Sets a channel's description. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setpurpose.md) |
+| `/api/v1/channels.setReadOnly` | Sets whether a channel is read only or not. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/setreadonly.md) |
+| `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/settopic.md) |
+| `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/settype.md) |
+| `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/unarchive.md) |
+| `/api/v1/channels.addOwner` | Gives the role of owner for a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/addowner.md) |
+| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in the current channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/removeowner.md) |
 
 ### Groups
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/groups.archive` | Archives a private group. | [Link](endpoints/team-collaboration-endpoints/groups/archive.md) |
-| `/api/v1/groups.addLeader` | Gives the role of Leader for a user in the current group. | [Link](endpoints/team-collaboration-endpoints/groups/addleader.md) |
-| `/api/v1/groups.close` | Removes a private group from the list of groups. | [Link](endpoints/team-collaboration-endpoints/groups/close.md) |
-| `/api/v1/groups.counters` | Gets group counters. | [Link](endpoints/team-collaboration-endpoints/groups/counters.md) |
-| `/api/v1/groups.create` | Creates a new private group. | [Link](endpoints/team-collaboration-endpoints/groups/create.md) |
-| `/api/v1/groups.delete` | Removes a private group. | [Link](endpoints/team-collaboration-endpoints/groups/delete.md) |
-| `/api/v1/groups.files` | Gets a list of files from a private group. | [Link](endpoints/team-collaboration-endpoints/groups/files.md) |
-| `/api/v1/groups.history` | Retrieves the messages from a private group. | [Link](endpoints/team-collaboration-endpoints/groups/history.md) |
-| `/api/v1/groups.info` | Gets the information about a private group. | [Link](endpoints/team-collaboration-endpoints/groups/info.md) |
-| `/api/v1/groups.invite` | Adds a user to the private group. | [Link](endpoints/team-collaboration-endpoints/groups/invite.md) |
-| `/api/v1/groups.kick` | Removes a user from a private group. | [Link](endpoints/team-collaboration-endpoints/groups/kick.md) |
-| `/api/v1/groups.leave` | Removes the calling user from the private group. | [Link](endpoints/team-collaboration-endpoints/groups/leave.md) |
-| `/api/v1/groups.list` | List the private groups the caller is part of. | [Link](endpoints/team-collaboration-endpoints/groups/list.md) |
-| `/api/v1/groups.listAll` | List all the private groups. | [Link](endpoints/team-collaboration-endpoints/groups/listall.md) |
-| `/api/v1/groups.members` | Gets the users of participants of a private group. | [Link](endpoints/team-collaboration-endpoints/groups/members.md) |
-| `/api/v1/groups.messages` | Retrieves all group messages. | [Link](endpoints/team-collaboration-endpoints/groups/messages.md) |
-| `/api/v1/groups.moderators` | List all moderators of a group. | [Link](endpoints/team-collaboration-endpoints/groups/moderators.md) |
+| `/api/v1/groups.archive` | Archives a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/archive.md) |
+| `/api/v1/groups.addLeader` | Gives the role of Leader for a user in the current group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/addleader.md) |
+| `/api/v1/groups.close` | Removes a private group from the list of groups. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/close.md) |
+| `/api/v1/groups.counters` | Gets group counters. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/counters.md) |
+| `/api/v1/groups.create` | Creates a new private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/create.md) |
+| `/api/v1/groups.delete` | Removes a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/delete.md) |
+| `/api/v1/groups.files` | Gets a list of files from a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/files.md) |
+| `/api/v1/groups.history` | Retrieves the messages from a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/history.md) |
+| `/api/v1/groups.info` | Gets the information about a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/info.md) |
+| `/api/v1/groups.invite` | Adds a user to the private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/invite.md) |
+| `/api/v1/groups.kick` | Removes a user from a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/kick.md) |
+| `/api/v1/groups.leave` | Removes the calling user from the private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/leave.md) |
+| `/api/v1/groups.list` | List the private groups the caller is part of. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/list.md) |
+| `/api/v1/groups.listAll` | List all the private groups. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/listall.md) |
+| `/api/v1/groups.members` | Gets the users of participants of a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/members.md) |
+| `/api/v1/groups.messages` | Retrieves all group messages. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/messages.md) |
+| `/api/v1/groups.moderators` | List all moderators of a group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/moderators.md) |
 | `/api/v1/groups.online` | List all online users of a group. | [Link](https://github.com/RocketChat/docs/tree/aeb4dd8de5017b7cd9c9d9367a0e2155f911ba5a/api/rest-api/methods/groups/online.md) |
-| `/api/v1/groups.open` | Adds the private group back to the list of groups. | [Link](endpoints/team-collaboration-endpoints/groups/open.md) |
-| `/api/v1/groups.removeLeader` | Removes the role of Leader for a user in the current group. | [Link](endpoints/team-collaboration-endpoints/groups/removeleader.md) |
-| `/api/v1/groups.rename` | Changes the name of the private group. | [Link](endpoints/team-collaboration-endpoints/groups/rename.md) |
-| `/api/v1/groups.roles` | Gets the user's roles in the private group. | [Link](endpoints/team-collaboration-endpoints/groups/roles.md) |
-| `/api/v1/groups.setAnnouncement` | Sets a group's announcement. | [Link](endpoints/team-collaboration-endpoints/groups/setannouncement.md) |
-| `/api/v1/groups.setCustomFields` | Sets private group's custom fields. | [Link](endpoints/team-collaboration-endpoints/groups/setcustomfields.md) |
-| `/api/v1/groups.setDescription` | Sets a private group's description. | [Link](endpoints/team-collaboration-endpoints/groups/setdescription.md) |
-| `/api/v1/groups.setPurpose` | Sets a private group's description. | [Link](endpoints/team-collaboration-endpoints/groups/setpurpose.md) |
-| `/api/v1/groups.setReadOnly` | Sets whether the room is read only or not. | [Link](endpoints/team-collaboration-endpoints/groups/setreadonly.md) |
-| `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](endpoints/team-collaboration-endpoints/groups/settopic.md) |
-| `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](endpoints/team-collaboration-endpoints/groups/settype.md) |
-| `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](endpoints/team-collaboration-endpoints/groups/unarchive.md) |
-| `/api/v1/groups.addOwner` | Gives the role of owner for a user in the current group. | [Link](endpoints/team-collaboration-endpoints/groups/addowner.md) |
-| `/api/v1/groups.removeOwner` | Removes the role of owner from a user in the current Group. | [Link](endpoints/team-collaboration-endpoints/groups/removeowner.md) |
+| `/api/v1/groups.open` | Adds the private group back to the list of groups. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/open.md) |
+| `/api/v1/groups.removeLeader` | Removes the role of Leader for a user in the current group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/removeleader.md) |
+| `/api/v1/groups.rename` | Changes the name of the private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/rename.md) |
+| `/api/v1/groups.roles` | Gets the user's roles in the private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/roles.md) |
+| `/api/v1/groups.setAnnouncement` | Sets a group's announcement. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/setannouncement.md) |
+| `/api/v1/groups.setCustomFields` | Sets private group's custom fields. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/setcustomfields.md) |
+| `/api/v1/groups.setDescription` | Sets a private group's description. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/setdescription.md) |
+| `/api/v1/groups.setPurpose` | Sets a private group's description. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/setpurpose.md) |
+| `/api/v1/groups.setReadOnly` | Sets whether the room is read only or not. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/setreadonly.md) |
+| `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/settopic.md) |
+| `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/settype.md) |
+| `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/unarchive.md) |
+| `/api/v1/groups.addOwner` | Gives the role of owner for a user in the current group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/addowner.md) |
+| `/api/v1/groups.removeOwner` | Removes the role of owner from a user in the current Group. | [Link](endpoints/team-collaboration-endpoints/groups-endpoints/removeowner.md) |
 
 ### Chat
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/delete.md) |
-| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/followmessage.md) |
-| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages since specific date. | [Link](endpoints/team-collaboration-endpoints/chat/getdeletedmessages.md) |
-| `/api/v1/chat.getDiscussions` | Retrieves the discussions messages of a room. | [Link](endpoints/team-collaboration-endpoints/chat/getdiscussions.md) |
-| `/api/v1/chat.getMentionedMessages` | Retrieves mentioned messages. | [Link](endpoints/team-collaboration-endpoints/chat/getmentionedmessages.md) |
-| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](endpoints/team-collaboration-endpoints/chat/getmessage.md) |
-| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](endpoints/team-collaboration-endpoints/chat/getmessagereadreceipts.md) |
-| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](endpoints/team-collaboration-endpoints/chat/getpinnedmessages.md) |
-| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](endpoints/team-collaboration-endpoints/chat/getsnippetedmessages.md) |
-| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](endpoints/team-collaboration-endpoints/chat/getsnippetedmessagebyid.md) |
-| `/api/v1/chat.getStarredMessages` | Retrieves starred messages. | [Link](endpoints/team-collaboration-endpoints/chat/getstarredmessages.md) |
-| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](endpoints/team-collaboration-endpoints/chat/getthreadmessages.md) |
-| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](endpoints/team-collaboration-endpoints/chat/getthreadslist.md) |
-| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](endpoints/team-collaboration-endpoints/chat/ignoreuser.md) |
-| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](endpoints/team-collaboration-endpoints/chat/pinmessage.md) |
-| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](endpoints/team-collaboration-endpoints/chat/postmessage.md) |
-| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/chat-message-reactions.md) |
-| `/api/v1/chat.reportMessage` | Reports a message. | [Link](endpoints/team-collaboration-endpoints/chat/reportmessage.md) |
-| `/api/v1/chat.search` | Search for messages in a channel. | [Link](endpoints/team-collaboration-endpoints/chat/search-message.md) |
-| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](endpoints/team-collaboration-endpoints/chat/starmessage.md) |
-| `/api/v1/chat.sendMessage` | Send new chat message. | [Link](endpoints/team-collaboration-endpoints/chat/sendmessage.md) |
-| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](endpoints/team-collaboration-endpoints/chat/syncthreadmessages.md) |
-| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](endpoints/team-collaboration-endpoints/chat/syncthreadslist.md) |
-| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat/unfollowmessage.md) |
-| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](endpoints/team-collaboration-endpoints/chat/unpinmessage.md) |
-| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](endpoints/team-collaboration-endpoints/chat/unstarmessage.md) |
-| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](endpoints/team-collaboration-endpoints/chat/message-update.md) |
+| `/api/v1/chat.delete` | Deletes an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/delete.md) |
+| `/api/v1/chat.followMessage` | Follows an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/followmessage.md) |
+| `/api/v1/chat.getDeletedMessages` | Retrieves the deleted messages since specific date. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getdeletedmessages.md) |
+| `/api/v1/chat.getDiscussions` | Retrieves the discussions messages of a room. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getdiscussions.md) |
+| `/api/v1/chat.getMentionedMessages` | Retrieves mentioned messages. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getmentionedmessages.md) |
+| `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getmessage.md) |
+| `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getmessagereadreceipts.md) |
+| `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getpinnedmessages.md) |
+| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getsnippetedmessages.md) |
+| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getsnippetedmessagebyid.md) |
+| `/api/v1/chat.getStarredMessages` | Retrieves starred messages. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getstarredmessages.md) |
+| `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getthreadmessages.md) |
+| `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/getthreadslist.md) |
+| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/ignoreuser.md) |
+| `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/pinmessage.md) |
+| `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/postmessage.md) |
+| `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/chat-message-reactions.md) |
+| `/api/v1/chat.reportMessage` | Reports a message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/reportmessage.md) |
+| `/api/v1/chat.search` | Search for messages in a channel. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/search-message.md) |
+| `/api/v1/chat.starMessage` | Stars a chat message for the authenticated user. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/starmessage.md) |
+| `/api/v1/chat.sendMessage` | Send new chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/sendmessage.md) |
+| `/api/v1/chat.syncThreadMessages` | Retrieves synced thread's messages. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/syncthreadmessages.md) |
+| `/api/v1/chat.syncThreadsList` | Retrieves thread's synced channel threads. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/syncthreadslist.md) |
+| `/api/v1/chat.unfollowMessage` | Unfollows an existing chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/unfollowmessage.md) |
+| `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/unpinmessage.md) |
+| `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/unstarmessage.md) |
+| `/api/v1/chat.update` | Updates the text of the chat message. | [Link](endpoints/team-collaboration-endpoints/chat-endpoints/message-update.md) |
 
 ### Custom Sounds
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](endpoints/team-collaboration-endpoints/custom-sounds/custom-sounds-list.md) |
+| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](endpoints/team-collaboration-endpoints/custom-sounds-endpoints/custom-sounds-list.md) |
 
 ### IM
 
@@ -326,24 +326,24 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/commands.get` | Get specification of the slash command. | [Link](endpoints/team-collaboration-endpoints/commands/get-lash-commands.md) |
-| `/api/v1/commands.list` | Lists all available slash commands. | [Link](endpoints/team-collaboration-endpoints/commands/list.md) |
-| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](endpoints/team-collaboration-endpoints/commands/execute-a-slash-command.md) |
+| `/api/v1/commands.get` | Get specification of the slash command. | [Link](endpoints/team-collaboration-endpoints/commands-endpoints/get-lash-commands.md) |
+| `/api/v1/commands.list` | Lists all available slash commands. | [Link](endpoints/team-collaboration-endpoints/commands-endpoints/list.md) |
+| `/api/v1/commands.run` | Execute a slash command in the specified room. | [Link](endpoints/team-collaboration-endpoints/commands-endpoints/execute-a-slash-command.md) |
 
 ### Custom User Status
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](endpoints/team-collaboration-endpoints/custom-user-status/list.md) |
+| `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](endpoints/team-collaboration-endpoints/custom-user-status-endpoints/list.md) |
 
 ### Emoji Custom
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/emoji-custom.list` | List the custom emojis available. | [Link](endpoints/team-collaboration-endpoints/emoji-custom/list.md) |
-| `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](endpoints/team-collaboration-endpoints/emoji-custom/create.md) |
-| `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](endpoints/team-collaboration-endpoints/emoji-custom/delete.md) |
-| `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](endpoints/team-collaboration-endpoints/emoji-custom/update.md) |
+| `/api/v1/emoji-custom.list` | List the custom emojis available. | [Link](endpoints/team-collaboration-endpoints/custom-emoji-endpoints/list.md) |
+| `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](endpoints/team-collaboration-endpoints/custom-emoji-endpoints/create.md) |
+| `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](endpoints/team-collaboration-endpoints/custom-emoji-endpoints/delete.md) |
+| `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](endpoints/team-collaboration-endpoints/custom-emoji-endpoints/update.md) |
 
 ### Settings
 

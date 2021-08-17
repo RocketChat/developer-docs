@@ -2,5 +2,5 @@
 description: REST API Channels Methods
 ---
 
-# Channels
+# Channels Endpoints
 

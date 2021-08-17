@@ -1,4 +1,4 @@
-# Rate Limiter
+# Rate Limiter Endpoints
 
 {% hint style="info" %}
 Note: Some endpoints \(like `/api/v1/users.updateOwnBasicInfo`\) might trigger the rate limiter and cannot currently be customized/disabled in`Administration Panel`
