@@ -76,7 +76,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-users-list.md) |
 | `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken.md) |
 | `/api/v1/users.register` | Register a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/register-users.md) |
-| `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](endpoints/team-collaboration-endpoints/users-endpoints/removeothertokens.md) |
+| `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens.md) |
 | `/api/v1/users.removePersonalAccessToken` | Remove a personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken.md) |
 | `/api/v1/users.requestDataDownload` | Request users download data. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload.md) |
 | `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar.md) |
@@ -307,12 +307,12 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/teams.addMembers` | Adds users to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-members.md) |
 | `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/add-rooms.md) |
 | `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/autocomplete.md) |
-| `/api/v1/teams.create` | Creates a new team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/create.md) |
+| `/api/v1/teams.create` | Creates a new team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/create-a-new-team.md) |
 | `/api/v1/teams.delete` | Removes a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/delete.md) |
 | `/api/v1/teams.info` | Gets a team's information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/info.md) |
 | `/api/v1/teams.leave` | Leaves a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/leave.md) |
-| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list.md) |
-| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-all.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/teams-list-of-caller.md) |
+| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-all-teams-with-info.md) |
 | `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms.md) |
 | `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-user.md) |
 | `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/members.md) |

@@ -279,9 +279,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](teams-endpoints/list.md) |
-| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](teams-endpoints/list-all.md) |
-| `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](teams-endpoints/teams-list-of-caller.md) |
+| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](teams-endpoints/list-all-teams-with-info.md) |
+| `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create-a-new-team.md) |
 | `/api/v1/teams.convertToChannel` | post |  |
 | `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms.md) |
 | `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](teams-endpoints/remove-room.md) |

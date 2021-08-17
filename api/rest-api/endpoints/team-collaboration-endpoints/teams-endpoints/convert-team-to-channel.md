@@ -1,4 +1,6 @@
-# Logout User Endpoint
+# Convert Team To Channel
+
+
 
 Document Under Development 
 

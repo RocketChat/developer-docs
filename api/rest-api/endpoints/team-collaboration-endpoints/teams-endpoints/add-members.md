@@ -2,7 +2,7 @@
 description: Adds members to the team.
 ---
 
-# Add Members
+# Add Members to Team
 
 Requires `add-team-member`  or `edit-team-member` permissions.
 
