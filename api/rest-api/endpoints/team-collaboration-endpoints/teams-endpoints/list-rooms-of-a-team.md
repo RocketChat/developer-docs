@@ -1,4 +1,4 @@
-# List Rooms
+# List Rooms of a team
 
 List all rooms of the team. It supports the [Offset and Count Parameters](../others/offset-and-count-and-sort-info.md).
 

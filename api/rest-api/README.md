@@ -313,9 +313,9 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/teams.leave` | Leaves a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/leave-a-team.md) |
 | `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/teams-list-of-caller.md) |
 | `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-all-teams-with-info.md) |
-| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms.md) |
-| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-user.md) |
-| `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/members.md) |
+| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-a-team.md) |
+| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-user-of-a-team.md) |
+| `/api/v1/teams.members` | Retrieves all team members. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/get-teams-members.md) |
 | `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-member-from-team.md) |
 | `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/remove-room.md) |
 | `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/update-a-team.md) |

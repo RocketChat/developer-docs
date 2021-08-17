@@ -1,6 +1,8 @@
-# Members
+---
+description: Lists the members of a team
+---
 
-Lists the public and private teams the caller is part of. It supports the [Offset, Count, and Sort Query Parameters](../others/offset-and-count-and-sort-info.md).
+# Get Team's Members
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
