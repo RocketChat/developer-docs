@@ -1,6 +1,10 @@
+---
+description: Adds members to the team.
+---
+
 # Add Members
 
-Adds user to the team. Requires `add-team-member`  or `edit-team-member` permissions.
+Requires `add-team-member`  or `edit-team-member` permissions.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

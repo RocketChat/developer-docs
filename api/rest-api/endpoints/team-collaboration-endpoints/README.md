@@ -279,7 +279,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](teams-endpoints/add-members.md) |
+| `/api/v1/teams.addMembers` | Adds members to the team. | [Link](teams-endpoints/add-members.md) |
 | `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms.md) |
 | `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](teams-endpoints/autocomplete.md) |
 | `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create.md) |
