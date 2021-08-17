@@ -1,4 +1,4 @@
-# Get Presence
+# Get User's Presence
 
 Gets a user's presence if the query string `userId` or `username` is provided, otherwise it gets the callee's.
 

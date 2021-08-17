@@ -1,4 +1,4 @@
-# Info
+# Get User's Info
 
 Retrieves information about a user, the result is only limited to what the callee has access to view. It supports [Fields Query Parameter](../others/query-and-fields-info.md) with the `userRooms` field, that returns the rooms that the user is part of. The `rooms` field returns the `unread` property and this field is variable, based on the setting `Unread_Count` \(`Admin Panel` =&gt; `General` =&gt; `Unread_Count`\), this setting provides the ability to choose between options to count the unread messages.
 

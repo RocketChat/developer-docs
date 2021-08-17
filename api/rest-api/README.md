@@ -69,10 +69,10 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getavatar.md) |
 | `/api/v1/users.getPersonalAccessTokens` | Gets the user's personal access tokens. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens.md) |
 | `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-user-preferences.md) |
-| `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getpresence.md) |
+| `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence.md) |
 | `/api/v1/users.getStatus` | Gets the user's status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-status.md) |
 | `/api/v1/users.getUsernameSuggestion` | Gets a suggestion a new username to user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion.md) |
-| `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/info.md) |
+| `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-users-info.md) |
 | `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-users-list.md) |
 | `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken.md) |
 | `/api/v1/users.register` | Register a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/register-users.md) |
