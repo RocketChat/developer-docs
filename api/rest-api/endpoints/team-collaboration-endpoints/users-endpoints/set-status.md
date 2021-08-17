@@ -1,6 +1,8 @@
-# Set Status
+---
+description: Sets a user Status when the status message and state is given.
+---
 
-Sets a user Status when the status message and state is given.
+# Set Status
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

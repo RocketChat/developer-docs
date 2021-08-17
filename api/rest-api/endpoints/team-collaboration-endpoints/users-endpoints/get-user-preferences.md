@@ -2,7 +2,7 @@
 description: Gets all preferences of the user.
 ---
 
-# Get Preferences
+# Get User Preferences
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -60,7 +60,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | :--- | :--- | :--- |
 | `/api/v1/users.presence` | Gets all connected users presence. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/presence.md) |
 | `/api/v1/users.create` | Create a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create-user.md) |
-| `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/createtoken.md) |
+| `/api/v1/users.createToken` | Create a user authentication token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/create-users-token.md) |
 | `/api/v1/users.deactivateIdle` | Deactivate idle users. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users.md) |
 | `/api/v1/users.delete` | Deletes an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/delete.md) |
 | `/api/v1/users.deleteOwnAccount` | Deletes your own user account. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount.md) |
@@ -68,24 +68,24 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/users.generatePersonalAccessToken` | Generate Personal Access Token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/generatepersonalaccesstoken.md) |
 | `/api/v1/users.getAvatar` | Gets the URL for a user's avatar. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getavatar.md) |
 | `/api/v1/users.getPersonalAccessTokens` | Gets the user's personal access tokens. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens.md) |
-| `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-preferences.md) |
+| `/api/v1/users.getPreferences` | Gets all preferences of user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-user-preferences.md) |
 | `/api/v1/users.getPresence` | Gets the online presence of a user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getpresence.md) |
-| `/api/v1/users.getStatus` | Gets the user's status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getstatus.md) |
+| `/api/v1/users.getStatus` | Gets the user's status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-status.md) |
 | `/api/v1/users.getUsernameSuggestion` | Gets a suggestion a new username to user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion.md) |
 | `/api/v1/users.info` | Gets a user's information, limited to the caller's permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/info.md) |
-| `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/list.md) |
+| `/api/v1/users.list` | All of the users and their information, limited to permissions. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/get-users-list.md) |
 | `/api/v1/users.regeneratePersonalAccessToken` | Regenerate a user personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken.md) |
-| `/api/v1/users.register` | Register a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/register.md) |
+| `/api/v1/users.register` | Register a new user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/register-users.md) |
 | `/api/v1/users.removeOtherTokens` | Remove all other user tokens | [Link](endpoints/team-collaboration-endpoints/users-endpoints/removeothertokens.md) |
 | `/api/v1/users.removePersonalAccessToken` | Remove a personal access token. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken.md) |
 | `/api/v1/users.requestDataDownload` | Request users download data. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload.md) |
-| `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/resetavatar.md) |
-| `/api/v1/users.setAvatar` | Set a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setavatar.md) |
+| `/api/v1/users.resetAvatar` | Reset a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar.md) |
+| `/api/v1/users.setAvatar` | Set a user's avatar | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-avatar.md) |
 | `/api/v1/users.setPreferences` | Set user's preferences | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-preferences.md) |
-| `/api/v1/users.setStatus` | Set the user's status | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setstatus.md) |
+| `/api/v1/users.setStatus` | Set the user's status | [Link](endpoints/team-collaboration-endpoints/users-endpoints/set-status.md) |
 | `/api/v1/users.setActiveStatus` | Set a user's active status. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/setactivestatus.md) |
-| `/api/v1/users.update` | Update an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/update.md) |
-| `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/updateownbasicinfo.md) |
+| `/api/v1/users.update` | Update an existing user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/update-user.md) |
+| `/api/v1/users.updateOwnBasicInfo` | Update basic information of own user. | [Link](endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information.md) |
 
 ### Channels
 

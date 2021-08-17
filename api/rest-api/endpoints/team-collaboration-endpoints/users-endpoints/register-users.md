@@ -1,4 +1,4 @@
-# Register
+# Register Users
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

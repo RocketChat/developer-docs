@@ -1,4 +1,4 @@
-# Create Token
+# Create Users Token
 
 **IMPORTANT** To be able to use this endpoint you must set the ENV VAR \(CREATE\_TOKENS\_FOR\_USERS=true\).
 
