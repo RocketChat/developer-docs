@@ -302,43 +302,43 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/`users.create | ​post | Link |
-| ​`/api/v1/`users.delete | ​post | Link |
-| users.deleteOwnAccount | post |  |
-| users.getAvatar | get |  |
-| users.setActiveStatus | post |  |
-| users.deactivateIdle | post |  |
-| users.getPresence | get |  |
-| users.info | get |  |
-| users.list | get |  |
-| users.register | get |  |
-| users.resetAvatar | post |  |
-| users.setAvatar | post |  |
-| users.getStatus | get |  |
-| users.setStatus | post |  |
-| users.update | post |  |
-| users.updateOwnBasicInfo | post |  |
-| users.createToken | post |  |
-| users.getPreferences | get |  |
-| users.setPreferences | post |  |
-| users.forgotPassword | post |  |
-| users.getUsernameSuggestion | get |  |
-| users.generatePersonalAccessToken | post |  |
-| users.regeneratePersonalAccessToken | post |  |
-| users.getPersonalAccessTokens | get |  |
-| users.removePersonalAccessToken | post |  |
-| users.2fa.enableEmail | post |  |
-| users.2fa.disableEmail | post |  |
-| users.2fa.sendEmailCode | post |  |
-| users.presence | get |  |
-| users.requestDataDownload | get |  |
-| users.logoutOtherClients | post |  |
-| users.autocomplete | get |  |
-| users.removeOtherTokens | post |  |
-| users.resetE2EKey | post |  |
-| users.resetTOTP | post |  |
-| users.listTeams | get |  |
-| users.logout | post |  |
+| ​`/api/v1/users.create` | ​post | Link |
+| ​`/api/v1/users.delete` | ​post | Link |
+| ​`/api/v1/users.deleteOwnAccount` | `post` | \`\` |
+| `​/api/v1/users.getAvatar` | `get` | \`\` |
+| `​/api/v1/users.setActiveStatus` | `post` | \`\` |
+| `​/api/v1/users.deactivateIdle` | `post` | \`\` |
+| `​/api/v1/users.getPresence` | `get` | \`\` |
+| `​/api/v1/users.info` | `get` | \`\` |
+| `​/api/v1/users.list` | `get` | \`\` |
+| `​/api/v1/users.register` | `get` | \`\` |
+| `​/api/v1/users.resetAvatar` | `post` | \`\` |
+| `​/api/v1/users.setAvatar` | `post` | \`\` |
+| `​/api/v1/users.getStatus` | `get` | \`\` |
+| `​/api/v1/users.setStatus` | `post` | \`\` |
+| `​/api/v1/users.update` | `post` | \`\` |
+| `​/api/v1/users.updateOwnBasicInfo` | `post` | \`\` |
+| `​/api/v1/users.createToken` | `post` | \`\` |
+| `​/api/v1/users.getPreferences` | `get` | \`\` |
+| `​/api/v1/users.setPreferences` | `post` | \`\` |
+| `​/api/v1/users.forgotPassword` | `post` | \`\` |
+| `​/api/v1/users.getUsernameSuggestion` | `get` | \`\` |
+| `​/api/v1/users.generatePersonalAccessToken` | `post` | \`\` |
+| `​/api/v1/users.regeneratePersonalAccessToken` | `post` | \`\` |
+| `​/api/v1/users.getPersonalAccessTokens` | `get` | \`\` |
+| `​/api/v1/users.removePersonalAccessToken` | `post` | \`\` |
+| `​/api/v1/users.2fa.enableEmail` | `post` | \`\` |
+| `​/api/v1/users.2fa.disableEmail` | `post` | \`\` |
+| `​/api/v1/users.2fa.sendEmailCode` | `post` | \`\` |
+| `​/api/v1/users.presence` | `get` | \`\` |
+| `​/api/v1/users.requestDataDownload` | `get` | \`\` |
+| `​/api/v1/users.logoutOtherClients` | `post` | \`\` |
+| `​/api/v1/users.autocomplete` | `get` | \`\` |
+| `​/api/v1/users.removeOtherTokens` | `post` | \`\` |
+| `​/api/v1/users.resetE2EKey` | `post` | \`\` |
+| `​/api/v1/users.resetTOTP` | `post` | \`\` |
+| `​/api/v1/users.listTeams` | `get` | \`\` |
+| `​/api/v1/users.logout` | post |  |
 
 ## **Video Conference** Endpoints <a id="email-inbox-endpoints"></a>
 
