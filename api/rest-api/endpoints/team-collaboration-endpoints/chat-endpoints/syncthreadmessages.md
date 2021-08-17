@@ -1,6 +1,6 @@
 # Sync Thread Messages
 
-It supports the [Query, Fields](../query-and-fields-info.md#query-example) and [sort](../offset-and-count-and-sort-info.md).
+It supports the [Query, Fields](../others/query-and-fields-info.md#query-example) and [sort](../others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -2,7 +2,7 @@
 description: REST API Integration Methods
 ---
 
-# Integration
+# Integration Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

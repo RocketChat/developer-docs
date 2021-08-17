@@ -4,7 +4,7 @@ description: REST API Admin Rooms Methods
 
 # Admin Rooms
 
-Retrieves all rooms \(requires the `view-room-administration` permission\). It supports the [Offset, Count, and Sort Query Parameters](../offset-and-count-and-sort-info.md).
+Retrieves all rooms \(requires the `view-room-administration` permission\). It supports the [Offset, Count, and Sort Query Parameters](../others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

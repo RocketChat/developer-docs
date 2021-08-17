@@ -1,6 +1,6 @@
 # Get Thread Messages
 
-Get thread messages. It supports the [Offset, Count, and Sort Query Parameters](../offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../query-and-fields-info.md).
+Get thread messages. It supports the [Offset, Count, and Sort Query Parameters](../others/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../others/query-and-fields-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

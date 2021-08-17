@@ -1,6 +1,6 @@
 # Role Get Users In Role
 
-Gets the users that belongs to a role. It supports the [Offset and Count Only](../offset-and-count-and-sort-info.md).
+Gets the users that belongs to a role. It supports the [Offset and Count Only](../others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

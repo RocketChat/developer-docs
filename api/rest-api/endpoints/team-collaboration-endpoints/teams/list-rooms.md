@@ -1,6 +1,6 @@
 # List Rooms
 
-List all rooms of the team. It supports the [Offset and Count Parameters](../offset-and-count-and-sort-info.md).
+List all rooms of the team. It supports the [Offset and Count Parameters](../others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

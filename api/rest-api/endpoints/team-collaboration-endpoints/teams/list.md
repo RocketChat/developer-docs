@@ -1,6 +1,6 @@
 # List
 
-Lists the public and private teams the caller is part of. It supports the [Offset, Count, and Sort Query Parameters](../offset-and-count-and-sort-info.md).
+Lists the public and private teams the caller is part of. It supports the [Offset, Count, and Sort Query Parameters](../others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

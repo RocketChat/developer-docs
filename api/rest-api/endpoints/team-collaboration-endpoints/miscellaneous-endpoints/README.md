@@ -2,7 +2,7 @@
 description: REST API Miscellaneous Methods
 ---
 
-# Miscellaneous
+# Miscellaneous Endpoints
 
 Just some generic information, such as information about the server and authenticated user.
 

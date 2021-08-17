@@ -2,7 +2,7 @@
 
 List all public settings.
 
-It supports the [Offset, Count, and Sort Query Parameters](../offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

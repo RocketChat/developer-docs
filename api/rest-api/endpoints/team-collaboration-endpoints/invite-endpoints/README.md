@@ -1,4 +1,4 @@
-# Invite
+# Invite Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

@@ -1,4 +1,4 @@
-# IM
+# IM Endpoints
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |

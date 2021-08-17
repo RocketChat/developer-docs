@@ -6,7 +6,7 @@ redirect_from:
 
 # List
 
-List all custom emojis available. It supports the [Query Parameters only](../query-and-fields-info.md#query-example).
+List all custom emojis available. It supports the [Query Parameters only](../others/query-and-fields-info.md#query-example).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

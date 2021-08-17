@@ -4,7 +4,7 @@ description: Lists all Livechat triggers.
 
 # List Livechat Triggers
 
-It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration-endpoints/offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../../../team-collaboration-endpoints/others/offset-and-count-and-sort-info.md).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

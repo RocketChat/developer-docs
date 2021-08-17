@@ -1,6 +1,6 @@
 # Get Pinned Messages
 
-Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Query Parameters](../offset-and-count-and-sort-info.md)
+Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Query Parameters](../others/offset-and-count-and-sort-info.md)
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
@@ -11,8 +11,8 @@ Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Que
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `roomId` | `ByehQjC44FwMeiLbX` | Required | The room id |
-| `offset` | `0` | Optional | See [Offset Parameter](../offset-and-count-and-sort-info.md) |
-| `count` | `1` | Optional | See [Count Parameter](../offset-and-count-and-sort-info.md) |
+| `offset` | `0` | Optional | See [Offset Parameter](../others/offset-and-count-and-sort-info.md) |
+| `count` | `1` | Optional | See [Count Parameter](../others/offset-and-count-and-sort-info.md) |
 
 ## Example Call
 

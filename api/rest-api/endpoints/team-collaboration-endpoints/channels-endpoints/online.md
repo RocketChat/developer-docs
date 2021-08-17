@@ -1,6 +1,6 @@
 # Channel Online
 
-Lists all online users of a channel if the channel's id is provided, otherwise it gets all online users of all channels. It supports the [Query Parameters only](../query-and-fields-info.md#query-example).
+Lists all online users of a channel if the channel's id is provided, otherwise it gets all online users of all channels. It supports the [Query Parameters only](../others/query-and-fields-info.md#query-example).
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
@@ -10,7 +10,7 @@ Lists all online users of a channel if the channel's id is provided, otherwise i
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `query` | `{"_id":"5HmCfpoB7jp2uibTC"}` | Optional | See [Query Parameter](../query-and-fields-info.md) |
+| `query` | `{"_id":"5HmCfpoB7jp2uibTC"}` | Optional | See [Query Parameter](../others/query-and-fields-info.md) |
 
 ## Example Call
 

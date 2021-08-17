@@ -20,12 +20,12 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/info` | Information about the Rocket.Chat server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous/info.md) |
-| `/api/v1/directory` | Search by all users and channels available on server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous/directory.md) |
-| `/api/v1/shield.svg` | Gets the shield svg\(badge\) to add in your website. | [Link](endpoints/team-collaboration-endpoints/miscellaneous/shield-svg.md) |
-| `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](endpoints/team-collaboration-endpoints/miscellaneous/spotlight.md) |
-| `/api/v1/statistics` | Statistics about the Rocket.Chat server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous/statistics.md) |
-| `/api/v1/statistics.list` | Selectable statistics about the Rocket.Chat server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous/statistics-list.md) |
+| `/api/info` | Information about the Rocket.Chat server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous-endpoints/info.md) |
+| `/api/v1/directory` | Search by all users and channels available on server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous-endpoints/directory.md) |
+| `/api/v1/shield.svg` | Gets the shield svg\(badge\) to add in your website. | [Link](endpoints/team-collaboration-endpoints/miscellaneous-endpoints/shield-svg.md) |
+| `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](endpoints/team-collaboration-endpoints/miscellaneous-endpoints/spotlight.md) |
+| `/api/v1/statistics` | Statistics about the Rocket.Chat server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous-endpoints/statistics.md) |
+| `/api/v1/statistics.list` | Selectable statistics about the Rocket.Chat server. | [Link](endpoints/team-collaboration-endpoints/miscellaneous-endpoints/statistics-list.md) |
 | `/api/v1/instances.get` | Gets all running instances. | [Link](https://github.com/RocketChat/docs/tree/06af028aecca9430169baa3f517704a68deb6278/api/rest-api/methods/miscellaneous/instances-get.md) |
 
 ### Assets
@@ -47,12 +47,12 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/login` | Authenticate with the REST API. | [Link](endpoints/team-collaboration-endpoints/authentication/login.md) |
-| `/api/v1/login` | Authenticate with google. | [Link](endpoints/team-collaboration-endpoints/authentication/google.md) |
-| `/api/v1/login` | Authenticate with facebook. | [Link](endpoints/team-collaboration-endpoints/authentication/facebook.md) |
-| `/api/v1/login` | Authenticate with twitter. | [Link](endpoints/team-collaboration-endpoints/authentication/twitter.md) |
-| `/api/v1/logout` | Invalidate your REST API authentication token. | [Link](endpoints/team-collaboration-endpoints/authentication/logout.md) |
-| `/api/v1/me` | Displays information about the authenticated user. | [Link](endpoints/team-collaboration-endpoints/authentication/me.md) |
+| `/api/v1/login` | Authenticate with the REST API. | [Link](endpoints/team-collaboration-endpoints/others/authentication/login.md) |
+| `/api/v1/login` | Authenticate with google. | [Link](endpoints/team-collaboration-endpoints/others/authentication/google.md) |
+| `/api/v1/login` | Authenticate with facebook. | [Link](endpoints/team-collaboration-endpoints/others/authentication/facebook.md) |
+| `/api/v1/login` | Authenticate with twitter. | [Link](endpoints/team-collaboration-endpoints/others/authentication/twitter.md) |
+| `/api/v1/logout` | Invalidate your REST API authentication token. | [Link](endpoints/team-collaboration-endpoints/others/authentication/logout.md) |
+| `/api/v1/me` | Displays information about the authenticated user. | [Link](endpoints/team-collaboration-endpoints/others/authentication/me.md) |
 
 ### Users
 
@@ -211,38 +211,38 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](endpoints/team-collaboration-endpoints/im/close.md) |
-| `/api/v1/im.counters` | Gets counters of direct messages. | [Link](endpoints/team-collaboration-endpoints/im/counters.md) |
-| `/api/v1/im.create` | Create a direct message session with another user. | [Link](endpoints/team-collaboration-endpoints/im/create.md) |
-| `/api/v1/im.history` | Retrieves the messages from a direct message. | [Link](endpoints/team-collaboration-endpoints/im/history.md) |
-| `/api/v1/im.files` | Retrieves a list of files from a direct message. | [Link](endpoints/team-collaboration-endpoints/im/files.md) |
-| `/api/v1/im.members` | Retrieves the users of participants of a direct message. | [Link](endpoints/team-collaboration-endpoints/im/members.md) |
-| `/api/v1/im.messages` | Retrieves the messages from specific direct message. | [Link](endpoints/team-collaboration-endpoints/im/messages.md) |
-| `/api/v1/im.messages.others` | Retrieves the messages from any direct message in the server. | [Link](endpoints/team-collaboration-endpoints/im/messages-others.md) |
-| `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](endpoints/team-collaboration-endpoints/im/list.md) |
-| `/api/v1/im.list.everyone` | List all direct message the caller in the server. | [Link](endpoints/team-collaboration-endpoints/im/list-everyone.md) |
-| `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](endpoints/team-collaboration-endpoints/im/open.md) |
-| `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](endpoints/team-collaboration-endpoints/im/settopic.md) |
+| `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/close.md) |
+| `/api/v1/im.counters` | Gets counters of direct messages. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/counters.md) |
+| `/api/v1/im.create` | Create a direct message session with another user. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/create.md) |
+| `/api/v1/im.history` | Retrieves the messages from a direct message. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/history.md) |
+| `/api/v1/im.files` | Retrieves a list of files from a direct message. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/files.md) |
+| `/api/v1/im.members` | Retrieves the users of participants of a direct message. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/members.md) |
+| `/api/v1/im.messages` | Retrieves the messages from specific direct message. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/messages.md) |
+| `/api/v1/im.messages.others` | Retrieves the messages from any direct message in the server. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/messages-others.md) |
+| `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/list.md) |
+| `/api/v1/im.list.everyone` | List all direct message the caller in the server. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/list-everyone.md) |
+| `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/open.md) |
+| `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](endpoints/team-collaboration-endpoints/im-endpoints/settopic.md) |
 
 ### Integrations
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/integrations.create` | Creates an integration. | [Link](endpoints/team-collaboration-endpoints/integration/create.md) |
-| `/api/v1/integrations.get` | Gets an integration. | [Link](endpoints/team-collaboration-endpoints/integration/get.md) |
-| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](endpoints/team-collaboration-endpoints/integration/history.md) |
-| `/api/v1/integrations.list` | Lists all of the integrations. | [Link](endpoints/team-collaboration-endpoints/integration/list.md) |
-| `/api/v1/integrations.remove` | Removes an integration. | [Link](endpoints/team-collaboration-endpoints/integration/remove.md) |
+| `/api/v1/integrations.create` | Creates an integration. | [Link](endpoints/team-collaboration-endpoints/integration-endpoints/create.md) |
+| `/api/v1/integrations.get` | Gets an integration. | [Link](endpoints/team-collaboration-endpoints/integration-endpoints/get.md) |
+| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](endpoints/team-collaboration-endpoints/integration-endpoints/history.md) |
+| `/api/v1/integrations.list` | Lists all of the integrations. | [Link](endpoints/team-collaboration-endpoints/integration-endpoints/list.md) |
+| `/api/v1/integrations.remove` | Removes an integration. | [Link](endpoints/team-collaboration-endpoints/integration-endpoints/remove.md) |
 
 ### Invites
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/findOrCreateInvite` | Created a new Invite or returns an existing one with the same parameters. | [Link](endpoints/team-collaboration-endpoints/invites/findorcreateinvite.md) |
-| `/api/v1/listInvites` | Lists all of the invite tokens. | [Link](endpoints/team-collaboration-endpoints/invites/listinvites.md) |
-| `/api/v1/removeInvite` | Removes an invite. | [Link](endpoints/team-collaboration-endpoints/invites/removeinvite.md) |
-| `/api/v1/useInviteToken` | Report to the server that an invite token was used. | [Link](endpoints/team-collaboration-endpoints/invites/useinvitetoken.md) |
-| `/api/v1/validateInviteToken` | Checks if an invite token is valid. | [Link](endpoints/team-collaboration-endpoints/invites/validateinvitetoken.md) |
+| `/api/v1/findOrCreateInvite` | Created a new Invite or returns an existing one with the same parameters. | [Link](endpoints/team-collaboration-endpoints/invite-endpoints/findorcreateinvite.md) |
+| `/api/v1/listInvites` | Lists all of the invite tokens. | [Link](endpoints/team-collaboration-endpoints/invite-endpoints/listinvites.md) |
+| `/api/v1/removeInvite` | Removes an invite. | [Link](endpoints/team-collaboration-endpoints/invite-endpoints/removeinvite.md) |
+| `/api/v1/useInviteToken` | Report to the server that an invite token was used. | [Link](endpoints/team-collaboration-endpoints/invite-endpoints/useinvitetoken.md) |
+| `/api/v1/validateInviteToken` | Checks if an invite token is valid. | [Link](endpoints/team-collaboration-endpoints/invite-endpoints/validateinvitetoken.md) |
 
 ### Livechat
 
