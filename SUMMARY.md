@@ -480,6 +480,7 @@
         * [Update Room](api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/update-room.md)
       * [Users Endpoints](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/README.md)
         * [Users Presence](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence.md)
+        * [Reset Users E2E Key](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-users-e2e-key.md)
         * [Reset Users TOTP](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-users-totp.md)
         * [List Teams Users](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-teams-users.md)
         * [Logout User Endpoint](api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint.md)
