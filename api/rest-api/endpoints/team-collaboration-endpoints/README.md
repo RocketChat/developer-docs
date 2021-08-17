@@ -277,10 +277,25 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## **Teams** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/teams.addMembers` | Adds users to the team. | [Link](teams-endpoints/add-members.md) |
+| `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms.md) |
+| `/api/v1/teams.autocomplete` | Lists the teams whose names match a given pattern. | [Link](teams-endpoints/autocomplete.md) |
+| `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create.md) |
+| `/api/v1/teams.delete` | Removes a team. | [Link](teams-endpoints/delete.md) |
+| `/api/v1/teams.info` | Gets a team's information. | [Link](teams-endpoints/info.md) |
+| `/api/v1/teams.leave` | Leaves a team. | [Link](teams-endpoints/leave.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](teams-endpoints/list.md) |
+| `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](teams-endpoints/list-all.md) |
+| `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](teams-endpoints/list-rooms.md) |
+| `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](teams-endpoints/list-rooms-of-user.md) |
+| `/api/v1/teams.members` | Retrieves all team members. | [Link](teams-endpoints/members.md) |
+| `/api/v1/teams.removeMember` | Removes a member from a team. | [Link](teams-endpoints/remove-member.md) |
+| `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](teams-endpoints/remove-room.md) |
+| `/api/v1/teams.update` | Updates an existing team \(name and type\). | [Link](teams-endpoints/update.md) |
+| `/api/v1/teams.updateMember` | Updates a team member's roles, limited to permissions. | [Link](teams-endpoints/update-member.md) |
+| `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](teams-endpoints/update-room.md) |
 
 ## **Users** Endpoints <a id="email-inbox-endpoints"></a>
 
