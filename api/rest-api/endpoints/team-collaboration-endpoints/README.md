@@ -328,7 +328,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/video-conference/jitsi.update-timeout` | ​post | Link |
+| ​`/api/v1/video-conference/jitsi.update-timeout` | ​Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
 ## **Webdav** Endpoints <a id="email-inbox-endpoints"></a>
 
