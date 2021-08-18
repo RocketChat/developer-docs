@@ -311,7 +311,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/teams.delete` | Removes a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/delete-a-team.md) |
 | `/api/v1/teams.info` | Gets a team's information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/get-teams-info.md) |
 | `/api/v1/teams.leave` | Leaves a team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/leave-a-team.md) |
-| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/teams-list-of-caller.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-of-teams-of-caller.md) |
 | `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-all-teams-with-info.md) |
 | `/api/v1/teams.listRooms` | Lists all rooms of the team. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-a-team.md) |
 | `/api/v1/teams.listRoomsOfUser` | Lists only the team's rooms the user has joined. | [Link](endpoints/team-collaboration-endpoints/teams-endpoints/list-rooms-of-user-of-a-team.md) |
@@ -349,21 +349,21 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get.md) |
-| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/public.md) |
-| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/oauth.md) |
-| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/service-configuration.md) |
-| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-by-id.md) |
-| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/update.md) |
+| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-private-settings.md) |
+| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-public-settings.md) |
+| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-all-oauth.md) |
+| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-service-configurations.md) |
+| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/get-settings-by-id.md) |
+| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](endpoints/team-collaboration-endpoints/settings-endpoints/update-settings.md) |
 
 ### Subscriptions
 
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| `/api/v1/subscriptions.get` | `GET` | Get all subscriptions. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/get.md) |
-| `/api/v1/subscriptions.getOne` | `GET` | Get the subscription by room Id. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/getone.md) |
-| `/api/v1/subscriptions.read` | `POST` | Mark a room as read. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/read.md) |
-| `/api/v1/subscriptions.unread` | `POST` | Mark messages as unread. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/unread.md) |
+| `/api/v1/subscriptions.get` | `GET` | Get all subscriptions. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/get-all-subscriptions.md) |
+| `/api/v1/subscriptions.getOne` | `GET` | Get the subscription by room Id. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/get-subscription-room.md) |
+| `/api/v1/subscriptions.read` | `POST` | Mark a room as read. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/mark-channel-as-read.md) |
+| `/api/v1/subscriptions.unread` | `POST` | Mark messages as unread. | [Link](endpoints/team-collaboration-endpoints/subscriptions-endpoints/mark-messages-as-unread.md) |
 
 ### Video Conference
 

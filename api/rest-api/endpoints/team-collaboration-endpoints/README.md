@@ -249,37 +249,61 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## **Rooms** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
-| :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| Url | Method | Short Description | Details Page |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/rooms.adminRooms` | `GET` | Retrieve all rooms \(requires special permission\). | [Link](rooms-endpoints/adminrooms.md) |
+| `/api/v1/rooms.cleanHistory` | `POST` | Cleans up a room's history, requires special permission. | [Link](rooms-endpoints/cleanhistory.md) |
+| `/api/v1/rooms.createDiscussion` | `POST` | Creates a new discussion. | [Link](rooms-endpoints/creatediscussion.md) |
+| `/api/v1/rooms.favorite` | `POST` | Favorite/Unfavorite room. | [Link](rooms-endpoints/favorite.md) |
+| `/api/v1/rooms.get` | `GET` | Gets rooms. | [Link](rooms-endpoints/get.md) |
+| `/api/v1/rooms.getDiscussions` | `GET` | Gets room's discussions. | [Link](rooms-endpoints/getdiscussions.md) |
+| `/api/v1/rooms.info` | `GET` | Gets info from a room. | [Link](rooms-endpoints/info.md) |
+| `/api/v1/rooms.leave` | `POST` | Leaves a room. | [Link](rooms-endpoints/leave.md) |
+| `/api/v1/rooms.saveNotification` | `POST` | Sets the notification settings of specific channel. | [Link](rooms-endpoints/savenotification.md) |
+| `/api/v1/rooms.upload/:rid` | `POST` | Upload a message with attached file. | [Link](rooms-endpoints/upload.md) |
+| `/api/v1/rooms.adminRooms.getRoom` | `GET` | \`\` | \`\` |
+| `/api/v1/rooms.autocomplete.channelAndPrivate` | `GET` | \`\` | \`\` |
+| `/api/v1/rooms.autocomplete.availableForTeams` | `GET` | \`\` | \`\` |
+| `/api/v1/rooms.saveRoomSettings` | `POST` | \`\` | \`\` |
+| `/api/v1/rooms.changeArchivationState` | `POST` | \`\` | \`\` |
+| `/api/v1/rooms.export` | `POST` |  |  |
 
 ## **Settings** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
-| :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+
+
+You can get and update the settings via the REST API, only if you have permission to.
+
+| Url | Method | Short Description | Details Page |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/settings` | `GET` | Lists all private settings. | [Link](settings-endpoints/get-private-settings.md) |
+| `/api/v1/settings.public` | `GET` | Lists all public settings. | [Link](settings-endpoints/get-public-settings.md) |
+| `/api/v1/settings.oauth` | `GET` | Return list of all available oauth services. | [Link](settings-endpoints/get-all-oauth.md) |
+| `/api/v1/service.configurations` | `GET` | Lists all service configurations. | [Link](settings-endpoints/get-service-configurations.md) |
+| `/api/v1/settings/:_id` | `GET` | Gets a setting. | [Link](settings-endpoints/get-settings-by-id.md) |
+| `/api/v1/settings/:_id` | `POST` | Updates a setting. | [Link](settings-endpoints/update-settings.md) |
 
 ## **Stats** Endpoints <a id="email-inbox-endpoints"></a>
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/statistics` | ​get | Link |
+| ​`/api/v1/statistics.list` | ​get | Link |
 
 ## **Subscriptions** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/subscriptions.get` | Get all subscriptions. | [Link](subscriptions-endpoints/get-all-subscriptions.md) |
+| `/api/v1/subscriptions.getOne` | Get the subscription by room Id. | [Link](subscriptions-endpoints/get-subscription-room.md) |
+| `/api/v1/subscriptions.read` | Mark a room as read. | [Link](subscriptions-endpoints/mark-channel-as-read.md) |
+| `/api/v1/subscriptions.unread` | Mark messages as unread. | [Link](subscriptions-endpoints/mark-messages-as-unread.md) |
 
 ## **Teams** Endpoints <a id="email-inbox-endpoints"></a>
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](teams-endpoints/teams-list-of-caller.md) |
+| `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](teams-endpoints/list-of-teams-of-caller.md) |
 | `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](teams-endpoints/list-all-teams-with-info.md) |
 | `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create-a-new-team.md) |
 | `/api/v1/teams.convertToChannel` | post |  |
