@@ -235,17 +235,24 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## **Push** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
-| :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| Url | Method | Short Description | Details Page |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/push.token` | `POST` | Saves push token. | [Link](push-token-endpoints/push-token.md) |
+| `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](push-token-endpoints/deletepushtoken.md) |
+| `/api/v1/push.get` | get |  |  |
 
 ## **Roles** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/roles.list` | List all roles on the server. | [Link](roles-endpoints/list.md) |
+| `/api/v1/roles.sync` | List all roles on the server which are updated after given date. | [Link](roles-endpoints/sync.md) |
+| `/api/v1/roles.create` | Create a new role. | [Link](roles-endpoints/create.md) |
+| `/api/v1/roles.addUserToRole` | Edits permissions on the server. | [Link](roles-endpoints/addusertorole.md) |
+| `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](roles-endpoints/getusersinrole.md) |
+| `/api/v1/roles.update` | Update an existing role in the system. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/update.md) |
+| `/api/v1/roles.delete` | Delete a role. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
+| `/api/v1/roles.removeUserFromRole` | post |  |
 
 ## **Rooms** Endpoints <a id="email-inbox-endpoints"></a>
 
