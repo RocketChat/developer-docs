@@ -221,17 +221,21 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## **Oauth apps** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+
+
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id. | [Link](oauthapps-endpoints/get.md) |
+| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps. | [Link](oauthapps-endpoints/list.md) |
 
 ## **Permissions** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/permissions` | `get` | \`\` |
+| `/api/v1/permissions.list` | get |  |
+| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](permissions-endpoints/listall.md) |
+| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](permissions-endpoints/update.md) |
 
 ## **Push** Endpoints <a id="email-inbox-endpoints"></a>
 
