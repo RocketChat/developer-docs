@@ -214,10 +214,17 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## **Misc** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+Just some generic information, such as information about the server and authenticated user.
+
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/directory` | Search by all users and channels available on server. | [Link](miscellaneous-endpoints/directory.md) |
+| `/api/info` | Information about the Rocket.Chat server. | [Link](miscellaneous-endpoints/info.md) |
+| `/api/v1/shield.svg` | Gets the shield SVG \(badge\) to add in your website. | [Link](miscellaneous-endpoints/shield-svg.md) |
+| `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](miscellaneous-endpoints/spotlight.md) |
+| `/api/v1/me` | get |  |
+| `/api/v1/stdout.queue` | get |  |
+| `/api/v1/stdout.queue` | post |  |
 
 ## **Oauth apps** Endpoints <a id="email-inbox-endpoints"></a>
 
