@@ -160,8 +160,12 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/` |  | Link |
-| `/api/v1/` |  | Link |
+| `/api/v1/email-inbox.list` | get | Link |
+| `/api/v1/email-inbox` | post | Link |
+| `/api/v1/email-inbox/:_id` | get |  |
+| `/api/v1/email-inbox/:_id` | delete |  |
+| `/api/v1/email-inbox.search` | get |  |
+| `/api/v1/email-inbox.send-test/:_id` | post |  |
 
 ## Custom Emojis Endpoints <a id="email-inbox-endpoints"></a>
 
