@@ -169,6 +169,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
+| emoji-custom | get |  |
+| emoji-custom.all | get |  |
 | `/api/v1/emoji-custom.list` | List all custom emojis on the server. | [Link](custom-emoji-endpoints/list.md) |
 | `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](custom-emoji-endpoints/create.md) |
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](custom-emoji-endpoints/delete.md) |
