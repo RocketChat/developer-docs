@@ -188,15 +188,21 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/uploadImportFile` | `​Content` | Link |
+| `​/api/v1/downloadPublicImportFile` | `​Content` | Link |
+| `​/api/v1/startImport` | `​Content` | Link |
+| `​/api/v1/getImportFileData` | `​Content` | Link |
+| `​/api/v1/getImportProgress` | `​Content` | Link |
+| `​/api/v1/getLatestImportOperations` | `​Content` | Link |
+| `​/api/v1/downloadPendingFiles` | `​Content` | Link |
+| `​/api/v1/downloadPendingAvatars` | `​Content` | Link |
+| `​/api/v1/getCurrentImportOperation` | ​Content | Link |
 
 ## **Instances** Endpoints <a id="email-inbox-endpoints"></a>
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| ​`/api/v1/instances.get` | ​get | Link |
 
 ## **Integrations** Endpoints <a id="email-inbox-endpoints"></a>
 
