@@ -200,10 +200,14 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## **Integrations** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/integrations.create` | Creates an integration. | [Link](integration-endpoints/create.md) |
+| `/api/v1/integrations.get` | Gets an integration. | [Link](integration-endpoints/get.md) |
+| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md) |
+| `/api/v1/integrations.list` | Lists all of the integrations. | [Link](integration-endpoints/list.md) |
+| `/api/v1/integrations.remove` | Removes an integration. | [Link](integration-endpoints/remove.md) |
+| `/api/v1/integrations.update` | put |  |
 
 ## **Invites** Endpoints <a id="email-inbox-endpoints"></a>
 
