@@ -139,8 +139,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/`dns.resolve.srv | get | Link |
-| `/api/v1/`dns.resolve.txt | post | Link |
+| `/api/v1/dns.resolve.srv` | get | Link |
+| `/api/v1/dns.resolve.txt` | post | Link |
 
 ## E2E Endpoints
 
@@ -148,11 +148,11 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/`e2e.fetchMyKeys | get | Link |
-| `/api/v1/`e2e.getUsersOfRoomWithoutKey | post | Link |
-| `/api/v1/`e2e.setRoomKeyID | post |  |
-| `/api/v1/`e2e.setUserPublicAndPrivateKeys | post |  |
-| `/api/v1/`e2e.updateGroupKey | post |  |
+| `/api/v1/e2e.fetchMyKeys` | get | Link |
+| `/api/v1/e2e.getUsersOfRoomWithoutKey` | post | Link |
+| `/api/v1/e2e.setRoomKeyID` | post |  |
+| `/api/v1/e2e.setUserPublicAndPrivateKeys` | post |  |
+| `/api/v1/e2e.updateGroupKey` | post |  |
 
 
 
@@ -173,8 +173,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| emoji-custom | get |  |
-| emoji-custom.all | get |  |
+| `/api/v1/emoji-custom` | get |  |
+| `/api/v1/emoji-custom.all` | get |  |
 | `/api/v1/emoji-custom.list` | List all custom emojis on the server. | [Link](custom-emoji-endpoints/list.md) |
 | `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](custom-emoji-endpoints/create.md) |
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](custom-emoji-endpoints/delete.md) |
