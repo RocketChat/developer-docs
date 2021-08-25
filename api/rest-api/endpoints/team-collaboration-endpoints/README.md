@@ -172,10 +172,46 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## Groups Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
+| Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/` | ​Content | Link |
-| ​`/api/v1/` | ​Content | Link |
+| `/api/v1/groups.addAll` | Adds all of the users on the server to a private group. | [Link](groups-endpoints/addall.md) |
+| `/api/v1/groups.addLeader` | Gives the role of Leader for a user in the current group. | [Link](groups-endpoints/addleader.md) |
+| `/api/v1/groups.addModerator` | Gives the role of moderator to a user in a group. | [Link](groups-endpoints/addmoderator.md) |
+| `/api/v1/groups.addOwner` | Gives the role of owner to a user in a group. | [Link](groups-endpoints/addowner.md) |
+| `/api/v1/groups.archive` | Archives a private group. | [Link](groups-endpoints/archive.md) |
+| `/api/v1/groups.close` | Removes a private group from the list of groups. | [Link](groups-endpoints/close.md) |
+| `/api/v1/groups.counters` | Gets group counters. | [Link](groups-endpoints/counters.md) |
+| `/api/v1/groups.create` | Creates a new private group. | [Link](groups-endpoints/create.md) |
+| `/api/v1/groups.delete` | Removes a private group. | [Link](groups-endpoints/delete.md) |
+| `/api/v1/groups.files` | Gets a list of files from a private group. | [Link](groups-endpoints/files.md) |
+| `/api/v1/groups.getIntegrations` | Gets the integrations assigned to the group. | [Link](groups-endpoints/getintegrations.md) |
+| `/api/v1/groups.history` | Retrieves the messages from a private group. | [Link](groups-endpoints/history.md) |
+| `/api/v1/groups.info` | Gets the information about a private group. | [Link](groups-endpoints/info.md) |
+| `/api/v1/groups.invite` | Adds a user to the private group. | [Link](groups-endpoints/invite.md) |
+| `/api/v1/groups.kick` | Removes a user from a private group. | [Link](groups-endpoints/kick.md) |
+| `/api/v1/groups.leave` | Removes the calling user from the private group. | [Link](groups-endpoints/leave.md) |
+| `/api/v1/groups.list` | List the private groups the caller is part of. | [Link](groups-endpoints/list.md) |
+| `/api/v1/groups.listAll` | List all the private groups. | [Link](groups-endpoints/listall.md) |
+| `/api/v1/groups.moderators` | List all moderators of a group. | [Link](groups-endpoints/moderators.md) |
+| `/api/v1/groups.members` | Gets the users of participants of a private group. | [Link](groups-endpoints/members.md) |
+| `/api/v1/groups.messages` | Retrieves all group messages. | [Link](groups-endpoints/messages.md) |
+| `/api/v1/groups.online` | List all online users of a group. | [Link](https://github.com/RocketChat/docs/tree/aeb4dd8de5017b7cd9c9d9367a0e2155f911ba5a/api/rest-api/methods/groups/online.md) |
+| `/api/v1/groups.open` | Adds the private group back to the list of groups. | [Link](groups-endpoints/open.md) |
+| `/api/v1/groups.removeLeader` | Removes the role of Leader for a user in the current group. | [Link](groups-endpoints/removeleader.md) |
+| `/api/v1/groups.removeModerator` | Removes the role of moderator from a user in a group. | [Link](groups-endpoints/removemoderator.md) |
+| `/api/v1/groups.removeOwner` | Removes the role of owner from a user in a group. | [Link](groups-endpoints/removeowner.md) |
+| `/api/v1/groups.rename` | Changes the name of the private group. | [Link](groups-endpoints/rename.md) |
+| `/api/v1/groups.roles` | Gets the user's roles in the private group. | [Link](groups-endpoints/roles.md) |
+| `/api/v1/groups.setAnnouncement` | Sets a group's announcement. | [Link](groups-endpoints/setannouncement.md) |
+| `/api/v1/groups.setCustomFields` | Sets private group's custom fields. | [Link](groups-endpoints/setcustomfields.md) |
+| `/api/v1/groups.setDescription` | Sets a private group's description. | [Link](groups-endpoints/setdescription.md) |
+| `/api/v1/groups.setPurpose` | Sets a private group's description. | [Link](groups-endpoints/setpurpose.md) |
+| `/api/v1/groups.setReadOnly` | Sets whether the room is read only or not. | [Link](groups-endpoints/setreadonly.md) |
+| `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](groups-endpoints/settopic.md) |
+| `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](groups-endpoints/settype.md) |
+| `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](groups-endpoints/unarchive.md) |
+| `/api/v1/groups.setEncrypted` | \`\` | \`\` |
+| `/api/v1/groups.convertToTeam` |  |  |
 
 ## IM Endpoints <a id="email-inbox-endpoints"></a>
 
