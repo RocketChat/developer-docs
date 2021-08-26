@@ -6,7 +6,7 @@ description: Retrieve open conversations associated with a particular visitor
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `/api/v1/livechat/visitor/:token` | `Yes` | `GET` |
+| `/api/v1/livechat/visitor/:token/room` | `Yes` | `GET` |
 
 ## Headers
 
