@@ -334,13 +334,13 @@ Just some generic information, such as information about the server and authenti
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/roles.list` | List all roles on the server. | [Link](roles-endpoints/list.md) |
-| `/api/v1/roles.sync` | List all roles on the server which are updated after given date. | [Link](roles-endpoints/sync.md) |
+| `/api/v1/roles.sync` | List all roles on the server which are updated after a given date. | [Link](roles-endpoints/sync.md) |
 | `/api/v1/roles.create` | Create a new role. | [Link](roles-endpoints/create.md) |
 | `/api/v1/roles.addUserToRole` | Edits permissions on the server. | [Link](roles-endpoints/addusertorole.md) |
-| `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](roles-endpoints/getusersinrole.md) |
+| `/api/v1/roles.getUsersInRole` | Gets the users that belong to a role. | [Link](roles-endpoints/getusersinrole.md) |
 | `/api/v1/roles.update` | Update an existing role in the system. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/update.md) |
 | `/api/v1/roles.delete` | Delete a role. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
-| `/api/v1/roles.removeUserFromRole` | Unassign a role from an user. | Document Under Development |
+| `/api/v1/roles.removeUserFromRole` | Unassign a role from a user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/role-remove) |
 
 ## **Rooms** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -429,11 +429,11 @@ You can get and update the settings via the REST API, only if you have permissio
 | `​/api/v1/users.deactivateIdle` | `Post` | Deactivate Idle users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users) |
 | `​/api/v1/users.getPresence` | `Get` | Gets a user's presence  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence) |
 | `​/api/v1/users.info` | `Get` | Retrieves information about a user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-info) |
-| `​/api/v1/users.list` | `get` |  | `Link` |
-| `​/api/v1/users.register` | `get` |  | `Link` |
-| `​/api/v1/users.resetAvatar` | `post` |  | `Link` |
-| `​/api/v1/users.setAvatar` | `post` |  | `Link` |
-| `​/api/v1/users.getStatus` | `get` |  | `Link` |
+| `​/api/v1/users.list` | `Get` | Get all of the users in the system and their information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-list) |
+| `​/api/v1/users.register` | `Post` | Register users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-users) |
+| `​/api/v1/users.resetAvatar` | `Post` | Reset avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar) |
+| `​/api/v1/users.setAvatar` | `Post` | Set avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-avatar) |
+| `​/api/v1/users.getStatus` | `Get` | Gets a user's status  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-status) |
 | `​/api/v1/users.setStatus` | `post` |  | `Link` |
 | `​/api/v1/users.update` | `post` |  | `Link` |
 | `​/api/v1/users.updateOwnBasicInfo` | `post` |  | `Link` |
