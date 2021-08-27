@@ -340,7 +340,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](roles-endpoints/getusersinrole.md) |
 | `/api/v1/roles.update` | Update an existing role in the system. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/update.md) |
 | `/api/v1/roles.delete` | Delete a role. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
-| `/api/v1/roles.removeUserFromRole` | post | Document Under Development |
+| `/api/v1/roles.removeUserFromRole` | Unassign a role from an user. | Document Under Development |
 
 ## **Rooms** Endpoints <a id="email-inbox-endpoints"></a>
 
