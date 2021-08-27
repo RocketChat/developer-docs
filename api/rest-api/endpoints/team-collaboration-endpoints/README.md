@@ -426,9 +426,9 @@ You can get and update the settings via the REST API, only if you have permissio
 | ​`/api/v1/users.deleteOwnAccount` | `Post` | Deletes your own user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount) |
 | `​/api/v1/users.getAvatar` | `Get` | Gets the URL for a user’s avatar. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getavatar) |
 | `​/api/v1/users.setActiveStatus` | `Post` | Set user's active status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-users-status-active) |
-| `​/api/v1/users.deactivateIdle` | `post` | Deactivate Idle users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users) |
-| `​/api/v1/users.getPresence` | `get` | Gets a user's presence  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence) |
-| `​/api/v1/users.info` | `get` |  | `Link` |
+| `​/api/v1/users.deactivateIdle` | `Post` | Deactivate Idle users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users) |
+| `​/api/v1/users.getPresence` | `Get` | Gets a user's presence  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence) |
+| `​/api/v1/users.info` | `Get` | Retrieves information about a user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-info) |
 | `​/api/v1/users.list` | `get` |  | `Link` |
 | `​/api/v1/users.register` | `get` |  | `Link` |
 | `​/api/v1/users.resetAvatar` | `post` |  | `Link` |
