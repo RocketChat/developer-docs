@@ -439,7 +439,7 @@
       * [Rooms Endpoints](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/README.md)
         * [Save Room Notification](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/save-room-notification.md)
         * [Admin Rooms](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/adminrooms.md)
-        * [Clean History](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/cleanhistory.md)
+        * [Clean Room History](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/clean-room-history.md)
         * [Rooms Info](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/info.md)
         * [Get Discussions](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/getdiscussions.md)
         * [Get](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/get.md)

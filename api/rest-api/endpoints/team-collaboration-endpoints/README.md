@@ -347,7 +347,7 @@ Just some generic information, such as information about the server and authenti
 | Url | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
 | `/api/v1/rooms.adminRooms` | `GET` | Retrieve all rooms \(requires special permission\). | [Link](rooms-endpoints/adminrooms.md) |
-| `/api/v1/rooms.cleanHistory` | `POST` | Cleans up a room's history, requires special permission. | [Link](rooms-endpoints/cleanhistory.md) |
+| `/api/v1/rooms.cleanHistory` | `POST` | Cleans up a room's history, requires special permission. | [Link](rooms-endpoints/clean-room-history.md) |
 | `/api/v1/rooms.createDiscussion` | `POST` | Creates a new discussion. | [Link](rooms-endpoints/creatediscussion.md) |
 | `/api/v1/rooms.favorite` | `POST` | Favorite/Unfavorite room. | [Link](rooms-endpoints/favorite.md) |
 | `/api/v1/rooms.get` | `GET` | Gets rooms. | [Link](rooms-endpoints/get.md) |

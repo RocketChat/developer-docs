@@ -290,7 +290,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/rooms.adminRooms` | Retrieve all rooms \(requires special permission\). | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/adminrooms.md) |
-| `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/cleanhistory.md) |
+| `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/clean-room-history.md) |
 | `/api/v1/rooms.createDiscussion` | Creates a new discussion. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/creatediscussion.md) |
 | `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/favorite.md) |
 | `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/get.md) |

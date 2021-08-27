@@ -6,7 +6,7 @@ redirect_from:
 description: REST API Clean History Methods
 ---
 
-# Clean History
+# Clean Room History
 
 Cleans up a room, removing messages from the provided time range.
 
