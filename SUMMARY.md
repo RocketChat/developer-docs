@@ -436,6 +436,7 @@
         * [Role Get Users In Role](api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/getusersinrole.md)
         * [Role List](api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/list.md)
         * [Role Sync](api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/sync.md)
+        * [Role Remove](api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/role-remove.md)
       * [Rooms Endpoints](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/README.md)
         * [Save Room Notification](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/save-room-notification.md)
         * [Admin Rooms](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/adminrooms.md)
