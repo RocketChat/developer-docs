@@ -349,8 +349,8 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.adminRooms` | `GET` | Retrieve all rooms \(requires special permission\). | [Link](rooms-endpoints/adminrooms.md) |
 | `/api/v1/rooms.cleanHistory` | `POST` | Cleans up a room's history, requires special permission. | [Link](rooms-endpoints/clean-room-history.md) |
 | `/api/v1/rooms.createDiscussion` | `POST` | Creates a new discussion. | [Link](rooms-endpoints/creatediscussion.md) |
-| `/api/v1/rooms.favorite` | `POST` | Favorite/Unfavorite room. | [Link](rooms-endpoints/favorite.md) |
-| `/api/v1/rooms.get` | `GET` | Gets rooms. | [Link](rooms-endpoints/get.md) |
+| `/api/v1/rooms.favorite` | `POST` | Favorite/Unfavorite room. | [Link](rooms-endpoints/favorite-unfavourite-a-room.md) |
+| `/api/v1/rooms.get` | `GET` | Gets rooms. | [Link](rooms-endpoints/get-rooms.md) |
 | `/api/v1/rooms.getDiscussions` | `GET` | Gets room's discussions. | [Link](rooms-endpoints/getdiscussions.md) |
 | `/api/v1/rooms.info` | `GET` | Gets info from a room. | [Link](rooms-endpoints/info.md) |
 | `/api/v1/rooms.leave` | `POST` | Leaves a room. | [Link](rooms-endpoints/leave.md) |

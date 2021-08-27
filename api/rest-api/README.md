@@ -292,8 +292,8 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/rooms.adminRooms` | Retrieve all rooms \(requires special permission\). | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/adminrooms.md) |
 | `/api/v1/rooms.cleanHistory` | Cleans up a room's history, requires special permission. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/clean-room-history.md) |
 | `/api/v1/rooms.createDiscussion` | Creates a new discussion. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/creatediscussion.md) |
-| `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/favorite.md) |
-| `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/get.md) |
+| `/api/v1/rooms.favorite` | Favorite/Unfavorite room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/favorite-unfavourite-a-room.md) |
+| `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/get-rooms.md) |
 | `/api/v1/rooms.getDiscussions` | Gets room's discussions. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/getdiscussions.md) |
 | `/api/v1/rooms.info` | Gets info from a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/info.md) |
 | `/api/v1/rooms.leave` | Leaves a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/leave.md) |
