@@ -419,45 +419,45 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## **Users** Endpoints <a id="email-inbox-endpoints"></a>
 
-| URL | Short Description | Details Page |
-| :--- | :--- | :--- |
-| ​`/api/v1/users.create` | ​post | Link |
-| ​`/api/v1/users.delete` | ​post | Link |
-| ​`/api/v1/users.deleteOwnAccount` | `post` | `Link` |
-| `​/api/v1/users.getAvatar` | `get` | `Link` |
-| `​/api/v1/users.setActiveStatus` | `post` | `Link` |
-| `​/api/v1/users.deactivateIdle` | `post` | `Link` |
-| `​/api/v1/users.getPresence` | `get` | `Link` |
-| `​/api/v1/users.info` | `get` | `Link` |
-| `​/api/v1/users.list` | `get` | `Link` |
-| `​/api/v1/users.register` | `get` | `Link` |
-| `​/api/v1/users.resetAvatar` | `post` | `Link` |
-| `​/api/v1/users.setAvatar` | `post` | `Link` |
-| `​/api/v1/users.getStatus` | `get` | `Link` |
-| `​/api/v1/users.setStatus` | `post` | `Link` |
-| `​/api/v1/users.update` | `post` | `Link` |
-| `​/api/v1/users.updateOwnBasicInfo` | `post` | `Link` |
-| `​/api/v1/users.createToken` | `post` | `Link` |
-| `​/api/v1/users.getPreferences` | `get` | `Link` |
-| `​/api/v1/users.setPreferences` | `post` | `Link` |
-| `​/api/v1/users.forgotPassword` | `post` | `Link` |
-| `​/api/v1/users.getUsernameSuggestion` | `get` | `Link` |
-| `​/api/v1/users.generatePersonalAccessToken` | `post` | `Link` |
-| `​/api/v1/users.regeneratePersonalAccessToken` | `post` | `Link` |
-| `​/api/v1/users.getPersonalAccessTokens` | `get` | `Link` |
-| `​/api/v1/users.removePersonalAccessToken` | `post` | `Link` |
-| `​/api/v1/users.2fa.enableEmail` | `post` | `Link` |
-| `​/api/v1/users.2fa.disableEmail` | `post` | `Link` |
-| `​/api/v1/users.2fa.sendEmailCode` | `post` | `Link` |
-| `​/api/v1/users.presence` | Gets all connected users presence. | `Link` |
-| `​/api/v1/users.requestDataDownload` | `get` | `Link` |
-| `​/api/v1/users.logoutOtherClients` | `post` | `Link` |
-| `​/api/v1/users.autocomplete` | `get` | `Link` |
-| `​/api/v1/users.removeOtherTokens` | `post` | `Link` |
-| `​/api/v1/users.resetE2EKey` | `post` | `Link` |
-| `​/api/v1/users.resetTOTP` | `post` | `Link` |
-| `​/api/v1/users.listTeams` | `get` | `Link` |
-| `​/api/v1/users.logout` | post | `Link` |
+| URL | Method | Short Description | Details Page |
+| :--- | :--- | :--- | :--- |
+| ​`/api/v1/users.create` | `​Post` | Create a new user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint) |
+| ​`/api/v1/users.delete` | ​`Post` | Deletes an existing user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/delete) |
+| ​`/api/v1/users.deleteOwnAccount` | `Post` | Deletes your own user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount) |
+| `​/api/v1/users.getAvatar` | `Get` | Gets the URL for a user’s avatar. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getavatar) |
+| `​/api/v1/users.setActiveStatus` | `Post` | Set user's active status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-users-status-active) |
+| `​/api/v1/users.deactivateIdle` | `post` | Deactivate Idle users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users) |
+| `​/api/v1/users.getPresence` | `get` | Gets a user's presence  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence) |
+| `​/api/v1/users.info` | `get` |  | `Link` |
+| `​/api/v1/users.list` | `get` |  | `Link` |
+| `​/api/v1/users.register` | `get` |  | `Link` |
+| `​/api/v1/users.resetAvatar` | `post` |  | `Link` |
+| `​/api/v1/users.setAvatar` | `post` |  | `Link` |
+| `​/api/v1/users.getStatus` | `get` |  | `Link` |
+| `​/api/v1/users.setStatus` | `post` |  | `Link` |
+| `​/api/v1/users.update` | `post` |  | `Link` |
+| `​/api/v1/users.updateOwnBasicInfo` | `post` |  | `Link` |
+| `​/api/v1/users.createToken` | `post` |  | `Link` |
+| `​/api/v1/users.getPreferences` | `get` |  | `Link` |
+| `​/api/v1/users.setPreferences` | `post` |  | `Link` |
+| `​/api/v1/users.forgotPassword` | `post` |  | `Link` |
+| `​/api/v1/users.getUsernameSuggestion` | `get` |  | `Link` |
+| `​/api/v1/users.generatePersonalAccessToken` | `post` |  | `Link` |
+| `​/api/v1/users.regeneratePersonalAccessToken` | `post` |  | `Link` |
+| `​/api/v1/users.getPersonalAccessTokens` | `get` |  | `Link` |
+| `​/api/v1/users.removePersonalAccessToken` | `post` |  | `Link` |
+| `​/api/v1/users.2fa.enableEmail` | `post` |  | `Link` |
+| `​/api/v1/users.2fa.disableEmail` | `post` |  | `Link` |
+| `​/api/v1/users.2fa.sendEmailCode` | `post` |  | `Link` |
+| `​/api/v1/users.presence` | Gets all connected users presence. |  | `Link` |
+| `​/api/v1/users.requestDataDownload` | `get` |  | `Link` |
+| `​/api/v1/users.logoutOtherClients` | `post` |  | `Link` |
+| `​/api/v1/users.autocomplete` | `get` |  | `Link` |
+| `​/api/v1/users.removeOtherTokens` | `post` |  | `Link` |
+| `​/api/v1/users.resetE2EKey` | `post` |  | `Link` |
+| `​/api/v1/users.resetTOTP` | `post` |  | `Link` |
+| `​/api/v1/users.listTeams` | `get` |  | `Link` |
+| `​/api/v1/users.logout` | post |  | `Link` |
 
 ## **Video Conference** Endpoints <a id="email-inbox-endpoints"></a>
 
