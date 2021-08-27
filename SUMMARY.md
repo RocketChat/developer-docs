@@ -445,7 +445,7 @@
         * [Get Rooms](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/get-rooms.md)
         * [Leave Room](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/leave-room.md)
         * [Favorite/Unfavourite a Room](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/favorite-unfavourite-a-room.md)
-        * [Upload](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/upload.md)
+        * [Upload File to a Room](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/upload-file-to-a-room.md)
         * [Create Discussion](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/creatediscussion.md)
       * [Settings Endpoints](api/rest-api/endpoints/team-collaboration-endpoints/settings-endpoints/README.md)
         * [Get public settings](api/rest-api/endpoints/team-collaboration-endpoints/settings-endpoints/get-public-settings.md)

@@ -2,9 +2,9 @@
 description: REST API Upload Methods
 ---
 
-# Upload
+# Upload File to a Room
 
-Post a message with attached file to a dedicated room.
+Post a message with the attached file to a dedicated room.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
