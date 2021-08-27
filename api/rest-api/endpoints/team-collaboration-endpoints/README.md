@@ -434,10 +434,10 @@ You can get and update the settings via the REST API, only if you have permissio
 | `​/api/v1/users.resetAvatar` | `Post` | Reset avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar) |
 | `​/api/v1/users.setAvatar` | `Post` | Set avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-avatar) |
 | `​/api/v1/users.getStatus` | `Get` | Gets a user's status  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-status) |
-| `​/api/v1/users.setStatus` | `post` |  | `Link` |
-| `​/api/v1/users.update` | `post` |  | `Link` |
-| `​/api/v1/users.updateOwnBasicInfo` | `post` |  | `Link` |
-| `​/api/v1/users.createToken` | `post` |  | `Link` |
+| `​/api/v1/users.setStatus` | `Post` | Sets a user status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-status) |
+| `​/api/v1/users.update` | `Post` | Update user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-user) |
+| `​/api/v1/users.updateOwnBasicInfo` | `Post` | Update own basic information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information) |
+| `​/api/v1/users.createToken` | `Post` | Create a user authentication token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-users-token) |
 | `​/api/v1/users.getPreferences` | `get` |  | `Link` |
 | `​/api/v1/users.setPreferences` | `post` |  | `Link` |
 | `​/api/v1/users.forgotPassword` | `post` |  | `Link` |
