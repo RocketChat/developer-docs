@@ -438,26 +438,26 @@ You can get and update the settings via the REST API, only if you have permissio
 | `​/api/v1/users.update` | `Post` | Update user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-user) |
 | `​/api/v1/users.updateOwnBasicInfo` | `Post` | Update own basic information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information) |
 | `​/api/v1/users.createToken` | `Post` | Create a user authentication token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-users-token) |
-| `​/api/v1/users.getPreferences` | `get` |  | `Link` |
-| `​/api/v1/users.setPreferences` | `post` |  | `Link` |
-| `​/api/v1/users.forgotPassword` | `post` |  | `Link` |
-| `​/api/v1/users.getUsernameSuggestion` | `get` |  | `Link` |
-| `​/api/v1/users.generatePersonalAccessToken` | `post` |  | `Link` |
-| `​/api/v1/users.regeneratePersonalAccessToken` | `post` |  | `Link` |
-| `​/api/v1/users.getPersonalAccessTokens` | `get` |  | `Link` |
-| `​/api/v1/users.removePersonalAccessToken` | `post` |  | `Link` |
-| `​/api/v1/users.2fa.enableEmail` | `post` |  | `Link` |
-| `​/api/v1/users.2fa.disableEmail` | `post` |  | `Link` |
-| `​/api/v1/users.2fa.sendEmailCode` | `post` |  | `Link` |
-| `​/api/v1/users.presence` | Gets all connected users presence. |  | `Link` |
-| `​/api/v1/users.requestDataDownload` | `get` |  | `Link` |
-| `​/api/v1/users.logoutOtherClients` | `post` |  | `Link` |
-| `​/api/v1/users.autocomplete` | `get` |  | `Link` |
-| `​/api/v1/users.removeOtherTokens` | `post` |  | `Link` |
-| `​/api/v1/users.resetE2EKey` | `post` |  | `Link` |
-| `​/api/v1/users.resetTOTP` | `post` |  | `Link` |
-| `​/api/v1/users.listTeams` | `get` |  | `Link` |
-| `​/api/v1/users.logout` | post |  | `Link` |
+| `​/api/v1/users.getPreferences` | `Get` | Gets all preferences of the user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-user-preferences) |
+| `​/api/v1/users.setPreferences` | `Post` | Sets preferences of the user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-preferences) |
+| `​/api/v1/users.forgotPassword` | `Post` | Send `an` email to reset your password. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/forgotpassword) |
+| `​/api/v1/users.getUsernameSuggestion` | `Get` | Suggestion of new username to user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion) |
+| `​/api/v1/users.generatePersonalAccessToken` | `Post` | Generate Personal Access Token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/generatepersonalaccesstoken) |
+| `​/api/v1/users.regeneratePersonalAccessToken` | `Post` | Regenerate a user's personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken) |
+| `​/api/v1/users.getPersonalAccessTokens` | `Get` | Gets the user’s personal access tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens) |
+| `​/api/v1/users.removePersonalAccessToken` | `Post` | Remove a personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken) |
+| `​/api/v1/users.2fa.enableEmail` | `Post` |  | Document Under Development  |
+| `​/api/v1/users.2fa.disableEmail` | `Post` |  | Document Under Development  |
+| `​/api/v1/users.2fa.sendEmailCode` | `post` |  | Document Under Development  |
+| `​/api/v1/users.presence` | `Get` | Gets all connected users presence. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence) |
+| `​/api/v1/users.requestDataDownload` | `Get` | Request the user's data for download. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload)  |
+| `​/api/v1/users.logoutOtherClients` | `Post` |  | Document Under Development  |
+| `​/api/v1/users.autocomplete` | `Get` |  | Document Under Development  |
+| `​/api/v1/users.removeOtherTokens` | `Post` | Remove other tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens) |
+| `​/api/v1/users.resetE2EKey` | `post` |  | Document Under Development |
+| `​/api/v1/users.resetTOTP` | `post` |  | Document Under Development |
+| `​/api/v1/users.listTeams` | `get` |  | Document Under Development |
+| `​/api/v1/users.logout` | post |  | Document Under Development |
 
 ## **Video Conference** Endpoints <a id="email-inbox-endpoints"></a>
 
