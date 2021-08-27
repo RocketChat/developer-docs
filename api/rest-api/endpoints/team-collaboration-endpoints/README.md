@@ -353,7 +353,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.get` | `GET` | Gets rooms. | [Link](rooms-endpoints/get-rooms.md) |
 | `/api/v1/rooms.getDiscussions` | `GET` | Gets room's discussions. | [Link](rooms-endpoints/getdiscussions.md) |
 | `/api/v1/rooms.info` | `GET` | Gets info from a room. | [Link](rooms-endpoints/info.md) |
-| `/api/v1/rooms.leave` | `POST` | Leaves a room. | [Link](rooms-endpoints/leave.md) |
+| `/api/v1/rooms.leave` | `POST` | Leaves a room. | [Link](rooms-endpoints/leave-room.md) |
 | `/api/v1/rooms.saveNotification` | `POST` | Sets the notification settings of specific channel. | [Link](rooms-endpoints/save-room-notification.md) |
 | `/api/v1/rooms.upload/:rid` | `POST` | Upload a message with attached file. | [Link](rooms-endpoints/upload.md) |
 | `/api/v1/rooms.adminRooms.getRoom` | `GET` | \`\` | Document Under Development |

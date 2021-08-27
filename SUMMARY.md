@@ -443,7 +443,7 @@
         * [Rooms Info](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/info.md)
         * [Get Discussions](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/getdiscussions.md)
         * [Get Rooms](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/get-rooms.md)
-        * [Leave](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/leave.md)
+        * [Leave Room](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/leave-room.md)
         * [Favorite/Unfavourite a Room](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/favorite-unfavourite-a-room.md)
         * [Upload](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/upload.md)
         * [Create Discussion](api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/creatediscussion.md)

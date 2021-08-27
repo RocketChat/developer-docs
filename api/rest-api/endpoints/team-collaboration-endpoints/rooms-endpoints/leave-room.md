@@ -2,7 +2,7 @@
 description: REST API Leave Methods
 ---
 
-# Leave
+# Leave Room
 
 Causes the caller to be removed from the room.
 

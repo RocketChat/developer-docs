@@ -296,7 +296,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/rooms.get` | Gets rooms. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/get-rooms.md) |
 | `/api/v1/rooms.getDiscussions` | Gets room's discussions. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/getdiscussions.md) |
 | `/api/v1/rooms.info` | Gets info from a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/info.md) |
-| `/api/v1/rooms.leave` | Leaves a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/leave.md) |
+| `/api/v1/rooms.leave` | Leaves a room. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/leave-room.md) |
 | `/api/v1/rooms.saveNotification` | Sets the notifications settings of specific channel. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/save-room-notification.md) |
 | `/api/v1/rooms.upload/:rid` | Upload a message with attached file. | [Link](endpoints/team-collaboration-endpoints/rooms-endpoints/upload.md) |
 
