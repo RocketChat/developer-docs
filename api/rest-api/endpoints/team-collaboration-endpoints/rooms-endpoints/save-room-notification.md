@@ -1,10 +1,8 @@
 ---
-description: REST API Save Notification Methods
+description: Sets the notifications settings of specific channel.
 ---
 
-# Save Notification
-
-Sets the notifications settings of specific channel.
+# Save Room Notification
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

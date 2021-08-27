@@ -19,8 +19,8 @@
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/banners.getNew` | Get  | Link |
-| `/api/v1/banners.dismiss` | Post | Link |
+| `/api/v1/banners.getNew` | Get  | Document Under Development |
+| `/api/v1/banners.dismiss` | Post | Document Under Development |
 
 ## Channels Endpoints
 
@@ -69,7 +69,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](channels-endpoints/settopic.md) |
 | `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](channels-endpoints/settype.md) |
 | `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](channels-endpoints/unarchive.md) |
-| `/api/v1/channels.convertToTeam` | post |  |
+| `/api/v1/channels.convertToTeam` | post | Document Under Development |
+|  |  |  |
 
 ## Chat Endpoints
 
@@ -88,7 +89,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.getStarredMessages` | Retrieves the starred messages. | [Link](chat-endpoints/getstarredmessages.md) |
 | `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](chat-endpoints/getthreadmessages.md) |
 | `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](chat-endpoints/getthreadslist.md) |
-| `/api/v1/chat.ignoreUser` | Ignores an user from a chat. | [Link](chat-endpoints/ignoreuser.md) |
+| `/api/v1/chat.ignoreUser` | Ignores abuser from a chat. | [Link](chat-endpoints/ignoreuser.md) |
 | `/api/v1/chat.pinMessage` | Pins a chat message to the message's channel. | [Link](chat-endpoints/pinmessage.md) |
 | `/api/v1/chat.postMessage` | Posts a new chat message. | [Link](chat-endpoints/postmessage.md) |
 | `/api/v1/chat.react` | Sets/unsets the user's reaction to an existing chat message. | [Link](chat-endpoints/chat-message-reactions.md) |
@@ -102,13 +103,13 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat-endpoints/unpinmessage.md) |
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat-endpoints/unstarmessage.md) |
 | `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat-endpoints/message-update.md) |
-| `/api/v1/chat.syncMessages` | get |  |
+| `/api/v1/chat.syncMessages` | get | Document Under Development |
 
 ## Cloud Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/cloud.manualRegister` | Post | Link |
+| `/api/v1/cloud.manualRegister` | Post | Document Under Development |
 
 ## Commands Endpoints
 
@@ -131,16 +132,16 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](custom-user-status-endpoints/list.md) |
-| `/api/v1/custom-user-status.create` | post |  |
-| `/api/v1/custom-user-status.delete` | post |  |
-| `/api/v1/custom-user-status.update` | post |  |
+| `/api/v1/custom-user-status.create` | post | Document Under Development |
+| `/api/v1/custom-user-status.delete` | post | Document Under Development |
+| `/api/v1/custom-user-status.update` | post | Document Under Development |
 
 ## DNS Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/dns.resolve.srv` | get | Link |
-| `/api/v1/dns.resolve.txt` | post | Link |
+| `/api/v1/dns.resolve.srv` | get | Document Under Development |
+| `/api/v1/dns.resolve.txt` | post | Document Under Development |
 
 ## E2E Endpoints
 
@@ -148,11 +149,11 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/e2e.fetchMyKeys` | get | Link |
-| `/api/v1/e2e.getUsersOfRoomWithoutKey` | post | Link |
-| `/api/v1/e2e.setRoomKeyID` | post |  |
-| `/api/v1/e2e.setUserPublicAndPrivateKeys` | post |  |
-| `/api/v1/e2e.updateGroupKey` | post |  |
+| `/api/v1/e2e.fetchMyKeys` | get | Document Under Development |
+| `/api/v1/e2e.getUsersOfRoomWithoutKey` | post | Document Under Development |
+| `/api/v1/e2e.setRoomKeyID` | post | Document Under Development |
+| `/api/v1/e2e.setUserPublicAndPrivateKeys` | post | Document Under Development |
+| `/api/v1/e2e.updateGroupKey` | post | Document Under Development |
 
 
 
@@ -160,12 +161,12 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/email-inbox.list` | get | Link |
-| `/api/v1/email-inbox` | post | Link |
-| `/api/v1/email-inbox/:_id` | get |  |
-| `/api/v1/email-inbox/:_id` | delete |  |
-| `/api/v1/email-inbox.search` | get |  |
-| `/api/v1/email-inbox.send-test/:_id` | post |  |
+| `/api/v1/email-inbox.list` | get | Document Under Development |
+| `/api/v1/email-inbox` | post | Document Under Development |
+| `/api/v1/email-inbox/:_id` | get | Document Under Development |
+| `/api/v1/email-inbox/:_id` | delete | Document Under Development |
+| `/api/v1/email-inbox.search` | get | Document Under Development |
+| `/api/v1/email-inbox.send-test/:_id` | post | Document Under Development |
 
 ## Custom Emojis Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -173,8 +174,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/emoji-custom` | get |  |
-| `/api/v1/emoji-custom.all` | get |  |
+| `/api/v1/emoji-custom` | get | Document Under Development |
+| `/api/v1/emoji-custom.all` | get | Document Under Development |
 | `/api/v1/emoji-custom.list` | List all custom emojis on the server. | [Link](custom-emoji-endpoints/list.md) |
 | `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](custom-emoji-endpoints/create.md) |
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](custom-emoji-endpoints/delete.md) |
@@ -216,12 +217,12 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/groups.setCustomFields` | Sets private group's custom fields. | [Link](groups-endpoints/setcustomfields.md) |
 | `/api/v1/groups.setDescription` | Sets a private group's description. | [Link](groups-endpoints/setdescription.md) |
 | `/api/v1/groups.setPurpose` | Sets a private group's description. | [Link](groups-endpoints/setpurpose.md) |
-| `/api/v1/groups.setReadOnly` | Sets whether the room is read only or not. | [Link](groups-endpoints/setreadonly.md) |
+| `/api/v1/groups.setReadOnly` | Sets whether the room is read-only or not. | [Link](groups-endpoints/setreadonly.md) |
 | `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](groups-endpoints/settopic.md) |
 | `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](groups-endpoints/settype.md) |
 | `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](groups-endpoints/unarchive.md) |
-| `/api/v1/groups.setEncrypted` | \`\` | \`\` |
-| `/api/v1/groups.convertToTeam` |  |  |
+| `/api/v1/groups.setEncrypted` | \`\` | Document Under Development |
+| `/api/v1/groups.convertToTeam` |  | Document Under Development |
 
 ## IM Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -229,17 +230,17 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/im.delete` | post |  |
+| `/api/v1/im.delete` | post | Document Under Development |
 | `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](im-endpoints/close.md) |
 | `/api/v1/im.counters` | Gets counters of direct messages. | [Link](im-endpoints/counters.md) |
 | `/api/v1/im.create` | Create a direct message session with another user. | [Link](im-endpoints/create.md) |
 | `/api/v1/im.history` | Retrieves the messages from a direct message. | [Link](im-endpoints/history.md) |
 | `/api/v1/im.files` | Retrieves a list of files from a direct message. | [Link](im-endpoints/files.md) |
 | `/api/v1/im.members` | Retrieves the users of participants of a direct message. | [Link](im-endpoints/members.md) |
-| `/api/v1/im.messages` | Retrieves the messages from specific direct message. | [Link](im-endpoints/messages.md) |
+| `/api/v1/im.messages` | Retrieves the messages from the specific direct messages. | [Link](im-endpoints/messages.md) |
 | `/api/v1/im.messages.others` | Retrieves the messages from any direct message in the server. | [Link](im-endpoints/messages-others.md) |
 | `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](im-endpoints/list.md) |
-| `/api/v1/im.list.everyone` | List all direct message the caller in the server. | [Link](im-endpoints/list-everyone.md) |
+| `/api/v1/im.list.everyone` | List all direct messages the caller in the server. | [Link](im-endpoints/list-everyone.md) |
 | `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](im-endpoints/open.md) |
 | `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](im-endpoints/settopic.md) |
 
@@ -251,21 +252,21 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/uploadImportFile` | `​Content` | Link |
-| `​/api/v1/downloadPublicImportFile` | `​Content` | Link |
-| `​/api/v1/startImport` | `​Content` | Link |
-| `​/api/v1/getImportFileData` | `​Content` | Link |
-| `​/api/v1/getImportProgress` | `​Content` | Link |
-| `​/api/v1/getLatestImportOperations` | `​Content` | Link |
-| `​/api/v1/downloadPendingFiles` | `​Content` | Link |
-| `​/api/v1/downloadPendingAvatars` | `​Content` | Link |
-| `​/api/v1/getCurrentImportOperation` | ​Content | Link |
+| ​`/api/v1/uploadImportFile` | `​Content` | Document Under Development |
+| `​/api/v1/downloadPublicImportFile` | `​Content` | Document Under Development |
+| `​/api/v1/startImport` | `​Content` | Document Under Development |
+| `​/api/v1/getImportFileData` | `​Content` | Document Under Development |
+| `​/api/v1/getImportProgress` | `​Content` | Document Under Development |
+| `​/api/v1/getLatestImportOperations` | `​Content` | Document Under Development |
+| `​/api/v1/downloadPendingFiles` | `​Content` | Document Under Development |
+| `​/api/v1/downloadPendingAvatars` | `​Content` | Document Under Development |
+| `​/api/v1/getCurrentImportOperation` | ​Content | Document Under Development |
 
 ## **Instances** Endpoints <a id="email-inbox-endpoints"></a>
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/instances.get` | ​get | Link |
+| ​`/api/v1/instances.get` | ​get | Document Under Development |
 
 ## **Integrations** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -276,7 +277,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md) |
 | `/api/v1/integrations.list` | Lists all of the integrations. | [Link](integration-endpoints/list.md) |
 | `/api/v1/integrations.remove` | Removes an integration. | [Link](integration-endpoints/remove.md) |
-| `/api/v1/integrations.update` | put |  |
+| `/api/v1/integrations.update` | put | Document Under Development |
 
 ## **Invites** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -284,7 +285,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | :--- | :--- | :--- |
 | `/api/v1/findOrCreateInvite` | Created a new Invite or returns an existing one with the same parameters. | [Link](invite-endpoints/findorcreateinvite.md) |
 | `/api/v1/listInvites` | Lists all of the invite tokens. | [Link](invite-endpoints/listinvites.md) |
-| `/api/v1/removeInvite/:_id` | delete |  |
+| `/api/v1/removeInvite/:_id` | delete | Document Under Development |
 | `/api/v1/useInviteToken` | Report to the server that an invite token was used. | [Link](invite-endpoints/useinvitetoken.md) |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid. | [Link](invite-endpoints/validateinvitetoken.md) |
 
@@ -298,9 +299,9 @@ Just some generic information, such as information about the server and authenti
 | `/api/info` | Information about the Rocket.Chat server. | [Link](miscellaneous-endpoints/info.md) |
 | `/api/v1/shield.svg` | Gets the shield SVG \(badge\) to add in your website. | [Link](miscellaneous-endpoints/shield-svg.md) |
 | `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](miscellaneous-endpoints/spotlight.md) |
-| `/api/v1/me` | get |  |
-| `/api/v1/stdout.queue` | get |  |
-| `/api/v1/stdout.queue` | post |  |
+| `/api/v1/me` | get | Document Under Development |
+| `/api/v1/stdout.queue` | get | Document Under Development |
+| `/api/v1/stdout.queue` | post | Document Under Development |
 
 ## **Oauth apps** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -315,8 +316,8 @@ Just some generic information, such as information about the server and authenti
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/permissions` | `get` | \`\` |
-| `/api/v1/permissions.list` | get |  |
+| `/api/v1/permissions` | `get` | Document Under Development |
+| `/api/v1/permissions.list` | get | Document Under Development |
 | `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](permissions-endpoints/listall.md) |
 | `/api/v1/permissions.update` | Edits permissions on the server. | [Link](permissions-endpoints/update.md) |
 
@@ -326,7 +327,7 @@ Just some generic information, such as information about the server and authenti
 | :--- | :--- | :--- | :--- |
 | `/api/v1/push.token` | `POST` | Saves push token. | [Link](push-token-endpoints/push-token.md) |
 | `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](push-token-endpoints/deletepushtoken.md) |
-| `/api/v1/push.get` | get |  |  |
+| `/api/v1/push.get` | get |  | Document Under Development |
 
 ## **Roles** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -339,7 +340,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/roles.getUsersInRole` | Gets the users that belongs to a role. | [Link](roles-endpoints/getusersinrole.md) |
 | `/api/v1/roles.update` | Update an existing role in the system. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/update.md) |
 | `/api/v1/roles.delete` | Delete a role. | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
-| `/api/v1/roles.removeUserFromRole` | post |  |
+| `/api/v1/roles.removeUserFromRole` | post | Document Under Development |
 
 ## **Rooms** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -353,14 +354,14 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.getDiscussions` | `GET` | Gets room's discussions. | [Link](rooms-endpoints/getdiscussions.md) |
 | `/api/v1/rooms.info` | `GET` | Gets info from a room. | [Link](rooms-endpoints/info.md) |
 | `/api/v1/rooms.leave` | `POST` | Leaves a room. | [Link](rooms-endpoints/leave.md) |
-| `/api/v1/rooms.saveNotification` | `POST` | Sets the notification settings of specific channel. | [Link](rooms-endpoints/savenotification.md) |
+| `/api/v1/rooms.saveNotification` | `POST` | Sets the notification settings of specific channel. | [Link](rooms-endpoints/save-room-notification.md) |
 | `/api/v1/rooms.upload/:rid` | `POST` | Upload a message with attached file. | [Link](rooms-endpoints/upload.md) |
-| `/api/v1/rooms.adminRooms.getRoom` | `GET` | \`\` | \`\` |
-| `/api/v1/rooms.autocomplete.channelAndPrivate` | `GET` | \`\` | \`\` |
-| `/api/v1/rooms.autocomplete.availableForTeams` | `GET` | \`\` | \`\` |
-| `/api/v1/rooms.saveRoomSettings` | `POST` | \`\` | \`\` |
-| `/api/v1/rooms.changeArchivationState` | `POST` | \`\` | \`\` |
-| `/api/v1/rooms.export` | `POST` |  |  |
+| `/api/v1/rooms.adminRooms.getRoom` | `GET` | \`\` | Document Under Development |
+| `/api/v1/rooms.autocomplete.channelAndPrivate` | `GET` | \`\` | Document Under Development |
+| `/api/v1/rooms.autocomplete.availableForTeams` | `GET` | \`\` | Document Under Development |
+| `/api/v1/rooms.saveRoomSettings` | `POST` | \`\` | Document Under Development |
+| `/api/v1/rooms.changeArchivationState` | `POST` | \`\` | Document Under Development |
+| `/api/v1/rooms.export` | `POST` |  | Document Under Development |
 
 ## **Settings** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -381,8 +382,8 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/statistics` | ​get | Link |
-| ​`/api/v1/statistics.list` | ​get | Link |
+| ​`/api/v1/statistics` | ​get | Document Under Development |
+| ​`/api/v1/statistics.list` | ​get | Document Under Development |
 
 ## **Subscriptions** Endpoints <a id="email-inbox-endpoints"></a>
 
