@@ -302,6 +302,7 @@
         * [Channel Unarchive](api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/unarchive.md)
         * [Get all the mentions of a channel](api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/getallusermentionsbychannel.md)
         * [Get Integrations of channel](api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/get-integrations-of-channel.md)
+        * [Convert channel to team](api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/convert-channel-to-team.md)
       * [Chat Endpoints](api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/README.md)
         * [Chat Message Delete](api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/delete.md)
         * [Chat Message Reactions](api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/chat-message-reactions.md)
