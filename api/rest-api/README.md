@@ -102,7 +102,7 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 | `/api/v1/channels.delete` | Removes a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/delete.md) |
 | `/api/v1/channels.files` | Gets a list of files from a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/files.md) |
 | `/api/v1/channels.getAllUserMentionsByChannel` | Gets all the mentions of a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/getallusermentionsbychannel.md) |
-| `/api/v1/channels.getIntegrations` | Gets the channel's integration. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/getintegrations.md) |
+| `/api/v1/channels.getIntegrations` | Gets the channel's integration. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/get-integrations-of-channel.md) |
 | `/api/v1/channels.history` | Retrieves the messages from a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/history.md) |
 | `/api/v1/channels.info` | Gets a channel's information. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/info.md) |
 | `/api/v1/channels.invite` | Adds a user to a channel. | [Link](endpoints/team-collaboration-endpoints/channels-endpoints/invite.md) |

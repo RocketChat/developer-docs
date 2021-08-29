@@ -69,7 +69,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.setTopic` | Sets a channel's topic. | [Link](channels-endpoints/settopic.md) |
 | `/api/v1/channels.setType` | Sets the type of room the channel should be. | [Link](channels-endpoints/settype.md) |
 | `/api/v1/channels.unarchive` | Unarchives a channel. | [Link](channels-endpoints/unarchive.md) |
-| `/api/v1/channels.convertToTeam` | post | Document Under Development |
+| `/api/v1/channels.convertToTeam` | Convert channel to team | Document Under Development |
 |  |  |  |
 
 ## Chat Endpoints
