@@ -13,12 +13,12 @@ These are the possible errors you can encounter while setting up local environme
    * Press i to change into insert mode
    * Copy paste this inside
    
-   `deb http://archive.ubuntu.com/ubuntu​ bionic main restricted universe multiverse
-   deb http://archive.ubuntu.com/ubuntu​ bionic-security main restricted universe multiverse
-   deb http://archive.ubuntu.com/ubuntu​ bionic-updates main restricted universe multiverse
-   deb http://mirror.kakao.com/ubuntu​ focal-security main restricted
-   deb http://mirror.kakao.com/ubuntu​ focal-security universe
-   deb http://mirror.kakao.com/ubuntu​ focal-security multiverse`
+   `deb http://archive.ubuntu.com/ubuntu bionic main restricted universe multiverse
+   deb http://archive.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
+   deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse
+   deb http://mirror.kakao.com/ubuntu focal-security main restricted
+   deb http://mirror.kakao.com/ubuntu focal-security universe
+   deb http://mirror.kakao.com/ubuntu focal-security multiverse`
    * Press shift+esc and type :x and enter to save sources file
    * Run apt-get update again.
    * Run apt-get install python

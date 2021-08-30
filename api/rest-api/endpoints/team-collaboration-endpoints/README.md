@@ -124,7 +124,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | ​[Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list)​ |
+| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list) |
 
 ## Custom User Status Endpoints
 
@@ -233,6 +233,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](im-endpoints/close.md) |
 | `/api/v1/im.counters` | Gets counters of direct messages. | [Link](im-endpoints/counters.md) |
 | `/api/v1/im.create` | Create a direct message session with another user. | [Link](im-endpoints/create.md) |
+| `/api/v1/im.delete` | Remove a direct message session. | [Link](im-endpoints/delete.md) |
 | `/api/v1/im.history` | Retrieves the messages from a direct message. | [Link](im-endpoints/history.md) |
 | `/api/v1/im.files` | Retrieves a list of files from a direct message. | [Link](im-endpoints/files.md) |
 | `/api/v1/im.members` | Retrieves the users of participants of a direct message. | [Link](im-endpoints/members.md) |
@@ -251,21 +252,21 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/uploadImportFile` | `​Content` | Document Under Development |
-| `​/api/v1/downloadPublicImportFile` | `​Content` | Document Under Development |
-| `​/api/v1/startImport` | `​Content` | Document Under Development |
-| `​/api/v1/getImportFileData` | `​Content` | Document Under Development |
-| `​/api/v1/getImportProgress` | `​Content` | Document Under Development |
-| `​/api/v1/getLatestImportOperations` | `​Content` | Document Under Development |
-| `​/api/v1/downloadPendingFiles` | `​Content` | Document Under Development |
-| `​/api/v1/downloadPendingAvatars` | `​Content` | Document Under Development |
-| `​/api/v1/getCurrentImportOperation` | ​Content | Document Under Development |
+| `/api/v1/uploadImportFile` | `Content` | Document Under Development |
+| `/api/v1/downloadPublicImportFile` | `Content` | Document Under Development |
+| `/api/v1/startImport` | `Content` | Document Under Development |
+| `/api/v1/getImportFileData` | `Content` | Document Under Development |
+| `/api/v1/getImportProgress` | `Content` | Document Under Development |
+| `/api/v1/getLatestImportOperations` | `Content` | Document Under Development |
+| `/api/v1/downloadPendingFiles` | `Content` | Document Under Development |
+| `/api/v1/downloadPendingAvatars` | `Content` | Document Under Development |
+| `/api/v1/getCurrentImportOperation` | Content | Document Under Development |
 
 ## **Instances** Endpoints <a id="email-inbox-endpoints"></a>
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/instances.get` | ​get | Document Under Development |
+| `/api/v1/instances.get` | get | Document Under Development |
 
 ## **Integrations** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -381,8 +382,8 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/statistics` | ​get | Document Under Development |
-| ​`/api/v1/statistics.list` | ​get | Document Under Development |
+| `/api/v1/statistics` | get | Document Under Development |
+| `/api/v1/statistics.list` | get | Document Under Development |
 
 ## **Subscriptions** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -420,53 +421,53 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL | Method | Short Description | Details Page |
 | :--- | :--- | :--- | :--- |
-| ​`/api/v1/users.create` | `​Post` | Create a new user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint) |
-| ​`/api/v1/users.delete` | ​`Post` | Deletes an existing user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/delete) |
-| ​`/api/v1/users.deleteOwnAccount` | `Post` | Deletes your own user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount) |
-| `​/api/v1/users.getAvatar` | `Get` | Gets the URL for a user’s avatar. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getavatar) |
-| `​/api/v1/users.setActiveStatus` | `Post` | Set user's active status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-users-status-active) |
-| `​/api/v1/users.deactivateIdle` | `Post` | Deactivate Idle users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users) |
-| `​/api/v1/users.getPresence` | `Get` | Gets a user's presence  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence) |
-| `​/api/v1/users.info` | `Get` | Retrieves information about a user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-info) |
-| `​/api/v1/users.list` | `Get` | Get all of the users in the system and their information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-list) |
-| `​/api/v1/users.register` | `Post` | Register users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-users) |
-| `​/api/v1/users.resetAvatar` | `Post` | Reset avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar) |
-| `​/api/v1/users.setAvatar` | `Post` | Set avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-avatar) |
-| `​/api/v1/users.getStatus` | `Get` | Gets a user's status  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-status) |
-| `​/api/v1/users.setStatus` | `Post` | Sets a user status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-status) |
-| `​/api/v1/users.update` | `Post` | Update user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-user) |
-| `​/api/v1/users.updateOwnBasicInfo` | `Post` | Update own basic information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information) |
-| `​/api/v1/users.createToken` | `Post` | Create a user authentication token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-users-token) |
-| `​/api/v1/users.getPreferences` | `Get` | Gets all preferences of the user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-user-preferences) |
-| `​/api/v1/users.setPreferences` | `Post` | Sets preferences of the user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-preferences) |
-| `​/api/v1/users.forgotPassword` | `Post` | Send `an` email to reset your password. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/forgotpassword) |
-| `​/api/v1/users.getUsernameSuggestion` | `Get` | Suggestion of new username to user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion) |
-| `​/api/v1/users.generatePersonalAccessToken` | `Post` | Generate Personal Access Token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/generatepersonalaccesstoken) |
-| `​/api/v1/users.regeneratePersonalAccessToken` | `Post` | Regenerate a user's personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken) |
-| `​/api/v1/users.getPersonalAccessTokens` | `Get` | Gets the user’s personal access tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens) |
-| `​/api/v1/users.removePersonalAccessToken` | `Post` | Remove a personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken) |
-| `​/api/v1/users.2fa.enableEmail` | `Post` |  | Document Under Development  |
-| `​/api/v1/users.2fa.disableEmail` | `Post` |  | Document Under Development  |
-| `​/api/v1/users.2fa.sendEmailCode` | `post` |  | Document Under Development  |
-| `​/api/v1/users.presence` | `Get` | Gets all connected users presence. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence) |
-| `​/api/v1/users.requestDataDownload` | `Get` | Request the user's data for download. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload)  |
-| `​/api/v1/users.logoutOtherClients` | `Post` |  | Document Under Development  |
-| `​/api/v1/users.autocomplete` | `Get` |  | Document Under Development  |
-| `​/api/v1/users.removeOtherTokens` | `Post` | Remove other tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens) |
-| `​/api/v1/users.resetE2EKey` | `post` |  | Document Under Development |
-| `​/api/v1/users.resetTOTP` | `post` |  | Document Under Development |
-| `​/api/v1/users.listTeams` | `get` |  | Document Under Development |
-| `​/api/v1/users.logout` | post |  | Document Under Development |
+| `/api/v1/users.create` | `Post` | Create a new user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint) |
+| `/api/v1/users.delete` | `Post` | Deletes an existing user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/delete) |
+| `/api/v1/users.deleteOwnAccount` | `Post` | Deletes your own user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount) |
+| `/api/v1/users.getAvatar` | `Get` | Gets the URL for a user’s avatar. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getavatar) |
+| `/api/v1/users.setActiveStatus` | `Post` | Set user's active status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-users-status-active) |
+| `/api/v1/users.deactivateIdle` | `Post` | Deactivate Idle users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users) |
+| `/api/v1/users.getPresence` | `Get` | Gets a user's presence  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence) |
+| `/api/v1/users.info` | `Get` | Retrieves information about a user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-info) |
+| `/api/v1/users.list` | `Get` | Get all of the users in the system and their information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-list) |
+| `/api/v1/users.register` | `Post` | Register users | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-users) |
+| `/api/v1/users.resetAvatar` | `Post` | Reset avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar) |
+| `/api/v1/users.setAvatar` | `Post` | Set avatar | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-avatar) |
+| `/api/v1/users.getStatus` | `Get` | Gets a user's status  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-status) |
+| `/api/v1/users.setStatus` | `Post` | Sets a user status | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-status) |
+| `/api/v1/users.update` | `Post` | Update user | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-user) |
+| `/api/v1/users.updateOwnBasicInfo` | `Post` | Update own basic information | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information) |
+| `/api/v1/users.createToken` | `Post` | Create a user authentication token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-users-token) |
+| `/api/v1/users.getPreferences` | `Get` | Gets all preferences of the user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-user-preferences) |
+| `/api/v1/users.setPreferences` | `Post` | Sets preferences of the user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-preferences) |
+| `/api/v1/users.forgotPassword` | `Post` | Send `an` email to reset your password. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/forgotpassword) |
+| `/api/v1/users.getUsernameSuggestion` | `Get` | Suggestion of new username to user. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion) |
+| `/api/v1/users.generatePersonalAccessToken` | `Post` | Generate Personal Access Token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/generatepersonalaccesstoken) |
+| `/api/v1/users.regeneratePersonalAccessToken` | `Post` | Regenerate a user's personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken) |
+| `/api/v1/users.getPersonalAccessTokens` | `Get` | Gets the user’s personal access tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens) |
+| `/api/v1/users.removePersonalAccessToken` | `Post` | Remove a personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken) |
+| `/api/v1/users.2fa.enableEmail` | `Post` |  | Document Under Development  |
+| `/api/v1/users.2fa.disableEmail` | `Post` |  | Document Under Development  |
+| `/api/v1/users.2fa.sendEmailCode` | `post` |  | Document Under Development  |
+| `/api/v1/users.presence` | `Get` | Gets all connected users presence. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence) |
+| `/api/v1/users.requestDataDownload` | `Get` | Request the user's data for download. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload)  |
+| `/api/v1/users.logoutOtherClients` | `Post` |  | Document Under Development  |
+| `/api/v1/users.autocomplete` | `Get` |  | Document Under Development  |
+| `/api/v1/users.removeOtherTokens` | `Post` | Remove other tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens) |
+| `/api/v1/users.resetE2EKey` | `post` |  | Document Under Development |
+| `/api/v1/users.resetTOTP` | `post` |  | Document Under Development |
+| `/api/v1/users.listTeams` | `get` |  | Document Under Development |
+| `/api/v1/users.logout` | post |  | Document Under Development |
 
 ## **Video Conference** Endpoints <a id="email-inbox-endpoints"></a>
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| ​`/api/v1/video-conference/jitsi.update-timeout` | ​Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
+| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
 ## **Webdav** Endpoints <a id="email-inbox-endpoints"></a>
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/webdav.getMyAccounts` | ​Retrieves the user's webdav accounts | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/webdav-endpoint/getmyaccounts) |
+| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/webdav-endpoint/getmyaccounts) |
 
