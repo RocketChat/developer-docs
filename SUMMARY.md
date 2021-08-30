@@ -392,6 +392,7 @@
         * [Close](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/close.md)
         * [Counters](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/counters.md)
         * [Create](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/create.md)
+        * [Delete](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/delete.md)
         * [Files](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/files.md)
         * [History](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/history.md)
         * [List Everyone](api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/list-everyone.md)
