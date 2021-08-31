@@ -28,7 +28,6 @@ Here we will show you how to customize:
 ## General
 
 * Create an account on [https://www.bugsnag.com/](https://www.bugsnag.com/)
-* Set `BUGSNAG_API_KEY` on [config.js](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/config.js#L2)
 * Set `server`, `appGroup` and `appStoreId` on [app.json](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app.json#L5)
   * `appGroup` must be the same App Group created for the iOS app
 * Change app colors on [colors.js](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app/constants/colors.js)
@@ -123,7 +122,7 @@ Here we will show you how to customize:
 
 * Set your Bugsnag API key on `RocketChatRN/Info.plist`
 
-![](https://lh4.googleusercontent.com/vuLbbqHeK_lJC7y5zHt2Y_XNI_VRkhKu3Ee8CduE1TSGIQuvbc7EEKwvgXBD7CwvOa_QPIJFRnnDL-2j2wTwRe0neey8bP3wvuchTAQXgUBARrPh44ajgDScJXneKDw412aoQZ8e)
+![](../../../.gitbook/assets/image.png)
 
 ### Generating iOS app on Firebase
 

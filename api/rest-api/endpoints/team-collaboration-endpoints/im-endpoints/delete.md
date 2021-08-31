@@ -12,7 +12,7 @@ N.B. this endpoint requires the authenticated user to have the `view-room-admini
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `username` | `rocket.cat` | Required \(if no roomId\) | The username of the other direct message participant | 
+| `username` | `rocket.cat` | Required \(if no roomId\) | The username of the other direct message participant |
 | `roomId` | `ByehQjC44FwMeiLbX` | Required \(if no username\) | The direct message session id |
 
 ## Example Call
