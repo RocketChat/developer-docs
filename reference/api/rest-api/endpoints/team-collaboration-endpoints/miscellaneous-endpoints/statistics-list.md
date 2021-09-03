@@ -1,6 +1,6 @@
 # Statistics List
 
-Selectable statistics about the Rocket.Chat server. It supports the [Offset, Count and Sort Query Parameters](../others/offset-and-count-and-sort-info.md) along with just the [Fields and Query Parameters](../others/query-and-fields-info.md). Requires `view-statistics` permission.
+Selectable statistics about the Rocket.Chat server. It supports the [Offset, Count and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with just the [Fields and Query Parameters](../../other-important-endpoints/query-and-fields-info.md). Requires `view-statistics` permission.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
@@ -10,11 +10,11 @@ Selectable statistics about the Rocket.Chat server. It supports the [Offset, Cou
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `query` | `{"_id":"v3D4mvobwfznKozH8"}` | Required | See [Query Parameter](../others/query-and-fields-info.md) |
-| `offset` | `0` | Optional | See [Offset Parameter](../others/offset-and-count-and-sort-info.md) |
-| `count` | `1` | Optional | See [Count Parameter](../others/offset-and-count-and-sort-info.md) |
-| `fields` | `{"os":0,"migration":0,"deploy":0,"process":0}` | Optional | See [Fields Parameters](../others/query-and-fields-info.md) |
-| `sort` | `{"_id":1}` | Optional | See [Sort Query Parameters](../others/offset-and-count-and-sort-info.md) |
+| `query` | `{"_id":"v3D4mvobwfznKozH8"}` | Required | See [Query Parameter](../../other-important-endpoints/query-and-fields-info.md) |
+| `offset` | `0` | Optional | See [Offset Parameter](../../other-important-endpoints/offset-and-count-and-sort-info.md) |
+| `count` | `1` | Optional | See [Count Parameter](../../other-important-endpoints/offset-and-count-and-sort-info.md) |
+| `fields` | `{"os":0,"migration":0,"deploy":0,"process":0}` | Optional | See [Fields Parameters](../../other-important-endpoints/query-and-fields-info.md) |
+| `sort` | `{"_id":1}` | Optional | See [Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) |
 
 ## Example Call
 

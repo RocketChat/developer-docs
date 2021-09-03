@@ -1,6 +1,6 @@
 # Get Message Read Receipts
 
-Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](../others/offset-and-count-and-sort-info.md)
+Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md)
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

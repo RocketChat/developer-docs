@@ -16,24 +16,6 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 * Implement a timed authorization token expiration strategy
 * Ensure the calling user only has permissions for what they are calling and no more
 
-### Authentication
-
-| Url | Short Description | Details Page |
-| :--- | :--- | :--- |
-| `/api/v1/login` | Authenticate with the REST API. | [Link](endpoints/team-collaboration-endpoints/others/authentication-endpoints/login.md) |
-| `/api/v1/login` | Authenticate with google. | [Link](endpoints/team-collaboration-endpoints/others/authentication-endpoints/google.md) |
-| `/api/v1/login` | Authenticate with facebook. | [Link](endpoints/team-collaboration-endpoints/others/authentication-endpoints/facebook.md) |
-| `/api/v1/login` | Authenticate with twitter. | [Link](endpoints/team-collaboration-endpoints/others/authentication-endpoints/twitter.md) |
-| `/api/v1/logout` | Invalidate your REST API authentication token. | [Link](endpoints/team-collaboration-endpoints/others/authentication-endpoints/logout.md) |
-| `/api/v1/me` | Displays information about the authenticated user. | [Link](endpoints/team-collaboration-endpoints/others/authentication-endpoints/me.md) |
-
-### Licenses
-
-| Url | Method | Short Description | Details Page |
-| :--- | :--- | :--- | :--- |
-| `/api/v1/licenses.get` | `GET` | Gets all active licenses. | [Link](https://github.com/RocketChat/docs/tree/06af028aecca9430169baa3f517704a68deb6278/api/rest-api/methods/licenses/get.md) |
-| `/api/v1/licenses.add` | `POST` | Adds a new license. | [Link](https://github.com/RocketChat/docs/tree/06af028aecca9430169baa3f517704a68deb6278/api/rest-api/methods/licenses/add.md) |
-
 ## Language-specific wrappers
 
 <table>
