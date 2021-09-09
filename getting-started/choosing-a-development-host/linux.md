@@ -76,6 +76,6 @@ We look forward to the official release of Windows Subsystem for Linux 2 \(WSL 2
 ## See Also
 
 * [Supporting SSL for Mobile Apps](../../apps-engine/mobile-app-environment-setup/supporting-ssl-for-development-on-rocket.chat.md)
-* [Development Troubleshooting](../miscellaneous-dev-guides/troubleshooting.md)
+* [Development Troubleshooting](../../rocket.chat/contribute-to-rocket.chat/troubleshooting.md)
 * [Deployment Methods](linux.md)
 

@@ -8,7 +8,7 @@ Adding this to the URL will change the layout of Rocket.Chat to a more "simplist
 
 Setting a URL to embedded mode will "lock" that view in a single channel \(since the user will not have access to the channel lists\).
 
-Embedded layout works wonders when using with [Iframe integration](iframe-integration/) since you can already login the user using iframe and only show a desired channel embedded to a page.
+Embedded layout works wonders when using with [Iframe integration](../getting-started/miscellaneous-dev-guides/iframe-integration/) since you can already login the user using iframe and only show a desired channel embedded to a page.
 
 You can test this feature by going to [https://open.rocket.chat](https://open.rocket.chat) entering a channel and adding `?layout=embedded` to the URL.
 
