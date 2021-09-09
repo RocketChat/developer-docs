@@ -167,12 +167,11 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/emoji-custom` | get | Document Under Development |
 | `/api/v1/emoji-custom.all` | get | Document Under Development |
-| `/api/v1/emoji-custom.list` | List all custom emojis on the server. | [Link](custom-emoji-endpoints/list.md) |
-| `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](custom-emoji-endpoints/create.md) |
-| `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](custom-emoji-endpoints/delete.md) |
-| `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](custom-emoji-endpoints/update.md) |
+| `/api/v1/emoji-custom.list` | List all custom emojis on the server. | [Link](custom-emoji-endpoints/list-custom-emojis.md) |
+| `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](custom-emoji-endpoints/create-new-custom-emoji.md) |
+| `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](custom-emoji-endpoints/delete-custom-emoji.md) |
+| `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](custom-emoji-endpoints/update-a-custom-emoji.md) |
 
 ## Groups Endpoints <a id="email-inbox-endpoints"></a>
 
