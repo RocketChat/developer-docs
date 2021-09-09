@@ -319,7 +319,6 @@ Just some generic information, such as information about the server and authenti
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/directory` | Search by all users and channels available on server. | [Link](miscellaneous-endpoints/directory.md) |
-| `/api/info` | Information about the Rocket.Chat server. | [Link](miscellaneous-endpoints/info.md) |
 | `/api/v1/shield.svg` | Gets the shield SVG \(badge\) to add in your website. | [Link](miscellaneous-endpoints/shield-svg.md) |
 | `/api/v1/spotlight` | Searches for users or rooms that are visible to the user. | [Link](miscellaneous-endpoints/spotlight.md) |
 | `/api/v1/me` | get | Document Under Development |
@@ -337,10 +336,8 @@ Just some generic information, such as information about the server and authenti
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/permissions` | `get` | Document Under Development |
-| `/api/v1/permissions.list` | get | Document Under Development |
-| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](permissions-endpoints/listall.md) |
-| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](permissions-endpoints/update.md) |
+| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](permissions-endpoints/list-all-permissions.md) |
+| `/api/v1/permissions.update` | Edits permissions on the server. | [Link](permissions-endpoints/update-permissions.md) |
 
 ## **Push** Endpoints <a id="email-inbox-endpoints"></a>
 
