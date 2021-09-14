@@ -12,5 +12,5 @@ If you need listen to events, go to `Administration > General > Iframe Integrati
 
 * [How to use iframe integration events](iframe-events.md)
 * [How to use iframe integration commands](iframe-integration-sending-commands.md)
-* [Using embedded layout mode](../../../rocket.chat/embedded-layout.md)
+* [Using embedded layout mode](../embedded-layout.md)
 

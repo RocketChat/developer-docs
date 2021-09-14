@@ -23,13 +23,6 @@
     * [Development Environment Setup for Apps Engine](getting-started/building-specific-projects/apps-engine/development-environment-setup-for-apps-engine.md)
   * [Bots](getting-started/building-specific-projects/bots.md)
   * [Building Specific Projects FAQs](getting-started/building-specific-projects/building-specific-projects-faqs.md)
-* [Miscellaneous Dev Guides](getting-started/miscellaneous-dev-guides/README.md)
-  * [Iframe Integration](getting-started/miscellaneous-dev-guides/iframe-integration/README.md)
-    * [What is iframe auth?](getting-started/miscellaneous-dev-guides/iframe-integration/what-is-iframe-auth/README.md)
-      * [Testing the iFrame Authentication](getting-started/miscellaneous-dev-guides/iframe-integration/what-is-iframe-auth/testing-the-iframe-authentication.md)
-    * [Iframe Events](getting-started/miscellaneous-dev-guides/iframe-integration/iframe-events.md)
-    * [Iframe integration: Sending commands](getting-started/miscellaneous-dev-guides/iframe-integration/iframe-integration-sending-commands.md)
-  * [Adding a Rocket.Chat Chat Room to your Web App](getting-started/miscellaneous-dev-guides/adding-a-rocket.chat-chat-room-to-your-web-app.md)
 
 ## Rocket.Chat
 
@@ -38,6 +31,12 @@
 * [Two Factor Authentication](rocket.chat/two-factor-authentication.md)
 * [Embedded Layout](rocket.chat/embedded-layout.md)
 * [White Labelling Rocket.Chat](rocket.chat/white-labelling-rocket.chat.md)
+* [Iframe Integration](rocket.chat/iframe-integration/README.md)
+  * [Adding a Rocket.Chat Chat Room to your Web App](rocket.chat/iframe-integration/adding-a-rocket.chat-chat-room-to-your-web-app.md)
+  * [What is iframe auth?](rocket.chat/iframe-integration/what-is-iframe-auth/README.md)
+    * [Testing the iFrame Authentication](rocket.chat/iframe-integration/what-is-iframe-auth/testing-the-iframe-authentication.md)
+  * [Iframe Events](rocket.chat/iframe-integration/iframe-events.md)
+  * [Iframe integration: Sending commands](rocket.chat/iframe-integration/iframe-integration-sending-commands.md)
 * [Contribute to Rocket.Chat](rocket.chat/contribute-to-rocket.chat/README.md)
   * [Development Workflow](rocket.chat/contribute-to-rocket.chat/development-workflow.md)
   * [Code Style Guide](rocket.chat/contribute-to-rocket.chat/code-style-guide/README.md)

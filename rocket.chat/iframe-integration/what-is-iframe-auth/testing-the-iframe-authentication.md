@@ -12,13 +12,13 @@ The test service code can be used as an example on how to setup the iFrame auth 
 
 Configure Rocket.Chat server \(_Administration &gt; Accounts &gt; iFrame_\) as follows:
 
-![](../../../../.gitbook/assets/84309416-78b60580-ab36-11ea-9777-f2c0138a9677.png)
+![](../../../.gitbook/assets/84309416-78b60580-ab36-11ea-9777-f2c0138a9677.png)
 
 ## Step 3
 
 Test the iFrame service by calling Rocket.Chat login URL \(in this example, [http://localhost:3000\](http://localhost:3000\)_\)_
 
-![](../../../../.gitbook/assets/2020-08-12_10-58.png)
+![](../../../.gitbook/assets/2020-08-12_10-58.png)
 
 In this moment, the _iframe-auth-example_ service runs and the iframe authentication calls are executed.
 
