@@ -51,14 +51,14 @@
   * [Troubleshooting](rocket.chat/contribute-to-rocket.chat/troubleshooting.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
-## Mobile App <a id="apps-engine"></a>
+## Mobile App
 
-* [Mobile App Environment Setup](apps-engine/mobile-app-environment-setup/README.md)
-  * [Supporting SSL for development on Rocket.Chat](apps-engine/mobile-app-environment-setup/supporting-ssl-for-development-on-rocket.chat.md)
-  * [Analytics & Data Usage](apps-engine/mobile-app-environment-setup/analytics-and-data-usage.md)
-* [Mobile App Building From Source](apps-engine/mobile-app-building-from-source.md)
-* [Mobile App White Labelling](apps-engine/mobile-app-white-labelling.md)
-* [Mobile App FAQs](apps-engine/mobile-app-faqs.md)
+* [Mobile App Environment Setup](mobile-app/mobile-app-environment-setup/README.md)
+  * [Supporting SSL for development on Rocket.Chat](mobile-app/mobile-app-environment-setup/supporting-ssl-for-development-on-rocket.chat.md)
+  * [Analytics & Data Usage](mobile-app/mobile-app-environment-setup/analytics-and-data-usage.md)
+* [Mobile App Building From Source](mobile-app/mobile-app-building-from-source.md)
+* [Mobile App White Labelling](mobile-app/mobile-app-white-labelling.md)
+* [Mobile App FAQs](mobile-app/mobile-app-faqs.md)
 
 ## Desktop App
 
@@ -77,30 +77,30 @@
 * [Omnichannel White Labelling](omnichannel/omnichannel-white-labelling.md)
 * [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
-## Apps Engine <a id="apps-engine-1"></a>
+## Apps Engine
 
-* [Rocket.Chat App](apps-engine-1/rocket.chat-app/README.md)
-  * [Rocket.Chat App Engine CLI](apps-engine-1/rocket.chat-app/rocket.chat-app-engine-cli.md)
-  * [Creating an App](apps-engine-1/rocket.chat-app/creating-an-app.md)
-  * [App Submission to the Marketplace](apps-engine-1/rocket.chat-app/app-submission-to-the-marketplace/README.md)
-    * [App Submission through CLI](apps-engine-1/rocket.chat-app/app-submission-to-the-marketplace/app-submission-through-cli.md)
-    * [Paid App Submission \(through Publisher\)](apps-engine-1/rocket.chat-app/app-submission-to-the-marketplace/paid-app-submission-through-publisher.md)
-* [Fundamentals of Apps](apps-engine-1/fundamentals-of-apps/README.md)
-  * [App Lifecycle](apps-engine-1/fundamentals-of-apps/app-lifecycle.md)
-  * [Event Interfaces](apps-engine-1/fundamentals-of-apps/event-interfaces.md)
-  * [Scheduler API](apps-engine-1/fundamentals-of-apps/scheduler-api.md)
-* [Recipes](apps-engine-1/recipes/README.md)
-  * [Sub-command pattern](apps-engine-1/recipes/sub-command-pattern.md)
-  * [Extending Messages](apps-engine-1/recipes/extending-messages.md)
-  * [Making HTTP Requests](apps-engine-1/recipes/making-http-requests.md)
-  * [Storing User Input](apps-engine-1/recipes/storing-user-input.md)
-  * [Registering API endpoints](apps-engine-1/recipes/registering-api-endpoints.md)
-  * [Managing Internal State](apps-engine-1/recipes/managing-internal-state.md)
-* [Slack Compatibility](apps-engine-1/slack-compatibility.md)
-* [Permission System](apps-engine-1/permission-system.md)
-* [UIKit](apps-engine-1/uikit/README.md)
-  * [UIKit building blocks](apps-engine-1/uikit/uikit-building-blocks.md)
-  * [Slack Compatibility Layer's unsupported properties](apps-engine-1/uikit/slack-compatibility-layers-unsupported-properties.md)
+* [Rocket.Chat App](apps-engine/rocket.chat-app/README.md)
+  * [Rocket.Chat App Engine CLI](apps-engine/rocket.chat-app/rocket.chat-app-engine-cli.md)
+  * [Creating an App](apps-engine/rocket.chat-app/creating-an-app.md)
+  * [App Submission to the Marketplace](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/README.md)
+    * [App Submission through CLI](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/app-submission-through-cli.md)
+    * [Paid App Submission \(through Publisher\)](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/paid-app-submission-through-publisher.md)
+* [Fundamentals of Apps](apps-engine/fundamentals-of-apps/README.md)
+  * [App Lifecycle](apps-engine/fundamentals-of-apps/app-lifecycle.md)
+  * [Event Interfaces](apps-engine/fundamentals-of-apps/event-interfaces.md)
+  * [Scheduler API](apps-engine/fundamentals-of-apps/scheduler-api.md)
+* [Recipes](apps-engine/recipes/README.md)
+  * [Sub-command pattern](apps-engine/recipes/sub-command-pattern.md)
+  * [Extending Messages](apps-engine/recipes/extending-messages.md)
+  * [Making HTTP Requests](apps-engine/recipes/making-http-requests.md)
+  * [Storing User Input](apps-engine/recipes/storing-user-input.md)
+  * [Registering API endpoints](apps-engine/recipes/registering-api-endpoints.md)
+  * [Managing Internal State](apps-engine/recipes/managing-internal-state.md)
+* [Slack Compatibility](apps-engine/slack-compatibility.md)
+* [Permission System](apps-engine/permission-system.md)
+* [UIKit](apps-engine/uikit/README.md)
+  * [UIKit building blocks](apps-engine/uikit/uikit-building-blocks.md)
+  * [Slack Compatibility Layer's unsupported properties](apps-engine/uikit/slack-compatibility-layers-unsupported-properties.md)
 * [Apps-Engine API Reference](https://rocketchat.github.io/Rocket.Chat.Apps-engine)
 
 ## Bots
