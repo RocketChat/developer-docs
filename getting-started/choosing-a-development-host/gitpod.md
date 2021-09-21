@@ -25,23 +25,23 @@ A workspace will be created and loaded with familiar Visual Studio Code environm
 Next, start a terminal in your workspace. And install meteor.
 
 ```text
-gitpod /workspace/Rocket.Chat $ curl https://install.meteor.com/ | sh
+curl https://install.meteor.com/ | sh
 ```
 
 There will be warning messages, you do not have and do not need sudo \(root access\) on Gitpod. Next, add the newly installed meteor to your path.
 
 ```text
-gitpod /workspace/Rocket.Chat $ PATH=$PATH:/home/gitpod/.meteor
+export PATH=$PATH:/home/gitpod/.meteor
 ```
 
 Finally, install the node dependencies and start your server.
 
 ```text
-gitpod /workspace/Rocket.Chat $ meteor npm i
+meteor npm i
 ```
 
 ```text
-gitpod /workspace/Rocket.Chat $ meteor npm start
+meteor npm start
 ```
 
 After a few minutes, your development environment should be up and running.
