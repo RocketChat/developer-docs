@@ -16,5 +16,5 @@ Now there are two ways you can submit your app:
 
 {% page-ref page="app-submission-through-cli.md" %}
 
-{% page-ref page="paid-app-submission-through-publisher.md" %}
+{% page-ref page="app-submission-through-publisher.md" %}
 

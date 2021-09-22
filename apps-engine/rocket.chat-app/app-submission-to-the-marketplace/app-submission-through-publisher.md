@@ -1,30 +1,41 @@
-# Paid App Submission \(through Publisher\)
+# App Submission through Publisher
 
 To submit an app through the publisher:
 
 1. Go to [https://marketplace.rocket.chat/publisher/register](https://marketplace.rocket.chat/publisher/register) \(provided in the CLI\)
 2. Log in using your account
 
-![](../../../.gitbook/assets/image%20%28184%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
-1. Sign up your publisher account,  as shown below:
+Or Sign up for your publisher account,  as shown below:
 
 ![](../../../.gitbook/assets/image%20%28183%29.png)
 
 Your publisher developer account is created, as shown below:
 
-![](../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../.gitbook/assets/image%20%2811%29.png)
 
-1. Click **New App** to add a new app:
+## To add a new app:
 
-![](../../../.gitbook/assets/image%20%28185%29%20%281%29.png)
+1. Click **New App**
 
-![](../../../.gitbook/assets/image%20%28188%29.png)
+![](../../../.gitbook/assets/image%20%288%29.png)
 
-**To publish your app:**
+Following screen appears: 
 
-1. Choose the relevant category.
-2. Select the purchase type. If your app is free, you can select the **Purchase Type: Buy** and enter the price $0, as shown below:
+![](../../../.gitbook/assets/image%20%289%29.png)
+
+2. Drag and drop your app package, as shown below:
+
+![](../../../.gitbook/assets/image%20%2816%29.png)
+
+Click **Next** and set details of the app you're going to publish.
+
+## **Set App details:**
+
+![](../../../.gitbook/assets/image%20%284%29.png)
+
+1. Select the purchase type. If your app is free, you can select the **Purchase Type: Buy** and enter the price $0, as shown below:
 
 ![](../../../.gitbook/assets/image%20%28195%29.png)
 

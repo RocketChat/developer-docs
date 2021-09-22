@@ -84,7 +84,7 @@
   * [Creating an App](apps-engine/rocket.chat-app/creating-an-app.md)
   * [App Submission to the Marketplace](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/README.md)
     * [App Submission through CLI](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/app-submission-through-cli.md)
-    * [Paid App Submission \(through Publisher\)](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/paid-app-submission-through-publisher.md)
+    * [App Submission through Publisher](apps-engine/rocket.chat-app/app-submission-to-the-marketplace/app-submission-through-publisher.md)
 * [Fundamentals of Apps](apps-engine/fundamentals-of-apps/README.md)
   * [App Lifecycle](apps-engine/fundamentals-of-apps/app-lifecycle.md)
   * [Event Interfaces](apps-engine/fundamentals-of-apps/event-interfaces.md)
