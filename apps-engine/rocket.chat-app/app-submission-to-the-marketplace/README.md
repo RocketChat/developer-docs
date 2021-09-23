@@ -3,7 +3,7 @@
 So, you just finished writing your first Rocket.Chat App, and you have successfully tested it locally which means you are ready to submit it to the Marketplace for others to use. This article will take you through the process, step-by-step.
 
 {% hint style="info" %}
-When you submit an App, there is a three-step process that takes place. In the first step, you submit the App to the Marketplace \(explained below\). Secondly, you will receive an email that asks for you to approve or reject the App submission \(more on this later as well\). Finally, after you approve the entry, then our staff will review it and determine whether it is to be approved or not.
+When you submit an App, there is a three-step process that takes place. In the first step, you submit the App to the Marketplace \(explained below\). Secondly, you will receive an email that asks for you to approve or reject the App submission \(more on this later as well\). Finally, after you approve the entry, then our staff will review it and determine whether it is to be approved published or not.
 {% endhint %}
 
 ## Packaging the app
