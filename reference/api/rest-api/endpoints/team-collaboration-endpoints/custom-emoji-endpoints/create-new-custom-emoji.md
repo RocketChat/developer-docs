@@ -4,8 +4,6 @@ description: Create new custom emoji.
 
 # Create new custom emoji
 
-
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/emoji-custom.create` | `yes` | `POST` |
