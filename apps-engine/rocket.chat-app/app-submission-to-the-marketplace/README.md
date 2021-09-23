@@ -12,7 +12,7 @@ Currently the Rocket.Chat servers and Marketplace allow submission of zip files,
 
 ## App Submission
 
-Now there are two ways you can submit your app:
+To be able to submit an App to the Marketplace, the Publisher must have a [Cloud Account](https://cloud.rocket.chat/login) and register their [Publisher Account](https://marketplace.rocket.chat/publisher/register).
 
 {% page-ref page="app-submission-through-cli.md" %}
 

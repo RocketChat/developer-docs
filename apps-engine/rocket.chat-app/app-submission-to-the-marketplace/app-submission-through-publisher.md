@@ -44,7 +44,9 @@ In the following section we will guide you through different purchase types. You
 
 ![](../../../.gitbook/assets/image%20%2856%29.png)
 
-### 
+{% hint style="info" %}
+For a paid app its madatory to connect with [Stripe](https://stripe.com/) account before submission.
+{% endhint %}
 
 {% hint style="info" %}
 Your users are allowed to buy the app per workspace. If they have two workspaces and want to use the app on both, they need to buy the app separately.
@@ -100,7 +102,7 @@ You can make your app available to your customers free of cost,  as shown below;
 
 Next you can set your app info:
 
-* You can upload some images of your app, 
+* You can upload some images of your app, \(Screenshots \(1200x600 px\), \(max of 5 images\)\)
 * Set its description
 * Mention privacy and data handling rules
 
@@ -118,7 +120,15 @@ Your app is published successfully, as shown below:
 
 ![](../../../.gitbook/assets/image%20%2815%29.png)
 
-After successful submission, you can see the status of your app as compiling, as shown below:
+## Process after successful submission:
+
+After successful submission following events happen at Rocket.Chat side, that you should be aware of:
+
+* Compiling
+* Approvement
+* Publishing
+
+You can see the status of your app as **compiling**, as shown below:
 
 ![](../../../.gitbook/assets/image%20%28191%29.png)
 
@@ -130,5 +140,7 @@ Then you get notified to review your app, as shown below:
 
 ![](../../../.gitbook/assets/image%20%28192%29%20%281%29.png)
 
-You log in to your cloud account and approve it. After your approval, rocket.chat reviews it, and you will be notified via email that your app is now listed.
+You log in to your cloud account and **approve** it.
+
+After your approval, rocket.chat reviews it, and you will be notified via email that your app is now **Published** \(listed\).
 
