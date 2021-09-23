@@ -167,8 +167,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/emoji-custom.all` | get | Document Under Development |
-| `/api/v1/emoji-custom.list` | List all custom emojis on the server. | [Link](custom-emoji-endpoints/list-custom-emojis.md) |
+| `/api/v1/emoji-custom.all` | Retrieves all custom emojis | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/list-all-custom-emojis) |
+| `/api/v1/emoji-custom.list` | Get an updated list of custom emojis | [Link](custom-emoji-endpoints/list-custom-emojis.md) |
 | `/api/v1/emoji-custom.create` | Create new custom emoji. | [Link](custom-emoji-endpoints/create-new-custom-emoji.md) |
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji. | [Link](custom-emoji-endpoints/delete-custom-emoji.md) |
 | `/api/v1/emoji-custom.update` | Update an existent custom emoji. | [Link](custom-emoji-endpoints/update-a-custom-emoji.md) |
