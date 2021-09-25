@@ -102,7 +102,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.unPinMessage` | Removes the pinned status of the provided chat message. | [Link](chat-endpoints/unpinmessage.md) |
 | `/api/v1/chat.unStarMessage` | Removes the star on the chat message for the authenticated user. | [Link](chat-endpoints/unstarmessage.md) |
 | `/api/v1/chat.update` | Updates the text of the chat message. | [Link](chat-endpoints/message-update.md) |
-| `/api/v1/chat.syncMessages` | get | Document Under Development |
+| `/api/v1/chat.syncMessages` | Syncs messages  | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/sync-messages) |
 
 ## Cloud Endpoints
 
