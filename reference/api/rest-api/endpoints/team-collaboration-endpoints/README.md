@@ -236,7 +236,6 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/im.delete` | post | Document Under Development |
 | `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](im-endpoints/close.md) |
 | `/api/v1/im.counters` | Gets counters of direct messages. | [Link](im-endpoints/counters.md) |
 | `/api/v1/im.create` | Create a direct message session with another user. | [Link](im-endpoints/create.md) |
@@ -252,7 +251,6 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/im.delete` | post | Document Under Development |
 | `/api/v1/im.close` | Removes a direct message from the list of direct messages. | [Link](im-endpoints/close.md) |
 | `/api/v1/im.counters` | Gets counters of direct messages. | [Link](im-endpoints/counters.md) |
 | `/api/v1/im.create` | Create a direct message session with another user. | [Link](im-endpoints/create.md) |
