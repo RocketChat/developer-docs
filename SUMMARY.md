@@ -403,6 +403,7 @@
           * [Star Message](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/starmessage.md)
           * [Sync Thread List](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/syncthreadslist.md)
           * [Sync Thread Messages](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/syncthreadmessages.md)
+          * [Sync Messages](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/sync-messages.md)
           * [Unfollow Message](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/unfollowmessage.md)
           * [Unpins Message](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/unpinmessage.md)
           * [Unstar Message](reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/unstarmessage.md)
