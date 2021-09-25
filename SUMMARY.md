@@ -465,7 +465,6 @@
           * [Groups Files](reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/files.md)
           * [Groups Roles](reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/roles.md)
         * [IM Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/README.md)
-          * [Total of transferred chats by department](reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/total-of-transferred-chats-by-department.md)
           * [Close](reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/close.md)
           * [Counters](reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/counters.md)
           * [Create](reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/create.md)
