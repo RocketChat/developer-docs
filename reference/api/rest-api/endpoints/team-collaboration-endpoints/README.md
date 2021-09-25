@@ -247,7 +247,6 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](im-endpoints/list.md) |
 | `/api/v1/im.list.everyone` | List all direct messages the caller in the server. | [Link](im-endpoints/list-everyone.md) |
 | `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](im-endpoints/open.md) |
-| `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](im-endpoints/settopic.md) |
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
@@ -263,7 +262,6 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/im.list` | List the direct messages the caller is part of. | [Link](im-endpoints/list.md) |
 | `/api/v1/im.list.everyone` | List all direct messages the caller in the server. | [Link](im-endpoints/list-everyone.md) |
 | `/api/v1/im.open` | Adds the direct message back to the list of direct messages. | [Link](im-endpoints/open.md) |
-| `/api/v1/im.setTopic` | Sets a direct message topic. | [Link](im-endpoints/settopic.md) |
 
 ## Notes
 
