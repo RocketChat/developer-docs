@@ -56,7 +56,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.open` | Adds the channel back to the user's list of channels. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/open) |
 | `/api/v1/channels.removeleader` | Removes the role of Leader for a user in the current channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/removeleader) |
 | `/api/v1/channels.removeModerator` | Removes the role of moderator from a user in a channel. | [Link](channels-endpoints/removemoderator.md) |
-| `/api/v1/channels.removeOwner` | Removes the role of owner from a user in a channel. | [Link](channels-endpoints/removeowner.md) |
+| `/api/v1/channels.removeOwner` | Removes the role of the owner from a user in a channel. | [Link](channels-endpoints/removeowner.md) |
 | `/api/v1/channels.rename` | Changes a channel's name. | [Link](channels-endpoints/rename.md) |
 | `/api/v1/channels.roles` | Gets the user's roles in the channel. | [Link](channels-endpoints/roles.md) |
 | `/api/v1/channels.setAnnouncement` | Sets a channel's announcement. | [Link](channels-endpoints/setannouncement.md) |
@@ -83,8 +83,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.getMessage` | Retrieves a single chat message. | [Link](chat-endpoints/getmessage.md) |
 | `/api/v1/chat.getMessageReadReceipts` | Retrieves message read receipts. | [Link](chat-endpoints/getmessagereadreceipts.md) |
 | `/api/v1/chat.getPinnedMessages` | Retrieve pinned messages from a room. | [Link](chat-endpoints/getpinnedmessages.md) |
-| `/api/v1/chat.getSnippetedMessages` | Retrieves snippeted messages. | [Link](chat-endpoints/getsnippetedmessages.md) |
-| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippeted message by id. | [Link](chat-endpoints/getsnippetedmessagebyid.md) |
+| `/api/v1/chat.getSnippetedMessages` | Retrieves snippet messages. | [Link](chat-endpoints/getsnippetedmessages.md) |
+| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippet message by id. | [Link](chat-endpoints/getsnippetedmessagebyid.md) |
 | `/api/v1/chat.getStarredMessages` | Retrieves the starred messages. | [Link](chat-endpoints/getstarredmessages.md) |
 | `/api/v1/chat.getThreadMessages` | Retrieves thread's messages. | [Link](chat-endpoints/getthreadmessages.md) |
 | `/api/v1/chat.getThreadsList` | Retrieves channel's threads. | [Link](chat-endpoints/getthreadslist.md) |
