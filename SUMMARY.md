@@ -425,6 +425,7 @@
         * [DNS Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/dns-endpoints.md)
         * [E2E Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/README.md)
           * [Fetch your E2E Keys](reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/fetch-your-e2e-keys.md)
+          * [Get Users Of Room Without E2E Key](reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/get-users-of-room-without-e2e-key.md)
         * [Email Inbox Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints.md)
         * [Custom Emoji Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/README.md)
           * [List all custom emojis](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/list-all-custom-emojis.md)
