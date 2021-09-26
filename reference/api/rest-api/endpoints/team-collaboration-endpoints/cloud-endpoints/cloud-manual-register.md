@@ -21,7 +21,7 @@ description: Manually register a workspace
 curl --location --request POST 'http://localhost:3000/api/v1/cloud.manualRegister\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
- -d "cloudBlob="""
+ -d "cloudBlob="
 ```
 
 ## Result
