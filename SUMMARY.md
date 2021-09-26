@@ -419,6 +419,7 @@
           * [Custom Sounds List](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-sounds-endpoints/custom-sounds-list.md)
         * [Custom User Status Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/README.md)
           * [Custom User Status List](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/list.md)
+          * [Create custom user status](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/create-custom-user-status.md)
         * [DNS Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/dns-endpoints.md)
         * [E2E Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints.md)
         * [Email Inbox Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints.md)
