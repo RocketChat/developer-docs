@@ -26,10 +26,41 @@ curl --location --request POST 'http://localhost:3000/api/v1/cloud.manualRegiste
 
 ## Result
 
+### Success
+
+```javascript
+{
+    "success": True,
+    
+}
+```
+
+
+
+### Errors
+
+Any of the following errors can occur upon the endpoint.
+
+* **Authorization**: Requires an authentication token for the request to be made.
+* **Registration Status**: Requires a new \(non-registered\) for the request to be made.
+
+{% tabs %}
+{% tab title=" Authorization" %}
+```javascript
+{
+    "success": false,
+    "error": "unauthorized"
+}
+```
+{% endtab %}
+
+{% tab title="Registration Status" %}
 ```javascript
 {
     "success": false,
     "error": "Workspace is already registered"
 }
 ```
+{% endtab %}
+{% endtabs %}
 
