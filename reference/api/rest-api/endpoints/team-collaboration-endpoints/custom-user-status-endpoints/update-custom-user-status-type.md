@@ -45,7 +45,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/custom-user-status.
 Any of the following errors can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* No custom user status id: Requires a valid custom user status `_id`
+* **No custom user status id**: Requires a valid custom user status `_id`
 
 {% tabs %}
 {% tab title=" Authorization" %}
