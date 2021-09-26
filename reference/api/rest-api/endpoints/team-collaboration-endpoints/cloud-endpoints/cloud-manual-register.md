@@ -1,5 +1,5 @@
 ---
-description: Manually Register a cloud workspace
+description: Manually register a workspace
 ---
 
 # Cloud Manual Register
