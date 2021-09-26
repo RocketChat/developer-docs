@@ -131,9 +131,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/custom-user-status.list` | Lists all available custom user's status. | [Link](custom-user-status-endpoints/list.md) |
-| `/api/v1/custom-user-status.create` | post | Document Under Development |
-| `/api/v1/custom-user-status.delete` | post | Document Under Development |
-| `/api/v1/custom-user-status.update` | post | Document Under Development |
+| `/api/v1/custom-user-status.create` | Creates custom user status | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/create-custom-user-status) |
+| `/api/v1/custom-user-status.delete` | Deletes a custom user status | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/delete-custom-user-status) |
+| `/api/v1/custom-user-status.update` | Updates a custom user status | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/update-custom-user-status-type) |
 
 ## DNS Endpoints
 
