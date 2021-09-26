@@ -16,7 +16,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/custom-user-status.list
 ```
 
-## Example Result
+##  Result
+
+### Success
 
 ```javascript
 {
@@ -40,6 +42,23 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
   "success": true
 }
 ```
+
+### Errors
+
+The following error can occur upon the endpoint.
+
+* **Authorization**: Requires an authentication token for the request to be made.
+
+{% tabs %}
+{% tab title=" Authorization" %}
+```javascript
+{
+    "success": false,
+    "error": "unauthorized"
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Change Log
 

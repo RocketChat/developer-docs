@@ -18,7 +18,7 @@ description: Creates custom user status
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/cloud.manualRegister\
+curl --location --request POST 'http://localhost:3000/api/v1/custom-user-status.create\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
  -d "name=In a meeting$statusType:"
@@ -33,7 +33,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/cloud.manualRegiste
     "customUserStatus": {
         "_id": "EscbQinc8jmeXbpt7",
         "name": "In a meeting",
-        "statusType": Busy,
+        "statusType": "Busy",
         "_updatedAt": "2021-09-26T14:03:43.057Z"
     },
     "success": true
@@ -45,7 +45,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/cloud.manualRegiste
 Any of the following errors can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **Name field empty**: Requires a custom user status `Name`.
+* **Name pram empty**: Requires a custom user status `Name`.
 * **The** **Status name** **already in use**: Requires a unique custom user status `Name`.
 * **Invalid status type**:  Requires a valid  `StatusType` e.g. `Online` `Busy` `Away` `Offline`
 
@@ -59,7 +59,7 @@ Any of the following errors can occur upon the endpoint.
 ```
 {% endtab %}
 
-{% tab title="Name field" %}
+{% tab title="Name pram" %}
 ```javascript
 {
     "success": false,
