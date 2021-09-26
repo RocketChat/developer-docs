@@ -108,7 +108,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/cloud.manualRegister` | Post | Document Under Development |
+| `/api/v1/cloud.manualRegister` | Manually register a workspace | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/cloud-endpoints/cloud-manual-register) |
 
 ## Commands Endpoints
 
