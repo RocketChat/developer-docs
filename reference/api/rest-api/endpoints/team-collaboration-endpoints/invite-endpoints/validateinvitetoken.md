@@ -1,6 +1,12 @@
+---
+description: Checks if an invite token is valid.
+---
+
 # Validate Invite Token
 
-Checks if an invite token is valid. No permissions are required.
+{% hint style="info" %}
+No permissions are required.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

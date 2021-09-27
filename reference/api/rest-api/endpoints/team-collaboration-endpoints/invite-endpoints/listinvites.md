@@ -1,6 +1,12 @@
+---
+description: Lists all of the invites on the server.
+---
+
 # List Invites
 
-Lists all of the invites on the server. Requires the `create-invite-links` permission.
+{% hint style="info" %}
+Requires the `create-invite-links` permission.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

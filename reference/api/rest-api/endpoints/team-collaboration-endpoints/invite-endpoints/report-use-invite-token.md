@@ -1,6 +1,12 @@
-# Use Invite Token
+---
+description: Report to the server that an invite token was used.
+---
 
-Report to the server that an invite token was used. No permissions are required.
+# Report use Invite Token
+
+{% hint style="info" %}
+No permissions are required.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

@@ -1,6 +1,12 @@
+---
+description: Removes an invite from the server.
+---
+
 # Remove Invite
 
-Removes an invite from the server. Requires the `create-invite-links` permission.
+{% hint style="info" %}
+Requires the `create-invite-links` permission.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
