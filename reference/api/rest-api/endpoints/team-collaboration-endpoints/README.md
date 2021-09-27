@@ -273,7 +273,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | :--- | :--- | :--- |
 | `/api/v1/findOrCreateInvite` | Created a new Invite or returns an existing one with the same parameters. | [Link](invite-endpoints/findorcreateinvite.md) |
 | `/api/v1/listInvites` | Lists all of the invite tokens. | [Link](invite-endpoints/listinvites.md) |
-| `/api/v1/removeInvite/:_id` | delete | Document Under Development |
+| `/api/v1/removeInvite/:_id` | Deletes an invite from the server. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/delete-invite-by-id) |
 | `/api/v1/useInviteToken` | Report to the server that an invite token was used. | [Link](invite-endpoints/report-use-invite-token.md) |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid. | [Link](invite-endpoints/validateinvitetoken.md) |
 
