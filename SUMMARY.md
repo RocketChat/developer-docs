@@ -495,6 +495,7 @@
         * [Invite Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/README.md)
           * [Find or Create Invite](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/findorcreateinvite.md)
           * [List Invites](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/listinvites.md)
+          * [Delete invite by id](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/delete-invite-by-id.md)
           * [Remove Invite](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/removeinvite.md)
           * [Use Invite Token](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/useinvitetoken.md)
           * [Validate Invite Token](reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/validateinvitetoken.md)

@@ -1,12 +1,16 @@
 ---
-description: Deletes a custom user status
+description: Deletes an invite from the server.
 ---
 
-# Delete custom user status
+# Delete invite by id
+
+{% hint style="info" %}
+Requires the `create-invite-links` permission.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/custom-user-status.delete` | `YES` | `POST` |
+| `api/v1/removeInvite/:_id` | `YES` | `DELETE` |
 
 ## Headers
 
@@ -15,10 +19,16 @@ description: Deletes a custom user status
 | `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
 
+## Payload
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `_id` | `'kDKQ3H'` | Required | The id of the invite to be deleted. |
+
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/custom-user-status.delete\
+curl --location --request DELETE 'http://localhost:3000/api/v1/removeInvite/:_id\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
  -d "customUserStatusId=EscbQinc8jmeXbpt7"
@@ -39,7 +49,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/custom-user-status.
 Any of the following errors can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **customUserStatusId param**: Requires a custom user status `customUserStatusId`.
+* **Invalid Invitation Id**: Requires a valid invitation  `_id`
 
 {% tabs %}
 {% tab title=" Authorization" %}
@@ -51,11 +61,15 @@ Any of the following errors can occur upon the endpoint.
 ```
 {% endtab %}
 
-{% tab title="customUserStatusId pram" %}
+{% tab title="Invalid Invitation Id" %}
 ```javascript
 {
     "success": false,
-    "error": "The \"customUserStatusId\" params is required!"
+    "error": "Invalid Invitation _id [invalid-invitation-id]",
+    "errorType": "invalid-invitation-id",
+    "details": {
+        "method": "removeInvite"
+    }
 }
 ```
 {% endtab %}

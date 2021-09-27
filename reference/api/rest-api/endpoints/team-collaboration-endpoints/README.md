@@ -146,8 +146,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/e2e.fetchMyKeys` | get | Document Under Development |
-| `/api/v1/e2e.getUsersOfRoomWithoutKey` | post | Document Under Development |
+| `/api/v1/e2e.fetchMyKeys` | Retrieves E2E keys of logged in user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/fetch-your-e2e-keys) |
+| `/api/v1/e2e.getUsersOfRoomWithoutKey` | Retrieves Users Of Room Without E2E Key | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/get-users-of-room-without-e2e-key) |
 | `/api/v1/e2e.setRoomKeyID` | post | Document Under Development |
 | `/api/v1/e2e.setUserPublicAndPrivateKeys` | post | Document Under Development |
 | `/api/v1/e2e.updateGroupKey` | post | Document Under Development |
