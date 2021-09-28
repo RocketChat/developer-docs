@@ -437,7 +437,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.removeOtherTokens` | `Post` | Remove other tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens) |
 | `/api/v1/users.resetE2EKey` | `post` |  | Document Under Development |
 | `/api/v1/users.resetTOTP` | `Post` |  | Document Under Development |
-| `/api/v1/users.listTeams` | `Get` |  | Document Under Development |
+| `/api/v1/users.listTeams` | `Get` | Lists users teams | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams) |
 | `/api/v1/users.logout` | `Post` | Logs user out. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint) |
 
 ## **Video Conference** Endpoints <a id="email-inbox-endpoints"></a>
