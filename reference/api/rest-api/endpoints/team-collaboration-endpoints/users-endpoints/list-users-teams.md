@@ -25,7 +25,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/users.listTeams\
 ```
 
 {% hint style="info" %}
-If the caller has permission to view all teams, there's no need to filter the teams
+If the caller has permission to view all teams, there's no need to filter the teams.
 {% endhint %}
 
 ## Result
