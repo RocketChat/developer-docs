@@ -599,7 +599,7 @@
           * [Remove Other Tokens](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens.md)
           * [Reset Users E2E Key](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-users-e2e-key.md)
           * [Reset Users TOTP](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-users-totp.md)
-          * [List Teams Users](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-teams-users.md)
+          * [List users teams](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams.md)
           * [Logout User Endpoint](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint.md)
         * [Video Conference Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/README.md)
           * [Update Jitsi Timeout](reference/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout.md)

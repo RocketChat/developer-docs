@@ -1,12 +1,12 @@
 ---
-description: Logs user out.
+description: Lists users teams
 ---
 
-# Logout User Endpoint
+# List users teams
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
-| `api/v1/users.logout` | `YES` | `POST` |
+| `api/v1/users.listTeams` | `YES` | `GET` |
 
 ## Headers
 
@@ -18,9 +18,10 @@ description: Logs user out.
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/users.logout\
+curl --location --request POST 'http://localhost:3000/api/v1/users.listTeams\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
+-d "userId=JxemcN9PDCdfzJe"
 ```
 
 ## Result
@@ -29,7 +30,21 @@ curl --location --request POST 'http://localhost:3000/api/v1/users.logout\
 
 ```javascript
 {
-    "message": "User JxemcN9PDCdfzJeZr has been logged out!",
+    "teams": [
+        {
+            "_id": "612b8ae982d286c3",
+            "name": "documentation-team",
+            "type": 0,
+            "createdAt": "2021-08-29T13:26:01.750Z",
+            "createdBy": {
+                "_id": "JxemcN9PDCdfzJe",
+                "username": "renato.b"
+            },
+            "_updatedAt": "2021-08-29T13:26:01.762Z",
+            "roomId": "GwktYAajqw4RiWiBK",
+            "isOwner": true
+        }
+    ],
     "success": true
 }
 ```
@@ -44,8 +59,8 @@ The following error can occur upon the endpoint.
 {% tab title=" Authorization" %}
 ```javascript
 {
-    "success": false,
-    "error": "unauthorized"
+    "status": "error",
+    "message": "You must be logged in to do this."
 }
 ```
 {% endtab %}
