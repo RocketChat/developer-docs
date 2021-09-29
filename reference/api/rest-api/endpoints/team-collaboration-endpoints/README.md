@@ -433,7 +433,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.presence` | `Get` | Gets all connected users presence. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence) |
 | `/api/v1/users.requestDataDownload` | `Get` | Request the user's data for download. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload) |
 | `/api/v1/users.logoutOtherClients` | `Post` | Logs out other clients | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-other-clients) |
-| `/api/v1/users.autocomplete` | `Get` |  | Document Under Development |
+| `/api/v1/users.autocomplete` | `Get` | Lists the user whose names match a given pattern. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/autocomplete-user) |
 | `/api/v1/users.removeOtherTokens` | `Post` | Remove other tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens) |
 | `/api/v1/users.resetE2EKey` | `post` |  | Document Under Development |
 | `/api/v1/users.resetTOTP` | `Post` |  | Document Under Development |

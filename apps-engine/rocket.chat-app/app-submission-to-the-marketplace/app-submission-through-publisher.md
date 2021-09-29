@@ -42,7 +42,7 @@ Click **Next** and set details of the app you're going to publish.
 
 In the following section we will guide you through different purchase types. You can choose the one that suits your needs.
 
-![](../../../.gitbook/assets/image%20%2856%29.png)
+![](../../../.gitbook/assets/image%20%2856%29%20%281%29.png)
 
 {% hint style="info" %}
 For a paid app its madatory to connect with [Stripe](https://stripe.com/) account before submission.
