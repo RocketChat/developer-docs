@@ -549,7 +549,7 @@
           * [List of teams of caller](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/list-of-teams-of-caller.md)
           * [List All Teams with Info](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/list-all-teams-with-info.md)
           * [Create a new Team](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/create-a-new-team.md)
-          * [Convert Team To Channel](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/convert-team-to-channel.md)
+          * [Convert team to channel](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/convert-team-to-channel.md)
           * [Add Rooms to a Team](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/add-rooms-to-a-team.md)
           * [Remove a room from team](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/remove-a-room-from-team.md)
           * [Update Room from a team](reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/update-room-from-a-team.md)
