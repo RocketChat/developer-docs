@@ -20,7 +20,7 @@ description: Converts team to channel
 ```bash
 curl --location --request POST 'http://localhost:3000/api/v1/teams.convertToChannel\
 --header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
+--header 'X-User-Id: myuser-name' \
 -d "teamId=612b8ae982d286c3d1f5db31"
 ```
 
