@@ -79,7 +79,7 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
 The following error can occur upon the endpoint.‌
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* Selector Param: Requires selector param for the request to be made.
+* **Selector Param**: Requires selector param for the request to be made.
 
 {% tabs %}
 {% tab title="Authorization" %}
