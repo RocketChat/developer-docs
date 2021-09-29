@@ -382,7 +382,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/teams.list` | Lists the public and private teams the caller is part of. | [Link](teams-endpoints/list-of-teams-of-caller.md) |
 | `/api/v1/teams.listAll` | Lists all of the teams and their information. | [Link](teams-endpoints/list-all-teams-with-info.md) |
 | `/api/v1/teams.create` | Creates a new team. | [Link](teams-endpoints/create-a-new-team.md) |
-| `/api/v1/teams.convertToChannel` | post | Document Under Development |
+| `/api/v1/teams.convertToChannel` | Converts team to channel. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/convert-team-to-channel) |
 | `/api/v1/teams.addRooms` | Adds rooms to the team. | [Link](teams-endpoints/add-rooms-to-a-team.md) |
 | `/api/v1/teams.removeRoom` | Removes a room from a team. | [Link](teams-endpoints/remove-a-room-from-team.md) |
 | `/api/v1/teams.updateRoom` | Updates a room from a team, limited to permissions. | [Link](teams-endpoints/update-room-from-a-team.md) |
