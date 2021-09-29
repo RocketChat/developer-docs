@@ -1,6 +1,8 @@
-# Autocomplete Team
+---
+description: List the teams whose names match a given pattern.
+---
 
-List the teams whose names match a given pattern.
+# Autocomplete Team
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
