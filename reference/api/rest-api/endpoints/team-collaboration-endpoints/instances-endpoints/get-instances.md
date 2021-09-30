@@ -1,7 +1,5 @@
 # Get instances
 
-
-
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `api/v1/instances.get` | `YES` | `GET` |
