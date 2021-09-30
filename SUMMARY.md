@@ -531,6 +531,7 @@
           * [Favorite/Unfavourite a Room](reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/favorite-unfavourite-a-room.md)
           * [Upload File to a Room](reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/upload-file-to-a-room.md)
           * [Room name autocomplete for team](reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/room-name-autocomplete-for-team.md)
+          * [Autocomplete private channel](reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/autocomplete-private-channel.md)
           * [Create Discussion](reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/creatediscussion.md)
         * [Settings Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/settings-endpoints/README.md)
           * [Get public settings](reference/api/rest-api/endpoints/team-collaboration-endpoints/settings-endpoints/get-public-settings.md)

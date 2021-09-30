@@ -337,11 +337,11 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.getDiscussions` | `GET` | Gets room's discussions. | [Link](rooms-endpoints/getdiscussions.md) |
 | `/api/v1/rooms.info` | `GET` | Gets info from a room. | [Link](rooms-endpoints/info.md) |
 | `/api/v1/rooms.leave` | `POST` | Leaves a room. | [Link](rooms-endpoints/leave-room.md) |
-| `/api/v1/rooms.saveNotification` | `POST` | Sets the notification settings of specific channel. | [Link](rooms-endpoints/save-room-notification.md) |
+| `/api/v1/rooms.saveNotification` | `POST` | Sets the notification settings of a specific channel. | [Link](rooms-endpoints/save-room-notification.md) |
 | `/api/v1/rooms.upload/:rid` | `POST` | Upload a message with attached file. | [Link](rooms-endpoints/upload-file-to-a-room.md) |
 | `/api/v1/rooms.adminRooms.getRoom` | `GET` | \`\` | Document Under Development |
 | `/api/v1/rooms.autocomplete.channelAndPrivate` | `GET` | \`\` | Document Under Development |
-| `/api/v1/rooms.autocomplete.availableForTeams` | `GET` | \`\` | Document Under Development |
+| `/api/v1/rooms.autocomplete.availableForTeams` | `GET` | Autocompletes room name available for conversion to team | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/room-name-autocomplete-for-team) |
 | `/api/v1/rooms.saveRoomSettings` | `POST` | \`\` | Document Under Development |
 | `/api/v1/rooms.changeArchivationState` | `POST` | \`\` | Document Under Development |
 | `/api/v1/rooms.export` | `POST` |  | Document Under Development |

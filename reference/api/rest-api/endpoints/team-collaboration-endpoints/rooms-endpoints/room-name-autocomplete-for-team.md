@@ -24,7 +24,7 @@ description: Autocompletes room name available for conversion to team
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/crooms.autocomplete.availableForTeams?name=data-loss-prevention\
+curl --location --request GET 'http://localhost:3000/api/v1/rooms.autocomplete.availableForTeams?name=data-loss-prevention\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
