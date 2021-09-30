@@ -427,9 +427,9 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.regeneratePersonalAccessToken` | `Post` | Regenerate a user's personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken) |
 | `/api/v1/users.getPersonalAccessTokens` | `Get` | Gets the user’s personal access tokens | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens) |
 | `/api/v1/users.removePersonalAccessToken` | `Post` | Remove a personal access token | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken) |
-| `/api/v1/users.2fa.enableEmail` | `Post` |  | Document Under Development |
+| `/api/v1/users.2fa.enableEmail` | `Post` | Enable 2fa email | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/enable-2fa-email) |
 | `/api/v1/users.2fa.disableEmail` | `Post` |  | Document Under Development |
-| `/api/v1/users.2fa.sendEmailCode` | `post` |  | Document Under Development |
+| `/api/v1/users.2fa.sendEmailCode` | `POST` | Send 2fa code | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/send-2fa-code) |
 | `/api/v1/users.presence` | `Get` | Gets all connected users presence. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence) |
 | `/api/v1/users.requestDataDownload` | `Get` | Request the user's data for download. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload) |
 | `/api/v1/users.logoutOtherClients` | `Post` | Logs out other clients | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-other-clients) |
