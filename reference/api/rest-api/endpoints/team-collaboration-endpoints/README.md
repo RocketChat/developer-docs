@@ -254,7 +254,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/instances.get` | get | Document Under Development |
+| `/api/v1/instances.get` | Gets instances | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
 
 ## **Integrations** Endpoints <a id="email-inbox-endpoints"></a>
 
