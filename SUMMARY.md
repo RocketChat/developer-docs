@@ -590,7 +590,7 @@
           * [Regenerate Personal Access Token](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken.md)
           * [Get Personal Access Tokens](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens.md)
           * [Remove Personal Access Token](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken.md)
-          * [2fa Enable Users Email](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/2fa-enable-users-email.md)
+          * [Enable 2fa Email](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/enable-2fa-email.md)
           * [2fa Disable Users Email](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/2fa-disable-users-email.md)
           * [Send 2fa code](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/send-2fa-code.md)
           * [Users Presence](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence.md)
