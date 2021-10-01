@@ -2,6 +2,10 @@
 
 It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
+{% hint style="info" %}
+Requires the user to have`manage-email-inbox`permission.
+{% endhint %}
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/email-inbox.list` | `yes` | `GET` |
@@ -63,6 +67,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 The following error can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
+* **Permission**: Requires the user to have `manage-email-inbox` permission for the request to be made.
 
 {% tabs %}
 {% tab title=" Authorization" %}
@@ -70,6 +75,15 @@ The following error can occur upon the endpoint.
 {
     "success": false,
     "error": "unauthorized"
+}
+```
+{% endtab %}
+
+{% tab title="Permission" %}
+```javascript
+{
+    "success": false,
+    "error": "error-not-allowed"
 }
 ```
 {% endtab %}

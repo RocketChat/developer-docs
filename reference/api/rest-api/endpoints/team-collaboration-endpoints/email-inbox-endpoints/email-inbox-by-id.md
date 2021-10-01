@@ -4,6 +4,10 @@ description: Get email Inbox by id
 
 # Email inbox by id
 
+{% hint style="info" %}
+Requires the user to have`manage-email-inbox`permission.
+{% endhint %}
+
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
 | `/api/v1/email-inbox/:_id` | `yes` | `GET` |
@@ -64,6 +68,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 The following error can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
+* **Permission**: Requires the user to have `manage-email-inbox` permission for the request to be made.
 
 {% tabs %}
 {% tab title=" Authorization" %}
@@ -71,6 +76,15 @@ The following error can occur upon the endpoint.
 {
     "status": "error",
     "message": "You must be logged in to do this."
+}
+```
+{% endtab %}
+
+{% tab title="Permission" %}
+```javascript
+{
+    "success": false,
+    "error": "error-not-allowed"
 }
 ```
 {% endtab %}
