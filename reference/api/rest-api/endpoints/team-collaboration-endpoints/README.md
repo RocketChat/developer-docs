@@ -156,11 +156,11 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/email-inbox.list` | get | Document Under Development |
+| `/api/v1/email-inbox.list` | Gets mail Inbox list | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-list) |
 | `/api/v1/email-inbox` | post | Document Under Development |
-| `/api/v1/email-inbox/:_id` | get | Document Under Development |
+| `/api/v1/email-inbox/:_id` | Gets email Inbox by id | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-by-id) |
 | `/api/v1/email-inbox/:_id` | delete | Document Under Development |
-| `/api/v1/email-inbox.search` | get | Document Under Development |
+| `/api/v1/email-inbox.search` | Searches email inbox by address | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email) |
 | `/api/v1/email-inbox.send-test/:_id` | post | Document Under Development |
 
 ## Custom Emojis Endpoints <a id="email-inbox-endpoints"></a>
