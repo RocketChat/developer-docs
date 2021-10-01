@@ -428,6 +428,7 @@
           * [Get Users Of Room Without E2E Key](reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/get-users-of-room-without-e2e-key.md)
         * [Email Inbox Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/README.md)
           * [Email inbox list](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-list.md)
+          * [Email inbox by id](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-by-id.md)
         * [Custom Emoji Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/README.md)
           * [List all custom emojis](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/list-all-custom-emojis.md)
           * [Create new custom emoji](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/create-new-custom-emoji.md)
