@@ -1,4 +1,8 @@
-# Search email inbox by email
+---
+description: Searches email inbox by email address
+---
+
+# Search email inbox
 
 {% hint style="info" %}
 Requires the user to have`manage-email-inbox`permission.

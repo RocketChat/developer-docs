@@ -1,5 +1,5 @@
 ---
-description: Get email Inbox by id
+description: Gets email Inbox by id
 ---
 
 # Email inbox by id

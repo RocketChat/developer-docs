@@ -431,7 +431,7 @@
           * [Set email inbox](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/set-email-inbox.md)
           * [Email inbox by id](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-by-id.md)
           * [Delete email inbox by id](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/delete-email-inbox-by-id.md)
-          * [Search email inbox by email](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email.md)
+          * [Search email inbox](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email.md)
           * [Send test email to email inbox](reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox.md)
         * [Custom Emoji Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/README.md)
           * [List all custom emojis](reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/list-all-custom-emojis.md)
