@@ -4,10 +4,6 @@ When using Rocket.Chat you have a plethora of customization options, ranging fro
 
 In these guides, we will be talking about customizations without changing the source code.
 
-We will be separating these guides into 2 categories: 
-
 * [Basic White-Labeling](https://docs.rocket.chat/quick-start/basic-white-labeling)
-* [Advanced White-Labeling](https://docs.rocket.chat/guides/administrator-guides/white-labeling/advanced-white-labeling)
-
-
+* [Advanced White-Labeling](https://developer.rocket.chat/rocket.chat/white-labelling-rocket.chat/advanced-white-labeling-of-server)
 
