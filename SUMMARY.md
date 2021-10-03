@@ -2,27 +2,27 @@
 
 * [Rocket.Chat Developer](README.md)
 
-## Getting Started
+## Quick Start
 
-* [Choosing a Development Host](getting-started/choosing-a-development-host/README.md)
-  * [Windows 10](getting-started/choosing-a-development-host/windows-10.md)
-  * [Linux](getting-started/choosing-a-development-host/linux.md)
-  * [Gitpod](getting-started/choosing-a-development-host/gitpod.md)
-  * [Mac OSX](getting-started/choosing-a-development-host/mac-osx.md)
-  * [Choosing a Development Host FAQs](getting-started/choosing-a-development-host/choosing-a-development-host-faqs.md)
-* [Building Specific Projects](getting-started/building-specific-projects/README.md)
-  * [Rocket.Chat Server](getting-started/building-specific-projects/rocket.chat-server/README.md)
-    * [Development Environment Setup for Rocket.Chat Server](getting-started/building-specific-projects/rocket.chat-server/development-environment-setup-for-rocket.chat-server.md)
-  * [Mobile App](getting-started/building-specific-projects/mobile-app/README.md)
-    * [Development Environment Setup for Mobile App](getting-started/building-specific-projects/mobile-app/development-environment-setup-for-mobile-app.md)
-  * [Desktop App](getting-started/building-specific-projects/desktop-app/README.md)
-    * [Development Environment Setup for Desktop App](getting-started/building-specific-projects/desktop-app/development-environment-setup-for-desktop-app.md)
-  * [Omnichannel](getting-started/building-specific-projects/omnichannel/README.md)
-    * [Development Environment Setup for Omnichannel](getting-started/building-specific-projects/omnichannel/development-environment-setup-for-omnichannel.md)
-  * [Apps Engine](getting-started/building-specific-projects/apps-engine/README.md)
-    * [Development Environment Setup for Apps Engine](getting-started/building-specific-projects/apps-engine/development-environment-setup-for-apps-engine.md)
-  * [Bots](getting-started/building-specific-projects/bots.md)
-  * [Building Specific Projects FAQs](getting-started/building-specific-projects/building-specific-projects-faqs.md)
+* [Choosing a Development Host](quick-start/choosing-a-development-host/README.md)
+  * [Windows 10](quick-start/choosing-a-development-host/windows-10.md)
+  * [Linux](quick-start/choosing-a-development-host/linux.md)
+  * [Gitpod](quick-start/choosing-a-development-host/gitpod.md)
+  * [Mac OSX](quick-start/choosing-a-development-host/mac-osx.md)
+  * [Choosing a Development Host FAQs](quick-start/choosing-a-development-host/choosing-a-development-host-faqs.md)
+* [Building Specific Projects](quick-start/building-specific-projects/README.md)
+  * [Rocket.Chat Server](quick-start/building-specific-projects/rocket.chat-server/README.md)
+    * [Development Environment Setup for Rocket.Chat Server](quick-start/building-specific-projects/rocket.chat-server/development-environment-setup-for-rocket.chat-server.md)
+  * [Mobile App](quick-start/building-specific-projects/mobile-app/README.md)
+    * [Development Environment Setup for Mobile App](quick-start/building-specific-projects/mobile-app/development-environment-setup-for-mobile-app.md)
+  * [Desktop App](quick-start/building-specific-projects/desktop-app/README.md)
+    * [Development Environment Setup for Desktop App](quick-start/building-specific-projects/desktop-app/development-environment-setup-for-desktop-app.md)
+  * [Omnichannel](quick-start/building-specific-projects/omnichannel/README.md)
+    * [Development Environment Setup for Omnichannel](quick-start/building-specific-projects/omnichannel/development-environment-setup-for-omnichannel.md)
+  * [Apps Engine](quick-start/building-specific-projects/apps-engine/README.md)
+    * [Development Environment Setup for Apps Engine](quick-start/building-specific-projects/apps-engine/development-environment-setup-for-apps-engine.md)
+  * [Bots](quick-start/building-specific-projects/bots.md)
+  * [Building Specific Projects FAQs](quick-start/building-specific-projects/building-specific-projects-faqs.md)
 
 ## Rocket.Chat
 

@@ -6,7 +6,7 @@ In these guides, we will be talking about customizations without changing the so
 
 We will be separating these guides into 2 categories: 
 
-* [Basic White-Labeling](https://docs.rocket.chat/guides/administrator-guides/white-labeling/basic-white-labeling)
+* [Basic White-Labeling](https://docs.rocket.chat/quick-start/basic-white-labeling)
 * [Advanced White-Labeling](https://docs.rocket.chat/guides/administrator-guides/white-labeling/advanced-white-labeling)
 
 
