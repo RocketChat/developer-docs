@@ -2,7 +2,7 @@
 description: Gets the banners to be shown to the authenticated user
 ---
 
-# Get Banner
+# Get Banners
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
