@@ -47,6 +47,7 @@ The following errors can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **Missing Key**: Requires platform key for the request to be made.
+* **Invalid Platform**: Requires a valid platform key for the request to be made.
 
 {% tabs %}
 {% tab title=" Authorization" %}
@@ -63,6 +64,16 @@ The following errors can occur upon the endpoint.
 {
     "success": false,
     "error": "Match error: Missing key 'platform'"
+}
+```
+{% endtab %}
+
+{% tab title="Invalid Platform" %}
+```javascript
+{
+    "success": false,
+    "error": "Platform is unknown. [error-unknown-platform]",
+    "errorType": "error-unknown-platform"
 }
 ```
 {% endtab %}
