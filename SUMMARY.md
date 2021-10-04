@@ -337,6 +337,7 @@
           * [Translate Message](reference/api/rest-api/endpoints/team-collaboration-endpoints/auto-translate-endpoints/translatemessage.md)
         * [Banners Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/README.md)
           * [Get Banner](reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banner.md)
+          * [Dismiss a banner](reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/dismiss-a-banner.md)
         * [Channels Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/README.md)
           * [Channel Add All](reference/api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/addall.md)
           * [Channel Add Leader](reference/api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/addleader.md)
