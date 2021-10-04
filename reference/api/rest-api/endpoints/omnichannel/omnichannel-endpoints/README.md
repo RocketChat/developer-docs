@@ -13,7 +13,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/appearance` | Get LiveChat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
+| `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
 
 ## Business Hours
 
@@ -40,23 +40,23 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/department` | Retrieve a list of departments | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-a-list-of-departments) |
-| `api/v1/livechat/department` | Register a new department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/register-a-new-department) |
-| `api/v1/livechat/department/:_id` | Retrieve a department's info | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-info-about-a-department) |
-| `api/v1/livechat/department/:_id` | Update a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-a-department) |
-| `api/v1/livechat/department/:_id` | Remove a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/remove-a-department) |
+| `api/v1/livechat/department` | Retrieves a list of departments | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-a-list-of-departments) |
+| `api/v1/livechat/department` | Registers a new department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/register-a-new-department) |
+| `api/v1/livechat/department/:_id` | Retrieves a department's info | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-info-about-a-department) |
+| `api/v1/livechat/department/:_id` | Updates a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-a-department) |
+| `api/v1/livechat/department/:_id` | Removes a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/remove-a-department) |
 | `api/v1/livechat/department.autocomplete` | Autocompletes department name | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/department-autocomplete) |
-| `api/v1/livechat/department/:departmentId/agents` | Retrieve agents of a specific department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department) |
-| `api/v1/livechat/department/:departmentId/agents` | Update agents of a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department) |
-| `api/v1/livechat/department.listByIds` | Retrieves list of departments by an array of department ids | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids) |
+| `api/v1/livechat/department/:departmentId/agents` | Retrieves agents of a specific department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department) |
+| `api/v1/livechat/department/:departmentId/agents` | Updates agents of a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department) |
+| `api/v1/livechat/department.listByIds` | Retrieves a list of departments by an array of department ids | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids) |
 | `api/v1/livechat/departments.available-by-unit/:unitId` |  Retrieves departments available by unit Id | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id) |
 | `api/v1/livechat/analytics/departments/amount-of-chats` | Retrieves the number of incoming chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat) |
 | `api/v1/livechat/analytics/departments/average-service-time` | Retrieves average service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-service-time-by-department) |
 | `api/v1/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-chat-duration-time-by-department) |
 | `api/v1/livechat/analytics/departments/total-service-time` | Retrieves total service time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-service-time-by-department) |
 | `api/v1/livechat/analytics/departments/average-waiting-time` | Retrieves avg waiting time | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-waiting-time-by-department) |
-| `api/v1/livechat/analytics/departments/total-transferred-chats` | total transferred chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-transferred-chat-by-department) |
-| `api/v1/livechat/analytics/departments/total-abandoned-chats` | total abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/total-abandoned-chats-by-department) |
+| `api/v1/livechat/analytics/departments/total-transferred-chats` | Retrieves total transferred chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-transferred-chat-by-department) |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats` | Retrieves abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/total-abandoned-chats-by-department) |
 | `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department) |
 
 ## Inquiries
@@ -66,7 +66,7 @@
 | `api/v1/livechat/inquiries.list` | Lists all of the open livechat inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list) |
 | `api/v1/livechat/inquiries.take` | Takes an open inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/take-inquiry) |
 | `api/v1/livechat/inquiries.queued` | Lists queued inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-queued) |
-| `api/v1/livechat/inquiries.getOne` | Get one inquiry by room id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one) |
+| `api/v1/livechat/inquiries.getOne` | Gets one inquiry by room id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one) |
 | `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
 
 ## Integrations
@@ -79,7 +79,7 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/queue` | Retrieve  the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
+| `api/v1/livechat/queue` | Retrieves  the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
 
 ## Rooms
 
@@ -92,14 +92,14 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/sms-incoming/:service` | Receive SMS | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/sms-incoming-twilio) |
+| `api/v1/livechat/sms-incoming/:service` | Receives SMS | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/sms-incoming-twilio) |
 
 ## Triggers
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `api/v1/livechat/triggers` | Lists all Livechat triggers | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-the-livechat-triggers) |
-| `api/v1/livechat/triggers/:_id` | Get a Livechat Trigger by id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-a-livechat-trigger) |
+| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-a-livechat-trigger) |
 
 ## Upload
 
@@ -113,9 +113,9 @@
 
 | Url | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `api/v1/livechat/users/:type` | Get a list of agents or managers | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users) |
-| `api/v1/livechat/users/:type` | Register a new agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/register-new-agent-or-manager) |
-| `api/v1/livechat/users/:type/:_id` | Get info about an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager) |
+| `api/v1/livechat/users/:type` | Gets a list of agents or managers | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users) |
+| `api/v1/livechat/users/:type` | Registers a new agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/register-new-agent-or-manager) |
+| `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager) |
 | `api/v1/livechat/users/:type/:_id` | Removes an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager) |
 
 ## Visitors
@@ -124,10 +124,10 @@
 | :--- | :--- | :--- |
 | `api/v1/livechat/visitors.info` | Retrieves visitor info by ID | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-info-by-id) |
 | `api/v1/livechat/visitors.pagesVisited/:roomId` | Retrieves pages visited by livechat visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-pages-visited-by-livechat-visitor) |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Get livechat visitor's chat history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-livechat-visitors-chat-history) |
-| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Search a visitor's chat | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/search-a-visitors-chat) |
+| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-livechat-visitors-chat-history) |
+| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/search-a-visitors-chat) |
 | `api/v1/livechat/visitors.autocomplete` | Autocompletes visitor's name | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-autocomplete) |
-| `api/v1/livechat/visitors.search` | Search visitor by term | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitors-search) |
+| `api/v1/livechat/visitors.search` | Searches the visitor by the term | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitors-search) |
 
 ## Monitors
 
