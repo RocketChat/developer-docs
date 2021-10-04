@@ -19,7 +19,7 @@
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/banners.getNew` | Get | Document Under Development |
+| `/api/v1/banners.getNew` | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banner) |
 | `/api/v1/banners.dismiss` | Post | Document Under Development |
 
 ## Channels Endpoints
