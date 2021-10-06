@@ -1,3 +1,7 @@
+---
+description: Gets the banner to be shown to the authenticated user
+---
+
 # Get banner by id
 
 | URL | Requires Auth | HTTP Method |
@@ -11,13 +15,24 @@
 | `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
 
+## Query Params
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `platform` | `web` | true | The platform rendering the banner |
+
+## Path Variable
+
+| Argument | Example | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `id` | `ByehQjC44FwMeiLbX` | true | The id of the banner |
+
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/banners.dismiss\
+curl --location --request GET 'http://localhost:3000/api/v1/banners/:id?platform=web\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
--d "bannerId=ByehQjC44FwMeiLbX"
 ```
 
 ## Result
@@ -26,6 +41,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/banners.dismiss\
 
 ```javascript
 {
+    "banners": [],
     "success": true
 }
 ```
@@ -35,7 +51,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/banners.dismiss\
 The following errors can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **Missing Key**: Requires `bannerId` for the request to be made.
+* **Missing Key**: Requires `platform` key for the request to be made.
 
 {% tabs %}
 {% tab title=" Authorization" %}
@@ -43,6 +59,15 @@ The following errors can occur upon the endpoint.
 {
     "status": "error",
     "message": "You must be logged in to do this."
+}
+```
+{% endtab %}
+
+{% tab title="Missing key \'platform\'" %}
+```javascript
+{
+    "success": false,
+    "error": "Match error: Missing key 'platform'"
 }
 ```
 {% endtab %}
