@@ -1,10 +1,8 @@
 ---
-description: Auto Translate Save Settings
+description: Saves settings about autotranslate.
 ---
 
 # Save Settings
-
-Save some settings about autotranslate.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

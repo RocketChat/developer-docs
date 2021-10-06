@@ -1,10 +1,8 @@
 ---
-description: Auto Translate Translate Message
+description: Auto-translates the provided message.
 ---
 
 # Translate Message
-
-Translate the provided message.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

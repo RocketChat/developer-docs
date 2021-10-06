@@ -1,6 +1,12 @@
+---
+description: Sets an asset by name.
+---
+
 # Set Asset
 
-Set an asset by name. Requires `manage-assets` permission.
+{% hint style="info" %}
+Requires `manage-assets` permission.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

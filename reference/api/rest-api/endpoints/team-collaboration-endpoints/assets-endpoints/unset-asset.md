@@ -1,6 +1,12 @@
+---
+description: Unset an asset by name.
+---
+
 # Unset Asset
 
-Unset an asset by name. Requires `manage-assets` permission.
+{% hint style="info" %}
+Requires `manage-assets` permission.
+{% endhint %}
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |

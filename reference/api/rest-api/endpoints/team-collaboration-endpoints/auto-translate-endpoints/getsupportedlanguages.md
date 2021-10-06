@@ -1,10 +1,8 @@
 ---
-description: Auto Translate Get Supported Languages
+description: Gets the supported languages by the autotranslate.
 ---
 
 # Get Supported Languages
-
-Get the supported languages by the autotranslate.
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
