@@ -19,8 +19,8 @@
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
-| `/api/v1/banners/:id` |  |  |
-| `/api/v1/banners` |  |  |
+| `/api/v1/banners/:id` | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banner-by-id) |
+| `/api/v1/banners` | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banners) |
 | `/api/v1/banners.dismiss` | Dismisses a banner | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/dismiss-a-banner) |
 
 ## Channels Endpoints
