@@ -66,6 +66,7 @@
 * [Desktop App Environment Setup](desktop-app/desktop-app-environment-setup.md)
 * [Desktop App Building From Source](desktop-app/desktop-app-building-from-source.md)
 * [Desktop App White Labelling](desktop-app/desktop-app-white-labelling/README.md)
+  * [Changing default settings](desktop-app/desktop-app-white-labelling/changing-default-settings.md)
   * [UI Components](desktop-app/desktop-app-white-labelling/ui-components.md)
   * [Custom Themes](desktop-app/desktop-app-white-labelling/custom-themes.md)
   * [UI Colors](desktop-app/desktop-app-white-labelling/ui-colors.md)
