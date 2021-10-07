@@ -1,10 +1,6 @@
 # Desktop App Building From Source
 
-
-
-#### Quick start
-
-Prerequisites:
+**Prerequisites**:
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
@@ -90,7 +86,7 @@ To package your app into an installer use command:
 yarn release
 ```
 
-It will start the packaging process for operating system you are running this command on. Ready for distribution file will be outputted to `dist` directory.
+It will start the packaging process for the operating system you are running this command on. Ready for distribution file will be outputted to `dist` directory.
 
 All packaging actions are handled by \[electron-builder\]\[\]. It has a lot of \[customization options\]\[\].
 
