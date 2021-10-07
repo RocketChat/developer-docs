@@ -20,6 +20,7 @@ description: Sets a user Status when the status message and state is given.
 ```bash
 curl -H "X-Auth-Token: 40tB-Cn5YQJ74QMlQXi4Zf4E_-e0P5CrklU2pWOtV9M" \
      -H "X-User-Id: uunbZHiuEnib8Pawj" \
+     -H "Content-type: application/json" \
      -d '{"message":"My status update", "status": "online"}' \
      http://localhost:3000/api/v1/users.setStatus
 ```
