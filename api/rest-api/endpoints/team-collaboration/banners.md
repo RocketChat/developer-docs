@@ -1,4 +1,0 @@
-# Banners
-
-Document Under Development
-
