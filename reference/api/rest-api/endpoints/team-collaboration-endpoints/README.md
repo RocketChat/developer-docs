@@ -244,12 +244,12 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/uploadImportFile` | `Content` | Document Under Development |
 | `/api/v1/downloadPublicImportFile` | `Content` | Document Under Development |
 | `/api/v1/startImport` | `Content` | Document Under Development |
-| `/api/v1/getImportFileData` | `Content` | Document Under Development |
-| `/api/v1/getImportProgress` | `Content` | Document Under Development |
-| `/api/v1/getLatestImportOperations` | `Content` | Document Under Development |
-| `/api/v1/downloadPendingFiles` | `Content` | Document Under Development |
-| `/api/v1/downloadPendingAvatars` | `Content` | Document Under Development |
-| `/api/v1/getCurrentImportOperation` | Content | Document Under Development |
+| `/api/v1/getImportFileData` | Retrieves import file data| [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
+| `/api/v1/getImportProgress` | Gets import progress | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-file-data) |
+| `/api/v1/getLatestImportOperations` | Gets latest import operations | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-latest-import-operations) |
+| `/api/v1/downloadPendingFiles` | Downloads pending files | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-files) |
+| `/api/v1/downloadPendingAvatars` | Downloads pending avatars| [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-avatars) |
+| `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-current-import-operations) |
 
 ## **Instances** Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -266,7 +266,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md) |
 | `/api/v1/integrations.list` | Lists all of the integrations. | [Link](integration-endpoints/list.md) |
 | `/api/v1/integrations.remove` | Removes an integration. | [Link](integration-endpoints/remove.md) |
-| `/api/v1/integrations.update` | put | Document Under Development |
+| `/api/v1/integrations.update` | Updates an existing integration | [Link]([Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
 
 ## **Invites** Endpoints <a id="email-inbox-endpoints"></a>
 
