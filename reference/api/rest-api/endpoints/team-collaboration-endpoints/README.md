@@ -141,7 +141,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/dns.resolve.srv` | get | Document Under Development |
-| `/api/v1/dns.resolve.txt` | post | Document Under Development |
+| `/api/v1/dns.resolve.txt` | Resolves DNS text records (TXT records) for a hostname | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/dns-endpoints/dns-resolve-txt) |
 
 ## E2E Endpoints
 
@@ -149,20 +149,19 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | :--- | :--- | :--- |
 | `/api/v1/e2e.fetchMyKeys` | Retrieves E2E keys of logged in user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/fetch-your-e2e-keys) |
 | `/api/v1/e2e.getUsersOfRoomWithoutKey` | Retrieves Users Of Room Without E2E Key | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/get-users-of-room-without-e2e-key) |
-| `/api/v1/e2e.setRoomKeyID` | post | Document Under Development |
-| `/api/v1/e2e.setUserPublicAndPrivateKeys` | post | Document Under Development |
-| `/api/v1/e2e.updateGroupKey` | post | Document Under Development |
-
+| `/api/v1/e2e.setRoomKeyID` | Sets the end-to-end encryption key ID for a room | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/set-room-e2e-key) |
+| `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/set-users-key) |
+| `/api/v1/e2e.updateGroupKey` | Updates the end-to-end encryption key for a user in a room | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/update-user-e2e-key-in-room) |
 ## Email Inbox Endpoints
 
 | URL | Short Description | Details Page |
 | :--- | :--- | :--- |
 | `/api/v1/email-inbox.list` | Retrieves mail Inbox list | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-list) |
-| `/api/v1/email-inbox` | post | Document Under Development |
+| `/api/v1/email-inbox` | Sets the email inbox for your server | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/set-email-inbox) |
 | `/api/v1/email-inbox/:_id` | Retrieves email Inbox by id | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-by-id) |
-| `/api/v1/email-inbox/:_id` | delete | Document Under Development |
+| `/api/v1/email-inbox/:_id` | Deletes email inbox using id | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/delete-email-inbox-by-id) |
 | `/api/v1/email-inbox.search` | Searches email inbox by address | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email) |
-| `/api/v1/email-inbox.send-test/:_id` | post | Document Under Development |
+| `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox) |
 
 ## Custom Emojis Endpoints <a id="email-inbox-endpoints"></a>
 
@@ -214,8 +213,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/groups.setTopic` | Sets a private group's topic. | [Link](groups-endpoints/settopic.md) |
 | `/api/v1/groups.setType` | Sets the type of room this group will be. | [Link](groups-endpoints/settype.md) |
 | `/api/v1/groups.unarchive` | Unarchives a private group. | [Link](groups-endpoints/unarchive.md) |
-| `/api/v1/groups.setEncrypted` | \`\` | Document Under Development |
-| `/api/v1/groups.convertToTeam` |  | Document Under Development |
+| `/api/v1/groups.setEncrypted` | Sets the encryption for a group. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-set-encrypted) |
+| `/api/v1/groups.convertToTeam` | Convert a private group to a team. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-converttoteam) |
 
 ## IM Endpoints <a id="email-inbox-endpoints"></a>
 
