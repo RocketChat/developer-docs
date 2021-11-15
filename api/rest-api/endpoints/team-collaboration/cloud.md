@@ -1,4 +1,0 @@
-# Cloud
-
-Document under development
-
