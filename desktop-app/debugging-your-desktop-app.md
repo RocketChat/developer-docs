@@ -14,7 +14,9 @@ On Windows you may have to follow [option 2 of the node-gyp install guide](https
 {% endtab %}
 
 {% tab title="MacOS" %}
+[Xcode](https://developer.apple.com/xcode/download/)
 
+* You also need to install the `XCode Command Line Tools` by running `xcode-select --install`. Alternatively, if you already have the full Xcode installed, you can find them under the menu `Xcode -> Open Developer Tool -> More Developer Tools...`. This step will install `clang`, `clang++`, and `make`.
 {% endtab %}
 
 {% tab title="Ubuntu" %}

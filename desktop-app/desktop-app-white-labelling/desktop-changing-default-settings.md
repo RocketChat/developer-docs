@@ -1,10 +1,3 @@
----
-description: >-
-  We assume that you have already followed the past topic that explains how to
-  run the code on your machine and that you are familiar with the development
-  stack (git/node/javascript/electron).
----
-
 # Desktop Changing Default Settings
 
 ## Introduction

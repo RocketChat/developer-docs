@@ -1,4 +1,3 @@
 # Omnichannel
 
 Document under development
-

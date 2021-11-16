@@ -26,8 +26,8 @@ The order in which they happen is:
 Here is an explanation of what each of them means:
 
 * **Prevent**: This is ran to determine whether the event should be prevented or not.
-* **Extend**: This is ran to allow extending the data without being destructive of the data \(adding an attachment to a message for example\).
-* **Modify**: This is ran and allows for destructive changes to the data \(change any and everything\).
+* **Extend**: This is ran to allow extending the data without being destructive of the data (adding an attachment to a message for example).
+* **Modify**: This is ran and allows for destructive changes to the data (change any and everything).
 * Post**Event**: Is mostly for simple listening and no changes can be made to the data.
 
 For simplicity consideration, we are gradually moving to the new pattern. There will be only two types of event interfaces added later:
@@ -64,7 +64,7 @@ export class MessageEventsApp extends App implements IPreMessageSentPrevent {
 
 #### Result
 
-![Message prevented by app](../../.gitbook/assets/image%20%2818%29.png)
+![Message prevented by app](<../../.gitbook/assets/image (18).png>)
 
 And you will see this in the server console
 
@@ -82,7 +82,7 @@ A Rocket.Chat App prevented the message sending. {
 }
 ```
 
-This simple app tries to prevent any message sending on this server. In the real world, you might \(most likely\) want to prevent messages according to the payload data provided instead of preventing all messages on the server.
+This simple app tries to prevent any message sending on this server. In the real world, you might (most likely) want to prevent messages according to the payload data provided instead of preventing all messages on the server.
 
 ### IPostMessageSent
 
@@ -121,11 +121,10 @@ export class MessageEventsApp extends App implements IPostMessageSent {
 
 #### Result
 
-![Message redirected to \#general \(top\) from \#another-channel \(bottom\)](../../.gitbook/assets/image%20%2817%29.png)
+![Message redirected to #general (top) from #another-channel (bottom)](<../../.gitbook/assets/image (17).png>)
 
 This app is going to forward all messages sent to other channels, private groups or DMs to `#general`
 
 ## References
 
 Besides the two event interfaces we introduced above, you can check the full event interfaces list [here](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/alpha/src/definition/metadata/AppInterface.ts).
-

@@ -50,8 +50,11 @@
 * [Mobile App Environment Setup](mobile-app/mobile-app-environment-setup/README.md)
   * [Supporting SSL for development on Rocket.Chat](mobile-app/mobile-app-environment-setup/supporting-ssl-for-development-on-rocket.chat.md)
   * [Analytics & Data Usage](mobile-app/mobile-app-environment-setup/analytics-and-data-usage.md)
-* [Mobile App Building From Source](mobile-app/mobile-app-building-from-source.md)
-* [Mobile App White Labelling](mobile-app/mobile-app-white-labelling.md)
+* [Testing your Mobile App](mobile-app/testing-your-mobile-app.md)
+* [Mobile App White Labelling](mobile-app/mobile-app-white-labelling/README.md)
+  * [iOS App White Labelling](mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
+  * [Android App White Labelling](mobile-app/mobile-app-white-labelling/android-app-white-labelling.md)
+  * [Configuring Push Notifications](mobile-app/mobile-app-white-labelling/configuring-push-notifications.md)
 * [Mobile App FAQs](mobile-app/mobile-app-faqs.md)
 
 ## Desktop App
