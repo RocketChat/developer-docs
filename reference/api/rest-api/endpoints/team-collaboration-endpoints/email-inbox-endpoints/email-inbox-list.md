@@ -1,5 +1,5 @@
 ---
-description: Get email inbox list
+description: Gets email inbox list
 ---
 
 # Email inbox list
@@ -10,9 +10,9 @@ It supports the [Offset, Count, and Sort Query Parameters](../../other-important
 Requires the user to have`manage-email-inbox`permission.
 {% endhint %}
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/email-inbox.list` | `yes` | `GET` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/email-inbox.list` | `yes`         | `GET`       |
 
 ## Example Call
 
@@ -22,7 +22,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/email-inbox.list \
 ```
 
-##  Result
+## &#x20;Result
 
 ### Success
 
@@ -93,3 +93,8 @@ The following error can occur upon the endpoint.
 {% endtab %}
 {% endtabs %}
 
+## Change Log
+
+| Version     | Description |
+| ----------- | ----------- |
+| 3.11.0-rc.0 | Added       |

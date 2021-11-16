@@ -5,25 +5,25 @@ description: Deletes an invite from the server.
 # Delete invite by id
 
 {% hint style="info" %}
-Requires the `create-invite-links` permission.
+Requires the `create-invite-links `permission.
 {% endhint %}
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/removeInvite/:_id` | `YES` | `DELETE` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `api/v1/removeInvite/:_id` | `YES`         | `DELETE`    |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `_id` | `'kDKQ3H'` | Required | The id of the invite to be deleted. |
+| Argument | Example    | Required | Description                         |
+| -------- | ---------- | -------- | ----------------------------------- |
+| `_id`    | `'kDKQ3H'` | Required | The id of the invite to be deleted. |
 
 ## Example Call
 
@@ -59,6 +59,8 @@ Any of the following errors can occur upon the endpoint.
     "error": "unauthorized"
 }
 ```
+
+
 {% endtab %}
 
 {% tab title="Invalid Invitation Id" %}
@@ -72,6 +74,7 @@ Any of the following errors can occur upon the endpoint.
     }
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}
-

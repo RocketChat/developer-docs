@@ -10,7 +10,7 @@ The fastest way to start with Rasa is using [Rasa starter kit](https://github.co
 
 **1. clone the starter repo**
 
-```text
+```
 git clone https://github.com/RocketChat/rasa-kick-starter
 cd rasa-kick-starter/
 ```
@@ -28,7 +28,7 @@ server_url: "<ROCKETCHAT HOST>"
 
 * train the bot's Machine Learning Model:
 
-```text
+```
 docker run -it -v $(pwd)/bot_rasa:/app rasa/rasa train
 ```
 
@@ -36,13 +36,13 @@ After the training, the machine learning model will be created inside the `bot_r
 
 **3. run the bot**
 
-```text
+```
 docker-compose up bot_rasa
 ```
 
 You should see the following output:
 
-```text
+```
 $ docker-compose up bot_rasa
 Starting rasa-kick-starter_bot_rasa_1 ... done
 Attaching to rasa-kick-starter_bot_rasa_1
@@ -51,7 +51,7 @@ bot_rasa_1            | 2019-10-31 21:23:24 INFO     root  - Starting Rasa serve
 
 Open your browser and navigate to `http://localhost:5005`. You should see the response from the running Rasa bot:
 
-```text
+```
 Hello from Rasa: 1.5.0a1
 ```
 
@@ -59,13 +59,13 @@ If you have Rocket.Chat running on the same machine, the bot's URL is `http://bo
 
 [Download ngrok](https://ngrok.com/download), open terminal in the folder you downloaded ngrok to and execute the following command:
 
-```text
+```
 ./ngrok http 5005
 ```
 
 You should see the following output:
 
-```text
+```
 Session Status                online
 Session Expires               7 hours, 59 minutes
 Version                       2.3.35
@@ -94,7 +94,6 @@ Click `Save changes` in the top right corner.
 
 **5. talk to your bot**
 
-On the server, login as a regular user \(not the BOT user\), go to `general` room, and try to talk to your bot by typing `@bot_rasa hello`:
+On the server, login as a regular user (not the BOT user), go to `general` room, and try to talk to your bot by typing `@bot_rasa hello`:
 
-![Rasa bot is talking](../../.gitbook/assets/rasa_bot_example%20%281%29%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
-
+![Rasa bot is talking](<../../.gitbook/assets/rasa\_bot\_example (1) (1) (1) (2) (2) (2) (2) (2) (2) (2) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2).png>)

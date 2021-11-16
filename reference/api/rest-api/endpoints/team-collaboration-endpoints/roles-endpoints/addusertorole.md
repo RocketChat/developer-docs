@@ -1,18 +1,18 @@
 # Role AddUserToRole
 
-Assign a role to an user. Optionally, you can set this role to a room.
+Assign a role to a user. Optionally, you can set this role to a room.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/roles.addUserToRole` | `yes` | `POST` |
+| URL                           | Requires Auth | HTTP Method |
+| ----------------------------- | ------------- | ----------- |
+| `/api/v1/roles.addUserToRole` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roleName` | `guest` | Required | The role name. |
-| `username` | `rocket.chat` | Required | The user name. |
-| `roomId` | `dK7vNYXMdHGLdukpL` | Optional | If the role scope be Subscriptions and assign it to a room, you need to pass the roomId as parameter. |
+| Argument   | Example             | Required | Description                                                                                           |
+| ---------- | ------------------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| `roleName` | `guest`             | Required | The role name.                                                                                        |
+| `username` | `rocket.chat`       | Required | The user name.                                                                                        |
+| `roomId`   | `dK7vNYXMdHGLdukpL` | Optional | If the role scope be Subscriptions and assign it to a room, you need to pass the roomId as parameter. |
 
 ## Example Call
 
@@ -44,6 +44,5 @@ curl -H "Content-type:application/json" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.70.0 | Added |
-
+| ------- | ----------- |
+| 0.70.0  | Added       |

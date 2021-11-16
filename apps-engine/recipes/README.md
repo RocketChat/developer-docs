@@ -4,11 +4,5 @@ description: >-
   App
 ---
 
-# Recipes
-
-{% page-ref page="making-http-requests.md" %}
-
-{% page-ref page="storing-user-input.md" %}
-
-{% page-ref page="registering-api-endpoints.md" %}
+# Sample App Snippets
 

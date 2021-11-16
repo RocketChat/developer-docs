@@ -4,27 +4,27 @@ description: Retrieves a contact information.
 
 # Omnichannel Fetch Contact
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/omnichannel/contact` | `YES` | `GET` |
+| URL                          | Requires Auth | HTTP Method |
+| ---------------------------- | ------------- | ----------- |
+| `api/v1/omnichannel/contact` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `contactId` | `mAm5YZHwHMrNj8fhu` | Required | Contact ID |
+| Argument    | Example             | Required | Description |
+| ----------- | ------------------- | -------- | ----------- |
+| `contactId` | `mAm5YZHwHMrNj8fhu` | Required | Contact ID  |
 
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/omnichannel/contact?contactId=mAm5YZHwHMrNj8fhu \
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?contactId=mAm5YZHwHMrNj8fhu \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -53,4 +53,3 @@ curl --location --request GET 'http://localhost:3000/api/v1/omnichannel/contact?
     "success": true
 }
 ```
-

@@ -1,4 +1,0 @@
-# SDK
-
-Document under development
-

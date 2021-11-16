@@ -8,15 +8,15 @@ description: Searches email inbox by email address
 Requires the user to have`manage-email-inbox`permission.
 {% endhint %}
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/email-inbox.search` | `yes` | `GET` |
+| URL                          | Requires Auth | HTTP Method |
+| ---------------------------- | ------------- | ----------- |
+| `/api/v1/email-inbox.search` | `yes`         | `GET`       |
 
 ## Query Param
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `email` | `info@rocket.chat` | Required | Email inbox address |
+| Argument | Example            | Required | Description         |
+| -------- | ------------------ | -------- | ------------------- |
+| `email`  | `info@rocket.chat` | Required | Email inbox address |
 
 ## Example Call
 
@@ -26,7 +26,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/email-inbox.search \
 ```
 
-##  Result
+## &#x20;Result
 
 ### Success
 
@@ -92,3 +92,8 @@ The following error can occur upon the endpoint.
 {% endtab %}
 {% endtabs %}
 
+## Change Log
+
+| Version     | Description |
+| ----------- | ----------- |
+| 3.11.0-rc.0 | Added       |

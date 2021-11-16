@@ -4,18 +4,18 @@ description: Retrieves a list of monitors
 
 # List of Monitors
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/Enterprise.jpg)
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/livechat/monitors.list` | `YES` | `GET` |
+| URL                             | Requires Auth | HTTP Method |
+| ------------------------------- | ------------- | ----------- |
+| `api/v1/livechat/monitors.list` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Example Call
 
@@ -64,4 +64,3 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/units.list\
     "success": true
 }
 ```
-

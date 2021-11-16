@@ -4,16 +4,16 @@ description: Dismisses a banner
 
 # Dismiss a banner
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/banners.dismiss` | `YES` | `GET` |
+| URL                      | Requires Auth | HTTP Method |
+| ------------------------ | ------------- | ----------- |
+| `api/v1/banners.dismiss` | `YES`         | `POST`      |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Example Call
 
@@ -49,15 +49,18 @@ The following errors can occur upon the endpoint.
     "message": "You must be logged in to do this."
 }
 ```
+
+
 {% endtab %}
 
-{% tab title="Missing key \'bannerId\'" %}
+{% tab title="Missing key 'bannerId'" %}
 ```javascript
 {
     "success": false,
     "error": "Match error: Missing key 'bannerId'"
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}
-

@@ -4,25 +4,25 @@ description: Gives the total of abandoned chats by department
 
 # Total abandoned chats by department
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/Enterprise.jpg)
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/livechat/analytics/departments/total-abandoned-chats` | `YES` | `GET` |
+| URL                                                           | Requires Auth | HTTP Method |
+| ------------------------------------------------------------- | ------------- | ----------- |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `start` | `2020-09-09T00:11:22.345Z` | Required | start date |
-| `end` | `2021-09-10T23:59:22.345Z` | Required | end date |
+| Argument | Example                    | Required | Description |
+| -------- | -------------------------- | -------- | ----------- |
+| `start`  | `2020-09-09T00:11:22.345Z` | Required | start date  |
+| `end`    | `2021-09-10T23:59:22.345Z` | Required | end date    |
 
 ### Notes
 
@@ -78,4 +78,3 @@ curl --location --request GET 'https://multiverse.rocket.chat/api/v1/livechat/an
 ```
 
 ## Change Log
-

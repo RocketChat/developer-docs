@@ -4,13 +4,13 @@ Pinning a message allows administrators and owners of rooms to easily store mess
 
 ## Requirements
 
-| Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | _none_ | `Message_AllowPinning` - "Allow Message Pinning" |
+| Logged In | Permission | Setting                                          |
+| --------- | ---------- | ------------------------------------------------ |
+| Yes       | _none_     | `Message_AllowPinning` - "Allow Message Pinning" |
 
 ## Example Call
 
-The only parameter that needs to be passed in is the [Message Object](../../schema-definition/message.md) and as of release `0.46` you need to send the entire message object otherwise an internal error will happen \([fixed via pull request \#5087](https://github.com/RocketChat/Rocket.Chat/pull/5087)\).
+The only parameter that needs to be passed in is the [Message Object](../../schema-definition/message.md) and as of release `0.46` you need to send the entire message object otherwise an internal error will happen ([fixed via pull request #5087](https://github.com/RocketChat/Rocket.Chat/pull/5087)).
 
 ```javascript
 {
@@ -54,5 +54,4 @@ The response of a message being pinned is a new chat message which contains the 
 ## See Also
 
 * [The Message Object](../../schema-definition/message.md)
-* [Pinning Messages User Guide]()
-
+* [Pinning Messages User Guide](broken-reference)

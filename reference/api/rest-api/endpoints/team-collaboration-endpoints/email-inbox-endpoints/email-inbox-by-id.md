@@ -8,15 +8,15 @@ description: Gets email Inbox by id
 Requires the user to have`manage-email-inbox`permission.
 {% endhint %}
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/email-inbox/:_id` | `yes` | `GET` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/email-inbox/:_id` | `yes`         | `GET`       |
 
 ## Path Variable
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `_id` | `60197e8ff82d6c83b96c53ff` | Required | Email inbox id |
+| Argument | Example                    | Required | Description    |
+| -------- | -------------------------- | -------- | -------------- |
+| `_id`    | `60197e8ff82d6c83b96c53ff` | Required | Email inbox id |
 
 ## Example Call
 
@@ -26,7 +26,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/email-inbox/:_id \
 ```
 
-##  Result
+## &#x20;Result
 
 ### Success
 
@@ -90,3 +90,8 @@ The following error can occur upon the endpoint.
 {% endtab %}
 {% endtabs %}
 
+## Change Log
+
+| Version     | Description |
+| ----------- | ----------- |
+| 3.11.0-rc.0 | Added       |

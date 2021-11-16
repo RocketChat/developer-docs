@@ -4,43 +4,55 @@ If you are contributing to Rocket.Chat and will likely be working less than 50 h
 
 ## Rocket.Chat Everywhere Development Environment on Gitpod
 
-Gitpod runs a shared environment SaaS for developers working on open source projects. Please be respectful of other developers' need and support Gitpod on their commercial side if you are able to.
+Gitpod runs a shared environment SaaS for developers working on open source projects. Please be respectful of other developers' needs and support Gitpod on their commercial side if you are able to.
 
 Gitpod hosts the entire development environment and you will be able to contribute to Rocket.Chat wherever and whenever you have access to a browser; even from Internet Cafes and Chromebooks.
 
-### Step by step
+## Steps for Gitpod Development
 
-Go to [https://gitpod.io](https://www.gitpod.io/#get-started) and enter the Rocket.Chat Github project URL
-
-[https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)
-
-\(you can also supply your Github fork of Rocket.Chat here\)
+* Go to [https://gitpod.io](https://www.gitpod.io/#get-started) and enter the Rocket.Chat Github project URL [https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) or supply the link to your forked repo of Rocket.Chat
 
 ![](../../.gitbook/assets/gitpodstart.png)
 
-Start your workspace, linking it to your Github account if necessary.
+*   Start your workspace and link it to your GitHub account if necessary.
 
-A workspace will be created and loaded with familiar Visual Studio Code environment.
+    A workspace will be created and loaded with a familiar Visual Studio Code environment
+*   Next, start a terminal in your workspace and install [meteor](https://www.meteor.com).&#x20;
 
-Next, start a terminal in your workspace. And install meteor.
+    Make sure you install the correct version of meteor. As of the time of this writing Rocket.Chat uses `meteor@2.2`.&#x20;
 
-```text
-curl https://install.meteor.com/ | sh
+    To know which version you need, consult [this](https://github.com/RocketChat/Rocket.Chat/blob/develop/.meteor/release) file (tracking the current development branch, i.e. the most up to date).
+* Then run the following command passing in the release you want
+
+```
+curl https://install.meteor.com/?release=2.2 | sh
 ```
 
-There will be warning messages, you do not have and do not need sudo \(root access\) on Gitpod. Next, add the newly installed meteor to your path.
+You can also make this process simpler by running the following code snippet on your terminal.
 
-```text
+```
+curl https://install.meteor.com/?release=$(
+    curl -so- https://raw.githubusercontent.com/RocketChat/Rocket.Chat/develop/.meteor/release | cut -d@ -f2
+) | sh
+```
+
+{% hint style="info" %}
+There will be warning messages, you do not need `sudo` (root access) on Gitpod.
+{% endhint %}
+
+* Next, add the newly installed meteor to your path by running
+
+```
 export PATH=$PATH:/home/gitpod/.meteor
 ```
 
-Finally, install the node dependencies and start your server.
+* Finally, install the `node` dependencies and start your server by running the following respectively.
 
-```text
+```
 meteor npm i
 ```
 
-```text
+```
 meteor npm start
 ```
 
@@ -55,4 +67,3 @@ Once the server starts, you will see a popup window indicating that your server 
 You can modify the code in Visual Studio Code and see the changes immediately on the server instance thanks to hot code reload.
 
 Start contributing to Rocket.Chat!
-

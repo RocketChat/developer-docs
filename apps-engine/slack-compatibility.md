@@ -8,17 +8,17 @@ Would you like to have your app listed in [Rocket.Chat's Marketplace](https://ro
 
 Look no further!
 
-This "compatibility layer" will help you make your Rocket.Chat App talk to your backend in no time :\)
+This "compatibility layer" will help you make your Rocket.Chat App talk to your backend in no time :)
 
 Initialize your Rocket.Chat App with bindings that make it compatible with your Slack App implementation.
 
 ## Installation
 
-First of all, you're gonna need to scaffold out a Rocket.Chat App directory, so make sure you follow our [Getting Started](rocket.chat-app/) guide \(it's really quick\).
+First of all, you're gonna need to scaffold out a Rocket.Chat App directory, so make sure you follow our [Getting Started](rocket.chat-app.md) guide (it's really quick).
 
 We're gonna build upon the example in our Getting Started guide with the LiftOff app. After you've created the new app with our [CLI](https://github.com/RocketChat/Rocket.Chat.Apps-cli), you should have the following folder structure:
 
-```text
+```
 liftoff/
 | .vscode/
 | node_modules/
@@ -97,3 +97,49 @@ export class LiftOffApp extends App {
 
 That's it!
 
+## Unsupported Properties
+
+The below mentioned properties do not translate from Slack's Block Kit to Rocket.Chat's UIKit
+
+### Text object - Markdown
+
+* verbatim (string)
+
+### Option object
+
+* url (string)
+* description (PlainTextElement)
+
+### Button element
+
+* confirm (confirm)
+
+### From the "select" menus, only multistatic and static works
+
+#### Multistatic select
+
+* option\_groups
+* max\_selected\_items
+* confirm
+
+#### Static select
+
+* option\_groups
+* confirm
+
+### Overflow menu
+
+* confirm
+
+### Plain text input
+
+* min\_length
+* max\_length
+
+### Input block
+
+* hind (added)
+
+### Section block
+
+* fields

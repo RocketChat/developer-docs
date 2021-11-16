@@ -4,27 +4,27 @@ description: Retrieves Users Of Room Without E2E Key
 
 # Get Users Of Room Without E2E Key
 
-| `URL` | `Requires Auth` | `HTTP Method` |
-| :--- | :--- | :--- |
-| `api/v1/e2e.getUsersOfRoomWithoutKey` | `YES` | `GET` |
+| `URL`                                 | `Requires Auth` | `HTTP Method` |
+| ------------------------------------- | --------------- | ------------- |
+| `api/v1/e2e.getUsersOfRoomWithoutKey` | `YES`           | `GET`         |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
-## Path Variables 
+## Query Params
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `rid` | `zRAeTszXor8CCPceB` | Required | The room `_id`. |
+| Argument | Example             | Required | Description     |
+| -------- | ------------------- | -------- | --------------- |
+| `rid`    | `zRAeTszXor8CCPceB` | Required | The room `_id`. |
 
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/e2e.getUsersOfRoomWithoutKey\
+curl --location --request GET 'http://localhost:3000/api/v1/e2e.getUsersOfRoomWithoutKey\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -86,4 +86,3 @@ The following error can occur upon the endpoint.
 ```
 {% endtab %}
 {% endtabs %}
-

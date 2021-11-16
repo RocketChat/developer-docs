@@ -4,9 +4,9 @@ Starring messages allows a user to quickly save for future reference, or somethi
 
 ## Requirements
 
-| Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | _none_ | `Message_AllowStarring` - "Allow Message Starring" |
+| Logged In | Permission | Setting                                            |
+| --------- | ---------- | -------------------------------------------------- |
+| Yes       | _none_     | `Message_AllowStarring` - "Allow Message Starring" |
 
 ## Example Call
 
@@ -37,5 +37,4 @@ The only parameter that needs to be passed in is an object with the `_id`, `rid`
 
 ## See Also:
 
-* [Starring Messages User Guide]()
-
+* [Starring Messages User Guide](broken-reference)

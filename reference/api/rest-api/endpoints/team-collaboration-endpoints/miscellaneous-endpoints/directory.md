@@ -2,15 +2,15 @@
 
 A method, that searches by users or channels on all users and channels available on server. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/directory` | `yes` | `GET` |
+| URL                 | Requires Auth | HTTP Method |
+| ------------------- | ------------- | ----------- |
+| `/api/v1/directory` | `yes`         | `GET`       |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `query` | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` \(default\) or `all`. `workspace=all` will work only if [Federation]() is enabled. |
+| Argument | Example                                                     | Required | Description                                                                                                                                                                               |
+| -------- | ----------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query`  | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` (default) or `all`. `workspace=all` will work only if [Federation](broken-reference) is enabled. |
 
 ## Example Call
 
@@ -81,9 +81,8 @@ curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added `workspace` query param |
-| 0.65.0 | Added Pagination fields: `count`, `total`, `offset` |
-| 0.64.0 | Added |
-
+| Version | Description                                         |
+| ------- | --------------------------------------------------- |
+| 1.0.0   | Added `workspace` query param                       |
+| 0.65.0  | Added Pagination fields: `count`, `total`, `offset` |
+| 0.64.0  | Added                                               |

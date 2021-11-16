@@ -1,18 +1,20 @@
 # UI Colors
 
-> NB: The UI is in active development and component refactoring will change \(and hopefully improve\) the use of color. The immediate goal is to consolidate use of color and styles, before moving forward to a consistent style guide for Rocket.Chat.
+{% hint style="info" %}
+NB: The UI is in active development. Component refactoring will change and hopefully improve the use of colors. The immediate goal is to consolidate use of color and styles, before moving forward to a consistent style guide for Rocket.Chat.
+{% endhint %}
 
-[Most](https://github.com/RocketChat/Rocket.Chat/issues/4091)\* use of color in Rocket.Chat can be customised by changing color settings under Administration &gt; Layout &gt; Colors. We encourage developers to use the defined variables in their contributions \(instead of hard-coding colors\), to allow site owners to change the color scheme with consistent results.
+[Most](https://github.com/RocketChat/Rocket.Chat/issues/4091) use of color in Rocket.Chat can be customised by changing the color settings under **Administration** > **Layout** > **Colors**. We encourage developers to use the defined variables in their contributions (instead of hard-coding colors), to allow site owners to change the color scheme with consistent results.
 
-See the [theme variables file](https://github.com/RocketChat/Rocket.Chat/blob/develop/app/theme/server/variables.js) for current available color settings. All color settings are available to Less files as variables, as long as the Less files were compiled using the `addPackageAsset` method of `rocketchat-theme`.
+See the [theme variables file](https://github.com/RocketChat/Rocket.Chat/blob/develop/app/theme/server/variables.js) for the currently available color settings. All color settings are available to `Less files` as variables, as long as the Less files were compiled using the `addPackageAsset` method of `rocketchat-theme`.
 
 ## Color Scheme
 
-The Rocket.Chat color scheme consists of three groups of color settings, Alpha, Major and Minor Colors.
+The Rocket.Chat color scheme consists of three groups of color settings, [Alpha](ui-colors.md#alpha-colors), [Major](ui-colors.md#major-colors) and [Minor](ui-colors.md#minor-colors) Colors.
 
 Some further variations of these colors are created in Less and not exposed to settings.
 
-The naming of color settings/variables is not related to any specific component, the names reflect the visual hierarchy that will \(hopefully\) make it obvious and easy to carry forward consistent color usage in newly contributed components and theme development.
+The naming of color settings/variables is not related to any specific component, the names reflect the visual hierarchy that will (hopefully) make it obvious and easy to carry forward consistent color usage in newly contributed components and theme development.
 
 ### Alpha Colors
 
@@ -31,19 +33,19 @@ Semi-transparent black or white, used in components to shade/tint the background
 
 The primary palette of the app. Contributions and modifications to components should make use of these colors.
 
-* content-background-color **\#FFFFFF**
-* primary-background-color **\#04436A**
-* primary-font-color **\#444444**
-* primary-action-color **\#1d74f5**
-* secondary-background-color **\#F4F4F4**
-* secondary-font-color **\#A0A0A0**
-* secondary-action-color **\#DDDDDD**
-* component-color **\#f2f3f5**
-* success-color **\#4dff4d**
-* pending-color **\#FCB316**
-* error-color **\#BC2031**
-* selection-color **\#02ACEC**
-* attention-color **\#9C27B0**
+* content-background-color **#FFFFFF**
+* primary-background-color **#04436A**
+* primary-font-color **#444444**
+* primary-action-color **#1d74f5**
+* secondary-background-color **#F4F4F4**
+* secondary-font-color **#A0A0A0**
+* secondary-action-color **#DDDDDD**
+* component-color **#f2f3f5**
+* success-color **#4dff4d**
+* pending-color **#FCB316**
+* error-color **#BC2031**
+* selection-color **#02ACEC**
+* attention-color **#9C27B0**
 
 ### Minor Colors
 
@@ -88,4 +90,3 @@ These examples show the implementation of the default color scheme with the main
 ### Settings Page
 
 ![Settings page example colors](../../.gitbook/assets/settings-page.png)
-

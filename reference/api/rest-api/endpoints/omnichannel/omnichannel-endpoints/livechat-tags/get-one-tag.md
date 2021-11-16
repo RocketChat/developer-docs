@@ -4,24 +4,24 @@ description: Gives the details of a tag
 
 # Get one Tag
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/Enterprise.jpg)
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `livechat/tags.getOne` | `YES` | `GET` |
+| URL                    | Requires Auth | HTTP Method |
+| ---------------------- | ------------- | ----------- |
+| `livechat/tags.getOne` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `tagId` | `pXkCRLGxD34y2FEZq` | Required | Tag ID |
+| Argument | Example             | Required | Description |
+| -------- | ------------------- | -------- | ----------- |
+| `tagId`  | `pXkCRLGxD34y2FEZq` | Required | Tag ID      |
 
 ## Example Call
 
@@ -46,4 +46,3 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags.getOne
     "success": true
 }
 ```
-

@@ -14,16 +14,15 @@ In order to send a template message, you have 2 options
    * REST API Documentation for this endpoint can be found [here](https://developer.rocket.chat/api/rest-api/methods/apps-endpoints/whatsapp-endpoints/template-message)
 2. Via the Slash Command and UI
    * You can send the template message in a more user-friendly way using the GUI form.
-   * To trigger the GUI, open a WhatsApp contact room and run the following command
+   *   To trigger the GUI, open a WhatsApp contact room and run the following command
 
-     > `/whatsapp send-template`
-
+       > `/whatsapp send-template`
    * This will open up a modal, where you can select
      * The `Template` you wish to send,
      * The `Language` you wish to send the template in,
-     * And also substitute `parameters` within the message, if present.
+     *   And also substitute `parameters` within the message, if present.
 
-       > Note, If parameters \(i.e eg \) are present withing the template message, please make sure that you substitute all of them before sending the message. Failure to do so will result in an error.
+         > Note, If parameters (i.e eg ) are present withing the template message, please make sure that you substitute all of them before sending the message. Failure to do so will result in an error.
 
 A video demonstration of the above feature is available here: [![Watch the video](https://img.youtube.com/vi/TMNZ8HjGx-M/maxresdefault.jpg)](https://youtu.be/TMNZ8HjGx-M)
 
@@ -35,14 +34,13 @@ You can set the _Message Status Endpoint URL_ in the Apps Settings.
 
 Following is the payload format you will receive on the endpoint
 
-| **Field Name** | **Type** | **Description** |
-| :---: | :---: | :---: |
-| msId | String or undefined | Message Id. |
-| message | String | Text message |
-| mobileNo | String | Phone number of WhatsApp user to which you had sent the message |
-| connectedWhatsAppNo | String | Your connected WhatsApp Number from which you had sent the message to user |
-| MessageStatus | String | Status of message - sent, delivered, read, failed, deleted |
-| ErrorDetails | Optional   Type: String or WhatsApp error format | Errors from template messages will be shown here |
-| type | String | `Template-Message` or `Regular-Message` |
-| timestamp | String | Timestamp of request |
-
+|    **Field Name**   |                          **Type**                          |                               **Description**                              |
+| :-----------------: | :--------------------------------------------------------: | :------------------------------------------------------------------------: |
+|         msId        |                     String or undefined                    |                                 Message Id.                                |
+|       message       |                           String                           |                                Text message                                |
+|       mobileNo      |                           String                           |       Phone number of WhatsApp user to which you had sent the message      |
+| connectedWhatsAppNo |                           String                           | Your connected WhatsApp Number from which you had sent the message to user |
+|    MessageStatus    |                           String                           |         Status of message - sent, delivered, read, failed, deleted         |
+|     ErrorDetails    | <p>Optional <br> Type: String or WhatsApp error format</p> |              Errors from template messages will be shown here              |
+|         type        |                           String                           |                   `Template-Message` or `Regular-Message`                  |
+|      timestamp      |                           String                           |                            Timestamp of request                            |

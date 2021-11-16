@@ -4,23 +4,23 @@ description: Gives the details of a Priority
 
 # Get one Priority
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/Enterprise.jpg)
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `livechat/priority.getOne` | `YES` | `GET` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `livechat/priority.getOne` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument     | Example           | Required | Description |
+| ------------ | ----------------- | -------- | ----------- |
 | `priorityId` | 7Hu352k892rNh45j9 | Required | Priority ID |
 
 ## Example Call
@@ -43,4 +43,3 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/priorities.
     "success": true
 }
 ```
-
