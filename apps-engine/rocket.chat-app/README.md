@@ -27,6 +27,6 @@ Below are a few guides which will help you get started with Rocket.Chat App Engi
 
 ## Webinar on Getting Started with Rocket.Chat Apps Development
 
-We had a webinar some time ago on how to get started with Rocket.Chat Apps development. It is a bit outdated, but can get you through the basics. And updated guide can be found at [Creating an App](getting-started/creating-an-app.md).
+We had a webinar some time ago on how to get started with Rocket.Chat Apps development. It is a bit outdated, but can get you through the basics. And updated guide can be found at [Creating an App](creating-an-app.md).
 
 [You can watch it here](https://www.youtube.com/watch?v=PaFPeD6QG9k).

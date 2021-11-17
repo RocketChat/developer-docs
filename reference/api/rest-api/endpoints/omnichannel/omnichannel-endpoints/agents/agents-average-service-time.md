@@ -6,7 +6,7 @@ description: Gives the average service time per agent
 
 
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                                                     | Requires Auth | HTTP Method |
 | ------------------------------------------------------- | ------------- | ----------- |

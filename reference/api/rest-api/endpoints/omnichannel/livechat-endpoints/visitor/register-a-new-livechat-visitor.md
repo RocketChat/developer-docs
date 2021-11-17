@@ -1,8 +1,8 @@
 # Register a new Livechat visitor
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/visitor` | `no` | `POST` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/livechat/visitor` | `no`          | `POST`      |
 
 ## Example payload
 
@@ -28,7 +28,7 @@
 curl -X POST \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/livechat/visitor \
-    -d '{"visitor": {"name": "Livechat Visitor", "email": "visitor@rocket.chat", "token": "iNKE8a6k6cjbqWhWd", "phone": "55 51 5555-5555", "customFields": [{ "key": "address", "value": "Rocket.Chat street", "overwrite": true }] }'
+    -d '{"visitor": {"name": "Livechat Visitor", "email": "visitor@rocket.chat", "token": "iNKE8a6k6cjbqWhWd", "phone": "55 51 5555-5555", "customFields": [{ "key": "address", "value": "Rocket.Chat street", "overwrite": true }] }}'
 ```
 
 ## Example Result
@@ -58,4 +58,3 @@ curl -X POST \
   "success": true
 }
 ```
-

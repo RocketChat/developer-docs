@@ -4,7 +4,7 @@ description: Gives a list of units
 
 # List of Unit
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                          | Requires Auth | HTTP Method |
 | ---------------------------- | ------------- | ----------- |

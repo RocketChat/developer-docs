@@ -4,7 +4,7 @@ description: Gives a list of priorities
 
 # List of Priorities
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                        | Requires Auth | HTTP Method |
 | -------------------------- | ------------- | ----------- |

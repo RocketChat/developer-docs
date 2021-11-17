@@ -4,7 +4,7 @@ description: Gives the average waiting time sorted by department
 
 # Average waiting time by department
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                                                          | Requires Auth | HTTP Method |
 | ------------------------------------------------------------ | ------------- | ----------- |

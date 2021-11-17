@@ -4,7 +4,7 @@ description: Gives the total service time sorted by department
 
 # Total service time by department
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                                                        | Requires Auth | HTTP Method |
 | ---------------------------------------------------------- | ------------- | ----------- |

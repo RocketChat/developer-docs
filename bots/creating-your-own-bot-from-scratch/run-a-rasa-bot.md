@@ -96,4 +96,4 @@ Click `Save changes` in the top right corner.
 
 On the server, login as a regular user (not the BOT user), go to `general` room, and try to talk to your bot by typing `@bot_rasa hello`:
 
-![Rasa bot is talking](<../../.gitbook/assets/rasa\_bot\_example (1) (1) (1) (2) (2) (2) (2) (2) (2) (2) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2).png>)
+![Rasa bot is talking](<../../.gitbook/assets/rasa\_bot\_example (1) (1) (1) (2) (2) (2) (2) (2) (2) (2) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (1).png>)

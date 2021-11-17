@@ -4,7 +4,7 @@ description: Return the list of agents and their available time for the provided
 
 # Agents available for service history
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                                                              | Requires Auth | HTTP Method |
 | ---------------------------------------------------------------- | ------------- | ----------- |

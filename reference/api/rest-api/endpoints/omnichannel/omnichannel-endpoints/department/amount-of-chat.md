@@ -4,7 +4,7 @@ description: Gives the number of incoming chats (chat rooms) by department
 
 # Amount of chat
 
-![](../../../../../../../.gitbook/assets/Enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 | URL                                                     | Requires Auth | HTTP Method |
 | ------------------------------------------------------- | ------------- | ----------- |

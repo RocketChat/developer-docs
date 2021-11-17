@@ -20,7 +20,7 @@ To submit your App simply run:
 
 `rc-apps submit`
 
-![](<../.gitbook/assets/image (186) (1).png>)
+![](<../../../.gitbook/assets/image (186) (1).png>)
 
 {% hint style="info" %}
 Submission through CLI just sends the App in a `draft` state. The Publisher must access the Portal to be able to submit the app.
@@ -33,29 +33,29 @@ To submit an app through the publisher:
 1. Go to [https://marketplace.rocket.chat/publisher/register](https://marketplace.rocket.chat/publisher/register) (provided in the CLI)
 2. Log in using your account
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (55).png>)
 
 Or Sign up for your publisher account,  as shown below:
 
-![](<../.gitbook/assets/image (183).png>)
+![](<../../../.gitbook/assets/image (183).png>)
 
 Your publisher developer account is created, as shown below:
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../../../.gitbook/assets/image (48).png>)
 
 ## To add a new app:
 
 1. Click **New App**
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (19).png>)
 
 Following screen appears:&#x20;
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (45).png>)
 
 2\. Drag and drop your app package, as shown below:
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (64).png>)
 
 Click **Next **and set details of the app you're going to publish.
 
@@ -70,7 +70,7 @@ Click **Next **and set details of the app you're going to publish.
 
 In the following section we will guide you through different purchase types. You can choose the one that suits your needs.
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../../../.gitbook/assets/image (56) (1).png>)
 
 {% hint style="info" %}
 For a paid app its madatory to connect with [Stripe](https://stripe.com) account before submission.
@@ -87,7 +87,7 @@ Please use **One-time Purchase** when you want your app to have a one-off paymen
 1. Select One-time Purchase
 2. Enter the price you want to set
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../../../.gitbook/assets/image (31).png>)
 
 ### Subscription:
 
@@ -96,7 +96,7 @@ When you want your app to be subscription-based, you can use **Subscription** pu
 1. Select **Subscription**
 2. Click** Add pricing plan**
 
-![](<../.gitbook/assets/image (31).png>)
+![](<../../../.gitbook/assets/image (11).png>)
 
 **New Pricing Plan** pane appears:
 
@@ -114,7 +114,7 @@ If you want your app to have a per seat subscribtion check mark **Per Seat **box
 Per seat subscribtion allows your customers to pay per seat for the app rather than paying for a tier of users.
 {% endhint %}
 
-![](<../.gitbook/assets/image (40).png>)
+![](<../../../.gitbook/assets/image (3).png>)
 
 #### **5.2** Tiers Subscription&#x20;
 
@@ -124,7 +124,7 @@ Per seat subscribtion allows your customers to pay per seat for the app rather t
 
 You can make your app available to your customers free of cost,  as shown below;
 
-![](<../.gitbook/assets/image (45).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
 ## App Info
 
@@ -136,17 +136,17 @@ Next you can set your app info:
 
 as shown below:
 
-![](<../.gitbook/assets/image (48).png>)
+![](<../../../.gitbook/assets/image (22).png>)
 
 ## Publish App
 
 Hit **Publish Changes**, as shown below:
 
-![](<../.gitbook/assets/image (55).png>)
+![](<../../../.gitbook/assets/image (40).png>)
 
 Your app is published successfully, as shown below:
 
-![](<../.gitbook/assets/image (51).png>)
+![](<../../../.gitbook/assets/image (15).png>)
 
 ## Process after successful submission:
 
@@ -158,15 +158,15 @@ After successful submission following events happen at Rocket.Chat side, that yo
 
 You can see the status of your app as **compiling**, as shown below:
 
-![](<../.gitbook/assets/image (191).png>)
+![](<../../../.gitbook/assets/image (191).png>)
 
 After we compile, you will be notified via email, as shown below:
 
-![](<../.gitbook/assets/image (194).png>)
+![](<../../../.gitbook/assets/image (194).png>)
 
 Then you get notified to review your app, as shown below:
 
-![](<../.gitbook/assets/image (192) (1).png>)
+![](<../../../.gitbook/assets/image (192) (1).png>)
 
 You log in to your cloud account and **approve** it.
 
