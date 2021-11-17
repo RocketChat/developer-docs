@@ -19,6 +19,19 @@ Pay attention these files are React components and you can change them correctly
 yarn build-assets
 ```
 
+## Tray Icon
+
+If you want to customize the TrayIcon, there are two ways:
+
+\- Open `public/images/tray` there you can check the all currents icons used by the application. You can change that files if you want.
+
+&#x20;\- Open and change `ui/icon/AppIcon.tsx` this is the icon base used to automatically generate all the icons, if you are used with `tsx/jsx` probably this is the easiest way to go.
+
+```
+// change ui/icon/AppIcon.tsx and run
+yarn build-assets
+```
+
 ## About
 
 To change the about screen, head on to `./src/ui/components/AboutDialog/index.tsx` where you can change the copyright. If you've changed the logo already, it will automatically reflect on this page.
