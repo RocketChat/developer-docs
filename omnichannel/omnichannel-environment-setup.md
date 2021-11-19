@@ -2,8 +2,6 @@
 
 The RocketChat omnichannel feature provides a multi-channel environment for communication between companies and their customers.
 
-**LiveChat** is a small and lightweight application designed to provide B2C (Business-to-customer) communication between Agents and website visitors and is developed with [Preact](https://preactjs.com).
-
 ## Setting Up LiveChat
 
 The Rocket.Chat LiveChat platform, is developed with [Preact](https://preactjs.com).

@@ -52,6 +52,10 @@ yarn i18n
 
 ## Customization
 
+The Livechat widget can be fully customized using following our [**Storybook components**](https://rocketchat.github.io/Rocket.Chat.Livechat/)**.**
+
+You can use the Livechat Widget API to extend functionalities.
+
 {% content-ref url="../reference/api/livechat-api.md" %}
 [livechat-api.md](../reference/api/livechat-api.md)
 {% endcontent-ref %}
