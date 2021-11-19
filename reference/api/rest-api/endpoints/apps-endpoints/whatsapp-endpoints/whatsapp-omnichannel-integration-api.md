@@ -8,21 +8,24 @@ description: WhatsApp Business API Integration for Rocket.Chat
 
 The WhatsApp app allows you to send template messages to a target user.
 
-In order to send a template message, you have 2 options
+In order to send a template message, you have two options:
 
-1. Via the endpoint
-   * REST API Documentation for this endpoint can be found [here](https://developer.rocket.chat/api/rest-api/methods/apps-endpoints/whatsapp-endpoints/template-message)
-2. Via the Slash Command and UI
-   * You can send the template message in a more user-friendly way using the GUI form.
-   *   To trigger the GUI, open a WhatsApp contact room and run the following command
+### 1. Via endpoint
 
-       > `/whatsapp send-template`
-   * This will open up a modal, where you can select
-     * The `Template` you wish to send,
-     * The `Language` you wish to send the template in,
-     *   And also substitute `parameters` within the message, if present.
+* REST API Documentation for this endpoint can be found [here](https://developer.rocket.chat/api/rest-api/methods/apps-endpoints/whatsapp-endpoints/template-message)
 
-         > Note, If parameters (i.e eg ) are present withing the template message, please make sure that you substitute all of them before sending the message. Failure to do so will result in an error.
+### 2. Via Slash Command and UI
+
+* You can send the template message in a more user-friendly way using the GUI form.
+*   To trigger the GUI, open a WhatsApp contact room and run the following command
+
+    > `/whatsapp send-template`
+* This will open up a modal, where you can select
+  * The `Template` you wish to send,
+  * The `Language` you wish to send the template in,
+  *   And also substitute `parameters` within the message, if present.
+
+      > Note, If parameters (i.e eg ) are present withing the template message, please make sure that you substitute all of them before sending the message. Failure to do so will result in an error.
 
 A video demonstration of the above feature is available here: [![Watch the video](https://img.youtube.com/vi/TMNZ8HjGx-M/maxresdefault.jpg)](https://youtu.be/TMNZ8HjGx-M)
 
