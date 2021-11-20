@@ -52,6 +52,14 @@ export PATH=$PATH:/home/gitpod/.meteor
 meteor npm i
 ```
 
+* Now set your `ROOT_URL`, without it Rocket.Chat server might misbahave.
+
+```
+export ROOT_URL=$(gp url 3000)
+```
+
+* Finally, start the Rocket.Chat server.
+
 ```
 meteor npm start
 ```
