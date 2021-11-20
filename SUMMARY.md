@@ -67,7 +67,6 @@
   * [UI Components](desktop-app/desktop-app-white-labelling/ui-components.md)
   * [Custom Themes](desktop-app/desktop-app-white-labelling/custom-themes.md)
   * [UI Colors](desktop-app/desktop-app-white-labelling/ui-colors.md)
-* [Desktop App FAQs](desktop-app/desktop-app-faqs.md)
 
 ## Omnichannel
 
@@ -75,7 +74,6 @@
 * [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps.md)
 * [Livechat Widget Development and Customization](omnichannel/livechat-widget-development-and-customization.md)
 * [Omnichannel White Labelling](omnichannel/omnichannel-white-labelling.md)
-* [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
 ## Apps Engine
 
