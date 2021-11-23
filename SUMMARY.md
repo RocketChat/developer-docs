@@ -4,21 +4,21 @@
 
 ## Quick Start
 
-* [Choosing a Development Host](quick-start/choosing-a-development-host/README.md)
-  * [Windows 10](quick-start/choosing-a-development-host/windows-10.md)
-  * [Linux](quick-start/choosing-a-development-host/linux.md)
-  * [Gitpod](quick-start/choosing-a-development-host/gitpod.md)
-  * [Mac OSX](quick-start/choosing-a-development-host/mac-osx.md)
-  * [Choosing a Development Host FAQs](quick-start/choosing-a-development-host/choosing-a-development-host-faqs.md)
-* [Setting up your Development Environment](quick-start/building-specific-projects/README.md)
-  * [Rocket.Chat Server](quick-start/building-specific-projects/rocket.chat-server/README.md)
-  * [Mobile App](quick-start/building-specific-projects/mobile-app/README.md)
-  * [Desktop App](quick-start/building-specific-projects/desktop-app/README.md)
-  * [Omnichannel](quick-start/building-specific-projects/omnichannel/README.md)
-  * [Apps Engine](quick-start/building-specific-projects/apps-engine/README.md)
+* [Choosing a Deployment Host](quick-start/choosing-a-development-host/README.md)
+  * [Official Recommendations](https://docs.rocket.chat/quick-start/installing-and-updating/official-recommendations)
+  * [Manual Installation](https://docs.rocket.chat/quick-start/installing-and-updating/manual-installation)
+  * [Docker](https://docs.rocket.chat/quick-start/installing-and-updating/docker-containers)
+  * [Snap](https://docs.rocket.chat/quick-start/installing-and-updating/snaps)
+  * [Non Official Methods](https://docs.rocket.chat/quick-start/installing-and-updating/community-supported-installation)
+* [Setting up your Development Environment](quick-start/building-specific-projects.md)
 
 ## Rocket.Chat
 
+* [Environment Setup](rocket.chat/rocket.chat-server/README.md)
+  * [Windows 10](rocket.chat/rocket.chat-server/windows-10.md)
+  * [Linux](rocket.chat/rocket.chat-server/linux.md)
+  * [Gitpod](rocket.chat/rocket.chat-server/gitpod.md)
+  * [Mac OSX](rocket.chat/rocket.chat-server/mac-osx.md)
 * [Repository Structure](rocket.chat/repository-structure.md)
 * [Deeplink](rocket.chat/deeplink.md)
 * [Two Factor Authentication](rocket.chat/two-factor-authentication.md)
