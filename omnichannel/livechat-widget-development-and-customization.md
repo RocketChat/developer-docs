@@ -4,7 +4,7 @@
 
 ### Changing LiveChat Host.
 
-One of the very first things to do while developing the LiveChat widget is to make sure it points directly to your RocketChat server running.
+One of the very first things to do while developing the LiveChat widget is to make sure it points directly to your running RocketChat server.
 
 To select a different host for your local widget, navigate in the project directory to the  `/src/api.js` file.
 
@@ -14,7 +14,7 @@ const host = window.SERVER_URL
 	|| (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : null);
 ```
 
-You can modify to your server.;p
+You can modify to your server's URL.
 
 ```
 const host = window.SERVER_URL

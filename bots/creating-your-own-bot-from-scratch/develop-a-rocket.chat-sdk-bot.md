@@ -1,25 +1,25 @@
-# Run a Rocket.Chat SDK Bot
+# Develop a Rocket.Chat SDK Bot
 
 This bot is a simple example of how you can use [Rocket.Chat JS SDK](https://github.com/RocketChat/Rocket.Chat.js.SDK) methods directly. It is extremely basic and does not handle errors, different message types, server resets and other production situations.
 
-## Quick start guide
+## RocketChat SDK Bot Quick Start Guide
 
 Rocket.Chat Bot is a Node.js package and works with Node and npm.
 
-Navigate to the folder where you want to work with the bot and proceed with the following steps:
+#### Install Rocket.Chat SDK Package
 
-**1. install Rocket.Chat SDK package**
+Open up terminal in the directory you wish to develop your bot in and run the following command
 
-```text
+```
 npm init -y
 npm install @rocket.chat/sdk
 ```
 
-**2. create bot files**
+#### Create SDK Bot Files
 
 To proceed with the simplest setup, you need to create two files: the first one will be responsible for the working logic of the bot. Another one will contain a map with the responses.
 
-1. create a `server.js` file with the following content:
+* create a `server.js` file with the following content:
 
 ```javascript
 const { driver } = require('@rocket.chat/sdk');
@@ -69,11 +69,13 @@ if (!err) {
 runbot()
 ```
 
+{% hint style="info" %}
 **NOTE:** Adjust the `Environment Setup` section content to fit your server and user credentials.
 
 Make sure `<BOT USER NAME>` has a `BOT` role on the server. For more information on how to create a bot user please refer to [this page](./#1-create-a-bot-user).
+{% endhint %}
 
-1. create a `reply.js` file with the following content:
+* create a `reply.js` file with the following content:
 
 ```javascript
 const respmap = {
@@ -86,15 +88,15 @@ const respmap = {
 module.exports = respmap;
 ```
 
-**3. run the bot**
+#### Run the SDK Bot
 
-```text
+```
 node server.js
 ```
 
 After executing the last command, Rocket.Chat SDK bot will try to connect to the Rocket.Chat instance and then will listen to messages in `general` room:
 
-```text
+```
 $ node server.js
 [connect] Connecting { username: 'username',
   password: 'pass',
@@ -132,9 +134,8 @@ Greeting message sent
 [received] Message in room GENERAL
 ```
 
-**4. talk to your bot**
+#### Talk to Your SDK Bot
 
-On the server, login as a regular user \(not the BOT user\), go to `general` room, and talk to your newly created bot:
+On the server, login as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
 
-![Rocket.Chat SDK bot responses to user messages](../../.gitbook/assets/rocket-chat-sdk-bot-responses.png)
-
+![](<../../.gitbook/assets/image (16).png>)

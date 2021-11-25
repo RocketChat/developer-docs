@@ -54,9 +54,9 @@ Open up the `widget-demo.html` file in your browser: `http://localhost:8080/widg
 
 You should see a page with the LiveChat initiation icon at the bottom right.
 
-![](<../.gitbook/assets/image (51).png>)
+![](<../.gitbook/assets/image (51) (1).png>)
 
-![](<../.gitbook/assets/image (65).png>)
+![](<../.gitbook/assets/image (65) (1).png>)
 
 {% hint style="info" %}
 For better performance, you can run this `widget-demo.html` on an [HTTP server](https://github.com/http-party/http-server).

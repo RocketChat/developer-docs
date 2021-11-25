@@ -74,6 +74,7 @@
 * [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps.md)
 * [Livechat Widget Development and Customization](omnichannel/livechat-widget-development-and-customization.md)
 * [Omnichannel White Labelling](omnichannel/omnichannel-white-labelling.md)
+* [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
 ## Apps Engine
 
@@ -106,14 +107,13 @@
 
 * [Bots Development Environment Setup](bots/bots-development-environment-setup.md)
 * [Bots Architecture](bots/bots-architecture.md)
-* [Bots Development Prerequisite](bots/bots-development-prerequisite.md)
 * [Creating Your Own Bot From Scratch](bots/creating-your-own-bot-from-scratch/README.md)
-  * [Run a Hubot bot](bots/creating-your-own-bot-from-scratch/run-a-hubot-bot.md)
-  * [Run a Botkit Bot](bots/creating-your-own-bot-from-scratch/run-a-botkit-bot.md)
-  * [Run a Rocket.Chat SDK Bot](bots/creating-your-own-bot-from-scratch/run-a-rocket.chat-sdk-bot.md)
-  * [Run a Botpress Bot](bots/creating-your-own-bot-from-scratch/run-a-botpress-bot.md)
-  * [Run a Rasa Bot](bots/creating-your-own-bot-from-scratch/run-a-rasa-bot.md)
-* [Bot Glossary](bots/bot-glossary.md)
+  * [Develop a Hubot Bot](bots/creating-your-own-bot-from-scratch/develop-a-hubot-bot.md)
+  * [Develop a Botkit Bot](bots/creating-your-own-bot-from-scratch/develop-a-botkit-bot.md)
+  * [Develop a Rocket.Chat SDK Bot](bots/creating-your-own-bot-from-scratch/develop-a-rocket.chat-sdk-bot.md)
+  * [Develop a Botpress Bot](bots/creating-your-own-bot-from-scratch/develop-a-botpress-bot.md)
+  * [Develop a Rasa Bot](bots/creating-your-own-bot-from-scratch/develop-a-rasa-bot.md)
+* [Bots FAQs](bots/bots-faqs.md)
 
 ## Reference
 

@@ -1,4 +1,4 @@
-# Bot Glossary
+# Omnichannel FAQs
 
 ## What is Livechat inquiry?
 
@@ -7,4 +7,3 @@ A Livechat inquiry is an internal data structure used to control the Omnichannel
 ## What is Omnichannel?
 
 Omnichannel is a product name. In older documentation, it is referred to as Livechat. In recent years, the former Livechat feature has been expanded to include Whatsapp and Facebook Messenger. In the near future, the Omnichannel product may include interoperation with other technologies such as Viber, Wechat, Blackberry, Apple Business Message, and RCS.
-
