@@ -1,3 +1,2 @@
-# Rocket.Chat Server
+# Environment Setup
 
-Document under development

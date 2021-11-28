@@ -6,4 +6,3 @@ description: >-
 
 # Choosing a Deployment Host
 
-Under development.
