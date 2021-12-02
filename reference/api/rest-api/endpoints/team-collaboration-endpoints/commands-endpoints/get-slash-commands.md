@@ -2,7 +2,7 @@
 description: Get specification of the slash command.
 ---
 
-# Get lash Commands
+# Get Slash Commands
 
 | URL | Requires Auth | HTTP Method |
 | :--- | :--- | :--- |
