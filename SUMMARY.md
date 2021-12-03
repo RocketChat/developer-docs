@@ -92,6 +92,7 @@
   * [Scheduler API](apps-engine/fundamentals-of-apps/scheduler-api.md)
   * [NPM Package Support (Experimental)](apps-engine/fundamentals-of-apps/npm-package-support-experimental.md)
   * [UIKit building blocks](apps-engine/uikit/uikit-building-blocks.md)
+* [Testing your App](apps-engine/testing-your-app.md)
 * [Sample App Snippets](apps-engine/recipes/README.md)
   * [Sub-command pattern](apps-engine/recipes/sub-command-pattern.md)
   * [Extending Messages](apps-engine/recipes/extending-messages.md)

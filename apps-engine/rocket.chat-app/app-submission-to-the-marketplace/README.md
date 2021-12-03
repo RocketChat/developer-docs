@@ -57,7 +57,7 @@ Following screen appears:&#x20;
 
 ![](<../../../.gitbook/assets/image (64).png>)
 
-Click **Next **and set details of the app you're going to publish.
+Click **Next** and set details of the app you're going to publish.
 
 ## **Set App details:**
 
@@ -94,7 +94,7 @@ Please use **One-time Purchase** when you want your app to have a one-off paymen
 When you want your app to be subscription-based, you can use **Subscription** purchase type. An example of this volume-based pricing is shown below:
 
 1. Select **Subscription**
-2. Click** Add pricing plan**
+2. Click **Add pricing plan**
 
 ![](<../../../.gitbook/assets/image (11).png>)
 
@@ -108,7 +108,7 @@ When you want your app to be subscription-based, you can use **Subscription** pu
 
 #### **5.1** Per Seat Subscription&#x20;
 
-If you want your app to have a per seat subscribtion check mark **Per Seat **box.
+If you want your app to have a per seat subscribtion check mark **Per Seat** box.
 
 {% hint style="info" %}
 Per seat subscribtion allows your customers to pay per seat for the app rather than paying for a tier of users.

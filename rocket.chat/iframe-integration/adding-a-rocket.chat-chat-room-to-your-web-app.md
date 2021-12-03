@@ -114,7 +114,7 @@ Do not launch the demo app directly yet because we will modify it a bit!&#x20;
 Here we will see how to manage to add the iframe to our code. We'll show you how to do this by modifying the demo.\
 
 
-### 1. Replace the code of the _index.js _file with this code:
+### 1. Replace the code of the _index.js_ file with this code:
 
 `var express = require('express');`
 
@@ -136,12 +136,12 @@ Here we will see how to manage to add the iframe to our code. We'll show you how
 
 `app.use((req, res, next) => {`
 
-` res.set('Access-Control-Allow-Origin', 'http://localhost:3000'); // this is the rocket.chat URL`
+&#x20;`res.set('Access-Control-Allow-Origin', 'http://localhost:3000'); // this is the rocket.chat URL`
 
-` res.set('Access-Control-Allow-Credentials', 'true');`\
+&#x20;`res.set('Access-Control-Allow-Credentials', 'true');`\
 ``
 
-` next();`
+&#x20;`next();`
 
 `});`\
 ``
@@ -151,118 +151,118 @@ Here we will see how to manage to add the iframe to our code. We'll show you how
 `app.post('/sso', function (req, res) {`\
 ``
 
-` // add your own app logic here to validate user session (check cookies, headers, etc)`\
+&#x20;`// add your own app logic here to validate user session (check cookies, headers, etc)`\
 ``
 
-` // if the user is not already logged in on your system, respond with a 401 status`
+&#x20;`// if the user is not already logged in on your system, respond with a 401 status`
 
-` var notLoggedIn = false;`
+&#x20;`var notLoggedIn = false;`
 
-` if (notLoggedIn) {`
+&#x20;`if (notLoggedIn) {`
 
-` return res.sendStatus(401);`
+&#x20;`return res.sendStatus(401);`
 
-` }`\
+&#x20;`}`\
 ``
 
-` // you can save the token on your database as well, if so just return it`
+&#x20;`// you can save the token on your database as well, if so just return it`
 
-` // MongoDB - services.iframe.token`
+&#x20;`// MongoDB - services.iframe.token`
 
-` var savedToken = null;`
+&#x20;`var savedToken = null;`
 
-` if (savedToken) {`
+&#x20;`if (savedToken) {`
 
-` return res.json({`
+&#x20;`return res.json({`
 
-` token: savedToken`
+&#x20;`token: savedToken`
 
-` });`
+&#x20;`});`
 
-` }`\
+&#x20;`}`\
 ``
 
-` // if dont have the user created on rocket.chat end yet, you can now create it`
+&#x20;`// if dont have the user created on rocket.chat end yet, you can now create it`
 
-` var currentUsername = true;`
+&#x20;`var currentUsername = true;`
 
-` if (!currentUsername) {`
+&#x20;`if (!currentUsername) {`
 
-` axios.post('http://localhost:3000/api/v1/users.register', {`
+&#x20;`axios.post('http://localhost:3000/api/v1/users.register', {`
 
-` username: 'new-user',`
+&#x20;`username: 'new-user',`
 
-` email: 'mynewuser@email.com',`
+&#x20;`email: 'mynewuser@email.com',`
 
-` pass: 'new-users-passw0rd',`
+&#x20;`pass: 'new-users-passw0rd',`
 
-` name: 'New User'`
+&#x20;`name: 'New User'`
 
-` }).then(function (response) {`\
+&#x20;`}).then(function (response) {`\
 ``
 
-``  // after creation you need to log the user in to get the `authToken` ``
+&#x20;`` // after creation you need to log the user in to get the `authToken` ``
 
-` if (response.data.success) {`
+&#x20;`if (response.data.success) {`
 
-` return axios.post('http://localhost:3000/api/v1/login', {`
+&#x20;`return axios.post('http://localhost:3000/api/v1/login', {`
 
-` username: 'new-user',`
+&#x20;`username: 'new-user',`
 
-` password: 'new-users-passw0rd'`
+&#x20;`password: 'new-users-passw0rd'`
 
-` });`
+&#x20;`});`
 
-` }`
+&#x20;`}`
 
-` }).then(function (response) {`
+&#x20;`}).then(function (response) {`
 
-` if (response.data.status === 'success') {`
+&#x20;`if (response.data.status === 'success') {`
 
-` res.json({`
+&#x20;`res.json({`
 
-` loginToken: response.data.data.authToken`
+&#x20;`loginToken: response.data.data.authToken`
 
-` });`
+&#x20;`});`
 
-` }`
+&#x20;`}`
 
-` }).catch(function (error) {`
+&#x20;`}).catch(function (error) {`
 
-` res.sendStatus(401);`
+&#x20;`res.sendStatus(401);`
 
-` });`
+&#x20;`});`
 
-` } else {`\
+&#x20;`} else {`\
 ``
 
-` // otherwise create a rocket.chat session using rocket.chat's API`
+&#x20;`// otherwise create a rocket.chat session using rocket.chat's API`
 
-` axios.post('http://localhost:3000/api/v1/login', {`
+&#x20;`axios.post('http://localhost:3000/api/v1/login', {`
 
-` username: 'new-user',`
+&#x20;`username: 'new-user',`
 
-` password: 'new-users-passw0rd'`
+&#x20;`password: 'new-users-passw0rd'`
 
-` }).then(function (response) {`
+&#x20;`}).then(function (response) {`
 
-` if (response.data.status === 'success') {`
+&#x20;`if (response.data.status === 'success') {`
 
-` res.json({`
+&#x20;`res.json({`
 
-` loginToken: response.data.data.authToken`
+&#x20;`loginToken: response.data.data.authToken`
 
-` });`
+&#x20;`});`
 
-` }`
+&#x20;`}`
 
-` }).catch(function() {`
+&#x20;`}).catch(function() {`
 
-` res.sendStatus(401);`
+&#x20;`res.sendStatus(401);`
 
-` });`
+&#x20;`});`
 
-` }`
+&#x20;`}`
 
 `});`\
 ``
@@ -271,18 +271,18 @@ Here we will see how to manage to add the iframe to our code. We'll show you how
 
 `app.get('/login', function (req, res) {`
 
-` res.set('Content-Type', 'text/html');`
+&#x20;`res.set('Content-Type', 'text/html');`
 
-` fs.createReadStream('login.html').pipe(res);`
+&#x20;`fs.createReadStream('login.html').pipe(res);`
 
 `});`\
 ``
 
 `app.get('/home', function (req, res) {`
 
-` res.set('Content-Type', 'text/html');`
+&#x20;`res.set('Content-Type', 'text/html');`
 
-` fs.createReadStream('home.html').pipe(res);`
+&#x20;`fs.createReadStream('home.html').pipe(res);`
 
 `});`\
 ``
@@ -292,122 +292,122 @@ Here we will see how to manage to add the iframe to our code. We'll show you how
 `app.post('/login', function (req, res) {`\
 ``
 
-` // do your own authentication process`\
+&#x20;`// do your own authentication process`\
 ``
 
-` // after user is authenticated we can proceed with authenticating him on rocket.chat side`\
+&#x20;`// after user is authenticated we can proceed with authenticating him on rocket.chat side`\
 ``
 
-` //`
+&#x20;`//`
 
-` //`
+&#x20;`//`
 
-` // the code bellow is exact the same as the on /sso endpoint, excepts for its response`
+&#x20;`// the code bellow is exact the same as the on /sso endpoint, excepts for its response`
 
-` // it was duplicated for understanding purpose`
+&#x20;`// it was duplicated for understanding purpose`
 
-` // the authentication process and being a well designed app =)`
+&#x20;`// the authentication process and being a well designed app =)`
 
-` //`
+&#x20;`//`
 
-` //`\
+&#x20;`//`\
 ``
 
-` // if dont have the user created on rocket.chat end yet, you can now create it`
+&#x20;`// if dont have the user created on rocket.chat end yet, you can now create it`
 
-` var currentUsername = null;`
+&#x20;`var currentUsername = null;`
 
-` if (!currentUsername) {`
+&#x20;`if (!currentUsername) {`
 
-` axios.post('http://localhost:3000/api/v1/users.register', {`
+&#x20;`axios.post('http://localhost:3000/api/v1/users.register', {`
 
-` username: 'new-user',`
+&#x20;`username: 'new-user',`
 
-` email: 'mynewuser@email.com',`
+&#x20;`email: 'mynewuser@email.com',`
 
-` pass: 'new-users-passw0rd',`
+&#x20;`pass: 'new-users-passw0rd',`
 
-` name: 'New User'`
+&#x20;`name: 'New User'`
 
-` }).then(function (response) {`\
+&#x20;`}).then(function (response) {`\
 ``
 
-``  // after creation you need to log the user in to get the `authToken` ``
+&#x20;`` // after creation you need to log the user in to get the `authToken` ``
 
-` if (response.data.success) {`
+&#x20;`if (response.data.success) {`
 
-` return axios.post('http://localhost:3000/api/v1/login', {`
+&#x20;`return axios.post('http://localhost:3000/api/v1/login', {`
 
-` username: 'new-user',`
+&#x20;`username: 'new-user',`
 
-` password: 'new-users-passw0rd'`
+&#x20;`password: 'new-users-passw0rd'`
 
-` });`
+&#x20;`});`
 
-` }`
+&#x20;`}`
 
-` }).then(function (response) {`
+&#x20;`}).then(function (response) {`
 
-` if (response.data.status === 'success') {`
+&#x20;`if (response.data.status === 'success') {`
 
-` res.redirect('/home')`
+&#x20;`res.redirect('/home')`
 
-` }`
+&#x20;`}`
 
-` }).catch(function (error) {`
+&#x20;`}).catch(function (error) {`
 
-` res.sendStatus(401);`
+&#x20;`res.sendStatus(401);`
 
-` });`
+&#x20;`});`
 
-` } else {`\
+&#x20;`} else {`\
 ``
 
-` // otherwise create a rocket.chat session using rocket.chat's API`
+&#x20;`// otherwise create a rocket.chat session using rocket.chat's API`
 
-` axios.post('http://localhost:3000/api/v1/login', {`
+&#x20;`axios.post('http://localhost:3000/api/v1/login', {`
 
-` username: 'username-set-previously',`
+&#x20;`username: 'username-set-previously',`
 
-` password: 'password-set-previously'`
+&#x20;`password: 'password-set-previously'`
 
-` }).then(function (response) {`
+&#x20;`}).then(function (response) {`
 
-` if (response.data.status === 'success') {`\
+&#x20;`if (response.data.status === 'success') {`\
 ``
 
-`` // since this endpoint is loaded within the iframe, we need to communicate back to rocket.chat using `postMessage` API``
+&#x20;``// since this endpoint is loaded within the iframe, we need to communicate back to rocket.chat using `postMessage` API``
 
-` res.set('Content-Type', 'text/html');`
+&#x20;`res.set('Content-Type', 'text/html');`
 
-`` res.send(`<script>``
+&#x20;``res.send(`<script>``
 
-` window.parent.postMessage({`
+&#x20;`window.parent.postMessage({`
 
-` event: 'login-with-token',`
+&#x20;`event: 'login-with-token',`
 
-` loginToken: '${ response.data.data.authToken }'`
+&#x20;`loginToken: '${ response.data.data.authToken }'`
 
-` }, 'http://localhost:3000'); // rocket.chat's URL`
+&#x20;`}, 'http://localhost:3000'); // rocket.chat's URL`
 
-`` </script>`);``
+&#x20;``</script>`);``
 
-` }`
+&#x20;`}`
 
-` }).catch(function() {`
+&#x20;`}).catch(function() {`
 
-` res.sendStatus(401);`
+&#x20;`res.sendStatus(401);`
 
-` });`
+&#x20;`});`
 
-` }`
+&#x20;`}`
 
 `});`\
 ``
 
 `app.listen(3030, function () {`
 
-`  console.log('Example app listening on port 3030!');`
+&#x20; `console.log('Example app listening on port 3030!');`
 
 `});`\
 
@@ -420,43 +420,43 @@ Here we will see how to manage to add the iframe to our code. We'll show you how
 
 `<head>`
 
-`    <meta charset="UTF-8">`
+&#x20;   `<meta charset="UTF-8">`
 
-`    <meta http-equiv="X-UA-Compatible" content="IE=edge">`
+&#x20;   `<meta http-equiv="X-UA-Compatible" content="IE=edge">`
 
-`    <meta name="viewport" content="width=device-width, initial-scale=1.0">`
+&#x20;   `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-`    <title>Document</title>`
+&#x20;   `<title>Document</title>`
 
 `</head>`
 
 `<body style="text-align: center;">`
 
-`    <button style="margin-bottom: auto;" onclick={x()}>GO TO GENERAL</button>`
+&#x20;   `<button style="margin-bottom: auto;" onclick={x()}>GO TO GENERAL</button>`
 
-`    <iframe src="http://localhost:3000/channel/general/?layout=embedded" title="myframe"></iframe>`
+&#x20;   `<iframe src="http://localhost:3000/channel/general/?layout=embedded" title="myframe"></iframe>`
 
 `</body>`
 
 `<script>`
 
-`    function x() {`
+&#x20;   `function x() {`
 
-`        document.querySelector("iframe").contentWindow.postMessage(`
+&#x20;       `document.querySelector("iframe").contentWindow.postMessage(`
 
-`            {`
+&#x20;           `{`
 
-`                externalCommand: "go",`
+&#x20;               `externalCommand: "go",`
 
-`                path: "/channel/general/?layout-embedded"`
+&#x20;               `path: "/channel/general/?layout-embedded"`
 
-`            },`
+&#x20;           `},`
 
-`            "http://localhost:3000"`
+&#x20;           `"http://localhost:3000"`
 
-`        );`
+&#x20;       `);`
 
-`    }`
+&#x20;   `}`
 
 `</script>`
 
@@ -467,7 +467,7 @@ So now that a new user is created, they will be redirected to our home.html page
 
 
 {% hint style="info" %}
-In the Rocket.Chat **Administration **>> **Iframe Configuration**, we have left POST in the API method. This needs to be tuned with the request methods in our backend for the link we put in the API URL.  (The demo backend for handling the Rocket.Chat server's /sso POST request)\
+In the Rocket.Chat **Administration** >> **Iframe Configuration**, we have left POST in the API method. This needs to be tuned with the request methods in our backend for the link we put in the API URL.  (The demo backend for handling the Rocket.Chat server's /sso POST request)\
 
 {% endhint %}
 
@@ -568,22 +568,22 @@ Once saved, this will allow the iframe's parent window to send commands to the R
 
 Then go back to the code, in home.html.
 
-You can review the function we have hooked. Click** Go To General **button:\
+You can review the function we have hooked. Click **Go To General** button:\
 
 
-&#x20;    `   document.querySelector("iframe").contentWindow.postMessage(`
+&#x20;    `document.querySelector("iframe").contentWindow.postMessage(`
 
-`            {`
+&#x20;           `{`
 
-`                externalCommand: "go",`
+&#x20;               `externalCommand: "go",`
 
-`                path: "/channel/general/?layout-embedded"`
+&#x20;               `path: "/channel/general/?layout-embedded"`
 
-`            },`
+&#x20;           `},`
 
-`            "`[`http://localhost:3000`](http://localhost:3000)` <Your server URL>"`
+&#x20;           `"`[`http://localhost:3000`](http://localhost:3000) `<Your server URL>"`
 
-`        );`\
+&#x20;       `);`\
 
 
 This command will go directly to the general room of the Rocket.chat server.&#x20;
@@ -614,17 +614,17 @@ Go to home.html and add the x() function to the tag script:
 
 `const x = () => {`
 
-`     document.getElementsByTagName("iframe")[0].contentWindow.postMessage({  `
+&#x20;   `document.getElementsByTagName("iframe")[0].contentWindow.postMessage({`&#x20;
 
-`         externalCommand: "set-user-status",  `
+&#x20;       `externalCommand: "set-user-status",`&#x20;
 
-`        status: "away"`
+&#x20;       `status: "away"`
 
-`    },`
+&#x20;   `},`
 
-`    "http://localhost:3000"`
+&#x20;   `"http://localhost:3000"`
 
-`    )`
+&#x20;   `)`
 
 `}`
 
@@ -633,7 +633,7 @@ Then replace the \<button> line in home.html with:
 \<button style="margin-bottom: auto;" onclick={x()}>Set away status\</button>\
 
 
-Once you are in the embedded room, you can click on the button and change your status.** **
+Once you are in the embedded room, you can click on the button and change your status. ****&#x20;
 
 ### **Use case 2 : Events: Adding code for Rocket.Chat iframe events**
 
@@ -660,13 +660,13 @@ This is to allow your Rocket.Chat server to send events to the parent window of 
 3\. In home.html in the tag script, add:\
 
 
-&#x20;  ` window.addEventListener('message', function(e) {`
+&#x20;  `window.addEventListener('message', function(e) {`
 
-`    if(e.data.eventName === 'room-opened') {`
+&#x20;   `if(e.data.eventName === 'room-opened') {`
 
-`        alert('You opened a room!')`
+&#x20;       `alert('You opened a room!')`
 
-`    }`
+&#x20;   `}`
 
 `});`\
 
@@ -690,7 +690,7 @@ However, we can make the user see your whole Rocket.Chat application in your web
 To do this you need to change a line in the iframe tag to enable or disable the embedded layout:\
 
 
-**Enable embedded layout: **
+**Enable embedded layout:**&#x20;
 
 `<iframe style="width: 100%; height: 80vh;" src="http://localhost:3000/channel/ChannelTest1/?layout=embedded" title="myframe"></iframe>`\
 

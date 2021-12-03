@@ -16,6 +16,6 @@ Our ecosystem can only grow through the contributions of our community. There ar
 
 To join other contributors:
 
-1. **Create an account on**[** open.rocket.chat**](https://open.rocket.chat/home)****
-2. **Create an account on **[**forums**](https://forums.rocket.chat)****
-3. **And visit our **[**GitHub Repository**](https://github.com/RocketChat/Rocket.Chat)****
+1. **Create an account on**[ **open.rocket.chat**](https://open.rocket.chat/home)****
+2. **Create an account on** [**forums**](https://forums.rocket.chat)****
+3. **And visit our** [**GitHub Repository**](https://github.com/RocketChat/Rocket.Chat)****

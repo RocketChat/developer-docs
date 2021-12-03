@@ -14,7 +14,7 @@ To user accounts you need to have admin privileges:
 * Select **Users** from the left sidebar
 * Click `+` (Add User) button in the right sidebar
 
-![](<../../.gitbook/assets/image (85).png>)
+![](<../../.gitbook/assets/image (85) (1).png>)
 
 * In the profile window that appears, fill in _Name_, _Username_, _Email_ and _Password_ fields
 * Enable _Verified_ toggle under the _Email_ field
