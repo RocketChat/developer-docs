@@ -54,7 +54,13 @@ curl --location --request POST 'localhost:3000/api/v1/livechat/units/4uErt483aPJ
 
 ```
 {
- "success": true
+    "name": "unitxx2",
+    "visibility": "private",
+    "type": "u",
+    "numMonitors": 1,
+    "numDepartments": 1,
+    "_updatedAt": "2021-12-06T14:40:59.478Z",
+    "_id": "o5zNtKy7BcTMgyXtm"
 }
 ```
 
