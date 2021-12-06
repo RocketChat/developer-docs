@@ -2,16 +2,16 @@
 
 Gets all of the users in the system and their information, the result is only limited to what the callee has access to view. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameter](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/users.list` | `yes` | `GET` |
+| URL                  | Requires Auth | HTTP Method |
+| -------------------- | ------------- | ----------- |
+| `/api/v1/users.list` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `fields` | `{ name: 1, emails: 0 }` | Optional | Field include hash \(value of `1` to include, `0` to exclude\). |
-| `query` | `{ active: true, type: { $in: ['user', 'bot'] } }` | Optional | Query filter hash. |
+| Argument | Example                                            | Required | Description                                                   |
+| -------- | -------------------------------------------------- | -------- | ------------------------------------------------------------- |
+| `fields` | `{ name: 1, emails: 0 }`                           | Optional | Field include hash (value of `1` to include, `0` to exclude). |
+| `query`  | `{ active: true, type: { $in: ['user', 'bot'] } }` | Optional | Query filter hash.                                            |
 
 ## Other Users Example Call
 
@@ -50,65 +50,72 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ```javascript
 {
-  "users": [
-    {
-      "_id": "nSYqWzZ4GsKTX4dyK",
-      "createdAt": "2016-12-07T15:47:46.861Z",
-      "services": {
-        "password": {
-          "bcrypt": ...
-        },
-        "email": {
-          "verificationTokens": [
-            {
-              "token": "...",
-              "address": "example@example.com",
-              "when": "2016-12-07T15:47:46.930Z"
-            }
-          ]
-        },
-        "resume": {
-          "loginTokens": [
-            {
-              "when": "2016-12-07T15:47:47.334Z",
-              "hashedToken": "..."
-            }
-          ]
-        }
-      },
-      "emails": [
+    "users": [
         {
-          "address": "example@example.com",
-          "verified": true
+            "_id": "Bm9YcfBCrwSTSGof7",
+            "username": "botkit.user",
+            "emails": [
+                {
+                    "address": "botkit@user.cm",
+                    "verified": false
+                }
+            ],
+            "status": "offline",
+            "active": true,
+            "roles": [
+                "bot"
+            ],
+            "name": "Botkit User",
+            "nameInsensitive": "botkit user"
+        },
+        
+        {
+            "_id": "Fdh2KgsB7dtwbYrNw",
+            "username": "john.m",
+            "emails": [
+                {
+                    "address": "john@m.com",
+                    "verified": true
+                }
+            ],
+            "status": "offline",
+            "active": true,
+            "roles": [
+                "user"
+            ],
+            "name": "John M",
+            "nameInsensitive": "john m"
+        },
+        {...},
+        {
+            "_id": "jowYXPgJoKaoxzz4q",
+            "username": "user.one",
+            "emails": [
+                {
+                    "address": "remego8086@d3ff.com",
+                    "verified": false
+                }
+            ],
+            "status": "offline",
+            "active": true,
+            "roles": [
+                "livechat-manager",
+                "livechat-agent"
+            ],
+            "name": "User One",
+            "nameInsensitive": "user one"
         }
-      ],
-      "type": "user",
-      "status": "offline",
-      "active": true,
-      "roles": [
-        "user"
-      ],
-      "name": "Example User",
-      "lastLogin": "2016-12-08T00:22:15.167Z",
-      "statusConnection": "offline",
-      "utcOffset": 0,
-      "username": "example"
-    },
-    {
-      ...
-    }
-  ],
-  "count": 3,
-  "offset": 2,
-  "total": 10,
-  "success": true
+    ],
+    "count": 11,
+    "offset": 0,
+    "total": 11,
+    "success": true
 }
 ```
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.49.0 | Count and offset query parameters supported. |
-| 0.35.0 | Added |
-
+| Version | Description                                  |
+| ------- | -------------------------------------------- |
+| 0.49.0  | Count and offset query parameters supported. |
+| 0.35.0  | Added                                        |
