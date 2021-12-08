@@ -6,34 +6,50 @@ description: >-
 
 # Contributing to Apps Engine
 
-Being Open Source, we always welcome contributors to help us out with the development of the our ultimate chat platform. You can checkout our [Apps Engine repository](https://github.com/RocketChat/Rocket.Chat.Apps-engine) to have a look at the code and understand the gist of what is currently going on there. An Awesome place to start is looking at our open issues and see if you can help out there! We're alwaus t
+Being Open Source, we always welcome contributors to help us out with the development of the  ultimate chat platform. You can checkout our Apps Engine repository here
 
+{% embed url="https://github.com/RocketChat/Rocket.Chat.Apps-engine" %}
+
+An Awesome place to start is looking at our open issues and see if you can help out there.
+
+{% hint style="info" %}
 When developing new functionalities, you need to integrate the local version of the Apps-Engine with your local version of Rocket.Chat.
+{% endhint %}
 
-First of all, make sure you've installed all required packages and compiled the changes you've made to the Apps-Engine, since that is what Rocket.Chat will execute:
+## Get the Apps Engine Code
+
+* To start, clone the Apps Engine repository and navigate into the directory by running
+
+```
+git clone https://github.com/RocketChat/Rocket.Chat.Apps-engine.git
+cd Rocket.Chat.Apps-engine
+```
+
+* Next, install all the required packages and compile the changes since that is what Rocket.Chat itself will execute.
 
 ```
 npm install
 npm run compile
 ```
 
-Now, you need to setup a local Rocket.Chat server, [so head to the project's README for instructions on getting started](https://github.com/RocketChat/Rocket.Chat#development) (if you haven't already). Make sure to actually clone the repo, since you will probably need to add some code to it in order to make your new functionality work.
-
-After that, `cd` into Rocket.Chat folder and run:
+* Setup your Rocket.Chat environment following the guide on [rocket.chat-server](../../rocket.chat/rocket.chat-server/ "mention")
+* After setting up, navigate into the directory and run
 
 ```
 meteor npm install PATH_TO_APPS_ENGINE
 ```
 
-Where `PATH_TO_APPS_ENGINE` is the path to the Apps-Engine repo you've cloned.
+Where `PATH_TO_APPS_ENGINE` is the path to the Apps-Engine repo you cloned earlier.
 
-That's it! Now when you start Rocket.Chat with the `meteor` command, it will use your local Apps-Engine instead of the one on NPM :)
+* You can now start your Rocket.Chat with the `meteor` command, it will use your local Apps-Engine instead of the one on NPM :)
 
+{% hint style="info" %}
 Whenever you make changes to the engine, run `npm run compile` again - meteor will take care of restarting the server due to the changes.
+{% endhint %}
 
-### Troubleshooting
+## Troubleshooting Apps Engine Development
 
-1. Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running, you might run on errors similar to these:
+1. Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running, you might run into errors similar to these:
 
 ```
 Unable to resolve some modules:
@@ -48,7 +64,7 @@ If you notice problems related to these missing modules, consider running:
 
 Simply restart the meteor process and it should be fixed.
 
-1. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE` will cause the following error :-
+&#x20;2\. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE` will cause the following error :-
 
 ```
 npm ERR! code ENOENT
@@ -61,7 +77,7 @@ npm ERR! enoent This is related to npm not being able to find a file.
 npm ERR! enoent 
 ```
 
-Here `PATH_TO_ROCKETCHAT` is the path to the main rocketchat server repo in your system To correct this we reinstall the package once again deleting the previous package
+Here `PATH_TO_ROCKETCHAT` is the path to the main Rocket.Chat server repo in your system To correct this we reinstall the package once again deleting the previous package
 
 ```
 ~/Rocket.Chat$ rm -rf node_modules/@rocket.chat/apps-engine
