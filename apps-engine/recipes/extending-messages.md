@@ -8,7 +8,7 @@ In this recipe, we will create an app that is called through a slash command, se
 
 ## Attachments
 
-Rocket.Chat supports numerous types of attachments \(and applicable **customisations** to these attachments\) which can be added to messages. For instance, you are able to attach images, documents, videos or audio files to messages, and creating your own **attachment class** is the first step in order to do so.
+Rocket.Chat supports numerous types of attachments (and applicable **customisations** to these attachments) which can be added to messages. For instance, you are able to attach images, documents, videos or audio files to messages, and creating your own **attachment class** is the first step in order to do so.
 
 In this recipe, we will need to create an `ImageAttachment` class in the project's root, which can be implemented as follows:
 
@@ -25,7 +25,7 @@ export class ImageAttachment implements IMessageAttachment{
 }
 ```
 
-Here we **\[1\]** use a class' attribute with the **same identifier and type as in the `IMessageAttachment` interface**, which is essential to make your linked media visible to the user \(since only the variables in your attachment class which are defined in the `IMessageAttachment` interface will be used to retrieve the attachment's media\).
+Here we **\[1]** use a class' attribute with the **same identifier and type as in the `IMessageAttachment` interface**, which is essential to make your linked media visible to the user (since only the variables in your attachment class which are defined in the `IMessageAttachment` interface will be used to retrieve the attachment's media).
 
 It is also possible to create your own classes for video or audio attachments, or even keep them all together in one single attachment class that may cover all of these possibilities. It's all up to you! Just be sure to use the same attributes described in the `IMessageAttachment.d.ts` file.
 
@@ -62,7 +62,7 @@ private async sendMessage(context: SlashCommandContext, modify: IModify, message
 }
 ```
 
-The only change that must be made \(in comparison to the `sendMessage` described in previous pages\) is **\[1\]** to return the result of the `finish` method, which is the ID of the message that has just been sent.
+The only change that must be made (in comparison to the `sendMessage` described in previous pages) is **\[1]** to return the result of the `finish` method, which is the ID of the message that has just been sent.
 
 ### Method: `getMessageExtender`
 
@@ -77,7 +77,7 @@ private async getMessageExtender(context: SlashCommandContext, modify: IModify, 
 }
 ```
 
-Here we **\[1\]** use the message's ID returned by the `sendMessage` method in order to obtain the `messageExtender` object using the `modifyExtender` object.
+Here we **\[1]** use the message's ID returned by the `sendMessage` method in order to obtain the `messageExtender` object using the `modifyExtender` object.
 
 ## Create the slash command
 
@@ -128,12 +128,12 @@ export class ExtendMessageCommand implements ISlashCommand{
 
 The main actions performed by the code above are:
 
-* **\[1\]** Sends a message and stores the sent message's ID in the `messageId` variable;
-* **\[2\]** Uses the sent message's ID. The `messageExtender` object is returned by the `getMessageExtender` method and stored in the `messageExtender` variable;
-* **\[3\]** Creates the attachment object as an instance of the `ImageAttachment` class. Here, the attachment is an image;
-* **\[4\]** Adds a custom field with the key `'key'` linked to the value 1 using the **`addCustomField`** **method** from the messageExtender object. Many more custom fields can be added to the same message just by calling the same method with distinct keys \(and values of your choice\);
-* **\[5\]** Adds the image attachment to the message using the **`addAttachment`method** from the `messageExtender` object. Many attachments can be added all at once using the **`addAttachments` method**;
-* **\[6\]** Finishes the modifyExtender object, which is crucial so as to apply the extensions made to the message and make them visible to the user.
+* **\[1]** Sends a message and stores the sent message's ID in the `messageId` variable;
+* **\[2]** Uses the sent message's ID. The `messageExtender` object is returned by the `getMessageExtender` method and stored in the `messageExtender` variable;
+* **\[3]** Creates the attachment object as an instance of the `ImageAttachment` class. Here, the attachment is an image;
+* **\[4]** Adds a custom field with the key `'key'` linked to the value 1 using the **`addCustomField`** **method** from the messageExtender object. Many more custom fields can be added to the same message just by calling the same method with distinct keys (and values of your choice);
+* **\[5]** Adds the image attachment to the message using the **`addAttachment`method** from the `messageExtender` object. Many attachments can be added all at once using the **`addAttachments` method**;
+* **\[6]** Finishes the modifyExtender object, which is crucial so as to apply the extensions made to the message and make them visible to the user.
 
 ## Register the slash command
 
@@ -155,15 +155,18 @@ export class RocketChatTester extends App {
 }
 ```
 
-Here we **\[1\]** import our new slash command class and then **\[2\]** register it in the app's configuration. Now it is available for us.
+Here we **\[1]** import our new slash command class and then **\[2]** register it in the app's configuration. Now it is available for us.
 
 ## Deploy to the server
 
-To deploy the app, run: `rc-apps deploy --url <server_url><server_port> -u <user> -p <pwd>`
+To deploy the app, run:
+
+```
+rc-apps deploy --url <server_url><server_port> -u <user> -p <pwd>
+```
 
 ## Finally: running the slash command
 
 After performing the app's deployment, it is possible to run the slash command `/extend-message` in any channel.
 
 Running the registered slash command will send a message in the current channel, which will be edited in order to add an image attachment and a custom field. The attached image can be seen in the edited message. In addition, the custom fields created can be found in any database client of your choice.
-

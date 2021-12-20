@@ -6,6 +6,8 @@ description: Getting Started in creating your first ever Rocket.Chat App
 
 Now, that you've understood the basic concepts of the Apps Engine and installed the CLI, you can create an extremely basic RC App and test it out to understand things initially. To get started, just recall the commands inside the Apps Engine CLI
 
+## Creating a new RocketChat App
+
 ### `rc-apps create`
 
 The development tools provide a command to quickly scaffold a new Rocket.Chat App, simply run `rc-apps create` and a new folder will be created inside the current working directory with a basic App which does nothing but will compile and be packaged in the `dist` folder.
@@ -33,7 +35,7 @@ The app description file, named `app.json`, contains basic information about the
 
 ### Extending the App class
 
-The basic creation of an App is based on extending the `App` class from the Rocket.Chat Apps _definition_ library. Your class also has to implement the constructor and optionally the `initialize` function, for more details on those check the [App definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/classes/app.html).
+The basic creation of an App is based on extending the `App` class from the Rocket.Chat Apps _definition_ library. Your class also has to implement the constructor and optionally the `initialize` function, for more details on those check the [App definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/).
 
 ## Start Developing
 
@@ -58,7 +60,7 @@ Now let's add some functionality to it
 
 ### Adding a Slashcommand
 
-A Slashcommand is a way to call the app installed in Rocket.Chat. Your app can have multiple slashcommands and subcommands. In our example, we will add the `liftoff` slashcommand and it will be called like this by the user inside the chat:
+A Slashcommand is a way to call the app installed in Rocket.Chat. Your app can have multiple slashcommands and subcommands. In our example, we will add the `liftoff` slashcommand and it will be called like this by the user inside the chat room:
 
 ```
 /liftoff
@@ -96,11 +98,11 @@ export class LiftoffCommand implements ISlashCommand {
 }
 ```
 
-> You can learn more about organising complex slash commands in our [Sub-command pattern](../recipes/sub-command-pattern.md) recipe
+> You can learn more about organizing complex slash commands in our [Sub-command pattern](../recipes/sub-command-pattern.md) recipe
 
 ### Registering the slashcommand
 
-After adding our slashcomamnd logic, we have to register the slashcommand in out app by extending its configuration:
+After adding our slashcomamnd logic, we have to register the slashcommand in our app by extending its configuration:
 
 ```javascript
 import {

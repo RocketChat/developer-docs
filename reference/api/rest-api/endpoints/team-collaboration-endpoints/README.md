@@ -306,11 +306,11 @@ Just some generic information, such as information about the server and authenti
 
 ## **Push** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
-| Url                  | Short Description   | Details Page                                    |
-| -------------------- | ------------------- | ----------------------------------------------- |
-| `/api/v1/push.token` | Saves push token.   | [Link](push-token-endpoints/push-token.md)      |
-| `/api/v1/push.token` | Removes push token. | [Link](push-token-endpoints/deletepushtoken.md) |
-| `/api/v1/push.get`   |                     | Document Under Development                      |
+| Url                  | Short Description                   | Details Page                                    |
+| -------------------- | ----------------------------------- | ----------------------------------------------- |
+| `/api/v1/push.token` | Saves push token.                   | [Link](push-token-endpoints/push-token.md)      |
+| `/api/v1/push.token` | Removes push token.                 | [Link](push-token-endpoints/deletepushtoken.md) |
+| `/api/v1/push.get`   | Get push notification for a message | Document Under Development                      |
 
 ## **Roles** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 

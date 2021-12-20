@@ -26,14 +26,14 @@ Once you have installed Node, run the following command in your terminal to inst
 npm install -g @rocket.chat/apps-cli
 ```
 
-It will take a while to install the CLI depending upon your internet connection. After installation, run the following command to verify the installation.
+It will take a while to install the CLI depending on your internet connection. After installation, run the following command to verify the installation.
 
 ```bash
 rc-apps -v
 # @rocket.chat/apps-cli/1.4.0 darwin-x64 node-v10.15.3
 ```
 
-Note that the response may vary depending upon your machine and environment, but it should look similar. Now, you are all set to create your first app.
+Note that the response may vary depending on your machine and environment, but it should look similar. Now, you are all set to create your first app.
 
 ## App Development using CLI
 
@@ -98,9 +98,9 @@ Currently the Rocket.Chat servers and Marketplace allow submission of zip files,
 
 ### Uploading the app
 
-For uploading the app you need add to the required parameters in the .rcappsconfig already created in the apps directory. It accepts two types of objects:-
+For uploading the app you need add to the required parameters in the `.rcappsconfig` already created in the apps directory. It accepts two types of objects:-
 
-1. Upload using username, password
+* Upload using username, password
 
 ```
 {
@@ -110,7 +110,7 @@ For uploading the app you need add to the required parameters in the .rcappsconf
 }
 ```
 
-1. Upload using personal access token and userId
+* Upload using personal access token and userId
 
 ```
 {
@@ -122,4 +122,4 @@ For uploading the app you need add to the required parameters in the .rcappsconf
 
 ### Enabling autocomplete for commands
 
-To enable autocomplete for the apps cli use the command `rc-apps autocomplete <your-shell-type>` with the shell type as zsh or bash as the supported types. This would provide a step by step instruction to enable shell completion in your preferred shell.
+To enable autocomplete for the apps cli use the command `rc-apps autocomplete <your-shell-type>` with the shell type as `zsh` or `bash` as the supported types. This would provide a step by step instruction to enable shell completion in your preferred shell.

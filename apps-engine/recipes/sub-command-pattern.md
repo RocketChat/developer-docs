@@ -13,11 +13,11 @@ You can see the complete documentation on Slashcommands in Rocket.Chat Apps at [
 You'll need to have handy:
 
 * A Rocket.Chat server to deploy the app to
-* Our [Tester App](https://github.com/RocketChat/Apps.RocketChat.Tester) or a newly created app \(your choice\)
+* Our [Tester App](https://github.com/RocketChat/Apps.RocketChat.Tester) or a newly created app (your choice)
 
 ## Create the slashcommand
 
-Our "main command" \(the slashcommand\) will be called `phone`, and we will give it two sub commands, `text` and `call`, so when we use them, they will be as follows:
+Our "main command" (the slashcommand) will be called `phone`, and we will give it two sub commands, `text` and `call`, so when we use them, they will be as follows:
 
 * `/phone text`
 * `/phone call`
@@ -66,13 +66,13 @@ export class PhoneCommand implements ISlashCommand {
 
 What this code tells us:
 
-* \[1\] I want my command to be called `phone`.
-* When it gets executed, \[2\] I want to get the argument the user passed after the command and to use it as the subcommand.
-* \[3\] The argument is mandatory
-* \[4\] Try to match the argument in the list of allowed subcommands 
-* \[5\] If `text` is match, log "Texting!"
-* \[6\] If `call` is match, log "Calling!"
-* \[7\] If anything else will throw an error
+* \[1] I want my command to be called `phone`.
+* When it gets executed, \[2] I want to get the argument the user passed after the command and to use it as the subcommand.
+* \[3] The argument is mandatory
+* \[4] Try to match the argument in the list of allowed subcommands&#x20;
+* \[5] If `text` is match, log "Texting!"
+* \[6] If `call` is match, log "Calling!"
+* \[7] If anything else will throw an error
 
 > Learn more about Slashcommands in Rocket.Chat Apps at [`ISlashCommand`'s docs page](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/islashcommand.html).
 
@@ -97,17 +97,21 @@ export class RocketChatTester extends App {
 }
 ```
 
-Here we \[1\] import our new slashcommand class and then \[2\] register it in the app's configuration. Now it is available for us.
+Here we \[1] import our new slashcommand class and then \[2] register it in the app's configuration. Now it is available for us.
 
 ## Deploy to the server
 
-To deploy the app, run: `rc-apps deploy --url <server_url>><server_port> -u <user> -p <pwd>`
+To deploy the app, run:&#x20;
+
+```
+rc-apps deploy --url <server_url>><server_port> -u <user> -p <pwd>
+```
 
 ## Finally: calling the slashcommand
 
 After deploying the app, you can type in any channel `/phone text` and the app will print _"Texting!"_ to the console, or you can type `/phone call` and the app will print _"Calling!"_ to the console.
 
-> If you don't see the result, enable info logs in your instance at _Administration &gt; Logs &gt; Log Level_ by selecting "1 - Errors and Information".
+> If you don't see the result, enable info logs in your instance at _Administration > Logs > Log Level_ by selecting "1 - Errors and Information".
 
 ## Bonus: print the texts in the chat
 
@@ -130,7 +134,7 @@ In the `PhoneCommand.ts`, add the following private method:
     }
 ```
 
-This function \[1\] gets the user who called the command \(in this case, yours\), \[2\] selects the room in which the command was run, sets the received string as the message and then \[4\] sends the message in the room.
+This function \[1] gets the user who called the command (in this case, yours), \[2] selects the room in which the command was run, sets the received string as the message and then \[4] sends the message in the room.
 
 > To know more about messaging, you can go to the [IMessageBuilder docs](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/imessagebuilder.html).
 
@@ -152,7 +156,8 @@ Now, instead of just printing text to the console, we print it in the channel we
 
 Save the file and redeploy the app by running:
 
-`rc-apps deploy --url <server_url>><server_port> -u <user> -p <pwd> --update`
+```
+rc-apps deploy --url <server_url>><server_port> -u <user> -p <pwd> --update
+```
 
 Now, when you run the slashcommand `/phone text` or `/phone call`, you'll receive the response in the chat, as your user.
-
