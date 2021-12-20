@@ -1,19 +1,23 @@
-# Post
+---
+description: Save new push token on the server.
+---
+
+# Post push token
 
 Save new push token on the server.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/push.token` | `yes` | `POST` |
+| URL                  | Requires Auth | HTTP Method |
+| -------------------- | ------------- | ----------- |
+| `/api/v1/push.token` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `id` | `id` | Optional | A record id for the Application/Token document to update. If this does not exist, will return 404. |
-| `type` | `gcm` | Required | Can be `apn` or `gcm` |
-| `value` | `TOKEN` | Required | The Token |
-| `appName` | `com.example.rocketchat` | Required | The name of the application to associate the token with |
+| Argument  | Example                  | Required | Description                                                                                        |
+| --------- | ------------------------ | -------- | -------------------------------------------------------------------------------------------------- |
+| `id`      | `id`                     | Optional | A record id for the Application/Token document to update. If this does not exist, will return 404. |
+| `type`    | `gcm`                    | Required | Can be `apn` or `gcm`                                                                              |
+| `value`   | `TOKEN`                  | Required | The Token                                                                                          |
+| `appName` | `com.example.rocketchat` | Required | The name of the application to associate the token with                                            |
 
 ## Example Call
 
@@ -47,6 +51,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.60.0 | Added. |
-
+| ------- | ----------- |
+| 0.60.0  | Added.      |

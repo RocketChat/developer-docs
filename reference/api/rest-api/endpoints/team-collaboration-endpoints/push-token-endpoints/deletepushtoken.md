@@ -1,16 +1,18 @@
-# Delete
+---
+description: Removes push token on the server.
+---
 
-Removes push token on the server.
+# Delete push token
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/push.token` | `yes` | `DELETE` |
+| URL                  | Requires Auth | HTTP Method |
+| -------------------- | ------------- | ----------- |
+| `/api/v1/push.token` | `yes`         | `DELETE`    |
 
 ## Payload
 
 | Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `token` | `TOKEN` | Required | The Token |
+| -------- | ------- | -------- | ----------- |
+| `token`  | `TOKEN` | Required | The Token   |
 
 ## Example Call
 
@@ -34,6 +36,5 @@ curl -H "X-Auth-Token: wQcX06fwNoW_syxZl4OS67afcFJkKI6AjzOJGA1-0-J" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.60.0 | Added. |
-
+| ------- | ----------- |
+| 0.60.0  | Added.      |

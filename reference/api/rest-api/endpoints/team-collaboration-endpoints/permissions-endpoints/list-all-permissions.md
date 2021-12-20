@@ -2,20 +2,19 @@
 permalink: /developer-guides/rest-api/permissions/list-all/
 redirect_from:
   - /developer-guides/rest-api/permissions/list/
+description: Returns all permissions from the server.
 ---
 
 # List all permissions
 
-Returns all permissions from the server.
-
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/permissions.listAll` | `yes` | `GET` |
+| URL                           | Requires Auth | HTTP Method |
+| ----------------------------- | ------------- | ----------- |
+| `/api/v1/permissions.listAll` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument       | Example                    | Required | Description        |
+| -------------- | -------------------------- | -------- | ------------------ |
 | `updatedSince` | `2017-11-25T15:08:17.248Z` | Optional | Date as ISO string |
 
 When you provide the `updatedSince` query parameter in the URL then the `update` and `remove` in the response will contain only those updated and removed since this date and time.
@@ -58,6 +57,5 @@ curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.73.0 | Added |
-
+| ------- | ----------- |
+| 0.73.0  | Added       |

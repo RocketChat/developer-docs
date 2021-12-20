@@ -2,13 +2,13 @@
 description: Updates an existing integration.
 ---
 
-# Update
+# Update an Integration&#x20;
 
 To update an integration, the callee needs to have the permissions `manage-incoming-integrations` AND `manage-own-incoming-integrations` permissions to be able to update incoming integrations and `manage-outgoing-integrations` AND `manage-own-outgoing-integrations` to be able to update outgoing integrations.
 
 | URL                           | Requires Auth | HTTP Method |
 | ----------------------------- | ------------- | ----------- |
-| `/api/v1/integrations.update` | `yes`         | `POST`      |
+| `/api/v1/integrations.update` | `yes`         | `PUT`       |
 
 ## Payload
 
