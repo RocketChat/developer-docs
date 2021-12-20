@@ -306,11 +306,11 @@ Just some generic information, such as information about the server and authenti
 
 ## **Push** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
-| Url                  | Short Description                   | Details Page                                    |
-| -------------------- | ----------------------------------- | ----------------------------------------------- |
-| `/api/v1/push.token` | Saves push token.                   | [Link](push-token-endpoints/push-token.md)      |
-| `/api/v1/push.token` | Removes push token.                 | [Link](push-token-endpoints/deletepushtoken.md) |
-| `/api/v1/push.get`   | Get push notification for a message | Document Under Development                      |
+| Url                  | Short Description                   | Details Page                                                                                                                                       |
+| -------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/v1/push.token` | Saves push token.                   | [Link](push-token-endpoints/push-token.md)                                                                                                         |
+| `/api/v1/push.token` | Removes push token.                 | [Link](push-token-endpoints/deletepushtoken.md)                                                                                                    |
+| `/api/v1/push.get`   | Get push notification for a message | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/Get%20push%20notification) |
 
 ## **Roles** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
@@ -339,12 +339,12 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.leave`                          | Leaves a room.                                           | [Link](rooms-endpoints/leave-room.md)                                                                                                               |
 | `/api/v1/rooms.saveNotification`               | Sets the notification settings of a specific channel.    | [Link](rooms-endpoints/save-room-notification.md)                                                                                                   |
 | `/api/v1/rooms.upload/:rid`                    | Uploads a message with the attached file.                | [Link](rooms-endpoints/upload-file-to-a-room.md)                                                                                                    |
-| `/api/v1/rooms.adminRooms.getRoom`             | \`\`                                                     | Document Under Development                                                                                                                          |
+| `/api/v1/rooms.adminRooms.getRoom`             | Retrieves all admin rooms                                | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/get-admin-rooms)                 |
 | `/api/v1/rooms.autocomplete.channelAndPrivate` | Autocompletes private channel                            | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/autocomplete-private-channel)    |
 | `/api/v1/rooms.autocomplete.availableForTeams` | Autocompletes room name available for conversion to team | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/room-name-autocomplete-for-team) |
-| `/api/v1/rooms.saveRoomSettings`               | \`\`                                                     | Document Under Development                                                                                                                          |
-| `/api/v1/rooms.changeArchivationState`         | \`\`                                                     | Document Under Development                                                                                                                          |
-| `/api/v1/rooms.export`                         |                                                          | Document Under Development                                                                                                                          |
+| `/api/v1/rooms.saveRoomSettings`               | Save the settings of a room                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/save-room-settings)              |
+| `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/change-archivation-state)        |
+| `/api/v1/rooms.export`                         | Export room to a file or email.                          | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/export-room)                     |
 
 ## **Settings** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 

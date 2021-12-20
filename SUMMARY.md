@@ -541,7 +541,7 @@
           * [List all permissions](reference/api/rest-api/endpoints/team-collaboration-endpoints/permissions-endpoints/list-all-permissions.md)
           * [Update permissions](reference/api/rest-api/endpoints/team-collaboration-endpoints/permissions-endpoints/update-permissions.md)
         * [Push Token Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/README.md)
-          * [Get push notification](<reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/Get push notification.md>)
+          * [Get push notification](reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/Getpushnotification.md)
           * [Delete push token](reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/deletepushtoken.md)
           * [Post push token](reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/push-token.md)
         * [Roles Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/README.md)

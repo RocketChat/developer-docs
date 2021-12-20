@@ -2,7 +2,7 @@
 description: Get push notification for a message
 ---
 
-# Get
+# Get push notification
 
 {% hint style="info" %}
 Requires the `can-access-room` permission.
