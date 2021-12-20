@@ -164,7 +164,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email)    |
 | `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox) |
 
-## Custom Emojis Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Custom Emojis Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                          | Details Page                                                                                                                                      |
 | ----------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -174,7 +174,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji.           | [Link](custom-emoji-endpoints/delete-custom-emoji.md)                                                                                             |
 | `/api/v1/emoji-custom.update` | Updates an existent custom emoji.          | [Link](custom-emoji-endpoints/update-a-custom-emoji.md)                                                                                           |
 
-## Groups Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Groups Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                              | Short Description                                           | Details Page                                                                                                                             |
 | -------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -217,7 +217,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/groups.setEncrypted`    | Sets the encryption for a group                             | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-set-encrypted) |
 | `/api/v1/groups.convertToTeam`   | Convert a private group to a team                           | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-converttoteam) |
 
-## IM Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## IM Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                          | Short Description                                             | Details Page                                                                                                            |
 | ---------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -237,27 +237,27 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
-## Imports Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Imports Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                                 | Short Description              | Details Page                                                                                                                                       |
 | ----------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/uploadImportFile`          | `Content`                      | Document Under Development                                                                                                                         |
 | `/api/v1/downloadPublicImportFile`  | `Content`                      | Document Under Development                                                                                                                         |
 | `/api/v1/startImport`               | `Content`                      | Document Under Development                                                                                                                         |
-| `/api/v1/getImportFileData`         | Get file data of an upload.    |  [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-file-data)         |
-| `/api/v1/getImportProgress`         | Get the progress of an import. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-progress)           |
-| `/api/v1/getLatestImportOperations` | Get latest import operations   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-latest-import-operations)  |
+| `/api/v1/getImportFileData`         | `Content`                      | Document Under Development                                                                                                                         |
+| `/api/v1/getImportProgress`         | `Content`                      | Document Under Development                                                                                                                         |
+| `/api/v1/getLatestImportOperations` | `Content`                      | Link                                                                                                                                               |
 | `/api/v1/downloadPendingFiles`      | Download pending files         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-files)        |
 | `/api/v1/downloadPendingAvata`      | Download pending avatars       | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-avatars)      |
 | `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-current-import-operations) |
 
-## **Instances** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Instances** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                     | Short Description   | Details Page                                                                                                                          |
 | ----------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/instances.get` | Retrieves instances | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
 
-## **Integrations** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Integrations** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                            | Short Description                               | Details Page                             |
 | ------------------------------ | ----------------------------------------------- | ---------------------------------------- |
@@ -268,7 +268,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](integration-endpoints/remove.md)  |
 | `/api/v1/integrations.update`  | put                                             | Document Under Development               |
 
-## **Invites** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Invites** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                                                         | Details Page                                                                                                                             |
 | ----------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -278,7 +278,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/useInviteToken`      | Reports to the server that an invite token was used.                      | [Link](invite-endpoints/report-use-invite-token.md)                                                                                      |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid.                                       | [Link](invite-endpoints/validateinvitetoken.md)                                                                                          |
 
-## **Misc** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Misc** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 Just some generic information, such as information about the server and authenticated user.
 
@@ -290,21 +290,21 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/me`           | Gets user data of the authenticated user                                         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/get-user-data)    |
 | `/api/v1/stdout.queue` | Retrieves last 1000 lines of server logsRetrieves last 1000 lines of server logs | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/get-stdout-queue) |
 
-## **Oauth apps** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Oauth apps** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                       | Short Description                          | Details Page                        |
 | ------------------------- | ------------------------------------------ | ----------------------------------- |
 | `/api/v1/oauth-apps.get`  | Retrieves an OAuth App by id or client id. | [Link](oauthapps-endpoints/get.md)  |
 | `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps.            | [Link](oauthapps-endpoints/list.md) |
 
-## **Permissions** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Permissions** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                | Details Page                                          |
 | ----------------------------- | -------------------------------- | ----------------------------------------------------- |
 | `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](permissions-endpoints/list-all-permissions.md) |
 | `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](permissions-endpoints/update-permissions.md)   |
 
-## **Push** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Push** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                  | Method   | Short Description   | Details Page                                    |
 | -------------------- | -------- | ------------------- | ----------------------------------------------- |
@@ -312,7 +312,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/push.token` | `DELETE` | Removes push token. | [Link](push-token-endpoints/deletepushtoken.md) |
 | `/api/v1/push.get`   | get      |                     | Document Under Development                      |
 
-## **Roles** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Roles** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                                | Short Description                                                   | Details Page                                                                                                                              |
 | ---------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -325,7 +325,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/roles.delete`             | Deletes a role.                                                     | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
 | `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user.                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/role-remove)                     |
 
-## **Rooms** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Rooms** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                                            | Short Description                                        | Details Page                                                                                                                                        |
 | ---------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -346,7 +346,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.changeArchivationState`         | \`\`                                                     | Document Under Development                                                                                                                          |
 | `/api/v1/rooms.export`                         |                                                          | Document Under Development                                                                                                                          |
 
-## **Settings** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Settings** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 You can get and update the settings via the REST API, only if you have permission to.
 
@@ -359,14 +359,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/settings/:_id`          | `GET`  | Retrieves a setting.                          | [Link](settings-endpoints/get-settings-by-id.md)         |
 | `/api/v1/settings/:_id`          | `POST` | Updates a setting.                            | [Link](settings-endpoints/update-settings.md)            |
 
-## **Stats** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Stats** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                       | Short Description         | Details Page                                                                                                                            |
 | ------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/statistics`      | Retrieves statistics      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics)      |
 | `/api/v1/statistics.list` | Retrieves statistics list | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics-list) |
 
-## **Subscriptions** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Subscriptions** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                            | Short Description                      | Details Page                                               |
 | ------------------------------ | -------------------------------------- | ---------------------------------------------------------- |
@@ -375,7 +375,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/subscriptions.read`   | Marks a room as read.                  | [Link](subscriptions-endpoints/mark-channel-as-read.md)    |
 | `/api/v1/subscriptions.unread` | Marks messages as unread.              | [Link](subscriptions-endpoints/mark-messages-as-unread.md) |
 
-## **Teams** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Teams** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                              | Short Description                                         | Details Page                                                                                                                                |
 | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -398,7 +398,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](teams-endpoints/autocomplete-team.md)                                                                                                |
 | `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](teams-endpoints/update-a-team.md)                                                                                                    |
 
-## **Users** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Users** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                                           | Short Description                                              | Details Page                                                                                                                             |
 | --------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -440,13 +440,13 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.listTeams`                     | Lists users teams                                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams)     |
 | `/api/v1/users.logout`                        | Logs user out.                                                 | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint) |
 
-## **Video Conference** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Video Conference** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                                             | Short Description                                           | Details Page                                                                                                                              |
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
-## **Webdav** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Webdav** Endpoints <a href="email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                            | Short Description                    | Details Page                                                                                                            |
 | ------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
