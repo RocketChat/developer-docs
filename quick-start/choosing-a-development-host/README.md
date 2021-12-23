@@ -12,3 +12,12 @@ Rocket.Chat has various means of deployment with ease. Select from below based o
 We recommend using our official recommendation.
 {% endhint %}
 
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/official-recommendations" %}
+
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/manual-installation" %}
+
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/docker-containers" %}
+
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/snaps" %}
+
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/community-supported-installation" %}
