@@ -20,32 +20,32 @@ As a developer, you can&#x20;
 
     Help in the development of:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="rocket.chat/rocket.chat-server/" %}
+[rocket.chat-server](rocket.chat/rocket.chat-server/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="mobile-app/mobile-app-environment-setup/" %}
+[mobile-app-environment-setup](mobile-app/mobile-app-environment-setup/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="desktop-app/desktop-app-environment-setup.md" %}
+[desktop-app-environment-setup.md](desktop-app/desktop-app-environment-setup.md)
 {% endcontent-ref %}
 
-See how to integrate with
+See how to integrate with:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="omnichannel/omnichannel-environment-setup.md" %}
+[omnichannel-environment-setup.md](omnichannel/omnichannel-environment-setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="apps-engine/rocket.chat-app/" %}
+[rocket.chat-app](apps-engine/rocket.chat-app/)
 {% endcontent-ref %}
 
 * **Extend** and **Customize**: Extend Rocket.Chat's functionalities and customize the entire solution for your use case. More of Rocket.Chat's features can be customized and extended using:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="bots/bots-development-environment-setup.md" %}
+[bots-development-environment-setup.md](bots/bots-development-environment-setup.md)
 {% endcontent-ref %}
 
 {% content-ref url="reference/api/rest-api/" %}
