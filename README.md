@@ -11,7 +11,7 @@ To learn more about the Rocket.Chat platform, please consult our [documentation]
 As a developer, you can&#x20;
 
 * **Contribute**: Contribute to help make Rocket.Chat better. Whether you have coding experience or not, you can contribute to Rocket.Chat from bringing up issues, writing documentation and making changes following our guide on:
-* 
+
 [Contribute to Rocket.Chat](https://developer.rocket.chat/rocket.chat/contribute-to-rocket.chat)
 
 *   **Build** and **Integrate:** Do more with RocketChat using Apps, Webhooks, Livechat and Rest APIs.
