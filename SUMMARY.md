@@ -14,7 +14,7 @@
 
 ## Rocket.Chat
 
-* [Environment Setup](rocket.chat/rocket.chat-server/README.md)
+* [Rocket Chat Environment Setup](rocket.chat/rocket.chat-server/README.md)
   * [Windows 10](rocket.chat/rocket.chat-server/windows-10.md)
   * [Linux](rocket.chat/rocket.chat-server/linux.md)
   * [Gitpod](rocket.chat/rocket.chat-server/gitpod.md)
