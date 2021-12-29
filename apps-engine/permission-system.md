@@ -65,5 +65,5 @@ Here is a list of permissions available:
 | `env.read`                     | Access minimal information about the server environment |
 | `networking`                   | Access to the server network                            |
 | `persistence`                  | Store internal data in the database                     |
-| `schedule`                     | Register and maintain scheduled jobs                    |
+| `scheduler`                    | Register and maintain scheduled jobs                    |
 | `ui.interact`                  | Interact with the UI (UIKit)                            |
