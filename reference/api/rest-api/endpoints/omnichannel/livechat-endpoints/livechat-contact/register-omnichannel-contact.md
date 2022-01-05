@@ -6,7 +6,7 @@ description: Registers a guest user as a new omnichannel contact.
 
 | URL                          | Requires Auth | HTTP Method |
 | ---------------------------- | ------------- | ----------- |
-| `api/v1/omnichannel/contact` | `YES`         | `PUT`       |
+| `api/v1/omnichannel/contact` | `YES`         | `POST`       |
 
 ## Headers
 
@@ -22,13 +22,13 @@ description: Registers a guest user as a new omnichannel contact.
 | <p><code></code></p><p><code>_Id</code></p> | `7ipCD6NDtkkRDCiNM` | Required | Contact ID    |
 | `token`                                     | `4WcmeBE4spXx6AxrC` | Required | Contact Token |
 | `name`                                      | `Chris`             | Required | Contact Name  |
-| `email`                                     | ` chris@gmail.com`  | Required | Contact Email |
-| `phone`                                     | `+93334432224444`   | Required | Contact Phone |
+| `email`                                     | ` chris@gmail.com`  | Optional | Contact Email |
+| `phone`                                     | `+93334432224444`   | Optional | Contact Phone |
 
 ## Example Call
 
 ```bash
-curl --location --request PUT http://localhost:3000/api/v1/omnichannel/contact\
+curl --location --request POST http://localhost:3000/api/v1/omnichannel/contact\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 -d '{
