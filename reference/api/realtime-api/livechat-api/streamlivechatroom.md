@@ -6,14 +6,14 @@
 {
     "msg":"sub",
     "id":"6NctZomXL3ZdtKNsn",
-    "name":"stream-livechat-room",
+    "name":"stream-room-messages",
     "params":[
         "KTZqPAR9DQGxKcxzf",
         {
             "useCollection":false,
             "args":[
                 {
-                    "token":"jkGaw6duhiuh45"
+                    "visitorToken":"jkGaw6duhiuh45"
                 }
             ]
         }
