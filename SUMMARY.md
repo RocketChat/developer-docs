@@ -93,6 +93,7 @@
   * [NPM Package Support (Experimental)](apps-engine/fundamentals-of-apps/npm-package-support-experimental.md)
   * [UIKit](apps-engine/fundamentals-of-apps/uikit/README.md)
     * [Action Buttons](apps-engine/fundamentals-of-apps/uikit/action-buttons.md)
+    * [Opening the Contextual Bar](apps-engine/fundamentals-of-apps/uikit/opening-the-contextual-bar.md)
     * [Building blocks](apps-engine/fundamentals-of-apps/uikit/uikit-building-blocks.md)
 * [Testing your App](apps-engine/testing-your-app.md)
 * [Sample App Snippets](apps-engine/recipes/README.md)
