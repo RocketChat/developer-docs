@@ -14,33 +14,23 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
 
 1.  Install tools required
 
-    `sudo apt install g++ build-essential git curl python2-minimal`
-
-    (If you are using other OS (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate") To resolve this you can go to [Python Minimal error](../../guides/developer/possible-error.md)
+    `sudo apt install g++ build-essential git curl python3`
 2.  Install meteor
 
-    `curl https://install.meteor.com/ | sh`
-
-    (Under some circumstances, you may need to install a specific (older) release of Meteor instead of the latest, always check the `.meteor/release` file of the Github code repository to determine if you need to do this before you install meteor)
-
-    There is no need to install `node` or `npm`, as meteor already includes them. Verify by:
-
-    `meteor node -v`
-
-    `meteor npm -v`
+    `npm i -g meteor`
 3.  Get rocket.chat code
 
     `git clone https://github.com/RocketChat/Rocket.Chat.git`
 
     (you may want to fork the code on Github first, and then clone your fork)
-4.  Install modules
-
-    `cd Rocket.Chat`
+4. Change current working directory to the cloned repo location
+5. Run `meteor --version` , this will download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file.
+6.  Install modules
 
     `meteor npm install`
-5.  Start building (the first build can _take 10 or more minutes_, and you may see various warnings or minor errors -- please be patient; subsequent dev builds after the first will be 5 minutes or less)
+7.  Start building (the first build can _take 10 or more minutes_, and you may see various warnings or minor errors -- please be patient; subsequent dev builds after the first will be 5 minutes or less)
 
-    `meteor npm start`
+    `meteor`
 
 When the server is ready, you will see a box with "Server Running" title:
 
@@ -59,7 +49,7 @@ Other references:
 
 Editing files is relatively simple. After you run `git clone`, the files from the repository are saved on your computer. You can go to the cloned repository folder and edit or add files to Rocket.Chat. When you make changes to Rocket.Chat the server will automatically rebuild.
 
-Sometimes changes can shut down the server, if that happens just run `meteor npm start` again.
+Sometimes changes can shut down the server, if that happens just run `meteor` or `meteor npm start` again.
 
 The Rocket.Chat code base is very large. You may need to increase this [system parameter ](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md)on your operating system for the files-change watcher to operate efficiently.
 
