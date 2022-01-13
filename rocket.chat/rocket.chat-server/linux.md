@@ -15,7 +15,7 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
 1.  Install tools required
 
     `sudo apt install g++ build-essential git curl python2-minimal`\
-    ``(If you are using other OS (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate") To resolve this you can go to [Python Minimal error](../../guides/developer/possible-error.md)
+    ``(If you are using other OS (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate") To resolve this check out this [thread on Stackoverflow](https://askubuntu.com/questions/422975/e-package-python-software-properties-has-no-installation-candidate).
 2.  Install meteor
 
     `curl https://install.meteor.com/ | sh`
