@@ -18,7 +18,7 @@ description: Logs out other clients.
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/users.logoutOtherClients\
+curl --location --request POST http://localhost:3000/api/v1/users.logoutOtherClients\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
