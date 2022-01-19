@@ -46,6 +46,10 @@ There will be warning messages, you do not need `sudo` (root access) on Gitpod.
 export PATH=$PATH:/home/gitpod/.meteor
 ```
 
+
+NOTE: If you are just starting out, you may want to switch to the latest [stable release's tag](https://github.com/RocketChat/Rocket.Chat/tags). Since the current branch is under development and getting actively contributed, running it on your localhost may produce errors. In order to checkout a specific tag of the repository: `git checkout tags/<tag-name> -b <branch-name>`
+
+
 * Finally, install the `node` dependencies and start your server by running the following respectively.
 
 ```
