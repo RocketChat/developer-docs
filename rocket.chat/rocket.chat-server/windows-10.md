@@ -60,6 +60,8 @@ Building Rocket.Chat code requires a minimum of 8 GB of RAM memory on the Linux 
    `cd Rocket.Chat`
 
    `meteor npm install`
+   
+     NOTE: If you are just starting out, you may want to switch to the latest [stable release's tag](https://github.com/RocketChat/Rocket.Chat/tags) first. Since the current branch is under development and getting actively contributed, running it on your localhost may produce errors. In order to checkout a specific tag of the repository: `git checkout tags/<tag-name> -b <branch-name>`
 
 6. Start building \(the first build can _take 10 or more minutes_, and you may see various warnings or minor errors -- please be patient; subsequent dev builds after the first will be 5 minutes or less\)
 
