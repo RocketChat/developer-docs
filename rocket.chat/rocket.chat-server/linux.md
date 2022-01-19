@@ -26,6 +26,9 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
     (you may want to fork the code on Github first, and then clone your fork)
 4. Change current working directory to the cloned repo location
 5. Run `meteor --version` , this will download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file.
+
+    NOTE: If you are just starting out, you may want to switch to the latest [stable release's tag](https://github.com/RocketChat/Rocket.Chat/tags). Since the current branch is under development and getting actively contributed, running it on your localhost may produce errors. In order to checkout a specific tag of the repository: `git checkout tags/<tag-name> -b <branch-name>`
+
 6.  Install modules
 
     `meteor npm install`
