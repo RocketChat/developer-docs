@@ -174,6 +174,28 @@ RocketChat(function() {
 });
 ```
 
+#### _Set Business Unit to filter departments on Registration page_
+
+> Only available on Enterprise license
+
+With this method, you can assign a business Unit to a widget instance, so that the widget will only allow the visitors to select departments connected to that particular business Unit on the widget's registration form
+
+To set the business Unit on the widget use the following code: (Note, Business Unit ID is required)
+
+```javascript
+RocketChat(function() {
+    this.setBusinessUnit('LnM2rzbknjYSkkd5p');
+});
+```
+
+To clear any connected business Unit on the widget the following code.
+
+```javascript
+RocketChat(function() {
+    this.clearBusinessUnit();
+});
+```
+
 ### Events
 
 #### _onChatMaximized_
