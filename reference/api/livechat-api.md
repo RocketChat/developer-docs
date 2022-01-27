@@ -37,7 +37,7 @@ RocketChat(function() {
 
 #### _Assign chats to a specific department_
 
-To automatically assign a Livechat widget to a specific department \(for example, to use a unique Livechat widget on more than one website\), use the following code:
+To automatically assign a Livechat widget to a specific department (for example, to use a unique Livechat widget on more than one website), use the following code:
 
 ```javascript
 RocketChat(function() {
@@ -158,7 +158,7 @@ RocketChat(function() {
 
 #### _Change widget window state_
 
-You can either open or close then widget in your website. To open widget\(default state\) use the following code:
+You can either open or close then widget in your website. To open widget(default state) use the following code:
 
 ```javascript
 RocketChat(function() {
@@ -178,7 +178,11 @@ RocketChat(function() {
 
 > Only available on Enterprise license
 
-With this method, you can assign a business Unit to a widget instance, so that the widget will only allow the visitors to select departments connected to that particular business Unit on the widget's registration form
+With this method, you can assign a business Unit to a widget instance, so that the widget will only allow the visitors to select departments connected to that particular business Unit on the widget's registration form.
+
+{% hint style="info" %}
+Enterprises need to deal with hundreds of business units in the same workspace, and each Business Unit represents a specific website where Live Chat is installed. Therefore, once a BU is set, only departments associated with the current BU set should be available on the Live Chat Registration Form.
+{% endhint %}
 
 To set the business Unit on the widget use the following code: (Note, Business Unit ID is required)
 
@@ -226,7 +230,7 @@ RocketChat(function() {
 
 #### _onChatStarted_
 
-Fired when the chat is started \(the first message was sent\).
+Fired when the chat is started (the first message was sent).
 
 ```javascript
 RocketChat(function() {
@@ -351,16 +355,15 @@ RocketChat(function() {
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 3.1.0 | Added `setAgent` and `initialize` methods. Also, improved the `setTheme` method adding more options to customize the widget |
-| 3.0.0 | Added `onServiceOffline` callback |
-| 2.2.0 | Added `maximizeWidget` and `minimizeWidget` methods. |
-| 1.3.0 | Added `onAssignAgent` and `onAgentStatusChange` methods. |
-| 1.1.0 | Added `showWidget` and `hideWidget` methods along with `onWidgetHidden` and `onWidgetShown` events |
-| 1.0.0 | Added `setLanguage` method |
-| 0.66.0 | Added `setGuestToken`, `setGuestName`, `setGuestEmail` and `registerGuest` methods. |
-| 0.53.0 | Added callback events and the ability to pass a flag to `setCustomField` so the value passed does not get wrote if there is already an existing value. |
-| 0.36.0 | Added `setTheme` method |
-| 0.26.0 | Added `setCustomField` method |
-
+| Version | Description                                                                                                                                            |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 3.1.0   | Added `setAgent` and `initialize` methods. Also, improved the `setTheme` method adding more options to customize the widget                            |
+| 3.0.0   | Added `onServiceOffline` callback                                                                                                                      |
+| 2.2.0   | Added `maximizeWidget` and `minimizeWidget` methods.                                                                                                   |
+| 1.3.0   | Added `onAssignAgent` and `onAgentStatusChange` methods.                                                                                               |
+| 1.1.0   | Added `showWidget` and `hideWidget` methods along with `onWidgetHidden` and `onWidgetShown` events                                                     |
+| 1.0.0   | Added `setLanguage` method                                                                                                                             |
+| 0.66.0  | Added `setGuestToken`, `setGuestName`, `setGuestEmail` and `registerGuest` methods.                                                                    |
+| 0.53.0  | Added callback events and the ability to pass a flag to `setCustomField` so the value passed does not get wrote if there is already an existing value. |
+| 0.36.0  | Added `setTheme` method                                                                                                                                |
+| 0.26.0  | Added `setCustomField` method                                                                                                                          |
