@@ -25,7 +25,7 @@ Registering a button requires the  `ui.registerButtons` permission. Make sure to
     "name": "My App",
     // ... other definitions
     "permissions": [
-        { "name": "ui.registerButton" }
+        { "name": "ui.registerButtons" }
     ]
 }
 ```
