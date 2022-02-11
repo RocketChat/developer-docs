@@ -138,4 +138,4 @@ Greeting message sent
 
 On the server, login as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (16) (1).png>)
