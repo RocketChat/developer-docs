@@ -24,7 +24,7 @@ description: Search a contact information.
 ## Example Call
 
 ```bash
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?contactId=mAm5YZHwHMrNj8fhu \
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?email=edu@gmail.com \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
