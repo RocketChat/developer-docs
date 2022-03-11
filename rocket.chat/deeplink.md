@@ -30,6 +30,7 @@ Authentication links start with: `https://go.rocket.chat/auth`
 * host: The host of the server;
 * token \(optional\): The token of the user to be authenticated;
 * userId \(optional\): The id of the user to be authenticated;
+* secure \(optional\): Dictates the protocol to use for the domain. 'no' = http, anything else = https;
 
 **Examples:**
 
@@ -43,6 +44,14 @@ Link directly to server and authenticate:
 
 ```text
 https://go.rocket.chat/auth?host=foo.bar.com&token=123abc&userId=1234abcd
+```
+
+Link to server without TLS:
+
+**This should only be used in a development environment.**
+
+```text
+https://go.rocket.chat/auth?host=open.rocket.chat&secure=no
 ```
 
 ## Channel / Group / DM
