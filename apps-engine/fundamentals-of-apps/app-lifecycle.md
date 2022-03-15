@@ -40,7 +40,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 }
 ```
 
-This method is executed as part of the default initialization process of the App. It enables the App to provide robust functionalities such as API Endpoints or Slash Commands using the [configuration accessor](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/iconfigurationextend.html).
+This method is executed as part of the default initialization process of the App. It enables the App to provide robust functionalities such as API Endpoints or Slash Commands using the [configuration accessor](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors_iconfigurationextend.iconfigurationextend.html).
 
 ### `onEnable`
 
