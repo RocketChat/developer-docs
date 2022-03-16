@@ -231,7 +231,7 @@ For this example, create one. Now in this directory, create a file named `HelloW
 Enter the following line in the file.
 
 ```typescript
-import ISlashCommand from from "@rocket.chat/apps-engine/definition/slashcommands";
+import ISlashCommand from "@rocket.chat/apps-engine/definition/slashcommands";
 
 export class HelloWorldCommand implements ISlashCommand {}
 ```
