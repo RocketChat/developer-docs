@@ -290,7 +290,7 @@ public providesPreview: boolean = false;
 
 `executor`
 
-This is the method that will be invoked when a user executes the slashcommand. This is where the whole logic and action . When the method is called, it is passed a couple of objects. These arguments define the function signature. It is also documented in the `ISlashCommand` interface.&#x20;
+This is the method that will be invoked when a user executes the slashcommand. This is where the whole logic and action will take place. When the method is called, it is passed a couple of objects. These arguments define the function signature. It is also documented in the `ISlashCommand` interface.&#x20;
 
 ```typescript
 public async executor(
