@@ -254,7 +254,7 @@ _For more information on TypeScript interfaces, read the_ [_official documentati
 
 `ISlashCommand` being a non-empty interface, the above `HelloWorldCommand` class is incomplete. It must fulfill its promise of conforming to the structure.
 
-Let's now look at what properties our `HelloWorldClass` now must define
+Let's now look at what properties our `HelloWorldCommand` class now must define
 
 `command`
 
