@@ -2,7 +2,7 @@
 
 ## How it works
 
-The Scheduler API gives apps the possibility of creating tasks that will run in a defined schedule. It can me a one time event or a recurring task. It uses [agenda.js](https://github.com/agenda/agenda) as backend, so [schedule syntax](https://github.com/agenda/human-interval) and internal processes are all according to its documentation.
+The Scheduler API gives apps the possibility of creating tasks that will run in a defined schedule. It can be a one time event or a recurring task. It uses [agenda.js](https://github.com/agenda/agenda) as backend, so [schedule syntax](https://github.com/agenda/human-interval) and internal processes are all according to its documentation.
 
 Detailed documentation on the API can be found at the [Apps Engine's docs](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/scheduler.html).
 
