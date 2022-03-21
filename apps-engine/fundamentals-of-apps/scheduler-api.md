@@ -93,6 +93,17 @@ import { StartupType } from '@rocket.chat/apps-engine/definition/scheduler';
 
 This will indicate that you want that particular processor to be scheduled as soon as it gets registered. You can define the "immediate scheduling" as a recurring job \(`StartupType.RECURRING`\) or a onetime job \(`StartupType.ONETIME`\). You can also pass data using the `data` object. It will work just like when you schedule a task using the `modify` accessor.
 
+\(`data`\) here is not something that's passed to the processor or function as a living object or executable code. This \(`data`\) is a static piece of data that's passed to the processor's first argument.
+
+the signature of the processor function: 
+
+``` 
+(jobContext: IJobContext, read: IRead, modify: IModify, http: IHttp, persis: IPersistence) => Promise<void>
+```
+
+First argument is the data object you're passing when actually scheduling the job; \(`[k: string]:any`\) . Rest are passed when the function is run.
+
+
 ### Canceling a job
 
 To stop a job, all you have to do is pass the id of the job you want to stop
