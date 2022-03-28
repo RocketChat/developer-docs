@@ -18,7 +18,7 @@ It supports the [Query, Fields](../../other-important-endpoints/query-and-fields
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `roomId` | `5qW6ssMFyzWjJev69` | Required | Room ID |
-| `updatedSince` | `2019-04-16T18:30:46.669Z` | Required | Date as ISO string |
+| `lastUpdate` | `2019-04-16T18:30:46.669Z` | Required | Date as ISO string |
 
 ## Example Call
 
