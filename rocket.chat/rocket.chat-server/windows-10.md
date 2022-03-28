@@ -28,14 +28,16 @@ Building Rocket.Chat code requires a minimum of 8 GB of RAM memory on the Linux 
 
 > **IMPORTANT**: Note that there is no need to install mongo, nodejs, or npm separately
 >
+> **IMPORTANT:** You should work (clone) with Rocket.Chat code under `~` (`/home/username`) dir, otherwise [MongoDB won't start](https://stackoverflow.com/a/39278452).
+>
 > **NOTE:** Development should be performed under a regular user account, not Administrator.
 >
 > **NOTE:** During build, you may notice _WARNING_ related to _peer dependencies_ or other transitive dependencies. They are typically safe to ignore unless you are coding the feature or modules that require them.
 
-1. Open a **WSL 2 shell** \(not Powershell\). Update Linux `sudo apt-get update sudo apt-get dist-upgrade`
+1. Open a **WSL 2 shell** \(not Powershell\). Update Linux `sudo apt-get update && sudo apt-get dist-upgrade -y`
 2. Install tools required
 
-   `sudo apt-get install build-essential git curl python2-minimal pkg-config`
+   `sudo apt-get install build-essential git curl python3-minimal pkg-config`
 
 3. Install meteor
 
@@ -49,7 +51,7 @@ Building Rocket.Chat code requires a minimum of 8 GB of RAM memory on the Linux 
 
    `meteor npm -v`
 
-4. Make sure you are on the WSL 2 filesystem, `pwd` should return `/home/yourusername` Get rocket.chat code:
+4. Make sure you are on the WSL 2 filesystem, `pwd` should return `/home/yourusername`. Get rocket.chat code:
 
    `git clone https://github.com/RocketChat/Rocket.Chat.git`
 
