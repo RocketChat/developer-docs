@@ -5,11 +5,11 @@
 ## Quick Start
 
 * [Choosing a Deployment Host](quick-start/choosing-a-development-host/README.md)
-  * [Official Recommendations](https://docs.rocket.chat/quick-start/installing-and-updating/official-recommendations)
-  * [Manual Installation](https://docs.rocket.chat/quick-start/installing-and-updating/manual-installation)
-  * [Docker](https://docs.rocket.chat/quick-start/installing-and-updating/docker-containers)
-  * [Snap](https://docs.rocket.chat/quick-start/installing-and-updating/snaps)
-  * [Non Official Methods](https://docs.rocket.chat/quick-start/installing-and-updating/community-supported-installation)
+  * [Official Recommendations](https://docs.rocket.chat/quick-start/installing-and-updating/introduction-prerequisites#official-recommendation)
+  * [Manual Installation](https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/manual-installation)
+  * [Docker & Docker Compose](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/docker-and-docker-compose)
+  * [Snap](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/snaps)
+  * [Non Official Methods](https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/community-supported-installation)
 * [Setting up your Development Environment](quick-start/building-specific-projects.md)
 
 ## Rocket.Chat

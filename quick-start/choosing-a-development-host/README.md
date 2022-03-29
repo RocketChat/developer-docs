@@ -12,12 +12,14 @@ Rocket.Chat has various means of deployment with ease. Select from below based o
 We recommend using our official recommendation.
 {% endhint %}
 
-{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/official-recommendations" %}
+Official Recommendation :arrow\_down::arrow\_down\_small:
 
-{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/manual-installation" %}
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/introduction-prerequisites#official-recommendation" %}
 
-{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/docker-containers" %}
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/manual-installation" %}
 
-{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/snaps" %}
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/docker-and-docker-compose/docker-containers" %}
 
-{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/community-supported-installation" %}
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/snaps" %}
+
+{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/community-supported-installation" %}
