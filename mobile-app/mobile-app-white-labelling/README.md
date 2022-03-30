@@ -30,7 +30,7 @@ Here we will show you how to customize:
 * Create an account on [https://www.bugsnag.com/](https://www.bugsnag.com)
 * Set `server`, `appGroup` and `appStoreId` on [app.json](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app.json#L5)
   * `appGroup` must be the same App Group created for the iOS app
-* Change app colors on [colors.js](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app/constants/colors.js)
+* Change app colors on [colors.ts](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app/constants/colors.ts)
 
 ## Firebase
 
