@@ -16,7 +16,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 }
 ```
 
-Registering a button requires the  `ui.registerButtons` permission. Make sure to add it to your app manifest file (`app.json`). It will look similar to the following:
+Registering a button requires the `ui.registerButton` permission. Make sure to add it to your app manifest file (`app.json`). It will look similar to the following:
 
 {% code title="app.json" %}
 ```json
@@ -25,7 +25,7 @@ Registering a button requires the  `ui.registerButtons` permission. Make sure to
     "name": "My App",
     // ... other definitions
     "permissions": [
-        { "name": "ui.registerButtons" }
+        { "name": "ui.registerButton" }
     ]
 }
 ```
@@ -100,7 +100,6 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
         }
     });
 }
-
 ```
 
 The button above would only be seen in public and private channels and direct messages, by users that have the `create-d` permission and have both the `admin` and `moderator` roles.
