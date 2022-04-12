@@ -35,7 +35,7 @@ import { BlockElementType, ISectionBlock, IUIKitResponse, UIKitBlockInteractionC
 import { IUIKitContextualBarViewParam } from '@rocket.chat/apps-engine/definition/uikit/UIKitInteractionResponder';
 
 // This is the slashcommand that opens the contextual bar:
-// - first we get the triggerId  to open the surface (without this is would not be possible to open the contextual bar) ([1])
+// - first we get the triggerId  to open the surface (without this it would not be possible to open the contextual bar) ([1])
 // - then we create the blocks we will render inside the contextual bar ([2])
 // - then call the method that opens the contextual bar ([3]).
 class OpenCtxBarCommand implements ISlashCommand {
