@@ -43,6 +43,7 @@
   * [Help Test Rocket.Chat](rocket.chat/contribute-to-rocket.chat/help-test-rocket.chat.md)
   * [What To Work On](rocket.chat/contribute-to-rocket.chat/what-to-work-on.md)
   * [Troubleshooting](rocket.chat/contribute-to-rocket.chat/troubleshooting.md)
+  * [Code of Conduct](code_of_conduct.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
 ## Mobile App
@@ -55,6 +56,7 @@
   * [iOS App White Labelling](mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
   * [Android App White Labelling](mobile-app/mobile-app-white-labelling/android-app-white-labelling.md)
   * [Configuring Push Notifications](mobile-app/mobile-app-white-labelling/configuring-push-notifications.md)
+* [Moible App Building from Source](mobile-app/mobile-app-building-from-source.md)
 * [Mobile App FAQs](mobile-app/mobile-app-faqs.md)
 
 ## Desktop App
@@ -211,6 +213,9 @@
           * [Livechat Agent](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/README.md)
             * [Agent Info](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/agent.md)
             * [Next Agent](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/next-agent.md)
+          * [Livechat Audio Video Calls](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-audio-video-calls/README.md)
+            * [Start Call](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-audio-video-calls/livechat-start-call.md)
+            * [Update Call Status](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-audio-video-calls/livechat-update-call-status.md)
           * [Livechat Config](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-config.md)
           * [Livechat Contact](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-contact/README.md)
             * [Register Omnichannel Contact](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-contact/register-omnichannel-contact.md)
@@ -419,7 +424,7 @@
         * [Cloud Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/cloud-endpoints/README.md)
           * [Cloud Manual Register](reference/api/rest-api/endpoints/team-collaboration-endpoints/cloud-endpoints/cloud-manual-register.md)
         * [Commands Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/commands-endpoints/README.md)
-          * [Get lash Commands](reference/api/rest-api/endpoints/team-collaboration-endpoints/commands-endpoints/get-lash-commands.md)
+          * [Get slash Commands](reference/api/rest-api/endpoints/team-collaboration-endpoints/commands-endpoints/get-slash-commands.md)
           * [List slash commands](reference/api/rest-api/endpoints/team-collaboration-endpoints/commands-endpoints/list.md)
           * [Get command's preview data](reference/api/rest-api/endpoints/team-collaboration-endpoints/commands-endpoints/preview.md)
           * [Execute command's preview item](reference/api/rest-api/endpoints/team-collaboration-endpoints/commands-endpoints/execute-commands-preview-item.md)
@@ -537,6 +542,7 @@
           * [Directory](reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/directory.md)
           * [Shield SVG](reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/shield-svg.md)
           * [Spotlight](reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/spotlight.md)
+          * [Statistics list](reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/statistics-list.md)
         * [OAuthApps Endpoints](reference/api/rest-api/endpoints/team-collaboration-endpoints/oauthapps-endpoints/README.md)
           * [Get](reference/api/rest-api/endpoints/team-collaboration-endpoints/oauthapps-endpoints/get.md)
           * [List](reference/api/rest-api/endpoints/team-collaboration-endpoints/oauthapps-endpoints/list.md)
