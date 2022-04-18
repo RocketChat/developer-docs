@@ -28,10 +28,14 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
 5. Run `meteor --version` , this will download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file.
 6.  Install modules
 
-    `meteor npm install`
+    `yarn`
 7.  Start building (the first build can _take 10 or more minutes_, and you may see various warnings or minor errors -- please be patient; subsequent dev builds after the first will be 5 minutes or less)
 
-    `meteor`
+    ```
+    yarn build
+    yarn dev # it will build the sub projects and then run meteor project
+    ```
+The code is spread through the folders, `packages/` and `apps/meteor`, the latter contains the vast majority of the project's code.
 
 When the server is ready, you will see a box with "Server Running" title:
 

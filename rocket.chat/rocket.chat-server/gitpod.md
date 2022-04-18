@@ -65,7 +65,7 @@ yarn build
 yarn dev # it will build the sub projects and then run meteor project
 ```
 
-The code is spread through the folders, packages/ and apps/meteor, the latter contains the vast majority of the project's code.
+The code is spread through the folders, `packages/` and `apps/meteor`, the latter contains the vast majority of the project's code.
 
 After a few minutes, your development environment should be up and running.
 
