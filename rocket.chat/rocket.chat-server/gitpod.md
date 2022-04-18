@@ -21,7 +21,7 @@ Gitpod hosts the entire development environment and you will be able to contribu
 
     Make sure you install the correct version of meteor. As of the time of this writing Rocket.Chat uses `meteor@2.2`.&#x20;
 
-    To know which version you need, consult [this](https://github.com/RocketChat/Rocket.Chat/blob/develop/.meteor/release) file (tracking the current development branch, i.e. the most up to date).
+    To know which version you need, consult [this](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.meteor/release) file (tracking the current development branch, i.e. the most up to date).
 * Then run the following command passing in the release you want
 
 ```
@@ -32,7 +32,7 @@ You can also make this process simpler by running the following code snippet on 
 
 ```
 curl https://install.meteor.com/?release=$(
-    curl -so- https://raw.githubusercontent.com/RocketChat/Rocket.Chat/develop/.meteor/release | cut -d@ -f2
+    curl -so- https://raw.githubusercontent.com/RocketChat/Rocket.Chat/develop/apps/meteor/.meteor/release | cut -d@ -f2
 ) | sh
 ```
 
@@ -49,7 +49,7 @@ export PATH=$PATH:/home/gitpod/.meteor
 * Finally, install the `node` dependencies and start your server by running the following respectively.
 
 ```
-meteor npm i
+yarn # installs the dependencies for all projects
 ```
 
 * Now set your `ROOT_URL`, without it Rocket.Chat server might misbahave.
@@ -58,11 +58,14 @@ meteor npm i
 export ROOT_URL=$(gp url 3000)
 ```
 
-* Finally, start the Rocket.Chat server.
+* Finally, build and start the Rocket.Chat server.
 
 ```
-meteor npm start
+yarn build
+yarn dev # it will build the sub projects and then run meteor project
 ```
+
+The code is spread through the folders, `packages/` and `apps/meteor`, the latter contains the vast majority of the project's code.
 
 After a few minutes, your development environment should be up and running.
 
