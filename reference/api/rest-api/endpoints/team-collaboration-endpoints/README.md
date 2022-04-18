@@ -115,7 +115,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL                        | Short Description                                                         | Details Page                                                                                                                     |
 | -------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/commands.get`     | Retrieves the specification of the slash command.                         | [Link](commands-endpoints/get-lash-commands.md)                                                                                  |
+| `/api/v1/commands.get`     | Retrieves the specification of the slash command.                         | [Link](broken-reference)                                                                                                         |
 | `/api/v1/commands.list`    | Lists all available slash commands.                                       | [Link](commands-endpoints/list.md)                                                                                               |
 | `/api/v1/commands.run`     | Executes a slash command in the specified room.                           | [Link](commands-endpoints/execute-a-slash-command.md)                                                                            |
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](commands-endpoints/preview.md)                                                                                            |
