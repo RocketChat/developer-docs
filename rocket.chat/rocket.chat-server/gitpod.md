@@ -21,7 +21,7 @@ Gitpod hosts the entire development environment and you will be able to contribu
 
     Make sure you install the correct version of meteor. As of the time of this writing Rocket.Chat uses `meteor@2.2`.&#x20;
 
-    To know which version you need, consult [this](https://github.com/RocketChat/Rocket.Chat/blob/develop/.meteor/release) file (tracking the current development branch, i.e. the most up to date).
+    To know which version you need, consult [this](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.meteor/release) file (tracking the current development branch, i.e. the most up to date).
 * Then run the following command passing in the release you want
 
 ```
