@@ -32,9 +32,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
     "_id": "NtR6RQ7NvzA9ejecX",
     "name": "testing",
     "t": "p",
-    "usernames": [
-      "tester"
-    ],
     "msgs": 0,
     "u": {
       "_id": "aobEdbYhXfu5hkeqG",
