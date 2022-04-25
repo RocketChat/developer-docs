@@ -56,7 +56,7 @@ Let's take a look at our `HelloWorld` app's `app.json` file to understand the st
 
 ### Testing RocketChat App
 
-To test your app, you need a Rocket.Chat server running locally on your machine and access to an admin user's cridentials.
+To test your app, you need a Rocket.Chat server running locally on your machine and access to an admin user's credentials.
 
 See [Installing Rocket.Chat for Developing](../../rocket.chat/rocket.chat-server/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
 
