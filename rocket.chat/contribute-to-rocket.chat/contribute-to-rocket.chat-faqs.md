@@ -1,18 +1,33 @@
 # Contribute to Rocket.Chat FAQs
 
-**Q.1 I am just getting started with my open source journey, should I try contributing to Rocket.Chat?**
+<details>
 
-Ans. Sure! Anyone with a knack of programming should start contributing irrespective of his/her open source experience. 
+<summary><strong>I am just getting started with my open source journey. Should I try contributing to Rocket.Chat?</strong></summary>
 
-**Q.2 Where should I get started from for contributing to Rocket.Chat?**
+Sure! Anyone with a knack for programming should start contributing irrespective of his/her open-source experience.
 
-Ans. Beginner's are strongly recommended to start with the issues having "good first issues" labels. They can also try their hands on contributing to documentation and rasing issues(after all these are also different types of open source contributions).
+</details>
 
-**Q.3 I am stuck with the codebase. Where should I get help from?**
+<details>
 
-Ans. If you are stuck with anything in the codebase, please feel free to contact the vast community of growing programmers in Rocket.Chat. You can also take help from Rocket.Chat forums. Just tag the person you think will be able to help you best according their respective fields of expertise and tell him/her about your issue and they will be more than happy to help you out.
+<summary><strong>Where should I get started from for contributing to Rocket.Chat?</strong></summary>
 
-**Q.4 I am not sure whether I am writing the code in the expected style or not. What should I do?**
+Beginners are strongly recommended to start with the issues having "good first issues" labels. They can also try their hands at contributing to documentation and raising issues (after all these are also different types of open source contributions).
 
-Ans. You can find documentation for everything in Rocket.Chat. Just read the documentation for Codestyle requirements and you will be good to go.
+</details>
 
+<details>
+
+<summary><strong>I am stuck with the codebase. Where should I get help from?</strong></summary>
+
+&#x20;If you are stuck with anything in the codebase, please contact the vast community of growing programmers in Rocket.Chat. You can also take help from Rocket.Chat forums. Just tag the person you think will be able to help you best according to their respective fields of expertise and tell him/her about your issue, and they will be more than happy to help you out.
+
+</details>
+
+<details>
+
+<summary><strong>I am not sure whether I am writing the code in the expected style. What should I do?</strong></summary>
+
+You can find documentation for everything in Rocket.Chat. Just read the documentation for Codestyle requirements, and you will be good to go.
+
+</details>

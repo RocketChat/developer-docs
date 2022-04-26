@@ -43,7 +43,7 @@
   * [Help Test Rocket.Chat](rocket.chat/contribute-to-rocket.chat/help-test-rocket.chat.md)
   * [What To Work On](rocket.chat/contribute-to-rocket.chat/what-to-work-on.md)
   * [Troubleshooting](rocket.chat/contribute-to-rocket.chat/troubleshooting.md)
-  * [Code of Conduct](code_of_conduct.md)
+  * [Code of Conduct](code\_of\_conduct.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
 ## Mobile App
@@ -91,6 +91,7 @@
   * [Event Interfaces](apps-engine/fundamentals-of-apps/event-interfaces.md)
   * [Permission System](apps-engine/permission-system.md)
 * [Adding Features](apps-engine/fundamentals-of-apps/README.md)
+  * [OAuth2 Client](apps-engine/fundamentals-of-apps/oauth2-client.md)
   * [Scheduler API](apps-engine/fundamentals-of-apps/scheduler-api.md)
   * [NPM Package Support (Experimental)](apps-engine/fundamentals-of-apps/npm-package-support-experimental.md)
   * [UIKit](apps-engine/fundamentals-of-apps/uikit/README.md)
