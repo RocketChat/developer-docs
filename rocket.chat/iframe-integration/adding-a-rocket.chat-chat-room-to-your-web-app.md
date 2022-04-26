@@ -448,7 +448,7 @@ Here we will see how to manage to add the iframe to our code. We'll show you how
 
 &#x20;               `externalCommand: "go",`
 
-&#x20;               `path: "/channel/general/?layout-embedded"`
+&#x20;               `path: "/channel/general/?layout=embedded"`
 
 &#x20;           `},`
 
