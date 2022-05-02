@@ -150,7 +150,7 @@ See more information on deployment configurations [here](https://hubot.github.co
 
 When running locally, [`dotenv`](https://www.npmjs.com/package/dotenv) is used to load configurations from the `.env` file. That makes it easier to set environment variables.
 
-Please a full list of environmental variables here [environment-variables.md](../../reference/environment-variables.md "mention")
+Please a full list of environmental variables here [Broken link](broken-reference "mention")
 
 {% hint style="info" %}
 Please pay attention that if `ROCKETCHAT_URL` is using `https://`, you **MUST** setup websocket pass-through on your reverse proxy (for example, NGINX) with a valid certificate (not self-signed). Directly accessing Rocket.Chat without a reverse proxy via `https://` is not possible.

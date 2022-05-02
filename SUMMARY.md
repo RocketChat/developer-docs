@@ -125,7 +125,6 @@
 ## Reference
 
 * [Database Schema](reference/database-schema.md)
-* [Environment variables](reference/environment-variables.md)
 * [API](reference/api/README.md)
   * [Deprecation](reference/api/deprecation.md)
   * [Schema Definition](reference/api/schema-definition/README.md)
