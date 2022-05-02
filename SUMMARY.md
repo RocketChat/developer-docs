@@ -56,7 +56,7 @@
   * [iOS App White Labelling](mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
   * [Android App White Labelling](mobile-app/mobile-app-white-labelling/android-app-white-labelling.md)
   * [Configuring Push Notifications](mobile-app/mobile-app-white-labelling/configuring-push-notifications.md)
-* [Moible App Building from Source](mobile-app/mobile-app-building-from-source.md)
+* [Mobile App Building from Source](mobile-app/mobile-app-building-from-source.md)
 * [Mobile App FAQs](mobile-app/mobile-app-faqs.md)
 
 ## Desktop App
