@@ -1,4 +1,4 @@
-# Create
+# Create Integration
 
 Creates an integration, if the callee has the permissions. Requires `manage-incoming-integrations` AND `manage-own-incoming-integrations` permissions to be able to create incoming integrations and `manage-outgoing-integrations` AND `manage-own-outgoing-integrations` to be able to create outgoing integrations.
 
@@ -32,7 +32,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
      http://localhost:3000/api/v1/integrations.create \
-     -d '{ "type": "webhook-outgoing", "name": "Testing via REST API", "event": "sendMessage", "enabled": false, "username": "rocket.cat", "urls": ["http://text2gif.guggy.com/guggify"], "scriptEnabled": false }'
+     -d '{ "type": "webhook-outgoing", "name": "Testing via REST API", "event": "sendMessage", "enabled": false, "channel": "#general", "username": "rocket.cat", "urls": ["http://text2gif.guggy.com/guggify"], "scriptEnabled": false }'
 ```
 
 ## Example Result
