@@ -19,6 +19,10 @@ When calling a production Rocket.Chat server, ensure it is running via HTTPS and
 
 ## Language-specific wrappers
 
+{% hint style="warning" %}
+Rocket.Chat is not the maintainer of these wrappers. They are owned and supported by community members.
+{% endhint %}
+
 | Language | Wrapper                                                                                                                                                         |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Java     | <p></p><p><a href="https://github.com/baloise/rocket-chat-rest-client">rocket-chat-rest-client</a></p>                                                          |
