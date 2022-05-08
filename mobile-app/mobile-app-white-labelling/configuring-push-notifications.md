@@ -53,3 +53,6 @@
 Page Embed from Whimsical: [https://whimsical.com/notification-workflow-PRwN4MWNsxSwqHjHXaPUuC](https://whimsical.com/notification-workflow-PRwN4MWNsxSwqHjHXaPUuC)
 {% endembed %}
 
+{% hint style="info" %}
+You can find more information on push notifications configuration in our [admin guide.](https://docs.rocket.chat/guides/mobile-guides/push-notifications)
+{% endhint %}
