@@ -6,8 +6,8 @@ You can set up and run a Rocket.Chat development environment on your Mac OSX.
 This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,i5
 {% endhint %}
 
-{% hint style="info" %}
-For Apple M1 Chips, you need to [install the Rosetta terminal](https://support.apple.com/en-us/HT211861) this will be used.
+{% hint style="success" %}
+Currently, Rocket.Chat uses at least`meteor 2.5.6` so there is no need to use[ the Rosetta terminal](https://support.apple.com/en-us/HT211861) for M1 chips, as this version of meteor supports it.
 {% endhint %}
 
 * Install Meteor by executing
