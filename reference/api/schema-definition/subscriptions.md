@@ -12,6 +12,9 @@ The subscription object contains the information about the room and the user rel
 * `alert`: Whether there is an alert to be displayed to the user
 * `roles`: \(Optional\) The collection of roles the user belongs to \(at least one `role-name` will be present\)
 * `unread`: The total of unread messages
+
+  `NOTE`: The **unread** counter value depends on your settings at the Administration => General section.
+
 * `tunread`: \(Optional\) List of ids of unread threads
 * `tunreadGroup`: \(Optional\)List of thread ids that contain an unread mention to a group which the user is part of
 * `tunreadUser`: \(Optional\) List of thread ids that contain an unread mention to the user
