@@ -4,6 +4,8 @@ Creates a new public channel, optionally including specified users. The channel 
 
 {% hint style="info" %}
 Channel naming has restraints following the regex filter `[0-9a-zA-Z-_.]+` by default.
+
+This can be modified in the **Admin** > **General** > **UTF8**. Channel names should not allow for any whitespaces.
 {% endhint %}
 
 | URL                       | Requires Auth | HTTP Method |
