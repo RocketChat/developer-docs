@@ -42,7 +42,6 @@
     * [Shell Scripts (shfmt)](rocket.chat/contribute-to-rocket.chat/code-style-guide/shell-scripts-shfmt.md)
   * [Internationalization](rocket.chat/contribute-to-rocket.chat/internationalization.md)
   * [Help Test Rocket.Chat](rocket.chat/contribute-to-rocket.chat/help-test-rocket.chat.md)
-  * [What To Work On](rocket.chat/contribute-to-rocket.chat/what-to-work-on.md)
   * [Troubleshooting](rocket.chat/contribute-to-rocket.chat/troubleshooting.md)
   * [Code of Conduct](code\_of\_conduct.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)

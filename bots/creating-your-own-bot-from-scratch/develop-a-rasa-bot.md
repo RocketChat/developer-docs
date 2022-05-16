@@ -1,6 +1,6 @@
 # Develop a Rasa Bot
 
-[Rasa](https://rasa.com) is the leading open-source machine learning toolkit that lets developers expand bots beyond answering simple questions with minimal training data. At the core, Rasa bot has a machine learning model which trained on example conversations.
+[Rasa](https://rasa.com/) is the leading open-source machine learning toolkit that lets developers expand bots beyond answering simple questions with minimal training data. At the core, Rasa bot has a machine learning model which trained on example conversations.
 
 Rasa is developed with Python but for the most part, you don't need to know Python to design the basic conversational flows. You will need Python knowledge only when creating custom actions in Rasa which call external actions.
 

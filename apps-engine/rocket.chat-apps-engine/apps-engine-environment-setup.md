@@ -15,7 +15,7 @@ You are required to have the following installed already on your machine before 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org) (Version 12 and above)
 * [Rocket.Chat Apps Engine CLI](../rocket.chat-app/rocket.chat-app-engine-cli.md#installation)
-* [Yarn](http://yarnpkg.com) is recommended instead of npm.
+* [Yarn](http://yarnpkg.com/) is recommended instead of npm.
 
 ## Pre-requisites
 
@@ -27,7 +27,7 @@ The Rocket.Chat Apps Engine CLI is very basic in terms of its usage but a brief 
 
 #### Basic knowledge of TypeScript Development
 
-For writing an App, you need to write and execute [TypeScript](https://www.typescriptlang.org) code. Although most definitions are handled within the Apps Engine CLI, you need to understand where the code is leading you towards to have a better understanding of how your App interacts with the Rocket.Chat server and external APIs
+For writing an App, you need to write and execute [TypeScript](https://www.typescriptlang.org/) code. Although most definitions are handled within the Apps Engine CLI, you need to understand where the code is leading you towards to have a better understanding of how your App interacts with the Rocket.Chat server and external APIs
 
 #### Understanding the Lifecycle methods of Apps Engine and Node.js VM
 

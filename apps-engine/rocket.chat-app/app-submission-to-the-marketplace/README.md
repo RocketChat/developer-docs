@@ -73,7 +73,7 @@ In the following section we will guide you through different purchase types. You
 ![](<../../../.gitbook/assets/image (56) (1).png>)
 
 {% hint style="info" %}
-For a paid app its madatory to connect with [Stripe](https://stripe.com) account before submission.
+For a paid app its madatory to connect with [Stripe](https://stripe.com/) account before submission.
 {% endhint %}
 
 {% hint style="info" %}

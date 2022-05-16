@@ -10,7 +10,7 @@ You are required to have the following installed already on your machine before 
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
-* [Yarn](http://yarnpkg.com) is recommended instead of npm.
+* [Yarn](http://yarnpkg.com/) is recommended instead of npm.
 * MacOS with `XCode Command Line Tools` is needed to run iOS version
 * Android Studio is needed to run the Android version
 

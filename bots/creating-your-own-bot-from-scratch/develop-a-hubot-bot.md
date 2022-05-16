@@ -325,7 +325,7 @@ v2 contains major breaking changes. Starting with this version:
 * Only [Hubot v3](https://github.com/hubotio/hubot/tree/v3) will be supported
 * [Rocket.Chat Server version 0.63.0](https://github.com/RocketChat/Rocket.Chat/releases/tag/0.63.0) or higher is supported
 * Yeoman generator support is discontinued, you should start your project with our [hubot v3 boilerplate](https://github.com/RocketChat/hubot-rocketchat-boilerplate)
-* [NodeJS 8](https://nodejs.org) or later is required for operations
+* [NodeJS 8](https://nodejs.org/) or later is required for operations
 * The latest ES6 syntax in NodeJS 8, including the popular async-await, is fully supported
 
 ### Hubot versions

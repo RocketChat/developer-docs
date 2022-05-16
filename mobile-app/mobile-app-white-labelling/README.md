@@ -27,7 +27,7 @@ Here we will show you how to customize:
 
 ## General
 
-* Create an account on [https://www.bugsnag.com/](https://www.bugsnag.com)
+* Create an account on [https://www.bugsnag.com/](https://www.bugsnag.com/)
 * Set `server`, `appGroup` and `appStoreId` on [app.json](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app.json#L5)
   * `appGroup` must be the same App Group created for the iOS app
 * Change app colors on [colors.ts](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app/constants/colors.ts)
@@ -44,7 +44,7 @@ Here we will show you how to customize:
 
 ### Creating new Firebase project
 
-* Visit [https://console.firebase.google.com/](https://console.firebase.google.com)
+* Visit [https://console.firebase.google.com/](https://console.firebase.google.com/)
 * Click on “Add Project”
 * Enter the project name you created on previous step
 * Follow the wizard until Firebase project is created

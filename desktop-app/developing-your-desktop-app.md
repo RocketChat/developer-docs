@@ -10,7 +10,7 @@ Be sure to check out the [TypeScript 4 release handbook](https://www.typescriptl
 
 ### The Build Pipeline
 
-The build process is founded upon [rollup](https://rollupjs.org) bundler which compiles and brings every piece together. There are three entry files for your code:
+The build process is founded upon [rollup](https://rollupjs.org/) bundler which compiles and brings every piece together. There are three entry files for your code:
 
 * `src/main.ts`, the script running at the main Electron process, orchestrating the whole application;
 * `src/rootWindow.ts`, the script that renders the UI of the _root window_, the app's main window;
@@ -71,7 +71,7 @@ If you cannot (or don't want to) bundle the file inside the app, you can create 
 
 ### **Unit tests**
 
-We use [Jest](https://jestjs.io) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in `src` directory that match the glob pattern `*.(spec|test).{js,ts,tsx} `performs tests on them.
+We use [Jest](https://jestjs.io/) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in `src` directory that match the glob pattern `*.(spec|test).{js,ts,tsx}` performs tests on them.
 
 Run this command to execute tests on your changes.
 
@@ -89,4 +89,4 @@ yarn release
 
 This will start the packaging process for the operating system you are running this command on. When it is done, the output file ready for distribution can be found in the `dist/` directory.
 
-All packaging actions are handled by [electron-builder](https://www.electron.build). It has a lot of customization options not mentioned here.
+All packaging actions are handled by [electron-builder](https://www.electron.build/). It has a lot of customization options not mentioned here.
