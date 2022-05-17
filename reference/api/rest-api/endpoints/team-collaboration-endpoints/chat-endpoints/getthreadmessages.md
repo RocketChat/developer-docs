@@ -2,15 +2,16 @@
 
 Get thread messages. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/chat.getThreadMessages` | `yes` | `GET` |
+| URL                              | Requires Auth | HTTP Method |
+| -------------------------------- | ------------- | ----------- |
+| `/api/v1/chat.getThreadMessages` | `yes`         | `GET`       |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `tmid` | `7aDSXtjMA3KPLxLjt` | Required | The id of the the thread message. |
+| Argument | Example                    | Required | Description                                                                                       |
+| -------- | -------------------------- | -------- | ------------------------------------------------------------------------------------------------- |
+| `tmid`   | `7aDSXtjMA3KPLxLjt`        | Required | The id of the the thread message.                                                                 |
+| `tlm`    | `2019-04-08T14:40:27.724Z` | Required | The thread last message, is used to inform the last time some message was sent inside the thread. |
 
 ## Example Call
 
@@ -71,6 +72,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
-
+| ------- | ----------- |
+| 1.0.0   | Added       |
