@@ -27,7 +27,7 @@
 ## Generate upload key
 
 * This step will generate the keystore that is going to verify your app on Google Play
-  * You can use this guide as reference: [https://reactnative.dev/docs/signed-apk-android#generating-an-upload-key](https://reactnative.dev/docs/signed-apk-android#generating-an-upload-key)
+  * You can use this guide as a reference: [https://reactnative.dev/docs/signed-apk-android#generating-an-upload-key](https://reactnative.dev/docs/signed-apk-android#generating-an-upload-key)
 * Execute the following on terminal
   * `cd android/app`
   * `keytool -genkeypair -v -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000`
@@ -54,7 +54,7 @@
 
 ![](https://lh6.googleusercontent.com/t4\_xn2ud8KnPKDfQ4r2Hk7jo4bYs85ZQ8LmYFeFwD6tB3qt3a8U1l3x1HsFcDE0yRKe1PI8AXDD-4J-8QoQMarD7riUwO3hjF4YURBKOe8hlJZHRCvt1E49TxVVZSkPSAfKg7OFB)
 
-* Download config file and move it as instructed
+* Download the config file and move it as instructed
 
 ![](https://lh5.googleusercontent.com/k7CjPaIbiBvkd3wY1Exl6FGZsmC5blK8pNW3fycI9NAVZ9rWwdVNHtSTV6EWHQFasep9tOf0k0nEE36khTIxgtTr4se2\_NM6lJmgeM20M5lhMPupoc0BjhouH7B7X3jnP5CvgMg6)
 

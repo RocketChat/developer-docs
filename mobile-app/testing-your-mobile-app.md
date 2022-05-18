@@ -54,4 +54,4 @@ To fix your code formatting issues, run this on your terminal:
 yarn prettier
 ```
 
-[Check this link](https://prettier.io/docs/en/editors.html) to see how to integrate Prettier with your preferred code editor, and run Prettier when save your file for example.
+[Check this link](https://prettier.io/docs/en/editors.html) to see how to integrate Prettier with your preferred code editor, and run Prettier when saving your file for example.

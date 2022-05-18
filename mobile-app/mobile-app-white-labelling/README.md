@@ -15,7 +15,7 @@ Here we will show you how to customize:
   * `develop` branch might be different from this
 * Keep in mind that you will need an **intermediate** knowledge of Android/iOS development and basic Javascript knowledge
 * Our repo contains targets/build flavors to build both our Experimental and Official apps
-  * Both apps are equal, but released at different pace on the stores
+  * Both apps are equal but released at a different pace in the stores
   * If you see an Experimental folder, don't be scared of breaking anything. It's just a folder containing the assets for the non-official app
 
 ## Repo
@@ -38,16 +38,16 @@ Here we will show you how to customize:
 
 * Visit [https://console.cloud.google.com/home/dashboard](https://console.cloud.google.com/home/dashboard)
 * By the text Google Cloud Platform there is a dropdown, open and then “Create project”
-* In the dialog give an project name then “Create”
-* Wait the creating process, you can follow in notifications by your avatar
+* In the dialog give a project a name then hit “Create”
+* Wait until the creating process, you can follow in notifications by your avatar
 * You will be redirected to the project page after creation
 
-### Creating new Firebase project
+### Creating a new Firebase project
 
 * Visit [https://console.firebase.google.com/](https://console.firebase.google.com/)
 * Click on “Add Project”
-* Enter the project name you created on previous step
-* Follow the wizard until Firebase project is created
+* Enter the project name you created in the previous step
+* Follow the wizard until the Firebase project is created
 * We’re going to create the apps later on the tutorial page
 
 {% content-ref url="ios-app-white-labelling.md" %}
