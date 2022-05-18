@@ -74,7 +74,6 @@
 * [Omnichannel Environment Setup](omnichannel/omnichannel-environment-setup.md)
 * [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps.md)
 * [Livechat Widget Development and Customization](omnichannel/livechat-widget-development-and-customization.md)
-* [Omnichannel White Labelling](omnichannel/omnichannel-white-labelling.md)
 * [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
 ## Apps Engine
