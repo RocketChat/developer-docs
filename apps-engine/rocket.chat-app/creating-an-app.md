@@ -4,13 +4,13 @@ description: Getting Started in creating your first ever Rocket.Chat App
 
 # Creating Your First App
 
-Now, that you've understood the basic concepts of the Apps Engine and installed the CLI, you can create an extremely basic RC App and test it out to understand things. To get started, just recall the commands inside the Apps Engine CLI
+Now, that you've understood the basic concepts of the Apps Engine and installed the CLI, you can create an extremely basic RC App and test it out to understand things. To get started, just recall the commands inside the Apps Engine CLI.
 
 ## Creating a new RocketChat App
 
 ### Bootstrap Your App
 
-The development tools provide a command to quickly scaffold a new Rocket.Chat App. Simply run `rc-apps create` , give it some details and a new folder will be created inside the current working directory with a basic app which does nothing but will compile and be packaged in the `dist` folder.
+The development tools provide a command to quickly scaffold a new Rocket.Chat App. Simply run `rc-apps create` , give it some details and a new folder will be created inside the current working directory with a basic app that does nothing but will compile and be packaged in the `dist` folder.
 
 Let's create a simple app named `HelloWorld`.
 
@@ -33,7 +33,7 @@ The basic creation of an App is based on extending the `App` class from the Rock
 
 The app description file, named `app.json`, contains basic information about the app. You can check the [app-schema.json](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/master/src/definition/app-schema.json) file for all the detailed information and fields allowed in the app description file.
 
-Let's take a look at our `HelloWorld` app's `app.json` file to understand the structure. It should look something like this:-
+Let's take a look at our `HelloWorld` app's `app.json` file below to understand the structure.&#x20;
 
 ```json
 {
@@ -110,9 +110,9 @@ export class HelloWorldApp extends App {
 }
 ```
 
-The first thing that you should notice is that the class name is the same as the filename. This is intentional.&#x20;
+The first thing that you should notice is that the class name is the same as the filename. This is intentional.
 
-For the app to compile successfully, you either have to use the same name for the class and the file or default export the main app class like so,
+For the app to compile successfully, you either have to use the same name for the class and the file or default export the main app class like below:
 
 ```typescript
 export default class HelloWorld extends App {
@@ -122,7 +122,7 @@ export default class HelloWorld extends App {
 }
 ```
 
-The most minimal app wouldn't even have a constructor. For example you can edit the class to something like this -
+The most minimal app wouldn't even have a constructor. For example, you can edit the class to:
 
 ```typescript
 export class HelloWorldApp extends App {}
@@ -134,15 +134,15 @@ But for a functioning app, you need access to a lot of parent property, for whic
 
 The constructor has three arguments,
 
-1. An `IAppInfo` object:- This object contains some basic information about your app, like the name, the version, description, etc. It is private to the `App` class but properties of it can be accessed via different `get` methods.
-2. An `ILogger` object:- The logging interface. You can access this object from your child class by using the `getLogger()` method.
-3. An `IAppAccessors` object:- Object containing all the app accessors. You can access this by using the `getAccessors()` method in your child class.
+1. An `IAppInfo` object: This object contains basic information about your app, like the name, the version, description, etc. It is private to the `App` class but its properties can be accessed via different `get` methods.
+2. An `ILogger` object: The logging interface. You can access this object from your child class by using the `getLogger()` method.
+3. An `IAppAccessors` object: Object containing all the app accessors. You can access this by using the `getAccessors()` method in your child class.
 
 ## Start Developing
 
 Currently, our `HelloWorld` app does nothing. In this section, we'll make it log `Hello, World!` in the Rocket.Chat admin panel.
 
-To log something, you first need access to the logger, or more specifically, access to an object of type `ILogger`. If you remember the constructor arguments, the parent class uses an `ILogger` object to log stuff to the admin panel. We just need access to that object. Unfortunately, the logger object is private to the `App` class and so cannot be accessed directly using `this`.
+To log something, you first need access to the logger, or more specifically, access to an object of type `ILogger`. The parent class uses an `ILogger` object to log stuff to the admin panel. We just need access to that object. Unfortunately, the logger object is private to the `App` class and so cannot be accessed directly using `this`.
 
 This can easily be remedied by using the `getLogger` method provided by the `App` class. Simply store the logger in a separate object and then it can be reused any time.
 
@@ -158,13 +158,13 @@ export class HelloWorldApp extends App {
 }
 ```
 
-We have just stored the logger accessor in the `appLogger` variable. Now we can use it to log anything. Add the following line to the constructor,
+We have just stored the logger accessor in the `appLogger` variable. Now we can use it to log anything. Add the following line to the constructor.
 
 ```typescript
 this.appLogger.debug('Hello, World!')
 ```
 
-Finally the class file should look something like this -
+Finally the class file looks like:
 
 ```javascript
 import {
@@ -184,39 +184,39 @@ export class HelloWorldApp extends App {
 }
 ```
 
-That's it, now deploy it following the instructions provided above.
+You can now deploy it following the instructions provided above.
 
 #### Checking the logs
 
-Now to verify that it actually is working, you need to check the logs.&#x20;
+Now to verify that it actually is working, you need to check the logs.
 
 1. Log in to your Rocket.Chat server as the admin user.
 2. Go to `Administration` panel.
 3. From the side panel, click on `Apps`.
 4.  Now you should see your `HelloWorld` app right there. Click on it.
 
-    ![](<../../.gitbook/assets/image (1) (1).png>)
-5.  On the right hand side there is a three dot button, click on it, and then from the menu click on logs.
+    <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
+5.  On the right-hand side there is a three-dot button, click on it, and then from the menu click on logs.
 
-    ![](<../../.gitbook/assets/image (2) (2).png>)
+    <img src="../../.gitbook/assets/image (2) (2).png" alt="" data-size="original">
 
 Scroll down until you see `constructor`. When you do, click on it.
 
-You should see a screen like below,
+Following screen apears:&#x20;
 
 ![](<../../.gitbook/assets/image (3) (1).png>)
 
-There you go! "Hello, World!" right there. You just created the simplest Hello World Rocket.Chat app!
+You just created the simplest Hello World Rocket.Chat app! 😊
 
 ### Adding a Slashcommand
 
-Logging to the console is "OK", but we want our app to interact within a room in Rocket.Chat. In this section we'll make our hello world app send a message in the room you currently have open.
+Logging to the console is good, but we want our app to interact within a room in Rocket.Chat. In this section we'll make our hello world app send a message in the room you currently have open.
 
 To do this, we're going to use a slash command.
 
 A Slashcommand is a way to call the app installed in Rocket.Chat. Your app can have multiple slashcommands and subcommands. In our example, we will add the `liftoff` slashcommand and it will be called like this by the user inside the chat room:
 
-For this app, let's make the command `hello`. So you should be able to run `/hello` to invoke some function of the app.
+For this app, let's make the command `hello`. So you should be able to run `/hello` to invoke a function of the app.
 
 ```
 /hello
@@ -226,7 +226,7 @@ Although you can have everything in a single file, it is not recommended. Better
 
 For slashcommand related files, we recommend a subdirectory in your project root named `Commands`, but you are free to choose any other name.
 
-For this example, create one. Now in this directory, create a file named `HelloWorldCommand.ts`.
+You can create one now in this directory, create a file named `HelloWorldCommand.ts`.
 
 Enter the following line in the file.
 
@@ -236,18 +236,18 @@ import ISlashCommand from "@rocket.chat/apps-engine/definition/slashcommands";
 export class HelloWorldCommand implements ISlashCommand {}
 ```
 
-> A SlashCommand is an instance of some class type that implements the `ISlashCommand` interface.&#x20;
+> A SlashCommand is an instance of some class type that implements the `ISlashCommand` interface.
 
 {% hint style="info" %}
-In TypeScript, an interface is a description of an object. It specifies what properties or fields an object must or may have.&#x20;
+In TypeScript, an interface is a description of an object. It specifies what properties or fields an object must or may have.
 
 When a class implements an interface, it makes a promise that it will conform to the interface's object structure specification.
 
-For example if an interface looks like this,
+For example, if an interface looks like this,
 
 `interface Person { name: string; }`
 
-This says any class implementing the `Person` interface **must** have a property of type `string` called `name`. If it doesn't, the file won't compile.
+It says any class implementing the `Person` interface **must** have a property of type `string` called `name`. If it doesn't, the file won't compile.
 
 _For more information on TypeScript interfaces, read the_ [_official documentation_](https://www.typescriptlang.org/docs/handbook/2/objects.html)_._
 {% endhint %}
@@ -258,7 +258,7 @@ Let's now look at what properties our `HelloWorldCommand` class now must define
 
 `command`
 
-This is a public variable of type `string`. This is the command name. The command you are to enter after the slash. In this case the value is going to be `hello`.
+This is a public variable of type `string,` it is the command name of the command you are to enter after the slash. In this case, the value is  `hello`.
 
 ```typescript
 public command: string = 'hello';
@@ -266,7 +266,7 @@ public command: string = 'hello';
 
 `i18nDescription`
 
-Description of the app in `i18n` string.&#x20;
+Description of the app in `i18n` string.
 
 ```typescript
 public i18nDescription: string = 'Just says Hello to the World!';
@@ -282,7 +282,7 @@ public i18nParamsExample = '' // we have no params
 
 `providesPreview`
 
-Tells the app whether this command provides command preview or not. We'll talk about command preview in a later section. For now let's just put in negative.
+Tells the app whether this command provides command preview or not. We'll talk about command preview in a later section. For now, please use false.
 
 ```typescript
 public providesPreview: boolean = false;
@@ -290,7 +290,7 @@ public providesPreview: boolean = false;
 
 `executor`
 
-This is the method that will be invoked when a user executes the slashcommand. This is where the whole logic and action will take place. When the method is called, it is passed a couple of objects. These arguments define the function signature. It is also documented in the `ISlashCommand` interface.&#x20;
+This is the method that will be invoked when a user executes the slashcommand. This is where the whole logic and action will take place. When the method is called, it is passed a couple of objects. These arguments define the function signature. It is also documented in the `ISlashCommand` interface.
 
 ```typescript
 public async executor(
@@ -302,7 +302,7 @@ public async executor(
 ): Promise<void> {}
 ```
 
-The executor above doesn't do anything of course, _yet._
+The executor above doesn't do anything, _yet._
 
 Let's talk about what each parameter type are used for.
 
@@ -310,9 +310,9 @@ Let's talk about what each parameter type are used for.
 * `IRead` → This is an object that provides **read-only** access to the current environment. E.g. room details, user details, app settings, etc.
 * `IModify` → An Object that gives you the ability to modify the environment, or actions that _change the environment in some way_. E.g. sending a message, creating a room, deleting a room, etc.
 
-> `IHttp` and `IPersistence` are discussed in a different section.&#x20;
+> `IHttp` and `IPersistence` are discussed in a different section.
 
-Your `HelloWorldCommand` class should look something like the following now.
+Your `HelloWorldCommand` class should look like the following now.
 
 ```typescript
 export class HelloWorldCommand implements ISlashCommand {
@@ -335,7 +335,7 @@ export class HelloWorldCommand implements ISlashCommand {
 
 _Creating_ any resource in Apps-Engine is a three-step process.
 
-1. First, you need a creator object, namely an instance of `IModifyCreator`.&#x20;
+1. First, you need a creator object, namely an instance of `IModifyCreator`.
 2. Next for the resource that you want to create, you need a resource builder. A resource builder is basically an object representation of the resource.
 3. Finally, call the finish method provided by the creator object. It will take the template object and use it to actually build the resource on the server side.
 
@@ -347,9 +347,9 @@ const creator: IModifyCreator = modify.getCreator();
 
 Now we need to create the resource builder, in this case, a message builder. We're going to use `IModifyCreator.startMessage` method for this.
 
-This method will take the message template or an object representation of a message.&#x20;
+This method will take the message template or an object representation of a message.
 
-A message needs at the very least,&#x20;
+A message needs at the very least,
 
 1. The text - visible content
 2. A sender - who's sending the message
@@ -389,7 +389,7 @@ To 'create' the resource, i.e. the message, or more intuitively saying, to 'send
 await creator.finish(messageBuilder)
 ```
 
-Combining all these steps, your `HelloWorldCommand.ts` file should look like the following:-
+Combining all these steps, your `HelloWorldCommand.ts` file looks like:
 
 ```typescript
 import {
@@ -437,15 +437,15 @@ export class HelloWorldCommand implements ISlashCommand {
 
 ### Registering the slashcommand
 
-Once you have your slashcommand ready, you need to let your app know about that.&#x20;
+Once you have your slashcommand ready, you need to let your app know about it.
 
 You do that by overriding the `App.extendConfiguration` method.
 
-The method takes an object of type `IConfigurationExtend`. This object is what we'll have to use to 'extend' our app's configurations.&#x20;
+The method takes an object of type `IConfigurationExtend`. This object is what we'll have to use to 'extend' our app's configurations.
 
 A configuration is like a feature of an app. They plug into your app.
 
-There are multiple types of configurations, like API endpoints, settings, slashcommands, etc. We care about the slashcommands here.&#x20;
+There are multiple types of configurations, like API endpoints, settings, slashcommands, etc. We will discuss the slashcommands here.
 
 First, let's create our slashcommand. We already have our slashcommand class `HelloWorldCommand`, but that's just the class, or the template or design of the final object, which is the actual slashcommand.
 
@@ -459,7 +459,7 @@ After adding our slashcomamnd logic, we have to register the slashcommand in our
 await configuration.slashCommands.provideSlashCommand(helloWorldCommand)
 ```
 
-The final `HelloWorldApp.ts` file should look something like,
+The final `HelloWorldApp.ts` file looks like:
 
 ```typescript
 import {
@@ -488,6 +488,6 @@ export class HelloWorldApp extends App {
 
 ## Test the App
 
-Your first app is ready. All that's left is for you to test it! Head over to the[#testing-the-app-1](creating-an-app.md#testing-the-app-1 "mention")  section, to deploy your first app (well, technically second, but who's counting) to your Rocket.Chat server!
+Your first app is ready. All that's left is for you to test it! Head over to the[#testing-the-app-1](creating-an-app.md#testing-the-app-1 "mention") section, to deploy your first app to your Rocket.Chat server!
 
 ![](../../.gitbook/assets/output.gif)
