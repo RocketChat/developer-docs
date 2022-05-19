@@ -1,5 +1,5 @@
 ---
-description: Fundamental concepts to help you develop killer apps with advanced features!
+description: Fundamental concepts to help you develop awesome apps with advanced features!
 ---
 
 # Getting Started
