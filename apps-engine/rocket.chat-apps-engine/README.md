@@ -6,7 +6,7 @@ description: >-
 
 # Rocket.Chat Apps Engine
 
-The Rocket.Chat Apps-Engine is the framework that allows for the development of RC Apps. It provides the APIs for Rocket.Chat Apps to interact with the host system. These apps allow for a tighter integration with whatever workflow our users, covering most, if not all, things that incoming/outgoing integrations and bots do. Interestingly, it has got some tricks of its own, like adding interactive buttons to messages and opening modals (checkout [Poll](https://docs.rocket.chat/guides/app-guides/poll) for a showcase) and much more!
+The Rocket.Chat Apps-Engine is the framework that allows for the development of Rocket.Chat Apps. It provides the APIs for Rocket.Chat Apps to interact with the host system. These apps allow for a tighter integration with whatever workflow our users follow. It also covers most, if not all, things that incoming/outgoing integrations and bots do. Interestingly, it has some cool features, like adding interactive buttons to messages and opening modals (checkout [Poll](https://docs.rocket.chat/guides/app-guides/poll) for a showcase) and more!
 
 #### Currently, a Rocket.Chat App can:
 
