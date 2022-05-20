@@ -1,10 +1,10 @@
 # Action Buttons
 
-A Rocket.Chat App to registers action buttons to be displayed in different contexts in Rocket.Chat UI, such as message actions, room actions, and message box actions.
+It is now possible for a Rocket.Chat App to register action buttons to be displayed in different contexts in Rocket.Chat UI, such as message actions, room actions, and message box actions.
 
 ## Registering a button
 
-Action buttons are registered during the `configurationExtend` lifecycle method. Here is an example:
+Action buttons can be registered during the `configurationExtend` lifecycle method. Here is an example:
 
 ```typescript
 protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
@@ -16,7 +16,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 }
 ```
 
-Registering a button requires `ui.registerButton` permission. Make sure to add it to your app manifest file (`app.json`); as shown below:
+Registering a button requires the `ui.registerButton` permission. Make sure to add it to your app manifest file (`app.json`). It will look similar to the following:
 
 {% code title="app.json" %}
 ```json
@@ -102,4 +102,4 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 }
 ```
 
-The button above can only be seen in public and private channels and direct messages, by users that have the `create-d` permission and have both the `admin` and `moderator` roles.
+The button above would only be seen in public and private channels and direct messages, by users that have the `create-d` permission and have both the `admin` and `moderator` roles.

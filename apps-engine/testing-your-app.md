@@ -4,11 +4,11 @@ description: How to test your app
 
 # Testing your App
 
-This guide shows you how to run unit test on your app.
+This guide shows you how to run a unit test on your app.
 
 ## Requirements
 
-You are required to have the following dependencies. Visit the corresponding sites to follow how to set them up.&#x20;
+You should to meet the following dependencies. Visit the corresponding sites to follow how to set them up.&#x20;
 
 * [Jest](https://www.npmjs.com/package/jest)
 * [@Types/Jest](https://www.npmjs.com/package/@types/jest)
@@ -16,7 +16,7 @@ You are required to have the following dependencies. Visit the corresponding sit
 This guide is given with the assumption you have some knowledge of:
 
 * Typescript
-* Basic unit test concepts
+* Basic unit testing concepts
 
 ## App Setup
 
@@ -56,17 +56,17 @@ export const helpCommand = new HelpCommand();
 
 ### Snippet Explanation
 
-It's a very common command that shows a helper to the user on how to use your app. With that in mind let's understand what we want to test and then we will see how.
+It's a common command that shows a helper to the user on how to use your app. First, decide what you want to test, and then you will see how.
 
-This class `HelpCommand` has a single `async` method called **run.** Let's dive into this method and see how it works.
+This class `HelpCommand` has a single `async` method called **run.** Let's see how it works.
 
 On both lines 8 and 9, the method is using the context parameter to get some information regarding room and sender.
 
-On line 11 we just assign a string to a const and on the end of the method it calls a function called `notifyUser` which send the message to the user.
+On line 11 we just assign a string to a const and at the end of the method, it calls a function called `notifyUser` which sends the message to the user.
 
 ### Testing
 
-At the top of the file, set `jest.autoMockOff();` and below will have the example on how to test your command and the explanation of what is happening on each line/block of code.
+At the top of the file, set `jest.autoMockOff();` and below will have an example on how to test your command and the explanation of what is happening on each line/block of code.
 
 {% code title="HelpCommand.spec.ts" %}
 ```typescript
@@ -103,7 +103,7 @@ describe('HelpCommand', () => { //5
 ```
 {% endcode %}
 
-1. This part is very optional since it depends on how you set your `jest.setup.js` sometimes auto mock may help and sometimes not;
+1. The first step is very since it depends on how you set your `jest.setup.js` sometimes auto mock may help and sometimes not;
 2. This part covers lines 3..5 which is the part that you will mock the method is called at the end of your method **run**;
 
 {% hint style="info" %}
@@ -175,11 +175,11 @@ const commandsMockParams: {
 ```
 {% endcode %}
 
-&#x20; 4\.  This part you only need to import the function or class that needs to be tested;
+&#x20; 4\.  Next, you only need to import the function or class that needs to be tested;
 
-&#x20; 5\.  Here you set your `describe` to identify your test, for this example `HelpCommand` is fine;
+&#x20; 5\.   Set your `describe` to identify your test, for this example `HelpCommand` is fine;
 
-&#x20; 6\.  This part is where the shows start, you will describe your tests cases, for this example, one is enough but it can be more, thinking that you may need to test multiples cases as errors or forks.
+&#x20; 6\.  At this point, you will describe your test cases, for this example, one is enough but it can be more, thinking that you may need to test multiple cases as errors or forks.
 
 The `test` receives a string and a callback to run the test.
 
@@ -198,11 +198,11 @@ In some cases, the method/function that you are testing may be a Promise, so you
 Run your test by following any of the two procedures
 
 * **Using Terminal**: Open up your terminal in the working directory and execute  `jest <file-name>` or just `jest` to run all test files;
-* **Using the VScode extension**: You only need to install [this](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) vscode extension and all of your tests files will look like this:
+* **Using the VScode extension**: You only need to install [this](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) vscode extension and all of your tests files appear as below:
 
 ![Using extension to run the tests](<../.gitbook/assets/image (90).png>)
 
-Two buttons will appear upon tests and describes so you can click run or debug and if everything went well you may face something like this:
+Two buttons will appear upon tests so you can click run or debug and if everything went well you will see:
 
 ![All tests succeed](<../.gitbook/assets/Screenshot from 2021-11-23 16-50-46.png>)
 
@@ -210,5 +210,5 @@ For more information on how to run your tests please visit this [link](https://j
 
 ## Conclusion
 
-This docs does not show all you can do with jest. Feel free to check out Jest documentation for other samples.
+This documentation does not show all you can do with jest. Feel free to check out Jest documentation for other samples.
 
