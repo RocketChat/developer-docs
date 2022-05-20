@@ -25,7 +25,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend): Promis
     }
 ```
 
-* The `createOAuth2Client` method takes in two parameters, `createOAuth2Client(this, this.config)` being the app itself and an object with some props as configuration.\
+* The `createOAuth2Client` method takes in two parameters, `createOAuth2Client(this, this.config)` being the app itself and an object with props as configuration.\
   Below is a sample of the config parameter as seen in the [definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2clientoptions.html)
 
 ```
@@ -43,7 +43,7 @@ private config = {
 
 ### Using OAuth2
 
-After setup, however you want to go about implementing OAuth2 on your app is dependent on you.
+After setup, however, you want to go about implementing OAuth2 on your app is dependent on you.
 
 The OAuth2Client gives you access to [multiple methods](oauth2-client.md#oauth2-setup) like _getAccessTokenForUser_, _getAccessTokenForUser_, _revokeUserAccessToken_ etc.
 

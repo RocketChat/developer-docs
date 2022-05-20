@@ -2,11 +2,11 @@
 
 ## How it works
 
-The Scheduler API gives apps the possibility of creating tasks that will run in a defined schedule. It can be a one time event or a recurring task. It uses [agenda.js](https://github.com/agenda/agenda) as backend, so [schedule syntax](https://github.com/agenda/human-interval) and internal processes are all according to its documentation.
+The Scheduler API gives apps the possibility of creating tasks that run in a defined schedule. It can be a one-time event or a recurring task. It uses [agenda.js](https://github.com/agenda/agenda) as backend, so [schedule syntax](https://github.com/agenda/human-interval) and internal processes are all according to its documentation.
 
-Detailed documentation on the API can be found at the [Apps Engine's docs](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/scheduler.html).
+Detailed documentation on the API can be found in the [Apps Engine's docs](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/scheduler.html).
 
-There's also an [example app](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/scheduler) that can be used as guide.
+There's also an [example app](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/scheduler) that can be used as a guide.
 
 ## Permissions
 
@@ -22,9 +22,9 @@ As per the [Permission System](https://docs.rocket.chat/apps-development/permiss
 
 ## How to use it
 
-### Registering job functions \(processors\)
+### Registering job functions (processors)
 
-To use the Scheduler API you'll need two things: the functions to be run as jobs \(we call them `processors`\) and the schedule in which they will be run on. This is configured in the app's `extendConfiguration` method. During the app's startup, the processors are registered to make them available for scheduling.
+To use the Scheduler API you'll need two things: the functions to be run as jobs (we call them `processors`) and the schedule in which they will be run on. This is configured in the app's `extendConfiguration` method. During the app's startup, the processors are registered to make them available for scheduling.
 
 ```typescript
 public async extendConfiguration(configuration: IConfigurationExtend) {
@@ -37,11 +37,11 @@ public async extendConfiguration(configuration: IConfigurationExtend) {
 }
 ```
 
-The `processor` is an `async` function and can receive arguments \(`jobData`\). The arguments are passed during scheduling.
+The `processor` is an `async` function and can receive arguments (`jobData`). The arguments are passed during scheduling.
 
 ### Starting a job
 
-To trigger the registered processor as a job, you must provide the `id` of the processor, the type of job it will be and optionally an object \(`data`\) that will be passed to the processor as argument \(`jobData`\). Available types are `RECURRING`, making the job run in a `interval`, and `ONETIME`, making the job run only once \(`when`\). Starting a job can be done when running a slashcommand, for example:
+To trigger the registered processor as a job, you must provide the `id` of the processor, the type of job it will be and optionally an object (`data`) that will be passed to the processor as argument (`jobData`). Available types are `RECURRING`, making the job run in a `interval`, and `ONETIME`, making the job run only once (`when`). Starting a job can be done when running a slashcommand, for example:
 
 ```typescript
 // slashcommand class
@@ -91,18 +91,17 @@ import { StartupType } from '@rocket.chat/apps-engine/definition/scheduler';
     ]);
 ```
 
-This will indicate that you want that particular processor to be scheduled as soon as it gets registered. You can define the "immediate scheduling" as a recurring job \(`StartupType.RECURRING`\) or a onetime job \(`StartupType.ONETIME`\). You can also pass data using the `data` object. It will work just like when you schedule a task using the `modify` accessor.
+This will indicate that you want that particular processor to be scheduled as soon as it gets registered. You can define the "immediate scheduling" as a recurring job (`StartupType.RECURRING`) or a one-time job (`StartupType.ONETIME`). You can also pass data using the `data` object. It will work just like when you schedule a task using the `modify` accessor.
 
-\(`data`\) here is not something that's passed to the processor or function as a living object or executable code. This \(`data`\) is a static piece of data that's passed to the processor's first argument.
+(`data`) here is not something that's passed to the processor or function as a living object or executable code. This (`data`) is a static piece of data that are passed to the processor's first argument.
 
-the signature of the processor function: 
+the signature of the processor function:
 
-``` 
+```
 (jobContext: IJobContext, read: IRead, modify: IModify, http: IHttp, persis: IPersistence) => Promise<void>
 ```
 
-First argument is the data object you're passing when actually scheduling the job; \(`[k: string]:any`\) . Rest are passed when the function is run.
-
+The first argument is the data object you're passing when actually scheduling the job; (`[k: string]:any`) . Rest are passed when the function is run.
 
 ### Canceling a job
 
@@ -113,7 +112,7 @@ To stop a job, all you have to do is pass the id of the job you want to stop
     await modify.getScheduler().cancelJob(jobId);
 ```
 
-It will stop the running job \(if any\).
+It will stop the running job (if any).
 
 ### Canceling all jobs from the app
 
@@ -122,4 +121,3 @@ To stop all the current running jobs from the app:
 ```typescript
     await modify.getScheduler().cancelAllJobs();
 ```
-
