@@ -4,9 +4,9 @@ description: Creating sub-commands in your slashcommand
 
 # Sub-command pattern
 
-In this recipe we will create a slashcommand that has two sub-commands. We will use the [App.RocketChat.Tester](https://github.com/RocketChat/Apps.RocketChat.Tester) as the base project for it. All the code for this recipe is in the branch recipes/sub-command-pattern.
+In this article, we will create a slashcommand that has two sub-commands. We will use the [App.RocketChat.Tester](https://github.com/RocketChat/Apps.RocketChat.Tester) as the base project for it. All the code for this recipe is in the branch recipes/sub-command-pattern.
 
-You can see the complete documentation on Slashcommands in Rocket.Chat Apps at [`ISlashCommand`'s docs page](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/islashcommand.html).
+You can see the complete documentation on Slashcommands in Rocket.Chat Apps at [ISlashCommand](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/slashcommands\_islashcommand.islashcommand.html)
 
 ## Moving parts
 
@@ -74,7 +74,7 @@ What this code tells us:
 * \[6] If `call` is match, log "Calling!"
 * \[7] If anything else will throw an error
 
-> Learn more about Slashcommands in Rocket.Chat Apps at [`ISlashCommand`'s docs page](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/islashcommand.html).
+> Learn more about Slashcommands in Rocket.Chat Apps at [ISlashCommand](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/slashcommands\_islashcommand.islashcommand.html)
 
 ## Register the slashcommand
 
@@ -135,8 +135,6 @@ In the `PhoneCommand.ts`, add the following private method:
 ```
 
 This function \[1] gets the user who called the command (in this case, yours), \[2] selects the room in which the command was run, sets the received string as the message and then \[4] sends the message in the room.
-
-> To know more about messaging, you can go to the [IMessageBuilder docs](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/imessagebuilder.html).
 
 After that, change the `console.log`s from the switch block of the `executor` method and call the `sendMessage` method instead:
 

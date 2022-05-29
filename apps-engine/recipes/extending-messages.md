@@ -4,11 +4,11 @@ description: How to edit messages so as to add custom fields and attachments.
 
 # Extending Messages
 
-In this recipe, we will create an app that is called through a slash command, sends a message and extends it in order to attach one image to it and add a custom field.
+In this article, we will create an app that is called through a slash command, sends a message, and extends it in order to attach one image to it and add a custom field.
 
 ## Attachments
 
-Rocket.Chat supports numerous types of attachments (and applicable **customisations** to these attachments) which can be added to messages. For instance, you are able to attach images, documents, videos or audio files to messages, and creating your own **attachment class** is the first step in order to do so.
+Rocket.Chat supports numerous types of attachments (and applicable **customisations** to these attachments) which can be added to messages. For instance, you are able to attach images, documents, videos, or audio files to messages, and creating your own **attachment class** is the first step in order to do so.
 
 In this recipe, we will need to create an `ImageAttachment` class in the project's root, which can be implemented as follows:
 
@@ -25,9 +25,9 @@ export class ImageAttachment implements IMessageAttachment{
 }
 ```
 
-Here we **\[1]** use a class' attribute with the **same identifier and type as in the `IMessageAttachment` interface**, which is essential to make your linked media visible to the user (since only the variables in your attachment class which are defined in the `IMessageAttachment` interface will be used to retrieve the attachment's media).
+Here we **\[1]** use a class' attribute with the **same identifier and type as in the `IMessageAttachment` interface**, which is essential to make your linked media visible to the user (since only the variables in your attachment class are defined in the `IMessageAttachment` interface will be used to retrieve the attachment's media).
 
-It is also possible to create your own classes for video or audio attachments, or even keep them all together in one single attachment class that may cover all of these possibilities. It's all up to you! Just be sure to use the same attributes described in the `IMessageAttachment.d.ts` file.
+It is also possible to create your own classes for video or audio attachments or even keep them all together in one single attachment class that may cover all of these possibilities. It's all up to you! Just be sure to use the same attributes described in the `IMessageAttachment.d.ts` file.
 
 {% hint style="info" %}
 The **audio** and **video** supported in Rocket.Chat message's attachments are the same as in HTML audio and video tags.
@@ -43,7 +43,7 @@ It is helpful to define some auxiliary methods inside our slash command class so
 
 ### Method: `sendMessage`
 
-Firstly, we will need to modify the [previoulsy given `sendMessage` method](https://docs.rocket.chat/apps-development/recipes/sub-command-pattern#bonus-print-the-texts-in-the-chat) so that the message's ID is returned after the message has been sent. Thus, the method must now return a `Promise<string>` instead of a `Promise<void>`.
+Firstly, we will need to modify the [previously given `sendMessage` method](https://docs.rocket.chat/apps-development/recipes/sub-command-pattern#bonus-print-the-texts-in-the-chat) so that the message's ID is returned after the message has been sent. Thus, the method must now return a `Promise<string>` instead of a `Promise<void>`.
 
 The resulting `sendMessage` method is given below:
 
