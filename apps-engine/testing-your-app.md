@@ -8,7 +8,7 @@ This guide shows you how to run a unit test on your app.
 
 ## Requirements
 
-You should to meet the following dependencies. Visit the corresponding sites to follow how to set them up.&#x20;
+Please make sure you meet the following dependencies. Visit the corresponding sites to follow how to set them up.&#x20;
 
 * [Jest](https://www.npmjs.com/package/jest)
 * [@Types/Jest](https://www.npmjs.com/package/@types/jest)
