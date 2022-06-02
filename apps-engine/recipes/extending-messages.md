@@ -43,7 +43,7 @@ It is helpful to define some auxiliary methods inside our slash command class so
 
 ### Method: `sendMessage`
 
-Firstly, we will need to modify the [previously given `sendMessage` method](https://docs.rocket.chat/apps-development/recipes/sub-command-pattern#bonus-print-the-texts-in-the-chat) so that the message's ID is returned after the message has been sent. Thus, the method must now return a `Promise<string>` instead of a `Promise<void>`.
+Firstly, we will need to modify the [previously given `sendMessage` method](https://developer.rocket.chat/apps-engine/recipes/sub-command-pattern#bonus-print-the-texts-in-the-chat) so that the message's ID is returned after the message has been sent. Thus, the method must now return a `Promise<string>` instead of a `Promise<void>`.
 
 The resulting `sendMessage` method is given below:
 
