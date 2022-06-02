@@ -4,17 +4,17 @@
 
 ### Interfaces
 
-[Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types) are a typescript feature that can enforce a class meets a particular contract. The Rocket.Chat Apps-Engine provides various kinds of event interfaces that you can implement one or more of them for your app.
+[Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types) are a typescript feature that can enforce a class meets a particular contract. The Rocket.Chat Apps-Engine provides various event interfaces that you can implement for your app.
 
-Implementing an event interface if you want to listen to this event and handle its payload data. Typically, each interface contains one method that will be called before/after a Rocket.Chat event.
+Implement an event interface if you want to listen to this event and handle its payload data. Typically each interface contains one method that will be called before/after a Rocket.Chat event.
 
 {% hint style="info" %}
-Some old event interface, for instance, the IPreMessageSentPrevent interface contains two methods: one is `excutePreMessageSentPrevent`, which is the real event handler; and the other one is `checkPreMessageSentPrevent`, which is used to signal to Apps-Engine whether the real event handler should actually be executed. We are going to deprecate `check*` methods and won't add `check*` methods to event interfaces anymore. Please avoid using them as much as possible.
+For instance, the IPreMessageSentPrevent interface contains two methods: one is `excutePreMessageSentPrevent`, which is the real event handler; and the other one is `checkPreMessageSentPrevent`, which is used to signal to Apps-Engine whether the real event handler should actually be executed. We are going to deprecate `check*` methods and won't add `check*` methods to event interfaces anymore. Please avoid using them as much as possible.
 {% endhint %}
 
 ### Handlers
 
-Handlers are essential "listeners" for different events, except there are various ways to handle an event. When something happens there are `pre` and `post` handlers. The set of `pre` handlers happens before the event is finalized. The set of `post` handlers happens after the event is finalized. With that said, the rule of thumb is that if you are going to modify, extend, or change the data backing the event then that should be done in the `pre` handlers. If you are simply wanting to listen for when something happens and not modify anything, then the `post` is the way to go.
+Handlers are essential "listeners" for different events, except there are various ways to handle an event. When something happens there are `pre` and `post` handlers. The set of `pre` handlers happens before the event is finalized. The set of `post` handlers happens after the event is finalized. With that said, the rule of thumb is: if you are going to modify, extend, or change the data backing the event then that should be done in the `pre` handlers. If you are simply wanting to listen for when something happens and not modify anything, then the `post` is the way to go.
 
 The order in which they happen is:
 
@@ -30,7 +30,7 @@ Here is an explanation of what each of them means:
 * **Modify**: This is ran and allows for destructive changes to the data (change any and everything).
 * Post**Event**: Is mostly for simple listening and no changes can be made to the data.
 
-For simplicity consideration, we are gradually moving to the new pattern. There will be only two types of event interfaces added later:
+For simplicity, we are gradually moving to the new pattern. There will be only two types of event interfaces added later:
 
 * IPre**Event**
 * IPost**Event**
@@ -66,7 +66,7 @@ export class MessageEventsApp extends App implements IPreMessageSentPrevent {
 
 ![Message prevented by app](<../../.gitbook/assets/image (18).png>)
 
-And you will see this in the server console
+And you will see the following in the server console.
 
 ```javascript
 A Rocket.Chat App prevented the message sending. {

@@ -4,27 +4,47 @@ The message object is the very soul of a conversation. It encapsulates all the i
 
 The message type property can been found [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/app/lib/lib/MessageTypes.ts).
 
-The message object contains these fields:
+The message object contains these fields.
 
-* `_id`: The message id
-* `rid`: The room id - Identify the room the message belongs
-* `msg`: The textual message
-* `ts`: The message time stamp (date of creation on client)
-* `u`: The user that sent the message
-* `_updatedAt`: The time stamp when the message got saved on the server
-* `editedAt`: _(Optional)_ The time stamp of when the message was edited
-* `editedBy`: _(Optional)_ The user that edited the message
-* `urls`: _(Optional)_ A collection of URLs metadata. Available when the message contains at least one URL
-* `attachments`: _(Optional)_ A collection of [attachment objects](../rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/postmessage.md#attachments-detail), available only when the message has at least one attachment
-* `alias`: _(Optional)_ A way to display the message is "sent" from someone else other than the user who sent the message
-* `avatar`: _(Optional)_ A url to an image, that is accessible to anyone, to display as the avatar instead of the message user's account avatar
-* `groupable`: _(Optional)_ Boolean that states whether or not this message should be grouped together with other messages from the same user
-* `parseUrls`: _(Optional)_ Whether Rocket.Chat should try and parse the urls or not
+| Field Name                  | Description                                                                                                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `_id`                       | The unique id for the message.                                                                                                                                                                          |
+| `rid`                       | The unique id for the room. This will identify the room that the message belongs to. Example: '`GENERAL`'                                                                                               |
+| `msg`                       | The textual message                                                                                                                                                                                     |
+| `tmid`                      | The unique identifier for the message thread. Example: '`7aDSXtjMA3KPLxLjt`'                                                                                                                            |
+| `ts`                        | A timestamp of when the message was created. (The date of creation on client). Example: '2019-04-08T13:15:52.017Z'                                                                                      |
+| `mentions`                  | Identifies (type: "type of the mention; either user or team", \_id: "id of the user that is mentioned", username: "username of the user that is mentioned", name: name of the user that is mentioned).  |
+| `u`                         | The user who sent the message (either the \_id or username or name).                                                                                                                                    |
+| `blocks`                    | If a uikit message, then the uikit will block components.                                                                                                                                               |
+| `md`                        | A markdown object                                                                                                                                                                                       |
+| `starred`                   | A list of users have this starred the message (list of user Ids (\_id)                                                                                                                                  |
+| `pinned`                    | Identifies if the message is pinned or not.                                                                                                                                                             |
+| `unread`                    | Identifies if the message unread or not.                                                                                                                                                                |
+| `drid`                      | The direct room id (if belongs to a direct room).                                                                                                                                                       |
+| `_updatedAt`                | A timestamp of when the message got saved on the server.                                                                                                                                                |
+| `editedAt`_(Optional)_.     | A timestamp of when the message was edited                                                                                                                                                              |
+| `editedBy` _(Optional)_     | The user who edited the message.                                                                                                                                                                        |
+| `urls (`_Optional_`)`       | A collection of URLs metadata. Available when the message contains at least one URL.                                                                                                                    |
+| `attachments(`_Optional_`)` | A collection of [attachment objects](../rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/postmessage.md#attachments-detail), available only when the message has at least one attachment. |
+| `alias(`_Optional_`)`       | A way to display the message is "sent" from someone else other than the user who sent the message                                                                                                       |
+| `avatar(Optional)`          | A url to an image, that is accessible to anyone, to display as the avatar instead of the message user's account avatar                                                                                  |
+| `groupable(Optional)`       | Boolean that states whether or not this message should be grouped together with other messages from the same user                                                                                       |
+| `parseUrls(Optional)`       | Identifies whether Rocket.Chat should try and parse the urls or not                                                                                                                                     |
+| `tlm(Optional)`             | The thread last message, is used to inform the last time some message was sent inside the thread.                                                                                                       |
 
 The user presented on `u` and `editedBy` fields are a simplified version of the user information:
 
 * `_id`: The user id
 * `username`: The username
+* name: The name
+
+```
+// "u": {
+                "_id": "p4a8YxvLQEHmiBKTS",
+                "username": "marcos.defendi",
+                "name": "Marcos Defendi"
+            },
+```
 
 The URL metadata contains several informational fields:
 

@@ -19,7 +19,7 @@ Get thread messages. It supports the [Offset, Count, and Sort Query Parameters](
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
-     http://localhost:3000/api/v1/chat.getThreadMessages?tmid=7aDSXtjMA3KPLxLjt
+     http://localhost:3000/api/v1/chat.getThreadMessages?tmid=7aDSXtjMA3KPLxLjt&tlm=2019-04-08T14:40:27.724Z
 ```
 
 ## Example Result
