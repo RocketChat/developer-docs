@@ -17,9 +17,9 @@ Gitpod hosts the entire development environment and you will be able to contribu
 *   Start your workspace and link it to your GitHub account if necessary.
 
     A workspace will be created and loaded with a familiar Visual Studio Code environment
-*   Next, start a terminal in your workspace and install [meteor](https://www.meteor.com).&#x20;
+*   Next, start a terminal in your workspace and install [meteor](https://www.meteor.com).
 
-    Make sure you install the correct version of meteor. As of the time of this writing Rocket.Chat uses `meteor@2.2`.&#x20;
+    Make sure you install the correct version of meteor. As of the time of this writing Rocket.Chat uses `meteor@2.2`.
 
     To know which version you need, consult [this](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.meteor/release) file (tracking the current development branch, i.e. the most up to date).
 * Then run the following command passing in the release you want
@@ -52,7 +52,7 @@ export PATH=$PATH:/home/gitpod/.meteor
 yarn # installs the dependencies for all projects
 ```
 
-* Now set your `ROOT_URL`, without it Rocket.Chat server might misbahave.
+* Now set your `ROOT_URL`, without it Rocket.Chat server might misbehave.
 
 ```
 export ROOT_URL=$(gp url 3000)
