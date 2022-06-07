@@ -12,7 +12,7 @@ Can be found in **Administration >> Settings >>** [**Layout**](https://docs.rock
 
 Rocket.Chat uses CSS variables to store key values when styling. Rocket.Chat recommends only overwriting the CSS variables, as you will have more control over what will be changed.
 
-You can find the full list of variables here
+You can find the full list of variables [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/app/theme/client/imports/general/variables.css)
 
 ## Custom Scripts
 
@@ -32,7 +32,7 @@ Custom Script that will run whenever a user that is logged in accesses your serv
 
 ## Email Templates
 
-Here you can configure various email settings. We will be going over only email templating sections found in the administration menu. Here you can use HTML for formatting. You can also use placeholders that will be changed to actual data when sending (for example \[email] will turn into the user's email). You can also use Rocket.Chat internationalization engine by wrapping the sentence string with `{}`, see all our internationalization strings [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/packages/rocketchat-i18n/i18n/en.i18n.json#L1198)
+Here you can configure various email settings. We will be going over only email templating sections found in the administration menu. Here you can use HTML for formatting. You can also use placeholders that will be changed to actual data when sending (for example \[email] will turn into the user's email). You can also use Rocket.Chat internationalization engine by wrapping the sentence string with `{}`, see all our internationalization strings [here](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n/i18n)
 
 ### Email Address Changed
 

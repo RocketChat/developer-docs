@@ -22,4 +22,4 @@ We cannot extend further on any specific customization that can be made with the
 
 ## Deploying Customize version of Rocket.Chat
 
-To build or create a custom deployment option of Rocket.Chat be it a Docker image or snap package, we advised you to take a look at our [Dockerfile ](customizing-rocket.chat-from-code.md#undefined)and [build script](customizing-rocket.chat-from-code.md#undefined) which contains everything you need to work with.
+To build or create a custom deployment option of Rocket.Chat be it a Docker image or snap package, we advised you to take a look at our [Dockerfile](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.docker/Dockerfile) and [build script](https://github.com/RocketChat/Rocket.Chat/actions/workflows/build\_and\_test.yml) which contains everything you need to work with.
