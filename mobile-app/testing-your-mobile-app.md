@@ -8,7 +8,7 @@ We use [Reactotron](https://github.com/infinitered/reactotron) to inspect logs, 
 
 ### Unit tests
 
-We use [Jest](https://jestjs.io) and [Storybook](https://storybook.js.org) on our tests.
+We use [Jest](https://jestjs.io/) and [Storybook](https://storybook.js.org/) on our tests.
 
 ### **Storybook**
 
@@ -36,7 +36,7 @@ We use [Detox](https://github.com/wix/Detox) framework to end-to-end test our ap
 
 ### Code style
 
-We use [ESLint](https://eslint.org) to enforce code style and best practices. We have a pre-commit hook enforcing commits to follow our lint rules.
+We use [ESLint](https://eslint.org/) to enforce code style and best practices. We have a pre-commit hook enforcing commits to follow our lint rules.
 
 To check for lint issues on your code, run this on your terminal:
 
@@ -46,7 +46,7 @@ yarn lint
 
 ### Code formatting
 
-We use [Prettier](https://prettier.io) to format the code style in our project. We have a pre-commit hook enforcing commits to follow our style guides.
+We use [Prettier](https://prettier.io/) to format the code style in our project. We have a pre-commit hook enforcing commits to follow our style guides.
 
 To fix your code formatting issues, run this on your terminal:
 
@@ -54,4 +54,4 @@ To fix your code formatting issues, run this on your terminal:
 yarn prettier
 ```
 
-[Check this link](https://prettier.io/docs/en/editors.html) to see how to integrate Prettier with your preferred code editor, and run Prettier when save your file for example.
+[Check this link](https://prettier.io/docs/en/editors.html) to see how to integrate Prettier with your preferred code editor, and run Prettier when saving your file for example.

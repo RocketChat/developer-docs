@@ -1,4 +1,5 @@
 # Get subscription room
+`NOTE`: The **unread** counter value depends on your settings at the Administration => General section.
 
 Get the subscription by room id.
 

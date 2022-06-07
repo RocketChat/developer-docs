@@ -1,4 +1,0 @@
-# TypeScript
-
-Document under development
-

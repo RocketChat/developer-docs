@@ -5,7 +5,7 @@ Rocket.Chat is open source and flexible for customization and modifications.
 {% hint style="warning" %}
 We do not encourage developers to make changes from their fork but instead focus on building the same codebase that can be customized for every user.
 
-So if you are customizing Rocket.Chat code base we are assuming you are a developer.
+So if you are customizing Rocket.Chat code base we are assuming you are a developer..
 {% endhint %}
 
 To customize Rocket.Chat from the code, a developer should be able to take a look at our codebase and see how to build and then package in their desired format

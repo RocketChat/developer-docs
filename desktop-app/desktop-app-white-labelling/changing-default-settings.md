@@ -42,7 +42,7 @@ const copyright = `© 2016-${new Date().getFullYear()}, Rocket.Chat`;
 
 ## Building and Packaging
 
-We use [electron-builder](https://www.electron.build) to "compile" and produce the executable files, just check the file `electron-builder.json`
+We use [electron-builder](https://www.electron.build/) to "compile" and produce the executable files, just check the file `electron-builder.json`
 
 Here you probably want to change all references to the term `rocket.chat/rocket/chat.rocket/rocketchat` according to what each setting means
 

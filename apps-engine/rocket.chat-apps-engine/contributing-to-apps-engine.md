@@ -6,11 +6,11 @@ description: >-
 
 # Contributing to Apps Engine
 
-Being Open Source, we always welcome contributors to help us out with the development of the  ultimate chat platform. You can checkout our Apps Engine repository here
+Being Open Source, we always welcome contributors to help us out develope the ultimate chat platform. You can check out our Apps Engine repository here.
 
 {% embed url="https://github.com/RocketChat/Rocket.Chat.Apps-engine" %}
 
-An Awesome place to start is looking at our open issues and see if you can help out there.
+An awesome place to start is looking at our open issues and determining if you can help us with them.
 
 {% hint style="info" %}
 When developing new functionalities, you need to integrate the local version of the Apps-Engine with your local version of Rocket.Chat.
@@ -32,7 +32,10 @@ npm install
 npm run compile
 ```
 
-* Setup your Rocket.Chat environment following the guide on [rocket.chat-server](../../rocket.chat/rocket.chat-server/ "mention")
+* Setup your Rocket.Chat environment following the guide on&#x20;
+
+[rocket.chat-server](../../rocket.chat/rocket.chat-server "mention")
+
 * After setting up, navigate into the directory and run
 
 ```
@@ -49,7 +52,7 @@ Whenever you make changes to the engine, run `npm run compile` again - meteor wi
 
 ## Troubleshooting Apps Engine Development
 
-1. Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running, you might run into errors similar to these:
+1. Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running; you run into errors similar to these:
 
 ```
 Unable to resolve some modules:
@@ -62,9 +65,9 @@ If you notice problems related to these missing modules, consider running:
   meteor npm install --save @rocket.chat/apps-engine
 ```
 
-Simply restart the meteor process and it should be fixed.
+&#x20;Restart the meteor process, and it should be fixed.
 
-&#x20;2\. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE` will cause the following error :-
+2\. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE`  causes the following error :-
 
 ```
 npm ERR! code ENOENT
@@ -77,7 +80,7 @@ npm ERR! enoent This is related to npm not being able to find a file.
 npm ERR! enoent 
 ```
 
-Here `PATH_TO_ROCKETCHAT` is the path to the main Rocket.Chat server repo in your system To correct this we reinstall the package once again deleting the previous package
+Here `PATH_TO_ROCKETCHAT` is the path to the main Rocket.Chat server repo in your system. To fix this, we reinstall the package once again and delete the previous package
 
 ```
 ~/Rocket.Chat$ rm -rf node_modules/@rocket.chat/apps-engine

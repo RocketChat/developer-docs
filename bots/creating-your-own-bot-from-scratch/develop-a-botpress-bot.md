@@ -1,6 +1,6 @@
 # Develop a Botpress Bot
 
-[Botpress](https://botpress.com) is an on-prem, open-source chatbot building platform for businesses.
+[Botpress](https://botpress.com/) is an on-prem, open-source chatbot building platform for businesses.
 
 ## Botpress Quick Start Guide
 

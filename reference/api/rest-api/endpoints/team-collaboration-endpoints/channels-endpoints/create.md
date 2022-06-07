@@ -2,17 +2,23 @@
 
 Creates a new public channel, optionally including specified users. The channel creator is always included.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.create` | `yes` | `POST` |
+{% hint style="info" %}
+Channel naming has restraints following the regex filter `[0-9a-zA-Z-_.]+` by default.
+
+This can be modified in the **Admin** > **General** > **UTF8**. Channel names should not allow for any whitespaces.
+{% endhint %}
+
+| URL                       | Requires Auth | HTTP Method |
+| ------------------------- | ------------- | ----------- |
+| `/api/v1/channels.create` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `name` | `channelname` | Required | The name of the new channel |
-| `members` | `["rocket.cat"]` | Optional   Default: `[]` | The users to add to the channel when it is created. |
-| `readOnly` | `true` | Optional   Default: `false` | Set if the channel is read only or not. |
+| Argument   | Example          | Required                    | Description                                         |
+| ---------- | ---------------- | --------------------------- | --------------------------------------------------- |
+| `name`     | `channelname`    | Required                    | The name of the new channel                         |
+| `members`  | `["rocket.cat"]` | Optional   Default: `[]`    | The users to add to the channel when it is created. |
+| `readOnly` | `true`           | Optional   Default: `false` | Set if the channel is read only or not.             |
 
 ## Example Call
 
@@ -49,6 +55,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.13.0 | Added |
-
+| ------- | ----------- |
+| 0.13.0  | Added       |

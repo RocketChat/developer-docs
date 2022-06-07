@@ -6,31 +6,29 @@ You can set up and run a Rocket.Chat development environment on your Mac OSX.
 This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,i5
 {% endhint %}
 
-{% hint style="success" %}
-Currently, Rocket.Chat uses at least`meteor 2.5.6` so there is no need to use[ the Rosetta terminal](https://support.apple.com/en-us/HT211861) for M1 chips, as this version of meteor supports it.
-{% endhint %}
+Currently, Rocket.Chat uses at least `meteor 2.5.6` which has support for M1 chips. If you are to run an environment with a lesser version, consider using[ the Rosetta terminal](https://support.apple.com/en-us/HT211861) for M1 chips.
 
-* Install Meteor by executing
+* Install Meteor by executing:
 
 ```
 curl https://install.meteor.com/ | sh
 ```
 
-Meteor comes pre-installed with npm and node, verify by executing
+Meteor comes pre-installed with npm and node, verify by executing:
 
 ```
 meteor node -v
 meteor npm -v
 ```
 
-* Install Yarn if you don't already have it on your system. This is the recommended package manager
+* Install Yarn if you don't already have it on your system. Yarn is the recommended package manager
 
 ```
 npm install --global yarn
 ```
 
-{% hint style="warning" %}
-As of this point of writing, rocket.chat@4.8.0-develop requires `yarn version 3.2.0` and `node version 14.18.3.` This information can be found in the `package.json`
+{% hint style="success" %}
+Information on the various versions of packages needed can be found in the `package.json`
 {% endhint %}
 
 * To easily manage the node versions on your machine, install the [n node package manager](https://www.npmjs.com/package/n) and switch to the desired node version you want to use
@@ -60,6 +58,6 @@ yarn
 yarn dev
 ```
 
-When done, you should see something like below printed on your terminal and the local server running on `http://localhost:3000`
+When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
 
-![](<../../.gitbook/assets/image (51).png>)
+![Rocket.Chat server successfully running on MacOSX](<../../.gitbook/assets/image (51).png>)

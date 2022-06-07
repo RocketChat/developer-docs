@@ -11,7 +11,7 @@ You are required to have the following installed already on your machine before 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
 * [node-gyp](https://github.com/nodejs/node-gyp#installation)
-* [Yarn](http://yarnpkg.com) is recommended instead of npm.
+* [Yarn](http://yarnpkg.com/) is recommended instead of npm.
 
 ## Get the Code
 

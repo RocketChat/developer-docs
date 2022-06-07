@@ -7,7 +7,7 @@
 
 ![](../../.gitbook/assets/21.png)
 
-* Also disable “Production”, if you’re trying in debug mode
+* Also disable “Production” if you’re trying in debug mode
 * Expand “Credentials and Keys” section
 
 ## Configuring Android
@@ -41,7 +41,7 @@
 
 * Copy the contents of your development PEM files and password into APN Dev Key, APN Dev Cert and APN Dev Passphrase
 * Copy the contents of your production PEM files and password into APN Key, APN Cert and APN Passphrase
-* You can use `cat` on terminal to get the content of your PEM files
+* You can use `cat` on the terminal to get the content of your PEM files
   * `cat PushKey.pem`
 * Save and restart your server
 * Log into the server as the same user on your mobile device and close it (it won’t receive push notification, if it’s open)

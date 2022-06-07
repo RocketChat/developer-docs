@@ -182,11 +182,11 @@
 
 * On “Development SSL Certificate”, click “Create Certificate”
 * Follow Apple’s tutorial to generate a Certificate Signing Request: [https://help.apple.com/developer-account/#/devbfa00fef7](https://help.apple.com/developer-account/#/devbfa00fef7)
-* Select the certificate you created an click “Continue”
+* Select the certificate you created and click “Continue”
 
 ![](https://lh4.googleusercontent.com/pv8BFR0k34C4G72y1-KxqgHmKbTMN59gCI2p2NbxevJNG7TtW2G3fpPhYjds-tSnbLCEdB9xj6N5P4XCxtJwaKAJSP2diMoP8jp3AN-pdIWlYfcaIDsVabzq1qvQ8aUBcAzOWPxn)
 
-* Download the certificate and install it on your machine (follow instructions on the screen)
+* Download the certificate and install it on your machine (follow the instructions on the screen)
 
 ![](https://lh6.googleusercontent.com/bxWWaArRsUZ3XrQ3s5ldGTwuLjwc9BhqvEOODJWTe8ep5rKdfqCVMWeZF0ZBg0oWS69Uwr\_0WBApU9oLMZdqiG8G\_DX7UEqqsjE\_OAsjPyIxXKSNMpjFGJgVf6H7GUUzArkmCBAP)
 
@@ -199,17 +199,17 @@
 
 #### Production SSL Certificate
 
-* On “Production SSL Certificate”, click “Create Certificate”
+* On “Production SSL Certificate” click “Create Certificate”
 * Follow Apple’s tutorial to generate a Certificate Signing Request: [https://help.apple.com/developer-account/#/devbfa00fef7](https://help.apple.com/developer-account/#/devbfa00fef7)
-* Select the certificate you created an click “Continue”
+* Select the certificate you created and click “Continue”
 
 ![](https://lh5.googleusercontent.com/bdlcvworJPKW1iUzy3G\_wAASYOILEpCWDkI7BRdl7uk\_JD0FqK7n-\_M7rOY-Nd194IkU0KbaGjRRR2Zxf93xYyxUqW129t7lDaZErzqQzhYriYVxYn2qPPFjA3mcnN6YCM6zOqcu)
 
-* Download the certificate and install it on your machine (follow instructions on the screen)
+* Download the certificate and install it on your machine (follow the instructions on the screen)
 
 ![](https://lh3.googleusercontent.com/qEWMSoSAlC8ETDC3sVKOsbNo5bM34ZbSrKRavq\_XP\_b2KdsUaC1H8NCUfE-cAF3k-JAxEk4pyWk6S-NEoPCKcTA56IwcETJiMgQK2sRvpuF\_kzaWBrDTEF1y0Lz6ewzUDbgfj6I1)
 
-* After installing it, “Keychain Access” should have opened automatically on your Mac
+* After installing it, “Keychain Access” should have opened automatically on your mac
 * Export the certificate to generate a .p12 file
 
 ![](https://lh3.googleusercontent.com/WCLBhK5CneauBC7xQH3atoiHS3HE9YvJ7IaC5hCdGQVh3sx8CtF2u4vjcBc1e-LVl0zWXTwhrXzct8HcGLAk6D3A7eZHYiVHTzsAGdMNZ2jGADKi0jwXFiYoVhOyytvfiRqm4HuV)

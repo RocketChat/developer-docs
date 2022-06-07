@@ -1,8 +1,12 @@
 # Contribute to Rocket.Chat
 
-Our ecosystem can only grow through the contributions of our community. There are many ways to contribute to Rocket.Chat! &#x20;
+Our ecosystem can only grow through the contributions of our community. There are many ways to contribute to Rocket.Chat
 
-#### Why Contribute to Rocket.Chat?
+{% hint style="info" %}
+Please review and sign our CLA at [https://cla-assistant.io/RocketChat/Rocket.Chat](https://cla-assistant.io/RocketChat/Rocket.Chat) to get your contributions accepted.
+{% endhint %}
+
+## Why Contribute to Rocket.Chat?
 
 * Make the project better
 * Fixing a bug that is bugging you
@@ -14,8 +18,16 @@ Our ecosystem can only grow through the contributions of our community. There ar
 * Solving problems to make it more reliable
 * Useful on your resume
 
-To join other contributors:
+**To join other contributors:**
 
-1. **Create an account on**[ **open.rocket.chat**](https://open.rocket.chat/home)****
-2. **Create an account on** [**forums**](https://forums.rocket.chat)****
-3. **And visit our** [**GitHub Repository**](https://github.com/RocketChat/Rocket.Chat)****
+* Create an account on our open server on [https://open.rocket.chat](https://open.rocket.chat/home)
+
+{% embed url="https://open.rocket.chat" %}
+
+* Create an account on our Community Forum
+
+{% embed url="https://forums.rocket.chat" %}
+
+* And visit our [GitHub Repository](https://github.com/RocketChat/Rocket.Chat)
+
+{% embed url="https://github.com/RocketChat/Rocket.Chat" %}

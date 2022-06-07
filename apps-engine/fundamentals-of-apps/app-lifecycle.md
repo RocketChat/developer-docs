@@ -30,7 +30,7 @@ public async initialize(configurationExtend: IConfigurationExtend, environmentRe
 }
 ```
 
-This method allows the App to control its internal initialization process, overriding the default one.
+`initialize` method allows the App to control its internal initialization process, overriding the default one.
 
 ### `extendConfiguration`
 
@@ -40,7 +40,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 }
 ```
 
-This method is executed as part of the default initialization process of the App. It enables the App to provide robust functionalities such as API Endpoints or Slash Commands using the [configuration accessor](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors_iconfigurationextend.iconfigurationextend.html).
+`extendConfiguration` method is executed as part of the default initialization process of the App. It enables the App to provide robust functionalities such as API Endpoints or Slash Commands using the [configuration accessor](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_iconfigurationextend.iconfigurationextend.html).
 
 ### `onEnable`
 
@@ -60,7 +60,7 @@ public async onDisable(configurationModify: IConfigurationModify): Promise<void>
 }
 ```
 
-This method is executed during the disabling process of the App. It doesn't allow the App to prevent the disabling from happening.
+`onEnable` method is executed during the disabling process of the App. It doesn't allow the App to prevent the disabling from happening.
 
 ### `onSettingUpdated`
 
@@ -70,4 +70,4 @@ public async onSettingUpdated(setting: ISetting, configurationModify: IConfigura
 }
 ```
 
-This method is executed _after_ a setting provided by the App is updated by an admin in the _App Administration Page_. See **Settings (coming soon)** for more information on how to manage App settings.
+`onSettingUpdated` method is executed _after_ a setting provided by the App is updated by an admin in the _App Administration Page_. See **Settings (coming soon)** for more information on how to manage App settings.

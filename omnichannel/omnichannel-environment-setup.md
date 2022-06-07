@@ -4,7 +4,7 @@ The RocketChat omnichannel feature provides a multi-channel environment for comm
 
 ## Setting Up LiveChat
 
-The Rocket.Chat LiveChat platform, is developed with [Preact](https://preactjs.com).
+The Rocket.Chat LiveChat platform, is developed with [Preact](https://preactjs.com/).
 
 It altogether is a very small lightweight application designed to facilitate B2C (Business-to-customer) communication between Agents and website visitors.
 
@@ -18,7 +18,7 @@ You are required to have the following installed already on your machine before 
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
-* [Yarn](http://yarnpkg.com) is recommended instead of npm.
+* [Yarn](http://yarnpkg.com/) is recommended instead of npm.
 
 ### Get the LiveChat Code
 

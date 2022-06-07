@@ -8,7 +8,7 @@ In this recipe, we will register a public API endpoint that receives data from e
 
 ## Register an API endpoint
 
-First of all, let's create a new Rocket.Chat app from scratch using `rc-apps create.` \(If `rc-apps` is an unrecognized command, please check out the [Getting Started](https://docs.rocket.chat/apps-development/getting-started) section to make initial preparations first\).
+First of all, let's create a new Rocket.Chat app from scratch using `rc-apps create.` (If `rc-apps` is an unrecognized command, please check out the [Getting Started ](https://developer.rocket.chat/apps-engine/getting-started)section to make initial preparations first).
 
 In the main App class, we need to implement the `extendConfiguration` method, within which we use `configuration.api.provideApi` to register a new API endpoint `new Endpoint(this)`.
 
@@ -74,13 +74,13 @@ export class Endpoint extends ApiEndpoint {
 
 In the file `endpoint.ts`, we created a class that extends the base class `ApiEndpoint`. We defined the path of the API endpoint by assigning the value `'api'` to the public property `path`.
 
-Then, let's implement the method `post`**, which will be executed every time once the API endpoint receives an HTTP POST request from an external service.** Following our original idea - forwarding any data received to the \#general channel, we obtain the request content by `request.content` and create a message containing the request content, then send it to the channel `#general`.
+Then, let's implement the method `post`**, which will be executed every time once the API endpoint receives an HTTP POST request from an external service.** Following our original idea - forwarding any data received to the #general channel, we obtain the request content by `request.content` and create a message containing the request content, then send it to the channel `#general`.
 
 ## Test the result
 
-Using the CLI command `rc-apps deploy` to deploy the app to your Rocket.Chat server first. Navigate to _Rocket.Chat Admin -&gt; Apps -&gt; Apps Detailed Page_ to check the full endpoint URL you registered for the App.
+Using the CLI command `rc-apps deploy` to deploy the app to your Rocket.Chat server first. Navigate to _Rocket.Chat Admin -> Apps -> Apps Detailed Page_ to check the full endpoint URL you registered for the App.
 
-![](../../.gitbook/assets/image%20%2819%29%20%281%29.png)
+![](<../../.gitbook/assets/image (19) (1).png>)
 
 Open the terminal and use curl post some data to the endpoint. The result should be like below:
 
@@ -89,5 +89,4 @@ Open the terminal and use curl post some data to the endpoint. The result should
 {"messageId":"dREmKaR7qHyN98rtZ"}
 ```
 
-![](../../.gitbook/assets/image%20%2820%29.png)
-
+![](<../../.gitbook/assets/image (20).png>)
