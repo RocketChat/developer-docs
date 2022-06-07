@@ -12,17 +12,17 @@ We have developed an example app written in NodeJS in order to help you understa
 
 Configure how Rocket.Chat will call the third party system to either login or to verify if the user is already logged in, by setting `API URL` and `API Method` fields.
 
-`API URL` refers to endpoint on the third-party system that will check if the user is already logged in to that system. The `API Method` is used to select the submission method Rocket.Chat will use to submit information to the `API URL` (for instance using `POST`).
+`API URL` refers to an endpoint on the third-party system that will check if the user is already logged in to that system. The `API Method` is used to select the submission method Rocket.Chat will use to submit information to the `API URL` (for instance, using `POST`).
 
-If the user has already logged into the third-party system, the `API URL` should communicate to Rocket.Chat and return a JSON object containing either a `token` or `loginToken` property, otherwise (if the user is not already logged in) the `API URL` should return an empty body with status `401`.
+If the user has already logged into the third-party system, the `API URL` should communicate to Rocket.Chat and return a JSON object containing either a `token` or `loginToken` property, otherwise (if the user is not already logged in) the `API URL` should return an empty body with the status `401`.
 
 The choice of which property `API URL` will return depends on how the third-party system decides to interface back with Rocket.Chat, as described in one of the two ways below:
 
 #### Using Rocket.Chat API
 
-If you have the user's password stored (or it is the same between your third party system and Rocket.Chat), you can use [Rocket.Chat's REST APIs](https://docs.rocket.chat/developer-guides/rest-api/authentication/login/) to log in the user, this way you will get an `authToken` back from Rocket.Chat that should be returned as `loginToken` by your endpoint.
+If you have the user's password stored (or it is the same between your third-party system and Rocket.Chat), you can use[ Rocket.Chat's REST APIs ](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)to log in the user, this way you will get an `authToken` back from Rocket.Chat that should be returned as `loginToken` by your endpoint.
 
-At this point, if the user does not have a Rocket.Chat account yet, you can either use Rocket.Chat API to [create an user](https://docs.rocket.chat/developer-guides/rest-api/users/create/) using a admin account or [register him](https://docs.rocket.chat/developer-guides/rest-api/users/register/).
+At this point, if the user does not have a Rocket.Chat account yet, you can either use Rocket.Chat API to [create a user](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint) using an admin account or [register him](https://docs.rocket.chat/developer-guides/rest-api/users/register/).
 
 After you log the user in, you should return a payload like the following:
 

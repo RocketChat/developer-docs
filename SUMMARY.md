@@ -615,7 +615,7 @@
           * [Get User's Presence](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence.md)
           * [Get User's Info](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-info.md)
           * [Get Users List](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-list.md)
-          * [Register Users](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-users.md)
+          * [Register User](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-user.md)
           * [Reset Avatar](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar.md)
           * [Set Avatar](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-avatar.md)
           * [Get Status](reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-status.md)
