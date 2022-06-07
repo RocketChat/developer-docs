@@ -6,11 +6,11 @@ Please answer the following questions before opening an issue.
 - [ ] This issue concerns the developer's docs
 
 > This template can be used to report
-> 
-> -[Existing Docs issues](#existing-docs)
-> 
-> -[New Docs request](#new-docs-request)
-> 
+>
+> - [Existing Docs issues](#existing-docs)
+>
+> - [New Docs request](#new-docs-request)
+>
 > **Clear out any irrelevant section**
 
 ## Existing Docs
