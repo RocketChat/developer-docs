@@ -26,17 +26,19 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
     `git clone https://github.com/RocketChat/Rocket.Chat.git`
 
     (you may want to fork the code on Github first, and then clone your fork)
-4. Change current working directory to the cloned repo location and change to `apps/meteor` directory
-5. Run `meteor --version` , this will download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file.
-6. Install yarn: `meteor npm install -g yarn`
-7.  Install modules
+4. Change the current working directory into  the cloned repo location\
+   `cd Rocket.Chat`
+5. Then navigate to `apps/meteor` and run `meteor --version` , this will download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file
+6. Install yarn globally\
+   `npm install yarn -g`
+7.  Back in the project root, install needed modules by running
 
-    `meteor yarn --cwd ../..`
+    `yarn`
 8.  Start building (the first build can _take 10 or more minutes_, and you may see various warnings or minor errors -- please be patient; subsequent dev builds after the first will be 5 minutes or less)
 
     ```
-    meteor yarn --cwd ../.. build
-    meteor yarn --cwd ../.. dev # it will build the sub projects and then run meteor project
+    yarn build
+    yarn dev # it will build the sub projects and then run meteor project
     ```
 
 The code is spread through the folders, `packages/` and `apps/meteor`, the latter contains the vast majority of the project's code.
