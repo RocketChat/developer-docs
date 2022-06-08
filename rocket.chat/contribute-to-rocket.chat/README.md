@@ -10,17 +10,17 @@ Please review and sign our CLA at [https://cla-assistant.io/RocketChat/Rocket.Ch
 
 * Make the project better
 * Fixing a bug that is bugging you
-* Adding functionality YOU and your users WANT
+* Adding functionality you and your users want
 * Meet cool people
 * The sincere appreciation of many users
-* General do-good glow :)
 * Make the project more in line with current norms
 * Solving problems to make it more reliable
 * Useful on your resume
+* General do-good glow :)
 
 **To join other contributors:**
 
-* Create an account on our open server on [https://open.rocket.chat](https://open.rocket.chat/home)
+* Create an account on our open server at [https://open.rocket.chat](https://open.rocket.chat/home)
 
 {% embed url="https://open.rocket.chat" %}
 
