@@ -2,7 +2,7 @@
 
 ## Crashlytics and Bugsnag
 
-Both iOS and Android applications use Crashlytics and Bugsnag to send crash information. Both platforms collect crash information from mobile apps, transmit, and store them securely on their servers for developer diagnosis. This transmitted data contains no users, channels, or groups information; it does not contain any message content. The collected content contains only anonymous application and system state information during the crash that can be helpful for diagnosis.
+Both iOS and Android applications use Crashlytics and Bugsnag to send crash information. Both platforms collect crash information from mobile apps, transmit it, and store them securely on their servers for developer diagnosis. This transmitted data contains no users, channels, or groups information; it does not contain any message content. The collected content contains only anonymous application and system state information during the crash that can be helpful for diagnosis.
 
 _These reports can be disabled on both iOS and Android if the user goes to the Settings screen and disables crash reports._
 

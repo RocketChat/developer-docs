@@ -1,6 +1,6 @@
 # Mobile App White Labelling
 
-In this guide we will cover how to rebrand Rocket.Chat Mobile Apps to suit your styling.
+In this guide, we will cover how to rebrand Rocket.Chat Mobile Apps to suit your styling.
 
 Here we will show you how to customize:
 
@@ -30,7 +30,7 @@ Here we will show you how to customize:
 * Create an account on [https://www.bugsnag.com/](https://www.bugsnag.com/)
 * Set `server`, `appGroup` and `appStoreId` on [app.json](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app.json#L5)
   * `appGroup` must be the same App Group created for the iOS app
-* Change app colors on [colors.ts](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app/constants/colors.ts)
+* Change app colors on [colors.ts](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/develop/app/lib/constants/colors.ts)
 
 ## Firebase
 
@@ -61,5 +61,3 @@ Here we will show you how to customize:
 {% content-ref url="configuring-push-notifications.md" %}
 [configuring-push-notifications.md](configuring-push-notifications.md)
 {% endcontent-ref %}
-
-###

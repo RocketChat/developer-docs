@@ -15,7 +15,7 @@ This document has been broken down into two separate sections, walking you throu
 
 If your server is publicly accessible, it is recommended that you use a service like [Let's Encrypt](https://letsencrypt.org/) to obtain your SSL certificates. A detailed guide for configuring your choice of SSL Reverse proxy servers is provided here: [Configuring SSL Reverse Proxy](https://docs.rocket.chat/installation/manual-installation/configuring-ssl-reverse-proxy/)
 
-**If you are using Ubuntu**, this can be configured automatically with the help of Snaps. A guide for which is provided here: [Installing Rocket.Chat on Ubuntu with Snaps](https://docs.rocket.chat/installation/manual-installation/ubuntu/snaps/)
+**If you are using Ubuntu**, this can be configured automatically with the help of Snaps. A guide for which is provided [here](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/snaps).
 
 ## The Rocket.Chat server is not accessible on the internet
 

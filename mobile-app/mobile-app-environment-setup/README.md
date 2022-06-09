@@ -14,7 +14,7 @@ You are required to have the following installed already on your machine before 
 * macOS with `XCode Command Line Tools` is needed to run the iOS version
 * Android Studio is needed to run the Android version
 
-Additionally, refer to [React Native environment setup](https://reactnative.dev/docs/environment-setup) to make sure everything is up and running. Follow the `React Native CLI Quickstart` section as we don't support Expo managed flow.
+Additionally, refer to [React Native environment set up](https://reactnative.dev/docs/environment-setup) to make sure everything is up and running. Follow the `React Native CLI Quickstart` section as we don't support Expo managed flow.
 
 ## Get the Code
 
@@ -67,8 +67,8 @@ Or if you can't help coding, triaging issues is a **great** way of helping.
 
 As soon as your changes are ready, you can open a Pull Request.
 
-The title of your PR should be descriptive, including either \[NEW], \[IMPROVEMENT] or \[FIX] at the beginning, e.g. \[FIX] App crashing on startup.
+The title of your PR should be descriptive, including either \[NEW], \[IMPROVEMENT], or \[FIX] at the beginning, e.g. \[FIX] App crashing on startup.
 
 You may share working results prior to finishing, please include \[WIP] in the title. This way anyone can look at your code: you can ask for help within the PR if you don't know how to solve a problem.
 
-Your PR is automatically inspected by various tools, check their response and try to improve your code accordingly. Requests that fail to build or have the wrong coding style won't be merged.
+Your PR is automatically inspected by various tools, check their response, and try to improve your code accordingly. Requests that fail to build or have the wrong coding style won't be merged.
