@@ -10,7 +10,7 @@ We provide a [prettier config](https://github.com/RocketChat/Rocket.Chat/blob/de
 
 ## JavaScript
 
-The eslint take charge of formatting all the javascript code. The Rocket.Chat codebase has migrated to using only typescript `.ts` files.
+The eslint takes charge of formatting all the javascript code. The Rocket.Chat codebase has migrated to using only typescript `.ts` files.
 
 Convention for React and Components are specified in the fuselage wiki.
 
@@ -18,7 +18,7 @@ Convention for React and Components are specified in the fuselage wiki.
 
 ## TypeScript
 
-The typescript convention is described in the fuselage Wiki
+The typescript convention is described in the fuselage Wiki.
 
 {% embed url="https://github.com/RocketChat/fuselage/wiki/Conventions#typescript" %}
 
