@@ -18,7 +18,7 @@ The build process is founded upon [rollup](https://rollupjs.org/) bundler which 
 
 ### Adding Node.js Modules
 
-To extend the app's functionalities with modules, always remember to differentiate between modules needed as `dependencies` and `devDependencies` in `package.json.` Like any other package depending project, only modules listed in `dependencies` will be included in the distributable final app.
+To extend the app's functionalities with modules, always remember to differentiate between modules needed as `dependencies` and `devDependencies` in `package.json.` Like any other package depending project, only modules listed in `dependencies` will be included in the final distributable app.
 
 ## Servers
 
@@ -71,7 +71,7 @@ If you cannot (or don't want to) bundle the file inside the app, you can create 
 
 ### **Unit tests**
 
-We use [Jest](https://jestjs.io/) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in `src` directory that match the glob pattern `*.(spec|test).{js,ts,tsx}` performs tests on them.
+We use [Jest](https://jestjs.io/) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in the `src` directory that match the glob pattern `*.(spec|test).{js,ts,tsx}` and performs tests on them.
 
 Run this command to execute tests on your changes.
 

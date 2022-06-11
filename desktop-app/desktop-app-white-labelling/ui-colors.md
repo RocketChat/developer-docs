@@ -1,20 +1,20 @@
 # UI Colors
 
 {% hint style="info" %}
-NB: The UI is in active development. Component refactoring will change and hopefully improve the use of colors. The immediate goal is to consolidate use of color and styles, before moving forward to a consistent style guide for Rocket.Chat.
+The UI is in active development. Component refactoring will change and hopefully improve the use of colors. The immediate goal is to consolidate use of color and styles, before moving forward to a consistent style guide for Rocket.Chat.
 {% endhint %}
 
 [Most](https://github.com/RocketChat/Rocket.Chat/issues/4091) use of color in Rocket.Chat can be customised by changing the color settings under **Administration** > **Layout** > **Colors**. We encourage developers to use the defined variables in their contributions (instead of hard-coding colors), to allow site owners to change the color scheme with consistent results.
 
-See the [theme variables file](https://github.com/RocketChat/Rocket.Chat/blob/develop/app/theme/server/variables.js) for the currently available color settings. All color settings are available to `Less files` as variables, as long as the Less files were compiled using the `addPackageAsset` method of `rocketchat-theme`.
+See the [theme variables file](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/app/theme/server/variables.js) for the currently available color settings. All color settings are available to `Less files` as variables, as long as the Less files were compiled using the `addPackageAsset` method of `rocketchat-theme`.
 
 ## Color Scheme
 
-The Rocket.Chat color scheme consists of three groups of color settings, [Alpha](ui-colors.md#alpha-colors), [Major](ui-colors.md#major-colors) and [Minor](ui-colors.md#minor-colors) Colors.
+The Rocket.Chat color scheme consists of three groups of color settings, [Alpha](ui-colors.md#alpha-colors), [Major](ui-colors.md#major-colors), and [Minor](ui-colors.md#minor-colors) Colors.
 
 Some further variations of these colors are created in Less and not exposed to settings.
 
-The naming of color settings/variables is not related to any specific component, the names reflect the visual hierarchy that will (hopefully) make it obvious and easy to carry forward consistent color usage in newly contributed components and theme development.
+The naming of color settings/variables is not related to any specific component, the names reflect the visual hierarchy that makes it obvious and easy to carry forward consistent color usage in newly contributed components and theme development.
 
 ### Alpha Colors
 
@@ -63,9 +63,9 @@ A set of minor colors for specific use cases will inherit from the major colors 
 
 ### Dark UI
 
-The computed colors allow owners to choose a **dark UI** with appropriate contrast. e.g. in a light UI, the disabled state might darken an element, but on a dark UI it should be lightened. The mixins achieve this by mixing the color with a contrast of the background color instead of using darken/lighten. See [this example](https://codepen.io/owlandfox/pen/EyJROO) of form input states that dynamically contrast to both dark and light backgrounds.
+The computed colors allow owners to choose a **dark UI** with appropriate contrast. e.g. in a light UI, the disabled state might darken an element, but on a dark UI, it should be lightened. The mixins achieve this by mixing the color with a contrast of the background color instead of using darken/lighten. See [this example](https://codepen.io/owlandfox/pen/EyJROO) of form input states that dynamically contrast to both dark and light backgrounds.
 
-Developers are encouraged to use mixins and computed colors in contributions instead of hard-coding variations, to maintain consistent balance and contrasts of colors regardless how the scheme settings may be changed by owners.
+Developers are encouraged to use mixins and computed colors in contributions instead of hard-coding variations, to maintain consistent balance and contrasts of colors regardless of how the scheme settings may be changed by owners.
 
 ## Default Colors
 

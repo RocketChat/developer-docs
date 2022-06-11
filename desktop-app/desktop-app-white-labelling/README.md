@@ -7,7 +7,7 @@ description: >-
 # Desktop App White Labelling
 
 {% hint style="info" %}
-NB: Theming for Rocket.Chat is an incomplete feature. You can follow the discussion on the approach under issue [#277](https://github.com/RocketChat/Rocket.Chat/issues/277)
+Theming for Rocket.Chat is an incomplete feature. You can follow the discussion on the approach under issue [#277](https://github.com/RocketChat/Rocket.Chat/issues/277)
 {% endhint %}
 
 {% content-ref url="changing-default-settings.md" %}

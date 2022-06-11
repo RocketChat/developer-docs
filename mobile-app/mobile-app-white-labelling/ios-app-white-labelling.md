@@ -3,11 +3,8 @@
 ## General setup
 
 * Open [RocketChatRN.xcworkspace](https://github.com/RocketChat/Rocket.Chat.ReactNative/tree/single-server/ios/RocketChatRN.xcworkspace) on Xcode (11.7 or newer)
-* On the General tab, select “RocketChatRN” and change Display Name, Bundle Identifier, Version and Build
-
-{% hint style="info" %}
-As explained in the [Important section](https://developer.rocket.chat/mobile-app/mobile-app-white-labelling#important), we have two targets and we're going to cover the default one on this doc, which is the Experimental app.
-{% endhint %}
+* On General tab, select “RocketChatRN” and change Display Name, Bundle Identifier, Version and Build
+  * Note: as explained on Important section, we have two targets and we're going to cover the default one on this doc, which is the Experimental app.
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.41.png)
 

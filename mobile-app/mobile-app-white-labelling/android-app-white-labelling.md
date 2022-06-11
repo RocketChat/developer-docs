@@ -2,7 +2,7 @@
 
 ## General setup
 
-* Similarly to iOS, we have build flavors to generate our Official, Experimental and F-Droid versions of the app
+* Similarly to iOS, we have build flavours to generate our Official, Experimental and F-Droid versions of the app
   * `experimental` and `official` folders contain app icons and splash screens
   * `play` and `foss` folders contain necessary code to run the app with or without Google Play services, respectively
     * `foss` build doesn't contain push notifications implemented
