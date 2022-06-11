@@ -4,7 +4,7 @@
 
 <summary>Why am I not receiving push notifications on mobile apps?</summary>
 
-First of all, make sure you understand our Push Notification workflow, and the app should be receiving a push notification. If you're using a SaaS, make sure you have enough Push Notification quota. If you're self-hosted, make sure your gateway is properly configured.
+First, please make sure you understand our Push Notification workflow, and the app should be receiving a push notification. If you're using a SaaS, make sure you have enough Push Notification quota. If you're self-hosted, make sure your gateway is properly configured.
 
 </details>
 
