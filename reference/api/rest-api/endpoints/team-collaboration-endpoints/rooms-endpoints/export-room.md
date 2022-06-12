@@ -20,7 +20,7 @@ This requires the user to have the `mail-messages` permission.
 | `type`     | `email` or `file`    | Required | How you want the room to be exported. |
 | `dateFrom` | `2020-01-13`         | Optional | Startdate to begin fetching.          |
 | `dateTo`   | `2021-12-13`         | Optional | End date for fetching.                |
-| `format`   | `html` or `json`     | Optional | The file type to export as.           |
+| `format`   | `html` or `json`     | Required | The file type to export as.           |
 
 ### Example Payload
 
