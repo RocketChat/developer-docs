@@ -3,19 +3,17 @@
 \
 You can set up and run a Rocket.Chat development environment on your Mac OSX.
 
-* [Apple Silicon](mac-osx.md#undefined)
+* [Apple Silicon](https://developer.rocket.chat/rocket.chat/rocket.chat-server/mac-osx#apple-silicon)
 * [Non-Apple Silicon Chips](mac-osx.md#non-apple-silicon-chips)
 
 ## Apple Silicon
-
-
 
 {% hint style="info" %}
 * Node.js only has prebuilt binaries for [Apple Silicon](https://www.macworld.com/article/334279/apple-silicon-macs-may-be-a-reboot-of-the-g4-cube-and-colorful-imac-g3.html) as from `node v16`
 * Rocket.Chat currently uses at least `meteor 2.5.6` which has support for Apple silicon chips. If you are to run an environment with a lesser version, consider using[ the Rosetta terminal](https://support.apple.com/en-us/HT211861).
 {% endhint %}
 
-* Install node with [nvm](https://github.com/nvm-sh/nvm). This will fetch the latest version of node and npm which may necesarily be the needed versions, but there is no problem
+* Install node with [nvm](https://github.com/nvm-sh/nvm). This will fetch the latest version of node and npm, which may necessarily be the needed versions, but there is no problem
 * Install meteor and yarn globally by running
 
 ```
@@ -23,7 +21,7 @@ npm install meteor -g
 npm install yarn -g
 ```
 
-* Fork and clone the Rocket.Chat repository [https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory
+* Fork and clone the [Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory
 
 ```
 git clone https://github.com/your-username/Rocket.Chat
