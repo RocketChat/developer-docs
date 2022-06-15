@@ -10,7 +10,7 @@ There's also an [example app](https://github.com/RocketChat/Apps.RocketChat.Test
 
 ## Permissions
 
-As per the [Permission System](https://docs.rocket.chat/apps-development/permission-system), the [Schedule API needs the following permission](https://docs.rocket.chat/apps-development/permission-system#register-and-maintain-scheduled-jobs) in your app's manifest:
+As per the [Permission System](https://developer.rocket.chat/apps-engine/getting-started/permission-system), the Schedule API needs the following permission in your app's manifest:
 
 ```javascript
 {
