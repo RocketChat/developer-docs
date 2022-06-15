@@ -3,7 +3,7 @@
 \
 You can set up and run a Rocket.Chat development environment on your Mac OSX.
 
-* [Apple Silicon](https://developer.rocket.chat/rocket.chat/rocket.chat-server/mac-osx#apple-silicon)
+* [Apple Silicon](mac-osx.md#apple-silicon)
 * [Non-Apple Silicon Chips](mac-osx.md#non-apple-silicon-chips)
 
 ## Apple Silicon
