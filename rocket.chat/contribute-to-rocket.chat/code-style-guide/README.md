@@ -53,7 +53,7 @@ meteor npm run lint
 
 ## Tests
 
-There are 2 types of tests we run on Rocket.Chat, **Unit** tests and **End to End** tests. The major difference is that End to End tests require a Rocket.Chat instance running to execute the API and UI checks.
+There are 2 types of tests we run on Rocket.Chat, **Unit** tests, and **End to End** tests. The major difference is that End to End tests require a Rocket.Chat instance running to execute the API and UI checks.
 
 ### End to End Tests
 
@@ -110,7 +110,7 @@ Good titles require thinking from a user's point of view. Don't get technical an
 Even if it brings something new to the code the users already expect the filter to filter by what they see (translations), a better one would be:
 
 ```
-[FIX] Permissions' search doesn't filter base on presented translation, only on internal ids
+[FIX] Permissions' search doesn't filter based on presented translation, only on internal ids
 ```
 
 ## Choosing the right PR tag
@@ -125,24 +125,24 @@ You can use several tags to describe your PR, i.e.: `[FIX]`, `[NEW]`, etc. You c
 
 **How**
 
-Do not start repeating the section (`Add ...` or `New ...`) Always describe what's being fixed, improved or added and not _how_ it was fixed, improved or added.
+Do not start repeating the section (`Add ...` or `New ...`) Always describe what's being fixed, improved, or added and not _how_ it was fixed, improved, or added.
 
-Example of **bad** PR titles:
+Examples of **bad** PR titles:
 
 ```
-[NEW] Add ability to set tags in the Omnichannel room closing dialog
-[NEW] Adds ability for Rocket.Chat Apps to create discussions
+[NEW] Add the ability to set tags in the Omnichannel room closing dialog
+[NEW] Adds the ability for Rocket.Chat Apps to create discussions
 [NEW] Add MMS support to Voxtelesys
-[NEW] Add Color variable to left sidebar
+[NEW] Add Color variable to the left sidebar
 ```
 
-Example of **good** PR titles:
+Examples of **good** PR titles:
 
 ```
 [NEW] Ability to set tags in the Omnichannel room closing dialog
 [NEW] Ability for Rocket.Chat Apps to create discussions
 [NEW] MMS support to Voxtelesys
-[NEW] Color variable to left sidebar
+[NEW] Color variable to the left sidebar
 ```
 
 ### `[FIX]`
@@ -177,10 +177,10 @@ Example of a **good** PR title:
 
 Always describe what's being improved and not _how_ it was improved.
 
-Example of **good** PR title:
+Example of a **good** PR title:
 
 ```
-[IMPROVE] Displays Nothing found on admin sidebar when search returns nothing
+[IMPROVE] Displays Nothing found on admin sidebar when a search returns nothing
 ```
 
 ### `[BREAK]`
@@ -191,8 +191,8 @@ Example of **good** PR title:
 
 **Back-End**
 
-* When the API contract (data structure and endpoints) are limited, expanded as required or removed
-* When the business logic (permissions and roles) are limited, expanded (without migration) or removed
+* When the API contract (data structure and endpoints) is limited, expanded as required, or removed
+* When the business logic (permissions and roles) is limited, expanded (without migration), or removed
 
 **Front-End**
 
@@ -217,7 +217,7 @@ Use a second tag to group entries on the changelog. We currently use it only for
 
 ### Minor Changes
 
-For those PRs that aren't important for the end-user, we are working on a better pattern, but for now please use the same tags, use them without the brackets and in camel case:
+For those PRs that aren't important for the end-user, we are working on a better pattern, but for now please use the same tags, use them without the brackets, and in camel case:
 
 ```
 Fix: Missing Content-Type header for public files with JWT
