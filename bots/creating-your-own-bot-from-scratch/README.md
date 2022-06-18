@@ -8,7 +8,7 @@ This document outlines the steps required to create your first bot with Rocket.C
 
 In order to talk to your chatbot, there must be a user account pre-configured on the Rocket.Chat server that the bot can use to log in.
 
-To user accounts you need to have admin privileges:
+To add user accounts you need to have admin privileges:
 
 * On the top bar, click the three dots (Options) and then click **Administration**
 * Select **Users** from the left sidebar
