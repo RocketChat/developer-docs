@@ -1,13 +1,13 @@
 # Bots Development Environment Setup
 
-## Requirements
+### Requirements
 
-Developing bots on RocketChat will require you to get and customize our boilerplate code. To do that, you need to have the following on your machine.
+Developing bots on RocketChat requires you to get and customize our boilerplate code. To do that, you need to have the following on your machine.
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
 
-## Bot Configuration
+### Bot Configuration
 
 Regardless of bot type (e.g.[ Hubot](creating-your-own-bot-from-scratch/develop-a-hubot-bot.md), [Botkit](creating-your-own-bot-from-scratch/develop-a-botkit-bot.md), [Rasa](creating-your-own-bot-from-scratch/develop-a-rasa-bot.md), etc.), the Rocket.Chat SDK requires you to create a configuration with some variables for your environment. This configuration can be stored in a `.env` file, for local development, for example. In production, they would need to be set on server startup.
 
@@ -71,7 +71,7 @@ The following is a list of all the environmental variables you can use in your p
 | `EXTERNAL_SCRIPTS`                                       | Hubot scripts to require as NPM modules. Used only in some Docker instances.                                                                                                                                                                                                                                   |
 | `HUBOT_LOG_LEVEL`                                        | `debug`, `info`, `warning` or `error`. Default: `info`.                                                                                                                                                                                                                                                        |
 
-## Common Set of Variables
+### Common Set of Variables
 
 The common set for the majority of bots is to listen and respond to direct messages and all new public channels and private groups:
 
