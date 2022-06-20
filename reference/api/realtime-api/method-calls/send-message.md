@@ -4,13 +4,13 @@ There are a few ways to communicate when using Rocket.Chat, as described below.
 
 ## Sending a text message
 
-The most basic \(and more common\) way to communicate is through plain text. You're going to use the `sendMessage` method and send a single parameter: the `message`.
+The most basic (and more common) way to communicate is through plain text. You're going to use the `sendMessage` method and send a single parameter: the `message`.
 
 The `sendMessage` is described as:
 
 * `_id`: The message id
 * `rid`: The room id for where to send this message
-* `msg`: The message body \(the text of the message itself\)
+* `msg`: The message body (the text of the message itself)
 
 ```javascript
 {
@@ -31,11 +31,10 @@ The `sendMessage` is described as:
 
 For sending a file we now recommend using the rest api:
 
-[See rooms.upload](../../rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/upload-file-to-a-room.md)
+[See rooms.upload](../../rest-api/endpoints/core-endpoints/rooms-endpoints/upload-file-to-a-room.md)
 
 ## See Also
 
 * [The Message Object](../../schema-definition/message.md)
 * [Delete Message Method](delete-message.md)
 * [Update Message Method](update-message.md)
-

@@ -89,7 +89,7 @@ To test if your bot has  successfully been connected, login to your server as a 
 @mybotuser what time is it
 ```
 
-![](<../../.gitbook/assets/image (90) (1).png>)
+![](<../../.gitbook/assets/image (51) (2) (1).png>)
 
 The bot will reply and you will also see changes in the logs on your terminal.
 
