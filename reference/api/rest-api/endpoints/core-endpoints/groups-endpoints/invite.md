@@ -91,6 +91,20 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 }
 ```
 
+## Error
+
+If you are an administrator and try to invite a user to a private group, of which you are not a member, then you will get an error:
+
+```
+{
+  "success": false,
+  "error": "Not allowed [error-not-allowed]",
+  "errorType": "error-not-allowed",
+  "details": {
+    "method": "addUsersToRoom"
+  }
+```
+
 ## Change Log
 
 | Version | Description |
