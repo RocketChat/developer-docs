@@ -6,7 +6,7 @@ Here is a list of events triggered from Rocket.Chat when the iframe integration 
 
 | Event name                       | Description                                                                                      |
 | -------------------------------- | ------------------------------------------------------------------------------------------------ |
-| `started`                        | Fired when an iframe initializes                                                                 |
+| `startup`                        | Fired when an iframe initializes                                                                 |
 | `notification`                   | Fired when a user receives a notification                                                        |
 | `unread-changed-by-subscription` | Fired each time a user's subscription record changes (i.e.: unread counts, etc)                  |
 | `unread-changed`                 | Fired when the pages title changes                                                               |
