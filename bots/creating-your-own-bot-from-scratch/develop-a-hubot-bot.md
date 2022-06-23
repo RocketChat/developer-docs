@@ -8,7 +8,7 @@ The bot can then be executed using a [bin file](https://github.com/RocketChat/hu
 
 ### Get the Hubot Bot Boilerplate Code
 
-Navigate to the folder where you want to work with the bot, open up the terminal and execute the following commands to pull the code and install all the dependecies.
+Navigate to the folder where you want to work with the bot, open up the terminal and execute the following commands to pull the code and install all the dependencies.
 
 ```
 git clone https://github.com/RocketChat/hubot-rocketchat-boilerplate
@@ -29,10 +29,10 @@ export ROCKETCHAT_USESSL=true
 Adjust the content to fit your server and user credentials.&#x20;
 
 {% hint style="info" %}
-Make sure your bot user(`mybotuser)` has a `bot` role assigned to it.
+Make sure your bot user(`mybotuser)` has `bot` role assigned to it.
 {% endhint %}
 
-For more information on how to create a bot user please refer to this section.[#1.-create-a-bot-user](./#1.-create-a-bot-user "mention")
+For more information on how to create a bot user please refer to the section: [Create a bot user](./#1.-create-a-bot-user)
 
 Run your code by executing this command
 
@@ -83,7 +83,7 @@ found 1 low severity vulnerability
 
 ### Test your Hubot Bot
 
-To test if your bot has  successfully been connected, login to your server as a different user, go to the channel specified in the configuration of the bot and type this message.
+To test if your bot has successfully been connected, log in to your server as a different user, go to the channel specified in the configuration of the bot, and type this message.
 
 ```
 @mybotuser what time is it
@@ -140,7 +140,7 @@ There are executables for different environments that all run the Hubot binary:
 
 Before running, make sure your production environment has the required environment variables for the adapter, url, user, name and pass. As an alternative, you can add them as command-line parameters, like `-a rocketchat`.
 
-Environmental variables should be populated on the server before the launch (see [configuration](develop-a-hubot-bot.md#configuration)). The launcher will also install npm dependencies on every run, if booting in a fresh container (this isn't required when working locally).
+Environmental variables should be populated on the server before the launch (see [configuration](develop-a-hubot-bot.md#configuration)). The launcher will also install npm dependencies on every run if booting in a fresh container (this isn't required when working locally).
 
 See more information on deployment configurations [here](https://hubot.github.com/docs/deploying/).
 
@@ -153,7 +153,7 @@ When running locally, [`dotenv`](https://www.npmjs.com/package/dotenv) is used t
 Please a full list of environmental variables here [Broken link](broken-reference "mention")
 
 {% hint style="info" %}
-Please pay attention that if `ROCKETCHAT_URL` is using `https://`, you **MUST** setup websocket pass-through on your reverse proxy (for example, NGINX) with a valid certificate (not self-signed). Directly accessing Rocket.Chat without a reverse proxy via `https://` is not possible.
+If `ROCKETCHAT_URL` is using `https://`, you **MUST** set up WebSocket pass-through on your reverse proxy (for example, NGINX) with a valid certificate (not self-signed). Directly accessing Rocket.Chat without a reverse proxy (via `https://)` is not possible.
 {% endhint %}
 
 ### Adding scripts
@@ -162,7 +162,7 @@ Scripts can be added to the `./scripts` folder, or by installing node packages a
 
 ### Checking example scripts
 
-The boilerplate comes pre-packed with two scripts as demos for manual tests. In each of the following script, you can talk to a bot in a public channel by prefixing the bot's username or in direct messages without the bot's username.
+The boilerplate comes pre-packed with two scripts as demos for manual tests. In each of the following scripts, you can talk to a bot in a public channel by prefixing the bot's username or in direct messages without the bot's username.
 
 * `what time is it` or `what's the time` - Tells you the current time
 * `rc version` - Gives you version info about Rocket.Chat and Hubot (two messages)
@@ -216,9 +216,9 @@ On the container launch, hubot will try to connect to the Rocket.Chat instance a
 [Sun Sep 29 2019 16:49:55 GMT+0000 (UTC)] INFO Setting up reactive message list...
 ```
 
-**3. talk to your bot**
+* **Talk to your bot**
 
-On the server, login as a regular user (not the BOT user), go to `general` or any other room, and try the following command:
+On the server, log in as a regular user (not the BOT user), go to `general` or any other room, and try the following command:
 
 ```
 mybotuser time
@@ -259,7 +259,7 @@ docker run -it -e ROCKETCHAT_URL=your rocketchat instance>:<port> \
 
 ### Deployment using Yeoman
 
-[Yeoman generator](https://github.com/hubotio/generator-hubot) allows you to generate a Hubot bot using the Rocket.Chat adapter. Yeoman uses the latest versions of Hubot and Rocket.Chat adapter module, which enable asynchronous processing in ES6 Javascript, and introduce various bug fixes.
+[Yeoman generator](https://github.com/hubotio/generator-hubot) allows you to generate a Hubot bot using the Rocket.Chat adapter. Yeoman uses the latest versions of Hubot and Rocket.Chat adapter module, which enables asynchronous processing in ES6 Javascript, and introduces various bug fixes.
 
 ## Development for different versions of adapter
 
@@ -336,9 +336,11 @@ This bot is written in ES6 and intended to run on Node v8+. To run a bot on olde
 
 ### Adapter versions
 
-Older versions of the adapter (before v0.1.4) are incompatible with more recent versions of Rocket.Chat (v0.35+). Please report an issue, if you find specific version mismatch.
+Older versions of the adapter (before v0.1.4) are incompatible with more recent versions of Rocket.Chat (v0.35+). Please report an issue, if you find a specific version mismatch.
 
-NOTE: releases between 0.35.0 and 0.37.1 are not recommended for hubot operations.
+{% hint style="info" %}
+Releases between 0.35.0 and 0.37.1 are not recommended for hubot operations.
+{% endhint %}
 
 Rocket.Chat adapter v1 uses CoffeeScript, which makes extention of classes in JavaScript ES6 troublesome.
 
@@ -348,7 +350,7 @@ If you are writing CoffeeScript bots, you need Hubot v2.x and v1.x.x or v0.x.x o
 
 ## Additional information
 
-For more examples on building and scripting your bot, please see [Hubot documentation](https://hubot.github.com/docs/).
+For more examples of building and scripting your bot, please see [Hubot documentation](https://hubot.github.com/docs/).
 
 ## Contributions and discussions
 

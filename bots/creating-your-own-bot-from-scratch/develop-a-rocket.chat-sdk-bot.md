@@ -1,6 +1,6 @@
 # Develop a Rocket.Chat SDK Bot
 
-This bot is a simple example of how you can use [Rocket.Chat JS SDK](https://github.com/RocketChat/Rocket.Chat.js.SDK) methods directly. It is extremely basic and does not handle errors, different message types, server resets and other production situations.
+This bot is a simple example of how you can use [Rocket.Chat JS SDK](https://github.com/RocketChat/Rocket.Chat.js.SDK) methods directly. It is extremely basic and does not handle errors, different message types, server resets, and other production situations.
 
 ## RocketChat SDK Bot Quick Start Guide
 
@@ -8,7 +8,7 @@ Rocket.Chat Bot is a Node.js package and works with Node and npm.
 
 #### Install Rocket.Chat SDK Package
 
-Open up terminal in the directory you wish to develop your bot in and run the following command
+Open up the terminal in the directory you wish to develop your bot in and run the following command
 
 ```
 npm init -y
@@ -70,7 +70,7 @@ runbot()
 ```
 
 {% hint style="info" %}
-**NOTE:** Adjust the `Environment Setup` section content to fit your server and user credentials.
+Adjust the `Environment Setup` section content to fit your server and user credentials.
 
 Make sure `<BOT USER NAME>` has a `BOT` role on the server. For more information on how to create a bot user please refer to [this page](./#1-create-a-bot-user).
 {% endhint %}
@@ -136,6 +136,6 @@ Greeting message sent
 
 #### Talk to Your SDK Bot
 
-On the server, login as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
+On the server, log in as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
 
 ![](<../../.gitbook/assets/image (16) (1).png>)

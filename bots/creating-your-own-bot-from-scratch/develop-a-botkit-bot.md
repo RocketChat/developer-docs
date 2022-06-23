@@ -1,14 +1,14 @@
 # Develop a Botkit Bot
 
-[Botkit](https://github.com/howdyai/botkit) is the leading developer tool for building chat bots, apps and custom integrations for major messaging platforms.
+[Botkit](https://github.com/howdyai/botkit) is the leading developer tool for building chatbots, apps, and custom integrations for major messaging platforms.
 
 Botkit offers everything you need to design, build and operate an app:
 
 * Easy-to-extend starter kits;
 * Fully-featured SDK with support for all major platforms;
-* [Tons of plugins and middlewares](https://botkit.ai/docs/readme-middlewares.html)
+* [Tons of plugins and middlewares](https://github.com/howdyai/botkit-docs/blob/master/docs/readme-middlewares.md)
 
-In addition, Botkit works with all the NLP services (like Microsoft LUIS and IBM Watson), it can use any type of database, and runs on almost any hosting platform.
+In addition, Botkit works with all the NLP services (like Microsoft LUIS and IBM Watson), it can use any type of database and runs on almost any hosting platform.
 
 ### Botkit Integration Architecture
 
@@ -22,7 +22,7 @@ The fastest way to start with Botkit is using [botkit-starter-rocketchat](https:
 
 ### Get the Botkit Bot Boilerplate Code
 
-* Open up terminal in the directory you wish to develop your bot in and run the following commands to fetch from our repository and install all dependencies
+* Open up the terminal in the directory you wish to develop your bot in and run the following commands to fetch from our repository and install all dependencies
 
 ```
 git clone https://github.com/RocketChat/botkit-starter-rocketchat
@@ -74,7 +74,7 @@ RESPOND_TO_LIVECHAT=true
 RESPOND_TO_EDITED=true
 
 # Enable learning mode, a set of features
-# that allow your bot to update itself using Botkit Studio's API
+# that allows your bot to update itself using Botkit Studio's API
 LEARNING_MODE=true
 
 ```
@@ -95,7 +95,7 @@ $ npm start
 
 ~~~~~~~~~~
 Botkit Studio Starter Kit
-You problably forgot to update your environment variables
+You probably forgot to update your environment variables
 Get a Botkit Studio token here: https://studio.botkit.ai/
 ~~~~~~~~~~
 Initializing Botkit v0.6.16

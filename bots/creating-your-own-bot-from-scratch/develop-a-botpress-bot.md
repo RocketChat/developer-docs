@@ -17,7 +17,7 @@ npm init -y
 npm install botpress@10.40.0
 ```
 
-* Next create a bot and initialize it
+* Next, create a bot and initialize it
 
 ```
 mkdir bot
@@ -192,6 +192,6 @@ LISTEN TRIGGERED
 [reactive] Listening for change events in collection stream-room-messages
 ```
 
-* To test communication with your bot, login on your server as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
+* To test communication with your bot, log in on your server as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
 
 ![Botpress bot responses to user messages](../../.gitbook/assets/botpress-bot-responses.png)

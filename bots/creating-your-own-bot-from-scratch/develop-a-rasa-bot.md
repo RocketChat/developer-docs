@@ -17,7 +17,7 @@ git clone https://github.com/RocketChat/rasa-kick-starter.git
 cd rasa-kick-starter/
 ```
 
-* To configure the bots credentials, open the `rasa-kick-starter/bot_rasa` folder and update the `credentials.yml` file with Rasa bot's username, password, and Rocket.Chat URL. See this section on how to [#1.-create-a-bot-user](./#1.-create-a-bot-user "mention")
+* To configure bot credentials, open the `rasa-kick-starter/bot_rasa` folder and update the `credentials.yml` file with Rasa bot's username, password, and Rocket.Chat URL. See this section on how to [#1.-create-a-bot-user](./#1.-create-a-bot-user "mention")
 
 ```yaml
 rocketchat:
@@ -57,7 +57,7 @@ Hello from Rasa: 1.5.0a1
 
 If you have Rocket.Chat running on the same machine, the bot's URL is `http://bot_rasa:5005`. This guide uses a remote Rocket.Chat instance, so it is necessary to get a public URL for the Rasa bot to be able to link it properly. It is recommended to use [ngrok](https://ngrok.com/download) for this purpose.
 
-[Download ngrok](https://ngrok.com/download), open terminal in the folder you downloaded ngrok to and execute the following command:
+[Download ngrok](https://ngrok.com/download), open the terminal in the folder you downloaded ngrok to, and execute the following command:
 
 ```
 ./ngrok http 5005
@@ -88,7 +88,7 @@ Select `Message Sent` Event Trigger from the dropdown list. Complete the configu
 * URLs: `http://<ngrok_public_url>/webhooks/rocketchat/webhook`
 * Post as: `<RASA USER NAME>`
 
-**NOTE**: Make sure you replace the URL with a valid public URL obtained on the previous step using ngrok.
+**NOTE**: Make sure you replace the URL with a valid public URL obtained in the previous step using ngrok.
 
 When you are done, click **Save.**
 
@@ -96,6 +96,6 @@ When you are done, click **Save.**
 
 #### Talk to your Bot
 
-On the server, login as a regular user (not the BOT user), go to `general` room, and try to talk to your bot by typing `@bot_rasa hello`:
+On the server, log in as a regular user (not the BOT user), go to `general` room, and try to talk to your bot by typing `@bot_rasa hello`:
 
 ![Rasa bot is talking](<../../.gitbook/assets/rasa\_bot\_example (1) (1) (1) (2) (2) (2) (2) (2) (2) (2) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (1).png>)
