@@ -2,7 +2,28 @@
 
 The message object is the very soul of a conversation. It encapsulates all the information need in order to represent a single entry on a message list.
 
-The message type property can been found [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/app/lib/lib/MessageTypes.ts).
+### Message Type
+
+Some of the message types are listed below. A full list of the message type property can be found here
+
+{% embed url="https://github.com/RocketChat/Rocket.Chat/blob/957c69d7ebdcf4dca02e7753bfd75086be11ca44/apps/meteor/app/lib/lib/MessageTypes.ts#L315" %}
+
+| Type                   | Description              |
+| ---------------------- | ------------------------ |
+| `r`                    | Room name changed        |
+| `au`                   | User added by            |
+| `ru`                   | User removed by          |
+| `ul`                   | User left                |
+| `ult`                  | User left team           |
+| `uj`                   | User joined channel      |
+| `ujt`                  | User joined team         |
+| `ut`                   | User joined conversation |
+| `rm`                   | Message removed          |
+| added-user-to-team     | Added user to team       |
+| removed-user-from-team | Removed user from team   |
+| user-muted             | User muted by            |
+
+### Message Object
 
 The message object contains these fields.
 
@@ -17,9 +38,10 @@ The message object contains these fields.
 | `u`                         | The user who sent the message (either the \_id or username or name).                                                                                                                                   |
 | `blocks`                    | If a uikit message, then the uikit will block components.                                                                                                                                              |
 | `md`                        | A markdown object                                                                                                                                                                                      |
-| `starred`                   | A list of users have this starred the message (list of user Ids (\_id)                                                                                                                                 |
+| `starred`                   | A list of users that have the message starred (list of user Ids (\_id)                                                                                                                                 |
 | `pinned`                    | Identifies if the message is pinned or not.                                                                                                                                                            |
 | `unread`                    | Identifies if the message unread or not.                                                                                                                                                               |
+| `temp`                      | Identifies if the message is temporal                                                                                                                                                                  |
 | `drid`                      | The direct room id (if belongs to a direct room).                                                                                                                                                      |
 | `_updatedAt`                | A timestamp of when the message got saved on the server.                                                                                                                                               |
 | `editedAt`_(Optional)_.     | A timestamp of when the message was edited                                                                                                                                                             |
@@ -29,8 +51,10 @@ The message object contains these fields.
 | `alias(`_Optional_`)`       | A way to display the message is "sent" from someone else other than the user who sent the message                                                                                                      |
 | `avatar(Optional)`          | A url to an image, that is accessible to anyone, to display as the avatar instead of the message user's account avatar                                                                                 |
 | `groupable(Optional)`       | Boolean that states whether or not this message should be grouped together with other messages from the same user                                                                                      |
+| `channel(Optional)`         | The channel where message belongs to                                                                                                                                                                   |
 | `parseUrls(Optional)`       | Identifies whether Rocket.Chat should try and parse the urls or not                                                                                                                                    |
 | `tlm(Optional)`             | The thread last message, is used to inform the last time some message was sent inside the thread.                                                                                                      |
+| `reactions`                 | Reactions on the message                                                                                                                                                                               |
 
 The user presented on `u` and `editedBy` fields are a simplified version of the user information:
 
