@@ -1,18 +1,42 @@
 # stream-room-messages
 
+## Subscribe
+
 This is the room messages stream. You just need the room ID for subscribing.
 
-```javascript
+### DDP Message
+
+```json
 {
-    "msg": "sub",
-    "id": "unique-id",
-    "name": "stream-room-messages",
+    "msg":"sub",
+    "id":"6NctZomXL3ZdtKNsn",
+    "name":"stream-livechat-room",
     "params":[
-        "room-id",
-        false
+        "KTZqPAR9DQGxKcxzf",
+        {
+            "useCollection":false,
+            "args":[
+                {
+                    "token":"jkGaw6duhiuh45"
+                }
+            ]
+        }
     ]
-}
+};
 ```
+
+### Sample Response
+
+```json
+{
+    "msg":"ready",
+    "subs":[
+        "JHalkajwdh67"
+    ]
+j
+```
+
+## &#x20;Unsubscribe
 
 To unsubscribe from a room, send "unsub", along with the ID of the previous subscribe message.
 
@@ -24,4 +48,3 @@ To unsubscribe from a room, send "unsub", along with the ID of the previous subs
 ```
 
 If you want to subscribe to a user's messages stream, just pass `__my_messages__` as the room ID.
-
