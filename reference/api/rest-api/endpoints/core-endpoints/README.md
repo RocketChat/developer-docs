@@ -1,4 +1,4 @@
-# Team Collaboration Endpoints
+# Core Endpoints
 
 ## Assets Endpoints
 
@@ -191,7 +191,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/groups.getIntegrations` | Retrieves the integrations assigned to the group.           | [Link](groups-endpoints/getintegrations.md)                                                                                              |
 | `/api/v1/groups.history`         | Retrieves the messages from a private group.                | [Link](groups-endpoints/history.md)                                                                                                      |
 | `/api/v1/groups.info`            | Retrieves the information about a private group.            | [Link](groups-endpoints/info.md)                                                                                                         |
-| `/api/v1/groups.invite`          | Adds a user to the private group.                           | [Link](groups-endpoints/invite.md)                                                                                                       |
+| `/api/v1/groups.invite`          | Adds a user to the private group.                           | [Link](../team-collaboration-endpoints/groups-endpoints/invite.md)                                                                       |
 | `/api/v1/groups.kick`            | Removes a user from a private group.                        | [Link](groups-endpoints/kick.md)                                                                                                         |
 | `/api/v1/groups.leave`           | Removes the calling user from the private group.            | [Link](groups-endpoints/leave.md)                                                                                                        |
 | `/api/v1/groups.list`            | Lists the private groups the caller is part of.             | [Link](groups-endpoints/list.md)                                                                                                         |
