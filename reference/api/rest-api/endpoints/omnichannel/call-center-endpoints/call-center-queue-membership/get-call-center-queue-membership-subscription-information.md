@@ -2,7 +2,7 @@
 description: Use this endpoint to retrieve the Queue Membership Subscription Information
 ---
 
-# Get Voip Queue Membership Subscription Information
+# Get Call Center Queue Membership Subscription Information
 
 | **URL**                                        | **Requires Authentication** | **HTTP Method** |
 | ---------------------------------------------- | --------------------------- | --------------- |

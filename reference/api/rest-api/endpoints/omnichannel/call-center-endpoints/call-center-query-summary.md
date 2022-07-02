@@ -2,9 +2,7 @@
 description: Use this endpoint to get the VoIP query summary
 ---
 
-# VoIP Query Summary
-
-## Get VoIP Query Summary
+# Call Center Query Summary
 
 | **URL**                         | **Requires Authentication** | **HTTP Method** |
 | ------------------------------- | --------------------------- | --------------- |

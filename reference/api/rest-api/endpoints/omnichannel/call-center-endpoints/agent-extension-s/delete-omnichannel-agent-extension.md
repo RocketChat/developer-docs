@@ -4,8 +4,6 @@ description: Delete agent-extension association information. Requires authentica
 
 # Delete Omnichannel Agent Extension
 
-## Delete Agent Extension
-
 | **URL**                           | **Requires Authentication** | **HTTP Method** |
 | --------------------------------- | --------------------------- | --------------- |
 | `/v1/omnichannel/agent/extension` | Yes                         | DELETE          |

@@ -91,8 +91,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 }
 ```
 
-## Change Log
-
 ## Error
 
 If you are an administrator and try to invite a user to a private group, of which you are not a member, then you will get an error:

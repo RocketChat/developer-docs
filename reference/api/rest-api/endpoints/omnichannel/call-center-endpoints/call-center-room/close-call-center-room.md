@@ -2,9 +2,7 @@
 description: Close a new Room
 ---
 
-# Close VoIP Room
-
-## Close VoIP room
+# Close Call Center Room
 
 | **URL**               | **Requires Authentication** | **HTTP Method** |
 | --------------------- | --------------------------- | --------------- |

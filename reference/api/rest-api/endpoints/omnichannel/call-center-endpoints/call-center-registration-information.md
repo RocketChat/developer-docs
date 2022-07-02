@@ -2,9 +2,9 @@
 description: Retrieves the User Registration Information for the User ID.
 ---
 
-# VoIP Registration Information
+# Call Center Registration Information
 
-## Get VoIP Registration Information
+
 
 | **URL**                                                   | **Requires Authentication** | **HTTP Method** |
 | --------------------------------------------------------- | --------------------------- | --------------- |

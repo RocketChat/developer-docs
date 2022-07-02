@@ -1,4 +1,4 @@
-# Create Visitor
+# Create Call Center Visitor
 
 | **URL**                   | **Requires Authentication** | **HTTP Method** |
 | ------------------------- | --------------------------- | --------------- |
@@ -43,6 +43,3 @@ curl --location --request POST 'localhost:3000/api/v1/livechat/visitor' \
     "success": true
 }
 ```
-
-
-

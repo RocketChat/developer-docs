@@ -4,8 +4,6 @@ description: Create agent-extension association information. Requires authentica
 
 # Update Omnichannel Agent Extension
 
-## Update Agent Extension
-
 | **URL**                           | **Requires Authentication** | **HTTP Method** |
 | --------------------------------- | --------------------------- | --------------- |
 | `/v1/omnichannel/agent/extension` | Yes                         | POST            |

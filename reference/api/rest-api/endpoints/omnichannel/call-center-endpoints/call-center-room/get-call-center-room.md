@@ -2,9 +2,7 @@
 description: View information for VoIP room by ID
 ---
 
-# Get VoIP Room
-
-## Retrieve VoIP room information by ID
+# Get Call Center Room
 
 | **URL**         | **Requires Authentication** | **HTTP Method** |
 | --------------- | --------------------------- | --------------- |

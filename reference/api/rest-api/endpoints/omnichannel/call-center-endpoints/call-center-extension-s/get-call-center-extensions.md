@@ -1,10 +1,8 @@
 ---
-description: Get the list of VoIP enabled extensions
+description: Get the list of call center enabled extensions
 ---
 
-# Get VoIP Extensions
-
-## Fetch a list of VoIP Extensions&#x20;
+# Get call center Extensions
 
 | **URL**                      | **Description**            | **HTTP Method** |
 | ---------------------------- | -------------------------- | --------------- |

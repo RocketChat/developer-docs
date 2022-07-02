@@ -2,9 +2,7 @@
 description: Use this endpoint to send the VoIP Client Events
 ---
 
-# Send VoIP Events
-
-## VoIP Events
+# Send Call Center Events
 
 | **URL**           | **Requires Authentication** | **HTTP Method** |
 | ----------------- | --------------------------- | --------------- |

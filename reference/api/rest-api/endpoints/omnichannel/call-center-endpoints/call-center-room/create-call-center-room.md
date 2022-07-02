@@ -4,9 +4,7 @@ description: >-
   rid and token.
 ---
 
-# Create VoIP Room
-
-## Create a VoIP room&#x20;
+# Create Call Center Room
 
 | **URL**                                                                              | **Requires Authentication** | **HTTP Method** |
 | ------------------------------------------------------------------------------------ | --------------------------- | --------------- |
@@ -46,4 +44,3 @@ curl --location --request GET 'localhost:3000/api/v1/voip/room?token=867ad6a09fc
 ### Error Response
 
 401 Unauthorized
-

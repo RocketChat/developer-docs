@@ -2,9 +2,7 @@
 description: To retrieve a list of VoIP rooms
 ---
 
-# Get VoIP Rooms
-
-## Retrieve VoIP rooms&#x20;
+# Get Call Center Rooms
 
 | **URL**          | **Requires Authentication** | **HTTP Method** |
 | ---------------- | --------------------------- | --------------- |

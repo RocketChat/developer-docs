@@ -6,8 +6,6 @@ description: >-
 
 # Get Omnichannel Agent Extension
 
-## Get Agent Extension
-
 | **URL**                           | **Requires Authentication** | **HTTP Method** |
 | --------------------------------- | --------------------------- | --------------- |
 | `/v1/omnichannel/agent/extension` | Yes                         | GET             |

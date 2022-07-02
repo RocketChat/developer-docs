@@ -4,8 +4,6 @@ description: Retrieves the current Omnichannel agent information.
 
 # Get Available Agent Information
 
-## Retrieve the available available agent information
-
 | **URL**                            | **Requires Authentication** | **HTTP Method** |
 | ---------------------------------- | --------------------------- | --------------- |
 | `/v1/omnichannel/agents/available` | Yes                         | GET             |

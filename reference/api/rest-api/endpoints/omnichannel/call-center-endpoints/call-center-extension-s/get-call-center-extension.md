@@ -1,10 +1,8 @@
 ---
-description: Fetch VoIP- enabled extension information
+description: Fetch call center extension information
 ---
 
-# Get VoIP Extension
-
-## Fetch VoIP Extension Information
+# Get Call Center Extension
 
 | **URL**                     | **Requires Authentication** | **HTTP Method** |
 | --------------------------- | --------------------------- | --------------- |

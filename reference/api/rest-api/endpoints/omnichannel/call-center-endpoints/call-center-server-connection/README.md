@@ -4,7 +4,7 @@ description: >-
   VoIP/SIP server.
 ---
 
-# VoIP Server Connection
+# Call Center Server Connection
 
 {% content-ref url="check-management-server-connection.md" %}
 [check-management-server-connection.md](check-management-server-connection.md)

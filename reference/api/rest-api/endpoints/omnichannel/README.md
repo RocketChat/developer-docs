@@ -8,6 +8,6 @@
 [omnichannel-endpoints](omnichannel-endpoints/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="call-center-endpoints/" %}
+[call-center-endpoints](call-center-endpoints/)
 {% endcontent-ref %}

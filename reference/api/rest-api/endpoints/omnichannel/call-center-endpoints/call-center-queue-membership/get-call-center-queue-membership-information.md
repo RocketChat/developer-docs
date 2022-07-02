@@ -2,9 +2,7 @@
 description: Retrieves the Queue Membership Information
 ---
 
-# Get VoIP Queue Membership Information
-
-Get VoIP Queue Membership&#x20;
+# Get Call Center Queue Membership Information
 
 | **URL**                                             | **Requires Authentication** | **HTTP Method** |
 | --------------------------------------------------- | --------------------------- | --------------- |
