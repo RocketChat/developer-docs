@@ -10,7 +10,7 @@
   * [Docker & Docker Compose](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/docker-and-docker-compose)
   * [Snap](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/snaps)
   * [Non Official Methods](https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/community-supported-installation)
-* [Setting up your Development Environment](quick-start/building-specific-projects.md)
+* [Setting up your Development Environment](quick-start/setting-up-your-development-environment.md)
 
 ## Rocket.Chat
 

@@ -26,7 +26,7 @@ export ROCKETCHAT_ROOM=general
 export ROCKETCHAT_USESSL=true
 ```
 
-Adjust the content to fit your server and user credentials.&#x20;
+Adjust the content to fit your server and user credentials.
 
 {% hint style="info" %}
 Make sure your bot user(`mybotuser)` has `bot` role assigned to it.
@@ -89,7 +89,7 @@ To test if your bot has successfully been connected, log in to your server as a 
 @mybotuser what time is it
 ```
 
-![](<../../.gitbook/assets/image (90) (1).png>)
+![](<../../.gitbook/assets/image (51) (2) (1) (1) (1).png>)
 
 The bot will reply and you will also see changes in the logs on your terminal.
 
@@ -150,7 +150,7 @@ See more information on deployment configurations [here](https://hubot.github.co
 
 When running locally, [`dotenv`](https://www.npmjs.com/package/dotenv) is used to load configurations from the `.env` file. That makes it easier to set environment variables.
 
-Please a full list of environmental variables here [Broken link](broken-reference "mention")
+Please a full list of environmental variables here [broken-reference](broken-reference/ "mention")
 
 {% hint style="info" %}
 If `ROCKETCHAT_URL` is using `https://`, you **MUST** set up WebSocket pass-through on your reverse proxy (for example, NGINX) with a valid certificate (not self-signed). Directly accessing Rocket.Chat without a reverse proxy (via `https://)` is not possible.

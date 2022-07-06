@@ -34,7 +34,7 @@ To submit an app through the publisher:
 
 ![](<../../../.gitbook/assets/image (55).png>)
 
-Or Sign up for your publisher account,  as shown below:
+Or Sign up for your publisher account, as shown below:
 
 ![](<../../../.gitbook/assets/image (183).png>)
 
@@ -48,7 +48,7 @@ Your publisher developer account is created, as shown below:
 
 ![](<../../../.gitbook/assets/image (19).png>)
 
-Following screen appears:&#x20;
+Following screen appears:
 
 ![](<../../../.gitbook/assets/image (45).png>)
 
@@ -61,15 +61,15 @@ Click **Next** and set details of the app you're going to publish.
 ## **Set App details:**
 
 1. Set your app's name under **App Name**.
-2. &#x20;Use **Upload new app** button to upload and set a display picture for your app.&#x20;
-3. Select a category for your app in **Categories** drop-down.&#x20;
-4. Select a Language for your app in **Languages** drop-down.&#x20;
+2. Use **Upload new app** button to upload and set a display picture for your app.
+3. Select a category for your app in **Categories** drop-down.
+4. Select a Language for your app in **Languages** drop-down.
 
 ## Purchase Type:
 
 In the following section we will guide you through different purchase types. You can choose the one that suits your needs.
 
-![](<../../../.gitbook/assets/image (56).png>)
+![](<../../../.gitbook/assets/image (56) (1).png>)
 
 {% hint style="info" %}
 For a paid app its madatory to connect with [Stripe](https://stripe.com/) account before submission.
@@ -81,7 +81,7 @@ Your users are allowed to buy the app per workspace. If they have two workspaces
 
 ### One-time Purchase:
 
-Please use **One-time Purchase** when you want your app to have a one-off payment and your users  are allowed to use it forever after that payment. To set it:
+Please use **One-time Purchase** when you want your app to have a one-off payment and your users are allowed to use it forever after that payment. To set it:
 
 1. Select One-time Purchase
 2. Enter the price you want to set
@@ -99,13 +99,13 @@ When you want your app to be subscription-based, you can use **Subscription** pu
 
 **New Pricing Plan** pane appears:
 
-3\. Select your subscription **Strategy** (Monthly/Yearly)&#x20;
+3\. Select your subscription **Strategy** (Monthly/Yearly)
 
 4\. Mention the Price
 
-5\. There are two types of subscribtion plans to to choose from: &#x20;
+5\. There are two types of subscribtion plans to to choose from:
 
-#### **5.1** Per Seat Subscription&#x20;
+#### **5.1** Per Seat Subscription
 
 If you want your app to have a per seat subscribtion check mark **Per Seat** box.
 
@@ -115,13 +115,11 @@ Per seat subscribtion allows your customers to pay per seat for the app rather t
 
 ![](<../../../.gitbook/assets/image (3).png>)
 
-#### **5.2** Tiers Subscription&#x20;
-
-
+#### **5.2** Tiers Subscription
 
 ### Free:
 
-You can make your app available to your customers free of cost,  as shown below;
+You can make your app available to your customers free of cost, as shown below;
 
 ![](<../../../.gitbook/assets/image (2).png>)
 

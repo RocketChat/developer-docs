@@ -26,7 +26,7 @@ password: "<RASA USER PASS>"
 server_url: "<ROCKETCHAT HOST>"
 ```
 
-* Train the bot's Machine Learning Model by running&#x20;
+* Train the bot's Machine Learning Model by running
 
 ```
 docker run -it -v $(pwd)/bot_rasa:/app rasa/rasa train
@@ -98,4 +98,4 @@ When you are done, click **Save.**
 
 On the server, log in as a regular user (not the BOT user), go to `general` room, and try to talk to your bot by typing `@bot_rasa hello`:
 
-![Rasa bot is talking](<../../.gitbook/assets/rasa\_bot\_example (1) (1) (1) (2) (2) (2) (2) (2) (2) (2) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (1) (1) (1) (1) (1).png>)
+![Rasa bot is talking](<../../.gitbook/assets/rasa\_bot\_example (1) (1) (1) (2) (2) (2) (2) (2) (2) (2) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (2).png>)
