@@ -70,6 +70,7 @@
 * [Omnichannel Environment Setup](omnichannel/omnichannel-environment-setup.md)
 * [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps.md)
 * [Livechat Widget Development and Customization](omnichannel/livechat-widget-development-and-customization.md)
+* [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
 ## Apps Engine
 
@@ -77,7 +78,6 @@
 * [Rocket.Chat Apps Engine](apps-engine/rocket.chat-apps-engine/README.md)
   * [Apps Engine Environment Setup](apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md)
   * [Contributing to Apps Engine](apps-engine/rocket.chat-apps-engine/contributing-to-apps-engine.md)
-* [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 * [Getting Started](apps-engine/getting-started/README.md)
   * [The Apps Engine CLI](apps-engine/rocket.chat-app/rocket.chat-app-engine-cli.md)
   * [Understanding the RC Apps Lifecycle](apps-engine/fundamentals-of-apps/app-lifecycle.md)
