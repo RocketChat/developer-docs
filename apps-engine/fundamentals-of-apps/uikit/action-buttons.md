@@ -67,7 +67,7 @@ export class MyApp extends App implements IUIKitInteractionHandler {
                 title: blockBuilder.newPlainTextObject('Interaction received'),
                 blocks: blockBuilder.addSectionBlock({
                     text: blockBuilder.newPlainTextObject('We received your interaction, thanks!')
-                }),
+                }).getBlocks(),
             });
         }
 
