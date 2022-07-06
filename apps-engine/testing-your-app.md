@@ -8,7 +8,7 @@ This guide shows you how to run a unit test on your app.
 
 ## Requirements
 
-Please make sure you meet the following dependencies. Visit the corresponding sites to follow how to set them up.&#x20;
+Please make sure you meet the following dependencies. Visit the corresponding sites to follow how to set them up.
 
 * [Jest](https://www.npmjs.com/package/jest)
 * [@Types/Jest](https://www.npmjs.com/package/@types/jest)
@@ -23,8 +23,8 @@ This guide is given with the assumption you have some knowledge of:
 On your `.rcappsconfig` add the following lines on the `ignoredFiles` array:
 
 1. **"/mocks/\*"**
-2. &#x20;**"/tests/\*"**
-3. &#x20;**"\*\*/jest.config.js"**
+2. **"/tests/\*"**
+3. **"\*\*/jest.config.js"**
 
 ## Testing
 
@@ -99,7 +99,6 @@ describe('HelpCommand', () => { //5
        }); //9
     });
 });
-
 ```
 {% endcode %}
 
@@ -112,7 +111,7 @@ The `jest.mock` will mock all methods/functions that are inside the path inserte
 For deep documentation about mock a method please check [here](https://jestjs.io/docs/mock-functions)**.**
 {% endhint %}
 
-&#x20; 3\. This part is just a form to organize all the mocks you will use on your test, since the **run** method need some parameters that have a lot of properties you may separate this on a file, below you will see an example:
+3\. This part is just a form to organize all the mocks you will use on your test, since the **run** method need some parameters that have a lot of properties you may separate this on a file, below you will see an example:
 
 {% code title="commands.mock" %}
 ```typescript
@@ -175,11 +174,11 @@ const commandsMockParams: {
 ```
 {% endcode %}
 
-&#x20; 4\.  Next, you only need to import the function or class that needs to be tested;
+4\. Next, you only need to import the function or class that needs to be tested;
 
-&#x20; 5\.   Set your `describe` to identify your test, for this example `HelpCommand` is fine;
+5\. Set your `describe` to identify your test, for this example `HelpCommand` is fine;
 
-&#x20; 6\.  At this point, you will describe your test cases, for this example, one is enough but it can be more, thinking that you may need to test multiple cases as errors or forks.
+6\. At this point, you will describe your test cases, for this example, one is enough but it can be more, thinking that you may need to test multiple cases as errors or forks.
 
 The `test` receives a string and a callback to run the test.
 
@@ -187,20 +186,20 @@ The `test` receives a string and a callback to run the test.
 In some cases, the method/function that you are testing may be a Promise, so you can set the callback as async it will work in most of the cases, but some not, so for more information about testing async methods, please reach this [link](https://jestjs.io/docs/asynchronous)
 {% endhint %}
 
-&#x20; 7\.  This line you only need to call your method/function and in this particular case this is a void method it will be no need to attribute the result of your method in a variable;
+7\. This line you only need to call your method/function and in this particular case this is a void method it will be no need to attribute the result of your method in a variable;
 
-&#x20; 8\. This part only takes all the mocked values to check our methods;
+8\. This part only takes all the mocked values to check our methods;
 
-&#x20; 9\.  This is the famous `expect` where you check if your method is working as it is supposed to do, in this case, we are checking if the notifyUser is been called with the right parameters.
+9\. This is the famous `expect` where you check if your method is working as it is supposed to do, in this case, we are checking if the notifyUser is been called with the right parameters.
 
 ### Running your test
 
 Run your test by following any of the two procedures
 
-* **Using Terminal**: Open up your terminal in the working directory and execute  `jest <file-name>` or just `jest` to run all test files;
+* **Using Terminal**: Open up your terminal in the working directory and execute `jest <file-name>` or just `jest` to run all test files;
 * **Using the VScode extension**: You only need to install [this](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) vscode extension and all of your tests files appear as below:
 
-![Using extension to run the tests](<../.gitbook/assets/image (85) (1).png>)
+![Using extension to run the tests](<../.gitbook/assets/image (85) (1) (1).png>)
 
 Two buttons will appear upon tests so you can click run or debug and if everything went well you will see:
 
@@ -211,4 +210,3 @@ For more information on how to run your tests please visit this [link](https://j
 ## Conclusion
 
 This documentation does not show all you can do with jest. Feel free to check out Jest documentation for other samples.
-

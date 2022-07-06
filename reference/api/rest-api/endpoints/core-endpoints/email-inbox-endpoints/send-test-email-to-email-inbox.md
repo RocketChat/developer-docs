@@ -7,10 +7,8 @@ description: Sends test email to email inbox
 {% hint style="info" %}
 Requires the user to have`manage-`email`-inbox`permission.
 
-####
+
 {% endhint %}
-
-
 
 | URL                                 | Requires Auth | HTTP Method |
 | ----------------------------------- | ------------- | ----------- |
