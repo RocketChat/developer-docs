@@ -6,26 +6,69 @@ Creates an integration, if the callee has the permissions. Requires `manage-inco
 | ----------------------------- | ------------- | ----------- |
 | `/api/v1/integrations.create` | `yes`         | `POST`      |
 
-## Payload
+## Incoming Webhook
 
-| Argument        | Example                                 | Required                 | Description                                                                                                                                                                                          |
-| --------------- | --------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`          | `webhook-outgoing`                      | Required                 | The type of integration to create, `webhook-outgoing` and `webhook-incoming` are supported.                                                                                                          |
-| `name`          | `Guggy`                                 | Required                 | The name of the integration, only is show on the Administration area.                                                                                                                                |
-| `enabled`       | `true`                                  | Required                 | Whether this integration should be enabled or not.                                                                                                                                                   |
-| `event`         | `sendMessage`                           | Required                 | This field is required only for outgoing integration. The type of event, can be any of these: `sendMessage`, `fileUploaded`, `roomArchived`, `roomCreated`, `roomJoined`, `roomLeft`, `userCreated`. |
-| `username`      | `rocket.cat`                            | Required                 | The username who to post this the messages as.                                                                                                                                                       |
-| `urls`          | `['http://text2gif.guggy.com/guggify']` | Required                 | The urls to call whenever this integration is triggered.                                                                                                                                             |
-| `scriptEnabled` | `false`                                 | Required                 | Whether the script should be enabled.                                                                                                                                                                |
-| `channel`       | `#general`                              | Required                 | The channel, group, or `@username`. Can also be `all_public_channels`, `all_private_groups`, or `all_direct_messages`. Comma separated for more than one.                                            |
-| `triggerWords`  | `!guggy`                                | Optional   Default: `''` | Specific words, separated by commas, which should trigger this integration.                                                                                                                          |
-| `alias`         | `Guggy`                                 | Optional   Default: `''` | The alias which should be applied to messages when this integration is processed.                                                                                                                    |
-| `avatar`        | `http://res.guggy.com/logo_128.png`     | Optional   Default: `''` | The logo to apply to the messages that this integration sends.                                                                                                                                       |
-| `emoji`         | `:ghost:`                               | Optional   Default: `''` | The emoji which should be displayed as the avatar for messages from this integration.                                                                                                                |
-| `token`         | `8DFS89DMKLWEN`                         | Optional   Default: `''` | If your integration requires a special token from the server (api key), use this.                                                                                                                    |
-| `script`        | [Integrations](broken-reference)        | Optional                 | Script triggered when this integration is triggered.                                                                                                                                                 |
+### Payload
 
-## Example Call
+| Argument        | Example                             | Required               | Description                                                                                                                                               |
+| --------------- | ----------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`          | `webhook-incoming`                  | Required               | The type of integration to create.                                                                                                                        |
+| `username`      | `rocket.cat`                        | Required               | The username who to post this the messages as.                                                                                                            |
+| `channel`       | `#general`                          | Required               | The channel, group, or `@username`. Can also be `all_public_channels`, `all_private_groups`, or `all_direct_messages`. Comma separated for more than one. |
+| `scriptEnabled` | `sendMessage`                       | Required               | Whether the script should be enabled.                                                                                                                     |
+| `script`        | `Integration`                       | Optional               | Script triggered when this integration is triggered.                                                                                                      |
+| `name`          | `rocket.cat`                        | Required               | The username who to post this the messages as.                                                                                                            |
+| `enabled`       | `true`                              | Required               | Whether this integration should be enabled or not.                                                                                                        |
+| `alias`         | `Guggy`                             | Optional Default: `''` | The alias which should be applied to messages when this integration is processed.                                                                         |
+| `avatar`        | `http://res.guggy.com/logo_128.png` | Optional Default: `''` | The logo to apply to the messages that this integration sends.                                                                                            |
+| `emoji`         | `:ghost:`                           | Optional Default: `''` | The emoji which should be displayed as the avatar for messages from this integration.                                                                     |
+
+### Example Call
+
+```json
+curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
+     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
+     -H "Content-type: application/json" \
+     http://localhost:3000/api/v1/integrations.create \
+     -d '{ "type": "webhook-incoming", "username": "rocket.cat", "channel": "#general", "scriptEnabled": false }'
+```
+
+### Example Response
+
+```json
+{
+    "integration": {
+        "type": "webhook-incoming",
+        "username": "rocket.cat",
+        "channel": false,
+        "scriptEnabled": "sendMessage",
+        "name": "sendMessage",
+        "enabled": "sendMessage",
+        }
+```
+
+## Outgoing Webhook
+
+### Payload
+
+| Argument        | Example                                 | Required               | Description                                                                                                                                                                                          |
+| --------------- | --------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`          | `webhook-outgoing`                      | Required               | The type of integration to create, `webhook-outgoing` and `webhook-incoming` are supported.                                                                                                          |
+| `name`          | `Guggy`                                 | Required               | The name of the integration, only is show on the Administration area.                                                                                                                                |
+| `enabled`       | `true`                                  | Required               | Whether this integration should be enabled or not.                                                                                                                                                   |
+| `event`         | `sendMessage`                           | Required               | This field is required only for outgoing integration. The type of event, can be any of these: `sendMessage`, `fileUploaded`, `roomArchived`, `roomCreated`, `roomJoined`, `roomLeft`, `userCreated`. |
+| `username`      | `rocket.cat`                            | Required               | The username who to post this the messages as.                                                                                                                                                       |
+| `urls`          | `['http://text2gif.guggy.com/guggify']` | Required               | The urls to call whenever this integration is triggered.                                                                                                                                             |
+| `scriptEnabled` | `false`                                 | Required               | Whether the script should be enabled.                                                                                                                                                                |
+| `channel`       | `#general`                              | Required               | The channel, group, or `@username`. Can also be `all_public_channels`, `all_private_groups`, or `all_direct_messages`. Comma separated for more than one.                                            |
+| `triggerWords`  | `!guggy`                                | Optional Default: `''` | Specific words, separated by commas, which should trigger this integration.                                                                                                                          |
+| `alias`         | `Guggy`                                 | Optional Default: `''` | The alias which should be applied to messages when this integration is processed.                                                                                                                    |
+| `avatar`        | `http://res.guggy.com/logo_128.png`     | Optional Default: `''` | The logo to apply to the messages that this integration sends.                                                                                                                                       |
+| `emoji`         | `:ghost:`                               | Optional Default: `''` | The emoji which should be displayed as the avatar for messages from this integration.                                                                                                                |
+| `token`         | `8DFS89DMKLWEN`                         | Optional Default: `''` | If your integration requires a special token from the server (api key), use this.                                                                                                                    |
+| `script`        | [Integrations](broken-reference/)       | Optional               | Script triggered when this integration is triggered.                                                                                                                                                 |
+
+### Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -35,7 +78,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -d '{ "type": "webhook-outgoing", "name": "Testing via REST API", "event": "sendMessage", "enabled": false, "channel": "#general", "username": "rocket.cat", "urls": ["http://text2gif.guggy.com/guggify"], "scriptEnabled": false }'
 ```
 
-## Example Result
+### Example Result
 
 ```javascript
 {

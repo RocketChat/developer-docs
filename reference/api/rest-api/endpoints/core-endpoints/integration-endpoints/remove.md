@@ -1,17 +1,51 @@
-# Remove
+# Remove an Integration from Server
 
 Removes an integration from the server. Requires `manage-incoming-integrations` or `manage-own-incoming-integrations` permissions to be able to remove incoming integrations and `manage-outgoing-integrations` or `manage-own-outgoing-integrations` to be able to remove outgoing integrations.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/integrations.remove` | `yes` | `POST` |
+| URL                           | Requires Auth | HTTP Method |
+| ----------------------------- | ------------- | ----------- |
+| `/api/v1/integrations.remove` | `yes`         | `POST`      |
 
-## Payload
+## Incoming Webhook
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `type` | `webhook-outgoing` | Required | The type of integration to remove, `webhook-outgoing` and `webhook-incoming` are supported. |
+### Payload
+
+| Argument        | Example             | Required | Description                          |
+| --------------- | ------------------- | -------- | ------------------------------------ |
 | `integrationId` | `oNLthAt9RwMw39N2B` | Required | The id of the integration to remove. |
+
+### Example Call
+
+```bash
+curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
+     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
+     -H "Content-type: application/json" \
+     http://localhost:3000/api/v1/integrations.remove \
+     -d '{"integrationId": "oNLthAt9RwMw39N2B" }'
+```
+
+### Example Result
+
+```javascript
+{
+    "integration": {
+        "type": "webhook-incoming",
+        "username": "rocket.cat",
+        "channel": false,
+        "scriptEnabled": "sendMessage",
+        "name": "sendMessage",
+        "enabled": "sendMessage",
+        }
+```
+
+## Outgoing Webhook
+
+### Payload
+
+| Argument        | Example             | Required | Description                                                                                 |
+| --------------- | ------------------- | -------- | ------------------------------------------------------------------------------------------- |
+| `type`          | `webhook-outgoing`  | Required | The type of integration to remove, `webhook-outgoing` and `webhook-incoming` are supported. |
+| `integrationId` | `oNLthAt9RwMw39N2B` | Required | The id of the integration to remove.                                                        |
 
 ## Example Call
 
@@ -52,8 +86,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 1.1.0 | Separate permissions in `incoming` and `outgoing`. |
-| 0.49.0 | Added |
-
+| Version | Description                                        |
+| ------- | -------------------------------------------------- |
+| 1.1.0   | Separate permissions in `incoming` and `outgoing`. |
+| 0.49.0  | Added                                              |

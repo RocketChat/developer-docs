@@ -115,7 +115,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL                        | Short Description                                                         | Details Page                                                                                                                     |
 | -------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/commands.get`     | Retrieves the specification of the slash command.                         | [Link](broken-reference)                                                                                                         |
+| `/api/v1/commands.get`     | Retrieves the specification of the slash command.                         | [Link](broken-reference/)                                                                                                        |
 | `/api/v1/commands.list`    | Lists all available slash commands.                                       | [Link](commands-endpoints/list.md)                                                                                               |
 | `/api/v1/commands.run`     | Executes a slash command in the specified room.                           | [Link](commands-endpoints/execute-a-slash-command.md)                                                                            |
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](commands-endpoints/preview.md)                                                                                            |
@@ -244,7 +244,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/uploadImportFile`          | `Content`                      | Document Under Development                                                                                                                         |
 | `/api/v1/downloadPublicImportFile`  | `Content`                      | Document Under Development                                                                                                                         |
 | `/api/v1/startImport`               | `Content`                      | Document Under Development                                                                                                                         |
-| `/api/v1/getImportFileData`         | Get file data of an upload.    |  [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-file-data)         |
+| `/api/v1/getImportFileData`         | Get file data of an upload.    | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-file-data)          |
 | `/api/v1/getImportProgress`         | Get the progress of an import. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-progress)           |
 | `/api/v1/getLatestImportOperations` | Get latest import operations   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-latest-import-operations)  |
 | `/api/v1/downloadPendingFiles`      | Download pending files         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-files)        |
@@ -261,7 +261,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
 | Url                            | Short Description                               | Details Page                                                                                                                     |
 | ------------------------------ | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](integration-endpoints/create.md)                                                                                          |
+| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](broken-reference)                                                                                                         |
 | `/api/v1/integrations.get`     | Gets an integration.                            | [Link](integration-endpoints/get.md)                                                                                             |
 | `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md)                                                                                         |
 | `/api/v1/integrations.list`    | Lists all of the integrations.                  | [Link](integration-endpoints/list.md)                                                                                            |

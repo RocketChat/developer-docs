@@ -1,19 +1,38 @@
-# Get
+# Get Integration
 
 Retrieves an integration by id.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/integrations.get` | `yes` | `GET` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/integrations.get` | `yes`         | `GET`       |
 
-## Query Parameters
+## Incoming Webhook
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `integrationId` | `ByehQjC44FwMeiLbX` | Required | The integration's id |
-| `createdBy` | `fn5u45ui34fvb` | Optional | The user's id who created the integration |
+### Query Parameters
 
-## Example Call
+| Argument        | Example             | Required | Description                               |
+| --------------- | ------------------- | -------- | ----------------------------------------- |
+| `integrationId` | `ByehQjC44FwMeiLbX` | Required | The integration's id                      |
+| `createdBy`     | `fn5u45ui34fvb`     | Optional | The user's id who created the integration |
+
+
+
+
+
+
+
+
+
+## Outgoing Webhook&#x20;
+
+### Query Parameters
+
+| Argument        | Example             | Required | Description                               |
+| --------------- | ------------------- | -------- | ----------------------------------------- |
+| `integrationId` | `ByehQjC44FwMeiLbX` | Required | The integration's id                      |
+| `createdBy`     | `fn5u45ui34fvb`     | Optional | The user's id who created the integration |
+
+### Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -21,7 +40,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/integrations.get?integrationId=ByehQjC44FwMeiLbX
 ```
 
-## Example Result
+### Example Result
 
 ```javascript
 {
@@ -115,6 +134,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 2.4.0 | Added |
-
+| ------- | ----------- |
+| 2.4.0   | Added       |
