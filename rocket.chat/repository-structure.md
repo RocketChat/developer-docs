@@ -7,7 +7,8 @@ Rocket.Chat uses a [monorepo](https://github.com/RocketChat/fuselage/wiki#fusela
 This makes it easier to maintain and share the code without duplicating it.
 
 {% hint style="info" %}
-Rocket.Chat uses [Meteor framework](https://www.meteor.com/) and [React ](https://reactjs.org/)to build components. You should be familiar with those and their project structure([**Meteor project structure**](https://guide.meteor.com/structure.html), [**React project structure**](https://reactjs.org/docs/faq-structure.html)) to better understand Rocket.Chat repository structure.
+* Rocket.Chat uses [Meteor framework](https://www.meteor.com/) and [React ](https://reactjs.org/)to build components. You should be familiar with those and their project structure([**Meteor project structure**](https://guide.meteor.com/structure.html), [**React project structure**](https://reactjs.org/docs/faq-structure.html)) to better understand Rocket.Chat repository structure.
+* In the nearest future, the Rocket.Chat codebase is diverting from Meteor to a more manual structure.
 {% endhint %}
 
 ### Directory Structure
@@ -38,9 +39,9 @@ Rocket.Chat
 │   ├── agenda/
 │   ├── api-client/
 │   ├── cas-validate/
-│   ├── core-typings/       # Signatures of endpoints
+│   ├── core-typings/       # Type definitions used for core Rocket.Chat
 │   │   ├── src/
-│   ├── eslint-config/      # config files and rules for code and unit tests
+│   ├── eslint-config/      # Config files and rules for code and unit tests
 │   │   ├── best-practices/
 │   │   ├── errors/
 │   │   ├── ...
@@ -48,7 +49,7 @@ Rocket.Chat
 │   ├── livechat/
 │   ├── model-typings/
 │   ├── models/
-│   ├── rest-typings/
+│   ├── rest-typings/        # Signatures of endpoints
 │   ├── ui-client/
 │   ├── ui-contexts/
 │   └── ui-video-conf/
@@ -70,12 +71,12 @@ Where a combination of multiple components come together in action to build a si
 
 {% hint style="info" %}
 * **`apps/meteor/client/views/`**is a very good starting point for beginners to see and trace code functionality
-* The root view where can be seen in **`apps/meteor/client/views/root/AppRoot.tsx`** where execution in the front begins
+* The root view here can be seen in **`apps/meteor/client/views/root/AppRoot.tsx`** where execution in the front begins
 {% endhint %}
 
 #### **`apps/meteor/client/lib/`**
 
-A collection of functions, methods, and helpers that are reused in all of the client-side.\
+A collection of objects that are reused in all of the client-side.\
 This is to:
 
 * Limit code duplication
