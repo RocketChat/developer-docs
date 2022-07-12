@@ -55,11 +55,11 @@ If you are facing any errors with fibers failing, try this to resolve that
 
 * **Linking node binary:** `ln -svf $(which node) $(dirname $(which node))/nodejs`
 * **manual rebuild**:\
-  `cd node_modules/fibers/` \
-  `node-gyp rebuild --arch=arm64` \
-  `mkdir bin/darwin-aarch64-83` \
+  `cd node_modules/fibers/`\
+  `node-gyp rebuild --arch=arm64`\
+  `mkdir bin/darwin-arm64-83`\
   `cp build/Release/fibers.node $_`
-  *   Then&#x20;
+  *   Then
 
       `cp -r node_modules/fibers apps/meteor/node_modules/`
 {% endhint %}
