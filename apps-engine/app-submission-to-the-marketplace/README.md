@@ -3,12 +3,16 @@
 So, you just finished writing your first Rocket.Chat App, and you have successfully tested it locally which means you are ready to submit it to the Marketplace for others to use. This article will take you through the process, step-by-step.
 
 {% hint style="info" %}
-When you submit an App, there is a three-step process that takes place. In the first step, you submit the App to the Marketplace (explained below). Secondly, you will receive an email that asks for you to approve or reject the App submission (more on this later as well). Finally, after you approve the entry, then our staff will review it and determine whether it is to be approved published or not.
+When you submit an App, there is a three-step process that takes place:&#x20;
+
+* In the first step, you submit the App to the Marketplace (explained below)
+* Secondly, you will receive an email that asks for you to approve or reject the App submission (more on this later as well)
+* Finally, after you approve the entry, then our staff will review it and determine whether it is to be approved and published or not
 {% endhint %}
 
 ## Packaging the app
 
-Currently the Rocket.Chat servers and Marketplace allow submission of zip files, these files can be created by running `rc-apps package` which packages your app and creates the zip file under `dist` folder.
+Currently the Rocket.Chat servers and Marketplace allow submission of zip files, these files can be created by running the command `rc-apps package` in your Apps' directory. This will package your app and create a zip file under the `dist` folder.
 
 ## App Submission
 
@@ -20,7 +24,7 @@ To submit your App simply run:
 
 `rc-apps submit`
 
-![](<../../../.gitbook/assets/image (186) (1).png>)
+![](<../../.gitbook/assets/image (186) (1).png>)
 
 {% hint style="info" %}
 Submission through CLI just sends the App in a `draft` state. The Publisher must access the Portal to be able to submit the app.
@@ -30,31 +34,31 @@ Submission through CLI just sends the App in a `draft` state. The Publisher must
 
 To submit an app through the publisher:
 
-1. Log in using your cloud account
+1. Log in using your [cloud account](https://cloud.rocket.chat/login)
 
-![](<../../../.gitbook/assets/image (55).png>)
+![](<../../.gitbook/assets/image (55).png>)
 
 Or Sign up for your publisher account, as shown below:
 
-![](<../../../.gitbook/assets/image (183).png>)
+![](<../../.gitbook/assets/image (183).png>)
 
 Your publisher developer account is created, as shown below:
 
-![](<../../../.gitbook/assets/image (48).png>)
+![](<../../.gitbook/assets/image (48).png>)
 
 ## To add a new app:
 
 1. Click **New App**
 
-![](<../../../.gitbook/assets/image (19).png>)
+![](<../../.gitbook/assets/image (19).png>)
 
 Following screen appears:
 
-![](<../../../.gitbook/assets/image (45).png>)
+![](<../../.gitbook/assets/image (45).png>)
 
 2\. Drag and drop your app package, as shown below:
 
-![](<../../../.gitbook/assets/image (64).png>)
+![](<../../.gitbook/assets/image (64).png>)
 
 Click **Next** and set details of the app you're going to publish.
 
@@ -69,7 +73,7 @@ Click **Next** and set details of the app you're going to publish.
 
 In the following section we will guide you through different purchase types. You can choose the one that suits your needs.
 
-![](<../../../.gitbook/assets/image (56).png>)
+![](<../../.gitbook/assets/image (56).png>)
 
 {% hint style="info" %}
 For a paid app its madatory to connect with [Stripe](https://stripe.com/) account before submission.
@@ -86,7 +90,7 @@ Please use **One-time Purchase** when you want your app to have a one-off paymen
 1. Select One-time Purchase
 2. Enter the price you want to set
 
-![](<../../../.gitbook/assets/image (31).png>)
+![](<../../.gitbook/assets/image (31).png>)
 
 ### Subscription:
 
@@ -95,7 +99,7 @@ When you want your app to be subscription-based, you can use **Subscription** pu
 1. Select **Subscription**
 2. Click **Add pricing plan**
 
-![](<../../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11).png>)
 
 **New Pricing Plan** pane appears:
 
@@ -113,7 +117,7 @@ If you want your app to have a per seat subscribtion check mark **Per Seat** box
 Per seat subscribtion allows your customers to pay per seat for the app rather than paying for a tier of users.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 #### **5.2** Tiers Subscription
 
@@ -121,7 +125,7 @@ Per seat subscribtion allows your customers to pay per seat for the app rather t
 
 You can make your app available to your customers free of cost, as shown below;
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2).png>)
 
 ## App Info
 
@@ -133,17 +137,17 @@ Next you can set your app info:
 
 as shown below:
 
-![](<../../../.gitbook/assets/image (22).png>)
+![](<../../.gitbook/assets/image (22).png>)
 
 ## Publish App
 
 Hit **Publish Changes**, as shown below:
 
-![](<../../../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (40).png>)
 
 Your app is published successfully, as shown below:
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](<../../.gitbook/assets/image (15).png>)
 
 ## Process after successful submission:
 
@@ -155,16 +159,16 @@ After successful submission following events happen at Rocket.Chat side, that yo
 
 You can see the status of your app as **compiling**, as shown below:
 
-![](<../../../.gitbook/assets/image (191).png>)
+![](<../../.gitbook/assets/image (191).png>)
 
 After we compile, you will be notified via email, as shown below:
 
-![](<../../../.gitbook/assets/image (194).png>)
+![](<../../.gitbook/assets/image (194).png>)
 
 Then you get notified to review your app, as shown below:
 
-![](<../../../.gitbook/assets/image (192) (1).png>)
+![](<../../.gitbook/assets/image (192) (1).png>)
 
 You log in to your cloud account and **approve** it.
 
-After your approval, rocket.chat reviews it, and you will be notified via email that your app is now **Published** (listed).
+After your approval, Rocket.Chat reviews it, and you will be notified via email that your app is now **Published** (listed).
