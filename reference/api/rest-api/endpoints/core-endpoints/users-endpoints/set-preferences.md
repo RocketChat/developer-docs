@@ -2,7 +2,7 @@
 
 | URL                                    | Requires Auth | HTTP Method |
 | -------------------------------------- | ------------- | ----------- |
-| `/api/v1/users.saveUserPreferences.js` | `yes`         | `POST`      |
+| `/api/v1/users.saveUserPreferences` | `yes`         | `POST`      |
 
 ## Payload
 
