@@ -24,7 +24,7 @@ As a developer, you can
 
 [Mobile App](https://developer.rocket.chat/mobile-app/mobile-app-environment-setup)
 
-[Desk](https://developer.rocket.chat/desktop-app/desktop-app-environment-setup)
+[Desktop App](https://developer.rocket.chat/desktop-app/desktop-app-environment-setup)&#x20;
 
 See how to integrate with:
 
