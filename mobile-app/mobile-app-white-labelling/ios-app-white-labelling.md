@@ -2,7 +2,7 @@
 
 ## General setup
 
-* Open [RocketChatRN.xcworkspace](https://github.com/RocketChat/Rocket.Chat.ReactNative/tree/single-server/ios/RocketChatRN.xcworkspace) on Xcode (11.7 or newer)
+* Open [RocketChatRN.xcworkspace](https://github.com/RocketChat/Rocket.Chat.ReactNative/tree/single-server/ios/RocketChatRN.xcworkspace) on Xcode (13.0 or newer)
 * On the General tab, select “RocketChatRN” and change Display Name, Bundle Identifier, Version and Build
 
 {% hint style="info" %}
