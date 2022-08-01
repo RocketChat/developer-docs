@@ -13,9 +13,6 @@ Before submitting your app, you need to package it.  Currently the Rocket.Chat S
 In this quickstart, you’ll learn how to submit your app to Rocket.Chat with two methods.
 
 * App Submission through CLI
-*
-
-
 
 ### App Submission through CLI
 
