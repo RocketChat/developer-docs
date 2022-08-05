@@ -60,7 +60,7 @@ To test your app, you need a Rocket.Chat server running locally on your machine 
 
 See [Installing Rocket.Chat for Developing](../../rocket.chat/rocket.chat-server/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
 
-> You can learn more about organizing complex slash commands in our [Sub-command pattern](../recipes/sub-command-pattern.md) recipe
+> You can learn more about organizing complex slash commands in our [Sub-command pattern](../sample-app-snippets/sub-command-pattern.md) recipe
 
 or run it in preview mode with docker using the command:
 
