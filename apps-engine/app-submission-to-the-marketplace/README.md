@@ -117,11 +117,7 @@ To submit an app to the marketplace, the publisher must have a Rocket.Chat [Clou
 
 ### **Create a Publisher Account**
 
-1. Log in using your [cloud account](https://cloud.rocket.chat/login).
-
-![Cloud Login](<../../.gitbook/assets/cloud login.png>)
-
-Or sign up for your publisher account, as shown below:
+1. Go to [https://marketplace.rocket.chat/publisher/register](https://marketplace.rocket.chat/publisher/register) to sign up for your publisher account.
 
 ![Publisher Registration](../../.gitbook/assets/PublisherAccountRegistration.png)
 
@@ -131,7 +127,9 @@ Your publisher developer account is created, as shown below:
 
 ### Add your App
 
-To add and submit your app, click **New App.**&#x20;
+To add and submit your app, Navigate to **App** > **New App.**&#x20;
+
+![Apps](https://lh5.googleusercontent.com/VInq6AZbSztPWa0y6MerZzaATDp\_wBtrP4yHYA5crvgv7YtF4heTBjqtFKW3cGhmRTRRFP5UXcm22jPK\_smWJ5fP-xVh4m0RzpxCxB9Z7-A-lC3HbV0xzQ8xGMLLl3vVjLDzTlgAnm7VrKZmg5dW6FM)
 
 #### **Step 01: Upload**
 
@@ -161,22 +159,28 @@ After entering your app information, the next step is to define the pricing plan
 
 ![Pricing](https://lh5.googleusercontent.com/NMFCr36QXMtsz0dcLQ0b\_uvS5epmVA9Jxc5lT7gFh9mOBN4n8o9lSyBhZAJ6J2233Ifl-0\_InVDzLnD9Okjxk8FdiOK4-wowx3SM7YJvwJunUU2e64iXAUYdX0QeYnLjK51vjWjur-3QYaepovMbkvY)
 
-{% hint style="info" %}
-* For a paid app it is mandatory to connect with [Stripe](https://stripe.com/) account before submission.
-  * To create a Stripe account:
-    * Step 1: Input the [Registration](https://dashboard.stripe.com/register) Page on Stripe.com
-    * Step 2: Fill out the form to create an account
-    * Step:3 Confirm you are the company representative&#x20;
-    * Step 4: Enter Bank Details&#x20;
-    * Step 5: Get the Keys to connect Stripe to your Website&#x20;
-    * Step 6: Get the Webhooks
-* Your users are allowed to buy the app per workspace. They must purchase the app separately if they have two workspaces and want to use both apps.
+For a paid app it is mandatory to connect with [Stripe](https://stripe.com/) account before submission.
+
+![Connect Stripe](<../../.gitbook/assets/Connect Stripe.png>)
+
+{% hint style="warning" %}
+**How do I create a Stripe account?**
+
+* Step 1: Input the [Registration](https://dashboard.stripe.com/register) Page on Stripe.com.
+* Step 2: Fill out the form to create an account.
+* Step:3 Set up your bank account to receive payouts.
+
+You can find more information here: [https://stripe.com/docs/payouts](https://stripe.com/docs/payouts)&#x20;
 {% endhint %}
 
 **One-time Purchase**: Select **One-time Purchase** when you want your app to have a one-off payment, and your users are allowed to use it forever after that payment.&#x20;
 
 * **Purchase Type**: Select **One-time Purchase** to allow the users to make a single purchase.
 * **Price:** Enter the price (USD)you want to set.
+
+{% hint style="info" %}
+Your users are allowed to buy the app per workspace. They must purchase the app separately if they have two workspaces and want to use both apps.
+{% endhint %}
 
 **Subscription:** Select the **Subscription** purchase type when you want your app to be subscription-based.
 
