@@ -20,7 +20,7 @@ As a developer, you can
 
     Help in the development of:
 
-[RocketChat](https://developer.rocket.chat/rocket.chat/rocket.chat-server)
+[RocketChat](https://developer.rocket.chat/rocket.chat/rocket-chat-environment-setup)
 
 [Mobile App](https://developer.rocket.chat/mobile-app/mobile-app-environment-setup)
 
