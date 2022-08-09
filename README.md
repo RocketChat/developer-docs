@@ -20,28 +20,28 @@ As a developer, you can
 
     Help in the development of:
 
-[RocketChat](https://developer.rocket.chat/rocket.chat/rocket-chat-environment-setup)
+****[**RocketChat**](https://developer.rocket.chat/rocket.chat/rocket-chat-environment-setup)****
 
-[Mobile App](https://developer.rocket.chat/mobile-app/mobile-app-environment-setup)
+****[**Mobile App**](https://developer.rocket.chat/mobile-app/mobile-app-environment-setup)****
 
-[Desktop App](https://developer.rocket.chat/desktop-app/desktop-app-environment-setup)&#x20;
+****[**Desktop App**](https://developer.rocket.chat/desktop-app/desktop-app-environment-setup) ****&#x20;
 
 See how to integrate with:
 
-[Omnichannel](https://developer.rocket.chat/omnichannel/omnichannel-environment-setup)
+****[**Omnichannel**](https://developer.rocket.chat/omnichannel/omnichannel-environment-setup)****
 
-[Apps Engine](https://developer.rocket.chat/apps-engine/rocket.chat-app)
+****[**Apps Engine**](https://developer.rocket.chat/apps-engine/rocket.chat-app)****
 
 * **Extend** and **Customize**: Extend Rocket.Chat's functionalities and customize the entire solution for your use case. More of Rocket.Chat's features can be customized and extended using:
 
-[Bots](https://developer.rocket.chat/bots/bots-development-environment-setup) [REST API](https://developer.rocket.chat/reference/api/rest-api) [API](https://developer.rocket.chat/reference/api)
+****[**Bots**](https://developer.rocket.chat/bots/bots-development-environment-setup) **** [**REST API**](https://developer.rocket.chat/reference/api/rest-api) **** [**API**](https://developer.rocket.chat/reference/api)****
 
 * **Connect with Community**: Get help from our global community and open channels
 
 You can always join our open server, community, and repositories for more collaborations.
 
-[Rocket.Chat Open Server](https://open.rocket.chat/home)
+[**Rocket.Chat Open Server**](https://open.rocket.chat/home)****
 
-[Rocket.Chat Community](https://community.rocket.chat/)
+****[**Rocket.Chat Community**](https://community.rocket.chat/)****
 
-[Rocket.Chat Github](https://github.com/RocketChat)
+****[**Rocket.Chat Github**](https://github.com/RocketChat)****
