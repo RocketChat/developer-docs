@@ -6,7 +6,7 @@ description: Change the Archive state of a room.
 
 | URL                 | Requires Auth | HTTP Method |
 | ------------------- | ------------- | ----------- |
-| `/api/v1/rooms.get` | `yes`         | `POST`      |
+| `/api/v1/rooms.changeArchivationState` | `yes`         | `POST`      |
 
 ## Payload
 
