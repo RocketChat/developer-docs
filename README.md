@@ -20,21 +20,41 @@ As a developer, you can
 
     Help in the development of:
 
-[RocketChat](https://developer.rocket.chat/rocket.chat/rocket.chat-server)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-[Mobile App](https://developer.rocket.chat/mobile-app/mobile-app-environment-setup)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-[Desktop App](https://developer.rocket.chat/desktop-app/desktop-app-environment-setup)&#x20;
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 See how to integrate with:
 
-[Omnichannel](https://developer.rocket.chat/omnichannel/omnichannel-environment-setup)
+{% content-ref url="reference/api/rest-api/endpoints/omnichannel/" %}
+[omnichannel](reference/api/rest-api/endpoints/omnichannel/)
+{% endcontent-ref %}
 
-[Apps Engine](https://developer.rocket.chat/apps-engine/rocket.chat-app)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 * **Extend** and **Customize**: Extend Rocket.Chat's functionalities and customize the entire solution for your use case. More of Rocket.Chat's features can be customized and extended using:
 
-[Bots](https://developer.rocket.chat/bots/bots-development-environment-setup) [REST API](https://developer.rocket.chat/reference/api/rest-api) [API](https://developer.rocket.chat/reference/api)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="reference/api/rest-api/" %}
+[rest-api](reference/api/rest-api/)
+{% endcontent-ref %}
+
+{% content-ref url="reference/api/" %}
+[api](reference/api/)
+{% endcontent-ref %}
 
 * **Connect with Community**: Get help from our global community and open channels
 
