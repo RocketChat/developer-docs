@@ -31,4 +31,4 @@ We had a webinar some time ago on how to get started with Rocket.Chat Apps devel
 
 [You can watch it here](https://www.youtube.com/watch?v=PaFPeD6QG9k).
 
-An updated guide can be found at [Creating an App](creating-an-app.md).
+An updated guide can be found at [Creating an App](getting-started/creating-an-app.md).

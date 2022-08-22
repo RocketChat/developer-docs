@@ -51,7 +51,7 @@ The development tools provide a command to quickly scaffold a new Rocket.Chat Ap
 
 The app description file, named `app.json`, contains basic information about the app. You can check the [app-schema.json](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/master/src/definition/app-schema.json) file for all the detailed information and fields allowed in the app description file, the basic structure is similar to this:
 
-```
+``` json
 {
     "id": "5cb9a329-0613-4d39-b20f-cc2cc9175df5",
     "name": "App Name",
@@ -72,7 +72,7 @@ The app description file, named `app.json`, contains basic information about the
 
 The basic creation of an App is based on extending the `App` class from the Rocket.Chat Apps _definition_ library. Your class also has to implement the constructor and optionally the `initialize` function. For more details on it check the [App definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/classes/app.app-1.html).
 
-```
+```ts
 import {
     IAppAccessors,
     IConfigurationExtend,
@@ -104,7 +104,7 @@ For uploading the app you need to add the required parameters in the `.rcappscon
 
 * Upload using username, password
 
-```
+```js
 {
     url: string;
     username: string;

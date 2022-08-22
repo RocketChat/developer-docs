@@ -17,7 +17,7 @@ description: Change the Archive state of a room.
 
 ### Example Payload
 
-```
+```json
 {
     "rid": "iu7jtPAhvEeAS5tNq",
     "action": "archive"
@@ -129,7 +129,7 @@ HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/rooms
 
 ### Success
 
-```javascript
+```json
 {
     "success": true
 }

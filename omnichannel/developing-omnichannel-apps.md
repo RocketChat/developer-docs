@@ -11,7 +11,7 @@ Most omnichannel apps make use of these recipes and components.
 ### Recipes
 
 {% content-ref url="../apps-engine/recipes/" %}
-[recipes](../apps-engine/recipes/)
+[recipes](../apps-engine/sample-app-snippets)
 {% endcontent-ref %}
 
 ### Components&#x20;
