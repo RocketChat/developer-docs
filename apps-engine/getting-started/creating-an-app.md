@@ -33,7 +33,7 @@ The basic creation of an App is based on extending the `App` class from the Rock
 
 The app description file, named `app.json`, contains basic information about the app. You can check the [app-schema.json](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/master/src/definition/app-schema.json) file for all the detailed information and fields allowed in the app description file.
 
-Let's take a look at our `HelloWorld` app's `app.json` file below to understand the structure.&#x20;
+Let's take a look at our `HelloWorld` app's `app.json` file below to understand the structure.
 
 ```json
 {
@@ -58,7 +58,7 @@ Let's take a look at our `HelloWorld` app's `app.json` file below to understand 
 
 To test your app, you need a Rocket.Chat server running locally on your machine and access to an admin user's credentials.
 
-See [Installing Rocket.Chat for Developing](../../rocket.chat/rocket.chat-server/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
+See [Installing Rocket.Chat for Developing](../../rocket.chat/rocket-chat-environment-setup/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
 
 > You can learn more about organizing complex slash commands in our [Sub-command pattern](../sample-app-snippets/sub-command-pattern.md) recipe
 
@@ -202,7 +202,7 @@ Now to verify that it actually is working, you need to check the logs.
 
 Scroll down until you see `constructor`. When you do, click on it.
 
-Following screen apears:&#x20;
+Following screen apears:
 
 ![](<../../.gitbook/assets/image (3) (1).png>)
 
@@ -258,7 +258,7 @@ Let's now look at what properties our `HelloWorldCommand` class now must define
 
 `command`
 
-This is a public variable of type `string,` it is the command name of the command you are to enter after the slash. In this case, the value is  `hello`.
+This is a public variable of type `string,` it is the command name of the command you are to enter after the slash. In this case, the value is `hello`.
 
 ```typescript
 public command: string = 'hello';

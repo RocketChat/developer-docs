@@ -15,10 +15,10 @@
 ## Rocket.Chat
 
 * [Rocket Chat Environment Setup](rocket.chat/rocket-chat-environment-setup/README.md)
-  * [Windows 10](rocket.chat/rocket.chat-server/windows-10.md)
-  * [Linux](rocket.chat/rocket.chat-server/linux.md)
-  * [Gitpod](rocket.chat/rocket.chat-server/gitpod.md)
-  * [Mac OSX](rocket.chat/rocket.chat-server/mac-osx.md)
+  * [Windows 10](rocket.chat/rocket-chat-environment-setup/windows-10.md)
+  * [Linux](rocket.chat/rocket-chat-environment-setup/linux.md)
+  * [Gitpod](rocket.chat/rocket-chat-environment-setup/gitpod.md)
+  * [Mac OSX](rocket.chat/rocket-chat-environment-setup/mac-osx.md)
 * [Repository Structure](rocket.chat/repository-structure.md)
 * [Deeplink](rocket.chat/deeplink.md)
 * [Two Factor Authentication](rocket.chat/two-factor-authentication.md)
@@ -39,7 +39,7 @@
   * [Internationalization](rocket.chat/contribute-to-rocket.chat/internationalization.md)
   * [Help Test Rocket.Chat](rocket.chat/contribute-to-rocket.chat/help-test-rocket.chat.md)
   * [Troubleshooting](rocket.chat/contribute-to-rocket.chat/troubleshooting.md)
-  * [Code of Conduct](code\_of\_conduct.md)
+  * [Code of Conduct](rocket.chat/contribute-to-rocket.chat/code\_of\_conduct.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
 ## Mobile App
@@ -491,7 +491,7 @@
           * [Group Delete](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/delete.md)
           * [Group History](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/history.md)
           * [Group Info](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/info.md)
-          * [Group Invite](reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/invite.md)
+          * [Group Invite](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/invite.md)
           * [Group Kick](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/kick.md)
           * [Group Leave](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/leave.md)
           * [Group List All](reference/api/rest-api/endpoints/core-endpoints/groups-endpoints/listall.md)
