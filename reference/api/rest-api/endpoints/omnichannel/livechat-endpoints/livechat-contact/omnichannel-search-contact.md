@@ -1,5 +1,7 @@
 ---
-description: Search a contact information.
+description: >-
+  Use this endpoint to find contacts by name, email, phone number or any custom
+  field values stored in the database.
 ---
 
 # Omnichannel Search Contact
@@ -17,17 +19,39 @@ description: Search a contact information.
 
 ## Query Parameters
 
-| Argument | Example         | Required | Description           |
-| -------- | --------------- | -------- | --------------------- |
-| `email`  | `edu@gmail.com` | Required | Contact email address |
+| Argument | Example           | Required | Description                         |
+| -------- | ----------------- | -------- | ----------------------------------- |
+| `email`  | `edu@gmail.com`   | Optional | Search contacts by Co email address |
+| `phone`  | `+13034833887`    | Optional | Contact phone number                |
+| `custom` | `fieldName=value` | Optional | Contact custom field                |
 
 ## Example Call
+
+### Find contacts by Email ID&#x20;
 
 ```bash
 curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?email=edu@gmail.com \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+
+### Find contacts by Phone Number&#x20;
+
+```
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?phone=111111111 \
+--header 'X-Auth-Token: myauth-token' \
+--header 'X-User-Id: myuser-name'
+```
+
+### Find Contacts through Custom Fields
+
+```
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?custom=field_name%3Dfield_value \
+--header 'X-Auth-Token: myauth-token' \
+--header 'X-User-Id: myuser-name'
+```
+
+The `custom` query parameter can be used to search for a contact by a custom field. The `custom` query parameter must be encoded by [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams).
 
 ## Result
 
