@@ -10,8 +10,7 @@ To learn more about the Rocket.Chat platform, please consult our [documentation]
 
 As a developer, you can
 
-* **Contribute**: Contribute to help make Rocket.Chat better. Whether you have coding experience or not, you can contribute to Rocket.Chat from bringing up issues, writing documentation and making changes following our guide on:\
-
+* **Contribute**: Contribute to help make Rocket.Chat better. Whether you have coding experience or not, you can contribute to Rocket.Chat from bringing up issues, writing documentation and making changes following our guide on:
 
 {% content-ref url="rocket.chat/contribute-to-rocket.chat/" %}
 [contribute-to-rocket.chat](rocket.chat/contribute-to-rocket.chat/)

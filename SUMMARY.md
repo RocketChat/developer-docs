@@ -91,7 +91,7 @@
   * [UIKit](apps-engine/adding-features/uikit/README.md)
     * [Opening the Contextual Bar](apps-engine/adding-features/uikit/opening-the-contextual-bar.md)
     * [Building blocks](apps-engine/adding-features/uikit/uikit-building-blocks.md)
-    * [Action Buttons](apps-engine/adding-features/uikit/action-buttons.md)
+    * [Action Buttons](apps-engine/fundamentals-of-apps/uikit/action-buttons.md)
 * [Testing your App](apps-engine/testing-your-app.md)
 * [Sample App Snippets](apps-engine/sample-app-snippets/README.md)
   * [Sub-command pattern](apps-engine/sample-app-snippets/sub-command-pattern.md)

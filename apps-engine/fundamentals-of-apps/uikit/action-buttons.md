@@ -1,6 +1,8 @@
 # Action Buttons
 
-A Rocket.Chat App to registers action buttons to be displayed in different contexts in Rocket.Chat UI, such as message actions, room actions, and message box actions.
+Action buttons are UI Kit elements that when registered, can be displayed and used in different contexts within the Rocket.Chat UI to trigger or initiate a set of action(s). The [Action button context](https://rocketchat.github.io/Rocket.Chat.Apps-engine/enums/ui\_uiactionbuttoncontext.uiactionbuttoncontext.html#message\_action) for example is `MESSAGE_ACTION`, `ROOM_ACTION`, `MESSAGE_BOX_ACTION` etc
+
+To demonstrate this, we are going to create an action button on a message context that will simply display a text to let us know the interaction was received.
 
 ## Registering a button
 
@@ -31,9 +33,11 @@ Registering a button requires `ui.registerButton` permission. Make sure to add i
 ```
 {% endcode %}
 
-That button will be shown as follows:
+You can [deploy your app](../../getting-started/creating-an-app.md#testing-rocketchat-app) to test and see that the button gets added to the list of options against the context specified. In this case, a message.
 
-![](<../../../.gitbook/assets/image (100).png>)
+Click on the options icon across any message and you will see the action we just created like seen below.
+
+![UI Kit new Action button](<../../../.gitbook/assets/UI Kit new Action Button>)
 
 ## Handling an interaction
 
@@ -80,7 +84,7 @@ export class MyApp extends App implements IUIKitInteractionHandler {
 
 ## Choosing when your button will be displayed
 
-Most of the times you will have an action button that does something specific, and should not be displayed everywhere the context is available. For that, you can use the `when` prop when registering the button:
+Most of the time you will have an action button that does something specific, and should not be displayed everywhere the context is available. For that, you can use the `when` prop when registering the button:
 
 ```typescript
 protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
@@ -103,3 +107,27 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 ```
 
 The button above can only be seen in public and private channels and direct messages, by users that have the `create-d` permission and have both the `admin` and `moderator` roles.
+
+## Working with i18n
+
+Localization for your App is very important to better suit different users.
+
+To add localization to your App, create an `i18n` folder in the project's root directory and add `.json` files for the various languages.
+
+In this case of this example, let us add an `en.json` file with the content
+
+{% code title="en.json" %}
+```json
+{
+    "my-action-name": "Test UI Action"
+}
+```
+{% endcode %}
+
+The above piece of code will simply create a reference for English against the \`labelI18n\` value we specified when registering the button.
+
+{% hint style="success" %}
+With these changes, deploy the app again and this time you will see something like the below when the button is clicked
+{% endhint %}
+
+![UI Kit Action Button triggered](<../../../.gitbook/assets/UI Kit Action Button triggered>)
