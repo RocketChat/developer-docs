@@ -1,8 +1,8 @@
 # Developing Omnichannel Apps
 
-One of the best ways of utilizing omnichannel features is through building interactive [RocketChat Apps](../apps-engine/rocket.chat-app/).
+One of the best ways of utilizing omnichannel features is through building interactive [RocketChat Apps.](https://developer.rocket.chat/apps-engine/rocketchat-app)
 
-More details on building RocketChat Apps are covered in [creating-an-app.md](../apps-engine/rocket.chat-app/creating-an-app.md "mention") section.
+For more information on building the RocketChat Apps, see [https://developer.rocket.chat/apps-engine/getting-started](https://developer.rocket.chat/apps-engine/getting-started).
 
 ## Key Traits in Omnichannel Apps
 
@@ -10,16 +10,15 @@ Most omnichannel apps make use of these recipes and components.
 
 ### Recipes
 
-{% content-ref url="../apps-engine/recipes/" %}
-[recipes](../apps-engine/sample-app-snippets)
-{% endcontent-ref %}
+{% embed url="https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/alpha/README.md" %}
+App-Engine README
+{% endembed %}
 
-### Components&#x20;
+### Components
 
 1.  **A Webhook Endpoint**: This is where channels like WhatsApp, Facebook, or any external source will trigger message events when a visitor sends messages using those channels.
 
-    You can register an App endpoint following [registering-api-endpoints.md](../apps-engine/recipes/registering-api-endpoints.md "mention") guide in the Apps section.
+    You can register an App endpoint following the guide [https://developer.rocket.chat/apps-engine/sample-app-snippets/registering-api-endpoints](https://developer.rocket.chat/apps-engine/sample-app-snippets/registering-api-endpoints) in the Apps section.
 2.  **A Livechat Message Handler**: The message handler is called when an agent sends any message on a room, which is then forwarded to the respective channels.
 
-    We have a guide on Apps message handlers here [event-interfaces.md](../apps-engine/fundamentals-of-apps/event-interfaces.md "mention").
-
+    We have a guide on Apps message handlers here: [https://developer.rocket.chat/apps-engine/getting-started/event-interfaces](https://developer.rocket.chat/apps-engine/getting-started/event-interfaces).
