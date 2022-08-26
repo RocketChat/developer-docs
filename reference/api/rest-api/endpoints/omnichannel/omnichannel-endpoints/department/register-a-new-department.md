@@ -1,12 +1,12 @@
 # Register a new department
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/department` | `yes` | `POST` |
+| URL                           | Requires Auth | HTTP Method |
+| ----------------------------- | ------------- | ----------- |
+| `/api/v1/livechat/department` | `yes`         | `POST`      |
 
 ## Example payload
 
-```javascript
+```json
 {
   "department": {
     "enabled": false,
@@ -18,7 +18,6 @@
   },
   "agents": [{
     "agentId": "SQafHvoFPuB57NmBD",
-    "username": "john.doe",
     "count": 0,
     "order": 0
   }]
@@ -33,7 +32,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -X POST \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/livechat/department \
-    -d '{"department": {"enabled": false, "showOnRegistration": true, "name": "new from api", email: "john@doe.com", showOnOfflineForm: true }, "agents": [{ "agentId": "SQafHvoFPuB57NmBD", "username": "john.doe" }] }'
+    -d '{"department": {"enabled": false, "showOnRegistration": true, "name": "new from api", email: "john@doe.com", showOnOfflineForm: true }, "agents": [{ "agentId": "SQafHvoFPuB57NmBD" }] }'
 ```
 
 ## Example Result
@@ -50,13 +49,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
   },
   "agents": [
     {
-      "_id": "DDjZbhTF74n3NBuWK",
       "agentId": "SQafHvoFPuB57NmBD",
-      "departmentId": "iTfLCX3qqwKgf5uqg",
-      "username": "john.doe",
       "count": 0,
       "order": 0,
-      "_updatedAt": "2016-12-13T17:22:19.169Z"
     }
   ],
   "success": true
@@ -65,10 +60,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 1.0.0 | New fields for department updated |
-| 0.42.0 | Added |
+| Version | Description                       |
+| ------- | --------------------------------- |
+| 1.0.0   | New fields for department updated |
+| 0.42.0  | Added                             |
 
-## 
-
+##
