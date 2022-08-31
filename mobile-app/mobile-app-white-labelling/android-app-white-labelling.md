@@ -15,11 +15,10 @@
 * Set `APPLICATION_ID`, `VERSIONCODE` and `BugsnagAPIKey` on `./android/gradle.properties`
 * Generate a [new image asset](https://developer.android.com/studio/write/image-asset-studio) for `ic_notification` and target `main`
 * Generate a [new image asset](https://developer.android.com/studio/write/image-asset-studio) for `ic_launcher` and target `experimental`
-* Change splash screen background and notification text color on `./android/app/src/experimental/res/values/colors.xml`
+* Splash screen is going to use the same asset as the `ic_launcher` and you can change the background on `splashBackground` as below
 
 ![](<../../.gitbook/assets/image (180).png>)
 
-* Change splash screen logo on `./android/app/src/experimental/res/drawable-xxhdpi/splash.png`
 * Change app name and share extension name on `./android/app/src/main/res/values/strings.xml`
 
 ![](<../../.gitbook/assets/image (174).png>)
