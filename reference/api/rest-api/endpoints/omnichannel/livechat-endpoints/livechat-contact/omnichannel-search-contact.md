@@ -1,10 +1,6 @@
----
-description: >-
-  Use this endpoint to find contacts by name, email, phone number or any custom
-  field values stored in the database.
----
-
 # Omnichannel Search Contact
+
+Use this endpoint to find Omnichannel contacts by name, email, phone number, or any custom field values stored in the database.
 
 | URL                                 | Requires Auth | HTTP Method |
 | ----------------------------------- | ------------- | ----------- |
@@ -19,68 +15,71 @@ description: >-
 
 ## Query Parameters
 
-| Argument | Example           | Required | Description                         |
-| -------- | ----------------- | -------- | ----------------------------------- |
-| `email`  | `edu@gmail.com`   | Optional | Search contacts by Co email address |
-| `phone`  | `+13034833887`    | Optional | Contact phone number                |
-| `custom` | `fieldName=value` | Optional | Contact custom field                |
+| Argument | Example             | Required | Description                         |
+| -------- | ------------------- | -------- | ----------------------------------- |
+| `email`  | `email@rocket.chat` | Optional | Search contacts by Co email address |
+| `phone`  | `+13xxxxxxxxx`      | Optional | Contact phone number                |
+| `custom` | `fieldName=value`   | Optional | Contact custom field                |
 
 ## Example Call
+
+{% hint style="info" %}
+It is important to encode values having characters like **`@`**, ``` `**`+`**, **`/`**` ``` and **`*`** to avoid breaking the endpoint.
+{% endhint %}
+
+
 
 ### Find contacts by Email ID&#x20;
 
 ```bash
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?email=edu@gmail.com \
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact.search?email=email@rocket.chat \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
 
 ### Find contacts by Phone Number&#x20;
 
-```
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?phone=111111111 \
+```url
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact.search?phone=111111111 \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
 
-### Find Contacts through Custom Fields
+### Find contacts through Custom Fields
 
 ```
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?custom=field_name%3Dfield_value \
+curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact.search?custom=field_name%3Dfield_value \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
 
 The `custom` query parameter can be used to search for a contact by a custom field. The `custom` query parameter must be encoded by [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams).
 
-## Result
+## Example Result
 
-```javascript
+```json
 {
     "contact": {
-        "_id": "pp4aRWgsFdYorJXkw",
-        "username": "13034833887",
-        "ts": "2021-03-24T01:35:37.561Z",
-        "_updatedAt": "2021-06-15T19:49:36.589Z",
-        "phone": [
-            {
-                "phoneNumber": "whatsapp:+13034833887"
-            }
-        ],
-        "token": "c4az7YPy667xxJ7Ny",
-        "lastChat": {
-            "_id": "fG6XvqSWxhwP64g4M",
-            "ts": "2021-06-15T19:48:49.481Z"
-        },
-        "department": "GgYvrkAF63aeQmsh4",
-        "contactManager": null,
-        "livechatData": {},
-        "name": "Edu Pereira",
+        "_id": "62fbed6d337291dc9a68ff89",
+        "username": "guest-16",
+        "status": "online",
+        "ts": "2022-08-16T19:18:05.380Z",
+        "_updatedAt": "2022-08-23T17:58:37.254Z",
+        "department": "MgzoccgEFHZ856i97",
+        "name": "Kev",
+        "token": "969X86icKLRduGAKK",
         "visitorEmails": [
             {
-                "address": ""
+                "address": "email@rocket.chat"
             }
-        ]
+        ],
+        "lastChat": {
+            "_id": "CT5bru2WjJ2EsmGbH",
+            "ts": "2022-08-16T19:24:35.916Z"
+        },
+        "livechatData": {
+            "hobby": "gamming"
+        }
     },
     "success": true
 }
