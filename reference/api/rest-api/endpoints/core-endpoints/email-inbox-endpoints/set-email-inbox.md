@@ -16,7 +16,7 @@ Requires the user to have`manage-email-inbox`permission.
 
 | Argument      | Example                                                                                                                         | Required | Description                                                              |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------ |
-| `_rid`        | `Qe3Wa3outaDMKzAZC`                                                                                                             | Optional | Email Id.                                                                |
+| `_id`        | `Qe3Wa3outaDMKzAZC`                                                                                                             | Optional | Email Id.                                                                |
 | `name`        | `My-new-email`                                                                                                                  | Required | The name you wish to set for your email.                                 |
 | `email`       | `mdyemaasil@rocket.chat`                                                                                                        | Required | The email to be used                                                     |
 | `active`      | `true`                                                                                                                          | Required | Set whether or not the email is active.                                  |
