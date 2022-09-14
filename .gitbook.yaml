@@ -1,4 +1,4 @@
 root: ./
 
 redirects:
-    apps-engine/adding-features/uikit: apps-engine/adding-features/uikit/README.md
+    apps-development/uikit: apps-engine/adding-features/uikit/README.md
