@@ -1,46 +1,50 @@
+---
+description: Set preferences for the running user or provided userId
+---
+
 # Set Preferences
 
-| URL                                    | Requires Auth | HTTP Method |
-| -------------------------------------- | ------------- | ----------- |
-| `/api/v1/users.saveUserPreferences` | `yes`         | `POST`      |
+| URL                            | Requires Auth | HTTP Method |
+| ------------------------------ | ------------- | ----------- |
+| `/api/v1/`users.setPreferences | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument                   | Type      | Required | Description                                                                                                  |
-| -------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------ |
-| `user`                     | `String`  | Required | The unique identifier for the user.                                                                          |
-| `language`                 | `String`  | Required | The preferred language for the user. Example : "`En`"                                                        |
-| `newRoomNotification`      | `String`  | Required | New room notification. Example : "`door`".                                                                   |
-| `newMessageNotification`   | `String`  | Required | New message notification.                                                                                    |
-| `muteFocusedConversations` | Boolean   | Required | A Boolean value indicates whether the user has enabled the option to mute focused conversations.             |
-| `clockMode`                | `Number`  | Required | The valid display formats for the clock.                                                                     |
-| `useEmojis`                | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option to use emojis.                             |
-| `convertAsciiEmoji`        | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option to convert ASCII emojis.                   |
-| `saveMobileBandwidth`      | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option to save mobile bandwidth.                  |
-| `collapseMediaByDefault`   | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option to collapse media by default.              |
-| `autoImageLoad`            | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `emailNotificationMode`    | `String`  | Required | The preferred mode for Email notification. Example : "`mentions`".                                           |
-| `unreadAlert`              | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `notificationsSoundVolume` | `Number`  | Required | The default sound volume for the notification. Example : "`100`".                                            |
-| `desktopNotifications`     | `String`  | Required | The default desktop notifications.                                                                           |
-| `pushNotifications`        | `String`  | Required | The mobile push notification.                                                                                |
-| `enableAutoAway`           | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `highlights`               | `String`  | Required | The message highlights section.                                                                              |
-| `messageViewMode`          | `Number`  | Required | The preferred view mode for the messages.                                                                    |
-| `hideUsernames`            | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `hideRole`s                | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `displayAvatars`           | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `hideFlexTab`              | `Boolean` | Required | A Boolean value indicates whether the user has enabled the option.                                           |
-| `sendOnEnter`              | `String`  | Required | The value indicates whether "SendonEnter" option is enabled.                                                 |
-| `idleTimeLimit`            | `Number`  | Required | The default limit for the idle time. Example: 300                                                            |
-| `sidebarShowFavorites`     | `Boolean` | Optional | A Boolean value indicates whether the user has enabled the option.                                           |
-| `sidebarShowUnread`        | `Boolean` | Optional | A Boolean value indicates whether the user has enabled the option to show unread messages in the sidebar.    |
-| `sidebarSortby`            | `String`  | Optional | To sort in alphabetical or by activity.                                                                      |
-| `sidebarViewMode`          | `String`  | Optional | The view mode the sidebar. Example : "`condensed`".                                                          |
-| `sidebarDisplayAvatar`     | `Boolean` | Optional | A Boolean value indicates whether the user has enabled the option to display avatar in the sidebar.          |
-| `sidebarGroupByType`       | `Boolean` | Optional | A Boolean value indicates whether the user has enabled the option to show the grouped values in the sidebar. |
-| dontAskAgainList           |           |          |                                                                                                              |
-| `muteFocusedConversations` | `Boolean` | Optional | A Boolean value indicates whether the user has enabled the option.                                           |
+| Argument                        | Type          | Required | Description                                                                                                                                                                                   |
+| ------------------------------- | ------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `userId`                        | `String`      | Optional | The unique identifier for the user to change. Must have _edit-other-user-info_ for changing other users preferences. If userId is not provided, it will set preferences for the running user. |
+| `data.language`                 | `String`      | Optional | The preferred language for the user. Example : "`En`"                                                                                                                                         |
+| `data.newRoomNotification`      | `String`      | Optional | New room notification. Example : "`door`".                                                                                                                                                    |
+| `data.newMessageNotification`   | `String`      | Optional | New message notification.                                                                                                                                                                     |
+| `data.muteFocusedConversations` | Boolean       | Optional | A Boolean value indicates whether the user has enabled the option to mute focused conversations.                                                                                              |
+| `data.clockMode`                | `Number`      | Optional | The valid display formats for the clock.                                                                                                                                                      |
+| `data.useEmojis`                | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to use emojis.                                                                                                              |
+| `data.convertAsciiEmoji`        | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to convert ASCII emojis.                                                                                                    |
+| `data.saveMobileBandwidth`      | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to save mobile bandwidth.                                                                                                   |
+| `data.collapseMediaByDefault`   | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to collapse media by default.                                                                                               |
+| `data.autoImageLoad`            | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.emailNotificationMode`    | `String`      | Optional | The preferred mode for Email notification. Example : "`mentions`".                                                                                                                            |
+| `data.unreadAlert`              | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.notificationsSoundVolume` | `Number`      | Optional | The default sound volume for the notification. Example : "`100`".                                                                                                                             |
+| `data.desktopNotifications`     | `String`      | Optional | The default desktop notifications.                                                                                                                                                            |
+| `data.pushNotifications`        | `String`      | Optional | The mobile push notification.                                                                                                                                                                 |
+| `data.enableAutoAway`           | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.highlights`               | `String List` | Optional | The message highlights section.                                                                                                                                                               |
+| `data.messageViewMode`          | `Number`      | Optional | The preferred view mode for the messages.                                                                                                                                                     |
+| `data.hideUsernames`            | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.hideRoles`                | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.displayAvatars`           | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.hideFlexTab`              | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.sendOnEnter`              | `String`      | Optional | The value indicates whether "SendonEnter" option is enabled.                                                                                                                                  |
+| `data.idleTimeLimit`            | `Number`      | Optional | The default limit for the idle time. Example: 300                                                                                                                                             |
+| `data.sidebarShowFavorites`     | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
+| `data.sidebarShowUnread`        | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to show unread messages in the sidebar.                                                                                     |
+| `data.sidebarSortby`            | `String`      | Optional | To sort in alphabetical or by activity.                                                                                                                                                       |
+| `data.sidebarViewMode`          | `String`      | Optional | The view mode the sidebar. Example : "`condensed`".                                                                                                                                           |
+| `data.sidebarDisplayAvatar`     | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to display avatar in the sidebar.                                                                                           |
+| `data.sidebarGroupByType`       | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option to show the grouped values in the sidebar.                                                                                  |
+| `data.`dontAskAgainList         |               |          |                                                                                                                                                                                               |
+| `data.muteFocusedConversations` | `Boolean`     | Optional | A Boolean value indicates whether the user has enabled the option.                                                                                                                            |
 
 ## Example Call
 
