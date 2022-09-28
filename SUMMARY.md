@@ -119,7 +119,6 @@
 
 ## Reference
 
-* [Database Schema](reference/database-schema.md)
 * [API](reference/api/README.md)
   * [Deprecation](reference/api/deprecation.md)
   * [Schema Definition](reference/api/schema-definition/README.md)
@@ -189,7 +188,6 @@
       * [User Presence](reference/api/realtime-api/method-calls/user-presence.md)
     * [Two Factor Authentication](reference/api/realtime-api/2fa.md)
     * [Livechat Realtime API](reference/api/realtime-api/livechat-api/README.md)
-      * [livechat:getInitialData](reference/api/realtime-api/livechat-api/getinitialdata.md)
       * [livechat:registerGuest](reference/api/realtime-api/livechat-api/registerguest.md)
       * [livechat:sendOfflineMessage](reference/api/realtime-api/livechat-api/sendofflinemessage.md)
       * [sendMessageLivechat](reference/api/realtime-api/livechat-api/sendmessagelivechat.md)
