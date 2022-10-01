@@ -1,10 +1,10 @@
 # Get all oAuth
 
-A simple method, requires no authentication, that returns list of all available oauth services.
+A simple call that requires no authentication and returns a list of all enabled OAuth services.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/settings.oauth` | `no` | `GET` |
+| URL                      | Requires Auth | HTTP Method |
+| ------------------------ | ------------- | ----------- |
+| `/api/v1/settings.oauth` | `no`          | `GET`       |
 
 ## Example Call
 
@@ -61,8 +61,7 @@ curl http://localhost:3000/api/v1/settings.oauth
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.64.0 | Renamed field `appId` to `clientId` and added flag `custom` to indicate whether the oauth service is customized and fix `id` inconsistence\(set all cases to `_id`\) |
-| 0.63.0 | Added |
-
+| Version | Description                                                                                                                                                        |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0.64.0  | Renamed field `appId` to `clientId` and added flag `custom` to indicate whether the oauth service is customized and fix `id` inconsistence(set all cases to `_id`) |
+| 0.63.0  | Added                                                                                                                                                              |

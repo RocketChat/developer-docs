@@ -6,7 +6,7 @@ description: How to make your Rocket.Chat app connect with the outside world
 
 In this article, we will create a slashcommand that runs a GET HTTP based on arguments you provide. We will use the [App.RocketChat.Tester](https://github.com/RocketChat/Apps.RocketChat.Tester) as the base project for it. All the code for this recipe is in the branch [recipes/http-requests](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/recipes/http-requests).
 
-You can see the complete documentation on HTTP requests in Rocket.Chat Apps at  [IHttp](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ihttp.ihttp.html)
+You can see the complete documentation on HTTP requests in Rocket.Chat Apps at [IHttp](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ihttp.ihttp.html)
 
 ## Moving parts
 
@@ -59,7 +59,7 @@ What this code tells us:
 * **\[3]** The argument is mandatory
 * **\[4]** Make the get request with the provided argument
 
-> Learn more about HTTP requests in Rocket.Chat Apps at  [IHttp](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ihttp.ihttp.html)
+> Learn more about HTTP requests in Rocket.Chat Apps at [IHttp](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ihttp.ihttp.html)
 
 Optionally, you can store the GET request in a constant to `console.log` it when the command gets executed.
 

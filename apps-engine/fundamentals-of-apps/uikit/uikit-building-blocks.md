@@ -1,4 +1,4 @@
-# UIKit building blocks
+# Building blocks
 
 ## Objects
 

@@ -69,7 +69,7 @@ What this code tells us:
 * \[1] I want my command to be called `phone`.
 * When it gets executed, \[2] I want to get the argument the user passed after the command and to use it as the subcommand.
 * \[3] The argument is mandatory
-* \[4] Try to match the argument in the list of allowed subcommands&#x20;
+* \[4] Try to match the argument in the list of allowed subcommands
 * \[5] If `text` is match, log "Texting!"
 * \[6] If `call` is match, log "Calling!"
 * \[7] If anything else will throw an error
@@ -101,7 +101,7 @@ Here we \[1] import our new slashcommand class and then \[2] register it in the 
 
 ## Deploy to the server
 
-To deploy the app, run:&#x20;
+To deploy the app, run:
 
 ```
 rc-apps deploy --url <server_url>><server_port> -u <user> -p <pwd>

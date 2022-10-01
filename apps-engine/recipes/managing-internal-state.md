@@ -4,7 +4,7 @@ description: How to manage your app's internal state, here is the recipe!
 
 # Managing Internal State
 
-It's a common need to manage internal state in your app.  **Storing app's state in the memory inside of an app is not recommended at all** because a Rocket.Chat server can have several instances and each server has its own instance of an app. If the data, such as confirmation for context, stored in the memory between the different instances then the problem occrurs.  There're 2 approaches here suggested to be applied to solve the problem above.
+It's a common need to manage internal state in your app. **Storing app's state in the memory inside of an app is not recommended at all** because a Rocket.Chat server can have several instances and each server has its own instance of an app. If the data, such as confirmation for context, stored in the memory between the different instances then the problem occrurs. There're 2 approaches here suggested to be applied to solve the problem above.
 
 ### Persistence APIs (Recommended)
 
@@ -30,7 +30,7 @@ public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp,
 }
 ```
 
-Here, the internal state is "count" but not the count variable whose data stored in the memory. We use the temporary variable "count" for storing the number of messages sent retrieving from the persistence. Every time the handler executePostMessageSent called, we increase the count by 1 and then store it back to the persistence storage.&#x20;
+Here, the internal state is "count" but not the count variable whose data stored in the memory. We use the temporary variable "count" for storing the number of messages sent retrieving from the persistence. Every time the handler executePostMessageSent called, we increase the count by 1 and then store it back to the persistence storage.
 
 In this way, even in a cluster environment, your app inside each Rocket.Chat instance can share data from a single data source - Rocket.Chat persistence storage and maintain data consistency.
 
@@ -38,4 +38,4 @@ In this way, even in a cluster environment, your app inside each Rocket.Chat ins
 
 ### Message customFields
 
-Besides Persistence APIs,  `customFields`  is a public way of storing data related to a message. You can attach some custom "attributes" (called customFields) to a message by creating/modifying the message. You should only use the `customFields` if you're ok with potentially having them read and overwritten by someone else!
+Besides Persistence APIs, `customFields` is a public way of storing data related to a message. You can attach some custom "attributes" (called customFields) to a message by creating/modifying the message. You should only use the `customFields` if you're ok with potentially having them read and overwritten by someone else!
