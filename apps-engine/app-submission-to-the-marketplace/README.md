@@ -1,12 +1,12 @@
 # App Submission to the Marketplace
 
-You have finished creating your first Rocket.Chat App, and successfully tested it locally. Now, you are ready to submit your App to the marketplace for users to explore.&#x20;
+You have finished creating your first Rocket.Chat App, and successfully tested it locally. Now, you are ready to submit your App to the marketplace for users to explore.
 
 The following step-by-step guide will take you through the whole process of application submission.
 
 ## Package the App
 
-Before submitting your App, you need to package it. Currently, the Rocket.Chat Servers and Marketplace allow submission of zip files, these files can be created by running the command `rc-apps package` in your Apps' directory. This will package your App and create a zip file under the `dist` folder. &#x20;
+Before submitting your App, you need to package it. Currently, the Rocket.Chat Servers and Marketplace allow submission of zip files, these files can be created by running the command `rc-apps package` in your Apps' directory. This will package your App and create a zip file under the `dist` folder.
 
 ## App Submission through CLI
 
@@ -113,7 +113,7 @@ To submit an app to the marketplace, the publisher must have a Rocket.Chat [Clou
 * Enter your name, email address, and password.
 * Make sure to accept the Rocket.Chat [Terms and Conditions ](https://docs.rocket.chat/legal/terms)and [Privacy Policy](https://docs.rocket.chat/legal/privacy).
 * Click **Next.** You are notified that an email has been sent with the confirmation link to sign in to your cloud console.
-* Next, go to your inbox and confirm your email address by clicking on the link we sent; your cloud account has been created and is ready to use.&#x20;
+* Next, go to your inbox and confirm your email address by clicking on the link we sent; your cloud account has been created and is ready to use.
 
 ### **Create a Publisher Account**
 
@@ -127,7 +127,7 @@ Your publisher developer account is created, as shown below:
 
 ### Add your App
 
-To add and submit your app, Navigate to **App** > **New App.**&#x20;
+To add and submit your app, Navigate to **App** > **New App.**
 
 ![Apps](https://lh5.googleusercontent.com/VInq6AZbSztPWa0y6MerZzaATDp\_wBtrP4yHYA5crvgv7YtF4heTBjqtFKW3cGhmRTRRFP5UXcm22jPK\_smWJ5fP-xVh4m0RzpxCxB9Z7-A-lC3HbV0xzQ8xGMLLl3vVjLDzTlgAnm7VrKZmg5dW6FM)
 
@@ -135,9 +135,9 @@ To add and submit your app, Navigate to **App** > **New App.**&#x20;
 
 * Drag and drop your app package or browse your app package .zip file and click **Next**.
 
-![Upload App](<../../.gitbook/assets/publish a new app-Upload.png>)
+![Upload App](<../../.gitbook/assets/publish a new app-Upload (1).png>)
 
-**Step 02: Details**&#x20;
+**Step 02: Details**
 
 Add the required information for the app.
 
@@ -147,9 +147,9 @@ Add the required information for the app.
 * Select a Language for your app in the **Languages** drop-down.
 * Click **Next.**
 
-![Details ](https://lh6.googleusercontent.com/wgDM2E7XH-wxYUdH\_FnR0KWBHGH3hTX\_-cyYVdMc-Enxl92EzMnNkD6VEdk0PrTOVIB3HHqzUtMVwVgJ3QN4m714PCBZFKmX8RkY2ZGvs65Gv8SoFBakKf3mgBjzKO4gyEtzUb7NZp3ww-5DAZizDzo)
+![Details](https://lh6.googleusercontent.com/wgDM2E7XH-wxYUdH\_FnR0KWBHGH3hTX\_-cyYVdMc-Enxl92EzMnNkD6VEdk0PrTOVIB3HHqzUtMVwVgJ3QN4m714PCBZFKmX8RkY2ZGvs65Gv8SoFBakKf3mgBjzKO4gyEtzUb7NZp3ww-5DAZizDzo)
 
-#### **Step 03: Pricing** &#x20;
+#### **Step 03: Pricing**
 
 After entering your app information, the next step is to define the pricing plan and how the users can purchase your app. The pricing model has the following three types: One-time purchase, Subscription, and Free.
 
@@ -170,10 +170,10 @@ For a paid app it is mandatory to connect with [Stripe](https://stripe.com/) acc
 * Step 2: Fill out the form to create an account.
 * Step:3 Set up your bank account to receive payouts.
 
-You can find more information here: [https://stripe.com/docs/payouts](https://stripe.com/docs/payouts)&#x20;
+You can find more information here: [https://stripe.com/docs/payouts](https://stripe.com/docs/payouts)
 {% endhint %}
 
-**One-time Purchase**: Select **One-time Purchase** when you want your app to have a one-off payment, and your users are allowed to use it forever after that payment.&#x20;
+**One-time Purchase**: Select **One-time Purchase** when you want your app to have a one-off payment, and your users are allowed to use it forever after that payment.
 
 * **Purchase Type**: Select **One-time Purchase** to allow the users to make a single purchase.
 * **Price:** Enter the price (USD)you want to set.
@@ -184,7 +184,7 @@ Your users are allowed to buy the app per workspace. They must purchase the app 
 
 **Subscription:** Select the **Subscription** purchase type when you want your app to be subscription-based.
 
-* An example of this volume-based pricing is shown below:&#x20;
+* An example of this volume-based pricing is shown below:
 
 ![Subscription](https://lh3.googleusercontent.com/V1KXkUcvBTy1fsJ4Xe67DCXkqHfwV1qckgC9-43r9YABP3O1YjVpU8C\_oTVl3Y6A7mmnDk8VQtzbFevcZGpB7V-7XhDzOPBOe-FoieV93s8n1UQ7O7rtcfLw\_d86xzdkJcJlQnhJRijBUSR6vTFiN74)
 
@@ -192,33 +192,33 @@ Your users are allowed to buy the app per workspace. They must purchase the app 
 
 ![New Pricing Plan](https://lh4.googleusercontent.com/PrTOfA9ty14ZkyRa8V9QqbncRCD-dYemZLwFoH9Yzp2ZQbto6VvjetGVDyl4smfzuikebiKsp-pEM1TN\_VBQgQgJkb9YgEr51Foe0HX9hUp6r6rFbXbPtQ1cEQhD6TsCSIeCL1OX91FN-kw\_YRhzrd8)
 
-* Choose a **monthly** or **yearly** subscription**.**
+* Choose a **monthly** or **yearly** subscription\*\*.\*\*
 * Enter the **price** (USD)you want to set.
 * Set the number of days for the trial plan.
 * Click **Save** **Plan.**
 * Once done, click **Next.**
 
-Free: Choose this pricing type when you want your app available to your users for  free of cost, as shown below:
+Free: Choose this pricing type when you want your app available to your users for free of cost, as shown below:
 
 ![Free](https://lh4.googleusercontent.com/pvQrIswtoT-yiIv2oOkvGnX8DrEWbDNO2IYB47BDDhwV-68EcBZAVjaS\_psZ\_xnxMupBvTr6PwYQzlQ7rFl3MbvNW1CHc4E6L8VdAT39ThXYOeB\_y34eIjzg\_R5PTqFFBeLp7pWLcaLsBra\_\_N4mGnA)
 
-Click **Free**.&#x20;
+Click **Free**.
 
 **Step 04: Screenshots**
 
 Include your App screenshots and its description, and also provide your app users a summary of the privacy and policies for the app.
 
 * **Screenshot**: Upload some images of your app (Screenshots (1200x600 px), (max of 5 images).
-* **Description**: Set its description**.**
+* **Description**: Set its description\*\*.\*\*
 * **Privacy Policy Summary**: Provide your app users with a summary of this app's privacy and data handling policies.
 
 ![Screenshots](https://lh4.googleusercontent.com/V4cdEbRs3zXP6q6G86VVA8x3ezIBJPb6fvlzjGAv90NHe0Xzudm-q7fkBDmfBGSTbTTBfWd6ZH2bhNtZzyv391rbPCrZuTCKufLo9gYF\_VvMQW4m7nfLRdBC\_PnDagkYq1Ex0Uj7rb97\_NU\_JFYGBxc)
 
 #### **Step 05: Submission**
 
-Your app is almost ready to submit for review.&#x20;
+Your app is almost ready to submit for review.
 
-* Once you have added the required information, click **Submit for Review.**  Our Team will review your code and send you a status update via email.
+* Once you have added the required information, click **Submit for Review.** Our Team will review your code and send you a status update via email.
 
 ![Submission](https://lh5.googleusercontent.com/NEINyg-pW9deqJX\_Tjy3lYrK4y2brJTbVbAZ6NQCv1pWNPD7RfqR8bzk-vy6E37nwaB9-wNudmlh07pxmxNPHNVk4-Oa80-npo-sgmNzt-76rLznuq555w0GP4rSfOaVp-f4pMjNf-C\_HUM84qeP97Y)
 

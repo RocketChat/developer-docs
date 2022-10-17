@@ -199,7 +199,7 @@ Run your test by following any of the two procedures
 * **Using Terminal**: Open up your terminal in the working directory and execute `jest <file-name>` or just `jest` to run all test files;
 * **Using the VScode extension**: You only need to install [this](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) vscode extension and all of your tests files appear as below:
 
-![Using extension to run the tests](<../.gitbook/assets/image (85) (1) (1).png>)
+![Using extension to run the tests](<../.gitbook/assets/image (85) (1).png>)
 
 Two buttons will appear upon tests so you can click run or debug and if everything went well you will see:
 
