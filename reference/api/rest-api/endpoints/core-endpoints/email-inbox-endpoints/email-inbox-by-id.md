@@ -69,6 +69,7 @@ The following error can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **Permission**: Requires the user to have `manage-email-inbox` permission for the request to be made.
+* **Not Found**: No email inbox with the matching `_id` was found.
 
 {% tabs %}
 {% tab title=" Authorization" %}
@@ -88,6 +89,15 @@ The following error can occur upon the endpoint.
 }
 ```
 {% endtab %}
+
+{% tab title="Not Found" %}
+```javascript
+{
+	"success": false,
+	"error": "Resource not found"
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ## Change Log
@@ -95,3 +105,4 @@ The following error can occur upon the endpoint.
 | Version     | Description |
 | ----------- | ----------- |
 | 3.11.0-rc.0 | Added       |
+| 5.3.0 | Not Found Error Added     |
