@@ -33,13 +33,9 @@ To avoid creating multiple accounts for bot emails, you can use a Gmail +`addres
 
 To make the process of coding a bot easier and faster, you may want to check our existing guides below to deploy a basic bot instance quickly. As an advanced alternative, you can create your bot from the scratch using your favorite framework.
 
-{% content-ref url="develop-a-hubot-bot.md" %}
-[develop-a-hubot-bot.md](develop-a-hubot-bot.md)
-{% endcontent-ref %}
-
-{% content-ref url="develop-a-botkit-bot.md" %}
-[develop-a-botkit-bot.md](develop-a-botkit-bot.md)
-{% endcontent-ref %}
+{% hint style="info" %}
+Developing a [Hubot ](https://github.com/RocketChat/hubot-rocketchat-boilerplate)can serve as a good entry point in learning chatbot principles.
+{% endhint %}
 
 {% content-ref url="develop-a-rocket.chat-sdk-bot.md" %}
 [develop-a-rocket.chat-sdk-bot.md](develop-a-rocket.chat-sdk-bot.md)
@@ -49,10 +45,8 @@ To make the process of coding a bot easier and faster, you may want to check our
 [develop-a-botpress-bot.md](develop-a-botpress-bot.md)
 {% endcontent-ref %}
 
-{% content-ref url="develop-a-rasa-bot.md" %}
-[develop-a-rasa-bot.md](develop-a-rasa-bot.md)
-{% endcontent-ref %}
-
 ### 3. Talk to your bot
 
+{% hint style="success" %}
 If the bot is configured to listen to direct messages (`RESPOND_TO_DM=true`), and messages are prepended with `BOT_NAME` or a preconfigured `BOT_ALIAS`, the bot will _usually_ respond to all messages addressed directly to the bot user (depending on the particular bot framework).
+{% endhint %}

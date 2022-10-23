@@ -110,11 +110,8 @@
 * [Bots Development Environment Setup](bots/bots-development-environment-setup.md)
 * [Bots Architecture](bots/bots-architecture.md)
 * [Creating Your Own Bot From Scratch](bots/creating-your-own-bot-from-scratch/README.md)
-  * [Develop a Hubot Bot](bots/creating-your-own-bot-from-scratch/develop-a-hubot-bot.md)
-  * [Develop a Botkit Bot](bots/creating-your-own-bot-from-scratch/develop-a-botkit-bot.md)
   * [Develop a Rocket.Chat SDK Bot](bots/creating-your-own-bot-from-scratch/develop-a-rocket.chat-sdk-bot.md)
   * [Develop a Botpress Bot](bots/creating-your-own-bot-from-scratch/develop-a-botpress-bot.md)
-  * [Develop a Rasa Bot](bots/creating-your-own-bot-from-scratch/develop-a-rasa-bot.md)
 * [Bots FAQs](bots/bots-faqs.md)
 
 ## Reference
@@ -694,4 +691,12 @@
 
 ## Fuselage
 
+* [Monorepo](fuselage/monorepo.md)
+* [Conventions](fuselage/conventions.md)
+* [Componentization](fuselage/componentization.md)
+* [Releases](fuselage/releases/README.md)
+  * [Publishing a new release](fuselage/releases/publishing-a-new-release.md)
+* [Testing](fuselage/testing/README.md)
+  * [Fuselage's component in RC](fuselage/testing/fuselages-component-in-rc.md)
+* [Third party libraries](fuselage/third-party-libraries.md)
 * [Contributing](fuselage/contributing.md)

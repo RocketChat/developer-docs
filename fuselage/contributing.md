@@ -4,7 +4,7 @@
 
 To start the development you need to clone the project.
 
-```
+```bash
 $ git clone git@github.com:RocketChat/Rocket.Chat.Fuselage.git
 ```
 
@@ -31,7 +31,7 @@ ls
 
 ```bash
 # at root folder
-yarn
+yarn && yarn build
 ```
 
 ## How to develop and test under Rocket.Chat the local code
@@ -57,8 +57,3 @@ If you are creating something new, be sure to create a story for the component, 
 ## My pull request was merged, what now?
 
 As soon as your contribution gets accepted, approved, and merged it will start the build process, even if your **PR** is only merged on develop. After that, the package will be available at **npm** tagged as **@next**. With that, you can already work/open pull requests on Rocket.Chat. At the end of Rocket.Chat release, we will release a fuselage production version and update the fuselage packages on Rocket.Chat.
-
-
-
-
-

@@ -1,197 +1,121 @@
 # Develop a Botpress Bot
 
-[Botpress](https://botpress.com/) is an on-prem, open-source chatbot building platform for businesses.
+[Botpress](https://botpress.com/) is an on-prem, open-source chatbot-building platform for businesses.
 
 ## Botpress Quick Start Guide
 
-Botpress is a Node.js package and works with Node and npm.
+Integrate Rocket.Chat with Botpress following this sample
 
-The fastest way to start with Botpress is using [botpress-kick-starter](https://github.com/RocketChat/botpress-kick-starter) repository that is already integrated with Rocket.Chat via [botpress-channel connector](https://github.com/RocketChat/botpress-channel-rocketchat).
+{% embed url="https://github.com/RocketChat/rocketchat-botpress-lab-bot/" %}
 
-Navigate to the folder where you want to work with the bot and proceed with the following steps:
+## Botpress workflow
 
-* Install the Botpress package with npm using the command below
+This example workflow shows how Botpress can be integrated with Rocket.Chat Omnichannel Live Chat widget.
 
-```
-npm init -y
-npm install botpress@10.40.0
-```
+<figure><img src="../../.gitbook/assets/RocketChat Botpress workflow.png" alt=""><figcaption><p>Rocket.Chat Botpress workflow</p></figcaption></figure>
 
-* Next, create a bot and initialize it
+## Setup
 
-```
-mkdir bot
-cd bot
-../node_modules/.bin/botpress init
-```
+Let us see how to set up a Botpress server and integrate it with a Rocket.Chat workspace.
 
-`botpress init` command launches a wizard that will help you create the initial configuration. You should see something as follows:
+### Requirements
 
-```
-$ ../node_modules/.bin/botpress init
+{% hint style="info" %}
+You are required to have a registered workspace and Omnichannel activated.
+{% endhint %}
 
----------------
-Hey there 👋, thanks for using Botpress!
-We'll walk you through the creation of your new bot.
-For more information or help, please visit https://botpress.io/docs
----------------
-name: (bot) botpress-bot
-botpress version: (10.40.0)
-description: Testing bot for docs
-author: Rodriq
+### Install connector app
 
-=============================
-Template: Basic (default)
-Author: Botpress, Inc.
-Description: A basic bot for your website
-Channels: web
-=============================
+To be able to interact with the bot, you need a connector. Follow these steps to get it installed on your Rocket.Chat workspace.
 
--> Copying .welcome
--> Copying botfile.js
--> Copying config/channel-web.json
--> Copying config/nlu.json
--> Copying generated/content/builtin_text.json
--> Copying generated/flows/main.flow.json
--> Copying generated/flows/main.ui.json
--> Copying generated/intents/forget.json
--> Copying generated/intents/forget.utterances.txt
--> Copying generated/intents/hello.json
--> Copying generated/intents/hello.utterances.txt
--> Copying generated/intents/none.json
--> Copying generated/intents/none.utterances.txt
--> Copying index.js
--> Copying package.json
--> Copying README.md
--> Copying src/actions.js
--> Copying src/content/.empty
--> Copying src/custom.js
--> Copying src/index.js
--> Copying src/renderers.js
--> Copying .gitignore
+* Navigate to **Administration** > **Apps**
+* Search and install the **Botpress Connector** app by _Luis Hlatki_
 
-🎉  Your bot was initialized succesfully!
+<figure><img src="../../.gitbook/assets/Botpress connector app.png" alt=""><figcaption><p>Botpress connector app</p></figcaption></figure>
 
-Next steps:
-  1) Install bot dependencies by running npm install (or yarn install)
-  2) Start the bot by running npm start (or yarn start)
+### Cloning Example code
 
-Enjoy Botpress!
+* Clone the starter code and enter the directory by running
+
+```bash
+git clone https://github.com/RocketChat/rocketchat-botpress-lab-bot.git botpress-lab-bot 
+cd botpress-lab-bot
 ```
 
-* When that is done, install the bots dependencies and the botpress connector by running the following code
+{% hint style="info" %}
+Edit the `docker-compose.yml` file to remove the `rocketchat` and `mongo` services if you already have a running instance of Rocket.Chat.
+{% endhint %}
 
-```
-npm install
-npm install botpress-channel-rocketchat
-```
+* Spin up the container with
 
-* Open `config` folder and create `channel-rocketchat.json` file with the following content:
-
-```
-{
-    "ROCKETCHAT_USER": <BOTPRESS USER NAME>,
-    "ROCKETCHAT_PASSWORD": <BOTPRESS USER PASS>,
-    "ROCKETCHAT_URL": <ROCKETCHAT HOST>,
-    "ROCKETCHAT_USE_SSL": <SSL USAGE>,
-    "ROCKETCHAT_ROOM": <ROCKETCHAT CHANNEL>,
-    "scope": ""
-}
+```bash
+docker compose up -d
 ```
 
-Adjust the content to fit your server and user credentials. Make sure `mybotuser` has a `BOT` role on the server. For more information on how to create a bot user please refer to [this page](./#1-create-a-bot-user).
+* The botpress dashboard is made available at on port `3001` visit it and configure the admin user
 
-* Now run the bot by running
+<figure><img src="../../.gitbook/assets/Botpress dashboard create admin account.png" alt=""><figcaption><p>Botpress dashboard create admin account</p></figcaption></figure>
 
-```
-npm start
-```
+* Import the [bot\_lab.tgz](https://github.com/RocketChat/rocketchat-botpress-lab-bot/blob/main/bot\_lab.tgz) found in the directory cloned above
+* Set the bot id as _lab_ and **Import bot**
 
-After executing the command, botpress will try to do the following actions:
+<figure><img src="../../.gitbook/assets/import botpress bot.png" alt=""><figcaption><p>import botpress bot</p></figcaption></figure>
 
-* launch botpress instance;
-* launch dedicated Admin Dashboard;
-* launch dedicated Webchat window;
-* connect to the Rocket.Chat instance;
-* listen to messages in `general` room.
+* Click on the bot to open up then click **Train chatbot** at the bottom right
 
-```
-$ npm start
+### Create a bot and agent user
 
-> botpress-bot@1.0.0 start /botpress-bot/bot
-> node index.js
+Create the following Rocket.Chat users to be used for the integration
 
-19:27:44 - debug: [DB Janitor] Added table "logs"
-19:27:44 - info: Starting botpress version 10.40.0
-19:27:44 - info: [DB Janitor] Started
-19:27:44 - info: [Ghost Content Manager] (transparent) Initialized
-19:27:44 - debug: [Ghost Content Manager] (transparent) Added root folder generated/media, doing nothing.
-19:27:44 - debug: [Ghost Content Manager] (transparent) Added root folder generated/flows, doing nothing.
-19:27:44 - info: [Skills] Initiated
-19:27:44 - info: Loaded @botpress/audience, version 10.40.0
-19:27:44 - verbose: [Renderers] Enabled for webchat.
-19:27:44 - info: Loaded @botpress/channel-web, version 10.40.0
-19:27:44 - info: Loaded @botpress/hitl, version 10.40.0
-19:27:44 - debug: [Ghost Content Manager] (transparent) Added root folder generated/intents, doing nothing.
-19:27:44 - debug: [Ghost Content Manager] (transparent) Added root folder generated/entities, doing nothing.
-19:27:44 - info: Loaded @botpress/nlu, version 10.40.0
-19:27:44 - info: Loaded @botpress/skill-choice, version 10.40.0
-19:27:44 - warn: DEPRECATION NOTICE – bp.umm is deprecated and will be removed – Please see bp.renderers instead.
-19:27:44 - warn: DEPRECATION NOTICE – bp.umm is deprecated and will be removed – Please see bp.renderers instead.
-19:27:44 - verbose: [Renderers] Enabled for rocketchat.
-19:27:44 - info: Loaded botpress-channel-rocketchat, version 0.0.14
-19:27:44 - info: Loaded 6 modules
-19:27:44 - info: [Skills] Loaded 1 skills
-19:27:44 - debug: [Ghost Content Manager] (transparent) Added root folder generated/content, doing nothing.
-19:27:44 - debug: Loading middleware: rendering.instrumentation
-19:27:44 - debug: Loading middleware: hitl.captureInMessages
-19:27:44 - debug: Loading middleware: nlu.incoming
-19:27:44 - debug: Loading middleware: hear
-19:27:44 - debug: Loading middleware: hitl.captureOutMessages
-19:27:44 - debug: Loading middleware: webchat.sendMessages
-19:27:44 - debug: Loading middleware: rocketchat.sendMessages
-19:27:44 - debug: Loading middleware: fallback
-19:27:44 - debug: Loading data for builtin_text from builtin_text.json
-19:27:44 - info: Read 7 item(s) from builtin_text.json
-19:27:44 - info: Bot launched. Visit: http://localhost:3000
-[connect] Connecting { username: 'bot',
-password: 'pass',
-ldap: false,
-host: 'bots.rocket.chat',
-useSsl: true,
-timeout: 20000,
-rooms: [],
-allPublic: false,
-dm: false,
-livechat: false,
-edited: false,
-integrationId: 'js.SDK',
-roomCacheMaxSize: 10,
-roomCacheMaxAge: 300000,
-dmCacheMaxSize: 10,
-dmCacheMaxAge: 100000 }
-19:27:44 - debug: Loading data for builtin_image from builtin_image.json
-19:27:44 - debug: Loading data for builtin_single-choice from builtin_single-choice.json
-19:27:44 - debug: Loading data for builtin_card from builtin_card.json
-19:27:44 - debug: Loading data for builtin_action-button from builtin_action-button.json
-19:27:44 - debug: Loading data for builtin_carousel from builtin_carousel.json
-19:27:44 - debug: Loading data for builtin_raw from builtin_raw.json
-19:27:45 - debug: [NLU::Native] Model is up to date
-19:27:45 - info: ------------
-19:27:45 - info: Webchat available at http://localhost:3000/s/chat
-19:27:45 - info: ------------
-[connect] Connected
-[login] Logging in DocsBot
-[getRoomIdByNameOrId] Calling (caching): general
-[getRoomIdByNameOrId] Success: "GENERAL"
-[joinRoom] Calling (async): ["GENERAL"]
-[joinRoom] Success
-[subscribe] Preparing subscription: stream-room-messages: __my_messages__
-[subscribe] Stream ready: 4
-LISTEN TRIGGERED
-[reactive] Listening for change events in collection stream-room-messages
-```
+* Navigate to **Administration** > **Users**
+  * Create a **bot user** for the bot with these roles: `bot`, `user`, `livechat-agent` and `livechat-manager`
+  * Create an **agent user** with these roles `user` and `livechat-agent`
 
-* To test communication with your bot, log in on your server as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
+<figure><img src="../../.gitbook/assets/Users created.png" alt=""><figcaption></figcaption></figure>
 
-![Botpress bot responses to user messages](../../.gitbook/assets/botpress-bot-responses.png)
+* Configure the Botpress Connector installed earlier in **Administration** > **Apps** > **Installed** > **Botpress Connector** > **Settings** with the following details:
+  * Rocket.Chat bot username: `bot`
+  * Botpress bot id: `lab`
+  * Botpress server URL: `<http://your-botpress-server-url>`
+  * Default handover department: `GENERAL`
+  * Then **Save changes**
+
+<figure><img src="../../.gitbook/assets/Botpress connector setting.png" alt=""><figcaption><p>Botpress connector setting</p></figcaption></figure>
+
+### Configure Omnichannel
+
+* Navigate to  **Avatar Menu > Omnichannel > Departments**
+  * Create a `GENERAL` department and enable it to show on the registration form. Set the `bot` user as an agent
+  * Create an `OTHER` omnichannel department, don't enable show on the registration form and set the user agent as an agent
+
+You should have something like below
+
+<figure><img src="../../.gitbook/assets/Omnichannel channel created.png" alt=""><figcaption><p>Omnichannel channel created</p></figcaption></figure>
+
+* Edit the user agent user status to available
+* Log in as the bot user and create a PAT (Personal Access Token) without 2 Factor Authentication and copy it. [see this guide](https://docs.rocket.chat/guides/user-guides/user-panel/managing-your-account/personal-access-token)&#x20;
+
+### Configure Botpress settings
+
+Back on your botpress server dashboard, do these settings to complete. This involves setting up details about your Rocket.Chat server.
+
+* Fill in the Rocket.Chat server url and PAT gotten from above in the `bot.config.json` file at **Dashboard** > **Code Editor** > **Configurations** > **Current Bot** > **bot.config.json** then **Save**
+
+<figure><img src="../../.gitbook/assets/Botpress config file edit.png" alt=""><figcaption><p>Botpress config file edit</p></figcaption></figure>
+
+* Update the transfer room ID with that of the desired department ID in **Dashboard** > **Flows** > **Main Flow** > **transfer-room** node
+
+<figure><img src="../../.gitbook/assets/Edit botpress transfer room.png" alt=""><figcaption><p>Edit botpress transfer room</p></figcaption></figure>
+
+### Testing the Integration
+
+To test the integration,
+
+* Visit `http://<your Rocket.Chat server>/livechat` and start a new Live Chat conversation.
+* Optionally you can integrate the [Live Chat widget ](https://docs.rocket.chat/guides/omnichannel/livechat-widget-installation)while taking into consideration the [X-Frame-Options](https://docs.rocket.chat/guides/administration/admin-panel/settings/general)
+
+When successful, you should see something like below
+
+<figure><img src="../../.gitbook/assets/Live Chat widget new conversation.png" alt=""><figcaption><p>Live Chat widget new conversation</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Botpress and Rocket.Chat Live Chat.png" alt=""><figcaption><p>Botpress and Rocket.Chat Live Chat</p></figcaption></figure>
