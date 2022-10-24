@@ -428,6 +428,7 @@
           * [Pins Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/pinmessage.md)
           * [Post Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/postmessage.md)
           * [Search Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/search-message.md)
+          * [Send message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/send-message.md)
           * [Star Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/starmessage.md)
           * [Sync Thread List](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/syncthreadslist.md)
           * [Sync Thread Messages](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/syncthreadmessages.md)
