@@ -695,6 +695,7 @@
 * [Monorepo](fuselage/monorepo.md)
 * [Conventions](fuselage/conventions.md)
 * [Componentization](fuselage/componentization.md)
+* [Palettes](fuselage/palettes.md)
 * [Releases](fuselage/releases/README.md)
   * [Publishing a new release](fuselage/releases/publishing-a-new-release.md)
 * [Testing](fuselage/testing/README.md)
