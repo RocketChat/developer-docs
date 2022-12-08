@@ -1,5 +1,7 @@
 # Linux
 
+> For resolving known commong problems, see the [troubleshoot](linux.md#troubleshooting) section at the end of this page.
+
 You can run Rocket.Chat for development on a clean Linux machine or VM.
 
 {% hint style="info" %}
@@ -67,8 +69,9 @@ meteor --version
 
 * Navigate back into the main project root directory and install packages by simply running
 
-<pre class="language-bash"><code class="lang-bash"><strong>cd ../../
-</strong><strong>yarn</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash">cd ../../
+<strong>yarn
+</strong></code></pre>
 
 * Build and startup your development server by executing the commands below. Building for the first time will take a while and you may see some warnings or errors.
 
@@ -107,3 +110,5 @@ The Rocket.Chat code base is very large. You may need to increase this [system p
 * [Supporting SSL for Mobile Apps](../../mobile-app/mobile-app-environment-setup/supporting-ssl-for-development-on-rocket.chat.md)
 * [Development Troubleshooting](../contribute-to-rocket.chat/troubleshooting.md)
 * [Deployment Methods](linux.md)
+
+## Troubleshooting
