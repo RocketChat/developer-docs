@@ -65,7 +65,6 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
-
 ```
 {% endtab %}
 
@@ -85,7 +84,6 @@ headers = {
 response = requests.request("POST", url, headers=headers, data=payload)
 
 print(response.text)
-
 ```
 {% endtab %}
 
@@ -130,7 +128,6 @@ HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/e2e.s
   .header("Content-Type", "application/json")
   .body("{\n    \"rid\": \"wCiXndNp5NqNY3uCc\",\n    \"keyID\": \"my-UniQu3_ke4_Id\"\n}")
   .asString();
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -199,4 +196,3 @@ Any of the following errors can occur on the endpoint.
 ```
 {% endtab %}
 {% endtabs %}
-

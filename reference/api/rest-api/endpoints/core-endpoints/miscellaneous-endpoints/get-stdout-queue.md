@@ -28,7 +28,6 @@ curl --location --request GET 'http://localhost:3000//api/v1/stdout.queue' \
 --header 'X-User-Id: d26x6zSkaPSe5gCyy' \
 --header 'X-Auth-Token: Di9OKWzdu7V2vW3lHO0oYLOOr6P2Y0n9zQlx20qn2cU' \
 --header 'Content-Type: application/json' \
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -113,4 +112,3 @@ Any of the following errors can occur on the endpoint.
 ```
 {% endtab %}
 {% endtabs %}
-

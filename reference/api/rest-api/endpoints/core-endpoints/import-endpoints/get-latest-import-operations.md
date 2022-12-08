@@ -88,7 +88,6 @@ HttpResponse<String> response = Unirest.get("http://localhost:3000/api/v1/getLat
   .header("X-User-Id", "d26x6zSkaPSe5gCyy")
   .header("X-Auth-Token", "Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92")
   .asString();
-
 ```
 {% endtab %}
 {% endtabs %}

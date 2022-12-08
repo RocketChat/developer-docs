@@ -32,7 +32,6 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
-
 ```
 {% endtab %}
 
@@ -51,7 +50,6 @@ headers = {
 response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
-
 ```
 {% endtab %}
 

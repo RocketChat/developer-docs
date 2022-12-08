@@ -2,7 +2,7 @@
 description: Updates an existing integration.
 ---
 
-# Update an Integration&#x20;
+# Update an Integration
 
 To update an integration, the callee needs to have the permissions `manage-incoming-integrations` AND `manage-own-incoming-integrations` permissions to be able to update incoming integrations and `manage-outgoing-integrations` AND `manage-own-outgoing-integrations` to be able to update outgoing integrations.
 
@@ -12,25 +12,25 @@ To update an integration, the callee needs to have the permissions `manage-incom
 
 ## Payload
 
-| Argument        | Example                                 | Required                 | Description                                                                                                                                                                                          |
-| --------------- | --------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`          | `webhook-outgoing`                      | Required                 | The type of integration to create, `webhook-outgoing` and `webhook-incoming` are supported.                                                                                                          |
-| `name`          | `Guggy`                                 | Required                 | The name of the integration, only is show on the Administration area.                                                                                                                                |
-| `enabled`       | `true`                                  | Required                 | Whether this integration should be enabled or not.                                                                                                                                                   |
-| `username`      | `rocket.cat`                            | Required                 | The username who to post this the messages as.                                                                                                                                                       |
-| `channel`       | `#general`                              | Required                 | The channel, group, or `@username`. Can also be `all_public_channels`, `all_private_groups`, or `all_direct_messages`. Comma separated for more than one.                                            |
-| `scriptEnabled` | `false`                                 | Required                 | Whether the script should be enabled.                                                                                                                                                                |
-| `urls`          | `['http://text2gif.guggy.com/guggify']` | Optional                 | The urls to call whenever this integration is triggered.                                                                                                                                             |
-| `event`         | `sendMessage`                           | Optional                 | This field is required only for outgoing integration. The type of event, can be any of these: `sendMessage`, `fileUploaded`, `roomArchived`, `roomCreated`, `roomJoined`, `roomLeft`, `userCreated`. |
-| `triggerWords`  | `!guggy`                                | Optional   Default: `''` | Specific words, separated by commas, which should trigger this integration.                                                                                                                          |
-| `alias`         | `Guggy`                                 | Optional   Default: `''` | The alias which should be applied to messages when this integration is processed.                                                                                                                    |
-| `avatar`        | `http://res.guggy.com/logo_128.png`     | Optional   Default: `''` | The logo to apply to the messages that this integration sends.                                                                                                                                       |
-| `emoji`         | `:ghost:`                               | Optional   Default: `''` | The emoji which should be displayed as the avatar for messages from this integration.                                                                                                                |
-| `token`         | `8DFS89DMKLWEN`                         | Optional   Default: `''` | If your integration requires a special token from the server (api key), use this.                                                                                                                    |
-| `script`        | [Integrations](broken-reference)        | Optional                 | Script triggered when this integration is triggered.                                                                                                                                                 |
-| `targetChannel` | `targeted channel`                      | Optional                 | The channel where messages will be sent to.                                                                                                                                                          |
-| `integrationId` | `ncjK_idsnms`                           | Optional                 | The integration ID                                                                                                                                                                                   |
-| `target_url`    | `open.rocket.chat`                      | Optional                 | The target url to set.                                                                                                                                                                               |
+| Argument        | Example                                 | Required               | Description                                                                                                                                                                                          |
+| --------------- | --------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`          | `webhook-outgoing`                      | Required               | The type of integration to create, `webhook-outgoing` and `webhook-incoming` are supported.                                                                                                          |
+| `name`          | `Guggy`                                 | Required               | The name of the integration, only is show on the Administration area.                                                                                                                                |
+| `enabled`       | `true`                                  | Required               | Whether this integration should be enabled or not.                                                                                                                                                   |
+| `username`      | `rocket.cat`                            | Required               | The username who to post this the messages as.                                                                                                                                                       |
+| `channel`       | `#general`                              | Required               | The channel, group, or `@username`. Can also be `all_public_channels`, `all_private_groups`, or `all_direct_messages`. Comma separated for more than one.                                            |
+| `scriptEnabled` | `false`                                 | Required               | Whether the script should be enabled.                                                                                                                                                                |
+| `urls`          | `['http://text2gif.guggy.com/guggify']` | Optional               | The urls to call whenever this integration is triggered.                                                                                                                                             |
+| `event`         | `sendMessage`                           | Optional               | This field is required only for outgoing integration. The type of event, can be any of these: `sendMessage`, `fileUploaded`, `roomArchived`, `roomCreated`, `roomJoined`, `roomLeft`, `userCreated`. |
+| `triggerWords`  | `!guggy`                                | Optional Default: `''` | Specific words, separated by commas, which should trigger this integration.                                                                                                                          |
+| `alias`         | `Guggy`                                 | Optional Default: `''` | The alias which should be applied to messages when this integration is processed.                                                                                                                    |
+| `avatar`        | `http://res.guggy.com/logo_128.png`     | Optional Default: `''` | The logo to apply to the messages that this integration sends.                                                                                                                                       |
+| `emoji`         | `:ghost:`                               | Optional Default: `''` | The emoji which should be displayed as the avatar for messages from this integration.                                                                                                                |
+| `token`         | `8DFS89DMKLWEN`                         | Optional Default: `''` | If your integration requires a special token from the server (api key), use this.                                                                                                                    |
+| `script`        | [Integrations](broken-reference/)       | Optional               | Script triggered when this integration is triggered.                                                                                                                                                 |
+| `targetChannel` | `targeted channel`                      | Optional               | The channel where messages will be sent to.                                                                                                                                                          |
+| `integrationId` | `ncjK_idsnms`                           | Optional               | The integration ID                                                                                                                                                                                   |
+| `target_url`    | `open.rocket.chat`                      | Optional               | The target url to set.                                                                                                                                                                               |
 
 ### Example Payload
 
@@ -89,7 +89,6 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
-
 ```
 {% endtab %}
 
@@ -109,7 +108,6 @@ headers = {
 response = requests.request("PUT", url, headers=headers, data=payload)
 
 print(response.text)
-
 ```
 {% endtab %}
 
@@ -154,7 +152,6 @@ HttpResponse<String> response = Unirest.put("http://localhost:3000/api/v1/integr
   .header("Content-Type", "application/json")
   .body("{\n    \"type\": \"webhook-incoming\",\n    \"name\": \"Test\",\n    \"enabled\": false,\n    \"username\": \"rocket.cat\",\n    \"scriptEnabled\": false,\n    \"channel\": \"#test\",\n    \"integrationId\": \"x3tPXa9XXRqW6Xp2M\"\n}")
   .asString();
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -238,4 +235,3 @@ Any of the following errors can occur on the endpoint.
 | Version | Description |
 | ------- | ----------- |
 | 3.4.0   | Added       |
-

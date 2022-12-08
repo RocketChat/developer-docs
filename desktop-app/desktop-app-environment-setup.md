@@ -6,7 +6,7 @@ Setting up the development environment requires you to download and install mult
 
 ## Requirements
 
-You are required to have the following installed already on your machine before starting. If you don't, please take a minute and get them ready.&#x20;
+You are required to have the following installed already on your machine before starting. If you don't, please take a minute and get them ready.
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
@@ -21,7 +21,7 @@ You are required to have the following installed already on your machine before 
 cd ./working-directory
 ```
 
-&#x20;  2\. Clone the source code from [our repository](https://github.com/RocketChat/Rocket.Chat.Electron) and run it by executing the following script on your terminal.
+2\. Clone the source code from [our repository](https://github.com/RocketChat/Rocket.Chat.Electron) and run it by executing the following script on your terminal.
 
 ```
 git clone https://github.com/RocketChat/Rocket.Chat.Electron.git
@@ -39,55 +39,55 @@ The build process compiles all stuff from the `src` folder and puts it into the 
 ```
 Rocket.Chat.Electron
 ├── build
-│   └── icons
+│   └── icons
 ├── src
-│   ├── app
-│   │   ├── main
-│   │   └── reducers
-│   ├── deepLinks
-│   ├── downloads
-│   │   └── reducers
-│   ├── i18n
-│   ├── ipc
-│   ├── jitsi
-│   ├── navigation
-│   ├── notifications
-│   ├── public
-│   │   └── images
-│   │       ├── touch-bar
-│   │       └── tray
-│   │           ├── darwin
-│   │           ├── linux
-│   │           └── win32
-│   ├── screenSharing
-│   ├── servers
-│   │   └── preload
-│   ├── spellChecking
-│   ├── store
-│   ├── types
-│   ├── ui
-│   │   ├── assets
-│   │   ├── components
-│   │   │   ├── AboutDialog
-│   │   │   ├── AddServerView
-│   │   │   ├── Dialog
-│   │   │   ├── DownloadsManagerView
-│   │   │   ├── ScreenSharingDialog
-│   │   │   ├── SelectClientCertificateDialog
-│   │   │   ├── ServersView
-│   │   │   ├── SettingsView
-│   │   │   │   └── features
-│   │   │   ├── Shell
-│   │   │   ├── SideBar
-│   │   │   ├── UpdateDialog
-│   │   │   └── utils
-│   │   ├── icons
-│   │   ├── main
-│   │   │   └── serverView
-│   │   ├── preload
-│   │   └── reducers
-│   ├── updates
-│   └── userPresence
+│   ├── app
+│   │   ├── main
+│   │   └── reducers
+│   ├── deepLinks
+│   ├── downloads
+│   │   └── reducers
+│   ├── i18n
+│   ├── ipc
+│   ├── jitsi
+│   ├── navigation
+│   ├── notifications
+│   ├── public
+│   │   └── images
+│   │       ├── touch-bar
+│   │       └── tray
+│   │           ├── darwin
+│   │           ├── linux
+│   │           └── win32
+│   ├── screenSharing
+│   ├── servers
+│   │   └── preload
+│   ├── spellChecking
+│   ├── store
+│   ├── types
+│   ├── ui
+│   │   ├── assets
+│   │   ├── components
+│   │   │   ├── AboutDialog
+│   │   │   ├── AddServerView
+│   │   │   ├── Dialog
+│   │   │   ├── DownloadsManagerView
+│   │   │   ├── ScreenSharingDialog
+│   │   │   ├── SelectClientCertificateDialog
+│   │   │   ├── ServersView
+│   │   │   ├── SettingsView
+│   │   │   │   └── features
+│   │   │   ├── Shell
+│   │   │   ├── SideBar
+│   │   │   ├── UpdateDialog
+│   │   │   └── utils
+│   │   ├── icons
+│   │   ├── main
+│   │   │   └── serverView
+│   │   ├── preload
+│   │   └── reducers
+│   ├── updates
+│   └── userPresence
 └── workspaces
     └── desktop-release-action
         ├── dist

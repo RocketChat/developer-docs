@@ -52,7 +52,6 @@ headers = {
 response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
-
 ```
 {% endtab %}
 
@@ -93,7 +92,6 @@ HttpResponse<String> response = Unirest.get("http://localhost:3000/api/v1/getImp
   .header("X-User-Id", "d26x6zSkaPSe5gCyy")
   .header("X-Auth-Token", "Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92")
   .asString();
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -137,4 +135,3 @@ Any of the following errors can occur on the endpoint.
 | Version | Description |
 | ------- | ----------- |
 | `3.0.0` | Added       |
-
