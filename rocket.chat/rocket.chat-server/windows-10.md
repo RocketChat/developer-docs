@@ -61,8 +61,20 @@ curl https://install.meteor.com/ | sh
 There is no need to install `node` or `npm`, as meteor already includes them. Verify by executing
 
 ```
-meteor node -v // v14.20.1
+meteor node -v // v14.19.3
 meteor npm -v // 6.14.17
+```
+
+{% hint style="success" %}
+Information on the various versions of packages needed can be found in the `package.json`
+{% endhint %}
+
+* To easily manage the node versions on your machine, install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)then install and switch to the desired node version to use. Example:
+
+```bash
+npm install -g n
+n 14.19.3
+node -v
 ```
 
 * It is recommended to use the `yarn` package manager. Install it by running
