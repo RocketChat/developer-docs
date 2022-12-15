@@ -49,7 +49,7 @@ Information on the various versions of packages needed can be found in the `pack
 
 ```bash
 npm install -g n
-n 14.18.3
+n 14.19.3
 node -v
 ```
 
@@ -76,8 +76,7 @@ meteor --version
 * Build and startup your development server by executing the commands below. Building for the first time will take a while and you may see some warnings or errors.
 
 ```bash
-yarn build
-yarn dev
+yarn dsv
 ```
 
 When the server is ready, you will see a box with "Server Running" title:
