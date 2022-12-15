@@ -6,7 +6,7 @@ description: >-
 
 # Contributing to Apps Engine
 
-Being Open Source, we always welcome contributors to help us out develope the ultimate chat platform. You can check out our Apps Engine repository here.
+Being Open Source, we always welcome contributors to help us out develop the ultimate chat platform. You can check out our Apps Engine repository here.
 
 {% embed url="https://github.com/RocketChat/Rocket.Chat.Apps-engine" %}
 
