@@ -74,6 +74,10 @@ Having the server running, simply run inside the app project's directory:
 rc-apps deploy --url http://localhost:3000 --username <username> --password <password>
 ```
 
+{% hint style="info" %}
+Don't forget to enable development mode in General>Apps section of admin settings before run the deploy script!
+{% endhint %}
+
 Where:
 
 `http://localhost:3000` is your local server URL (if you are running in another port, change the `3000` to the appropriate port)
