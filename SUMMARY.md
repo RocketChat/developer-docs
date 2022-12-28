@@ -235,7 +235,7 @@
           * [Livechat Transcript](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-transcript.md)
           * [Livechat Transfer](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-transfer.md)
           * [Livechat Visitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/README.md)
-            * [Register a new Livechat visitor](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/register-a-new-livechat-visitor.md)
+            * [Register a Livechat visitor](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/register-a-new-livechat-visitor.md)
             * [Retrieve a visitor data](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/retrieve-a-visitor-data.md)
             * [Get the visitor info](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/get-the-visitor-info.md)
             * [Search for Visitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/visitor/search-for-visitors.md)
