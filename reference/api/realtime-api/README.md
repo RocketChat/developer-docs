@@ -39,4 +39,5 @@ Before requesting any method / subscription you have to send a connect message:
 
 * A basic example script that uses the 'ddp' NodeJS package to subscribe to the Realtime-API stream of a Group/Channel here [https://github.com/jszaszvari/rocketchat-ddp-listener](https://github.com/jszaszvari/rocketchat-ddp-listener)
 * [Rocket.Chat.RealTime.API.RxJS](https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS) Abstraction for Utilizing [Rocket.Chat](https://rocket.chat/)'s [Realtime API](https://rocket.chat/docs/developer-guides/realtime-api) Methods with [RxJS](http://reactivex.io/rxjs/). [https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS](https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS)
+* asyncio-based Python wrapper for the Rocket.Chat Realtime API: [rocketchat-async](https://github.com/hynek-urban/rocketchat-async)
 
