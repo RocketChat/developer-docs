@@ -154,7 +154,7 @@ npm install node-gyp --global
 Rebuild fibers for the system architecture manually
 
 ```shell
-node-gyp rebuild --arch=arm64
+cd node_modules/fibers && node-gyp rebuild --arch=arm64
 ```
 
 Move binary to the correct location
@@ -167,7 +167,7 @@ cp build/Release/fibers.node bin/darwin-arm64-83/fibers.node
 Share the directory
 
 ```shell
-cp -r node_modules/fibers apps/meteor/node_modules/
+cd ../../ && cp -r node_modules/fibers apps/meteor/node_modules/
 ```
 
 ### 3. Bcrypt requires arm64 binary but has amd64 one (Mac M1/2)
@@ -188,5 +188,5 @@ cd node_modules/bcrypt &&
 Once build is succesfull, share the module
 
 ```shell
-cp -r node_modules/bcrypt apps/meteor/node_modules/
+cd ../.. && cp -r node_modules/bcrypt apps/meteor/node_modules/
 ```
