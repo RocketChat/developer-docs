@@ -129,34 +129,15 @@ When done, you should see the following printed on your terminal and the local s
 
 ## Troubleshooting
 
-### 1. Command yarn failed with code 127 (Mac M1/2)
-
-If you face an error like the following:
-
-    ```
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 127, logs can be found here: /private/var/folders/pq/xv5hx2d117jfxls2nx49wgrm0000gn/T/xfs-e2bec7de/build.log)
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 127, logs can be found here: /private/var/folders/pq/xv5hx2d117jfxls2nx49wgrm0000gn/T/xfs-08c5a85c/build.log)
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 127, logs can be found here: /private/var/folders/pq/xv5hx2d117jfxls2nx49wgrm0000gn/T/xfs-c7fa7b08/build.log)
-    ```
-
-* Run this command
-
-    ```shell
-    ln -sf $(which node) $(dirname $(which node))/nodejs
-    ```
-
-* Run `yarn` again
-
-
-### 2. Fibers link failed (Mac M1/2)
+### 1. Failure linking "fibers" (Apple Silicon)
 
 If `yarn` is failing on the link step for fibers with a log similar to:
 
     ```
     ➤ YN0007: │ fibers@npm:5.0.3 must be built because it never has been before or the last one failed
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/pq/xv5hx2d117jfxls2nx49wgrm0000gn/T/xfs-7a9d15f1/build.log)
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/pq/xv5hx2d117jfxls2nx49wgrm0000gn/T/xfs-b359748c/build.log)
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/pq/xv5hx2d117jfxls2nx49wgrm0000gn/T/xfs-62becf57/build.log)
+    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
+    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
+    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
     ```
 
 * Install `node-gyp` globally
@@ -187,7 +168,11 @@ If `yarn` is failing on the link step for fibers with a log similar to:
     cp -r node_modules/fibers apps/meteor/node_modules/
     ```
 
-### 3. Bcrypt requires arm64 binary but has amd64 one (Mac M1/2)
+* Follow the instructions below for fixing a Bcrypt problem, even though its error
+  message has not yet appeared.
+
+
+### 2. Bcrypt requires arm64 binary but has amd64 one instead (Apple Silicon)
 
 The error specifically looks like the following:
 
