@@ -7,19 +7,36 @@ You can set up and run a Rocket.Chat development environment on your macOS syste
 
 ## Apple Silicon
 
+* Install [Homebrew](https://brew.sh/)
+* Install the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
+    ```shell
+    brew install nvm
+    ```
+  * Important!  Make sure you are running nvm version >= 0.39.2
+    ```shell
+    nvm --version
+    ```
+* [Fork the Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat/fork) into your own GitHub account
+* Clone your fork of the Rocket.Chat repository to your local dev box, navigate into the directory, and configure an additional remote so we can later fetch updates from the main Rocket.Chat repo
 
-* Install node with [nvm](https://github.com/nvm-sh/nvm). Make sure the nvm version is >= 0.39.2
-* Install required nodejs version using nvm. You can check the current required version in the `package.json` file [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/package.json#L42-L46).
+    ```shell
+    git clone https://github.com/your-username/Rocket.Chat
+    cd Rocket.Chat
+    git remote add upstream https://github.com/RocketChat/Rocket.Chat.git
+    ```
+* Find which version of node your version of RocketChat needs.
+    ```
+    cat package.json | grep -A4 engines | grep node
+    ```
+* Install that version of node, _for example_:
+    ```
+    nvm install 14.19.3
+    ```
 
 
 * Install yarn - read yarn's official documentation on [how to install yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 * Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
-* Fork and clone the [Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory
 
-```shell
-git clone https://github.com/your-username/Rocket.Chat
-cd Rocket.Chat
-```
 
 * Run the following commands to navigate to the `meteor` directory to install the needed toolset, as configured in `.meteor/release` file
 
