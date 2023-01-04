@@ -7,6 +7,10 @@ You can set up and run a Rocket.Chat development environment on your macOS syste
 
 ## Apple Silicon
 
+{% hint style="info" %}
+Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooting) section below.
+{% endhint %}
+
 * Install [Homebrew](https://brew.sh/)
 * Install the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
     ```shell
@@ -38,22 +42,35 @@ You can set up and run a Rocket.Chat development environment on your macOS syste
 * Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
 
 
-* Run the following commands to navigate to the `meteor` directory to install the needed toolset, as configured in `.meteor/release` file
+* Initialize the `meteor` framework.  This will show the version of meteor requested by Rocket.Chat
+  (incidentally, specified in `apps/meteor/.meteor/release`) and will initialize it as a side-effect.
 
-```shell
-cd apps/meteor
-meteor --version
-cd ../..
-```
+    ```shell
+    cd apps/meteor
+    meteor --version
+    cd ../..
+    ```
 
-* Build and start your development server by executing
+* Install all needed packages and build the Rocket.Chat app
 
-```shell
-yarn build
-yarn dev # or yarn dsv if your system has less than 16 gigs of memory
-```
+    ```shell
+    yarn
+    yarn build
+    ```
 
-> If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooting) section below.
+* Start your development server
+
+    There are two ways to start the server.  For systems with >= 16 GB of memory, use
+
+    ```shell
+    yarn dev
+    ```
+
+    For systems with less than 16 GB of memory, use
+
+    ```shell
+    yarn dsv
+    ```
 
 When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
 
