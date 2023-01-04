@@ -7,15 +7,10 @@ You can set up and run a Rocket.Chat development environment on your macOS syste
 
 ## Apple Silicon
 
-{% hint style="info" %}
-* Node.js only has prebuilt binaries for [Apple Silicon](https://www.macworld.com/article/334279/apple-silicon-macs-may-be-a-reboot-of-the-g4-cube-and-colorful-imac-g3.html) as from `node v16`
-* Rocket.Chat currently uses at least `meteor 2.7.3` which has support for Apple silicon chips. If you are to run an environment with a lesser version, consider using[ the Rosetta terminal](https://support.apple.com/en-us/HT211861).
-{% endhint %}
 
 * Install node with [nvm](https://github.com/nvm-sh/nvm). Make sure the nvm version is >= 0.39.2
 * Install required nodejs version using nvm. You can check the current required version in the `package.json` file [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/package.json#L42-L46).
 
-> For Apple Silicon, nvm (>= 0.39.2) will build nodejs from source if there is no official binary for the asked version (as of the time of this writing, this is the case for node 14.19.3)
 
 * Install yarn - read yarn's official documentation on [how to install yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 * Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
