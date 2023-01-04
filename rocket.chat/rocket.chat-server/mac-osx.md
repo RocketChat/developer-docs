@@ -1,7 +1,6 @@
-# Mac OSX
+# macOS
 
-\
-You can set up and run a Rocket.Chat development environment on your Mac OSX.
+You can set up and run a Rocket.Chat development environment on your macOS system.
 
 * [Apple Silicon](mac-osx.md#apple-silicon)
 * [Non-Apple Silicon Chips](mac-osx.md#non-apple-silicon-chips)
@@ -45,7 +44,7 @@ yarn dev # or yarn dsv if your system has less than 16 gigs of memory
 
 When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
 
-![Rocket.Chat server successfully running on MacOSX](<../../.gitbook/assets/image (51) (2).png>)
+![Rocket.Chat server successfully running on macOS](<../../.gitbook/assets/image (51) (2).png>)
 
 ## Non-Apple Silicon Chips
 
@@ -113,7 +112,7 @@ yarn dev
 
 When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
 
-![Rocket.Chat server successfully running on MacOSX](<../../.gitbook/assets/image (51) (2).png>)
+![Rocket.Chat server successfully running on macOS](<../../.gitbook/assets/image (51) (2).png>)
 
 ## Troubleshooting
 
