@@ -150,12 +150,12 @@ When done, you should see the following printed on your terminal and the local s
 
 If `yarn` is failing on the link step for fibers with a log similar to:
 
-    ```
-    ➤ YN0007: │ fibers@npm:5.0.3 must be built because it never has been before or the last one failed
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
-    ➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
-    ```
+```
+➤ YN0007: │ fibers@npm:5.0.3 must be built because it never has been before or the last one failed
+➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
+➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
+➤ YN0009: │ fibers@npm:5.0.3 couldn't be built successfully (exit code 1, logs can be found here: /private/var/folders/…/build.log)
+```
 
 * Install `node-gyp` globally
 
@@ -193,9 +193,9 @@ If `yarn` is failing on the link step for fibers with a log similar to:
 
 The error specifically looks like the following:
 
-    ```
-    (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64e')), '/usr/local/lib/bcrypt_lib.node' (no such file), '/usr/lib/bcrypt_lib.node' (no such file)
-    ```
+```
+(mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64e')), '/usr/local/lib/bcrypt_lib.node' (no such file), '/usr/lib/bcrypt_lib.node' (no such file)
+```
 
 * Move to the bcrypt directory and rebuild everything
 
