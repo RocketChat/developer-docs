@@ -12,6 +12,7 @@ Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooti
 {% endhint %}
 
 * Install [Homebrew](https://brew.sh/)
+<!-- direnv: Until RC upgrades to node 16, use meteor's node.
 * Install the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
     ```shell
     brew install nvm
@@ -20,6 +21,7 @@ Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooti
     ```shell
     nvm --version
     ```
+-->
 * [Fork the Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat/fork) into your own GitHub account
 * Clone your fork of the Rocket.Chat repository to your local dev box, navigate into the directory, and configure an additional remote so we can later fetch updates from the main Rocket.Chat repo
 
@@ -28,21 +30,33 @@ Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooti
     cd Rocket.Chat
     git remote add upstream https://github.com/RocketChat/Rocket.Chat.git
     ```
+<!-- direnv: We will use meteor's node for now.
 * Find which version of node your version of RocketChat needs.
-    ```
+    ```shell
     cat package.json | grep -A4 engines | grep node
     ```
 * Install that version of node, _for example_:
-    ```
+    ```shell
     nvm install 14.19.3
     ```
+-->
 
+* Install the Meteor application framework
+    ```shell
+    curl https://install.meteor.com/ | sh
+    ```
 
-* Install yarn - read yarn's official documentation on [how to install yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
-* Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
+    This script will prompt you for your password in order to install `/usr/local/bin/meteor`.
 
+    {% hint style="info" %}
+    If in the future you wish to ***uninstall*** Meteor, run the commands:
+    ```shell
+    sudo rm /usr/local/bin/meteor
+    rm -rf ~/.meteor/
+    ```
+    {% endhint %}
 
-* Initialize the `meteor` framework.  This will show the version of meteor requested by Rocket.Chat
+* Initialize the Meteor framework.  This will show the version of meteor requested by Rocket.Chat
   (incidentally, specified in `apps/meteor/.meteor/release`) and will initialize it as a side-effect.
 
     ```shell
@@ -51,12 +65,52 @@ Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooti
     cd ../..
     ```
 
+* Use `direnv` to help us maintain a custom development environment for Rocket.Chat.
+    * Install direnv
+        ```shell
+        brew install direnv
+        ```
+    * Enable direnv in your shell's rc file.  Follow the instructions at https://direnv.net/docs/hook.html and then restart your shell so it takes effect.
+    * Create a file in the Rocket.Chat folder called `.envrc` and add this line to it:
+        ```
+        PATH_add "$(meteor node -p 'require("path").dirname(process.execPath)')"
+        ```
+    * Activate the .envrc file
+        ```shell
+        direnv allow .
+        ```
+    * Find which version of node meteor is using
+        ```shell
+        meteor node --version
+        ```
+    * Edit `package.json` and change the listed node version to the one meteor is using.  Look for something like:
+        ```
+        "engines": {
+            "yarn": "3.2.2",
+            "node": "14.19.3",
+            "npm": "Use yarn instead"
+        },
+        ```
+        and change the "node" value to match the desired one.  Omit the leading "v" from the version number.
+
+* Install yarn
+    ```shell
+    npm install -g yarn
+    ```
+
+* Ensure we will build our packages clean slate
+    ```shell
+    rm -rf node_modules apps/meteor/node_modules
+    ```
+
 * Install all needed packages and build the Rocket.Chat app
 
     ```shell
     yarn
     yarn build
     ```
+
+    If you encounter problems (and at the time of writing, we expect you will), please see the [Troubleshooting](mac-osx.md#troubleshooting) section below and then try again.
 
 * Start your development server
 
