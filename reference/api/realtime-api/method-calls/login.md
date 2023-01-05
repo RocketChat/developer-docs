@@ -91,7 +91,7 @@ Here's a example request.
 
 ## Using an authentication token
 
-If you have a saved user authentication you may use the provided `auth-token` to automatically log the user in.
+If you have a saved user authentication token, or a [Personal Access Token](https://docs.rocket.chat/guides/user-guides/user-panel/managing-your-account/personal-access-token), you may use the provided `auth-token` to automatically log the user in.
 
 ```javascript
 {
