@@ -6,6 +6,10 @@ description: Gives departments included in a specific unit id
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
+{% hint style="warning" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-department-by-unit-id.md](../units/get-department-by-unit-id.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
+
 | URL                                           | Requires Auth | HTTP Method |
 | --------------------------------------------- | ------------- | ----------- |
 | `api/v1/livechat/departments.by-unit/:unitId` | `YES`         | `GET`       |

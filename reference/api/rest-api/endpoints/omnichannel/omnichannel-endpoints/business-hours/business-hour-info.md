@@ -1,238 +1,661 @@
----
-description: Retrieves all the information of a particular business hour.
----
+# Get Business Hours
 
-# Business Hour Info
+Retrieves all the business hours attached to a workspace
 
+<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/livechat/business-hour` | `YES` | `GET` |
+| URL                              | Requires Auth | HTTP Method |
+| -------------------------------- | ------------- | ----------- |
+| `api/v1/livechat/business-hours` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example                                    | Required | Description                                                    |
+| -------------- | ------------------------------------------ | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `xnqTv4GAcaCBW6H33`                        | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `VJsIfdGCNrzxOW1sHf3r_ebe6mVGKfmzcwaEPqEt` | Required | Your token (returned after you log in through the API)         |
 
-##  Parameters
+## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `_Id` | `5f071f83a05d58ba2cd8b046` | Required | Business Hour ID |
+| Argument | Example               | Required | Description               |
+| -------- | --------------------- | -------- | ------------------------- |
+| `name`   | `indian support time` | Optional | name of the business hour |
 
 ## Example Call
 
+{% tabs %}
+{% tab title="General call" %}
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hour?_id=5f071f83a05d58ba2cd8b046 \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hours'\
 --header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
+--header 'X-User-Id: myuser-id'
 ```
+{% endtab %}
+
+{% tab title="Call with name Parameter" %}
+```
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hours?name=indian support time ' \
+--header 'X-User-Id:  myauth-token' \
+--header 'X-Auth-Token: myuser-id'
+```
+{% endtab %}
+{% endtabs %}
 
 ## Result
 
-```javascript
+{% tabs %}
+{% tab title="General" %}
+```bash
 {
-    "businessHour": {
-        "_id": "5f071f83a05d58ba2cd8b046",
-        "ts": "2020-07-09T13:45:39.633Z",
-        "name": "",
-        "active": true,
-        "type": "default",
-        "workHours": [
-            {
-                "day": "Monday",
-                "start": {
-                    "time": "06:00",
-                    "utc": {
-                        "dayOfWeek": "Monday",
-                        "time": "03:00"
+    "businessHours": [
+        {
+            "_id": "5eeed2c5ffea9759d3a0e5ac",
+            "name": "",
+            "active": true,
+            "type": "default",
+            "ts": "2020-06-21T03:24:02.252Z",
+            "workHours": [
+                {
+                    "day": "Monday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "08:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "08:00"
+                        }
                     },
-                    "cron": {
-                        "dayOfWeek": "Monday",
-                        "time": "03:00"
-                    }
-                },
-                "finish": {
-                    "time": "23:00",
-                    "utc": {
-                        "dayOfWeek": "Monday",
-                        "time": "20:00"
+                    "finish": {
+                        "time": "21:06",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "21:06"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "21:06"
+                        }
                     },
-                    "cron": {
-                        "dayOfWeek": "Monday",
-                        "time": "20:00"
-                    }
+                    "open": true
                 },
-                "open": true
+                {
+                    "day": "Tuesday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "08:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "08:00"
+                        }
+                    },
+                    "finish": {
+                        "time": "10:00",
+                        "utc": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "10:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "10:00"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Wednesday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "08:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "08:00"
+                        }
+                    },
+                    "finish": {
+                        "time": "21:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "21:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "21:00"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Thursday",
+                    "start": {
+                        "time": "01:00",
+                        "utc": {
+                            "dayOfWeek": "Thursday",
+                            "time": "01:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Thursday",
+                            "time": "01:00"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:00",
+                        "utc": {
+                            "dayOfWeek": "Thursday",
+                            "time": "23:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Thursday",
+                            "time": "23:00"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Friday",
+                    "start": {
+                        "time": "10:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "10:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "10:00"
+                        }
+                    },
+                    "finish": {
+                        "time": "22:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "22:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "22:00"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Saturday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Saturday",
+                            "time": "08:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Saturday",
+                            "time": "08:00"
+                        }
+                    },
+                    "finish": {
+                        "time": "20:00",
+                        "utc": {
+                            "dayOfWeek": "Saturday",
+                            "time": "20:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Saturday",
+                            "time": "20:00"
+                        }
+                    },
+                    "open": false
+                },
+                {
+                    "day": "Sunday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Sunday",
+                            "time": "08:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Sunday",
+                            "time": "08:00"
+                        }
+                    },
+                    "finish": {
+                        "time": "20:00",
+                        "utc": {
+                            "dayOfWeek": "Sunday",
+                            "time": "20:00"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Sunday",
+                            "time": "20:00"
+                        }
+                    },
+                    "open": false
+                }
+            ],
+            "timezone": {
+                "name": "Africa/Abidjan",
+                "utc": "0"
             },
-            {
-                "day": "Tuesday",
-                "start": {
-                    "time": "06:00",
-                    "utc": {
-                        "dayOfWeek": "Tuesday",
-                        "time": "03:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Tuesday",
-                        "time": "03:00"
-                    }
-                },
-                "finish": {
-                    "time": "21:00",
-                    "utc": {
-                        "dayOfWeek": "Tuesday",
-                        "time": "18:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Tuesday",
-                        "time": "18:00"
-                    }
-                },
-                "open": true
-            },
-            {
-                "day": "Wednesday",
-                "start": {
-                    "time": "06:00",
-                    "utc": {
-                        "dayOfWeek": "Wednesday",
-                        "time": "03:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Wednesday",
-                        "time": "03:00"
-                    }
-                },
-                "finish": {
-                    "time": "22:00",
-                    "utc": {
-                        "dayOfWeek": "Wednesday",
-                        "time": "19:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Wednesday",
-                        "time": "19:00"
-                    }
-                },
-                "open": true
-            },
-            {
-                "day": "Thursday",
-                "start": {
-                    "time": "06:00",
-                    "utc": {
-                        "dayOfWeek": "Thursday",
-                        "time": "03:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Thursday",
-                        "time": "03:00"
-                    }
-                },
-                "finish": {
-                    "time": "21:00",
-                    "utc": {
-                        "dayOfWeek": "Thursday",
-                        "time": "18:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Thursday",
-                        "time": "18:00"
-                    }
-                },
-                "open": true
-            },
-            {
-                "day": "Friday",
-                "start": {
-                    "time": "06:00",
-                    "utc": {
-                        "dayOfWeek": "Friday",
-                        "time": "03:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Friday",
-                        "time": "03:00"
-                    }
-                },
-                "finish": {
-                    "time": "21:00",
-                    "utc": {
-                        "dayOfWeek": "Friday",
-                        "time": "18:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Friday",
-                        "time": "18:00"
-                    }
-                },
-                "open": true
-            },
-            {
-                "day": "Saturday",
-                "start": {
-                    "time": "08:00",
-                    "utc": {
-                        "dayOfWeek": "Saturday",
-                        "time": "05:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Saturday",
-                        "time": "05:00"
-                    }
-                },
-                "finish": {
-                    "time": "20:00",
-                    "utc": {
-                        "dayOfWeek": "Saturday",
-                        "time": "17:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Saturday",
-                        "time": "17:00"
-                    }
-                },
-                "open": false
-            },
-            {
-                "day": "Sunday",
-                "start": {
-                    "time": "08:00",
-                    "utc": {
-                        "dayOfWeek": "Sunday",
-                        "time": "05:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Sunday",
-                        "time": "05:00"
-                    }
-                },
-                "finish": {
-                    "time": "20:00",
-                    "utc": {
-                        "dayOfWeek": "Sunday",
-                        "time": "17:00"
-                    },
-                    "cron": {
-                        "dayOfWeek": "Sunday",
-                        "time": "17:00"
-                    }
-                },
-                "open": false
-            }
-        ],
-        "timezone": {
-            "name": "Asia/Aden",
-            "utc": "+03:00"
+            "_updatedAt": "2022-12-05T17:12:11.585Z",
+            "departmentsToApplyBusinessHour": ""
         },
-        "departmentsToApplyBusinessHour": "",
-        "_updatedAt": "2021-07-19T10:27:33.745Z"
-    },
+        {
+            "_id": "62b1f74aa98c5b539adc912c",
+            "ts": "2022-06-21T16:52:26.386Z",
+            "name": "indian support time ",
+            "workHours": [
+                {
+                    "day": "Monday",
+                    "start": {
+                        "time": "10:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "04:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "04:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "12:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "06:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "06:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Tuesday",
+                    "start": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "18:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:00",
+                        "utc": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "17:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "17:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Wednesday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "02:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "02:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "17:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "17:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Thursday",
+                    "start": {
+                        "time": "10:00",
+                        "utc": {
+                            "dayOfWeek": "Thursday",
+                            "time": "04:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Thursday",
+                            "time": "04:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "01:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "19:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "19:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Friday",
+                    "start": {
+                        "time": "12:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "06:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "06:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:50",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:20"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:20"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Saturday",
+                    "start": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        }
+                    },
+                    "open": false
+                },
+                {
+                    "day": "Sunday",
+                    "start": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        }
+                    },
+                    "open": false
+                }
+            ],
+            "active": true,
+            "type": "custom",
+            "timezone": {
+                "name": "Asia/Kolkata",
+                "utc": "+05:30"
+            },
+            "_updatedAt": "2022-11-28T10:41:17.303Z"
+        }
+    ],
+    "count": 2,
+    "offset": 0,
+    "total": 2,
+    "success": true
+}as
+```
+{% endtab %}
+
+{% tab title="With name Parameter" %}
+```bash
+{
+    "businessHours": [
+        {
+            "_id": "62b1f74aa98c5b539adc912c",
+            "ts": "2022-06-21T16:52:26.386Z",
+            "name": "indian support time ",
+            "workHours": [
+                {
+                    "day": "Monday",
+                    "start": {
+                        "time": "10:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "04:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "04:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "12:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "06:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "06:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Tuesday",
+                    "start": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Monday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Monday",
+                            "time": "18:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:00",
+                        "utc": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "17:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Tuesday",
+                            "time": "17:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Wednesday",
+                    "start": {
+                        "time": "08:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "02:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "02:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "17:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "17:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Thursday",
+                    "start": {
+                        "time": "10:00",
+                        "utc": {
+                            "dayOfWeek": "Thursday",
+                            "time": "04:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Thursday",
+                            "time": "04:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "01:00",
+                        "utc": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "19:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Wednesday",
+                            "time": "19:30"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Friday",
+                    "start": {
+                        "time": "12:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "06:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "06:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "23:50",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:20"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:20"
+                        }
+                    },
+                    "open": true
+                },
+                {
+                    "day": "Saturday",
+                    "start": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Friday",
+                            "time": "18:30"
+                        }
+                    },
+                    "open": false
+                },
+                {
+                    "day": "Sunday",
+                    "start": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        }
+                    },
+                    "finish": {
+                        "time": "00:00",
+                        "utc": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        },
+                        "cron": {
+                            "dayOfWeek": "Saturday",
+                            "time": "18:30"
+                        }
+                    },
+                    "open": false
+                }
+            ],
+            "active": true,
+            "type": "custom",
+            "timezone": {
+                "name": "Asia/Kolkata",
+                "utc": "+05:30"
+            },
+            "_updatedAt": "2022-11-28T10:41:17.303Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1,
     "success": true
 }
 ```
-
+{% endtab %}
+{% endtabs %}

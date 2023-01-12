@@ -6,6 +6,10 @@ description: Gives a list of tags
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
+{% hint style="info" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-tags.md](get-tags.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
+
 | URL                         | Requires Auth | HTTP Method |
 | --------------------------- | ------------- | ----------- |
 | `api/v1/livechat/tags.list` | `YES`         | `GET`       |

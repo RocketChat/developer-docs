@@ -1,18 +1,12 @@
----
-description: Retrieves a list of monitors
----
+# Get Monitors
 
-# List of Monitors
+Retrieves a list of monitors&#x20;
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
-{% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-monitors.md](get-monitors.md "mention") as from Rocket.Chat `5.0`
-{% endhint %}
-
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/monitors.list` | `YES`         | `GET`       |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `api/v1/livechat/monitors` | `YES`         | `GET`       |
 
 ## Headers
 
@@ -24,7 +18,9 @@ description: Retrieves a list of monitors
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/units.list\
+
+
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/monitors' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```

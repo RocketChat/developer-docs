@@ -4,9 +4,11 @@ description: Gives a list of unit monitors
 
 # List of unit monitors
 
-
-
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
+
+{% hint style="warning" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-list-of-unit-monitors.md](get-list-of-unit-monitors.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
 
 | URL                                 | Requires Auth | HTTP Method |
 | ----------------------------------- | ------------- | ----------- |

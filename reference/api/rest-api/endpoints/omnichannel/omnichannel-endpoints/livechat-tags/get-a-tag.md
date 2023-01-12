@@ -1,18 +1,14 @@
 ---
-description: Gives the details of a tag
+description: Get the details of a tag
 ---
 
-# Get one Tag
+# Get a Tag
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
-
-{% hint style="info" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-tag.md](get-a-tag.md "mention") as from Rocket.Chat `5.0`
-{% endhint %}
+<figure><img src="https://2858450009-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWf1K8RJU-TjNEtPxvb%2Fuploads%2Fgit-blob-1654b99a4e9df54521f42da4d3c1a7fbdb9f2238%2FEnterprise.jpg?alt=media" alt=""><figcaption></figcaption></figure>
 
 | URL                    | Requires Auth | HTTP Method |
 | ---------------------- | ------------- | ----------- |
-| `livechat/tags.getOne` | `YES`         | `GET`       |
+| `livechat/tags/:tagId` | `YES`         | `GET`       |
 
 ## Headers
 
@@ -21,7 +17,7 @@ description: Gives the details of a tag
 | `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
-## Parameters
+## Path Variable
 
 | Argument | Example             | Required | Description |
 | -------- | ------------------- | -------- | ----------- |
@@ -30,7 +26,7 @@ description: Gives the details of a tag
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags.getOne?tagId=pXkCRLGxD34y2FEZq\
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags/:tagId\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -39,14 +35,15 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags.getOne
 
 ```javascript
 {
-    "_id": "pXkCRLGxD34y2FEZq",
-    "name": "Valuable  lead",
-    "description": "high chances of conversion",
-    "numDepartments": 1,
+    "_id": "nNJntq2n6GBdR8JC4",
+    "name": "331",
+    "numDepartments": 2,
     "departments": [
-        "GgYvrkAF63aeQmsh4"
+        "kxL4qaa29SMpy3ZXG",
+        "WRY3EFGAT9Xh5NFBv"
     ],
-    "_updatedAt": "2021-06-28T16:43:57.688Z",
+    "_updatedAt": "2022-11-28T07:17:31.973Z",
+    "description": "xfgh",
     "success": true
 }
 ```

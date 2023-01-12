@@ -6,6 +6,10 @@ description: Gives a list of priorities
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
+{% hint style="info" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-priorities.md](get-priorities.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
+
 | URL                        | Requires Auth | HTTP Method |
 | -------------------------- | ------------- | ----------- |
 | `livechat/priorities.list` | `YES`         | `GET`       |

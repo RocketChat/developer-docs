@@ -6,6 +6,10 @@ description: Gives the details of a monitor
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
+{% hint style="warning" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-monitor.md](get-a-monitor.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
+
 | URL                               | Requires Auth | HTTP Method |
 | --------------------------------- | ------------- | ----------- |
 | `api/v1/livechat/monitors.getOne` | `YES`         | `GET`       |

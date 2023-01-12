@@ -9,7 +9,7 @@
 | `api/v1/livechat/analytics/agents/total-service-time`            | Retrieves total service time sorted by agent                                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time)            |
 | `api/v1/livechat/analytics/agents/available-for-service-history` | Retrieves a list of agents and their available time for the provided time frame | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history) |
 
-## Livechat Appearance&#x20;
+## Livechat Appearance
 
 | Url                          | Short Description                                   | Details Page                                                                                              |
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@
 | `api/v1/livechat/department/:departmentId/agents`                  | Retrieves agents of a specific department                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department)     |
 | `api/v1/livechat/department/:departmentId/agents`                  | Updates agents of a department                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department)       |
 | `api/v1/livechat/department.listByIds`                             | Retrieves a list of departments by an array of department ids | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids)          |
-| `api/v1/livechat/departments.available-by-unit/:unitId`            |  Retrieves departments available by unit Id                   | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id)                           |
+| `api/v1/livechat/departments.available-by-unit/:unitId`            | Retrieves departments available by unit Id                    | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id)                           |
 | `api/v1/livechat/analytics/departments/amount-of-chats`            | Retrieves the number of incoming chats                        | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat)                                             |
 | `api/v1/livechat/analytics/departments/average-service-time`       | Retrieves average service time                                | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-service-time-by-department)                         |
 | `api/v1/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration                              | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-chat-duration-time-by-department)                   |
@@ -77,9 +77,9 @@
 
 ## Queue
 
-| Url                     | Short Description           | Details Page                                                                                                  |
-| ----------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/queue` | Retrieves  the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
+| Url                     | Short Description          | Details Page                                                                                                  |
+| ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
 
 ## Rooms
 
@@ -106,8 +106,6 @@
 | Url                           | Short Description | Details Page |
 | ----------------------------- | ----------------- | ------------ |
 | `api/v1/livechat/upload/:rid` | post              |              |
-
-
 
 ## Users
 
@@ -138,17 +136,17 @@
 
 ## Priorities
 
-| Url                               | Short Description               | Details Page                                                                                                                                              |
-| --------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/priorities.list` | Gives a list of priorities      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/list-of-priorities) |
-| `api/v1/livechat/priority.getOne` | Gives the details of a priority | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-enterprise-edition-endpoints/priorities/get-one-priority)   |
+| Url                                      | Short Description               | Details Page                         |
+| ---------------------------------------- | ------------------------------- | ------------------------------------ |
+| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](priorities/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](priorities/get-a-priority.md) |
 
 ## Livechat Tags
 
-| Url                           | Short Description          | Details Page                                                                                     |
-| ----------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/tags.list`   | Retrieves a list of tags   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/list-of-tags) |
-| `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/livechat-tags/get-one-tag)  |
+| Url                           | Short Description          | Details Page                       |
+| ----------------------------- | -------------------------- | ---------------------------------- |
+| `api/v1/livechat/tags`        | Retrieves a list of tags   | [Link](livechat-tags/get-tags.md)  |
+| `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](livechat-tags/get-a-tag.md) |
 
 ## Units
 
@@ -160,4 +158,3 @@
 | `api/v1/livechat/unitMonitors.list`     | Gives a list of unit monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit-monitors) |
 | `api/v1/livechat/unitMonitors.list/:id` | Update Unit by Id             | [Link](units/update-unit.md)                                                                                                   |
 | `api/v1/livechat/unitMonitors.list/:id` | Delete unit using ID          | [Link](units/delete-unit.md)                                                                                                   |
-

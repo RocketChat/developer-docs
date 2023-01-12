@@ -6,6 +6,10 @@ description: Gives departments that have not been associated to another unit yet
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
+{% hint style="info" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-available-departments-by-unit-id.md](../units/get-available-departments-by-unit-id.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
+
 | URL                                                     | Requires Auth | HTTP Method |
 | ------------------------------------------------------- | ------------- | ----------- |
 | `api/v1/livechat/departments.available-by-unit/:unitId` | `YES`         | `GET`       |

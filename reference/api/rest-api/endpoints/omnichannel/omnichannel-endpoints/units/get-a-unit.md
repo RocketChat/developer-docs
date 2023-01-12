@@ -1,18 +1,16 @@
----
-description: Gives the details of a unit
----
-
-# Get one Unit
+# Get a Unit
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
-{% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-unit.md](get-a-unit.md "mention") as from Rocket.Chat `5.0`
+Get details of a unit.
+
+{% hint style="info" %}
+This requires the `manage-livechat-units` permission
 {% endhint %}
 
-| URL                            | Requires Auth | HTTP Method |
-| ------------------------------ | ------------- | ----------- |
-| `api/v1/livechat/units.getOne` | `YES`         | `GET`       |
+| URL                             | Requires Auth | HTTP Method |
+| ------------------------------- | ------------- | ----------- |
+| `api/v1/livechat/units/:unitId` | `YES`         | `GET`       |
 
 ## Headers
 
@@ -21,7 +19,7 @@ description: Gives the details of a unit
 | `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
-## Parameters
+## Path Parameter
 
 | Argument | Example             | Required | Description |
 | -------- | ------------------- | -------- | ----------- |
@@ -30,7 +28,7 @@ description: Gives the details of a unit
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/units.getOne?unitId=sriw2wmP2Zz2pPrre \
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/units/sriw2wmP2Zz2pPrre \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
@@ -39,13 +37,13 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/units.getOn
 
 ```javascript
 {
-    "_id": "sriw2wmP2Zz2pPrre",
-    "name": "Support",
+    "_id": "LnM2rzbknjYSkkd5p",
+    "name": "Sales Unit",
     "visibility": "public",
     "type": "u",
-    "numMonitors": 3,
-    "numDepartments": 4,
-    "_updatedAt": "2021-06-28T22:10:01.295Z",
+    "numMonitors": 1,
+    "numDepartments": 2,
+    "_updatedAt": "2022-09-15T11:44:15.721Z",
     "success": true
 }
 ```

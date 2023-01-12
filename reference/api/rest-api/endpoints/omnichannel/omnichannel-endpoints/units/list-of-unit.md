@@ -6,6 +6,10 @@ description: Gives a list of units
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
+{% hint style="info" %}
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-units.md](get-units.md "mention") as from Rocket.Chat `5.0`
+{% endhint %}
+
 | URL                          | Requires Auth | HTTP Method |
 | ---------------------------- | ------------- | ----------- |
 | `api/v1/livechat/units.list` | `YES`         | `GET`       |
