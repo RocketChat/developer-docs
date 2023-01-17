@@ -14,7 +14,7 @@ We recommend using our official recommendation.
 
 Official Recommendation :arrow\_down::arrow\_down\_small:
 
-{% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/introduction-prerequisites#official-recommendation" %}
+{% embed url="https://docs.rocket.chat/deploy-rocket.chat/prepare-for-your-rocket.chat-deployment" %}
 
 {% embed url="https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/manual-installation" %}
 
