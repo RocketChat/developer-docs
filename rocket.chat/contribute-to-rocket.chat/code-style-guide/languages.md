@@ -5,22 +5,20 @@
 Specific language configurations are in the [.editorconfig](https://github.com/RocketChat/Rocket.Chat/blob/develop/.editorconfig).
 
 {% hint style="info" %}
-We provide a [prettier config](https://github.com/RocketChat/Rocket.Chat/blob/develop/.prettierrc) and [eslint config](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc) in our repos, so as long as those plugins are installed on your editor, code style will be automatically followed&#x20;
+We provide a [prettier config](https://github.com/RocketChat/Rocket.Chat/blob/develop/.prettierrc) and [eslint config](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc) in our repos, so as long as those plugins are installed on your editor, code style will be automatically followed
 {% endhint %}
-
-## JavaScript
-
-The eslint takes charge of formatting all the javascript code. The Rocket.Chat codebase has migrated to using only typescript `.ts` files.
-
-Convention for React and Components are specified in the fuselage wiki.
-
-{% embed url="https://github.com/RocketChat/fuselage/wiki/Conventions#react" %}
 
 ## TypeScript
 
-The typescript convention is described in the fuselage Wiki.
+The eslint takes charge of formatting all the javascript and typescript code.&#x20;
 
-{% embed url="https://github.com/RocketChat/fuselage/wiki/Conventions#typescript" %}
+The Rocket.Chat codebase has migrated to using only typescript `.ts` files.
+
+Convention for Typescript, React and Components are specified in the Fuselage Conventions page.
+
+{% content-ref url="../../../fuselage/conventions.md" %}
+[conventions.md](../../../fuselage/conventions.md)
+{% endcontent-ref %}
 
 ## Go
 
