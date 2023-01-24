@@ -42,6 +42,11 @@
   * [Code of Conduct](code\_of\_conduct.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
+## Github (Templates)
+
+* [Markdown Issue Template](.github/ISSUE_TEMPLATE.md)
+* [build and test on workflows](.github/workflows/build_and_test.yml)
+
 ## Mobile App
 
 * [Mobile App Environment Setup](mobile-app/mobile-app-environment-setup/README.md)
