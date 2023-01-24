@@ -20,7 +20,31 @@ You may notice build WARNINGs related to _peer dependencies_ or other transitive
 sudo apt install g++ build-essential git curl python2-minimal
 ```
 
-If you are using other OS (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate") To resolve this check out this [thread on Stackoverflow](https://askubuntu.com/questions/422975/e-package-python-software-properties-has-no-installation-candidate).
+<details>
+
+<summary>If you are using other OSs (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate" Follow these instructions to resolve this.</summary>
+
+Install `software-properties-common` by running,
+
+```
+sudo apt-get install software-properties-common
+```
+
+`software-properties-common` package is an alternate one for `python-software-properties`.
+
+for <= 12.04
+
+```
+sudo apt-get install python-software-properties
+```
+
+for >= 12.10
+
+```
+sudo apt-get install software-properties-common
+```
+
+</details>
 
 * Install Meteor by executing:
 
@@ -49,7 +73,7 @@ Information on the various versions of packages needed can be found in the `pack
 
 ```bash
 npm install -g n
-n 14.19.3
+n 14.21.1
 node -v
 ```
 

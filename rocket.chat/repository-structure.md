@@ -25,7 +25,7 @@ Rocket.Chat
 │       ├── ee/             # Enterprise related code
 │       ├── imports/
 │       ├── install.sh*
-│       ├── lib/            # Helper functions, classes and methods
+│       ├── lib/            # Helper functions, classes, and methods
 │       ├── package.json
 │       ├── packages/       # Meteor packages customized in use
 │       ├── private/        # Private files and assets only available within the project
@@ -62,12 +62,12 @@ In some cases, you will find the **`lib/`** directory, which contains code that 
 Learn more from the [Meteor guide](https://guide.meteor.com/structure.html).
 
 {% hint style="success" %}
-New features are being added to Rocket.Chat and will not follow this legacy meteor structure under the **`apps/`**folder. It will follow a different structure, but code in the existing structure will still be maintained.
+New features are being added to Rocket.Chat and will not follow this legacy meteor structure under the **`apps/`**folder. It will follow a different structure, but the code in the existing structure will still be maintained.
 {% endhint %}
 
 #### **`apps/meteor/client/views/`**
 
-Where a combination of multiple components come together in action to build a single Rocket.Chat page seen by users.
+Where a combination of multiple components comes together in action to build a single Rocket.Chat page is seen by client-side users.
 
 {% hint style="info" %}
 * **`apps/meteor/client/views/`**is a very good starting point for beginners to see and trace code functionality
@@ -76,7 +76,7 @@ Where a combination of multiple components come together in action to build a si
 
 #### **`apps/meteor/client/lib/`**
 
-A collection of objects that are reused in all of the client-side.\
+A collection of objects that are reused on all of the client sides.\
 This is to:
 
 * Limit code duplication

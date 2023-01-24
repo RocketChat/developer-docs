@@ -14,9 +14,9 @@ You can set up and run a Rocket.Chat development environment on your Mac OSX.
 {% endhint %}
 
 * Install node with [nvm](https://github.com/nvm-sh/nvm). Make sure the nvm version is >= 0.39.2
-* Install required nodejs version using nvm. You can check the current required version in the `package.json` file [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/package.json#L42-L46).
+* Install the required nodejs version using nvm. You can check the current required version in the `package.json` file [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/package.json#L42-L46).
 
-> For Apple Silicon, nvm (>= 0.39.2) will build nodejs from source if there is no official binary for the asked version (as of the time of this writing, this is the case for node 14.19.3)
+> For Apple Silicon, nvm (>= 0.39.2) will build nodejs from source if there is no official binary the needed version.
 
 * Install yarn - read yarn's official documentation on [how to install yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 * Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
@@ -80,7 +80,7 @@ Information on the various versions of packages needed can be found in the `pack
 
 ```
 npm install -g n
-n 14.18.3
+n 14.21.1
 node -v
 ```
 
@@ -157,7 +157,7 @@ Rebuild fibers for the system architecture manually
 cd node_modules/fibers && node-gyp rebuild --arch=arm64
 ```
 
-Move binary to the correct location
+Move the binary to the correct location
 
 ```shell
 mkdir bin/darwin-arm64-83
@@ -181,11 +181,10 @@ The error specifically looks like the following
 Move to the bcrypt directory and rebuild everything
 
 ```shell
-cd node_modules/bcrypt && 
-    make
+cd node_modules/bcrypt && make
 ```
 
-Once build is succesfull, share the module
+Once the build is successful, share the module
 
 ```shell
 cd ../.. && cp -r node_modules/bcrypt apps/meteor/node_modules/

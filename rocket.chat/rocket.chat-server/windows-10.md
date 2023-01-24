@@ -2,11 +2,11 @@
 
 > For resolving known commong problems, see the [troubleshoot](windows-10.md#troubleshooting) section at the end of this page.
 
-Microsoft released Windows Subsystem for Linux 2 ([WSL 2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index)) in June of 2020. Before this time, the development of large and complex NodeJS-based servers/full-stack applications such as Rocket.Chat on Windows was close to impossible.
+Microsoft released Windows Subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index)) in June of 2020. Before this time, the development of large and complex NodeJS-based servers/full-stack applications such as Rocket.Chat on Windows was close to impossible.
 
 WSL 2 is a complete architectural overhaul of Linux on Windows, installing a full genuine Linux kernel (built by Microsoft) alongside the classic Windows kernel. The Linux kernel and Windows kernel can now share system resources, such as memory and CPU, at a granularity not previously possible. It also includes major performance optimization on cross-subsystems file sharing, boot, and other developer-relevant areas.
 
-You must be using **Windows 10, version 2004 or later** to take advantage of WSL 2, and to set up Rocket.Chat development.
+You must be using **Windows 10, version 2004 or later** to take advantage of WSL2, and to set up Rocket.Chat development.
 
 ![](../../.gitbook/assets/msinfo.png)
 
@@ -61,8 +61,8 @@ curl https://install.meteor.com/ | sh
 There is no need to install `node` or `npm`, as meteor already includes them. Verify by executing
 
 ```
-meteor node -v // v14.19.3
-meteor npm -v // 6.14.17
+meteor node -v
+meteor npm -v
 ```
 
 {% hint style="success" %}

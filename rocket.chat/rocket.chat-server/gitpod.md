@@ -4,13 +4,13 @@ If you are contributing to Rocket.Chat and will likely be working less than 50 h
 
 ## Rocket.Chat Everywhere Development Environment on Gitpod
 
-Gitpod runs a shared environment SaaS for developers working on open source projects. Please be respectful of other developers' needs and support Gitpod on their commercial side if you are able to.
+Gitpod runs a shared environment SaaS for developers working on open-source projects. Please be respectful of other developers' needs and support Gitpod on their commercial side if you are able to.
 
 Gitpod hosts the entire development environment and you will be able to contribute to Rocket.Chat wherever and whenever you have access to a browser; even from Internet Cafes and Chromebooks.
 
 ## Steps for Gitpod Development
 
-* Go to [https://gitpod.io](https://www.gitpod.io/#get-started) and enter the Rocket.Chat Github project URL [https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) or supply the link to your forked repo of Rocket.Chat
+* Go to [https://gitpod.io](https://www.gitpod.io/#get-started) and enter the Rocket.Chat GitHub project URL [https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) or supply the link to your forked repo of Rocket.Chat
 
 ![](../../.gitbook/assets/gitpodstart.png)
 
