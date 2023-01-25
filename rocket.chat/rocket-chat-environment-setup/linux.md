@@ -7,7 +7,7 @@ You can run Rocket.Chat for development on a clean Linux machine or VM.
 {% hint style="info" %}
 **Note**:
 
-* You are required to have a minimum of 8GB RAM to build when running a development environment. 1GB RAM on the other hand is enough for normal deployment.
+* You are required to have a minimum of 12GB RAM to build when running a development environment.  Some have reported that 8GB RAM with server edition, no GUI, and plenty of swap can work very slowly.   For deployment,  non-development purposes,  2GB RAM is enough.
 * There is no need to have `nodejs` or `mongo` pre-installed. Start with a clean system.
 * Setup should be done on a regular user account(not `root`). Running with `sudo` can mess up file permissions
 {% endhint %}
