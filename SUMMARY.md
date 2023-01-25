@@ -42,11 +42,6 @@
   * [Code of Conduct](code\_of\_conduct.md)
   * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
-## Github (Templates)
-
-* [Markdown Issue Template](.github/ISSUE_TEMPLATE.md)
-* [build and test on workflows](.github/workflows/build_and_test.yml)
-
 ## Mobile App
 
 * [Mobile App Environment Setup](mobile-app/mobile-app-environment-setup/README.md)
@@ -706,6 +701,10 @@
           * [Template Message](reference/api/rest-api/endpoints/apps-endpoints/whatsapp-endpoints/template-message.md)
     * [Avatars](reference/api/rest-api/avatars.md)
   * [Livechat Widget API](reference/api/livechat-api.md)
+
+## Github Templates
+
+* [Markdown Issue Template](.github/ISSUE\_TEMPLATE.md)
 
 ## Fuselage
 
