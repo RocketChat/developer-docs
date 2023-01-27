@@ -4,21 +4,25 @@ description: Save the settings of a room
 
 # Save Room Settings
 
-| URL                 | Requires Auth | HTTP Method |
-| ------------------- | ------------- | ----------- |
-| `/api/v1/rooms.get` | `yes`         | `GET`       |
+| URL                              | Requires Auth | HTTP Method |
+| -------------------------------- | ------------- | ----------- |
+| `/api/v1/rooms.saveRoomSettings` | `yes`         | `GET`       |
 
 ## Payload
 
-| Argument | Example             | Required | Description  |
-| -------- | ------------------- | -------- | ------------ |
-| `rid`    | `JZ8Y2dLfYhsg323Rf` | Required | The room id. |
+| Argument          | Example                                   | Required | Description                  |
+| ----------------- | ----------------------------------------- | -------- | ---------------------------- |
+| `rid`             | `JZ8Y2dLfYhsg323Rf`                       | Required | The room id.                 |
+| `roomName`        | `Test-Save-Room`                          | Optional | The name of the room.        |
+| `roomDescription` | `This is a test for save-room settings.`  | Optional | The description of the room. |
 
 ### Example Payload
 
 ```
 {
-    "rid": "JZ8Y2dLfYhsg323Rf"
+    "rid": "JZ8Y2dLfYhsg323Rf",
+    "roomName": "Test-Save-Room",
+    "roomDescription": "This is a test for save-room settings."
 }
 ```
 
@@ -32,7 +36,9 @@ curl -L -X POST 'http://localhost:3000/api/v1/rooms.saveRoomSettings' \
 -H 'X-Auth-Token: Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92' \
 -H 'Content-Type: application/json' \
 --data-raw '{
-    "rid": "JZ8Y2dLfYhsg323Rf"
+    "rid": "JZ8Y2dLfYhsg323Rf",
+    "roomName": "Test-Save-Room",
+    "roomDescription": "This is a test for save-room settings."
 }'
 ```
 {% endtab %}
