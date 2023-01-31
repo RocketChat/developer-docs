@@ -89,33 +89,25 @@ yarn link ../fuselage/packages/fuselage                                         
 
 ## Technique 2: Already merged PR
 
-Usually, the versions kept on the core package (Rocket.Chat) are set to `@next`. This means that merged PR's that were merged to develop and went through the CI/CD (usually takes a few minutes after merge) are released as a `-dev` version. Unfortunately, running `yarn install` doesn't always update packages set to @next. This means that to test this new version, the following has to be done.
+Usually, the versions kept on the core package (Rocket.Chat) are set to `@next`. This means that merged PR's that were merged to develop and went through the CI/CD (usually takes a few minutes after merge) are released as a `-dev` version.
+
+In order to find out if a merged PR has already been released, in the fuselage monorepo, go to `Actions` and find `Continuous Delivery` in the sidebar. Now search for your PR's title and if the action has finished running, you're ready to got to the next step:
 
 #### On Core repository root, run:
 
-Clean 'node\_modules' and 'yarn.lock':
+Update all fuselage packages to `@next`
 
 ```bash
-find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +
+sh fuselage.sh -a next
 ```
 
-```bash
-rm -rf ./yarn.lock
+After this runs, make sure to run:
+
+```
+yarn build
 ```
 
-Clean yarn cache:
-
-```bash
-yarn cache clean --all
-```
-
-Install packages and build modules:
-
-```bash
-yarn && yarn build
-```
-
-It may take some extra time but ensures the package installed will be the correct, newer version.
+And you're ready to go!
 
 ## Technique 3: Before the Fuselage Pull Request is merged
 
