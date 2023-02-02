@@ -1,6 +1,6 @@
 # Windows 10
 
-> For resolving known commong problems, see the [troubleshoot](windows-10.md#troubleshooting) section at the end of this page.
+> For resolving known common problems, see the [troubleshoot](windows-10.md#troubleshooting) section at the end of this page.
 
 Microsoft released Windows Subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index)) in June of 2020. Before this time, the development of large and complex NodeJS-based servers/full-stack applications such as Rocket.Chat on Windows was close to impossible.
 
