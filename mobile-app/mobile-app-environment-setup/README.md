@@ -30,13 +30,18 @@ yarn
 
 Run the app:
 
+for _iOs_:
 ```
 npx pod-install
 yarn ios
 ```
 
-or
+or, for _android_:
 
+```
+npx react-native start
+```
+_and in a separate terminal:_
 ```
 yarn android
 ```
