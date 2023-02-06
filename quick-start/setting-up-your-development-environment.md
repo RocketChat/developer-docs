@@ -2,15 +2,13 @@
 
 ## Rocket.Chat Core Repository
 
-{% embed url="https://github.com/RocketChat/developer-docs/tree/master/rocket.chat/rocket.chat-server" %}
+{% embed url="https://github.com/RocketChat/Rocket.Chat" %}
 
 ## Desktop App
 
 {% content-ref url="../desktop-app/desktop-app-environment-setup.md" %}
 [desktop-app-environment-setup.md](../desktop-app/desktop-app-environment-setup.md)
 {% endcontent-ref %}
-
-
 
 ## Mobile App
 
