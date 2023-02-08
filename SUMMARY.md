@@ -101,6 +101,7 @@
   * [Registering API endpoints](apps-engine/recipes/registering-api-endpoints.md)
   * [Managing Internal State](apps-engine/recipes/managing-internal-state.md)
 * [Slack Compatibility](apps-engine/slack-compatibility.md)
+* [UI Guidelines](apps-engine/ui-guidelines.md)
 * [App Submission to the Marketplace](apps-engine/app-submission-to-the-marketplace/README.md)
   * [Publisher Webhooks](apps-engine/app-submission-to-the-marketplace/publisher-webhooks.md)
 * [Apps-Engine API Reference](https://rocketchat.github.io/Rocket.Chat.Apps-engine)
