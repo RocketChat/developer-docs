@@ -96,7 +96,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.reportMessage`           | Reports a message.                                               | [Link](chat-endpoints/reportmessage.md)                                                                                          |
 | `/api/v1/chat.search`                  | Searches for messages in a channel.                              | [Link](chat-endpoints/search-message.md)                                                                                         |
 | `/api/v1/chat.starMessage`             | Stars a chat message for the authenticated user.                 | [Link](chat-endpoints/starmessage.md)                                                                                            |
-| `/api/v1/chat.sendMessage`             | Sends a new chat message.                                        | [Link](broken-reference)                                                                                                         |
+| `/api/v1/chat.sendMessage`             | Sends a new chat message.                                        | [Link](chat-endpoints/send-message.md)                                                                                           |
 | `/api/v1/chat.syncThreadMessages`      | Retrieves synced thread's messages.                              | [Link](chat-endpoints/syncthreadmessages.md)                                                                                     |
 | `/api/v1/chat.syncThreadsList`         | Retrieves thread's synced channel threads.                       | [Link](chat-endpoints/syncthreadslist.md)                                                                                        |
 | `/api/v1/chat.unfollowMessage`         | Unfollows an existing chat message.                              | [Link](chat-endpoints/unfollowmessage.md)                                                                                        |
@@ -115,7 +115,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL                        | Short Description                                                         | Details Page                                                                                                                     |
 | -------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/commands.get`     | Retrieves the specification of the slash command.                         | [Link](broken-reference/)                                                                                                        |
+| `/api/v1/commands.get`     | Retrieves the specification of the slash command.                         | [Link](commands-endpoints/get-slash-commands.md)                                                                                 |
 | `/api/v1/commands.list`    | Lists all available slash commands.                                       | [Link](commands-endpoints/list.md)                                                                                               |
 | `/api/v1/commands.run`     | Executes a slash command in the specified room.                           | [Link](commands-endpoints/execute-a-slash-command.md)                                                                            |
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](commands-endpoints/preview.md)                                                                                            |
@@ -261,12 +261,12 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
 | Url                            | Short Description                               | Details Page                                                                                                                     |
 | ------------------------------ | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](broken-reference/)                                                                                                        |
+| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](integration-endpoints/create.md)                                                                                          |
 | `/api/v1/integrations.get`     | Gets an integration.                            | [Link](integration-endpoints/get.md)                                                                                             |
 | `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md)                                                                                         |
 | `/api/v1/integrations.list`    | Lists all of the integrations.                  | [Link](integration-endpoints/list.md)                                                                                            |
 | `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](integration-endpoints/remove.md)                                                                                          |
-| `/api/v1/integrations.update`  | Updates an integration.                         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/integration-endpoints/update) |
+| `/api/v1/integrations.update`  | Updates an integration.                         | [Link](integration-endpoints/update.md)                                                                                          |
 
 ## **Invites** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
