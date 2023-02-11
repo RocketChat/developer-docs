@@ -100,7 +100,7 @@ meteor --version
 * Build and startup your development server by executing the commands below. Building for the first time will take a while and you may see some warnings or errors.
 
 ```bash
-yarn dev
+yarn dsv
 ```
 
 When the server is ready, you will see a box with "Server Running" title:
