@@ -316,7 +316,7 @@ After these modifications, the code is ready for the demonstration.
 
 Type in your console:
 
-`npm run`
+`npm run start`
 
 This will launch the demo app.
 
