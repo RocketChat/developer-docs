@@ -6,13 +6,9 @@ Please use caution when using these settings, as the misuse of them can cause pr
 
 ## Custom CSS
 
-Can be found in **Administration >> Settings >>** [**Layout**](https://docs.rocket.chat/guides/administration/settings/layout#custom-css). This allows you to overwrite styling on UI. For the full mastery of this setting, we recommend studying the source code, as seen that overwriting classes directly can lead to side effects on styling.
+Can be found in **Administration >> Settings >>** [**Layout**](https://docs.rocket.chat/guides/administration/settings/layout#custom-css). This allows you to overwrite styling on UI. For full mastery of this setting, we recommend studying the source code, as seen that overwriting classes directly can lead to side effects on styling.
 
-### CSS Variables
-
-Rocket.Chat uses CSS variables to store key values when styling. Rocket.Chat recommends only overwriting the CSS variables, as you will have more control over what will be changed.
-
-You can find the full list of variables [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/app/theme/client/imports/general/variables.css)
+You can find the list of variables [here](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/app/theme/client/imports/general/variables.css), which contains the properties and measures of [Rocket.Chat](https://rocket.chat/) client. For customizing colors, please check [Customizing Colors](customizing-colors.md).
 
 ## Custom Scripts
 

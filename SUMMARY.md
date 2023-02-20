@@ -25,6 +25,7 @@
 * [Embedded Layout](rocket.chat/embedded-layout.md)
 * [White Labelling Rocket.Chat](rocket.chat/white-labelling-rocket.chat/README.md)
   * [Customizing Rocket.Chat from Code](rocket.chat/white-labelling-rocket.chat/customizing-rocket.chat-from-code.md)
+  * [Customizing Colors](rocket.chat/white-labelling-rocket.chat/customizing-colors.md)
   * [Advanced White-Labeling of server](rocket.chat/white-labelling-rocket.chat/advanced-white-labeling-of-server.md)
 * [Iframe Integration](rocket.chat/iframe-integration/README.md)
   * [Configuring iframe auth](rocket.chat/iframe-integration/configuring-iframe-auth/README.md)
