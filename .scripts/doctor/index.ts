@@ -7,7 +7,8 @@ const SUMMARY_PATH = process.env.SUMMARY_PATH || 'SUMMARY.md';
 
 process.chdir(BASE_PATH);
 
-const ignoreDirs = [
+const ignoreDirs =
+[
 	'.git',
 	'.scripts',
 	'.github',
@@ -20,9 +21,11 @@ const ignoreFiles = [
 ];
 
 function execSyncIgnoringExitCode(command: string): string | Error {
-	try {
+	try
+	{
 		return execSync(command).toString();
-	} catch (error) {
+	}
+	catch (error) {
 		const result = error.stdout.toString();
 		if (result.startsWith('error: Could not access')) {
 			console.log(result);
@@ -33,11 +36,13 @@ function execSyncIgnoringExitCode(command: string): string | Error {
 }
 
 async function recFindByExt(basePath: string, ext: string): Promise<string[]> {
-	if (ignoreDirs.includes(basePath)) {
+	if (ignoreDirs.includes(basePath))
+	 {
 		return [];
 	}
 
-	try {
+	try
+	 {
 		const ls = await fs.readdir(basePath, {withFileTypes: true});
 
 		const files = ls.filter((item) => item.isFile() && item.name.endsWith(ext) && !ignoreFiles.includes(item.name)).map((file) => path.join(basePath, file.name));
@@ -48,19 +53,23 @@ async function recFindByExt(basePath: string, ext: string): Promise<string[]> {
 		}
 
 		return files;
-	} catch (error) {
+	} catch (error)
+	{
 		console.warn(error);
 		return [];
 	}
 }
 
-export async function init(): Promise<void> {
+export async function init(): Promise<void>
+{
 	const summary = await (await fs.readFile(SUMMARY_PATH)).toString();
 
 	const links = summary.match(/[^(]+\.md/g) || [];
 
-	for await (const link of links) {
-		try {
+	for await (const link of links)
+	{
+		try
+		{
 			await fs.stat(link);
 		} catch (error) {
 			console.warn(`SUMMARY.md file [${link}] doesn't exists`);
@@ -76,7 +85,8 @@ export async function init(): Promise<void> {
 	const filesNotInSummaryAndDuplicated = [];
 	const filesInSummaryAndDuplicated = [];
 
-	for (const file of allFiles) {
+	for (const file of allFiles)
+	{
 		let command = `md5 -q ${file}`;
 		if (process.platform === 'linux') {
 			command = `printf $(md5sum ${file})`;
@@ -104,7 +114,8 @@ export async function init(): Promise<void> {
 	const filesNotInSummaryWithMultipleDuplicates = [];
 	const filesNotInSummaryWithoutDuplicates = [];
 
-	for (const file of filesNotInSummary) {
+	for (const file of filesNotInSummary)
+	{
 		if (filesNotInSummaryAndDuplicated.includes(file)) {
 			continue;
 		}
@@ -126,11 +137,13 @@ export async function init(): Promise<void> {
 			filesWithSameName = allFiles.filter((f) => !filesNotInSummary.includes(f) && fileName.replace('.md', '') === f.split('/').slice(-2, -1)[0]);
 		}
 
-		if (filesWithSameName.length === 1) {
+		if (filesWithSameName.length === 1)
+		 {
 			const command = `git diff -b --no-index --ignore-blank-lines --word-diff-regex=. --word-diff=porcelain --summary -U0 "${file}" "${filesWithSameName[0]}"`;
 
 			const result = execSyncIgnoringExitCode(command);
-			if (result instanceof Error) {
+			if (result instanceof Error)
+			{
 				continue;
 			}
 
@@ -139,7 +152,8 @@ export async function init(): Promise<void> {
 				.filter(i => (i.startsWith('-') || i.startsWith('+')) && !i.match(/^(-|\+)(\.\.?\/\.?)+$/))
 				.join('\n');
 
-			if (changes.length) {
+			if (changes.length)
+			{
 				filesWithPathDiffsOnly.push(file);
 			}
 		}
@@ -148,7 +162,8 @@ export async function init(): Promise<void> {
 			filesNotInSummaryWithSingleDuplicate.push(`cp ${filesWithSameName[0]} ${file}`);
 		}
 
-		if (!filesWithPathDiffsOnly.includes(file) && filesWithSameName.length > 1) {
+		if (!filesWithPathDiffsOnly.includes(file) && filesWithSameName.length > 1)
+		 {
 			const resultDate = execSyncIgnoringExitCode(`git log -1 --pretty="format:%cr" ${file}`);
 
 			filesNotInSummaryWithMultipleDuplicates.push(`${file} (changed ${resultDate})\n${filesWithSameName.map((i) => {
@@ -160,7 +175,8 @@ export async function init(): Promise<void> {
 			}).join('\n')}\n`);
 		}
 
-		if (!filesWithPathDiffsOnly.includes(file) && !filesWithSameName.length) {
+		if (!filesWithPathDiffsOnly.includes(file) && !filesWithSameName.length)
+		{
 			filesNotInSummaryWithoutDuplicates.push(file);
 		}
 	}
@@ -183,7 +199,8 @@ export async function init(): Promise<void> {
 	console.log(`\n=== ${filesNotInSummaryWithoutDuplicates.length} other files not in Summary ===\n`);
 	console.log(filesNotInSummaryWithoutDuplicates.join('\n'));
 
-	if (filesNotInSummary.length) {
+	if (filesNotInSummary.length)
+	{
 		process.exit(1);
 	}
 }
