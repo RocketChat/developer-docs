@@ -4,7 +4,11 @@ description: Make your Rocket.Chat workspace have a unique color palette.
 
 # Customizing Colors
 
-In version 6.0, [Rocket.Chat](https://rocket.chat/) has revamped how its color system is structured. We have released the semantic color palette to make it easier for developers and designers. Now the token name says where and why a color should be used.
+{% hint style="info" %}
+Applicable as from Rocket.Chat `v 6.0`
+{% endhint %}
+
+Customizing colors following the new semantic color palette makes it easy to archive a wide range of customization. The semantic color scheme is more descriptive in pointing out where exactly a color takes effect and why it should be used by just specifying the token name.
 
 **Token name**
 
@@ -14,23 +18,16 @@ button-background-primary-default
 
 **Token anatomy**
 
-* button: UI elements it's responsible for.
-* background: part of this UI element.
-* primary: type of UI element.
-* default: state of this UI element.
-
-**Customizing Rocket.Chat**
-
-In case you're customizing [Rocket.Chat,](https://rocket.chat,/) apply this set of tokens accordingly; our front-end and design team tests each change on its values following its correct usage. Each color of the [Rocket.Chat](https://rocket.chat/) interface is now customizable through this systematic approach.
+* `button`: UI elements it's responsible for.
+* `background`: part of this UI element.
+* `primary`: type of UI element.
+* `default`: state of this UI element.
 
 ### **Where and how to customize colors**
 
 Colors are customizable through the custom CSS field in the admin panel.
 
-1. Go to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**
-2. Paste this list of variables (check below)
-3. Edit their values
-4. Hit save
+Go to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**
 
 **Variables List**
 

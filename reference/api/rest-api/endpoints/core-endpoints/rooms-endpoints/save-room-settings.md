@@ -6,7 +6,7 @@ description: Save the settings of a room
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |
-| `/api/v1/rooms.saveRoomSettings` | `yes`         | `GET`       |
+| `/api/v1/rooms.saveRoomSettings` | `yes`         | `POST`      |
 
 ## Payload
 
