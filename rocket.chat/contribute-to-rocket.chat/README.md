@@ -20,14 +20,6 @@ Please review and sign our CLA at [https://cla-assistant.io/RocketChat/Rocket.Ch
 
 **To join other contributors:**
 
-* Create an account on our open server at [https://open.rocket.chat](https://open.rocket.chat/home)
-
-{% embed url="https://open.rocket.chat" %}
-
-* Create an account on our Community Forum
-
-{% embed url="https://forums.rocket.chat" %}
-
-* And visit our [GitHub Repository](https://github.com/RocketChat/Rocket.Chat)
-
-{% embed url="https://github.com/RocketChat/Rocket.Chat" %}
+* Create an account on our [**Open Server** ](https://open.rocket.chat/)****
+* Create an account on our [**Community Forum**](https://forums.rocket.chat/)****
+* And visit our [**GitHub Repository**](https://github.com/RocketChat/Rocket.Chat)****
