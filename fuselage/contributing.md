@@ -39,7 +39,7 @@ yarn && yarn build
 It's pretty easy, inside Rocket.Chat project just run:
 
 ```bash
- meteor npm i ${paht_to_fuselage_folder}/packages/package
+ meteor npm i ${path_to_fuselage_folder}/packages/package
 ```
 
 ## How not to fail your pull request
