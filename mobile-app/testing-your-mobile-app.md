@@ -51,7 +51,7 @@ We use [Prettier](https://prettier.io/) to format the code style in our project.
 To fix your code formatting issues, run this on your terminal:
 
 ```
-yarn prettier
+yarn prettier-lint
 ```
 
 [Check this link](https://prettier.io/docs/en/editors.html) to see how to integrate Prettier with your preferred code editor, and run Prettier when saving your file for example.
