@@ -7,7 +7,7 @@ You can run Rocket.Chat for development on a clean Linux machine or VM.
 {% hint style="info" %}
 **Note**:
 
-* You are required to have a minimum of 12GB RAM to build when running a development environment.  Some have reported that 8GB RAM with server edition, no GUI, and plenty of swap can work very slowly.   For deployment,  non-development purposes,  2GB RAM is enough.
+* You are required to have a minimum of 12GB RAM to build when running a development environment. Some have reported that 8GB RAM with server edition, no GUI, and plenty of swap can work very slowly. For deployment, non-development purposes, 2GB RAM is enough.
 * There is no need to have `nodejs` or `mongo` pre-installed. Start with a clean system.
 * Setup should be done on a regular user account(not `root`). Running with `sudo` can mess up file permissions
 {% endhint %}
@@ -131,7 +131,7 @@ The Rocket.Chat code base is very large. You may need to increase this [system p
 ## See Also
 
 * [Supporting SSL for Mobile Apps](../../mobile-app/mobile-app-environment-setup/supporting-ssl-for-development-on-rocket.chat.md)
-* [Development Troubleshooting](../contribute-to-rocket.chat/troubleshooting.md)
+* [Development Troubleshooting](../contribute-to-rocket.chat/ways-to-contribute/developing/troubleshooting.md)
 * [Deployment Methods](linux.md)
 
 ## Troubleshooting

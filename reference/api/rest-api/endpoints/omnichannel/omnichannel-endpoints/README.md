@@ -136,10 +136,10 @@
 
 ## Priorities
 
-| Url                                      | Short Description               | Details Page                         |
-| ---------------------------------------- | ------------------------------- | ------------------------------------ |
-| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](priorities/get-priorities.md) |
-| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](priorities/get-a-priority.md) |
+| Url                                      | Short Description               | Details Page                                        |
+| ---------------------------------------- | ------------------------------- | --------------------------------------------------- |
+| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](priorities/priorities-old/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](priorities/priorities-old/get-a-priority.md) |
 
 ## Livechat Tags
 
@@ -158,3 +158,10 @@
 | `api/v1/livechat/unitMonitors.list`     | Gives a list of unit monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit-monitors) |
 | `api/v1/livechat/unitMonitors.list/:id` | Update Unit by Id             | [Link](units/update-unit.md)                                                                                                   |
 | `api/v1/livechat/unitMonitors.list/:id` | Delete unit using ID          | [Link](units/delete-unit.md)                                                                                                   |
+
+## SLA Policies
+
+| Url                          | Short Description                                   | Details Page                                                                                                            |
+| ---------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/sla`        | Get a list of SLA policies and create an SLA policy | [Fetch](sla-policies/get-sla-policies.md), [Create](../../core-endpoints/teams-endpoints/create-a-new-team.md)          |
+| `api/v1/livechat/sla/:slaId` | Used to fetch, update and delete an SLA policy      | [Get one](sla-policies/get-an-sla.md), [Update](sla-policies/update-an-sla.md), [Delete](sla-policies/delete-an-sla.md) |

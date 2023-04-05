@@ -25,12 +25,12 @@ The order in which they happen is:
 
 Here is an explanation of what each of them means:
 
-* **Prevent**: This is ran to determine whether the event should be prevented or not.
-* **Extend**: This is ran to allow extending the data without being destructive of the data (adding an attachment to a message for example).
-* **Modify**: This is ran and allows for destructive changes to the data (change any and everything).
-* Post**Event**: Is mostly for simple listening and no changes can be made to the data.
+* **Prevent**: This is run to determine whether the event should be prevented or not.
+* **Extend**: This is run to allow extending the data without being destructive of the data (adding an attachment to a message for example).
+* **Modify**: This is run and allows for destructive changes to the data (change any and everything).
+* Post**Event**: Is mostly for simple listening, and no changes can be made to the data.
 
-For simplicity, we are gradually moving to the new pattern. There will be only two types of event interfaces added later:
+For simplicity, we are gradually moving to a new pattern. There will be only two types of event interfaces added later:
 
 * IPre**Event**
 * IPost**Event**

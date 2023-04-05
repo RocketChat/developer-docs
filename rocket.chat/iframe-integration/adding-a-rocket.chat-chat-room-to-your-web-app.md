@@ -19,11 +19,9 @@ In addition to adding a chat room to your web app, this article demonstrates :
 
 ### Create a Rocket.Chat server
 
-There are many ways to create a Rocket.Chat server. A quick way to do this is via snaps. To start a [server via snaps ](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/snaps)on Ubuntu, type in your terminal:
+There are many ways to setup a Rocket.Chat server. See a list of the common deployment methods [here](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods).&#x20;
 
-`sudo snap install rocketchat-server`\\
-
-Then go to http://localhost:3000 and add the information & settings to launch the Rocket.Chat server.
+Then launch and configure your workspace.
 
 ## **Part I: Activate the Iframe Integration**
 

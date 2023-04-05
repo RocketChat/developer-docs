@@ -24,7 +24,7 @@ Use this endpoint to find Omnichannel contacts by name, email, phone number, or 
 ## Example Call
 
 {% hint style="info" %}
-It is important to encode values having characters like **`@`**, ``` `**`+`**, **`/`**` ``` and **`*`** to avoid breaking the endpoint.
+It is important to encode values having characters like **`@`**, **`+`**, **`/`** and **`*`** to avoid breaking the endpoint.
 {% endhint %}
 
 

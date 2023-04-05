@@ -3,14 +3,10 @@
 \
 You can set up and run a Rocket.Chat development environment on your Mac OSX.
 
-* [Apple Silicon](mac-osx.md#apple-silicon)
-* [Non-Apple Silicon Chips](mac-osx.md#non-apple-silicon-chips)
-
-## Apple Silicon
+## Apple Silicon (M1/M2)
 
 {% hint style="info" %}
 * Node.js only has prebuilt binaries for [Apple Silicon](https://www.macworld.com/article/334279/apple-silicon-macs-may-be-a-reboot-of-the-g4-cube-and-colorful-imac-g3.html) as from `node v16`
-* Rocket.Chat currently uses at least `meteor 2.7.3` which has support for Apple silicon chips. If you are to run an environment with a lesser version, consider using[ the Rosetta terminal](https://support.apple.com/en-us/HT211861).
 {% endhint %}
 
 * Install node with [nvm](https://github.com/nvm-sh/nvm). Make sure the nvm version is >= 0.39.2
@@ -47,7 +43,7 @@ When done, you should see the following printed on your terminal and the local s
 
 ![Rocket.Chat server successfully running on MacOSX](<../../.gitbook/assets/image (51) (2).png>)
 
-## Non-Apple Silicon Chips
+## Intel Chips
 
 {% hint style="info" %}
 This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,i5
@@ -59,7 +55,7 @@ This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,
 curl https://install.meteor.com/ | sh
 ```
 
-Meteor comes pre-installed with npm and node, verify by executing:
+Meteor comes pre-installed with npm and node. Verify by executing:
 
 ```
 meteor node -v

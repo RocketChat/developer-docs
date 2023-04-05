@@ -6,6 +6,10 @@ description: Get the details of a priority
 
 <figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+You are required to have the `manage-livechat-priorities` or `view-l-room permission`.
+{% endhint %}
+
 | URL                               | Requires Auth | HTTP Method |
 | --------------------------------- | ------------- | ----------- |
 | `livechat/priorities/:priorityId` | `YES`         | `GET`       |
@@ -19,27 +23,69 @@ description: Get the details of a priority
 
 ## Path Variables
 
-| Argument     | Example           | Required | Description |
-| ------------ | ----------------- | -------- | ----------- |
-| `priorityId` | 7Hu352k892rNh45j9 | Required | Priority ID |
+| Argument     | Example                    | Required | Description |
+| ------------ | -------------------------- | -------- | ----------- |
+| `priorityId` | `64007cc2fa0ed7dd905092e3` | Required | Priority ID |
 
 ## Example Call
 
 ```bash
-    curl --location --request GET 'http://localhost:3000/api/v1/livechat/priorities/:priorityId
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
+curl --location 'http://localhost:3000/api/v1/livechat/priorities/64007cc2fa0ed7dd905092e3' \
+--header 'X-Auth-Token: sMmROZpdpCTbY43XwPT_bCsWJc-VW7v_e2urWhUM766' \
+--header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
 
 ## Result
 
 ```javascript
 {
-    "_id": "idQkJgzTND3gBRNWJ",
-    "name": "low",
-    "description": "test",
-    "dueTimeInMinutes": 2,
-    "_updatedAt": "2022-10-04T13:48:07.371Z",
+    "_id": "64007cc2fa0ed7dd905092e3",
+    "i18n": "Lowest",
+    "sortItem": 5,
+    "dirty": false,
     "success": true
 }
 ```
+
+### Error
+
+Any of the following errors can occur on the endpoint.
+
+* **Authorization**: Requires an authentication token for the request to be made.
+* **No Permission**: This occurs when the authenticated user doesn't have `manage-livechat-priorities` or `view-l-room` permission.
+* **Not Found**: This error gets returned when no Priority is found with the Id provided.
+
+{% tabs %}
+{% tab title=" Authorization" %}
+```json
+{
+    "status": "error",
+    "message": "You must be logged in to do this."
+}
+```
+{% endtab %}
+
+{% tab title="No Permission" %}
+```
+{
+    "success": false,
+    "error": "error-not-authorized"
+}
+```
+{% endtab %}
+
+{% tab title="Not Found" %}
+```json
+{
+    "success": false,
+    "error": "Priority with id :priorityId not found"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## Change Log
+
+| Version | Description |
+| ------- | ----------- |
+| `6.0.0` | Added       |

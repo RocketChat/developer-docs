@@ -86,7 +86,7 @@ This is to:
 #### `apps/meteor/packages/`
 
 Any meteor packages used within the project or customized for a specific purpose.\
-Examples include the [meteor-accounts-linkedin](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/accounts-linkedin) for Linkedin login service, [rocketchat-i18n](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n) **** for internationalization, etc
+Examples include the [meteor-accounts-linkedin](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/accounts-linkedin) for Linkedin login service, [rocketchat-i18n](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n) for internationalization, etc
 
 #### `apps/meteor/server/methods/`
 

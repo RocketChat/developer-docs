@@ -1,24 +1,28 @@
----
-description: Welcome. Here we cater to all your Rocket.Chat development needs.
----
-
 # Rocket.Chat Developer
 
-Welcome to our developer's documentation.
+Welcome to the developer documentation for Rocket.Chat.&#x20;
 
-To learn more about the Rocket.Chat platform, please consult our [documentation](https://docs.rocket.chat).
+With the help of unique applications, powerful plugins, and webhooks, Rocket.Chat enables you to expand and personalize your workspace. You can also integrate any custom apps you've developed on top of Rocket.Chat's webhooks to deliver data from external services into Rocket. Chat.
 
-As a developer, you can
+To learn more about Rocket.Chat, please visit our [user guide](https://docs.rocket.chat/).
 
-* **Contribute**: Contribute to help make Rocket.Chat better. Whether you have coding experience or not, you can contribute to Rocket.Chat from bringing up issues, writing documentation and making changes following our guide on:
+## Build and Integrate
 
-{% content-ref url="rocket.chat/contribute-to-rocket.chat/" %}
-[contribute-to-rocket.chat](rocket.chat/contribute-to-rocket.chat/)
-{% endcontent-ref %}
+Extend more with RocketChat using Apps, Webhooks, Live chat, and Rest APIs. As a developer, you can create your desktop and mobile Rocket.Chat app. You can also create an [app engine](broken-reference) to enable users to operate more efficiently with their server, with the flexibility to integrate their workflows with preferred apps like Github and Jira, and less risk of data loss. You can also build your [Omnichannel ](broken-reference)apps.
 
-*   **Build** and **Integrate:** Do more with RocketChat using Apps, Webhooks, Livechat and Rest APIs.
+## Extend and Customize
 
-    Help in the development of:
+Extend Rocket.Chat's functionalities and customize the entire solution for your use case using [Bots ](broken-reference)and Rocket.Chat [API](reference/api/).
+
+## Contribute
+
+Irrespective of your technical experience, you can contribute to Rocket.Chat by [creating issues](https://github.com/RocketChat/Rocket.Chat/issues/new/choose), writing documentation, and making changes following our [contribution guidelines](rocket.chat/contribute-to-rocket.chat/).
+
+## Connect
+
+Join our [open server](https://open.rocket.chat/), [community](https://community.rocket.chat/), and [repositories ](https://gihttps/github.com/RocketChatthub.com/RocketChat)for more collaborations. You can also get help from our global community and open channels.&#x20;
+
+## Important Links
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
@@ -28,11 +32,9 @@ As a developer, you can
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="reference/api/" %}
+[api](reference/api/)
 {% endcontent-ref %}
-
-See how to integrate with:
 
 {% content-ref url="reference/api/rest-api/endpoints/omnichannel/" %}
 [omnichannel](reference/api/rest-api/endpoints/omnichannel/)
@@ -42,26 +44,10 @@ See how to integrate with:
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-* **Extend** and **Customize**: Extend Rocket.Chat's functionalities and customize the entire solution for your use case. More of Rocket.Chat's features can be customized and extended using:
-
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="reference/api/rest-api/" %}
-[rest-api](reference/api/rest-api/)
+{% content-ref url="rocket.chat/contribute-to-rocket.chat/" %}
+[contribute-to-rocket.chat](rocket.chat/contribute-to-rocket.chat/)
 {% endcontent-ref %}
-
-{% content-ref url="reference/api/" %}
-[api](reference/api/)
-{% endcontent-ref %}
-
-* **Connect with Community**: Get help from our global community and open channels
-
-You can always join our open server, community, and repositories for more collaborations.
-
-[Rocket.Chat Open Server](https://open.rocket.chat/home)
-
-[Rocket.Chat Community](https://community.rocket.chat/)
-
-[Rocket.Chat Github](https://github.com/RocketChat)

@@ -1,15 +1,17 @@
 # Get Message Read Receipts
 
+<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
 Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md)
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/chat.getMessageReadReceipts` | `yes` | `GET` |
+| URL                                   | Requires Auth | HTTP Method |
+| ------------------------------------- | ------------- | ----------- |
+| `/api/v1/chat.getMessageReadReceipts` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument    | Example             | Required | Description    |
+| ----------- | ------------------- | -------- | -------------- |
 | `messageId` | `ByehQjC44FwMeiLbX` | Required | The message id |
 
 ## Example Call
@@ -45,6 +47,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.63.0 | Added |
-
+| ------- | ----------- |
+| 0.63.0  | Added       |
