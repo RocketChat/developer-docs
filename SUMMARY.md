@@ -447,7 +447,7 @@
           * [Chat Message Reactions](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/chat-message-reactions.md)
           * [Message Update](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/message-update.md)
           * [Report Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/reportmessage.md)
-          * [Follows Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/followmessage.md)
+          * [Follow Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/follow-message.md)
           * [Get Message](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/getmessage.md)
           * [Get Channel Threads](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/getthreadslist.md)
           * [Get Deleted Messages](reference/api/rest-api/endpoints/core-endpoints/chat-endpoints/getdeletedmessages.md)

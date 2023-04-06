@@ -77,7 +77,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | URL                                    | Short Description                                                | Details Page                                                                                                                     |
 | -------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/chat.delete`                  | Deletes an existing chat message.                                | [Link](chat-endpoints/delete.md)                                                                                                 |
-| `/api/v1/chat.followMessage`           | Follows an existing chat message.                                | [Link](chat-endpoints/followmessage.md)                                                                                          |
+| `/api/v1/chat.followMessage`           | Follows an existing chat message.                                | [Link](chat-endpoints/follow-message.md)                                                                                         |
 | `/api/v1/chat.getDeletedMessages`      | Retrieves the deleted messages from a specific date.             | [Link](chat-endpoints/getdeletedmessages.md)                                                                                     |
 | `/api/v1/chat.getDiscussions`          | Retrieves the discussions of a room.                             | [Link](chat-endpoints/getdiscussions.md)                                                                                         |
 | `/api/v1/chat.getMentionedMessages`    | Retrieves the mentioned messages.                                | [Link](chat-endpoints/getmentionedmessages.md)                                                                                   |
@@ -259,14 +259,14 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 
 ## **Integrations** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
-| Url                            | Short Description                               | Details Page                                                                                                                     |
-| ------------------------------ | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](integration-endpoints/create.md)                                                                                          |
-| `/api/v1/integrations.get`     | Gets an integration.                            | [Link](integration-endpoints/get.md)                                                                                             |
-| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md)                                                                                         |
-| `/api/v1/integrations.list`    | Lists all of the integrations.                  | [Link](integration-endpoints/list.md)                                                                                            |
-| `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](integration-endpoints/remove.md)                                                                                          |
-| `/api/v1/integrations.update`  | Updates an integration.                         | [Link](integration-endpoints/update.md)                                                                                          |
+| Url                            | Short Description                               | Details Page                             |
+| ------------------------------ | ----------------------------------------------- | ---------------------------------------- |
+| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](integration-endpoints/create.md)  |
+| `/api/v1/integrations.get`     | Gets an integration.                            | [Link](integration-endpoints/get.md)     |
+| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integration-endpoints/history.md) |
+| `/api/v1/integrations.list`    | Lists all of the integrations.                  | [Link](integration-endpoints/list.md)    |
+| `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](integration-endpoints/remove.md)  |
+| `/api/v1/integrations.update`  | Updates an integration.                         | [Link](integration-endpoints/update.md)  |
 
 ## **Invites** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 

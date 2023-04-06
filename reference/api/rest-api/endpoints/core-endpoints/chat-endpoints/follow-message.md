@@ -1,6 +1,8 @@
-# Follows Message
+---
+description: Follow a message.
+---
 
-Follows a message.
+# Follow Message
 
 | URL                          | Requires Auth | HTTP Method |
 | ---------------------------- | ------------- | ----------- |
