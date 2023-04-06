@@ -1,16 +1,16 @@
 # Follows Message
 
-Follows a chat message to the message's channel.
+Follows a message.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/chat.followMessage` | `yes` | `POST` |
+| URL                          | Requires Auth | HTTP Method |
+| ---------------------------- | ------------- | ----------- |
+| `/api/v1/chat.followMessage` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `mid` | `7aDSXtjMA3KPLxLjt` | Required | The message id to follow. |
+| Argument | Example             | Required | Description               |
+| -------- | ------------------- | -------- | ------------------------- |
+| `mid`    | `7aDSXtjMA3KPLxLjt` | Required | The message id to follow. |
 
 ## Example Call
 
@@ -33,6 +33,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
-
+| ------- | ----------- |
+| 1.0.0   | Added       |
