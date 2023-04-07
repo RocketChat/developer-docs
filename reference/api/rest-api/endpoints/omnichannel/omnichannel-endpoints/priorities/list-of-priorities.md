@@ -4,10 +4,10 @@ description: Gives a list of priorities
 
 # List of Priorities
 
-![](../../../../../../../../.gitbook/assets/enterprise.jpg)
+![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
 {% hint style="info" %}
-![](../../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-priorities.md](get-priorities.md "mention") as from Rocket.Chat `5.0`
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-priorities (1).md](<get-priorities (1).md> "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 | URL                        | Requires Auth | HTTP Method |

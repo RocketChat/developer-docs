@@ -64,7 +64,7 @@ export class MessageEventsApp extends App implements IPreMessageSentPrevent {
 
 #### Result
 
-![Message prevented by app](<../../.gitbook/assets/image (18).png>)
+![Message prevented by app](<../../.gitbook/assets/image (18) (1).png>)
 
 And you will see the following in the server console.
 

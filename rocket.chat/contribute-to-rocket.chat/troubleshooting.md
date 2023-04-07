@@ -35,7 +35,7 @@ If you see the following warning in the `meteor` logs:
 (STDERR)
 ```
 
-Don't panic =\) It means that the `bcrypt` library is not installed on your system and `meteor` will use a javascript alternative that is about three times slower.
+Don't panic =) It means that the `bcrypt` library is not installed on your system and `meteor` will use a javascript alternative that is about three times slower.
 
 If you want to install the library to make it faster, use the following command:
 
@@ -78,4 +78,3 @@ Rocket.Chat@0.46.0-develop /Users/douglas/work/github/Rocket.Chat
   ├── bindings@1.2.1
   └── nan@2.3.5
 ```
-

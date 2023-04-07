@@ -73,7 +73,7 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 
 * Set your Bugsnag API key on `RocketChatRN/Info.plist`
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (26).png>)
 
 ## Generating iOS app on Firebase
 

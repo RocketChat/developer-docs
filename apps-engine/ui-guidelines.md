@@ -21,7 +21,7 @@ The user menu contains items specific to the user such as status and preferences
 
 * **Do** add only user-specific items to this menu
 
-<figure><img src="../../.gitbook/assets/1.png" alt=""><figcaption><p>User menu visual guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption><p>User menu visual guide</p></figcaption></figure>
 
 ## Room kebab menu
 
@@ -31,7 +31,7 @@ The room kebab menu is located at the top right of any [Rocket.Chat Room](https:
 * Items on this menu must relate to or affect the current room or its context in some way.
 * **Don't** include icons or use emojis in item labels.
 
-<figure><img src="../../.gitbook/assets/2.png" alt=""><figcaption><p>Room kebab menu UI guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/2.png" alt=""><figcaption><p>Room kebab menu UI guide</p></figcaption></figure>
 
 ## Message kebab menu
 
@@ -41,7 +41,7 @@ The message kebab menu can be seen by the right of a message when hovered upon o
 * Only Rocket.Chat core actions can use icons.
 * **Don't** include icons or emoji anywhere inside the item label.
 
-<figure><img src="../../.gitbook/assets/Message kebab menu UI guide.png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/3.png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
 
 ## Chat messages
 
@@ -50,7 +50,7 @@ The message kebab menu can be seen by the right of a message when hovered upon o
 * **Don't** send messages on a user's behalf.
 * **Don't** over-communicate or use emojis excessively.
 
-<figure><img src="../../.gitbook/assets/4.png" alt=""><figcaption><p>Chat message UI Guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/4.png" alt=""><figcaption><p>Chat message UI Guide</p></figcaption></figure>
 
 ## Slash commands
 
@@ -59,7 +59,7 @@ Slash commands are usually the simplest ways users can interact with installed a
 * Slash command descriptions should appear by the side of the command when typed in the message composer.
 * Commands must have hyphens between words and include a description.
 
-<figure><img src="../../.gitbook/assets/5.png" alt=""><figcaption><p>Slash commands UI Guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/5.png" alt=""><figcaption><p>Slash commands UI Guide</p></figcaption></figure>
 
 * All apps using a slash command must have a `/help` command showing the possibilities of the app and it's commands
 
@@ -67,24 +67,24 @@ Slash commands are usually the simplest ways users can interact with installed a
 
 Apps can utilize the contextual bar surface to offer information and actions to the user.
 
-* Contextual bars must contain a corresponding item in the [room kebab menu](surface-guidelines.md#room-kebab-menu).
+* Contextual bars must contain a corresponding item in the [room kebab menu](ui-guidelines.md#room-kebab-menu).
 * Contextual bar titles must use sentence case capitalization eg: `Google Calendar settings` not `Google Calendar Settings.`
 * **Don't** use images, such as app icons, inside the contextual bar header.
 * **Don't** use titled case in the contextual bar header.
 * **Do** use sentence case in contextual bar header.
 
-<figure><img src="../../.gitbook/assets/6.png" alt=""><figcaption><p>Contextual bar UI Guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/6.png" alt=""><figcaption><p>Contextual bar UI Guide</p></figcaption></figure>
 
 ## Modals
 
-Apps utilize modal dialogs to present information and actions to the user. Use [Contextual bars](surface-guidelines.md#contextual-bars) for more complex and involved interactions.
+Apps utilize modal dialogs to present information and actions to the user. Use [Contextual bars](ui-guidelines.md#contextual-bars) for more complex and involved interactions.
 
 * **Don't** use modals without the app name in the tagline.
 * **Don't** use images, such as app icons, inside the modal header.
 * **Do** use the app name in the modal tagline.
 * **Do** use glyph icons or simply no icons at all.
 
-<figure><img src="../../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
 
 ## App (bot) username
 

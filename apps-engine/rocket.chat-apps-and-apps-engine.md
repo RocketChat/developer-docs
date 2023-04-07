@@ -36,7 +36,7 @@ Learn more about getting public apps to your workspace here:
 
 [**Getting Started**](getting-started/): Get a deeper understanding of the Apps Engine and how to set up a development environment.
 
-[**Creating your first App**](creating-an-app.md): Learn how to create a Rocket.Chat App using the Apps Engine.
+[**Creating your first App**](getting-started/creating-an-app.md): Learn how to create a Rocket.Chat App using the Apps Engine.
 
 [**Building Custom Apps**](building-custom-apps/): See how to add extensive features to your app.
 

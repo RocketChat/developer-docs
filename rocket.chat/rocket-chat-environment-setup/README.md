@@ -24,8 +24,8 @@
 
 ## Apps Engine
 
-{% content-ref url="../../apps-engine/getting-started/apps-engine-environment-setup.md" %}
-[apps-engine-environment-setup.md](../../apps-engine/getting-started/apps-engine-environment-setup.md)
+{% content-ref url="../../apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md" %}
+[apps-engine-environment-setup.md](../../apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md)
 {% endcontent-ref %}
 
 ## Bots

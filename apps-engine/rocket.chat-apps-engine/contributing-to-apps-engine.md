@@ -32,7 +32,7 @@ npm install
 npm run compile
 ```
 
-* Setup your Rocket.Chat environment following the guide on&#x20;
+* Setup your Rocket.Chat environment following the guide on
 
 [rocket.chat-server](../../rocket.chat/rocket.chat-server "mention")
 
@@ -65,9 +65,9 @@ If you notice problems related to these missing modules, consider running:
   meteor npm install --save @rocket.chat/apps-engine
 ```
 
-&#x20;Restart the meteor process, and it should be fixed.
+Restart the meteor process, and it should be fixed.
 
-2\. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE`  causes the following error :-
+2\. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE` causes the following error :-
 
 ```
 npm ERR! code ENOENT
