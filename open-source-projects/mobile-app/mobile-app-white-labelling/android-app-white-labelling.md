@@ -10,18 +10,18 @@
   * `debug` folder contains code to run the app in debug mode
   * This doc is going to focus on building the Experimental app, so we're going to use `experimental`, `play` `debug`, and `main` folders
 
-![](<../../.gitbook/assets/image (177).png>)
+![](<../../../.gitbook/assets/image (177).png>)
 
 * Set `APPLICATION_ID`, `VERSIONCODE` and `BugsnagAPIKey` on `./android/gradle.properties`
 * Generate a [new image asset](https://developer.android.com/studio/write/image-asset-studio) for `ic_notification` and target `main`
 * Generate a [new image asset](https://developer.android.com/studio/write/image-asset-studio) for `ic_launcher` and target `experimental`
 * Splash screen is going to use the same asset as the `ic_launcher` and you can change the background on `splashBackground` as below
 
-![](<../../.gitbook/assets/image (180).png>)
+![](<../../../.gitbook/assets/image (180).png>)
 
 * Change app name and share extension name on `./android/app/src/main/res/values/strings.xml`
 
-![](<../../.gitbook/assets/image (174).png>)
+![](<../../../.gitbook/assets/image (174).png>)
 
 ## Generate upload key
 
@@ -32,7 +32,7 @@
   * `keytool -genkeypair -v -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000`
 * Credentials will be prompted
 
-![](../../.gitbook/assets/15.png)
+![](../../../.gitbook/assets/15.png)
 
 * Set `KEYSTORE_PASSWORD` and `KEY_PASSWORD` on ./android/gradle.properties with the passwords you were prompted
 
@@ -57,7 +57,7 @@
 
 ![](https://lh5.googleusercontent.com/k7CjPaIbiBvkd3wY1Exl6FGZsmC5blK8pNW3fycI9NAVZ9rWwdVNHtSTV6EWHQFasep9tOf0k0nEE36khTIxgtTr4se2\_NM6lJmgeM20M5lhMPupoc0BjhouH7B7X3jnP5CvgMg6)
 
-![](<../../.gitbook/assets/image (33).png>)
+![](<../../../.gitbook/assets/image (33).png>)
 
 ## Running the app
 

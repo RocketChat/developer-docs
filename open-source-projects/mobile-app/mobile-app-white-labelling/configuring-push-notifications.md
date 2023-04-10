@@ -9,7 +9,7 @@ This will give the ability for your workspace users using mobile devices to rece
 * In your Rocket.Chat workspace, go to **Administration** > **Settings** > **Push**
 * Disable **Gateway** and hit **Save changes**
 
-![](../../.gitbook/assets/21.png)
+![](../../../.gitbook/assets/21.png)
 
 * Also disable **Production** if you’re trying in debug mode
 * Expand “Credentials and Keys” section
@@ -20,7 +20,7 @@ This will give the ability for your workspace users using mobile devices to rece
 * Copy “Server Key” token from Firebase into “GCM API Key”
 * Copy “Sender ID” into “GCM Project Number”
 
-![](../../.gitbook/assets/22.png)
+![](../../../.gitbook/assets/22.png)
 
 ## Configuring iOS
 

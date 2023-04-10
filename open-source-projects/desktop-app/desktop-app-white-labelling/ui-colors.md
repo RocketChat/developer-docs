@@ -27,7 +27,7 @@ Semi-transparent black or white, used in components to shade/tint the background
 
 #### Alpha Colors Example
 
-![Alpha colors example colors](../../.gitbook/assets/alpha-colors.png)
+![Alpha colors example colors](../../../.gitbook/assets/alpha-colors.png)
 
 ### Major Colors
 
@@ -51,15 +51,15 @@ The primary palette of the app. Contributions and modifications to components sh
 
 A set of minor colors for specific use cases will inherit from the major colors by default but can be used by admins who want more granular control over the color scheme.
 
-* tertiary-background-color   _defaults to component-color_
-* tertiary-font-color   _defaults to transparent-light_
-* link-font-color   _defaults to primary-action-color_
-* info-font-color   _defaults to secondary-font-color_
-* custom-scrollbar-color   _defaults to transparent-dark_
-* status-online    _defaults to success-color_
-* status-away   _defaults to pending-color_
-* status-busy   _defaults to error-color_
-* status-offline   _defaults to transparent-darker_
+* tertiary-background-color _defaults to component-color_
+* tertiary-font-color _defaults to transparent-light_
+* link-font-color _defaults to primary-action-color_
+* info-font-color _defaults to secondary-font-color_
+* custom-scrollbar-color _defaults to transparent-dark_
+* status-online _defaults to success-color_
+* status-away _defaults to pending-color_
+* status-busy _defaults to error-color_
+* status-offline _defaults to transparent-darker_
 
 ### Dark UI
 
@@ -73,20 +73,20 @@ These examples show the implementation of the default color scheme with the main
 
 ### Side Nav
 
-![Side nav example colors](../../.gitbook/assets/side-nav.png)
+![Side nav example colors](../../../.gitbook/assets/side-nav.png)
 
 ### Account Box
 
-![Account Box example colors](../../.gitbook/assets/account-box.png)
+![Account Box example colors](../../../.gitbook/assets/account-box.png)
 
 ### Flex Nav
 
-![Flex nav example colors](../../.gitbook/assets/flex-nav.png)
+![Flex nav example colors](../../../.gitbook/assets/flex-nav.png)
 
 ### Message Box
 
-![Message box example colors](../../.gitbook/assets/message-box.png)
+![Message box example colors](../../../.gitbook/assets/message-box.png)
 
 ### Settings Page
 
-![Settings page example colors](../../.gitbook/assets/settings-page.png)
+![Settings page example colors](../../../.gitbook/assets/settings-page.png)

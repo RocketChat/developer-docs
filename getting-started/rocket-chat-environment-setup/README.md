@@ -6,14 +6,14 @@
 
 ## Desktop App
 
-{% content-ref url="../../desktop-app/desktop-app-environment-setup.md" %}
-[desktop-app-environment-setup.md](../../desktop-app/desktop-app-environment-setup.md)
+{% content-ref url="../../open-source-projects/desktop-app/" %}
+[desktop-app](../../open-source-projects/desktop-app/)
 {% endcontent-ref %}
 
 ## Mobile App
 
-{% content-ref url="../../mobile-app/mobile-app-environment-setup/" %}
-[mobile-app-environment-setup](../../mobile-app/mobile-app-environment-setup/)
+{% content-ref url="../../open-source-projects/mobile-app/" %}
+[mobile-app](../../open-source-projects/mobile-app/)
 {% endcontent-ref %}
 
 ## Omnichannel

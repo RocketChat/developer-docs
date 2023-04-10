@@ -16,7 +16,7 @@ Extend Rocket.Chat's functionalities and customize the entire solution for your 
 
 ## Contribute
 
-Irrespective of your technical experience, you can contribute to Rocket.Chat by [creating issues](https://github.com/RocketChat/Rocket.Chat/issues/new/choose), writing documentation, and making changes following our [contribution guidelines](rocket.chat/contribute-to-rocket.chat/).
+Irrespective of your technical experience, you can contribute to Rocket.Chat by [creating issues](https://github.com/RocketChat/Rocket.Chat/issues/new/choose), writing documentation, and making changes following our [contribution guidelines](broken-reference).
 
 ## Connect
 
@@ -48,6 +48,6 @@ Join our [open server](https://open.rocket.chat/), [community](https://community
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="rocket.chat/contribute-to-rocket.chat/" %}
-[contribute-to-rocket.chat](rocket.chat/contribute-to-rocket.chat/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
