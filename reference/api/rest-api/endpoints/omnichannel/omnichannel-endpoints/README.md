@@ -136,10 +136,10 @@
 
 ## Priorities
 
-| Url                                      | Short Description               | Details Page                               |
-| ---------------------------------------- | ------------------------------- | ------------------------------------------ |
-| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](<priorities/get-priorities (1).md>) |
-| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](<priorities/get-a-priority (1).md>) |
+| Url                                      | Short Description               | Details Page                                        |
+| ---------------------------------------- | ------------------------------- | --------------------------------------------------- |
+| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](priorities/priorities-old/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](priorities/priorities-old/get-a-priority.md) |
 
 ## Livechat Tags
 

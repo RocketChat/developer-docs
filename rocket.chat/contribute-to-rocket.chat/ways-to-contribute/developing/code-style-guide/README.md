@@ -33,10 +33,6 @@ Things not covered by `eslint`:
 * v1 REST endpoints should follow the following pattern: `/api/v1/dashed-namespace.camelCaseAction`
 * Prefer TypeScript over JavaScript. Check ECMAScript vs TypeScript
 
-**Blaze**
-
-* Import the HTML file from its sibling JS/TS file
-
 ### Best practices
 
 * Avoid "internal" `Meteor.call` - server code should not use `Meteor.call`
@@ -48,7 +44,7 @@ Before submitting a PR you should get no errors on `eslint`.
 To check your files run:
 
 ```
-meteor npm run lint
+yarn lint
 ```
 
 ## Tests
@@ -61,7 +57,7 @@ First, you need to run a Rocket.Chat server on **Test Mode** and on an **Empty D
 
 ```
 # Running with a local mongodb database
-MONGO_URL=mongodb://localhost/empty MONGO_OPLOG_URL=mongodb://localhost/local TEST_MODE=true meteor
+MONGO_URL=mongodb://locEnd-to-Endty MONGO_OPLOG_URL=mongodb://localhost/local TEST_MODE=true meteor
 ```
 
 ```
@@ -69,10 +65,10 @@ MONGO_URL=mongodb://localhost/empty MONGO_OPLOG_URL=mongodb://localhost/local TE
 mongo --eval "db.dropDatabase()" empty && MONGO_URL=mongodb://localhost/empty MONGO_OPLOG_URL=mongodb://localhost/local TEST_MODE=true meteor
 ```
 
-Now you can run the tests:
+Now you can run the tests in the `apps/meteor` folder with:
 
 ```
-meteor npm test
+yarn test:e2e
 ```
 
 ### Unit Tests
@@ -80,13 +76,13 @@ meteor npm test
 Unit tests are simpler to set up and run. They do not require a working Rocket.Chat instance.
 
 ```
-meteor npm run testunit
+yarn testunit
 ```
 
-It's possible to run on watch mode as well:
+It's possible to run on watch mode as well in the `apps/meteor` folder with:
 
 ```
-meteor npm run testunit-watch
+yarn testunit-watch
 ```
 
 ## Before Push your code
@@ -99,13 +95,9 @@ Rocket.Chat uses [husky](https://www.npmjs.com/package/husky) to run the **lint*
 
 It is very important to note that we use PR titles when creating our changelog. Keep this in mind when you title your PR. Make sure the title makes sense to a person reading a release's changelog!
 
-Keep your PR's title as short and concise as possible, and use PR's description section, which you can find in the PR's template, to provide more details into the changelog.
+Keep your PR's title as short and concise as possible, and use PR's description section, which you can find in the PR's template, to provide more details in the changelog.
 
-Good titles require thinking from a user's point of view. Don't get technical and talk code or architecture. What is the actual user-facing feature or the bug fixed? For example:
-
-```
-[NEW] Allow search permissions and settings by name instead of only ID
-```
+Good titles require thinking from a user's point of view. Don't get technical and talk about code or architecture. What is the actual user-facing feature or the bug fixed? For example:
 
 ```
 feat: Allow search permissions and settings by name instead of only ID
@@ -114,22 +106,14 @@ feat: Allow search permissions and settings by name instead of only ID
 Even if it brings something new to the code the users already expect the filter to filter by what they see (translations), a better one would be:
 
 ```
-[FIX] Permissions' search doesn't filter based on presented translation, only on internal ids
-```
-
-```
 fix: Permissions' search doesn't filter based on presented translation, only on internal ids
 ```
 
 ## Choosing the right PR tag
 
-You can use several tags to describe your PR, i.e.: `[FIX]`, `[NEW]`, etc. You can use the descriptions below to better understand the meaning of each one, and decide which one you should use:
-
 You can use several tags to describe your PR, i.e.: `fix:`, `feat:`, etc. You can use the descriptions below to better understand the meaning of each one, and decide which one you should use:
 
-After the release of version 6.0.0 we adopted conventional commits plead check: [https://www.conventionalcommits.org/en/v1.0.0/#specification](https://www.conventionalcommits.org/en/v1.0.0/#specification)
-
-
+After the release of version `6.0.0` we adopted conventional commits plead check: [https://www.conventionalcommits.org/en/v1.0.0/#specification](https://www.conventionalcommits.org/en/v1.0.0/#specification)
 
 You can use several tags to describe your PR, i.e.:
 
@@ -138,8 +122,6 @@ feat|fix|ci|chore|docs|test|refactor|i18n|regression|revert
 ```
 
 , etc. You can use the descriptions below to better understand the meaning of each one, and decide which one you should use:
-
-### `[NEW]`
 
 ### `feat:`
 
@@ -154,13 +136,6 @@ Do not start repeating the section (`Add ...` , `New ...` or `Feature...`  Alway
 Examples of <mark style="color:red;">**bad**</mark> PR titles:
 
 ```
-[NEW] Add the ability to set tags in the Omnichannel room closing dialog
-[NEW] Adds the ability for Rocket.Chat Apps to create discussions
-[NEW] Add MMS support to Voxtelesys
-[NEW] Add Color variable to the left sidebar
-```
-
-```
 feat: Add the ability to set tags in the Omnichannel room closing dialog
 feat: Adds the ability for Rocket.Chat Apps to create discussions
 feat: Add MMS support to Voxtelesys
@@ -170,20 +145,11 @@ feat: Add Color variable to the left sidebar
 Examples of <mark style="color:green;">**good**</mark> PR titles:
 
 ```
-[NEW] Ability to set tags in the Omnichannel room closing dialog
-[NEW] Ability for Rocket.Chat Apps to create discussions
-[NEW] MMS support to Voxtelesys
-[NEW] Color variable to the left sidebar
-```
-
-```
 feat: Ability to set tags in the Omnichannel room closing dialog
 feat: Ability for Rocket.Chat Apps to create discussions
 feat: MMS support to Voxtelesys
 feat: Color variable to the left sidebar
 ```
-
-### `[FIX]`
 
 ### `fix:`
 
@@ -198,24 +164,14 @@ Always describe what's being fixed and not _how_ it was fixed.
 Example of a <mark style="color:red;">**bad**</mark> PR title:
 
 ```
-[FIX] Add Content-Type for public files with JWT
-```
-
-```
 fix: Add Content-Type for public files with JWT
 ```
 
 Example of a <mark style="color:green;">**good**</mark> PR title:
 
 ```
-[FIX] Missing Content-Type header for public files with JWT
-```
-
-```
 fix: Missing Content-Type header for public files with JWT
 ```
-
-### `[IMPROVE]`
 
 ### `chore:`
 
@@ -227,17 +183,11 @@ fix: Missing Content-Type header for public files with JWT
 
 Always describe what's being changed and not _how_ it was changed.
 
-Example of a <mark style="color:red;">**bad**</mark> PR title:
-
-```
-[IMPROVE] Displays Nothing found on admin sidebar when a search returns nothing
-```
+Example of a <mark style="color:red;">**bad**</mark> PR title:\[IMPROVE] Displays Nothing found on admin sidebar when a search returns nothing
 
 ```
 chore: Renaming `getNewMessage` function and replacing it in all files that use this function
 ```
-
-### `[BREAK]`
 
 Example of a <mark style="color:green;">**good**</mark> PR title:
 
@@ -255,8 +205,6 @@ chore: Rename `getNewMessage` function
 
 Always describe what's being changed and not _how_ it was changed.
 
-### `Regression`
-
 Example of a <mark style="color:green;">**good**</mark> PR title:
 
 ```
@@ -272,11 +220,6 @@ docs: Update Pull Request Template
 Examples of <mark style="color:green;">**good**</mark> PR titles:
 
 ```
-Regression: Fix not being able to mark room as read 
-Regression: Add missing field to `users` endpoint
-```
-
-```
 refactor: RoomInfo to typescript
 ```
 
@@ -286,11 +229,7 @@ refactor: RoomInfo to typescript
 
 * A change that updates or adds a CI configuration
 
-Examples of <mark style="color:green;">**good**</mark> PR titles:
-
-```
-Fix: Missing Content-Type header for public files with JWT
-```
+Examples of <mark style="color:green;">**good**</mark> PR titles:Fix: Missing Content-Type header for public files with JWT
 
 ```
 ci: PR title check to use conventional commits
