@@ -4,12 +4,7 @@
 
 ## Getting Started
 
-* [Choosing a Deployment Host](getting-started/choosing-a-development-host/README.md)
-  * [Official Recommendations](https://docs.rocket.chat/deploy-rocket.chat/prepare-for-your-rocket.chat-deployment#official-recommendation)
-  * [Manual Installation](https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/manual-installation)
-  * [Docker & Docker Compose](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/docker-and-docker-compose)
-  * [Snap](https://docs.rocket.chat/quick-start/installing-and-updating/rapid-deployment-methods/snaps)
-  * [Non Official Methods](https://docs.rocket.chat/quick-start/installing-and-updating/other-deployment-methods/community-supported-installation)
+* [Deploy Rocket.Chat](https://docs.rocket.chat/deploy/prepare-for-your-deployment)
 * [Rocket.Chat Environment Setup](getting-started/rocket-chat-environment-setup/README.md)
   * [Windows 10](getting-started/rocket-chat-environment-setup/windows-10.md)
   * [Linux](getting-started/rocket-chat-environment-setup/linux.md)
