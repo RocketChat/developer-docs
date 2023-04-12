@@ -1,20 +1,20 @@
 # Linux
 
-> For resolving known commong problems, see the [troubleshoot](linux.md#troubleshooting) section at the end of this page.
+You can run Rocket.Chat for development on a clean Linux machine or Virtual Machine.
 
-You can run Rocket.Chat for development on a clean Linux machine or VM.
+## Requirements
+
+* A minimum of 12GB RAM to build when running a development environment. For deployment and non-development purposes, 2GB RAM is enough.
+* No need to have `nodejs` or `mongo` pre-installed. Start with a clean system.
+* Setup using a regular user account(not root). Running with `sudo` can mess up file permissions.
 
 {% hint style="info" %}
-**Note**:
-
-* You are required to have a minimum of 12GB RAM to build when running a development environment. Some have reported that 8GB RAM with server edition, no GUI, and plenty of swap can work very slowly. For deployment, non-development purposes, 2GB RAM is enough.
-* There is no need to have `nodejs` or `mongo` pre-installed. Start with a clean system.
-* Setup should be done on a regular user account(not `root`). Running with `sudo` can mess up file permissions
+You may notice build WARNINGs related to _peer dependencies_ or other transitive dependencies. They are typically safe to ignore unless you are coding the required features or modules.
 {% endhint %}
 
-You may notice build WARNINGs related to _peer dependencies_ or other transitive dependencies. They are typically safe to ignore unless you are coding the feature or modules that require them.
+## Setting up a Development Environment in Linux
 
-* Install essential tools required by running:
+* Install essential tools required by running this command:
 
 ```bash
 sudo apt install g++ build-essential git curl python2-minimal
@@ -22,9 +22,9 @@ sudo apt install g++ build-essential git curl python2-minimal
 
 <details>
 
-<summary>If you are using other OSs (like Ubuntu 20.04 etc) you may run into an error "python-minimal has no installation candidate" Follow these instructions to resolve this.</summary>
+<summary>If you use another OS (like Ubuntu 20.04 etc.), you may run into an error "python-minimal has no installation candidate." To  resolve this,</summary>
 
-Install `software-properties-common` by running,
+* Install `software-properties-common`
 
 ```
 sudo apt-get install software-properties-common
@@ -46,20 +46,20 @@ sudo apt-get install software-properties-common
 
 </details>
 
-* Install Meteor by executing:
+* Install [Meteor](https://www.meteor.com/install).
 
-```bash
+```
 curl https://install.meteor.com/ | sh
 ```
 
-Meteor comes pre-installed with npm and node, verify by executing:
+* There is no need to install `node` or `npm`, as Meteor already includes them. Confirm by running this command:
 
-```bash
+```
 meteor node -v
 meteor npm -v
 ```
 
-* Install Yarn if you don't already have it on your system. Yarn is the recommended package manager
+* Install the `yarn` package manager.&#x20;
 
 ```bash
 npm install --global yarn
@@ -69,7 +69,7 @@ npm install --global yarn
 Information on the various versions of packages needed can be found in the `package.json`
 {% endhint %}
 
-* To easily manage the node versions on your machine, install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)then install and switch to the desired node version to use. Example:
+* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to any specified node version.
 
 ```bash
 npm install -g n
@@ -77,61 +77,57 @@ n 14.21.1
 node -v
 ```
 
-* Fork and clone the Rocket.Chat repository [https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory
+* Fork the [Rocket.Chat repository on GitHub](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory.
 
 ```bash
 git clone https://github.com/<your-username>/Rocket.Chat
 cd Rocket.Chat
 ```
 
-* Run the following commands to navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file
+* Navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file
 
 ```bash
 cd apps/meteor
 meteor --version
 ```
 
-* Navigate back into the main project root directory and install packages by simply running
+* Navigate back into the project root directory and install packages by simply running the following commands:
 
 <pre class="language-bash"><code class="lang-bash">cd ../../
 <strong>yarn
 </strong></code></pre>
 
-* Build and startup your development server by executing the commands below. Building for the first time will take a while and you may see some warnings or errors.
+* Build and startup your development server by executing this command:
 
 ```bash
 yarn dsv
 ```
 
-When the server is ready, you will see a box with "Server Running" title:
+{% hint style="info" %}
+Building for the first time will take a while, and you may see some warnings or errors.
+{% endhint %}
+
+* When the server is ready, you will see the "Server Running" screen:
 
 ![Rocket.Chat Development server running](<../../.gitbook/assets/Rocket.Chat Development server running>)
 
-This means that a Rocket.Chat server is running from your computer. To access the server, navigate to
+A successful running server will open up port `3000` on your machine where you can access Rocket.Chat using any browser or the Rocket.Chat client app through `http://localhost:3000`
 
-`http://localhost:3000`
+### Editing Rocket.Chat Files on Linux
 
-The code is spread through the folders, `packages/` and `apps/meteor`, the latter contains the vast majority of the project's code.
+To edit Rocket.Chat files,
 
-See[ Repository Structure](../repository-structure.md) for more.
+* Open the cloned repository folder on your IDE.
+* When you make changes to Rocket.Chat the server will automatically rebuild.
+* Sometimes changes can shut down the server. If that happens, restart the server again.
 
-Other references:
+{% hint style="info" %}
+The Rocket.Chat code base is vast. You may need to increase this [system parameter ](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md)on your operating system for the files-change watcher to operate efficiently.
+{% endhint %}
 
-* [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* [Meteor](https://www.meteor.com/install)
-
-### Editing Rocket.Chat Files
-
-Editing files is relatively simple. After you run `git clone`, the files from the repository are saved on your computer. You can go to the cloned repository folder and edit or add files to Rocket.Chat. When you make changes to Rocket.Chat the server will automatically rebuild.
-
-Sometimes changes can shut down the server, if that happens just restart the server again.
-
-The Rocket.Chat code base is very large. You may need to increase this [system parameter ](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md)on your operating system for the files-change watcher to operate efficiently.
-
-## See Also
+## References
 
 * [Supporting SSL for Mobile Apps](../../open-source-projects/mobile-app/supporting-ssl-for-development-on-rocket.chat.md)
 * [Development Troubleshooting](../../contribute-to-rocket.chat/ways-to-contribute/developing/troubleshooting.md)
 * [Deployment Methods](linux.md)
 
-## Troubleshooting
