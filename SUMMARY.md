@@ -32,7 +32,7 @@
   * [Security Issues](contribute-to-rocket.chat/ways-to-contribute/security-issues/README.md)
     * [Responsible Disclosure Policy](contribute-to-rocket.chat/ways-to-contribute/security-issues/responsible-disclosure-policy.md)
   * [Translating](contribute-to-rocket.chat/ways-to-contribute/translating.md)
-  * [Promoting](https://docs.rocket.chat/contribute-to-rocket.chat/how-can-i-help/promoting)
+  * [Promoting](contribute-to-rocket.chat/ways-to-contribute/promoting.md)
   * [Report bugs](contribute-to-rocket.chat/ways-to-contribute/report-bugs.md)
 * [Review Process](contribute-to-rocket.chat/review-process.md)
 * [Contribute to Rocket.Chat FAQs](contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
