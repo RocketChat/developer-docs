@@ -16,7 +16,8 @@ Requires `manage-assets` permission.
 
 | Argument | Example | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `assetName` | `mylogo.png` | Required | Asset File to upload. |
+| `asset` | `mylogo.png` | Required | Asset File to upload. |
+| `assetName` | `logo` | Required | Type of asset to upload, see examples below. |
 | `refreshAllClients` | `true` | Optional | If needs refresh all clients to apply changes immediately. |
 
 `assetName` can be one of these: \[`logo`, `background`, `favicon_ico`, `favicon`, `favicon_16`, `favicon_32`, `favicon_192`, `favicon_512`, `touchicon_180`, `touchicon_180_pre`, `tile_70`, `tile_144`, `tile_150`, `tile_310_square`, `tile_310_wide`, `safari_pinned ]`
@@ -28,7 +29,9 @@ Requires `manage-assets` permission.
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     -F "logo=@mylogo.png" \
+     -F "asset=@mylogo.png" \
+     -F "assetName=logo" \
+     -F "refreshAllClients=true" \     
      http://localhost:3000/api/v1/assets.setAsset
 ```
 
