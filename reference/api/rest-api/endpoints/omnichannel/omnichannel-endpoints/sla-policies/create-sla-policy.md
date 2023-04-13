@@ -10,14 +10,14 @@ You are required to have the `manage-livechat-sla` permission.
 
 | URL                   | Requires Auth | HTTP Method |
 | --------------------- | ------------- | ----------- |
-| `api/v1/livechat/sla` | `YES`         | `GET`       |
+| `api/v1/livechat/sla` | `YES`         | `POST`      |
 
 ## Headers
 
-| Argument       | Example        | Required | Description                 |
-| -------------- | -------------- | -------- | --------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated ouser ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                 |
+| Argument       | Example        | Required | Description                |
+| -------------- | -------------- | -------- | -------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | The authenticated user ID. |
+| `X-Auth-Token` | `myauth-token` | Required | Auth token.                |
 
 ## Payload
 

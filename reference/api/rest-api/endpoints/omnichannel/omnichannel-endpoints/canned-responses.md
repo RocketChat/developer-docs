@@ -4,11 +4,13 @@ description: This is an enterprise feature.
 
 # Canned Responses
 
+<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
 Get a list of canned responses. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/canned-responses` | `yes` | `GET` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/canned-responses` | `yes`         | `GET`       |
 
 ## Example Call
 
@@ -50,22 +52,22 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
+| ------- | ----------- |
+| 1.0.0   | Added       |
 
 ## Get the canned response info
 
 Retrieve the visitor info
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/canned-responses/:_id` | `yes` | `GET` |
+| URL                             | Requires Auth | HTTP Method |
+| ------------------------------- | ------------- | ----------- |
+| `/api/v1/canned-responses/:_id` | `yes`         | `GET`       |
 
 ## Path Parameter
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `_id` | EwmbZ9nLSx7kFamYB | Required | The canned response's id. |
+| Argument | Example           | Required | Description               |
+| -------- | ----------------- | -------- | ------------------------- |
+| `_id`    | EwmbZ9nLSx7kFamYB | Required | The canned response's id. |
 
 ## Example Call
 
@@ -99,14 +101,14 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
+| ------- | ----------- |
+| 1.0.0   | Added       |
 
 ## Register a new canned response
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/canned-responses` | `yes` | `POST` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/canned-responses` | `yes`         | `POST`      |
 
 ## Example payload
 
@@ -141,14 +143,14 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
+| ------- | ----------- |
+| 1.0.0   | Added       |
 
 ## Update a canned response
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/canned-responses` | `yes` | `POST` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/canned-responses` | `yes`         | `POST`      |
 
 ## Example payload
 
@@ -184,22 +186,22 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
+| ------- | ----------- |
+| 1.0.0   | Added       |
 
 ## Delete a canned response
 
 Retrieve the visitor info
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/canned-responses` | `yes` | `DELETE` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/canned-responses` | `yes`         | `DELETE`    |
 
 ## Query Parameter
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `_id` | EwmbZ9nLSx7kFamYB | Required | The canned response's id. |
+| Argument | Example           | Required | Description               |
+| -------- | ----------------- | -------- | ------------------------- |
+| `_id`    | EwmbZ9nLSx7kFamYB | Required | The canned response's id. |
 
 ## Example Call
 
@@ -221,6 +223,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added |
-
+| ------- | ----------- |
+| 1.0.0   | Added       |
