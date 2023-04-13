@@ -9,6 +9,10 @@ description: >-
 
 [Download Figma template](https://www.figma.com/community/file/1223633152022074485)
 
+{% embed url="https://youtu.be/6O2rnM7YMdE" %}
+
+##
+
 ## App Icons
 
 App icons create the first impression potential users get from your app. A well-designed icon can lead to more downloads by conveying the app's purpose and capturing users’ attention.
