@@ -21,33 +21,3 @@ Irrespective of your technical experience, you can contribute to Rocket.Chat by 
 ## Connect
 
 Join our [open server](https://open.rocket.chat/), [community](https://community.rocket.chat/), and [repositories ](https://gihttps/github.com/RocketChatthub.com/RocketChat)for more collaborations. You can also get help from our global community and open channels.&#x20;
-
-## Important Links
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="reference/api/" %}
-[api](reference/api/)
-{% endcontent-ref %}
-
-{% content-ref url="reference/api/rest-api/endpoints/omnichannel/" %}
-[omnichannel](reference/api/rest-api/endpoints/omnichannel/)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
