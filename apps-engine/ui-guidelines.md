@@ -41,7 +41,7 @@ The message kebab menu can be seen by the right of a message when hovered upon o
 * Only Rocket.Chat core actions can use icons.
 * **Don't** include icons or emoji anywhere inside the item label.
 
-<figure><img src="../.gitbook/assets/3.png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/3 (3) (1).png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
 
 ## Chat messages
 
