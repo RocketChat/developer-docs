@@ -79,12 +79,12 @@ Apps can utilize the contextual bar surface to offer information and actions to 
 
 Apps utilize modal dialogs to present information and actions to the user. Use [Contextual bars](ui-guidelines.md#contextual-bars) for more complex and involved interactions.
 
-* **Don't** use modals without the app name in the tagline.
-* **Don't** use images, such as app icons, inside the modal header.
-* **Do** use the app name in the modal tagline.
-* **Do** use glyph icons or simply no icons at all.
+As a default setting, the app logo asset will be presented in modals that are linked to the corresponding app.
 
-<figure><img src="../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
+* **Don't** use modals without the app name in the tagline.
+* **Do** use the app name in the modal tagline.
+
+<figure><img src="../.gitbook/assets/modal guideline.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
 
 ## App (bot) username
 
