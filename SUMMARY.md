@@ -5,13 +5,8 @@
 ## Getting Started
 
 * [Deploy Rocket.Chat](https://docs.rocket.chat/deploy/prepare-for-your-deployment)
-* [Rocket.Chat Environment Setup](getting-started/rocket-chat-environment-setup/README.md)
-  * [Windows 10](getting-started/rocket-chat-environment-setup/windows-10.md)
-  * [Linux](getting-started/rocket-chat-environment-setup/linux.md)
-  * [Gitpod](getting-started/rocket-chat-environment-setup/gitpod.md)
-  * [Mac OSX](getting-started/rocket-chat-environment-setup/mac-osx.md)
+* [Rocket.Chat Environment Setup](getting-started/rocket-chat-environment-setup.md)
 * [Architecture and Components](getting-started/architecture-and-components.md)
-* [Repository Structure](getting-started/repository-structure.md)
 * [Deeplink](getting-started/deeplink.md)
 * [Two Factor Authentication](getting-started/two-factor-authentication.md)
 
@@ -53,7 +48,15 @@
 
 ## Open-Source Projects
 
-* [Server](open-source-projects/server.md)
+* [Server](open-source-projects/server/README.md)
+  * [Repository Structure](open-source-projects/server/repository-structure.md)
+  * [Server Environment Setup](open-source-projects/server/server-environment-setup/README.md)
+    * [Gitpod](open-source-projects/server/server-environment-setup/gitpod.md)
+    * [Linux](open-source-projects/server/server-environment-setup/linux.md)
+    * [Mac OSX](open-source-projects/server/server-environment-setup/mac-osx.md)
+    * [Windows 10](open-source-projects/server/server-environment-setup/windows-10.md)
+  * [Server Architecture](open-source-projects/server/server-architecture.md)
+  * [Deploying Rocket.Chat server](https://docs.rocket.chat/deploy/prepare-for-your-deployment/other-deployment-methods/manual-installation)
 * [Desktop App](open-source-projects/desktop-app/README.md)
   * [Developing your Desktop App](open-source-projects/desktop-app/developing-your-desktop-app.md)
   * [Debugging your Desktop App](open-source-projects/desktop-app/debugging-your-desktop-app.md)
@@ -722,7 +725,7 @@
     * [Avatars](reference/api/rest-api/avatars.md)
   * [Livechat Widget API](reference/api/livechat-api.md)
 
-## Fuselage Design System&#x20;
+## Fuselage Design System
 
 * [Monorepo](fuselage-design-system/monorepo.md)
 * [Conventions](fuselage-design-system/conventions.md)

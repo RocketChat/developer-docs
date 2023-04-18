@@ -41,7 +41,7 @@ yarn dev # or yarn dsv if your system has less than 16 gigs of memory
 
 When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
 
-![Rocket.Chat server successfully running on MacOSX](<../../.gitbook/assets/image (51) (2).png>)
+![Rocket.Chat server successfully running on MacOSX](<../../../.gitbook/assets/image (51) (2).png>)
 
 ## Intel Chips
 
@@ -109,7 +109,7 @@ yarn dev
 
 When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
 
-![Rocket.Chat server successfully running on MacOSX](<../../.gitbook/assets/image (51) (2).png>)
+![Rocket.Chat server successfully running on MacOSX](<../../../.gitbook/assets/image (51) (2).png>)
 
 ## Troubleshooting
 

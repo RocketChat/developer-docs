@@ -58,7 +58,7 @@ Let's take a look at our `HelloWorld` app's `app.json` file below to understand 
 
 To test your app, you need a Rocket.Chat server running locally on your machine and access to an admin user's credentials.
 
-See [Installing Rocket.Chat for Developing](../getting-started/rocket-chat-environment-setup/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
+See [Installing Rocket.Chat for Developing](../open-source-projects/server/server-environment-setup/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
 
 > You can learn more about organizing complex slash commands in our [Sub-command pattern](building-custom-apps/sample-app-snippets/sub-command-pattern.md) recipe
 

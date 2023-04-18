@@ -22,7 +22,7 @@ sudo apt install g++ build-essential git curl python2-minimal
 
 <details>
 
-<summary>If you use another OS (like Ubuntu 20.04 etc.), you may run into an error "python-minimal has no installation candidate." To  resolve this,</summary>
+<summary>If you run into the error "python-minimal has no installation candidate." To  resolve this:</summary>
 
 * Install `software-properties-common`
 
@@ -109,7 +109,7 @@ Building for the first time will take a while, and you may see some warnings or 
 
 * When the server is ready, you will see the "Server Running" screen:
 
-![Rocket.Chat Development server running](<../../.gitbook/assets/Rocket.Chat Development server running>)
+![Rocket.Chat Development server running](<../../../.gitbook/assets/Rocket.Chat Development server running>)
 
 A successful running server will open up port `3000` on your machine where you can access Rocket.Chat using any browser or the Rocket.Chat client app through `http://localhost:3000`
 
@@ -127,7 +127,6 @@ The Rocket.Chat code base is vast. You may need to increase this [system paramet
 
 ## References
 
-* [Supporting SSL for Mobile Apps](../../open-source-projects/mobile-app/supporting-ssl-for-development-on-rocket.chat.md)
-* [Development Troubleshooting](../../contribute-to-rocket.chat/ways-to-contribute/developing/troubleshooting.md)
+* [Supporting SSL for Mobile Apps](../../mobile-app/supporting-ssl-for-development-on-rocket.chat.md)
+* [Development Troubleshooting](../../../contribute-to-rocket.chat/ways-to-contribute/developing/troubleshooting.md)
 * [Deployment Methods](linux.md)
-

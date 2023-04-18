@@ -106,7 +106,7 @@ The first build can take ten or more minutes, and you may see various warnings o
 
 * The server will start up on port `3000` and you will see the "Server Running"  screen
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (23).png>)
 
 A successful running server will open up port `3000` on your machine where you can access Rocket.Chat using any browser or the Rocket.Chat client app through `http://localhost:3000`
 

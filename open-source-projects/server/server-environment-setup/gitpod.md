@@ -58,10 +58,10 @@ yarn dev # it will build the sub projects and then run meteor project
 
 The code is spread through the folders, `packages/` and `apps/meteor`. After a few minutes, your development environment is up and running.
 
-![](../../.gitbook/assets/gitpodrunning.png)
+![](../../../.gitbook/assets/gitpodrunning.png)
 
 Once the server starts, you will see a popup window indicating that your server is running on port 3000. Click the **Open Browser** button to view and interact with your Rocket.Chat server instance.
 
-![](../../.gitbook/assets/gitpodfinal.png)
+![](../../../.gitbook/assets/gitpodfinal.png)
 
 You can modify the code in Visual Studio Code and see the changes immediately on the server instance. Now, you can start contributing to Rocket.Chat!
