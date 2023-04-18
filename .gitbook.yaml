@@ -2,3 +2,4 @@ root: ./
 
 redirects:
     apps-development/uikit: apps-engine/adding-features/uikit/README.md
+    apps-engine/rocket.chat-apps-engine: apps-engine/rocket.chat-apps-and-apps-engine.md
