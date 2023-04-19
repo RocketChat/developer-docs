@@ -1,26 +1,28 @@
-# Mobile App Environment Setup
+# Mobile App
 
-The Rocket.Chat mobile app is developed with React Native, helping us create both Android and iOS applications from a single codebase.
+The Rocket.Chat Mobile App is built using React Native, allowing us to develop Android and iOS applications from a single codebase. Setting up the development environment requires you to download and install multiple dependencies.&#x20;
 
-Setting up the development environment requires you to download and install multiple dependencies. You will need an active internet connection throughout the process.
+{% hint style="warning" %}
+Please maintain an active internet connection throughout the installation process.
+{% endhint %}
 
 ## Requirements
 
-You are required to have the following installed already on your machine before starting.&#x20;
+Before setting up, confirm that these tools are installed and running correctly on your device:
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
 * [Yarn](http://yarnpkg.com/) (recommended instead of npm)
-* macOS with `XCode Command Line Tools` is needed to run the iOS version
-* Android Studio is needed to run the Android version
+* macOS with `XCode Command Line Tools` to run the iOS version,
+* Android Studio to run the Android version.
 
-Additionally, refer to [React Native environment set up](https://reactnative.dev/docs/environment-setup) to make sure everything is up and running. Follow the `React Native CLI Quickstart` section as we don't support Expo managed flow.
+{% hint style="info" %}
+Follow the[ official documentation](https://reactnative.dev/docs/environment-setup) to set up your React Native environment. Navigate to the `React Native CLI Quickstart` section, as we don't support Expo-managed flow.
+{% endhint %}
 
-## Get the Code
+## Set up the codebase&#x20;
 
-### How to run
-
-Clone repository and install dependencies:
+* Clone the [GitHub repository](https://github.com/RocketChat/Rocket.Chat.ReactNative) and install the dependencies by running these commands:
 
 ```
 git clone git@github.com:RocketChat/Rocket.Chat.ReactNative.git
@@ -28,9 +30,10 @@ cd Rocket.Chat.ReactNative
 yarn
 ```
 
-Run the app:
+* Run the app
 
 for _iOs_:
+
 ```
 npx pod-install
 yarn ios
@@ -39,18 +42,10 @@ yarn ios
 or, for _android_:
 
 ```
-npx react-native start
-```
-_and in a separate terminal:_
-```
 yarn android
 ```
 
-At this point, the app should be running on the simulator or on your device!
-
-{% hint style="warning" %}
-_npm won't work on this project._
-{% endhint %}
+Now, the app is running on the simulator or your device.
 
 {% content-ref url="supporting-ssl-for-development-on-rocket.chat.md" %}
 [supporting-ssl-for-development-on-rocket.chat.md](supporting-ssl-for-development-on-rocket.chat.md)
@@ -62,18 +57,8 @@ _npm won't work on this project._
 
 ## Contributing
 
-### Issues needing help
+If you are yet to find a bug or want a new feature that hasn't been reported, see the [help wanted](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8B+help+wanted%22) sections or the [good first issue](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%8D%AD+good+first+issue%22) labels. Triaging issues is a great way to contribute if you can't code.&#x20;
 
-If you didn't find a bug or want a new feature not already reported check out the [help wanted](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8B+help+wanted%22) or the [good first issue](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%8D%AD+good+first+issue%22) labels.
+You can follow[ the guidelines](../../contribute-to-rocket.chat/ways-to-contribute/developing/development-workflow.md#creating-a-pull-request) to open a pull request when your changes are ready. You can also share working results before finishing. Including \[WIP] in the title. This way, anyone can look at your code: you can ask for help within the PR if you need help solving a problem.
 
-Or if you can't help coding, triaging issues is a **great** way of helping.
-
-### Pull request
-
-As soon as your changes are ready, you can open a Pull Request.
-
-The title of your PR should be descriptive, including either \[NEW], \[IMPROVEMENT], or \[FIX] at the beginning, e.g. \[FIX] App crashing on startup.
-
-You may share working results prior to finishing, please include \[WIP] in the title. This way anyone can look at your code: you can ask for help within the PR if you don't know how to solve a problem.
-
-Your PR is automatically inspected by various tools, check their response, and try to improve your code accordingly. Requests that fail to build or have the wrong coding style won't be merged.
+Various tools automatically inspect your PR check their response, and try to improve your code accordingly. Requests that fail to build or have the wrong coding style won't be merged.
