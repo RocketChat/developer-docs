@@ -5,7 +5,7 @@ description: >-
   delays in the app review process.
 ---
 
-# Assets Guidelines
+# Graphics
 
 [Download Figma template](https://www.figma.com/community/file/1223633152022074485)
 
@@ -34,6 +34,21 @@ Format: JPG, PNG (without transparency)
 
 
 ### Guidelines
+
+Ensure that your app icon is unique by searching the Marketplace for existing apps with similar icons before designing it.
+
+\
+**Do** design an unique app icon that stands out from competitors.
+
+<figure><img src="../../.gitbook/assets/Do (1).jpg" alt=""><figcaption></figcaption></figure>
+
+**Don’t** design an app icon identical to the icon of an existing app.
+
+<figure><img src="../../.gitbook/assets/Don&#x27;t (1).jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 **Do** use a simple and recognizable design that conveys the app's purpose.\
 **Do** follow the visual guides so the app icon can be read in different contexts.
