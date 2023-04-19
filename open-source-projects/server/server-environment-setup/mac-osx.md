@@ -2,7 +2,10 @@
 
 You can set up and run a Rocket.Chat development environment on your macOS system.
 
-## Apple Silicon (M1/M2)
+* [Apple Silicon](mac-osx.md#apple-silicon)
+* [Non-Apple Silicon Chips](mac-osx.md#non-apple-silicon-chips)
+
+## Apple Silicon
 
 {% hint style="info" %}
 Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooting) section below.
@@ -10,17 +13,13 @@ Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooti
 
 * Install [Homebrew](https://brew.sh/)
 * Install the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
-
     ```shell
     brew install nvm
     ```
-
   * Important!  Make sure you are running nvm version >= 0.39.2
-
     ```shell
     nvm --version
     ```
-
 * [Fork the Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat/fork) into your own GitHub account
 * Clone your fork of the Rocket.Chat repository to your local dev box, navigate into the directory, and configure an additional remote so we can later fetch updates from the main Rocket.Chat repo
 
@@ -29,21 +28,19 @@ Note: If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooti
     cd Rocket.Chat
     git remote add upstream https://github.com/RocketChat/Rocket.Chat.git
     ```
-
 * Find which version of node your version of RocketChat needs.
-
-    ```bash
+    ```
     cat package.json | grep -A4 engines | grep node
     ```
-
 * Install that version of node, _for example_:
-
-    ```bash
+    ```
     nvm install 14.19.3
     ```
 
+
 * Install yarn - read yarn's official documentation on [how to install yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 * Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
+
 
 * Initialize the `meteor` framework.  This will show the version of meteor requested by Rocket.Chat
   (incidentally, specified in `apps/meteor/.meteor/release`) and will initialize it as a side-effect.
@@ -79,7 +76,7 @@ When done, you should see the following printed on your terminal and the local s
 
 ![Rocket.Chat server successfully running on macOS](<../../.gitbook/assets/image (51) (2).png>)
 
-## Intel Chips
+## Non-Apple Silicon Chips
 
 {% hint style="info" %}
 This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,i5
@@ -87,11 +84,11 @@ This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,
 
 * Install Meteor by executing:
 
-```bash
+```
 curl https://install.meteor.com/ | sh
 ```
 
-Meteor comes pre-installed with npm and node. Verify by executing:
+Meteor comes pre-installed with npm and node, verify by executing:
 
 ```
 meteor node -v
@@ -112,7 +109,7 @@ Information on the various versions of packages needed can be found in the `pack
 
 ```
 npm install -g n
-n 14.21.1
+n 14.18.3
 node -v
 ```
 
@@ -191,11 +188,12 @@ If `yarn` is failing on the link step for fibers with a log similar to:
 * Follow the instructions below for fixing a Bcrypt problem, even though its error
   message has not yet appeared.
 
+
 ### 2. Bcrypt requires arm64 binary but has amd64 one instead (Apple Silicon)
 
 The error specifically looks like the following:
 
-```shell
+```
 (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64e')), '/usr/local/lib/bcrypt_lib.node' (no such file), '/usr/lib/bcrypt_lib.node' (no such file)
 ```
 
