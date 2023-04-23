@@ -21,17 +21,15 @@ Let us see how to set up a Botpress server and integrate it with a Rocket.Chat w
 ### Requirements
 
 {% hint style="info" %}
-You are required to have a registered workspace and Omnichannel activated.
+You are required to have a registered workspace and [Omnichannel activated](https://docs.rocket.chat/use-rocket.chat/omnichannel#enable-omnichannel).
 {% endhint %}
 
 ### Install connector app
 
 To be able to interact with the bot, you need a connector. Follow these steps to get it installed on your Rocket.Chat workspace.
 
-* Navigate to **Administration** > **Apps**
+* Navigate to **Administration** > **Workspace** > **Apps**
 * Search and install the **Botpress Connector** app by _Luis Hlatki_
-
-<figure><img src="../../.gitbook/assets/Botpress connector app.png" alt=""><figcaption><p>Botpress connector app</p></figcaption></figure>
 
 ### Cloning Example code
 
@@ -53,9 +51,6 @@ docker compose up -d
 ```
 
 * The botpress dashboard is made available at on port `3001` visit it and configure the admin user
-
-<figure><img src="../../.gitbook/assets/Botpress dashboard create admin account.png" alt=""><figcaption><p>Botpress dashboard create admin account</p></figcaption></figure>
-
 * Import the [bot\_lab.tgz](https://github.com/RocketChat/rocketchat-botpress-lab-bot/blob/main/bot\_lab.tgz) found in the directory cloned above
 * Set the bot id as _lab_ and **Import bot**
 
@@ -67,20 +62,15 @@ docker compose up -d
 
 Create the following Rocket.Chat users to be used for the integration
 
-* Navigate to **Administration** > **Users**
+* Navigate to **Administration** > **Workspace** > **Users**
   * Create a **bot user** for the bot with these roles: `bot`, `user`, `livechat-agent` and `livechat-manager`
   * Create an **agent user** with these roles `user` and `livechat-agent`
-
-<figure><img src="../../.gitbook/assets/Users created.png" alt=""><figcaption></figcaption></figure>
-
 * Configure the Botpress Connector installed earlier in **Administration** > **Apps** > **Installed** > **Botpress Connector** > **Settings** with the following details:
   * Rocket.Chat bot username: `bot`
   * Botpress bot id: `lab`
   * Botpress server URL: `<http://your-botpress-server-url>`
   * Default handover department: `GENERAL`
   * Then **Save changes**
-
-<figure><img src="../../.gitbook/assets/Botpress connector setting.png" alt=""><figcaption><p>Botpress connector setting</p></figcaption></figure>
 
 ### Configure Omnichannel
 
@@ -99,7 +89,7 @@ You should have something like below
 
 Back on your botpress server dashboard, do these settings to complete. This involves setting up details about your Rocket.Chat server.
 
-* Fill in the Rocket.Chat server url and PAT gotten from above in the `bot.config.json` file at **Dashboard** > **Code Editor** > **Configurations** > **Current Bot** > **bot.config.json** then **Save**
+* Fill in the Rocket.Chat server URL and PATH gotten from above in the `bot.config.json` file at **Dashboard** > **Code Editor** > **Configurations** > **Current Bot** > **bot.config.json** then **Save**
 
 <figure><img src="../../.gitbook/assets/Botpress config file edit.png" alt=""><figcaption><p>Botpress config file edit</p></figcaption></figure>
 

@@ -17,7 +17,7 @@ npm install @rocket.chat/sdk
 
 #### Create SDK Bot Files
 
-To proceed with the simplest setup, you need to create two files: the first one will be responsible for the working logic of the bot. Another one will contain a map with the responses.
+To proceed with the simplest setup, you need to create two files: the first one is responsible for the working logic of the bot, and the other is to map the responses.
 
 * create a `server.js` file with the following content:
 
@@ -94,7 +94,7 @@ module.exports = respmap;
 node server.js
 ```
 
-After executing the last command, Rocket.Chat SDK bot will try to connect to the Rocket.Chat instance and then will listen to messages in `general` room:
+After executing the last command, Rocket.Chat SDK bot tries to connect to the Rocket.Chat instance and listen to messages in the `general` room:
 
 ```
 $ node server.js
