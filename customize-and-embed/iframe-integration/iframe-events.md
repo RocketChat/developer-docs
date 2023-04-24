@@ -1,8 +1,6 @@
 # Iframe Events
 
-## Events sent
-
-Here is a list of events triggered from Rocket.Chat when the iframe integration is enabled:
+When the iframe integration is enabled, some events are triggered.
 
 | Event name                       | Description                                                                                      |
 | -------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -17,7 +15,7 @@ Here is a list of events triggered from Rocket.Chat when the iframe integration 
 | `click-message-link`             | Fired when the user clicks on a posted link                                                      |
 | `click-action-link`              | Fired when the user clicks on an action link button (i.e.: "click to join" to video conferences) |
 
-Below there is a sample code that listens to events fired from Rocket.Chat opened on an `iframe`:
+Here is a sample code that listens to events fired from Rocket.Chat opened on an `iframe`:
 
 ```javascript
 window.addEventListener('message', function(e) {

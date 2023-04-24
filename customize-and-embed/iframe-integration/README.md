@@ -1,15 +1,31 @@
 # Iframe Integration
 
-## Use your own login page to log in users in Rocket.Chat
+An iframe integration in Rocket.Chat is a way to embed an external web page or application within the Rocket.Chat interface. You can authenticate users with your login page instead of Rocket.Chat's login via iframe integration.
 
-If you want to authenticate users using your own login page in place of the Rocket.Chat's login page via the iframe integration, go to `Administration > Settings > Accounts > Iframe` and enable it:
+You can also embed Rocket.Chat in your application depending on your needs using an iframe.
 
-* [How to use iframe integration for authentication](configuring-iframe-auth/)
+To authenticate users via iframe integration,&#x20;
 
-## Use Rocket.Chat in your site/app inside an iframe
+* Navigate to **Administration > Settings > Accounts > Iframe**
+* Toggle on the **Enabled** option and proceed with [configuring the iframe auth](configuring-iframe-auth/).
 
-If you need listen to events, go to `Administration > Settings > General > Iframe Integration` and enable send (events) or receive (commands), depending on your needs:
+{% content-ref url="configuring-iframe-auth/" %}
+[configuring-iframe-auth](configuring-iframe-auth/)
+{% endcontent-ref %}
 
-* [How to use iframe integration events](iframe-events.md)
-* [How to use iframe integration commands](iframe-integration-sending-commands.md)
-* [Using embedded layout mode](../embedded-layout.md)
+To listen to events while embedding Rocket.Chat in your app inside an iframe,
+
+* Navigate to **Administration > Settings > General > Iframe Integration.**
+* Enable send (events) or receive (commands) depending on your needs.
+
+{% content-ref url="iframe-events.md" %}
+[iframe-events.md](iframe-events.md)
+{% endcontent-ref %}
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
+{% content-ref url="../embedded-layout.md" %}
+[embedded-layout.md](../embedded-layout.md)
+{% endcontent-ref %}

@@ -1,5 +1,9 @@
 # Configuring iframe auth
 
+If you want to authenticate users using your own login page in place of the Rocket.Chat's login page via the iframe integration, go to `Administration > Settings > Accounts > Iframe` and enable it:
+
+* [How to use iframe integration for authentication](./)
+
 With `iframe` auth, you can use your own authentication page/API to log in users on Rocket.Chat.
 
 When enabled Rocket.Chat first do an `XMLHttpRequest` to the `iFrame API` URL trying to see if the user is already logged in at the third-party website. If that doesn't succeed then Rocket.Chat will present the `Iframe URL` within an `iframe`, so the user logs in on the third-party website which means he is authenticated on Rocket.Chat as well.
