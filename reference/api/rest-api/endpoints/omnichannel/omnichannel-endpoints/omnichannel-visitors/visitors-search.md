@@ -1,28 +1,34 @@
 # Search Visitors by term
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/livechat/visitors.search` | `YES` | `GET` |
+Search Omnichannel visitors using a term.
+
+{% hint style="info" %}
+You are required to have the `view-l-room` permission.
+{% endhint %}
+
+| URL                               | Requires Auth | HTTP Method |
+| --------------------------------- | ------------- | ----------- |
+| `api/v1/livechat/visitors.search` | `YES`         | `GET`       |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Parameters
 
 | Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `term` | `Maria` | Optional | Search Term |
+| -------- | ------- | -------- | ----------- |
+| `term`   | `James` | Required | Search Term |
 
 ## Example Call
 
 ```bash
-curl --location --request GET 'http://localhost:3000/api/v1/api/v1/livechat/visitors.search\
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
+curl --location 'http://localhost:3000/api/v1/livechat/visitors.search?term=James' \
+--header 'X-Auth-Token: EZmA1YMbEfghEPOmc03k0R9QiuVvKWjQClKVoF8x7LY' \
+--header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
 
 ## Result
@@ -31,52 +37,37 @@ curl --location --request GET 'http://localhost:3000/api/v1/api/v1/livechat/visi
 {
     "visitors": [
         {
-            "_id": "QyBAKC5Wc8tcv6cco",
-            "username": "guest-537",
-            "name": "Maria",
+            "_id": "6410749f28384134ed600ce4",
+            "username": "guest-14",
+            "name": "James",
             "visitorEmails": [
                 {
-                    "address": "Maria@gmail.com"
+                    "address": "pilebe6631@kaudat.com"
                 }
             ],
             "lastChat": {
-                "_id": "hhMKhHnnbY79mGs9K",
-                "ts": "2021-07-22T17:17:04.234Z"
+                "_id": "eJ5ZzeT2XkLtcBkMM",
+                "ts": "2023-03-14T13:21:02.239Z"
             }
         },
         {
-            "_id": "SuE3sQA277bqpLkte",
-            "username": "guest-415",
-            "name": "Maria Carvalho",
+            "_id": "63db8d4990fe6eda42ad429a",
+            "username": "guest-3",
+            "name": "James",
             "visitorEmails": [
                 {
-                    "address": "maria.carvalho@mail.com"
+                    "address": "f.r@rocket.chat"
                 }
             ],
-            "livechatData": {
-                "company": "Rocket.Chat",
-                "Promotions": "@"
-            },
             "lastChat": {
-                "_id": "ksXhSRfjDnvb5vu4Q",
-                "ts": "2021-06-29T02:57:47.339Z"
+                "_id": "82htiMFZLCtvRFqZi",
+                "ts": "2023-02-06T12:34:53.392Z"
             }
-        },
-        {
-            "_id": "uRv3XkeTRWmcZK86M",
-            "username": "5511945770489",
-            "phone": [
-                {
-                    "phoneNumber": "whatsapp:+5511945770489"
-                }
-            ],
-            "name": "Maria"
         }
     ],
-    "count": 3,
+    "count": 2,
     "offset": 0,
-    "total": 3,
+    "total": 2,
     "success": true
 }
 ```
-
