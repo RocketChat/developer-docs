@@ -6,27 +6,29 @@ If you want to authenticate users using your own login page in place of the Rock
 
 With `iframe` auth, you can use your own authentication page/API to log in users on Rocket.Chat.
 
-When enabled Rocket.Chat first do an `XMLHttpRequest` to the `iFrame API` URL trying to see if the user is already logged in at the third-party website. If that doesn't succeed then Rocket.Chat will present the `Iframe URL` within an `iframe`, so the user logs in on the third-party website which means he is authenticated on Rocket.Chat as well.
+Using iframe auth, you can use your authentication page to log in users on your Rocket.Chat workspace.  If enabled, Rocket.Chat sends a `XMLHttpRequest` to the iFrame API URL to see if the user is logged in at the third-party website. If it doesn't succeed, then Rocket.Chat presents the iframe URL within an iframe. for the user to log in on the third-party website, therefore authenticating the user on Rocket.Chat as well.
 
-We have developed an example app written in NodeJS in order to help you understand this authentication flow. Please take a look at [iFrame Auth Example](https://github.com/RocketChat/iframe-auth-example)
+{% hint style="info" %}
+See our [NodeJs example app](https://github.com/RocketChat/iframe-auth-example) on iframe auth to understand the authentication flow.
+{% endhint %}
 
-## Configuring
+## Configuring API URL and API Method
 
-### API URL and API Method
+Rocket.Chat uses **API URL** and **API Method** to log in users or verify their authentication status in a third-party application.&#x20;
 
-Configure how Rocket.Chat will call the third party system to either login or to verify if the user is already logged in, by setting `API URL` and `API Method` fields.
+**API URL** is an endpoint on the third-party application that checks if the user is already logged in to that system.&#x20;
 
-`API URL` refers to an endpoint on the third-party system that will check if the user is already logged in to that system. The `API Method` is used to select the submission method Rocket.Chat will use to submit information to the `API URL` (for instance, using `POST`).
+The **API Method** is used to select the submission method Rocket.Chat will use to submit information to the **API URL,** e.g., `POST`.
 
-If the user has already logged into the third-party system, the `API URL` should communicate to Rocket.Chat and return a JSON object containing either a `token` or `loginToken` property, otherwise (if the user is not already logged in) the `API URL` should return an empty body with the status `401`.
+If the user has already logged into the third-party system, the **API URL** communicates to Rocket.Chat and returns a JSON object containing either a `token` or `loginToken` property. If the user is not already logged in, the **API URL** returns an empty body with the status `401`.
 
-The choice of which property `API URL` will return depends on how the third-party system decides to interface back with Rocket.Chat, as described in one of the two ways below:
+The property returned by the **API URL** depends on how the third-party system interfaces with Rocket.Chat. This interface can be through the [**using Rocket.Chat API**](./#using-rocket.chat-api) or [**Managing MongoDB directly**](./#managing-mongodb-directly).
 
-#### Using Rocket.Chat API
+### Using Rocket.Chat API&#x20;
 
-If you have the user's password stored (or it is the same between your third-party system and Rocket.Chat), you can use[ Rocket.Chat's REST APIs ](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)to log in the user, this way you will get an `authToken` back from Rocket.Chat that should be returned as `loginToken` by your endpoint.
+You can use[ Rocket.Chat's REST APIs ](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)to authenticate the user if you have the user's password stored or if it is the same between your third-party system and Rocket.Chat. This way, you receive an `authToken` back from Rocket.Chat that should be returned as `loginToken` by your endpoint.
 
-At this point, if the user does not have a Rocket.Chat account yet, you can either use Rocket.Chat API to [create a user](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint) using an admin account or [register them](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-user).
+At this point, if the user does not have a Rocket.Chat account yet; you can either use Rocket.Chat API to [create a user](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint) using an admin account or [register them](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-user).
 
 After you log the user in, you should return a payload like the following:
 
@@ -36,11 +38,11 @@ After you log the user in, you should return a payload like the following:
 }
 ```
 
-#### Managing MongoDB directly
+### Managing MongoDB directly
 
-In this case, you have access to Rocket.Chat's database, you can connect there directly and manage the user record by yourself. This might be useful if you have MongoDB on your stack already and don't want to learn Rocket.Chat's API.
+Here, you have access to Rocket.Chat's database, you can connect there directly and manage the user records yourself. It is useful if you already have MongoDB on your stack and don't want to learn Rocket.Chat's API.
 
-To do so the endpoint should connect to Rocket.Chat's MongoDB database and make sure the `generated-token` is saved on `users` collection on the corresponding user record. The `generated-token` should be saved on the field path `services.iframe.token`. The user record looks like this:
+The endpoint should connect to Rocket.Chat's MongoDB database and ensure the `generated-token` is saved on `users` collection on the corresponding user record. The `generated-token` should be saved on the field path `services.iframe.token`. Here is a snippet of the user record:
 
 ```javascript
 {
@@ -68,7 +70,7 @@ To do so the endpoint should connect to Rocket.Chat's MongoDB database and make 
 }
 ```
 
-The response looks like this:
+Here is a snippet of the response:
 
 ```javascript
 {
@@ -76,13 +78,15 @@ The response looks like this:
 }
 ```
 
-### IFrame URL
+## IFrame URL
 
-IFrame URL is the URL of the page you want to show as the login page of your Rocket.Chat instance (this page can be created in any programming language and/or web framework).
+IFrame URL is the URL of the webpage you want to embed as the login page of your Rocket.Chat instance. It can be developed using any programming language/framework of your choice. This login page communicates back to Rocket.Chat using `postMessage` API.
 
-The login page will then communicate back to Rocket.Chat using `postMessage` API.
+When a user logs in to your website or application, you need to authenticate them with Rocket.Chat so that they can access the chat functionality. This authentication process involves sending a request to Rocket.Chat's API URL endpoint with the user's login credentials.&#x20;
 
-After the user logs in, you have to authenticate him on Rocket.Chat side, pretty much the same as you did before on `API URL` endpoint, but now you should return a JavaScript code that will be rendered within the `iframe`, depending on how you logged in the user:
+Once the user is authenticated, render the chat interface within an iframe on your application. To do this,  return a JavaScript code to execute within the iframe and handle the authentication on the Rocket.Chat side.&#x20;
+
+This code Javascript depends on how you logged in the user:
 
 * If you have used Rocket.Chat's APIs to log in the user or already have user's token saved in your end, return:
 
@@ -107,9 +111,9 @@ window.parent.postMessage({
 
 ### Using OAuth configured on Rocket.Chat's end
 
-If you have OAuth services configured on Rocket.Chat, you can trigger them from within your login page as well.
+Suppose you have OAuth services configured on Rocket.Chat, you can trigger them from within your login page as well.
 
-To implement this authentication, after triggering the OAuth authentication you will receive a `postMessage` back from Rocket.Chat with user's credentials response from OAuth service. You need to manage the user creation/authentication on Rocket.Chat's database by yourself, the same as described earlier.
+To implement this authentication, you will receive a postMessage back from Rocket.Chat after triggering the OAuth authentication with the user's credentials response from the OAuth service. You need to manage the user creation/authentication on Rocket.Chat's database by yourself, as described earlier.
 
 #### Facebook
 
@@ -217,9 +221,9 @@ Or an error
 }
 ```
 
-## How to login in Rocket.Chat with the default account system while in development?
+## How to login in Rocket.Chat with the default account system while in development.
 
-When you activate the IFrame auth you will not be able to access Rocket.Chat's default login page, however, if still need/want to use your Rocket.Chat's credentials to log in, you can do that by opening the browser's Developer Console and executing the following code:
+When you activate the iframe auth, you cannot access Rocket.Chat's default login page, however, if you still need/want to use your Rocket.Chat's credentials to log in, you can do that by opening the browser's developer Console and executing the following code:
 
 ```javascript
 Meteor.loginWithPassword('username-or-email', 'your-password');
