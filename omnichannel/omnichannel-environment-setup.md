@@ -2,57 +2,49 @@
 
 The RocketChat omnichannel feature provides a multi-channel environment for communication between companies and their customers.
 
-## Setting Up LiveChat
+## Requirements
 
-The Rocket.Chat LiveChat platform, is developed with [Preact](https://preactjs.com/).
-
-It altogether is a very small lightweight application designed to facilitate B2C (Business-to-customer) communication between Agents and website visitors.
-
-{% hint style="info" %}
-This setup is done assuming you have a Rocket.Chat server running. We will use a local instance at [http://localhost:3000](http://localhost:3000).
-{% endhint %}
-
-### Requirements
-
-You are required to have the following installed already on your machine before starting. If you don't, please take a minute and get them ready.&#x20;
+Before you set up LiveChat, you are required to have the following installed on your device.
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
 * [Yarn](http://yarnpkg.com/) is recommended instead of npm.
 
-### Get the LiveChat Code
+## Setting Up LiveChat
 
-Open up your terminal/command line and navigate or `cd` into your working directory and clone the LiveChat source code from[ our repository](https://github.com/RocketChat/Rocket.Chat.Livechat) by executing the following script
+The Rocket.Chat LiveChat platform is developed with [Preact](https://preactjs.com/). It is a minimal, lightweight application designed to facilitate B2C (Business-to-customer) communication between Agents and website visitors.
+
+{% hint style="info" %}
+This setup is done assuming you have a Rocket.Chat server running. We will use a local instance at [http://localhost:3000](http://localhost:3000) for this guide.
+{% endhint %}
+
+To set up OmniChannel LiveChat,
+
+* Clone the LiveChat source code from the [GitHub repository](https://github.com/RocketChat/Rocket.Chat/tree/develop/packages/livechat) by running this command:
 
 ```
-cd ./working-directory
-git clone https://github.com/RocketChat/Rocket.Chat.Livechat.git
+git clone https://github.com/RocketChat/Rocket.Chat.git
 ```
 
-### Run the LiveChat Code
+* Navigate to the LiveChat folder in the cloned directory.
 
-1. Navigate into the cloned directory and install the dependencies by running
+<pre><code>cd Rocket.Chat
+<strong>cd packages/livechat
+</strong></code></pre>
 
-```bash
-cd Rocket.Chat.Livechat
-yarn
-```
-
-&#x20; 2\. Build preact application to `/build` folder after executing
+* Build preact application to `/build` folder after executing.
 
 ```
 yarn dev
 ```
 
-&#x20;In another terminal, run webpack with hot reload at [http://localhost:8080](http://localhost:8080) by executing
+* In another terminal, run webpack with hot reload at [http://localhost:8080](http://localhost:8080) by executing this command:
 
 ```
 yarn start
 ```
 
-Open up the `widget-demo.html` file in your browser: `http://localhost:8080/widget-demo.html`
-
-You should see a page with the LiveChat initiation icon at the bottom right.
+* Open up the `widget-demo.html` file in your browser: `http://localhost:8080/widget-demo.html`. You should see a page with the LiveChat initiation icon at the bottom right.
 
 ![](<../.gitbook/assets/image (51) (1).png>)
 
