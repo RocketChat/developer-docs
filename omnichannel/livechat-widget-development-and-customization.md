@@ -1,12 +1,12 @@
 # Livechat Widget Development and Customization
 
-## Development&#x20;
+## Changing LiveChat Host
 
-### Changing LiveChat Host.
+One of the initial steps in LiveChat widget development is to ensure that it points directly to the running RocketChat server.
 
-One of the very first things to do while developing the LiveChat widget is to make sure it points directly to your running RocketChat server.
+To select a different host for your local widget, navigate to `/src/api.js` file in the project directory.
 
-To select a different host for your local widget, navigate in the project directory to the  `/src/api.js` file.
+It contains this code snippet:
 
 ```
 const host = window.SERVER_URL
@@ -14,7 +14,7 @@ const host = window.SERVER_URL
 	|| (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : null);
 ```
 
-You can modify to your server's URL.
+You can modify your server's URL  in that code snippet like this:
 
 ```
 const host = window.SERVER_URL
@@ -52,10 +52,4 @@ yarn i18n
 
 ## Customization
 
-The Livechat widget can be fully customized using our [**Storybook components**](https://rocketchat.github.io/Rocket.Chat.Livechat/)**.**
-
-You can use the Livechat Widget API to extend functionalities.
-
-{% content-ref url="../reference/api/livechat-api.md" %}
-[livechat-api.md](../reference/api/livechat-api.md)
-{% endcontent-ref %}
+The LiveChat widget can be fully customized using our [**Storybook components**](https://rocketchat.github.io/Rocket.Chat.Livechat/)**.** You can use the [**LiveChat Widget API**](../reference/api/livechat-api.md) to extend functionalities.
