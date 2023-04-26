@@ -2,9 +2,9 @@
 
 <details>
 
-<summary>What is Livechat Inquiry?</summary>
+<summary>What is LiveChat Inquiry?</summary>
 
-A Livechat inquiry is an internal data structure used to control the Omnichannel queue. The conversation state - ready, queued, or taken - is a state of the conversation in the queue, and data is stored in the inquiry collection. It won’t be useful for the bot integration because the Omnichannel routing system will handle all stuff.
+A Livechat inquiry is an internal data structure that controls the Omnichannel queue. The conversation state - _ready, queued, or taken_ - is a state of the conversation in the queue, and data is stored in the inquiry collection. It won’t be helpful for the bot integration because the Omnichannel routing system will handle all stuff.
 
 </details>
 
@@ -12,6 +12,6 @@ A Livechat inquiry is an internal data structure used to control the Omnichannel
 
 <summary>What is Omnichannel?</summary>
 
-Omnichannel is a product name. In older documentation, it is referred to as Livechat. In recent years, the former Livechat feature has been expanded to include Whatsapp and Facebook Messenger. In the near future, the Omnichannel product may include interoperation with other technologies such as Viber, Wechat, Blackberry, Apple Business Message, and RCS.
+Omnichannel, previously known as Livechat, is a product that has expanded to include Whatsapp and Facebook Messenger and is set to interoperate with other technologies like Viber, WeChat, Blackberry, Apple Business Message, and RCS in the near future.
 
 </details>
