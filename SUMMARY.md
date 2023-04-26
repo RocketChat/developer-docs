@@ -113,7 +113,7 @@
 
 * [Omnichannel Environment Setup](omnichannel/omnichannel-environment-setup.md)
 * [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps.md)
-* [Livechat Widget Development and Customization](omnichannel/livechat-widget-development-and-customization.md)
+* [Livechat widget development and customization](omnichannel/livechat-widget-development-and-customization.md)
 * [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
 ## Bots
