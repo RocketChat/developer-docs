@@ -24,23 +24,25 @@ To extend the app's functionalities with modules, always remember to differentia
 
 ### Default Servers
 
-Using a `servers.json` file will help define what servers the client will connect to. When specified, it will automatically populate the server list in the sidebar.
+Default servers can be specified to automatically connect when the application runs. This can be done by creating a `servers.json` file in the project root directory. When specified, the server list sidebar automatically gets populated on running the app or when all servers are removed.
 
-This file contains a list of default servers that will be added the first time the user runs the app and also when all servers are removed from the list. The file syntax is as follows:
+The file syntax is as follows:
 
-```javascript
+{% code title="servers.json" %}
+```json
 {
   "Demo Rocket Chat": "https://demo.rocket.chat",
   "Open Rocket Chat": "https://open.rocket.chat",
   "Awesome Rocket Chat": "https://awesome.rocket.chat"
 }
 ```
+{% endcode %}
 
 ### Pre-Release Configuration
 
 You can bundle a `servers.json` with the install package, the file should be located in the root of the project application (same level as the `package.json`).
 
-If the file is found, the initial "**Connect to server**" screen will be skipped and it will attempt to connect to the first server defined in the array. When that is done, it will take the user straight to the login screen.&#x20;
+If the file is found, the initial "**Connect to server**" screen will be skipped and it will attempt to connect to the first server defined in the array. When that is done, it will take the user straight to the login screen.
 
 {% hint style="info" %}
 Note that the `servers.json` will only be checked if no other servers have already been added, even if you uninstall the app without removing older preferences, it will not be triggered again.
@@ -71,7 +73,7 @@ If you cannot (or don't want to) bundle the file inside the app, you can create 
 
 ### **Unit tests**
 
-We use [Jest](https://jestjs.io/) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in the `src` directory that match the glob pattern `*.(spec|test).{js,ts,tsx}` and performs tests on them.
+We use [Jest](https://jestjs.io/) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in the `src/` directory that matches the glob pattern `*.(spec|test).{js,ts,tsx}` and performs tests on them.
 
 Run this command to execute tests on your changes.
 
@@ -87,6 +89,6 @@ To package your app into an installer use command:
 yarn release
 ```
 
-This will start the packaging process for the operating system you are running this command on. When it is done, the output file ready for distribution can be found in the `dist/` directory.
+This starts the packaging process for the operating system you are running this command on. When it is done, the output file is ready for distribution and can be found in the `dist/` directory.
 
 All packaging actions are handled by [electron-builder](https://www.electron.build/). It has a lot of customization options not mentioned here.

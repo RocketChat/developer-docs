@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In changing the Desktop App default settings, we assume you have followed the guide on [..](../ "mention") and that you are familiar with the development stack (**git**/**node**/**javascript**/**electron**).
+In changing the Desktop App default settings, we assume you have followed the guide on [..](../ "mention") and that you are familiar with the development stack which makes use of (_git, node. javascript, and electron_).
 
 ## Assets
 
-Usually, the first thing you want to change is the icons. There are a few folders that you need to take note of. From your root project directory, assets can be changed or customized in the following directories.
+Usually, the first thing you want to change are the icons. There are a few folders that you need to take note of. From your root project directory, assets can be changed or customized in the following directories.
 
 ```
 ./src/ui/icons/
@@ -23,9 +23,8 @@ yarn build-assets
 
 If you want to customize the TrayIcon, there are two ways:
 
-\- Open `public/images/tray` there you can check all current icons used by the application. You can change files if you want.
-
-\- Open and change `ui/icon/AppIcon.tsx` this is the icon base used to automatically generate all the icons, if you are used with `tsx/jsx` probably this is the easiest way to go.
+* Open `public/images/tray` there you can check all current icons used by the application. You can change files if you want.
+* Open and change `ui/icon/AppIcon.tsx` this is the icon base used to automatically generate all the icons, if you are used with `tsx/jsx` probably this is the easiest way to go.
 
 ```
 // change ui/icon/AppIcon.tsx and run
@@ -34,7 +33,7 @@ yarn build-assets
 
 ## About
 
-To change the about screen, head on to `./src/ui/components/AboutDialog/index.tsx` where you can change the copyright. If you've changed the logo already, it will automatically reflect on this page.
+To change the About screen, head on to `./src/ui/components/AboutDialog/index.tsx` where you can change the copyright. If you've changed the logo already, it will automatically reflect on this page.
 
 ```bash
 const copyright = `© 2016-${new Date().getFullYear()}, Rocket.Chat`;
@@ -46,15 +45,21 @@ We use [electron-builder](https://www.electron.build/) to "compile" and produce 
 
 Here you should change all references to the term `rocket.chat/rocket/chat.rocket/rocketchat` according to what each setting means.
 
-The electron-builder has a webpage explaining what each attribute means, and cover other uses that we don't. [https://www.electron.build/configuration/configuration](https://www.electron.build/configuration/configuration)
+See the electron builder configuration page for more details not covered here.
 
-You probably should look at this section if you want to maintain the automatic update: [https://www.electron.build/configuration/publish](https://www.electron.build/configuration/publish)
+{% embed url="https://www.electron.build/configuration/configuration" %}
 
-After that you just need to run the following commands:
+Automatic updates can be maintained as specified here.
+
+{% embed url="https://www.electron.build/configuration/publish" %}
+
+After any change in configuration is made, bu sure to build a new release by running:
 
 ```bash
 yarn build
 yarn release
 ```
 
-For more information or to see how we configure the CI/CD, please check out [https://github.com/RocketChat/Rocket.Chat.Electron](https://github.com/RocketChat/Rocket.Chat.Electron)
+For more information or to see how we configure the CI/CD, please check out
+
+{% embed url="https://github.com/RocketChat/Rocket.Chat.Electron" %}

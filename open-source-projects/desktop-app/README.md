@@ -1,4 +1,4 @@
-# Desktop App Environment Setup
+# Desktop App
 
 The Rocket.Chat multiplatform client desktop app is developed with Electron.
 
@@ -6,7 +6,7 @@ Setting up the development environment requires you to download and install mult
 
 ## Requirements
 
-You are required to have the following installed already on your machine before starting. If you don't, please take a minute and get them ready.
+You are required to have the following installed already on your machine before starting.
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org)
@@ -15,13 +15,8 @@ You are required to have the following installed already on your machine before 
 
 ## Get the Code
 
-1. Open up your terminal/command line and navigate or `cd` into your working directory.
-
-```
-cd ./working-directory
-```
-
-2\. Clone the source code from [our repository](https://github.com/RocketChat/Rocket.Chat.Electron) and run it by executing the following script on your terminal.
+* Open up your terminal/command line and navigate into your working directory.
+* Clone the source code from [our repository](https://github.com/RocketChat/Rocket.Chat.Electron) and run it by executing the following command on your terminal.
 
 ```
 git clone https://github.com/RocketChat/Rocket.Chat.Electron.git

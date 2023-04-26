@@ -1,14 +1,14 @@
 # Custom Themes
 
-Theming for Rocket.Chat is an incomplete feature and we encourage developers to contribute to [this issue](https://github.com/RocketChat/Rocket.Chat/issues/277). We'd love to hear from anyone working on themes in the [#skins-and-theming](https://open.rocket.chat/channel/skins-and-theming) group channel.
+Theming for Rocket.Chat is an incomplete feature and we encourage developers to contribute to [this issue](https://github.com/RocketChat/Rocket.Chat/issues/277). We'd love to hear from anyone working on themes in the [#skins-and-theming](https://open.rocket.chat/channel/skins-and-theming) channel on the open server.
 
-To customize the Rocket.Chat UI you can either modify the `rocketchat-theme` or `rocketchat-ui` packages directly, but if you're keeping in sync with active development it would be easier to avoid conflicts by creating your own theme package.
+To customize the Rocket.Chat UI you can either modify the `rocketchat-theme` or `rocketchat-ui` packages directly. If you are keeping in sync with active development it is easier to avoid conflicts by creating your own theme package.
 
 ## Creating a Theme
 
 You can add theme customizations to Rocket.Chat by just creating a Meteor package with your code, then adding it to the package file.
 
-Private themes would need to be maintained on your own fork of Rocket.Chat, but public themes could be published as a Meteor package outside the Rocket.Chat repo.
+Private themes would need to be maintained on your own fork of Rocket.Chat, but public themes can be published as a Meteor package outside the Rocket.Chat repo.
 
 The minimum contents for a theme package would be a `package.js` file containing the description, e.g:
 
@@ -36,7 +36,7 @@ Package.onUse(function(api) {
 
 ## Adding Stylesheets
 
-The `rocketchat-theme` package has methods for including [Less](http://lesscss.org/) asset files in the build. Less files (and the a server.coffee or .js file to load them) must first be included in the `package.js` manifest (within the `Package.onUse` function), e.g.:
+The `rocketchat-theme` package has methods for including [Less](http://lesscss.org/) asset files in the build. Less files (and the server.coffee or .js file to load them) must first be included in the `package.js` manifest (within the `Package.onUse` function), e.g.:
 
 ```javascript
     api.addAssets([
@@ -47,7 +47,7 @@ The `rocketchat-theme` package has methods for including [Less](http://lesscss.o
     ], 'server');
 ```
 
-Then in `server.coffee`...
+Then in `server.coffee`
 
 ```javascript
 RocketChat.theme.addPackageAsset -> Assets.getText 'assets/theme.less'
@@ -59,7 +59,7 @@ That will read in any styles and variables from your custom less file and compil
 
 A suggested approach for including custom templates and helpers is to use the `'aldeed:template-extension'` package (include it in your main package file). In your package manifest, declare use of the `template-extension` package, then add your template files to Meteor `api.addFiles([myfiles], 'client')`.
 
-Here's an example replacing the unauthorized page template:
+Here's an example of replacing the unauthorized page template:
 
 **In `package.js`**
 
