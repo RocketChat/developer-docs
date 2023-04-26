@@ -42,7 +42,7 @@
 * [Iframe Integration](customize-and-embed/iframe-integration/README.md)
   * [Configuring iframe auth](customize-and-embed/iframe-integration/configuring-iframe-auth/README.md)
     * [Testing the iFrame Authentication](customize-and-embed/iframe-integration/configuring-iframe-auth/testing-the-iframe-authentication.md)
-  * [Adding a Rocket.Chat Chat Room to your Web App](customize-and-embed/iframe-integration/adding-a-rocket.chat-chat-room-to-your-web-app.md)
+  * [Adding a Rocket.Chat chat room to your web app](customize-and-embed/iframe-integration/adding-a-rocket.chat-chat-room-to-your-web-app.md)
   * [Iframe Events](customize-and-embed/iframe-integration/iframe-events.md)
   * [Iframe integration: Sending commands](customize-and-embed/iframe-integration/iframe-integration-sending-commands.md)
 
