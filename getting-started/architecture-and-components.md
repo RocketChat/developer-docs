@@ -1,6 +1,6 @@
 # Architecture and Components
 
-The architecture of Rocket.Chat is based on a client-server model with the server component written in JavaScript using Node.js using the MongoDB database for data storage. It is designed for scalability, high performance, and real-time communication. It can be deployed on-premise or in the cloud, making it suitable for many use cases.
+The architecture of Rocket.Chat is based on a client-server model with the server component written in JavaScript using Node.js and the MongoDB database for data storage. It is designed for scalability, high performance, and real-time communication. It can be deployed on-premise or in the cloud, making it suitable for many use cases.
 
 ## Basic Components
 
