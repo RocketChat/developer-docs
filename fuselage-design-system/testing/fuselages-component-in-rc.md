@@ -1,8 +1,12 @@
+---
+description: Test fuselage component/packages in Rocket.Chat main repository
+---
+
 # Fuselage's component in RC
 
-These are some techniques applied when we need to iterate over some components in use at our flagship project and Storybook is not enough.
+These are some techniques applied when we need to iterate over some components and/or packages in use at our flagship project and Storybook or local environment it's not enought.
 
-All the examples assume the worktree directories are siblings disposed like this:
+All the examples assume the work tree directories are siblings disposed like this:
 
 ```
 - fuselage
@@ -19,7 +23,66 @@ All the examples assume the worktree directories are siblings disposed like this
   - ...
 ```
 
-## Technique 1: Yarn's `link:` protocol
+## Technique 1: `yarn fuselage` script&#x20;
+
+We developed a helper script to automate actions needed to test and deploy fuselage packages.
+
+The bash script source code can be found here: [fuselage.sh](https://github.com/RocketChat/Rocket.Chat/blob/develop/fuselage.sh)
+
+The script can be used with the `yarn fuselage -a [action] -p [package]` command
+
+The actions are specified with the flag  `-a | --action` and the options are `[link|undo|unlink|next|latest|next-all|latest-all]`&#x20;
+
+* &#x20;`link` : Creates a symbolic link for the fuselage package&#x20;
+* &#x20;`undo` or `unlink` : Removes the symbolic li nk for the fuselage package&#x20;
+* &#x20;`next` : Update dependencies with the @next npm package version&#x20;
+* &#x20;`latest` : Update dependencies with the @latest npm package version&#x20;
+* &#x20;`next-all` : Update ALL fuselage dependencies with the @next npm packages version&#x20;
+* &#x20;`latest-all` : Update ALL fuselage dependencies with the @latest npm packages version
+
+The packages that the action will be performed it's specified with `-p | --package`  flag, this option can contain multiple packages separated by a semicolon (;) like `[package1;package2]`
+
+Example usage:
+
+* Create a symbolic link in multiple fuselage packages:
+
+```bash
+yarn fuselage -a link -p fuselage;fuselage-icons;message-parser
+```
+
+* Remove the symbolic link:&#x20;
+
+```bash
+yarn fuselage -a undo
+```
+
+* Update dependencies to the @rocket.chat/fuselage@next npm package version:
+
+```bash
+ yarn fuselage -a next -p fuselage
+```
+
+* Update dependencies to the @rocket.chat/fuselage@latest npm package version:
+
+```bash
+ yarn fuselage -a latest -p fuselage
+```
+
+* Update ALL fuselage dependencies with the @next npm packages version:
+
+```bash
+ yarn fuselage -a next-all
+```
+
+* Update ALL fuselage dependencies with the @latest npm packages version:&#x20;
+
+```bash
+yarn fuselage -a latest-all
+```
+
+
+
+## Technique 2: Yarn's `link:` protocol
 
 ### Do
 
@@ -87,7 +150,7 @@ yarn link ../fuselage/packages/fuselage                                         
 
 </details>
 
-## Technique 2: Already merged PR
+## Technique 3: Already merged PR
 
 Usually, the versions kept on the core package (Rocket.Chat) are set to `@next`. This means that merged PR's that were merged to develop and went through the CI/CD (usually takes a few minutes after merge) are released as a `-dev` version.
 
@@ -95,21 +158,21 @@ In order to find out if a merged PR has already been released, in the fuselage m
 
 #### On Core repository root, run:
 
-Update all fuselage packages to `@next`
+Update fuselage packages to `@next`
 
 ```bash
-sh fuselage.sh -a next
+yarn up @rocket.chat/fuselage@next
 ```
 
 After this runs, make sure to run:
 
-```
+```bash
 yarn build
 ```
 
 And you're ready to go!
 
-## Technique 3: Before the Fuselage Pull Request is merged
+## Technique 4: Before the Fuselage Pull Request is merged
 
 If you want to test your `fuselage/{package}` code in [Rocket.Chat main repository](https://github.com/RocketChat/Rocket.Chat) you can also use this technique: create a symbolic link (symlink) to a `fuselage/{package}` at Rocket.Chat main repository.
 
