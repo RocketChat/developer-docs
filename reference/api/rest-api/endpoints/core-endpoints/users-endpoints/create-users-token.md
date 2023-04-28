@@ -1,26 +1,36 @@
 # Create Users Token
 
-**IMPORTANT** To be able to use this endpoint you must set the ENV VAR \(CREATE\_TOKENS\_FOR\_USERS=true\).
+Create a user authentication token. This is the same type of session token a user would get via login and will expire the same way
 
-Create a user authentication token. This is the same type of session token a user would get via login and will expire the same way. Requires `user-generate-access-token` permission.
+{% hint style="warning" %}
+**IMPORTANT**:
+
+To be able to use this endpoint you must set the [Environment variable](https://docs.rocket.chat/deploy/rocket.chat-environment-configuration/environment-variables) _CREATE\_TOKENS\_FOR\_USERS_=true.
+
+For SaaS workspaces [contact support](https://docs.rocket.chat/resources/get-support) to set this variable.
+{% endhint %}
+
+{% hint style="info" %}
+You are required to have the `user-generate-access-token` permission.
+{% endhint %}
 
 Example if you use snaps:
 
-```text
+```
     echo "CREATE_TOKENS_FOR_USERS=true" > /var/snap/rocketchat-server/common/create-tokens.env
     sudo systemctl restart snap.rocketchat-server.rocketchat-server.service
 ```
 
 Create a user authentication token. Requires `user-generate-access-token` permission.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/users.createToken` | `yes` | `POST` |
+| URL                         | Requires Auth | HTTP Method |
+| --------------------------- | ------------- | ----------- |
+| `/api/v1/users.createToken` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument               | Example             | Required | Description                     |
+| ---------------------- | ------------------- | -------- | ------------------------------- |
 | `userId` or `username` | `BsNr28znDkG8aeo7W` | Required | The id or username of the user. |
 
 ## Example Call - Via userId
@@ -69,8 +79,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 2.1.0 | Added ENV VAR to be able to use this endpoint \(process.env.CREATE\_TOKENS\_FOR\_USERS\). |
-| 0.56.0 | Added |
-
+| Version | Description                                                                             |
+| ------- | --------------------------------------------------------------------------------------- |
+| 2.1.0   | Added ENV VAR to be able to use this endpoint (process.env.CREATE\_TOKENS\_FOR\_USERS). |
+| 0.56.0  | Added                                                                                   |
