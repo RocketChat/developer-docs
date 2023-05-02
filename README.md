@@ -8,11 +8,11 @@ To learn more about Rocket.Chat, please visit our [user guide](https://docs.rock
 
 ## Build and Integrate
 
-Extend more with RocketChat using Apps, Webhooks, Live chat, and Rest APIs. As a developer, you can create your desktop and mobile Rocket.Chat app. You can also create an [app engine](broken-reference) to enable users to operate more efficiently with their server, with the flexibility to integrate their workflows with preferred apps like Github and Jira, and less risk of data loss. You can also build your [Omnichannel ](broken-reference)apps.
+Extend more with RocketChat using Apps, Webhooks, Live chat, and Rest APIs. As a developer, you can create your desktop and mobile Rocket.Chat app. You can also create an [app engine](broken-reference) to enable users to operate more efficiently with their server, with the flexibility to integrate their workflows with preferred apps like Github and Jira, and less risk of data loss. You can also build your [Omnichannel](broken-reference) apps.
 
 ## Extend and Customize
 
-Extend Rocket.Chat's functionalities and customize the entire solution for your use case using [Bots ](broken-reference)and Rocket.Chat [API](reference/api/).
+Extend Rocket.Chat's functionalities and customize the entire solution for your use case using [Bots](broken-reference) and Rocket.Chat [API](reference/api/).
 
 ## Contribute
 
@@ -20,4 +20,4 @@ Irrespective of your technical experience, you can contribute to Rocket.Chat by 
 
 ## Connect
 
-Join our [open server](https://open.rocket.chat/), [community](https://community.rocket.chat/), and [repositories ](https://gihttps/github.com/RocketChatthub.com/RocketChat)for more collaborations. You can also get help from our global community and open channels.&#x20;
+Join our [open server](https://open.rocket.chat/), [community](https://community.rocket.chat/), and [repositories](https://github.com/RocketChat) for more collaborations. You can also get help from our global community and open channels.
