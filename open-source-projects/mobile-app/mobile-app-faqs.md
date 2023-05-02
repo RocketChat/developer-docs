@@ -4,7 +4,9 @@
 
 <summary>Why am I not receiving push notifications on mobile apps?</summary>
 
-Confirm that you understand our Push Notification workflow, and the app should be receiving a push notification. If you're using [Rocket.Chat SaaS](https://docs.rocket.chat/rocket.chat-saas/cloud-account), ensure you have enough Push Notification quota. If you're self-hosted, make sure your gateway is configured correctly.
+Confirm that you understand our [push notifications workflow](https://whimsical.com/notification-workflow-PRwN4MWNsxSwqHjHXaPUuC), and the app should be receiving a push notification. If you're using Rocket.Chat SaaS, ensure you have enough Push Notification quota. If you're self-hosted, ensure your gateway is configured correctly. OS configurations could also block notifications.
+
+Explore other possible reasons for not receiving push notifications on our [workflow](https://whimsical.com/notification-workflow-PRwN4MWNsxSwqHjHXaPUuC).
 
 </details>
 

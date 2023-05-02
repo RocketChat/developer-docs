@@ -47,14 +47,6 @@ yarn android
 
 Now, the app is running on the simulator or your device.
 
-{% content-ref url="supporting-ssl-for-development-on-rocket.chat.md" %}
-[supporting-ssl-for-development-on-rocket.chat.md](supporting-ssl-for-development-on-rocket.chat.md)
-{% endcontent-ref %}
-
-{% content-ref url="analytics-and-data-usage.md" %}
-[analytics-and-data-usage.md](analytics-and-data-usage.md)
-{% endcontent-ref %}
-
 ## Contributing
 
 If you are yet to find a bug or want a new feature that hasn't been reported, see the [help wanted](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8B+help+wanted%22) sections or the [good first issue](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%8D%AD+good+first+issue%22) labels. Triaging issues is a great way to contribute if you can't code.&#x20;
