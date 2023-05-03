@@ -135,7 +135,7 @@ To add and submit your app, Navigate to **App** > **New App.**
 
 * Drag and drop your app package or browse your app package .zip file and click **Next**.
 
-![Upload App](<../../.gitbook/assets/publish a new app-Upload (1).png>)
+![Upload App](<../../.gitbook/assets/publish a new app-Upload.png>)
 
 **Step 02: Details**
 

@@ -28,6 +28,14 @@ The mobile app development environment setup gives details on how to set up your
 [mobile-app](../open-source-projects/mobile-app/)
 {% endcontent-ref %}
 
+## Omnichannel Live chat
+
+Set up and run the Omnichannel Live chat as a standalone.
+
+{% content-ref url="../omnichannel/omnichannel-environment-setup.md" %}
+[omnichannel-environment-setup.md](../omnichannel/omnichannel-environment-setup.md)
+{% endcontent-ref %}
+
 ## Apps Engine
 
 The Apps Engine development environment setup provides guidance on how to set up your development environment for building Rocket.Chat apps.
