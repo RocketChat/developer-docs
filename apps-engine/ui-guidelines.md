@@ -41,7 +41,7 @@ The message kebab menu can be seen by the right of a message when hovered upon o
 * Only Rocket.Chat core actions can use icons.
 * **Don't** include icons or emoji anywhere inside the item label.
 
-<figure><img src="../.gitbook/assets/3 (3) (1).png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/3.png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
 
 ## Chat messages
 
@@ -84,7 +84,7 @@ As a default setting, the app logo asset will be presented in modals that are li
 * **Don't** use modals without the app name in the tagline.
 * **Do** use the app name in the modal tagline.
 
-<figure><img src="../.gitbook/assets/7 (5).png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
 
 ## App (bot) username
 

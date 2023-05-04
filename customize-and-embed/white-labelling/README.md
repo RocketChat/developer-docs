@@ -3,7 +3,7 @@
 Rocket.Chat offers a wide range of customization options, including basic color switching and complete CSS control. More importantly, you can make customizations without changing the source code.
 
 {% hint style="info" %}
-To learn more, see [Basic White-Labeling](https://docs.rocket.chat/quick-start/basic-white-labeling) and [Advanced White-Labeling](broken-reference).
+To learn more, see [Basic White-Labeling](https://docs.rocket.chat/quick-start/basic-white-labeling).
 {% endhint %}
 
 ## Customizing Rocket.Chat from Code
