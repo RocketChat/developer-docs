@@ -1,8 +1,8 @@
 # Iframe Integration
 
-An iframe integration in Rocket.Chat is a way to embed an external web page or application within the Rocket.Chat interface. You can authenticate users with your login page instead of Rocket.Chat's login via iframe integration.
+An iframe integration in Rocket.Chat is a way to embed Rocket.Chat within an external web page or application interface. You can authenticate users with your login page instead of Rocket.Chat's login via iframe integration.
 
-You can also embed Rocket.Chat in your application depending on your needs using an iframe.
+You can embed Rocket.Chat in your application depending on your needs using an iframe.
 
 To authenticate users via iframe integration,&#x20;
 
@@ -13,7 +13,7 @@ To authenticate users via iframe integration,&#x20;
 [configuring-iframe-auth](configuring-iframe-auth/)
 {% endcontent-ref %}
 
-To listen to events while embedding Rocket.Chat in your app inside an iframe,
+To listen to events while embedding Rocket.Chat in your app,
 
 * Navigate to **Administration > Settings > General > Iframe Integration.**
 * Enable send (events) or receive (commands) depending on your needs.
