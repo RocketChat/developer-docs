@@ -1,8 +1,6 @@
----
-description: Save the settings of a room
----
-
 # Save Room Settings
+
+This endpoint allows you to save the settings of a room.
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |
@@ -10,11 +8,30 @@ description: Save the settings of a room
 
 ## Payload
 
-| Argument          | Example                                   | Required | Description                  |
-| ----------------- | ----------------------------------------- | -------- | ---------------------------- |
-| `rid`             | `JZ8Y2dLfYhsg323Rf`                       | Required | The room id.                 |
-| `roomName`        | `Test-Save-Room`                          | Optional | The name of the room.        |
-| `roomDescription` | `This is a test for save-room settings.`  | Optional | The description of the room. |
+| `rid`                   | `JZ8Y2dLfYhsg323Rf`                         | Required | The room id.                                                                                                         |
+| ----------------------- | ------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
+| `roomName`              | `Test-Save-Room`                            | Optional | The name of the room.                                                                                                |
+| `roomDescription`       | `This is a test room.`                      | Optional | The description of the room.                                                                                         |
+| roomAvatar              | https://example.com/image                   | Optional | The URL of the room avatar image.                                                                                    |
+| featured                | true                                        | Optional | Whether the room is featured or not.                                                                                 |
+| roomTopic               | Discussion Topic                            | Optional | The topic of the room.                                                                                               |
+| roomAnnouncement        | Important Announcement                      | Optional | The announcement of the room.                                                                                        |
+| roomCustomFields        | { "field1": "value1" }                      | Optional | The custom fields of the room.                                                                                       |
+| roomType                | "c"                                         | Optional | The type of the room.                                                                                                |
+| readOnly                | true                                        | Optional | Whether the room is read-only or not.                                                                                |
+| reactWhenReadOnly       | true                                        | Optional | Whether users can react when the room is read-only.                                                                  |
+| systemMessages          | \["changed-room-name"]                      | Optional | The system messages that the room supports.                                                                          |
+| default                 | true                                        | Optional | Whether the room is the default room or not.                                                                         |
+| joinCode                | "123456"                                    | Optional | The join code of the room.                                                                                           |
+| streamingOptions        | { "type": "live" }                          | Optional | The streaming options of the room.                                                                                   |
+| retentionEnabled        | true                                        | Optional | Whether retention is enabled for the room or not.                                                                    |
+| retentionMaxAge         | 30                                          | Optional | The maximum age (in days) of messages to be retained in the room.                                                    |
+| retentionExcludePinned  | true                                        | Optional | Whether to exclude pinned messages from retention or not.                                                            |
+| retentionFilesOnly      | true                                        | Optional | Whether to retain only files in the room or not.                                                                     |
+| retentionIgnoreThreads  | true                                        | Optional | Whether to ignore threads when retaining messages or not.                                                            |
+| retentionOverrideGlobal | true                                        | Optional | Whether to override the global retention settings for the room or not.                                               |
+| encrypted               | true                                        | Optional | Whether the room is encrypted or not.                                                                                |
+| favorite                | { "favorite": true, "defaultValue": false } | Optional | The favorite settings of the room. Whether the room is marked as favorite and whether it is set as the default room. |
 
 ### Example Payload
 
@@ -38,7 +55,7 @@ curl -L -X POST 'http://localhost:3000/api/v1/rooms.saveRoomSettings' \
 --data-raw '{
     "rid": "JZ8Y2dLfYhsg323Rf",
     "roomName": "Test-Save-Room",
-    "roomDescription": "This is a test for save-room settings."
+    "roomDescription": "This is a test room."
 }'
 ```
 {% endtab %}
