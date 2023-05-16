@@ -2,19 +2,19 @@
 
 Gets channel counters.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.counters` | `yes` | `GET` |
+| URL                         | Requires Auth | HTTP Method |
+| --------------------------- | ------------- | ----------- |
+| `/api/v1/channels.counters` | `yes`         | `GET`       |
 
 ## Payload
 
 One of roomId or roomName is required.
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `GENERAL` | Required | The channel's id |
-| `roomName` | `general` | Required | The channel's name |
-| `userId` | `RtycPC29hqLJfT9xj` | Optional | Counters for provided user id \(need to have a view-room-administration right for calling user\) |
+| Argument   | Example             | Required | Description                                                                                    |
+| ---------- | ------------------- | -------- | ---------------------------------------------------------------------------------------------- |
+| `roomId`   | `GENERAL`           | Required | The channel's id                                                                               |
+| `roomName` | `general`           | Required | The channel's name                                                                             |
+| `userId`   | `RtycPC29hqLJfT9xj` | Optional | Counters for provided user id (need to have a view-room-administration right for calling user) |
 
 ## Example Call
 
@@ -22,7 +22,7 @@ One of roomId or roomName is required.
 curl -H "X-Auth-Token: 8h2mKAwxB3AQrFSjLVKMooJyjdCFaA7W45sWlHP8IzO" \
      -H "X-User-Id: ew28FnZqipDpvKw3R" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.counters?roomId=GENERAL
+     https://localhost:3000/api/v1/channels.counters?roomId=GENERAL
 ```
 
 ## Example Result
@@ -53,6 +53,5 @@ userMentions - count of user mentions in messages
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.65.0 | Added |
-
+| ------- | ----------- |
+| 0.65.0  | Added       |

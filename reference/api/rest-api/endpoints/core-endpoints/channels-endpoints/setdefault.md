@@ -2,16 +2,16 @@
 
 Sets whether the channel is a default channel or not.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.setDefault` | `yes` | `POST` |
+| URL                           | Requires Auth | HTTP Method |
+| ----------------------------- | ------------- | ----------- |
+| `/api/v1/channels.setDefault` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
-| `default` | `true` | Required | Boolean of whether the room is default or not. |
+| Argument  | Example             | Required | Description                                    |
+| --------- | ------------------- | -------- | ---------------------------------------------- |
+| `roomId`  | `ByehQjC44FwMeiLbX` | Required | The channel's id                               |
+| `default` | `true`              | Required | Boolean of whether the room is default or not. |
 
 ## Example Call
 
@@ -19,7 +19,7 @@ Sets whether the channel is a default channel or not.
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.setDefault \
+     https://localhost:3000/api/v1/channels.setDefault \
      -d '{ "roomId": "ByehQjC44FwMeiLbX", "default": true }'
 ```
 
@@ -55,6 +55,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.66.0 | Added |
-
+| ------- | ----------- |
+| 0.66.0  | Added       |

@@ -2,22 +2,22 @@
 
 Gets the messages in public channels to an anonymous user, if the server has the setting `Accounts_AllowAnonymousRead` enabled. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.anonymousread` | `no` | `GET` |
+| URL                              | Requires Auth | HTTP Method |
+| -------------------------------- | ------------- | ----------- |
+| `/api/v1/channels.anonymousread` | `no`          | `GET`       |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required\(if no `roomName` | The channel's id |
-| `roomName` | `testChannel` | Required\(if no `roomId`\) | The channel's name |
+| Argument   | Example             | Required                  | Description        |
+| ---------- | ------------------- | ------------------------- | ------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required(if no `roomName` | The channel's id   |
+| `roomName` | `testChannel`       | Required(if no `roomId`)  | The channel's name |
 
 ## Example Call
 
 ```bash
 curl -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.anonymousread?roomId=ByehQjC44FwMeiLbX
+     https://localhost:3000/api/v1/channels.anonymousread?roomId=ByehQjC44FwMeiLbX
 ```
 
 ## Example Result
@@ -143,6 +143,5 @@ curl -H "Content-type: application/json" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.2.0 | Added |
-
+| ------- | ----------- |
+| 1.2.0   | Added       |

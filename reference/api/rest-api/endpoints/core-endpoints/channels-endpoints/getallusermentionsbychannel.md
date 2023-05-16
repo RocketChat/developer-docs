@@ -2,14 +2,14 @@
 
 It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.getAllUserMentionsByChannel` | `yes` | `GET` |
+| URL                                            | Requires Auth | HTTP Method |
+| ---------------------------------------------- | ------------- | ----------- |
+| `/api/v1/channels.getAllUserMentionsByChannel` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument | Example             | Required | Description      |
+| -------- | ------------------- | -------- | ---------------- |
 | `roomId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
 
 ## Example Call
@@ -17,7 +17,7 @@ It supports the [Offset, Count, and Sort Query Parameters](../../other-important
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.getAllUserMentionsByChannel?roomId=ByehQjC44FwMeiLbX
+     https://localhost:3000/api/v1/channels.getAllUserMentionsByChannel?roomId=ByehQjC44FwMeiLbX
 ```
 
 ## Example Result
@@ -74,6 +74,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.63.0 | Added |
-
+| ------- | ----------- |
+| 0.63.0  | Added       |

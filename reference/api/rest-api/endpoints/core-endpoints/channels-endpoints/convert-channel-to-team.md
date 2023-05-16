@@ -4,31 +4,31 @@ description: Convert a channel to team
 
 # Convert channel to team
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.convertToTeam` | `yes` | `POST` |
+| URL                              | Requires Auth | HTTP Method |
+| -------------------------------- | ------------- | ----------- |
+| `/api/v1/channels.convertToTeam` | `yes`         | `POST`      |
 
 ## Headers
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+| Argument       | Example        | Required | Description                                                    |
+| -------------- | -------------- | -------- | -------------------------------------------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
+| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument      | Example              | Required | Description        |
+| ------------- | -------------------- | -------- | ------------------ |
 | `channelName` | `documentation-team` | Required | The channel's name |
-| OR |  |  |  |
-| `channelId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
+| OR            |                      |          |                    |
+| `channelId`   | `ByehQjC44FwMeiLbX`  | Required | The channel's id   |
 
 ## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.channels.convertToTeam
+     https://localhost:3000/api/v1/channels.channels.convertToTeam
      -d '{ "channelName": "documentation-team" }'
 ```
 
@@ -51,4 +51,3 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
     "success": true
 }
 ```
-

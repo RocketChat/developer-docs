@@ -2,16 +2,16 @@
 
 Joins yourself to the channel.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.join` | `yes` | `POST` |
+| URL                     | Requires Auth | HTTP Method |
+| ----------------------- | ------------- | ----------- |
+| `/api/v1/channels.join` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
-| `joinCode` | `1234` | Optional | The join code of the room |
+| Argument   | Example             | Required | Description               |
+| ---------- | ------------------- | -------- | ------------------------- |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required | The channel's id          |
+| `joinCode` | `1234`              | Optional | The join code of the room |
 
 {% hint style="info" %}
 The join code isn't needed if the user has the permission `join-without-join-code`
@@ -23,7 +23,7 @@ The join code isn't needed if the user has the permission `join-without-join-cod
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.join \
+     https://localhost:3000/api/v1/channels.join \
      -d '{ "roomId": "ByehQjC44FwMeiLbX", "joinCode": "1234" }'
 ```
 
@@ -59,6 +59,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.49.0 | Added |
-
+| ------- | ----------- |
+| 0.49.0  | Added       |

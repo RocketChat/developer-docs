@@ -2,23 +2,23 @@
 
 Lists all of the specific channel messages on the server. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.messages` | `yes` | `GET` |
+| URL                         | Requires Auth | HTTP Method |
+| --------------------------- | ------------- | ----------- |
+| `/api/v1/channels.messages` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required\(if no `roomName` | The channel's id |
-| `roomName` | `testChannel` | Required\(if no `roomId`\) | The channel's name |
+| Argument   | Example             | Required                  | Description        |
+| ---------- | ------------------- | ------------------------- | ------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required(if no `roomName` | The channel's id   |
+| `roomName` | `testChannel`       | Required(if no `roomId`)  | The channel's name |
 
 ## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.messages?roomId=ByehQjC44FwMeiLbX
+     https://localhost:3000/api/v1/channels.messages?roomId=ByehQjC44FwMeiLbX
 ```
 
 ## Example Result
@@ -144,6 +144,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.59.0 | Added |
-
+| ------- | ----------- |
+| 0.59.0  | Added       |

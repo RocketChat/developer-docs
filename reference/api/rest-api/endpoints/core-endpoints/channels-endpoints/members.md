@@ -6,23 +6,23 @@ Lists all channel users. It supports the [Offset, Count, and Sort Query Paramete
 The list of elements a user can use to sort the list is limited. The current sortable element is:`username`
 {% endhint %}
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.members` | `yes` | `GET` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/channels.members` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required \(if no roomName\) | The channel's id |
-| `roomName` | `general` | Required \(if no roomId\) | The channel's name |
+| Argument   | Example             | Required                  | Description        |
+| ---------- | ------------------- | ------------------------- | ------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required (if no roomName) | The channel's id   |
+| `roomName` | `general`           | Required (if no roomId)   | The channel's name |
 
 ## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.members?roomId=ByehQjC44FwMeiLbX&count=2
+     https://localhost:3000/api/v1/channels.members?roomId=ByehQjC44FwMeiLbX&count=2
 ```
 
 ## Example Result
@@ -53,6 +53,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.59.0 | Added |
-
+| ------- | ----------- |
+| 0.59.0  | Added       |

@@ -2,16 +2,16 @@
 
 Lists all of the channels on the server. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.list` | `yes` | `GET` |
+| URL                     | Requires Auth | HTTP Method |
+| ----------------------- | ------------- | ----------- |
+| `/api/v1/channels.list` | `yes`         | `GET`       |
 
 ## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.list
+     https://localhost:3000/api/v1/channels.list
 ```
 
 ## Example Result
@@ -63,8 +63,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.49.0 | Count and offset query parameters supported. |
-| 0.48.0 | Added |
-
+| Version | Description                                  |
+| ------- | -------------------------------------------- |
+| 0.49.0  | Count and offset query parameters supported. |
+| 0.48.0  | Added                                        |

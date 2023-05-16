@@ -2,16 +2,16 @@
 
 Sets the code required to join the channel.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.setJoinCode` | `yes` | `POST` |
+| URL                            | Requires Auth | HTTP Method |
+| ------------------------------ | ------------- | ----------- |
+| `/api/v1/channels.setJoinCode` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
-| `joinCode` | `my-join-code` | Required | The join code which this channel will require to be joined. |
+| Argument   | Example             | Required | Description                                                 |
+| ---------- | ------------------- | -------- | ----------------------------------------------------------- |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required | The channel's id                                            |
+| `joinCode` | `my-join-code`      | Required | The join code which this channel will require to be joined. |
 
 ## Example Call
 
@@ -19,7 +19,7 @@ Sets the code required to join the channel.
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.setJoinCode \
+     https://localhost:3000/api/v1/channels.setJoinCode \
      -d '{ "roomId": "ByehQjC44FwMeiLbX", "joinCode": "my-join-code" }'
 ```
 
@@ -53,6 +53,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.49.0 | Added |
-
+| ------- | ----------- |
+| 0.49.0  | Added       |

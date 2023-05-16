@@ -29,7 +29,7 @@ For a user to be able to invite others, they must to match at least one of the p
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.invite \
+     https://localhost:3000/api/v1/channels.invite \
      -d '{ "roomId": "ByehQjC44FwMeiLbX", "userId": "nSYqWzZ4GsKTX4dyK" }'
 ```
 

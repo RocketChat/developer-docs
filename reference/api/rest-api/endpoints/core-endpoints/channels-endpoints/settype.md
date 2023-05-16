@@ -2,17 +2,17 @@
 
 Sets the type of room this channel should be.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.setType` | `yes` | `POST` |
+| URL                        | Requires Auth | HTTP Method |
+| -------------------------- | ------------- | ----------- |
+| `/api/v1/channels.setType` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
-| `roomName` | `chat-room-name` | Required | The channel's name |
-| `type` | `c` _or_ `p` | Required | The type of room this channel should be, either `c` or `p`.  `c` is for channel and `p` is for private. |
+| Argument   | Example             | Required | Description                                                                                            |
+| ---------- | ------------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required | The channel's id                                                                                       |
+| `roomName` | `chat-room-name`    | Required | The channel's name                                                                                     |
+| `type`     | `c` _or_ `p`        | Required | The type of room this channel should be, either `c` or `p`. `c` is for channel and `p` is for private. |
 
 ## Example Call
 
@@ -20,7 +20,7 @@ Sets the type of room this channel should be.
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.setType \
+     https://localhost:3000/api/v1/channels.setType \
      -d '{ "roomId": "ByehQjC44FwMeiLbX", "type": "p" }'
 
 or
@@ -28,7 +28,7 @@ or
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/channels.setType \
+     https://localhost:3000/api/v1/channels.setType \
      -d '{ "roomName": "chat-room-name", "type": "p" }'
 ```
 
@@ -63,6 +63,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.49.0 | Added |
-
+| ------- | ----------- |
+| 0.49.0  | Added       |

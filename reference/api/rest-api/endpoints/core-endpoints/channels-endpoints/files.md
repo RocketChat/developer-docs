@@ -2,15 +2,15 @@
 
 Retrieves the files from a channel. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.files` | `yes` | `GET` |
+| URL                      | Requires Auth | HTTP Method |
+| ------------------------ | ------------- | ----------- |
+| `/api/v1/channels.files` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId`    `roomName` | `ByehQjC44FwMeiLbX`    `test` | Required | The room id.    The room name. |
+| Argument            | Example                    | Required | Description                 |
+| ------------------- | -------------------------- | -------- | --------------------------- |
+| `roomId` `roomName` | `ByehQjC44FwMeiLbX` `test` | Required | The room id. The room name. |
 
 ## Example Call
 
@@ -23,7 +23,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.files?roomName=test
+     https://localhost:3000/api/v1/channels.files?roomName=test
 ```
 
 ## Example Result
@@ -66,8 +66,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.64.0 | Change `userId` to `user` object in response |
-| 0.59.0 | Added |
-
+| Version | Description                                  |
+| ------- | -------------------------------------------- |
+| 0.64.0  | Change `userId` to `user` object in response |
+| 0.59.0  | Added                                        |

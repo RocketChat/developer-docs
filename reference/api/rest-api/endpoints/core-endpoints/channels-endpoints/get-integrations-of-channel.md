@@ -2,14 +2,14 @@
 
 Retrieves the integrations which the channel has, requires at least one integration permission: `manage-incoming-integrations`, `manage-own-incoming-integrations`, `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on the user permission. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.getIntegrations` | `yes` | `GET` |
+| URL                                | Requires Auth | HTTP Method |
+| ---------------------------------- | ------------- | ----------- |
+| `/api/v1/channels.getIntegrations` | `yes`         | `GET`       |
 
 ## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
+| Argument | Example             | Required | Description      |
+| -------- | ------------------- | -------- | ---------------- |
 | `roomId` | `ByehQjC44FwMeiLbX` | Required | The channel's id |
 
 ## Example Call
@@ -17,7 +17,7 @@ Retrieves the integrations which the channel has, requires at least one integrat
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.getIntegrations?roomId=ByehQjC44FwMeiLbX
+     https://localhost:3000/api/v1/channels.getIntegrations?roomId=ByehQjC44FwMeiLbX
 ```
 
 ## Example Result
@@ -61,8 +61,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 1.1.0 | Separate permissions in `incoming` and `outgoing`. |
-| 0.49.0 | Added |
-
+| Version | Description                                        |
+| ------- | -------------------------------------------------- |
+| 1.1.0   | Separate permissions in `incoming` and `outgoing`. |
+| 0.49.0  | Added                                              |

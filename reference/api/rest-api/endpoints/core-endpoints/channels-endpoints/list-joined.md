@@ -2,16 +2,16 @@
 
 Lists all of the channels the calling user has joined. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with just the [Fields Query Parameter](../../other-important-endpoints/query-and-fields-info.md).
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/channels.list.joined` | `yes` | `GET` |
+| URL                            | Requires Auth | HTTP Method |
+| ------------------------------ | ------------- | ----------- |
+| `/api/v1/channels.list.joined` | `yes`         | `GET`       |
 
 ## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/channels.list.joined
+     https://localhost:3000/api/v1/channels.list.joined
 ```
 
 ## Example Result
@@ -76,9 +76,8 @@ curl -H "X-Auth-Token: OKoJelLu8rYtbyc3c5YtTwxIE-UvT1FzWv9cdq1XPI1" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.62.0 | Add 'query' parameter support. |
-| 0.49.0 | Count and offset query parameters supported. |
-| 0.48.0 | Added |
-
+| Version | Description                                  |
+| ------- | -------------------------------------------- |
+| 0.62.0  | Add 'query' parameter support.               |
+| 0.49.0  | Count and offset query parameters supported. |
+| 0.48.0  | Added                                        |
