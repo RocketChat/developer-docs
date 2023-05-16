@@ -50,8 +50,8 @@ You can clone the single-server branch directly by  running this command:
 * Select the [project you created in GCP](./#creating-a-project-google-cloud-platform-gcp).
 * Follow the setup prompts and click "Create".
 
-{% content-ref url="ios-app-white-labelling.md" %}
-[ios-app-white-labelling.md](ios-app-white-labelling.md)
+{% content-ref url="../../../mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md" %}
+[ios-app-white-labelling.md](../../../mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
 {% endcontent-ref %}
 
 {% content-ref url="android-app-white-labelling.md" %}

@@ -6,7 +6,7 @@ A very good place to start learning how to build apps is by watching this webina
 
 {% embed url="https://www.youtube.com/watch?v=PaFPeD6QG9k" %}
 
-[**Apps Engine Environment Setup**](apps-engine-environment-setup.md): Guide on how to set up your Apps Engine development environment.
+[**Apps Engine Environment Setup**](../rocket.chat-apps-engine/apps-engine-environment-setup.md): Guide on how to set up your Apps Engine development environment.
 
 [**The Apps Engine CLI**](rocket.chat-app-engine-cli.md): See how to use the Apps Engine CLI in developing apps.
 

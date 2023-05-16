@@ -1,6 +1,6 @@
 # Two Factor Authentication
 
-Visit the [Two Factor Authentication](../../../../../getting-started/two-factor-authentication.md) guide for general information.
+Visit the [Two Factor Authentication](../../../../../rocket.chat/two-factor-authentication.md) guide for general information.
 
 ## Errors
 
