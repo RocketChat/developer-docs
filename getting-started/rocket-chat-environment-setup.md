@@ -40,8 +40,8 @@ Set up and run the Omnichannel Live chat as a standalone.
 
 The Apps Engine development environment setup provides guidance on how to set up your development environment for building Rocket.Chat apps.
 
-{% content-ref url="../apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md" %}
-[apps-engine-environment-setup.md](../apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md)
+{% content-ref url="../apps-engine/getting-started/apps-engine-environment-setup.md" %}
+[apps-engine-environment-setup.md](../apps-engine/getting-started/apps-engine-environment-setup.md)
 {% endcontent-ref %}
 
 ## Bots

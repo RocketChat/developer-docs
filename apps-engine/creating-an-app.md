@@ -58,9 +58,9 @@ Let's take a look at our `HelloWorld` app's `app.json` file below to understand 
 
 To test your app, you need a Rocket.Chat server running locally on your machine and access to an admin user's credentials.
 
-See [Installing Rocket.Chat for Developing](../../open-source-projects/server/server-environment-setup/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
+See [Installing Rocket.Chat for Developing](../open-source-projects/server/server-environment-setup/linux.md) to run Rocket.Chat in develop mode. Enable Apps development mode by navigating to **Administration** > **General** then scroll down to **Apps** and click on the `True` radio button over the Enable development mode.
 
-> You can learn more about organizing complex slash commands in our [Sub-command pattern](../recipes/sub-command-pattern.md) recipe
+> You can learn more about organizing complex slash commands in our [Sub-command pattern](building-custom-apps/sample-app-snippets/sub-command-pattern.md) recipe
 
 or run it in preview mode with docker using the command:
 
@@ -102,7 +102,7 @@ A Rocket.Chat App is basically a TypeScript file on the root of your project con
 
 Let's take a look at our own project's root. You should find a TypeScript file named `HelloWorldApp.ts`.
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16).png>)
 
 Open the `HelloWorldApp.ts` file. Ignore all the import statements for now. Focus on the main exported class.
 
@@ -199,16 +199,16 @@ Now to verify that it actually is working, you need to check the logs.
 3. From the side panel, click on `Apps`.
 4.  Now you should see your `HelloWorld` app right there. Click on it.
 
-    <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 5.  On the right-hand side there is a three-dot button, click on it, and then from the menu click on logs.
 
-    <img src="../../.gitbook/assets/image (2) (2).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (2) (2).png" alt="" data-size="original">
 
 Scroll down until you see `constructor`. When you do, click on it.
 
 Following screen apears:
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 You just created the simplest Hello World Rocket.Chat app! 😊
 
@@ -494,4 +494,4 @@ export class HelloWorldApp extends App {
 
 Your first app is ready. All that's left is for you to test it! Head over to the[#testing-the-app-1](creating-an-app.md#testing-the-app-1 "mention") section, to deploy your first app to your Rocket.Chat server!
 
-![](../../.gitbook/assets/output.gif)
+![](../.gitbook/assets/output.gif)

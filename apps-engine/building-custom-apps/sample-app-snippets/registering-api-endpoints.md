@@ -80,7 +80,7 @@ Then, let's implement the method `post`**, which will be executed every time onc
 
 Using the CLI command `rc-apps deploy` to deploy the app to your Rocket.Chat server first. Navigate to _Rocket.Chat Admin -> Apps -> Apps Detailed Page_ to check the full endpoint URL you registered for the App.
 
-![](<../../.gitbook/assets/image (19) (1).png>)
+![](<../../../.gitbook/assets/image (19) (1).png>)
 
 Open the terminal and use curl post some data to the endpoint. The result should be like below:
 
@@ -89,4 +89,4 @@ Open the terminal and use curl post some data to the endpoint. The result should
 {"messageId":"dREmKaR7qHyN98rtZ"}
 ```
 
-![](<../../.gitbook/assets/image (20).png>)
+![](<../../../.gitbook/assets/image (20).png>)
