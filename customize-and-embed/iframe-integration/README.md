@@ -6,7 +6,7 @@ You can embed Rocket.Chat in your application depending on your needs using an i
 
 To authenticate users via iframe integration,&#x20;
 
-* Navigate to **Administration > Settings > Accounts > Iframe**
+* Navigate to **Administration > Workspace > Settings > Accounts > Iframe**
 * Toggle on the **Enabled** option and proceed with [configuring the iframe auth](configuring-iframe-auth/).
 
 {% content-ref url="configuring-iframe-auth/" %}

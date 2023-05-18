@@ -14,7 +14,7 @@ You must have the following installed already on your machine before starting. I
 
 * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Node.js](https://nodejs.org) (version 12 and above)
-* [Rocket.Chat Apps Engine CLI](rocket.chat-app-engine-cli.md#installation)
+* [Rocket.Chat Apps Engine CLI](../getting-started/rocket.chat-app-engine-cli.md#installation)
 * [Yarn](http://yarnpkg.com/) (recommended instead of npm)
 
 ## Pre-requisites
@@ -31,6 +31,6 @@ For writing an App, you need to write and execute [TypeScript](https://www.types
 
 #### Understanding the Lifecycle methods of Apps Engine and Node.js VM
 
-You'll find here a section explaining the [Lifecycle methods of Apps Engine](understanding-app-lifecycle.md#introduction). We highly recommend you read it before getting started.
+You'll find here a section explaining the [Lifecycle methods of Apps Engine](../getting-started/understanding-app-lifecycle.md#introduction). We highly recommend you read it before getting started.
 
 Additionally, you'll find yourself executing some [Node.js VM](https://nodejs.org/api/vm.html) methods from time to time. Hence reading that documentation will be helpful as well.

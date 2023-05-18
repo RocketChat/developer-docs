@@ -84,7 +84,7 @@ As a default setting, the app logo asset will be presented in modals that are li
 * **Don't** use modals without the app name in the tagline.
 * **Do** use the app name in the modal tagline.
 
-<figure><img src="../.gitbook/assets/7 (8).png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
 
 ## App (bot) username
 

@@ -51,6 +51,6 @@ Now, the app is running on the simulator or your device.
 
 If you are yet to find a bug or want a new feature that hasn't been reported, see the [help wanted](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8B+help+wanted%22) sections or the [good first issue](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%8D%AD+good+first+issue%22) labels. Triaging issues is a great way to contribute if you can't code.
 
-You can follow[ the guidelines](../../contribute-to-rocket.chat/ways-to-contribute/developing/development-workflow.md#creating-a-pull-request) to open a pull request when your changes are ready. You can also share working results before finishing. Including \[WIP] in the title. This way, anyone can look at your code: you can ask for help within the PR if you need help solving a problem.
+You can follow[ the guidelines](../../rocket.chat/contribute-to-rocket.chat/development-workflow.md#creating-a-pull-request) to open a pull request when your changes are ready. You can also share working results before finishing. Including \[WIP] in the title. This way, anyone can look at your code: you can ask for help within the PR if you need help solving a problem.
 
 Various tools automatically inspect your PR check their response, and try to improve your code accordingly. Requests that fail to build or have the wrong coding style won't be merged.

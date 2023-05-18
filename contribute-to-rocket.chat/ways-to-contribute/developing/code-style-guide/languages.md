@@ -16,8 +16,8 @@ The Rocket.Chat codebase has migrated to using only typescript `.ts` files.
 
 Convention for Typescript, React and Components are specified in the Fuselage Conventions page.
 
-{% content-ref url="../../../../fuselage-design-system/conventions.md" %}
-[conventions.md](../../../../fuselage-design-system/conventions.md)
+{% content-ref url="../../../../fuselage/conventions.md" %}
+[conventions.md](../../../../fuselage/conventions.md)
 {% endcontent-ref %}
 
 ## Go
