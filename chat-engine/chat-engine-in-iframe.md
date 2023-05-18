@@ -4,23 +4,21 @@ One approach of incorporating Rocket.Chat's chat capabilities into your applicat
 
 ## Prerequisites
 
-Before proceeding with the iframe embed, there are a few settings to be made on your workspace.
+Prior to proceeding with the iframe embed, certain settings need to be configured in your workspace.
 
 * Navigate to **Administration** -> **Workspace** -> **Settings** -> **General**
   * Disable **Restrict access inside any Iframe.**
-  * Turn on to **Enable CORS** under **REST API.**
+  * Turn on **Enable CORS** under **REST API.**
   * Switch on **Enable Send** and **Enable Receive** of iframe events under **Iframe Integration**.
 * Navigate to **Administration** -> **Workspace** -> **Settings** -> **Layout** -> **User Interface** and disable **Show top navbar in embedded layout**.
 
 ## Procedure
 
-Establishing a connection between your application and Rocket.Chat, utilizes the use of Rocket.Chat REST API for authentication and other necessary operations.
+Establishing a connection between your application and Rocket.Chat utilizes the use of Rocket.Chat REST API for authentication and other necessary operations.
 
 ### Authentication
 
-You can choose to authenticate users within your application the
-
-It is recommended to generate a [Personal Access Token (PAT)](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-users-token.md) for a system user with admin role. This token is used for authentication purposes, rather than logging in with the system account credentials every time, providing a secure way to access the chat functionality without exposing the system account credentials.
+You can choose to authenticate users within your application. Generating a [Personal Access Token (PAT)](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-users-token.md) for a system user with an admin role is recommended. This token is used for authentication purposes, rather than logging in with the system account credentials every time, providing a secure way to access the chat functionality without exposing the system account credentials.
 
 Learn more about iframe authentication [here](../customize-and-embed/iframe-integration/configuring-iframe-auth/).
 
@@ -81,7 +79,7 @@ To interact with the rooms and handle user actions, such as opening a room, you 
 
 If you wish to customize the layout of the chat interface, you can consider building a custom frontend integration with Chat Engine as described in this section [chat-engine-with-custom-frontend.md](chat-engine-with-custom-frontend.md "mention").
 
-When a channel is specified and a user is authenticated, the embedded iframe is displayed without the Rocket.Chat sidebar and channel topbar.
+When a channel is specified, and a user is authenticated, the embedded iframe is displayed without the Rocket.Chat sidebar and channel topbar.
 
 <figure><img src="../.gitbook/assets/RocketChat Iframe embed.png" alt=""><figcaption><p>Rocket.Chat Iframe embed</p></figcaption></figure>
 

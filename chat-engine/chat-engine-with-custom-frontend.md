@@ -1,24 +1,24 @@
 # Chat Engine with Custom Frontend
 
-The ability to incorporate Rocket.Chat Chat functionalities in your application with a custom frontend allow you to provide a seamless chat experience while maintaining your desired user experience.
+The ability to incorporate Rocket.Chat's chat functionalities in your application with a custom frontend allow you to provide a seamless chat experience while maintaining your desired user experience.
 
 The Chat Engine leverages the use of WebSockets API to enable real-time chat functionality.
 
 ## Procedure
 
-These are some important factors to consider when implementing Chat Engine capabilities using a custom frontend.
+Following are some important factors to consider when implementing Chat Engine capabilities using a custom frontend.
 
 {% hint style="info" %}
-Make sure you do all API calls to Rocket.Chat on the backend, to avoid exposing sensitive data.
+Make sure you do all API calls to Rocket.Chat on the backend to avoid exposing sensitive data.
 {% endhint %}
 
 ### Authentication and Token Generation
 
-In this scenario, you have your own login mechanism for end users on your application. However, you need to authenticate the user with Rocket.Chat to provide chat functionality.
+In this scenario, you have your application's login mechanism for end users. However, you need to authenticate the user with Rocket.Chat to provide chat functionality.
 
 To achieve this:
 
-Use a specified Rocket.Chat admin credentials to call the Create User Token API endpoint from your backend for an existing user. This allows your backend service(accessible only to authenticated users on your platform) to request an `Authorization token` from Rocket.Chat for the user. Use this token for subsequent requests to Rocket.Chat.
+Use a specified Rocket.Chat admin credentials to call the Create User Token API endpoint from your backend for an existing user. This allows your backend service (accessible only to authenticated users on your platform) to request  `Authorization token` from Rocket.Chat for the user. Use this token for subsequent requests to Rocket.Chat.
 
 #### Login Workflow
 
@@ -34,7 +34,7 @@ The `authToken` has an expiry time set. Be sure to refresh when it expires.
 
 #### Logout Mechanism
 
-Currently, when a user navigates to another page, they will need to be reauthenticated. You can simulate the logout process appropriately by calling the Logout API endpoint. This causes the `authToken` to expire.
+When a user navigates to another page, they must be reauthenticated. You can simulate the logout process appropriately by calling the Logout API endpoint. This causes the `authToken` to expire.
 
 ### User Interface
 
@@ -43,4 +43,4 @@ You can structure the user interface as much as you can by utilizing the endpoin
 A typical example is:\
 Upon successful login, the application presents the user with a list of Rooms to which the user has access. When the user selects a room, an iframe is populated with the corresponding embedded URL for that channel or room.
 
-Read more about iframe embed in this section [chat-engine-in-iframe.md](chat-engine-in-iframe.md "mention").
+Read more about the iframe embed in [chat-engine-in-iframe.md](chat-engine-in-iframe.md "mention").
