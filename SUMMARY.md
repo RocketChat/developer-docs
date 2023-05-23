@@ -309,7 +309,7 @@
           * [Livechat Queue](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue.md)
           * [Rooms](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/README.md)
             * [Livechat Rooms list](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/livechat-rooms-list.md)
-            * [Set Livechat room Priorit](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/set-livechat-room-priorit.md)
+            * [Set Livechat room Priority](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/set-livechat-room-priorit.md)
             * [Remove Livechat room Priority](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/remove-livechat-room-priority.md)
             * [Room Onhold](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/room-onhold.md)
           * [SMS Incoming (Twilio)](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/sms-incoming-twilio.md)

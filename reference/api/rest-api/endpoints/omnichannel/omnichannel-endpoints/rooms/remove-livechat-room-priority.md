@@ -8,9 +8,9 @@ Remove the priority set to a Live Chat room.
 You are required to have the `view-l-room` permission.
 {% endhint %}
 
-| URL                           | Requires Auth | HTTP Method |
-| ----------------------------- | ------------- | ----------- |
-| `livechat/room/:rid/priority` | `YES`         | `POST`      |
+| URL                                  | Requires Auth | HTTP Method |
+| ------------------------------------ | ------------- | ----------- |
+| `api/v1/livechat/room/:rid/priority` | `YES`         | `DELETE`    |
 
 ## Headers
 
