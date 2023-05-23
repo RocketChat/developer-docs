@@ -612,6 +612,7 @@
         * [Roles Endpoints](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/README.md)
           * [Role AddUserToRole](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/addusertorole.md)
           * [Role Create](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/create.md)
+          * [Role Update](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/create-1.md)
           * [Role Get Users In Role](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/getusersinrole.md)
           * [Role List](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/list.md)
           * [Role Sync](reference/api/rest-api/endpoints/core-endpoints/roles-endpoints/sync.md)

@@ -1,24 +1,27 @@
 # Role Create
 
+<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
 Create a new role in the system.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/roles.create` | `yes` | `POST` |
+| URL                    | Requires Auth | HTTP Method |
+| ---------------------- | ------------- | ----------- |
+| `/api/v1/roles.create` | `yes`         | `POST`      |
 
 **Note:**
 
-* This endpoint **don't** update existing roles. For that use `roles.update`.
-* It's **not allowed** to create new roles with the same name of existing roles. For example: creating a new role with the `admin` name **is not** possible.
+* This endpoint **doesn't** update existing roles. See [create-1.md](create-1.md "mention").
+* You can't create new roles with the same name as existing roles. _For example,_ it is not possible to create a new role with the name `admin` .
+* The **scope** can either be `Users` or `Subscriptions`.
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `name` | `newRole` | Required | The name of the new role. |
-| `scope` | `Subscriptions` | Optional   Default: `Users` | The scope of the new role. |
-| `description` | `Role description` | Optional | A description for the new role. |
-| `mandatory2fa` | `true` | Optional Default: `false` | Whether the role should have a mandatory 2 Factor Authentication. |
+| Argument       | Example            | Required                  | Description                                                       |
+| -------------- | ------------------ | ------------------------- | ----------------------------------------------------------------- |
+| `name`         | `newRole`          | Required                  | The name of the new role.                                         |
+| `scope`        | `Subscriptions`    | Optional Default: `Users` | The scope of the new role.                                        |
+| `description`  | `Role description` | Optional                  | A description for the new role.                                   |
+| `mandatory2fa` | `true`             | Optional Default: `false` | Whether the role should have a mandatory 2 Factor Authentication. |
 
 ## Example Call
 
@@ -37,11 +40,13 @@ curl -H "Content-type:application/json" \
 ```javascript
 {
     "role": {
-        "_id": "newRole",
-        "name": "newRole",
+        "_id": "646c431fa8c3a3ba32d0e1c4",
+        "name": "support1",
         "scope": "Subscriptions",
-        "description": "Role description",
-        "_updatedAt": "2018-08-23T03:57:54.603Z"
+        "description": "Role support tier 1",
+        "protected": false,
+        "mandatory2fa": false,
+        "_updatedAt": "2023-05-23T04:37:51.161Z"
     },
     "success": true
 }
@@ -49,8 +54,7 @@ curl -H "Content-type:application/json" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 0.70.0 | Added |
-| 3.15.0 | Is no longer used to update roles |
-
+| Version | Description                       |
+| ------- | --------------------------------- |
+| 0.70.0  | Added                             |
+| 3.15.0  | Is no longer used to update roles |
