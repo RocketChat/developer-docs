@@ -332,6 +332,7 @@
           * [Canned Responses](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses.md)
             * [Create a Canned Response](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses/create-a-canned-response.md)
             * [Get Canned Responses](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses/get-canned-responses.md)
+            * [Remove Canned Response](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/canned-responses/remove-canned-response.md)
           * [Monitors](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/README.md)
             * [Get Monitors](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/get-monitors.md)
             * [Get a Monitor](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/get-a-monitor.md)
