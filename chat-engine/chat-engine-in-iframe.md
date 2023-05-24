@@ -2,15 +2,21 @@
 
 One approach of incorporating Rocket.Chat's chat capabilities into your application is through embedding it within an iframe. This method allows you to integrate the original Rocket.Chat's chat interface seamlessly into your existing front-end system.&#x20;
 
-## Prerequisites
+## Considerations
 
-Prior to proceeding with the iframe embed, certain settings need to be configured in your workspace.
+Before proceeding with the iframe embed, these settings need to be configured in your workspace based on your desired implementation.
 
+{% hint style="info" %}
 * Navigate to **Administration** -> **Workspace** -> **Settings** -> **General**
-  * Disable **Restrict access inside any Iframe.**
-  * Turn on **Enable CORS** under **REST API.**
-  * Switch on **Enable Send** and **Enable Receive** of iframe events under **Iframe Integration**.
-* Navigate to **Administration** -> **Workspace** -> **Settings** -> **Layout** -> **User Interface** and disable **Show top navbar in embedded layout**.
+  * Switch on **Enable Send** and **Enable Receive** of iframe events under **Iframe Integration**.: Allows Rocket.Chat to send and receive events to iframes embedded within it. This is crucial for seamless communication and interaction between the Rocket.Chat workspace and the content within iframes.
+  * Disable **Restrict access inside any Iframe:** Removes restriction for your Rocket.Chat workspace to be embedded within an iframe on another website. Ideally, this should be configured for security purposes.
+  * Turn on **Enable CORS** under **REST API:**  Allows API Requests from other domains to be allowed on your Rocket.Chat server. This is only necessary if REST API calls are to be made from the front end. It is recommended to call from your backend.
+* If you want the top header to be hidden within your iframe embed, Navigate to **Administration** -> **Workspace** -> **Settings** -> **Layout** -> **User Interface** and disable **Show top navbar in embedded layout**.
+{% endhint %}
+
+{% hint style="warning" %}
+API calls to Rocket.Chat should typically be made from the server side and should be available only to app-authenticated users.
+{% endhint %}
 
 ## Procedure
 
@@ -51,7 +57,7 @@ Learn more about [iframe integration](../customize-and-embed/iframe-integration/
 
 You can choose to authenticate users based on details from your application or create Rocket.Chat users on the fly to authenticate for chat capabilities.
 
-After [creating a user](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-user.md) and getting their [user token](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-users-token.md) with the API endpoints, utilize the iframe's `onload` event(when the iframe loads) and the `postMessage` API to pass the users `auth-token` into the iframe to be used for authentication in the embedded chat interface.
+After [creating a user](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-user.md) and getting their [user token](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-users-token.md) with the API endpoints, utilize the iframe's `onload` event(when the iframe loads) and the `postMessage` API to pass the users `auth-token` into the iframe to be used for authentication in the embedded chat interface.&#x20;
 
 Here is an example of how to handle the `onload` event and pass the authentication token:
 
@@ -72,8 +78,6 @@ iframe.onload = function() {
 Replace the `user-auth-token` with the actual authentication token of the user obtained earlier. This code snippet demonstrates how to retrieve the iframe element and tie the `onload` iframe event to send the auth token to the embedded chat interface using the `postMessage` API.
 
 A list of Rocket.Chat iframe embed commands can be seen [here](../customize-and-embed/iframe-integration/iframe-integration-sending-commands.md).
-
-To interact with the rooms and handle user actions, such as opening a room, you can implement event listeners and utilize the Rocket.Chat WebSocket API. The WebSocket API allows real-time communication and provides a seamless chatting experience for users.
 
 ### **Customizing the Embedded Layout**
 

@@ -43,4 +43,6 @@ You can structure the user interface as much as you can by utilizing the endpoin
 A typical example is:\
 Upon successful login, the application presents the user with a list of Rooms to which the user has access. When the user selects a room, an iframe is populated with the corresponding embedded URL for that channel or room.
 
+To interact with the rooms and handle user actions, such as opening a room, you can implement event listeners and utilize the Rocket.Chat WebSocket API. The WebSocket API allows real-time communication and provides a seamless chatting experience for users.
+
 Read more about the iframe embed in [chat-engine-in-iframe.md](chat-engine-in-iframe.md "mention").
