@@ -360,6 +360,8 @@
             * [Get a Tag](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-tags/get-a-tag.md)
             * [List of Tags](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-tags/list-of-tags.md)
             * [Get one Tag](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-tags/get-one-tag.md)
+          * [Transcript](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/transcript/README.md)
+            * [Request PDF Transcript](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/transcript/request-pdf-transcript.md)
           * [Units](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/units/README.md)
             * [Get Units](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/units/get-units.md)
             * [Get a Unit](reference/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/units/get-a-unit.md)
