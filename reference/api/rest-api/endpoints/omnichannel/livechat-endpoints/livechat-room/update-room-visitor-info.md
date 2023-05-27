@@ -8,17 +8,11 @@ description: Updates room visitor's information
 You are required to have `the view-l-room` permission.
 {% endhint %}
 
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/room.visitor` | `yes`         | `PUT`       |
+<table><thead><tr><th width="364.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>/api/v1/livechat/room.visitor</code></td><td><code>yes</code></td><td><code>PUT</code></td></tr></tbody></table>
 
 ## Payload
 
-| Argument       | Example             | Required | Description             |
-| -------------- | ------------------- | -------- | ----------------------- |
-| `rid`          | `XFzMqgn33DcsQkpJp` | Required | The room `_id`.         |
-| `newvisitorId` | `iNKE8a6k6cjbqWhWd` | Required | The visitor's new `id`. |
-| `oldVisitorId` | `iNKE8a6k6cjbqWhWd` | Required | The visitor's old `id`. |
+<table><thead><tr><th width="179">Argument</th><th>Example</th><th width="131">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>XFzMqgn33DcsQkpJp</code></td><td>Required</td><td>The room <code>_id</code>.</td></tr><tr><td><code>newvisitorId</code></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>Required</td><td>The visitor's new <code>id</code>.</td></tr><tr><td><code>oldVisitorId</code></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>Required</td><td>The visitor's old <code>id</code>.</td></tr></tbody></table>
 
 ## Example payload
 

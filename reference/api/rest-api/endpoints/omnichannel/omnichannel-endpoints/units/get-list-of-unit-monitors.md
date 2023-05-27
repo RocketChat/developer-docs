@@ -4,9 +4,7 @@ Provides a list of monitors for a unit
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
-| URL                                      | Requires Auth | HTTP Method |
-| ---------------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/units/:unitId/monitors` | `YES`         | `GET`       |
+<table><thead><tr><th width="435.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/units/:unitId/monitors</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 

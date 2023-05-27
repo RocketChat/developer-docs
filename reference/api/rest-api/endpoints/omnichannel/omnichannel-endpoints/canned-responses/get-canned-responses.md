@@ -10,10 +10,7 @@ Get a list of [canned responses](https://docs.rocket.chat/use-rocket.chat/omnich
 
 ## Headers
 
-| Argument       | Example        | Required | Description                 |
-| -------------- | -------------- | -------- | --------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated  user ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                 |
+<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 
 

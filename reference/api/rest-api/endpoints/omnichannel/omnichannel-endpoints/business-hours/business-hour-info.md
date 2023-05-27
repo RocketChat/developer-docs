@@ -4,9 +4,7 @@ Retrieves all the business hours attached to a workspace
 
 <figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-| URL                              | Requires Auth | HTTP Method |
-| -------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/business-hours` | `YES`         | `GET`       |
+<table><thead><tr><th width="352.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/business-hours</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 
@@ -17,9 +15,7 @@ Retrieves all the business hours attached to a workspace
 
 ## Query Parameters
 
-| Argument | Example               | Required | Description               |
-| -------- | --------------------- | -------- | ------------------------- |
-| `name`   | `indian support time` | Optional | name of the business hour |
+<table><thead><tr><th width="125">Argument</th><th width="233">Example</th><th width="150">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>indian support time</code></td><td>Optional</td><td>name of the business hour</td></tr></tbody></table>
 
 ## Example Call
 

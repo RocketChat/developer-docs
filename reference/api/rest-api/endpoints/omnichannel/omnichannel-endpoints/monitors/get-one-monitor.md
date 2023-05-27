@@ -10,9 +10,7 @@ description: Gives the details of a monitor
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-monitor.md](get-a-monitor.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/monitors.getOne` | `YES`         | `GET`       |
+<table><thead><tr><th width="375.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/monitors.getOne</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 

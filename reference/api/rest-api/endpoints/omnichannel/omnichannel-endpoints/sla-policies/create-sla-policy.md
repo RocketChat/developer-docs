@@ -14,18 +14,11 @@ You are required to have the `manage-livechat-sla` permission.
 
 ## Headers
 
-| Argument       | Example        | Required | Description                |
-| -------------- | -------------- | -------- | -------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated user ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                |
+<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 ## Payload
 
-| Argument           | Example           | Required | Description                 |
-| ------------------ | ----------------- | -------- | --------------------------- |
-| `name`             | `grand`           | Required | The name of the SLA policy. |
-| `description`      | `sla description` | Required | The SLA description.        |
-| `dueTimeInMinutes` | 4                 | Required | The SLA due time.           |
+<table><thead><tr><th width="250">Argument</th><th width="188">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>grand</code></td><td>Required</td><td>The name of the SLA policy.</td></tr><tr><td><code>description</code></td><td><code>sla description</code></td><td>Required</td><td>The SLA description.</td></tr><tr><td><code>dueTimeInMinutes</code></td><td>4</td><td>Required</td><td>The SLA due time.</td></tr></tbody></table>
 
 ## Example Call
 

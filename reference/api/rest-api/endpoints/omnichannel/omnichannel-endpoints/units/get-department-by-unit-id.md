@@ -4,9 +4,7 @@ Gives departments included in a specific unit id
 
 ![](../../../../../../../.gitbook/assets/enterprise.jpg)
 
-| URL                                         | Requires Auth | HTTP Method |
-| ------------------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/units/:unitId/departments` | `YES`         | `GET`       |
+<table><thead><tr><th width="463.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/units/:unitId/departments</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 
@@ -17,9 +15,7 @@ Gives departments included in a specific unit id
 
 ## Path Variables
 
-| Argument | Example             | Required | Description |
-| -------- | ------------------- | -------- | ----------- |
-| `unitId` | `sriw2wmP2Zz2pPrre` | Required | Unit Id     |
+<table><thead><tr><th>Argument</th><th width="227">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>unitId</code></td><td><code>sriw2wmP2Zz2pPrre</code></td><td>Required</td><td>Unit Id</td></tr></tbody></table>
 
 ## Example Call
 

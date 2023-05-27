@@ -10,9 +10,7 @@ Removes an integration from the server. Requires `manage-incoming-integrations` 
 
 ### Payload
 
-| Argument        | Example             | Required | Description                          |
-| --------------- | ------------------- | -------- | ------------------------------------ |
-| `integrationId` | `oNLthAt9RwMw39N2B` | Required | The id of the integration to remove. |
+<table><thead><tr><th>Argument</th><th>Example</th><th width="150">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>integrationId</code></td><td><code>oNLthAt9RwMw39N2B</code></td><td>Required</td><td>The id of the integration to remove.</td></tr></tbody></table>
 
 ### Example Call
 

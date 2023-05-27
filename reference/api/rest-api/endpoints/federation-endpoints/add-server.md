@@ -10,9 +10,7 @@ description: Adds a new Server to search for public rooms later
 
 ## Payload
 
-| Argument     | Example                 | Required | Description             |
-| ------------ | ----------------------- | -------- | ----------------------- |
-| `serverName` | `my-server.rocket.chat` | Required | The public server name. |
+<table><thead><tr><th width="225">Argument</th><th>Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>serverName</code></td><td><code>my-server.rocket.chat</code></td><td>Required</td><td>The public server name.</td></tr></tbody></table>
 
 ## Example payload
 

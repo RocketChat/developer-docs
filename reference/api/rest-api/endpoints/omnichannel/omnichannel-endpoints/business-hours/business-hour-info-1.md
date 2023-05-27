@@ -6,9 +6,7 @@ Fetches the default business hours of a workspace
 This requires the user making the call to have the `view-livechat-business-hours` permission
 {% endhint %}
 
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/business-hour` | `YES`         | `GET`       |
+<table><thead><tr><th width="352.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/business-hour</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 

@@ -10,19 +10,11 @@ Create a new [canned response](https://docs.rocket.chat/use-rocket.chat/omnichan
 
 ## Headers
 
-| Argument       | Example        | Required | Description                 |
-| -------------- | -------------- | -------- | --------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated  user ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                 |
+<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 ## Payload
 
-| Argument   | Example                            | Required | Description                          |
-| ---------- | ---------------------------------- | -------- | ------------------------------------ |
-| `shortcut` | `card-declined`                    | Required | The shortcut to the message snippet. |
-| `text`     | `reasons for your cardmalfunction` | Required | The message snippet                  |
-| `scope`    | `global`                           | Required | The scope of the canned response     |
-| tags       | `card`                             | Optional | The tags for your canned response.   |
+<table><thead><tr><th width="216">Argument</th><th width="188">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>shortcut</code></td><td><code>card-declined</code></td><td>Required</td><td>The shortcut to the message snippet.</td></tr><tr><td><code>text</code></td><td><code>reasons for your cardmalfunction</code></td><td>Required</td><td>The message snippet</td></tr><tr><td><code>scope</code></td><td><code>global</code></td><td>Required</td><td>The scope of the canned response</td></tr><tr><td>tags</td><td><code>card</code></td><td>Optional</td><td>The tags for your canned response.</td></tr></tbody></table>
 
 ## Example payload
 

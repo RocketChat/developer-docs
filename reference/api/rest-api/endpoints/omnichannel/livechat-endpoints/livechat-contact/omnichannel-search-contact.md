@@ -15,11 +15,7 @@ Use this endpoint to find Omnichannel contacts by name, email, phone number, or 
 
 ## Query Parameters
 
-| Argument | Example             | Required | Description                         |
-| -------- | ------------------- | -------- | ----------------------------------- |
-| `email`  | `email@rocket.chat` | Optional | Search contacts by Co email address |
-| `phone`  | `+13xxxxxxxxx`      | Optional | Contact phone number                |
-| `custom` | `fieldName=value`   | Optional | Contact custom field                |
+<table><thead><tr><th width="139">Argument</th><th>Example</th><th width="154">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>email</code></td><td><code>email@rocket.chat</code></td><td>Optional</td><td>Search contacts by Co email address</td></tr><tr><td><code>phone</code></td><td><code>+13xxxxxxxxx</code></td><td>Optional</td><td>Contact phone number</td></tr><tr><td><code>custom</code></td><td><code>fieldName=value</code></td><td>Optional</td><td>Contact custom field</td></tr></tbody></table>
 
 ## Example Call
 

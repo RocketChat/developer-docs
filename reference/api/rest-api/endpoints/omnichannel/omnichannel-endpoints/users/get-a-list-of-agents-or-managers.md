@@ -6,15 +6,15 @@ description: Get a list of agents or managers.
 
 It supports the Offset, Count, and Sort Query Parameters.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/users/:type` | `yes` | `GET` |
+| URL                            | Requires Auth | HTTP Method |
+| ------------------------------ | ------------- | ----------- |
+| `/api/v1/livechat/users/:type` | `yes`         | `GET`       |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `type` | `agent` | Required | Can be either `agent` or `manager`. |
+| Argument | Example | Required | Description                         |
+| -------- | ------- | -------- | ----------------------------------- |
+| `type`   | `agent` | Required | Can be either `agent` or `manager`. |
 
 ## Example Call
 
@@ -44,10 +44,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 2.2.0 | Added support to pagination |
-| 0.42.0 | Added |
+<table><thead><tr><th>Version</th><th width="376">Description</th></tr></thead><tbody><tr><td>2.2.0</td><td>Added support to pagination</td></tr><tr><td>0.42.0</td><td>Added</td></tr></tbody></table>
 
-## 
-
+##

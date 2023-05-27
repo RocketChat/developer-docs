@@ -10,9 +10,7 @@ description: Join an external public room
 
 ## Payload
 
-| Argument         | Example                      | Required | Description                  |
-| ---------------- | ---------------------------- | -------- | ---------------------------- |
-| `externalRoomId` | `!externalRoomId:server.com` | Required | The external public room id. |
+<table><thead><tr><th width="225">Argument</th><th>Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>externalRoomId</code></td><td><code>!externalRoomId:server.com</code></td><td>Required</td><td>The external public room id.</td></tr></tbody></table>
 
 ## Example payload
 

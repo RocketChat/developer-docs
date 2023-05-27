@@ -16,10 +16,7 @@ description: Gives a list of tags
 
 ## Headers
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="177">Argument</th><th>Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>Your username hash (returned after you log in through the API)</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Your token (returned after you log in through the API)</td></tr></tbody></table>
 
 ## Example Call
 

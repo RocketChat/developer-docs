@@ -8,28 +8,19 @@ Update an existing Priority.
 You are required to have the `manage-livechat-priorities` permission.
 {% endhint %}
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `livechat/priorities/:priorityId` | `YES`         | `PUT`       |
+<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>livechat/priorities/:priorityId</code></td><td><code>YES</code></td><td><code>PUT</code></td></tr></tbody></table>
 
 ## Headers
 
-| Argument       | Example        | Required | Description                 |
-| -------------- | -------------- | -------- | --------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated ouser ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                 |
+<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated ouser ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 ## Path Parameters
 
-| Argument     | Example                    | Required | Description                       |
-| ------------ | -------------------------- | -------- | --------------------------------- |
-| `priorityId` | `641daf3d7718f90c810429c8` | Required | The Id of the Priority to update. |
+<table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>priorityId</code></td><td><code>641daf3d7718f90c810429c8</code></td><td>Required</td><td>The Id of the Priority to update.</td></tr></tbody></table>
 
 ## Payload
 
-| Argument | Example    | Required | Description               |
-| -------- | ---------- | -------- | ------------------------- |
-| `name`   | `Very low` | Optional | The name of the Priority. |
+<table><thead><tr><th width="216">Argument</th><th width="188">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>Very low</code></td><td>Optional</td><td>The name of the Priority.</td></tr></tbody></table>
 
 ## Example Call
 

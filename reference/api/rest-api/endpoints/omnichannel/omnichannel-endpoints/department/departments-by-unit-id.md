@@ -10,9 +10,7 @@ description: Gives departments included in a specific unit id
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-department-by-unit-id.md](../units/get-department-by-unit-id.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
-| URL                                           | Requires Auth | HTTP Method |
-| --------------------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/departments.by-unit/:unitId` | `YES`         | `GET`       |
+<table><thead><tr><th width="324">URL</th><th width="183.33333333333331">Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/departments.by-unit/:unitId</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 

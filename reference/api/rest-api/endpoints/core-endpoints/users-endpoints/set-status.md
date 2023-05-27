@@ -10,12 +10,7 @@ description: Sets a user Status when the status message and state is given.
 
 ## Arguments
 
-| Argument   | Example             | Required | Description                                                                          |
-| ---------- | ------------------- | -------- | ------------------------------------------------------------------------------------ |
-| `message`  | `My status update.` | Required | The user's status message.                                                           |
-| `status`   | `online`            | Optional | The user's status like `online`, `away`, `busy`, `offline`.                          |
-| `userId`   | `zXuq7SvPKYbzYmfpo` | Optional | The userId to change. The running user must have `edit-other-user-info` permission   |
-| `username` | `rocket.cat`        | Optional | The username to change. The running user must have `edit-other-user-info` permission |
+<table><thead><tr><th>Argument</th><th>Example</th><th width="121">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>message</code></td><td><code>My status update.</code></td><td>Required</td><td>The user's status message.</td></tr><tr><td><code>status</code></td><td><code>online</code></td><td>Optional</td><td>The user's status like <code>online</code>, <code>away</code>, <code>busy</code>, <code>offline</code>.</td></tr><tr><td><code>userId</code></td><td><code>zXuq7SvPKYbzYmfpo</code></td><td>Optional</td><td>The userId to change. The running user must have <code>edit-other-user-info</code> permission</td></tr><tr><td><code>username</code></td><td><code>rocket.cat</code></td><td>Optional</td><td>The username to change. The running user must have <code>edit-other-user-info</code> permission</td></tr></tbody></table>
 
 ## Example Call
 

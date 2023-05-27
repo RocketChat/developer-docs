@@ -2,11 +2,5 @@
 
 ## Rooms (EE)
 
-| Url                                    | Short Description                                | Details Page                         |
-| -------------------------------------- | ------------------------------------------------ | ------------------------------------ |
-| `api/v1/federation/addServerByUser`    | Adds a server to search public rooms later       | [Link](add-server.md)                |
-| `api/v1/federation/listServersByUser`  | Retrieves all the server names saved by the user | [Link](list-servers.md)              |
-| `api/v1/federation/removeServerByUser` | Remove a server name                             | [Link](remove-server.md)             |
-| `api/v1/federation/searchPublicRooms`  | Returns all the public room given a server name  | [Link](search-public-rooms.md)       |
-| `api/v1/joinExternalPublicRoom`        | Joins an External public Matrix room             | [Link](join-external-public-room.md) |
+<table><thead><tr><th width="180">Url</th><th width="323">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/federation/addServerByUser</code></td><td>Adds a server to search public rooms later</td><td><a href="add-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/listServersByUser</code></td><td>Retrieves all the server names saved by the user</td><td><a href="list-servers.md">Link</a></td></tr><tr><td><code>api/v1/federation/removeServerByUser</code></td><td>Remove a server name</td><td><a href="remove-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/searchPublicRooms</code></td><td>Returns all the public room given a server name</td><td><a href="search-public-rooms.md">Link</a></td></tr><tr><td><code>api/v1/joinExternalPublicRoom</code></td><td>Joins an External public Matrix room</td><td><a href="join-external-public-room.md">Link</a></td></tr></tbody></table>
 

@@ -8,22 +8,15 @@ Get details of an SLA policy.
 You are required to have the `manage-livechat-sla` or `view-l-room` permission.
 {% endhint %}
 
-| URL                          | Requires Auth | HTTP Method |
-| ---------------------------- | ------------- | ----------- |
-| `api/v1/livechat/sla/:slaId` | `YES`         | `GET`       |
+<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/sla/:slaId</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 
 ## Headers
 
-| Argument       | Example        | Required | Description                |
-| -------------- | -------------- | -------- | -------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated user ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                |
+<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 ## Path Parameters
 
-| Argument | Example                    | Required | Description                 |
-| -------- | -------------------------- | -------- | --------------------------- |
-| `slaId`  | `641daf3d7718f90c810429c8` | Required | The Id of the SLA to fetch. |
+<table><thead><tr><th width="134">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>slaId</code></td><td><code>641daf3d7718f90c810429c8</code></td><td>Required</td><td>The Id of the SLA to fetch.</td></tr></tbody></table>
 
 ## Example Call
 
