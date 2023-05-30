@@ -2,19 +2,19 @@
 
 Authenticate with Google.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/login` | `no` | `POST` |
+| URL             | Requires Auth | HTTP Method |
+| --------------- | ------------- | ----------- |
+| `/api/v1/login` | `no`          | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `serviceName` | `google` | Required | The desired OAuth service name |
-| `accessToken` | `hash` | Required | Access token provided by google oauth |
-| `idToken` | `hash` | Required | Id token provided by google auth |
-| `expiresIn` | `200` | Required | Lifetime of token\(in seconds\) |
-| `scope` | `profile` | Optional | Google scopes for API |
+| Argument      | Example   | Required | Description                           |
+| ------------- | --------- | -------- | ------------------------------------- |
+| `serviceName` | `google`  | Required | The desired OAuth service name        |
+| `accessToken` | `hash`    | Required | Access token provided by google oauth |
+| `idToken`     | `hash`    | Required | Id token provided by google auth      |
+| `expiresIn`   | `200`     | Required | Lifetime of token(in seconds)         |
+| `scope`       | `profile` | Optional | Google scopes for API                 |
 
 ## Example Call - As JSON
 
@@ -61,9 +61,8 @@ curl -H "Content-type:application/json" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added `avatarUrl` property to response |
-| 0.64.0 | Added `me` property to response |
-| 0.60.0 | Added |
-
+| Version | Description                            |
+| ------- | -------------------------------------- |
+| 1.0.0   | Added `avatarUrl` property to response |
+| 0.64.0  | Added `me` property to response        |
+| 0.60.0  | Added                                  |

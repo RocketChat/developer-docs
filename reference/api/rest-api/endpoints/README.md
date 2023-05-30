@@ -1,16 +1,16 @@
 # Endpoints
 
-#### [Access Tokens](access-tokens.md)
+#### [Access Tokens](other-important-endpoints/access-tokens-endpoints.md)
 
-#### [Pagination](pagination.md)
+#### [Pagination](other-important-endpoints/offset-and-count-and-sort-info.md)
 
-#### [Query and Fields](query-and-fields-info.md)
+#### [Query and Fields](other-important-endpoints/query-and-fields-info.md)
 
-#### [Rate Limiter Endpoints](rate-limiter-endpoints.md)
+#### [Rate Limiter Endpoints](other-important-endpoints/rate-limiter-endpoints.md)
 
-#### [Avatars](avatars.md)
+#### [Avatars](../avatars.md)
 
-#### [Authentication](authentication/)
+#### [Authentication](other-important-endpoints/authentication-endpoints/)
 
 #### [Two Factor Authentication](../../realtime-api/2fa.md)
 
@@ -291,7 +291,7 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | `/api/v1/useInviteToken`      | Reports to the server that an invite token was used.                      | [Link](core-endpoints/invite-endpoints/report-use-invite-token.md)                                                                       |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid.                                       | [Link](core-endpoints/invite-endpoints/validateinvitetoken.md)                                                                           |
 
-## **Misc** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Misc**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 Just some generic information, such as information about the server and authenticated user.
 
@@ -303,21 +303,21 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/me`           | Gets user data of the authenticated user                                         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/get-user-data)    |
 | `/api/v1/stdout.queue` | Retrieves last 1000 lines of server logsRetrieves last 1000 lines of server logs | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/miscellaneous-endpoints/get-stdout-queue) |
 
-## **Oauth apps** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Oauth apps**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                       | Short Description                          | Details Page                                       |
 | ------------------------- | ------------------------------------------ | -------------------------------------------------- |
 | `/api/v1/oauth-apps.get`  | Retrieves an OAuth App by id or client id. | [Link](core-endpoints/oauthapps-endpoints/get.md)  |
 | `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps.            | [Link](core-endpoints/oauthapps-endpoints/list.md) |
 
-## **Permissions** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Permissions**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                | Details Page                                                         |
 | ----------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](core-endpoints/permissions-endpoints/list-all-permissions.md) |
 | `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](core-endpoints/permissions-endpoints/update-permissions.md)   |
 
-## **Push** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Push**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                  | Short Description                   | Details Page                                                                                                                                       |
 | -------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -325,7 +325,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/push.token` | Removes push token.                 | [Link](core-endpoints/push-token-endpoints/deletepushtoken.md)                                                                                     |
 | `/api/v1/push.get`   | Get push notification for a message | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/Get%20push%20notification) |
 
-## **Roles** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Roles**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                                | Short Description                                                   | Details Page                                                                                                                              |
 | ---------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -338,7 +338,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/roles.delete`             | Deletes a role.                                                     | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
 | `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user.                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/role-remove)                     |
 
-## **Rooms** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Rooms**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                                            | Short Description                                        | Details Page                                                                                                                                        |
 | ---------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -359,7 +359,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/change-archivation-state)        |
 | `/api/v1/rooms.export`                         | Export room to a file or email.                          | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/export-room)                     |
 
-## **Settings** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Settings**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 You can get and update the settings via the REST API, only if you have permission to.
 
@@ -372,14 +372,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/settings/:_id`          | `GET`  | Retrieves a setting.                          | [Link](core-endpoints/settings-endpoints/get-setting-by-id.md)          |
 | `/api/v1/settings/:_id`          | `POST` | Updates a setting.                            | [Link](core-endpoints/settings-endpoints/update-setting.md)             |
 
-## **Stats** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Stats**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                       | Short Description         | Details Page                                                                                                                            |
 | ------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/statistics`      | Retrieves statistics      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics)      |
 | `/api/v1/statistics.list` | Retrieves statistics list | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics-list) |
 
-## **Subscriptions** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Subscriptions**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                            | Short Description                      | Details Page                                                              |
 | ------------------------------ | -------------------------------------- | ------------------------------------------------------------------------- |
@@ -388,7 +388,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/subscriptions.read`   | Marks a room as read.                  | [Link](core-endpoints/subscriptions-endpoints/mark-channel-as-read.md)    |
 | `/api/v1/subscriptions.unread` | Marks messages as unread.              | [Link](core-endpoints/subscriptions-endpoints/mark-messages-as-unread.md) |
 
-## **Teams** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Teams** <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                              | Short Description                                         | Details Page                                                                                                                                |
 | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -411,7 +411,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](core-endpoints/teams-endpoints/autocomplete-team.md)                                                                                 |
 | `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](core-endpoints/teams-endpoints/update-a-team.md)                                                                                     |
 
-## **Users** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Users**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                                           | Short Description                                              | Details Page                                                                                                                             |
 | --------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -453,13 +453,13 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.listTeams`                     | Lists users teams                                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams)     |
 | `/api/v1/users.logout`                        | Logs user out.                                                 | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint) |
 
-## **Video Conference** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Video Conference**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                                             | Short Description                                           | Details Page                                                                                                                              |
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
-## **Webdav** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Webdav**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                            | Short Description                    | Details Page                                                                                                            |
 | ------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
@@ -469,7 +469,7 @@ You can get and update the settings via the REST API, only if you have permissio
 
 <table><thead><tr><th width="180">Url</th><th width="323">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/federation/addServerByUser</code></td><td>Adds a server to search public rooms later</td><td><a href="federation-endpoints/add-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/listServersByUser</code></td><td>Retrieves all the server names saved by the user</td><td><a href="federation-endpoints/list-servers.md">Link</a></td></tr><tr><td><code>api/v1/federation/removeServerByUser</code></td><td>Remove a server name</td><td><a href="federation-endpoints/remove-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/searchPublicRooms</code></td><td>Returns all the public room given a server name</td><td><a href="federation-endpoints/search-public-rooms.md">Link</a></td></tr><tr><td><code>api/v1/joinExternalPublicRoom</code></td><td>Joins an External public Matrix room</td><td><a href="federation-endpoints/join-external-public-room.md">Link</a></td></tr></tbody></table>
 
-## Livechat Endpoints
+## Livechat&#x20;
 
 ### Agent
 
@@ -719,88 +719,27 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## Voice Channel
 
-| URL                                                   | Description                                     | Details Page                                                                           |
-| ----------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `/v1/connector.extension.getRegistrationInfoByUserId` | Get registration information by ID              | [Link](./#voip-registration-information)                                               |
-| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
-| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
-| `/api/v1/voip/queues.getSummary`                      | Get VoIP queue membership data                  | [Link](voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
-| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
-| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
-| `v1/voip/queues.getMembershipSubscription`            | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                       |
-| `api/v1/livechat/visitor`                             | Use this endpoint to create a VoIP visitor      | [Link](./#create-visitor)                                                              |
-|                                                       |                                                 |                                                                                        |
+| URL                                                                                           | Description                                     | Details Page                                                                           |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId`                                         | Get registration information by ID              | [Link](./#voip-registration-information)                                               |
+| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
+| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
+| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP queue membership data                  | [Link](voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
+| `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
+| `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
+| `v1/voip/queues.getMembershipSubscription`                                                    | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                       |
+| `api/v1/livechat/visitor`                                                                     | Create a VoIP visitor                           | [Link](./#create-visitor)                                                              |
+| `/api/v1/voip/events`                                                                         | Send VoIP events                                | [Link](./#send-voip-events)                                                            |
+| `/api/v1/omnichannel/extension`                                                               | Retrieve VoIP extension information             | [Link](./#fetch-voip-extensions)                                                       |
+| `/api/v1/omnichannel/extensions?count=10&offset=10`                                           | Retrieve VoIP extensions                        | [Link](./#fetch-voip-extensions)                                                       |
+| `/v1/omnichannel/agent/extension`                                                             | Create, update and delete VoIP extension        | [Link](./#agent-extensions)                                                            |
+| `/api/v1/voip/managementServer/checkConnection?host&port&username&password`                   | Check management server connection status       | [Link](./#check-management-server-connection)                                          |
+| `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Check call server connection status             | [Link](./#check-call-server-connection)                                                |
+| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi`          | Create VoIP room                                | [Link](./#create-voip-room)                                                            |
+| `/api/v1/voip/events`                                                                         | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                       |
+| `/api/v1/voip/room.clos`                                                                      | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                             |
 
-| URL                                                   | Description                                     | Details Page                                                                           |
-| ----------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `/v1/connector.extension.getRegistrationInfoByUserId` | Get registration information by ID              | [Link](./#voip-registration-information)                                               |
-| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
-| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
-| `/api/v1/voip/queues.getSummary`                      | Get VoIP queue membership data                  | [Link](voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
-| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
-| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
-| `v1/voip/queues.getMembershipSubscription`            | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                       |
-| `api/v1/livechat/visitor`                             | Create a VoIP visitor                           | [Link](./#create-visitor)                                                              |
-| `/api/v1/voip/events`                                 | Send VoIP events                                | [Link](./#send-voip-events)                                                            |
-
-###
-
-
-
-
-
-### Get Voice Channel Extension
-
-| **URL**                         | **Description**                                          | **Details Page**                 |
-| ------------------------------- | -------------------------------------------------------- | -------------------------------- |
-| `/api/v1/omnichannel/extension` | Use this endpoint to retrieve VoIP extension information | [Link](./#fetch-voip-extensions) |
-|                                 |                                                          |                                  |
-
-### Get Voice Channel Extensions
-
-| **URL**                                             | **Description**                               | **Details Page**                 |
-| --------------------------------------------------- | --------------------------------------------- | -------------------------------- |
-| `/api/v1/omnichannel/extensions?count=10&offset=10` | Use this endpoint to retrieve VoIP extensions | [Link](./#fetch-voip-extensions) |
-
-### Voice Channel Agent Extension
-
-| **URL**                           | **Description**                                               | **Details Page**            |
-| --------------------------------- | ------------------------------------------------------------- | --------------------------- |
-| `/v1/omnichannel/agent/extension` | Use this endpoint to create, update and delete VoIP extension | [Link](./#agent-extensions) |
-
-### Check Management Server Connection
-
-| **URL**                                                                     | **Description**                                                | **Details Page**                              |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------- |
-| `/api/v1/voip/managementServer/checkConnection?host&port&username&password` | Use this endpoint to check Management Server Connection Status | [Link](./#check-management-server-connection) |
-
-### Check Call Server Connection
-
-| **URL**                                                                                       | **Description**                                          | **Details Page**                        |
-| --------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------- |
-| `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Use this endpoint to check Call Server Connection Status | [Link](./#check-call-server-connection) |
-
-
-
-### Create Voice Channel Room (s)
-
-| **URL**                                                                              | **Description**                       | **Details Page**            |
-| ------------------------------------------------------------------------------------ | ------------------------------------- | --------------------------- |
-| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi` | Use this endpoint to create VoIP room | [Link](./#create-voip-room) |
-
-### Get Voice Channel Room by ID
-
-| **URL**               | **Description**                                           | **Details Page**                 |
-| --------------------- | --------------------------------------------------------- | -------------------------------- |
-| `/api/v1/voip/events` | Use this endpoint to retrieve VoIP room information by ID | [Link](./#fetch-voip-room-by-id) |
-
-### Close Voice Channel Room
-
-| **URL**                   | **Description**                               | **Details Page**           |
-| ------------------------- | --------------------------------------------- | -------------------------- |
-| `/api/v1/voip/room.close` | Use this endpoint close the VoIP conversation | [Link](./#close-voip-room) |
-
-### Licenses
+## Licenses
 
 | Url                             | Method | Short Description                            | Details Page                                   |
 | ------------------------------- | ------ | -------------------------------------------- | ---------------------------------------------- |
@@ -810,7 +749,7 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## WhatsApp
 
-| Description                                       | Details Page                                                       |
-| ------------------------------------------------- | ------------------------------------------------------------------ |
-| WhatsApp Business API integration for Rocket.Chat | [Link](whatsapp-endpoints/whatsapp-omnichannel-integration-api.md) |
-| Send a template message.                          | [Link](whatsapp-endpoints/template-whatsapp-message.md)            |
+| Description                                       | Details Page                                                                      |
+| ------------------------------------------------- | --------------------------------------------------------------------------------- |
+| WhatsApp Business API integration for Rocket.Chat | [Link](apps-endpoints/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md) |
+| Send a template message.                          | [Link](apps-endpoints/whatsapp-endpoints/template-message.md)                     |

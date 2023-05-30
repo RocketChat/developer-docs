@@ -1,6 +1,6 @@
 # List Integration History
 
-Lists all history of the specified integration. Requires the permission `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on user permission. It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md) along with [Query and Fields Query Parameters](../../query-and-fields-info.md).
+Lists all history of the specified integration. Requires the permission `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on user permission. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
 | URL                            | Requires Auth | HTTP Method |
 | ------------------------------ | ------------- | ----------- |

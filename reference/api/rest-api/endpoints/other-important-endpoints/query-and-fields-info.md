@@ -26,4 +26,3 @@ To only return the usernames for users, you would do something like this:
 `http://localhost:3000/api/v1/users.list?fields={ "username": 1 }`
 
 Top tip: Providing a `fields` value of `{"_id": false, "value": false}` will return all other fields.
-

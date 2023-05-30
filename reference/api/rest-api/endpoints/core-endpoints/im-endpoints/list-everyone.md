@@ -1,6 +1,6 @@
 # List Everyone
 
-Lists all of the direct messages in the server, requires the permission `view-room-administration` permission. It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md) along with [Query and Fields Query Parameters](../../query-and-fields-info.md).
+Lists all of the direct messages in the server, requires the permission `view-room-administration` permission. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
 
 | URL                        | Requires Auth | HTTP Method |
 | -------------------------- | ------------- | ----------- |

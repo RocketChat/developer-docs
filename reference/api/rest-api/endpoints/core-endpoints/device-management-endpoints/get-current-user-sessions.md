@@ -6,7 +6,7 @@ description: Get sessions of the authenticated user.
 
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Retrieves all sessions of the authenticated user making the request.  It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md).
+Retrieves all sessions of the authenticated user making the request.  It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
 
 | URL                     | Requires Auth | HTTP Method |
 | ----------------------- | ------------- | ----------- |

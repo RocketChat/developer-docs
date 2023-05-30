@@ -2,9 +2,9 @@
 
 Quick information about the authenticated user.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/me` | `yes` | `GET` |
+| URL          | Requires Auth | HTTP Method |
+| ------------ | ------------- | ----------- |
+| `/api/v1/me` | `yes`         | `GET`       |
 
 ## Example Call
 
@@ -85,9 +85,8 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| :--- | :--- |
-| 1.0.0 | Added `avatarUrl` property to response |
-| 0.68.0 | Added `customFields` property. |
-| 0.48.0 | Added |
-
+| Version | Description                            |
+| ------- | -------------------------------------- |
+| 1.0.0   | Added `avatarUrl` property to response |
+| 0.68.0  | Added `customFields` property.         |
+| 0.48.0  | Added                                  |

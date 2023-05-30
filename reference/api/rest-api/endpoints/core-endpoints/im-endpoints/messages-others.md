@@ -1,6 +1,6 @@
 # Messages Others
 
-Retrieves the messages from any direct message in the server. It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md) along with [Query and Fields Query Parameter](../../query-and-fields-info.md).
+Retrieves the messages from any direct message in the server. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameter](../../other-important-endpoints/query-and-fields-info.md).
 
 For this method to work, the `Enable Direct Message History Endpoint` setting (from the admin panel: `General > REST API > Enable Direct Message History Endpoint`) must be set to true, and the user calling this method must have the `view-room-administration` permission.
 

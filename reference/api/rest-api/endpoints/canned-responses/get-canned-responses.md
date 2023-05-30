@@ -2,7 +2,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Get a list of [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses). It supports the [Offset, Count, and Sort Query Parameters](../pagination.md).
+Get a list of [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses). It supports the [Offset, Count, and Sort Query Parameters](../other-important-endpoints/offset-and-count-and-sort-info.md).
 
 | URL                        | Requires Auth | HTTP Method |
 | -------------------------- | ------------- | ----------- |

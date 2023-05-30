@@ -6,11 +6,11 @@ description: List all sessions on the workspace.
 
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Retrieve the sessions of all users on the workspace.  It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md).
+Retrieve the sessions of all users on the workspace.  It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
 
 {% hint style="info" %}
 * It requires the `view-device-management`[permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-* It requires [two-factor authentication.](../../2fa.md#calling-an-endpoint-with-two-factor)
+* It requires [two-factor authentication.](../../other-important-endpoints/2fa.md#calling-an-endpoint-with-two-factor)
 {% endhint %}
 
 | URL                         | Requires Auth | HTTP Method |

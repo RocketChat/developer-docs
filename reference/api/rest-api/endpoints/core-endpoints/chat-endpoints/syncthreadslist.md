@@ -1,6 +1,6 @@
 # Sync Thread List
 
-List all custom emojis available. It supports the [Query, Fields](../../query-and-fields-info.md#query-example) and [sort](../../pagination.md).
+List all custom emojis available. It supports the [Query, Fields](../../other-important-endpoints/query-and-fields-info.md#query-example) and [sort](../../other-important-endpoints/offset-and-count-and-sort-info.md).
 
 | URL                            | Requires Auth | HTTP Method |
 | ------------------------------ | ------------- | ----------- |

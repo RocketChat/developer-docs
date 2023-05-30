@@ -2,7 +2,7 @@
 description: WhatsApp Business API Integration for Rocket.Chat
 ---
 
-# WhatsApp Omnichannel Integration API
+# WhatsApp omnichannel integration API
 
 ## Getting started with Template messages
 
@@ -37,13 +37,13 @@ You can set the _Message Status Endpoint URL_ in the Apps Settings.
 
 Following is the payload format you will receive on the endpoint
 
-|    **Field Name**   |                          **Type**                          |                               **Description**                              |
-| :-----------------: | :--------------------------------------------------------: | :------------------------------------------------------------------------: |
-|         msId        |                     String or undefined                    |                                 Message Id.                                |
-|       message       |                           String                           |                                Text message                                |
-|       mobileNo      |                           String                           |       Phone number of WhatsApp user to which you had sent the message      |
-| connectedWhatsAppNo |                           String                           | Your connected WhatsApp Number from which you had sent the message to user |
-|    MessageStatus    |                           String                           |         Status of message - sent, delivered, read, failed, deleted         |
-|     ErrorDetails    | <p>Optional <br> Type: String or WhatsApp error format</p> |              Errors from template messages will be shown here              |
-|         type        |                           String                           |                   `Template-Message` or `Regular-Message`                  |
-|      timestamp      |                           String                           |                            Timestamp of request                            |
+|    **Field Name**   |                         **Type**                         |                               **Description**                              |
+| :-----------------: | :------------------------------------------------------: | :------------------------------------------------------------------------: |
+|         msId        |                    String or undefined                   |                                 Message Id.                                |
+|       message       |                          String                          |                                Text message                                |
+|       mobileNo      |                          String                          |       Phone number of WhatsApp user to which you had sent the message      |
+| connectedWhatsAppNo |                          String                          | Your connected WhatsApp Number from which you had sent the message to user |
+|    MessageStatus    |                          String                          |         Status of message - sent, delivered, read, failed, deleted         |
+|     ErrorDetails    | <p>Optional<br>Type: String or WhatsApp error format</p> |              Errors from template messages will be shown here              |
+|         type        |                          String                          |                   `Template-Message` or `Regular-Message`                  |
+|      timestamp      |                          String                          |                            Timestamp of request                            |

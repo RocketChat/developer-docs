@@ -1,6 +1,6 @@
 # Get Users List
 
-Gets all of the users in the system and their information, the result is only limited to what the callee has access to view. It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md) along with [Query and Fields Query Parameter](../../query-and-fields-info.md).
+Gets all of the users in the system and their information, the result is only limited to what the callee has access to view. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameter](../../other-important-endpoints/query-and-fields-info.md).
 
 | URL                  | Requires Auth | HTTP Method |
 | -------------------- | ------------- | ----------- |

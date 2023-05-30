@@ -1,6 +1,6 @@
 # List Rooms Of User of a team
 
-Lists only the team's rooms the user has joined. Requires `view-all-team-channels` permission. It supports the [Offset and Count Parameters](../../pagination.md).
+Lists only the team's rooms the user has joined. Requires `view-all-team-channels` permission. It supports the [Offset and Count Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
 
 | URL                             | Requires Auth | HTTP Method |
 | ------------------------------- | ------------- | ----------- |
