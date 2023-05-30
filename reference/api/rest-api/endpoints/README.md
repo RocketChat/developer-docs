@@ -175,7 +175,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email)    |
 | `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox) |
 
-## Custom Emojis  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Custom Emoji <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                          | Details Page                                                                                                                                      |
 | ----------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -363,14 +363,14 @@ Just some generic information, such as information about the server and authenti
 
 You can get and update the settings via the REST API, only if you have permission to.
 
-| Url                              | Method | Short Description                             | Details Page                                                            |
-| -------------------------------- | ------ | --------------------------------------------- | ----------------------------------------------------------------------- |
-| `/api/v1/settings`               | `GET`  | Lists all private settings.                   | [Link](core-endpoints/settings-endpoints/get-private-settings.md)       |
-| `/api/v1/settings.public`        | `GET`  | Lists all public settings.                    | [Link](core-endpoints/settings-endpoints/get-public-settings.md)        |
-| `/api/v1/settings.oauth`         | `GET`  | Returns list of all available oauth services. | [Link](core-endpoints/settings-endpoints/get-all-oauth.md)              |
-| `/api/v1/service.configurations` | `GET`  | Lists all service configurations.             | [Link](core-endpoints/settings-endpoints/get-service-configurations.md) |
-| `/api/v1/settings/:_id`          | `GET`  | Retrieves a setting.                          | [Link](core-endpoints/settings-endpoints/get-setting-by-id.md)          |
-| `/api/v1/settings/:_id`          | `POST` | Updates a setting.                            | [Link](core-endpoints/settings-endpoints/update-setting.md)             |
+| Url                              | Short Description                             | Details Page                                                            |
+| -------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------- |
+| `/api/v1/settings`               | Lists all private settings.                   | [Link](core-endpoints/settings-endpoints/get-private-settings.md)       |
+| `/api/v1/settings.public`        | Lists all public settings.                    | [Link](core-endpoints/settings-endpoints/get-public-settings.md)        |
+| `/api/v1/settings.oauth`         | Returns list of all available oauth services. | [Link](core-endpoints/settings-endpoints/get-all-oauth.md)              |
+| `/api/v1/service.configurations` | Lists all service configurations.             | [Link](core-endpoints/settings-endpoints/get-service-configurations.md) |
+| `/api/v1/settings/:_id`          | Retrieves a setting.                          | [Link](core-endpoints/settings-endpoints/get-setting-by-id.md)          |
+| `/api/v1/settings/:_id`          | Updates a setting.                            | [Link](core-endpoints/settings-endpoints/update-setting.md)             |
 
 ## **Stats**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
@@ -459,7 +459,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
-## **Webdav**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+
 
 | URL                            | Short Description                    | Details Page                                                                                                            |
 | ------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
@@ -741,11 +741,11 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## Licenses
 
-| Url                             | Method | Short Description                            | Details Page                                   |
-| ------------------------------- | ------ | -------------------------------------------- | ---------------------------------------------- |
-| `/api/v1/licenses.get`          | `GET`  | Gets all registered licenses.                | [Link](licenses/get-licenses.md)               |
-| `/api/v1/licenses.isEnterprise` | `GET`  | Confirm if workspace has enterprise license. | [Link](licenses/confirm-enterprise-license.md) |
-| `licenses.maxActiveUsers`       | `GET`  | Get maximum active users.                    | [Link](licenses/get-maximum-active-user.md)    |
+| Url                             | Short Description                            | Details Page                                   |
+| ------------------------------- | -------------------------------------------- | ---------------------------------------------- |
+| `/api/v1/licenses.get`          | Gets all registered licenses.                | [Link](licenses/get-licenses.md)               |
+| `/api/v1/licenses.isEnterprise` | Confirm if workspace has enterprise license. | [Link](licenses/confirm-enterprise-license.md) |
+| `licenses.maxActiveUsers`       | Get maximum active users.                    | [Link](licenses/get-maximum-active-user.md)    |
 
 ## WhatsApp
 
