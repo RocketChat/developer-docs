@@ -1,13 +1,13 @@
 # Omnichannel
 
-{% content-ref url="livechat-endpoints/" %}
-[livechat-endpoints](livechat-endpoints/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="omnichannel-endpoints/" %}
-[omnichannel-endpoints](omnichannel-endpoints/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="call-center-endpoints/" %}
-[call-center-endpoints](call-center-endpoints/)
+{% content-ref url="voice-channel/" %}
+[voice-channel](voice-channel/)
 {% endcontent-ref %}
