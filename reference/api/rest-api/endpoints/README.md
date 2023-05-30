@@ -1,10 +1,24 @@
 # Endpoints
 
-## Assets Endpoints
+#### [Access Tokens](access-tokens.md)
+
+#### [Pagination](pagination.md)
+
+#### [Query and Fields](query-and-fields-info.md)
+
+#### [Rate Limiter Endpoints](rate-limiter-endpoints.md)
+
+#### [Avatars](avatars.md)
+
+#### [Authentication](authentication/)
+
+#### [Two Factor Authentication](../../realtime-api/2fa.md)
+
+## Assets&#x20;
 
 <table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/assets.setAsset</code></td><td>Sets an asset image by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset">Link</a></td></tr><tr><td><code>/api/v1/assets.unsetAsset</code></td><td>Unsets an asset by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset">Link</a></td></tr></tbody></table>
 
-## Auto Translate Endpoints
+## Auto Translate&#x20;
 
 | URL                                           | Short Description                               | Details Page                                                                                                        |
 | --------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -12,7 +26,7 @@
 | `/api/v1/autotranslate.saveSettings`          | Saves some settings about auto-translate.       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/savesettings)          |
 | `/api/v1/autotranslate.translateMessage`      | Translates the message.                         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/translatemessage)      |
 
-## Banners Endpoints
+## Banners&#x20;
 
 | URL                       | Short Description                                      | Details Page                                                                                                                 |
 | ------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -20,7 +34,7 @@
 | `/api/v1/banners`         | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banners)      |
 | `/api/v1/banners.dismiss` | Dismisses a banner                                     | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/dismiss-a-banner) |
 
-## Channels Endpoints
+## Channels
 
 These methods apply to public channels only. Use `groups.*` methods for private channels.
 
@@ -69,7 +83,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.unarchive`                   | Unarchives a channel.                                         | [Link](core-endpoints/channels-endpoints/unarchive.md)                                                                               |
 | `/api/v1/channels.convertToTeam`               | Converts channel to team                                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/convert-channel-to-team) |
 
-## Chat Endpoints
+## Chat&#x20;
 
 | URL                                    | Short Description                                                | Details Page                                                                                                                     |
 | -------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -102,13 +116,13 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.update`                  | Updates the text of the chat message.                            | [Link](core-endpoints/chat-endpoints/message-update.md)                                                                          |
 | `/api/v1/chat.syncMessages`            | Syncs messages                                                   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/sync-messages) |
 
-## Cloud Endpoints
+## Cloud&#x20;
 
 | URL                            | Short Description              | Details Page                                                                                                                              |
 | ------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/cloud.manualRegister` | Manually registers a workspace | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/cloud-endpoints/cloud-manual-register) |
 
-## Commands Endpoints
+## Commands&#x20;
 
 | URL                        | Short Description                                                         | Details Page                                                                                                                     |
 | -------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -118,13 +132,13 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](core-endpoints/commands-endpoints/preview.md)                                                                             |
 | `/api/v1/commands.preview` | Executes command's preview item                                           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
 
-## Custom Sounds Endpoints
+## Custom Sounds&#x20;
 
 | URL                          | Short Description                  | Details Page                                                                                                                                                     |
 | ---------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/\~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list) |
 
-## Custom User Status Endpoints
+## Custom User Status&#x20;
 
 | URL                                 | Short Description                         | Details Page                                                                                                                                                    |
 | ----------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -133,14 +147,14 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/custom-user-status.delete` | Deletes a custom user status              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/delete-custom-user-status)      |
 | `/api/v1/custom-user-status.update` | Updates a custom user status              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/update-custom-user-status-type) |
 
-## DNS Endpoints
+## DNS&#x20;
 
 | URL                       | Short Description                                      | Details Page                                                                                                                      |
 | ------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/dns.resolve.srv` | get                                                    | Document Under Development                                                                                                        |
 | `/api/v1/dns.resolve.txt` | Resolves DNS text records (TXT records) for a hostname | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/dns-endpoints/dns-resolve-txt) |
 
-## E2E Endpoints
+## E2E&#x20;
 
 | URL                                       | Short Description                                               | Details Page                                                                                                                                        |
 | ----------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -150,7 +164,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/set-users-key)                     |
 | `/api/v1/e2e.updateGroupKey`              | Updates the end-to-end encryption key for a user in a room.     | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/update-user-e2e-key-in-room)       |
 
-## Email Inbox Endpoints
+## Email Inbox&#x20;
 
 | URL                                  | Short Description                    | Details Page                                                                                                                                             |
 | ------------------------------------ | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,7 +175,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email)    |
 | `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox) |
 
-## Custom Emojis Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Custom Emojis  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                          | Details Page                                                                                                                                      |
 | ----------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -171,7 +185,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji.           | [Link](core-endpoints/custom-emoji-endpoints/delete-custom-emoji.md)                                                                              |
 | `/api/v1/emoji-custom.update` | Updates an existent custom emoji.          | [Link](core-endpoints/custom-emoji-endpoints/update-a-custom-emoji.md)                                                                            |
 
-## Groups Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Groups  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                              | Short Description                                           | Details Page                                                                                                                             |
 | -------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -214,7 +228,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/groups.setEncrypted`    | Sets the encryption for a group                             | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-set-encrypted) |
 | `/api/v1/groups.convertToTeam`   | Convert a private group to a team                           | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-converttoteam) |
 
-## IM Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## IM/DM <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                          | Short Description                                             | Details Page                                                                                                            |
 | ---------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -232,9 +246,11 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/im.open`            | Adds the direct message back to the list of direct messages.  | [Link](core-endpoints/im-endpoints/open.md)                                                                             |
 | `/api/v1/im.setTopic`        | Sets a direct message topic.                                  | [Link](core-endpoints/im-endpoints/settopic.md)                                                                         |
 
-From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
+{% hint style="info" %}
+From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
+{% endhint %}
 
-## Imports Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## Imports  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                                 | Short Description              | Details Page                                                                                                                                       |
 | ----------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -248,13 +264,13 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/downloadPendingAvata`      | Download pending avatars       | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-avatars)      |
 | `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-current-import-operations) |
 
-## **Instances** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Instances**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | URL                     | Short Description   | Details Page                                                                                                                          |
 | ----------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/instances.get` | Retrieves instances | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
 
-## **Integrations** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Integrations**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                            | Short Description                               | Details Page                                            |
 | ------------------------------ | ----------------------------------------------- | ------------------------------------------------------- |
@@ -265,7 +281,7 @@ From version 0.50.0 and on you can call the methods using `dm` instead of `im`.
 | `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](core-endpoints/integration-endpoints/remove.md)  |
 | `/api/v1/integrations.update`  | Updates an integration.                         | [Link](core-endpoints/integration-endpoints/update.md)  |
 
-## **Invites** Endpoints <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+## **Invites**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 | Url                           | Short Description                                                         | Details Page                                                                                                                             |
 | ----------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -792,4 +808,9 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/licenses.isEnterprise` | `GET`  | Confirm if workspace has enterprise license. | [Link](licenses/confirm-enterprise-license.md) |
 | `licenses.maxActiveUsers`       | `GET`  | Get maximum active users.                    | [Link](licenses/get-maximum-active-user.md)    |
 
-##
+## WhatsApp
+
+| Description                                       | Details Page                                                       |
+| ------------------------------------------------- | ------------------------------------------------------------------ |
+| WhatsApp Business API integration for Rocket.Chat | [Link](whatsapp-endpoints/whatsapp-omnichannel-integration-api.md) |
+| Send a template message.                          | [Link](whatsapp-endpoints/template-whatsapp-message.md)            |

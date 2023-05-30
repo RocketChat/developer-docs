@@ -1,6 +1,6 @@
 # Get Pinned Messages
 
-Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md)
+Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Query Parameters](../../pagination.md)
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |
@@ -8,11 +8,11 @@ Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Que
 
 ## Query Parameters
 
-| Argument | Example             | Required | Description                                                                               |
-| -------- | ------------------- | -------- | ----------------------------------------------------------------------------------------- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The room id                                                                               |
-| `offset` | `0`                 | Optional | See [Offset Parameter](../../other-important-endpoints/offset-and-count-and-sort-info.md) |
-| `count`  | `1`                 | Optional | See [Count Parameter](../../other-important-endpoints/offset-and-count-and-sort-info.md)  |
+| Argument | Example             | Required | Description                                 |
+| -------- | ------------------- | -------- | ------------------------------------------- |
+| `roomId` | `ByehQjC44FwMeiLbX` | Required | The room id                                 |
+| `offset` | `0`                 | Optional | See [Offset Parameter](../../pagination.md) |
+| `count`  | `1`                 | Optional | See [Count Parameter](../../pagination.md)  |
 
 ## Example Call
 

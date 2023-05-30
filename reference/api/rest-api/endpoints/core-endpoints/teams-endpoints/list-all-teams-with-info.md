@@ -1,6 +1,6 @@
 # List All Teams with Info
 
-Lists all of the teams and their information. Requires `view-all-teams` permission. It supports the [Offset and Count Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
+Lists all of the teams and their information. Requires `view-all-teams` permission. It supports the [Offset and Count Parameters](../../pagination.md).
 
 | URL                     | Requires Auth | HTTP Method |
 | ----------------------- | ------------- | ----------- |

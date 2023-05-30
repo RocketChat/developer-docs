@@ -4,7 +4,7 @@ description: Get an updated list of custom emojis
 
 # Get Updated list of custom emojis
 
-It supports the [Query Parameters only](../../other-important-endpoints/query-and-fields-info.md#query-example).
+It supports the [Query Parameters only](../../query-and-fields-info.md#query-example).
 
 | URL                         | Requires Auth | HTTP Method |
 | --------------------------- | ------------- | ----------- |

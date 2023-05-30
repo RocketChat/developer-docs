@@ -4,7 +4,7 @@ description: Get a list of all priorities
 
 # Get Priorities
 
-This supports the [Offset, Count, and Sort Query Parameters](../other-important-endpoints/offset-and-count-and-sort-info.md).
+This supports the [Offset, Count, and Sort Query Parameters](../pagination.md).
 
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 

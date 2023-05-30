@@ -4,7 +4,7 @@ Get a list of all SLA policies.
 
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-It supports the [Offset, Count, and Sort Query Parameters](../other-important-endpoints/offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../pagination.md).
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-sla` or `view-l-room` permission.

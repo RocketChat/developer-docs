@@ -2,7 +2,7 @@
 
 List all public settings. Learn how this can be used in configuring your server in [this guide](https://docs.rocket.chat/quick-start/environment-configuration/environment-variables#other-environment-variables).
 
-It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
+It supports the [Offset, Count, and Sort Query Parameters](../../pagination.md).
 
 | URL                       | Requires Auth | HTTP Method |
 | ------------------------- | ------------- | ----------- |

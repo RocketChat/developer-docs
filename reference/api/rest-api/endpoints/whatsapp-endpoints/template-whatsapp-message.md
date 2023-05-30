@@ -1,8 +1,8 @@
 ---
-description: Endpoint to send a template message
+description: Send a template message
 ---
 
-# Template Message
+# Template Whatsapp message
 
 | URL                                                                                                                                                                            | **Method** | **Input Data Format** |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------------- |
