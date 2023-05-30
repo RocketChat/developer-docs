@@ -703,45 +703,35 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## Voice Channel
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+| URL                                                   | Description                                     | Details Page                                                                           |
+| ----------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId` | Get registration information by ID              | [Link](./#voip-registration-information)                                               |
+| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
+| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
+| `/api/v1/voip/queues.getSummary`                      | Get VoIP queue membership data                  | [Link](voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
+| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
+| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
+| `v1/voip/queues.getMembershipSubscription`            | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                       |
+| `api/v1/livechat/visitor`                             | Use this endpoint to create a VoIP visitor      | [Link](./#create-visitor)                                                              |
+|                                                       |                                                 |                                                                                        |
 
-| **URL**                                               | **Description**                                             | **Details Page**                         |
-| ----------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------- |
-| `/v1/connector.extension.getRegistrationInfoByUserId` | Use this endpoint to get the registration information by ID | [Link](./#voip-registration-information) |
+| URL                                                   | Description                                     | Details Page                                                                           |
+| ----------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId` | Get registration information by ID              | [Link](./#voip-registration-information)                                               |
+| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
+| `/api/v1/voip/queues.getSummary`                      | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                          |
+| `/api/v1/voip/queues.getSummary`                      | Get VoIP queue membership data                  | [Link](voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
+| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
+| `/v1/voip/queues.getMembershipSubscription`           | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                       |
+| `v1/voip/queues.getMembershipSubscription`            | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                       |
+| `api/v1/livechat/visitor`                             | Create a VoIP visitor                           | [Link](./#create-visitor)                                                              |
+| `/api/v1/voip/events`                                 | Send VoIP events                                | [Link](./#send-voip-events)                                                            |
 
-### Voice Channel Query Summary
+###
 
-| **URL**                          | **Description**                                      | **Details Page**              |
-| -------------------------------- | ---------------------------------------------------- | ----------------------------- |
-| `/api/v1/voip/queues.getSummary` | Use this endpoint to get the VoIP query summary data | [Link](./#voip-query-summary) |
 
-### Voice Channel Queue Membership Information
 
-| **URL**                          | **Description**                                         | **Details Page**                 |
-| -------------------------------- | ------------------------------------------------------- | -------------------------------- |
-| `/api/v1/voip/queues.getSummary` | Use this endpoint to get the VoIP queue membership data | [Link](./#voip-queue-membership) |
 
-### Voice Channel Queue Membership Subscription
-
-| **URL**                                     | **Description**                                                      | **Details Page**                 |
-| ------------------------------------------- | -------------------------------------------------------------------- | -------------------------------- |
-| `/v1/voip/queues.getMembershipSubscription` | Use this endpoint to get the VoIP queue membership subscription data | [Link](./#voip-queue-membership) |
-
-### Voice Channel Create Visitor
-
-| **URL**                    | **Description**                            | **Details Page**          |
-| -------------------------- | ------------------------------------------ | ------------------------- |
-| `/api/v1/livechat/visitor` | Use this endpoint to create a VoIP visitor | [Link](./#create-visitor) |
-
-### Send Voice Channel Events
-
-| **URL**               | **Description**                       | **Details Page**            |
-| --------------------- | ------------------------------------- | --------------------------- |
-| `/api/v1/voip/events` | Use this endpoint to send VoIP events | [Link](./#send-voip-events) |
 
 ### Get Voice Channel Extension
 
