@@ -24,7 +24,7 @@ Establishing a connection between your application and Rocket.Chat utilizes the 
 
 ### Authentication
 
-You can choose to authenticate users within your application. Generating a [Personal Access Token (PAT)](../reference/api/rest-api/endpoints/users-endpoints/create-users-token.md) for a system user with an admin role is recommended. This token is used for authentication purposes, rather than logging in with the system account credentials every time, providing a secure way to access the chat functionality without exposing the system account credentials.
+You can choose to authenticate users within your application. Generating a [Personal Access Token (PAT)](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-users-token.md) for a system user with an admin role is recommended. This token is used for authentication purposes, rather than logging in with the system account credentials every time, providing a secure way to access the chat functionality without exposing the system account credentials.
 
 Learn more about iframe authentication [here](../customize-and-embed/iframe-integration/configuring-iframe-auth/).
 
@@ -57,7 +57,7 @@ Learn more about [iframe integration](../customize-and-embed/iframe-integration/
 
 You can choose to authenticate users based on details from your application or create Rocket.Chat users on the fly to authenticate for chat capabilities.
 
-After [creating a user](../reference/api/rest-api/endpoints/users-endpoints/create-user.md) and getting their [user token](../reference/api/rest-api/endpoints/users-endpoints/create-users-token.md) with the API endpoints, utilize the iframe's `onload` event(when the iframe loads) and the `postMessage` API to pass the users `auth-token` into the iframe to be used for authentication in the embedded chat interface.&#x20;
+After [creating a user](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-user.md) and getting their [user token](../reference/api/rest-api/endpoints/core-endpoints/users-endpoints/create-users-token.md) with the API endpoints, utilize the iframe's `onload` event(when the iframe loads) and the `postMessage` API to pass the users `auth-token` into the iframe to be used for authentication in the embedded chat interface.&#x20;
 
 Here is an example of how to handle the `onload` event and pass the authentication token:
 

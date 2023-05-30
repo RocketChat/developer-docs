@@ -1,7 +1,7 @@
 # Omnichannel
 
-{% content-ref url="../livechat-endpoints/" %}
-[livechat-endpoints](../livechat-endpoints/)
+{% content-ref url="livechat-endpoints/" %}
+[livechat-endpoints](livechat-endpoints/)
 {% endcontent-ref %}
 
 {% content-ref url="omnichannel-endpoints/" %}
