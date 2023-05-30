@@ -453,13 +453,13 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.listTeams`                     | Lists users teams                                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams)     |
 | `/api/v1/users.logout`                        | Logs user out.                                                 | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint) |
 
-## **Video Conference**  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+
 
 | URL                                             | Short Description                                           | Details Page                                                                                                                              |
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
-
+## Webdav
 
 | URL                            | Short Description                    | Details Page                                                                                                            |
 | ------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
