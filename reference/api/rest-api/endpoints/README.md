@@ -2,10 +2,7 @@
 
 ## Assets Endpoints
 
-| URL                         | Short Description            | Details Page                                                                                      |
-| --------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------- |
-| `/api/v1/assets.setAsset`   | Sets an asset image by name. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset)   |
-| `/api/v1/assets.unsetAsset` | Unsets an asset by name.     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset) |
+<table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/assets.setAsset</code></td><td>Sets an asset image by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset">Link</a></td></tr><tr><td><code>/api/v1/assets.unsetAsset</code></td><td>Unsets an asset by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset">Link</a></td></tr></tbody></table>
 
 ## Auto Translate Endpoints
 
@@ -699,7 +696,110 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## SLA Policies
 
-| Url                          | Short Description                                   | Details Page                                                                                                                                                |
-| ---------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/sla`        | Get a list of SLA policies and create an SLA policy | [Fetch](omnichannel/sla-policies/get-sla-policies.md), [Create](core-endpoints/teams-endpoints/create-a-new-team.md)                                        |
-| `api/v1/livechat/sla/:slaId` | Used to fetch, update and delete an SLA policy      | [Get one](omnichannel/sla-policies/get-an-sla.md), [Update](omnichannel/sla-policies/update-an-sla.md), [Delete](omnichannel/sla-policies/delete-an-sla.md) |
+| URL                          | Description                                         | Details Page                                                                                                            |
+| ---------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/sla`        | Get a list of SLA policies and create an SLA policy | [Fetch](sla-policies/get-sla-policies.md), [Create](core-endpoints/teams-endpoints/create-a-new-team.md)                |
+| `api/v1/livechat/sla/:slaId` | Used to fetch, update and delete an SLA policy      | [Get one](sla-policies/get-an-sla.md), [Update](sla-policies/update-an-sla.md), [Delete](sla-policies/delete-an-sla.md) |
+
+## Voice Channel
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+
+| **URL**                                               | **Description**                                             | **Details Page**                         |
+| ----------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId` | Use this endpoint to get the registration information by ID | [Link](./#voip-registration-information) |
+
+### Voice Channel Query Summary
+
+| **URL**                          | **Description**                                      | **Details Page**              |
+| -------------------------------- | ---------------------------------------------------- | ----------------------------- |
+| `/api/v1/voip/queues.getSummary` | Use this endpoint to get the VoIP query summary data | [Link](./#voip-query-summary) |
+
+### Voice Channel Queue Membership Information
+
+| **URL**                          | **Description**                                         | **Details Page**                 |
+| -------------------------------- | ------------------------------------------------------- | -------------------------------- |
+| `/api/v1/voip/queues.getSummary` | Use this endpoint to get the VoIP queue membership data | [Link](./#voip-queue-membership) |
+
+### Voice Channel Queue Membership Subscription
+
+| **URL**                                     | **Description**                                                      | **Details Page**                 |
+| ------------------------------------------- | -------------------------------------------------------------------- | -------------------------------- |
+| `/v1/voip/queues.getMembershipSubscription` | Use this endpoint to get the VoIP queue membership subscription data | [Link](./#voip-queue-membership) |
+
+### Voice Channel Create Visitor
+
+| **URL**                    | **Description**                            | **Details Page**          |
+| -------------------------- | ------------------------------------------ | ------------------------- |
+| `/api/v1/livechat/visitor` | Use this endpoint to create a VoIP visitor | [Link](./#create-visitor) |
+
+### Send Voice Channel Events
+
+| **URL**               | **Description**                       | **Details Page**            |
+| --------------------- | ------------------------------------- | --------------------------- |
+| `/api/v1/voip/events` | Use this endpoint to send VoIP events | [Link](./#send-voip-events) |
+
+### Get Voice Channel Extension
+
+| **URL**                         | **Description**                                          | **Details Page**                 |
+| ------------------------------- | -------------------------------------------------------- | -------------------------------- |
+| `/api/v1/omnichannel/extension` | Use this endpoint to retrieve VoIP extension information | [Link](./#fetch-voip-extensions) |
+|                                 |                                                          |                                  |
+
+### Get Voice Channel Extensions
+
+| **URL**                                             | **Description**                               | **Details Page**                 |
+| --------------------------------------------------- | --------------------------------------------- | -------------------------------- |
+| `/api/v1/omnichannel/extensions?count=10&offset=10` | Use this endpoint to retrieve VoIP extensions | [Link](./#fetch-voip-extensions) |
+
+### Voice Channel Agent Extension
+
+| **URL**                           | **Description**                                               | **Details Page**            |
+| --------------------------------- | ------------------------------------------------------------- | --------------------------- |
+| `/v1/omnichannel/agent/extension` | Use this endpoint to create, update and delete VoIP extension | [Link](./#agent-extensions) |
+
+### Check Management Server Connection
+
+| **URL**                                                                     | **Description**                                                | **Details Page**                              |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------- |
+| `/api/v1/voip/managementServer/checkConnection?host&port&username&password` | Use this endpoint to check Management Server Connection Status | [Link](./#check-management-server-connection) |
+
+### Check Call Server Connection
+
+| **URL**                                                                                       | **Description**                                          | **Details Page**                        |
+| --------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------- |
+| `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Use this endpoint to check Call Server Connection Status | [Link](./#check-call-server-connection) |
+
+
+
+### Create Voice Channel Room (s)
+
+| **URL**                                                                              | **Description**                       | **Details Page**            |
+| ------------------------------------------------------------------------------------ | ------------------------------------- | --------------------------- |
+| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi` | Use this endpoint to create VoIP room | [Link](./#create-voip-room) |
+
+### Get Voice Channel Room by ID
+
+| **URL**               | **Description**                                           | **Details Page**                 |
+| --------------------- | --------------------------------------------------------- | -------------------------------- |
+| `/api/v1/voip/events` | Use this endpoint to retrieve VoIP room information by ID | [Link](./#fetch-voip-room-by-id) |
+
+### Close Voice Channel Room
+
+| **URL**                   | **Description**                               | **Details Page**           |
+| ------------------------- | --------------------------------------------- | -------------------------- |
+| `/api/v1/voip/room.close` | Use this endpoint close the VoIP conversation | [Link](./#close-voip-room) |
+
+### Licenses
+
+| Url                             | Method | Short Description                            | Details Page                                   |
+| ------------------------------- | ------ | -------------------------------------------- | ---------------------------------------------- |
+| `/api/v1/licenses.get`          | `GET`  | Gets all registered licenses.                | [Link](licenses/get-licenses.md)               |
+| `/api/v1/licenses.isEnterprise` | `GET`  | Confirm if workspace has enterprise license. | [Link](licenses/confirm-enterprise-license.md) |
+| `licenses.maxActiveUsers`       | `GET`  | Get maximum active users.                    | [Link](licenses/get-maximum-active-user.md)    |
+
+##
