@@ -47,7 +47,7 @@ The message object contains these fields.
 | `editedAt`_(Optional)_.     | A timestamp of when the message was edited                                                                                                                                                             |
 | `editedBy` _(Optional)_     | The user who edited the message.                                                                                                                                                                       |
 | `urls (`_Optional_`)`       | A collection of URLs metadata. Available when the message contains at least one URL.                                                                                                                   |
-| `attachments(`_Optional_`)` | A collection of [attachment objects](../rest-api/endpoints/core-endpoints/chat-endpoints/postmessage.md#attachments-detail), available only when the message has at least one attachment.              |
+| `attachments(`_Optional_`)` | A collection of [attachment objects](../rest-api/endpoints/chat-endpoints/postmessage.md#attachments-detail), available only when the message has at least one attachment.                             |
 | `alias(`_Optional_`)`       | A way to display the message is "sent" from someone else other than the user who sent the message                                                                                                      |
 | `avatar(Optional)`          | A url to an image, that is accessible to anyone, to display as the avatar instead of the message user's account avatar                                                                                 |
 | `groupable(Optional)`       | Boolean that states whether or not this message should be grouped together with other messages from the same user                                                                                      |
@@ -77,7 +77,7 @@ The URL metadata contains several informational fields:
 * `headers`: Some HTTP headers (varies accord to the URL)
 * `parsedUrl`: The parsed URL broken into its parts
 
-[The attachment object is fully described here](../rest-api/endpoints/core-endpoints/chat-endpoints/postmessage.md#attachments-detail)
+[The attachment object is fully described here](../rest-api/endpoints/chat-endpoints/postmessage.md#attachments-detail)
 
 ```javascript
 {

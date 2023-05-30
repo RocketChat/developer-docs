@@ -158,5 +158,5 @@
 
 | Url                          | Short Description                                   | Details Page                                                                                                            |
 | ---------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/sla`        | Get a list of SLA policies and create an SLA policy | [Fetch](sla-policies/get-sla-policies.md), [Create](../../core-endpoints/teams-endpoints/create-a-new-team.md)          |
+| `api/v1/livechat/sla`        | Get a list of SLA policies and create an SLA policy | [Fetch](sla-policies/get-sla-policies.md), [Create](../../teams-endpoints/create-a-new-team.md)                         |
 | `api/v1/livechat/sla/:slaId` | Used to fetch, update and delete an SLA policy      | [Get one](sla-policies/get-an-sla.md), [Update](sla-policies/update-an-sla.md), [Delete](sla-policies/delete-an-sla.md) |
