@@ -4,15 +4,15 @@ description: Register a new agent or manager.
 
 # Register new agent or manager
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/users/:type` | `yes` | `POST` |
+| URL                            | Requires Auth | HTTP Method |
+| ------------------------------ | ------------- | ----------- |
+| `/api/v1/livechat/users/:type` | `yes`         | `POST`      |
 
 ## Payload
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `type` | `agent` | Required | Can be either `agent` or `manager`. |
+| Argument | Example | Required | Description                         |
+| -------- | ------- | -------- | ----------------------------------- |
+| `type`   | `agent` | Required | Can be either `agent` or `manager`. |
 
 ## Example payload
 
@@ -48,8 +48,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 0.42.0 | Added |
+| ------- | ----------- |
+| 0.42.0  | Added       |
 
-## 
-
+##
