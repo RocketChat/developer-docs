@@ -1,13 +1,13 @@
 # Create Users Token
 
-Create a user authentication token. This is the same type of session token a user would get via login and will expire the same way
+Create a user authentication token. This is the same type of session token a user would get via login and will expire the same way.
 
 {% hint style="warning" %}
-**IMPORTANT**:
+To be able to use this endpoint, you must set the [Environment variable](https://docs.rocket.chat/deploy/rocket.chat-environment-configuration/environment-variables) _CREATE\_TOKENS\_FOR\_USERS_=true.
+{% endhint %}
 
-To be able to use this endpoint you must set the [Environment variable](https://docs.rocket.chat/deploy/rocket.chat-environment-configuration/environment-variables) _CREATE\_TOKENS\_FOR\_USERS_=true.
-
-For SaaS workspaces [contact support](https://docs.rocket.chat/resources/get-support) to set this variable.
+{% hint style="info" %}
+For SaaS workspaces, [contact support](https://docs.rocket.chat/resources/get-support) to set this variable.
 {% endhint %}
 
 {% hint style="info" %}
