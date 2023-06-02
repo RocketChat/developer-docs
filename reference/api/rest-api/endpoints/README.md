@@ -1,24 +1,26 @@
 # Endpoints
 
-#### [Access Tokens](other-important-endpoints/access-tokens-endpoints.md)
+## Endpoints
 
-#### [Pagination](other-important-endpoints/offset-and-count-and-sort-info.md)
+[**Access Tokens**](other-important-endpoints/access-tokens-endpoints.md)
 
-#### [Query and Fields](other-important-endpoints/query-and-fields-info.md)
+[**Pagination**](other-important-endpoints/offset-and-count-and-sort-info.md)
 
-#### [Rate Limiter Endpoints](other-important-endpoints/rate-limiter-endpoints.md)
+[**Query and Fields**](other-important-endpoints/query-and-fields-info.md)
 
-#### [Avatars](../avatars.md)
+[**Rate Limiter Endpoints**](other-important-endpoints/rate-limiter-endpoints.md)
 
-#### [Authentication](other-important-endpoints/authentication-endpoints/)
+[**Avatars**](../avatars.md)
 
-#### [Two Factor Authentication](../../realtime-api/2fa.md)
+[**Authentication**](other-important-endpoints/authentication-endpoints/)
 
-# Assets
+[**Two Factor Authentication**](../../realtime-api/2fa.md)
+
+## Assets
 
 <table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/assets.setAsset</code></td><td>Sets an asset image by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset">Link</a></td></tr><tr><td><code>/api/v1/assets.unsetAsset</code></td><td>Unsets an asset by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset">Link</a></td></tr></tbody></table>
 
-# Auto Translate
+## Auto Translate
 
 | URL                                           | Short Description                               | Details Page                                                                                                        |
 | --------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +28,7 @@
 | `/api/v1/autotranslate.saveSettings`          | Saves some settings about auto-translate.       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/savesettings)          |
 | `/api/v1/autotranslate.translateMessage`      | Translates the message.                         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/translatemessage)      |
 
-# Banners
+## Banners
 
 | URL                       | Short Description                                      | Details Page                                                                                                                 |
 | ------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +36,7 @@
 | `/api/v1/banners`         | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banners)      |
 | `/api/v1/banners.dismiss` | Dismisses a banner                                     | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/dismiss-a-banner) |
 
-# Channels
+## Channels
 
 These methods apply to public channels only. Use `groups.*` methods for private channels.
 
@@ -83,7 +85,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.unarchive`                   | Unarchives a channel.                                         | [Link](core-endpoints/channels-endpoints/unarchive.md)                                                                               |
 | `/api/v1/channels.convertToTeam`               | Converts channel to team                                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/convert-channel-to-team) |
 
-# Chat
+## Chat
 
 | URL                                    | Short Description                                                | Details Page                                                                                                                     |
 | -------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -116,13 +118,13 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/chat.update`                  | Updates the text of the chat message.                            | [Link](core-endpoints/chat-endpoints/message-update.md)                                                                          |
 | `/api/v1/chat.syncMessages`            | Syncs messages                                                   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/sync-messages) |
 
-# Cloud
+## Cloud
 
 | URL                            | Short Description              | Details Page                                                                                                                              |
 | ------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/cloud.manualRegister` | Manually registers a workspace | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/cloud-endpoints/cloud-manual-register) |
 
-# Commands
+## Commands
 
 | URL                        | Short Description                                                         | Details Page                                                                                                                     |
 | -------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -132,13 +134,13 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](core-endpoints/commands-endpoints/preview.md)                                                                             |
 | `/api/v1/commands.preview` | Executes command's preview item                                           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
 
-# Custom Sounds
+## Custom Sounds
 
 | URL                          | Short Description                  | Details Page                                                                                                                                                     |
 | ---------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/\~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list) |
 
-# Custom User Status
+## Custom User Status
 
 | URL                                 | Short Description                         | Details Page                                                                                                                                                    |
 | ----------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -147,14 +149,14 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/custom-user-status.delete` | Deletes a custom user status              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/delete-custom-user-status)      |
 | `/api/v1/custom-user-status.update` | Updates a custom user status              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-user-status-endpoints/update-custom-user-status-type) |
 
-# DNS
+## DNS
 
 | URL                       | Short Description                                      | Details Page                                                                                                                      |
 | ------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/dns.resolve.srv` | get                                                    | Document Under Development                                                                                                        |
 | `/api/v1/dns.resolve.txt` | Resolves DNS text records (TXT records) for a hostname | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/dns-endpoints/dns-resolve-txt) |
 
-# E2E
+## E2E
 
 | URL                                       | Short Description                                               | Details Page                                                                                                                                        |
 | ----------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -164,7 +166,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/set-users-key)                     |
 | `/api/v1/e2e.updateGroupKey`              | Updates the end-to-end encryption key for a user in a room.     | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/update-user-e2e-key-in-room)       |
 
-# Email Inbox
+## Email Inbox
 
 | URL                                  | Short Description                    | Details Page                                                                                                                                             |
 | ------------------------------------ | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -175,7 +177,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email)    |
 | `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox) |
 
-# Custom Emoji
+## Custom Emoji
 
 | Url                           | Short Description                          | Details Page                                                                                                                                      |
 | ----------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -185,7 +187,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji.           | [Link](core-endpoints/custom-emoji-endpoints/delete-custom-emoji.md)                                                                              |
 | `/api/v1/emoji-custom.update` | Updates an existent custom emoji.          | [Link](core-endpoints/custom-emoji-endpoints/update-a-custom-emoji.md)                                                                            |
 
-# Group
+## Group
 
 | Url                              | Short Description                                           | Details Page                                                                                                                             |
 | -------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -228,9 +230,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/groups.setEncrypted`    | Sets the encryption for a group                             | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-set-encrypted) |
 | `/api/v1/groups.convertToTeam`   | Convert a private group to a team                           | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-converttoteam) |
 
-# DM/IM
+## DM/IM
 
-| URL                       | Short Description                                             | Details Page                                                                                                            |
+| URL                          | Short Description                                             | Details Page                                                                                                            |
 | ---------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/im.delete`          | Removes a direct message session                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/delete) |
 | `/api/v1/im.close`           | Removes a direct message from the list of direct messages.    | [Link](core-endpoints/im-endpoints/close.md)                                                                            |
@@ -250,7 +252,8 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 {% endhint %}
 
-# Imports
+## Imports
+
 | URL                                 | Short Description              | Details Page                                                                                                                                       |
 | ----------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/uploadImportFile`          | `Content`                      | Document Under Development                                                                                                                         |
@@ -263,13 +266,13 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | `/api/v1/downloadPendingAvata`      | Download pending avatars       | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-avatars)      |
 | `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-current-import-operations) |
 
-# Instances
+## Instances
 
 | URL                     | Short Description   | Details Page                                                                                                                          |
 | ----------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/instances.get` | Retrieves instances | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
 
-# Integration
+## Integration
 
 | Url                            | Short Description                               | Details Page                                            |
 | ------------------------------ | ----------------------------------------------- | ------------------------------------------------------- |
@@ -290,11 +293,11 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | `/api/v1/useInviteToken`      | Reports to the server that an invite token was used.                      | [Link](core-endpoints/invite-endpoints/report-use-invite-token.md)                                                                       |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid.                                       | [Link](core-endpoints/invite-endpoints/validateinvitetoken.md)                                                                           |
 
-# LDAP
+## LDAP
 
 <table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/ldap.syncNow</code></td><td>LDAP SyncNow</td><td><a href="ldap-endpoints/ldap-syncnow.md">Link</a></td></tr></tbody></table>
 
-# Misc
+## Misc
 
 Just some generic information, such as information about the server and authenticated user.
 
@@ -317,7 +320,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](core-endpoints/permissions-endpoints/list-all-permissions.md) |
 | `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](core-endpoints/permissions-endpoints/update-permissions.md)   |
 
-# Push
+## Push
 
 | Url                  | Short Description                   | Details Page                                                                                                                                       |
 | -------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -325,7 +328,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/push.token` | Removes push token.                 | [Link](core-endpoints/push-token-endpoints/deletepushtoken.md)                                                                                     |
 | `/api/v1/push.get`   | Get push notification for a message | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/Get%20push%20notification) |
 
-# Roles
+## Roles
 
 | Url                                | Short Description                                                   | Details Page                                                                                                                              |
 | ---------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -338,7 +341,8 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/roles.delete`             | Deletes a role.                                                     | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
 | `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user.                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/role-remove)                     |
 
-# Rooms
+## Rooms
+
 | Url                                            | Short Description                                        | Details Page                                                                                                                                        |
 | ---------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/rooms.adminRooms`                     | Retrieves all rooms (requires special permission).       | [Link](core-endpoints/rooms-endpoints/adminrooms.md)                                                                                                |
@@ -358,7 +362,7 @@ Just some generic information, such as information about the server and authenti
 | `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/change-archivation-state)        |
 | `/api/v1/rooms.export`                         | Export room to a file or email.                          | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/export-room)                     |
 
-#\# Settings
+## Settings
 
 You can get and update the settings via the REST API, only if you have permission to.
 
@@ -371,13 +375,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/settings/:_id`          | Retrieves a setting.                          | [Link](core-endpoints/settings-endpoints/get-setting-by-id.md)          |
 | `/api/v1/settings/:_id`          | Updates a setting.                            | [Link](core-endpoints/settings-endpoints/update-setting.md)             |
 
-# Stats
+## Stats
+
 | URL                       | Short Description         | Details Page                                                                                                                            |
 | ------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/statistics`      | Retrieves statistics      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics)      |
 | `/api/v1/statistics.list` | Retrieves statistics list | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics-list) |
 
-# Subscription
+## Subscription
 
 | Url                            | Short Description                      | Details Page                                                              |
 | ------------------------------ | -------------------------------------- | ------------------------------------------------------------------------- |
@@ -386,7 +391,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/subscriptions.read`   | Marks a room as read.                  | [Link](core-endpoints/subscriptions-endpoints/mark-channel-as-read.md)    |
 | `/api/v1/subscriptions.unread` | Marks messages as unread.              | [Link](core-endpoints/subscriptions-endpoints/mark-messages-as-unread.md) |
 
-# Teams
+## Teams
 
 | Url                              | Short Description                                         | Details Page                                                                                                                                |
 | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -409,7 +414,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](core-endpoints/teams-endpoints/autocomplete-team.md)                                                                                 |
 | `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](core-endpoints/teams-endpoints/update-a-team.md)                                                                                     |
 
-# Users
+## Users
 
 | URL                                           | Short Description                                              | Details Page                                                                                                                             |
 | --------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -451,38 +456,38 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/users.listTeams`                     | Lists users teams                                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams)     |
 | `/api/v1/users.logout`                        | Logs user out.                                                 | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint) |
 
-# Video conference
+## Video conference
 
 | URL                                             | Short Description                                           | Details Page                                                                                                                              |
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
-# Webdav
+## Webdav
 
 | URL                            | Short Description                    | Details Page                                                                                                            |
 | ------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/webdav-endpoint/getmyaccounts) |
 
-# Federation (EE)
+## Federation (EE)
 
 <table><thead><tr><th width="180">Url</th><th width="323">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/federation/addServerByUser</code></td><td>Adds a server to search public rooms later</td><td><a href="federation-endpoints/add-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/listServersByUser</code></td><td>Retrieves all the server names saved by the user</td><td><a href="federation-endpoints/list-servers.md">Link</a></td></tr><tr><td><code>api/v1/federation/removeServerByUser</code></td><td>Remove a server name</td><td><a href="federation-endpoints/remove-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/searchPublicRooms</code></td><td>Returns all the public room given a server name</td><td><a href="federation-endpoints/search-public-rooms.md">Link</a></td></tr><tr><td><code>api/v1/joinExternalPublicRoom</code></td><td>Joins an External public Matrix room</td><td><a href="federation-endpoints/join-external-public-room.md">Link</a></td></tr></tbody></table>
 
-# Livechat
+## Livechat
 
-## Agent
+### Agent
 
 | Url                               | Short Description                              | Details Page                                                                                                                                |
 | --------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent)      |
 | `livechat/agent.next/:token`      | Retrieves the data of the next available agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
 
-## Configuration
+### Configuration
 
 | Url               | Short Description                                                         | Details Page                                                                                                                      |
 | ----------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/config` | Retrieves LiveChat widget configuration info and additional visitor data. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-config) |
 
-## Contacts
+### Contacts
 
 | Url                          | Short Description                                   | Details Page                                                                                                                                                    |
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -490,7 +495,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `omnichannel/contact`        | Retrieves a contact information                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-fetch-contact)    |
 | `omnichannel/contact.search` | Searches a contact information                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-search-contact)   |
 
-## Custom Field
+### Custom Field
 
 | Url                           | Short Description                             | Details Page                                                                                                                                                            |
 | ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -499,7 +504,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/list-livechat-custom-fields)             |
 | `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/get-info-about-a-custom-field)           |
 
-## Message
+### Message
 
 | Url                              | Short Description                      | Details Page                                                                                                                                                      |
 | -------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -510,19 +515,19 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/messages.history/:rid` | Retrieves omnichannel messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
 | `livechat/messages`              | Sends array of messages                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages)                            |
 
-## Offline Message
+### Offline Message
 
 | Url                        | Short Description                                   | Details Page                                                                                                                               |
 | -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | `livechat/offline.message` | Sends an offline message when no agent is available | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-offline-message) |
 
-## Page Visited
+### Page Visited
 
 | Url                     | Short Description                                                    | Details Page                                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history) |
 
-## Room
+### Room
 
 | Url                      | Short Description                                                 | Details Page                                                                                                                                           |
 | ------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -532,19 +537,19 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-forward)  |
 | `livechat/room.visitor`  | Updates room visitor's information                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/change-room-visitor)    |
 
-## Transcript
+### Transcript
 
 | Url                   | Short Description              | Details Page                                                                                                                          |
 | --------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/transcript` | Requests a Livechat transcript | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transcript) |
 
-## Transfer
+### Transfer
 
 | Url                              | Short Description                           | Details Page                                                                                                                        |
 | -------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transfer) |
 
-## Visitor
+### Visitor
 
 | Url                            | Short Description                        | Details Page                                                                                                                                                 |
 | ------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -554,24 +559,24 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/visitor/:token/room` | Retrieves open conversation of a visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/get-open-conversation-of-a-visitor) |
 | `livechat/visitor.status`      | Sets visitor status                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/set-visitor-status)                 |
 
-## Agent
+### Agent
 
 <table><thead><tr><th width="272">Url</th><th width="276">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/livechat/agents/:agentId/departments</code></td><td>Returns all the departments associated with an agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-departments">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/average-service-time</code></td><td>Retrieves average service time per agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/total-service-time</code></td><td>Retrieves total service time sorted by agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/available-for-service-history</code></td><td>Retrieves a list of agents and their available time for the provided time frame</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history">Link</a></td></tr></tbody></table>
 
-## Livechat Appearance
+### Livechat Appearance
 
 | Url                          | Short Description                                   | Details Page                                                                                              |
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
 
-## Business Hours
+### Business Hours
 
 | Url                                   | Short Description                                           | Details Page                                                                                                                      |
 | ------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/business-hour`       | Retrieves all the information of a particular business hour | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hour-info)  |
 | `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hours-list) |
 
-## Dashboards
+### Dashboards
 
 | Url                                                                   | Short Description                                       | Details Page                                                                                                                            |
 | --------------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -585,7 +590,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart)    |
 | `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/timings-charts)                |
 
-## Departments
+### Departments
 
 | Url                                                                | Short Description                                             | Details Page                                                                                                                                  |
 | ------------------------------------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -608,7 +613,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/analytics/departments/total-abandoned-chats`      | Retrieves abandoned chats                                     | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/total-abandoned-chats-by-department) |
 | `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats                       | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department)                |
 
-## Inquiries
+### Inquiries
 
 | Url                                  | Short Description                        | Details Page                                                                                                                |
 | ------------------------------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -618,45 +623,45 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one)    |
 | `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
 
-## Integrations
+### Integrations
 
 | Url                                     | Short Description                        | Details Page                                                                                                |
 | --------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/integrations) |
 
-## Queue
+### Queue
 
 | Url                     | Short Description          | Details Page                                                                                                  |
 | ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/queue` | Retrieves the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
 
-## Rooms
+### Rooms
 
 | Url                           | Short Description                            | Details Page                                                                                                             |
 | ----------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/rooms`       | Retrieves a list of livechat rooms           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/livechat-rooms-list) |
 | `api/v1/livechat/room.onHold` | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/room-onhold)         |
 
-## SMS
+### SMS
 
 | Url                                     | Short Description | Details Page                                                                                                       |
 | --------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/sms-incoming/:service` | Receives SMS      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/sms-incoming-twilio) |
 
-## Triggers
+### Triggers
 
 | Url                             | Short Description                  | Details Page                                                                                                                      |
 | ------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-the-livechat-triggers) |
 | `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-a-livechat-trigger)    |
 
-## Upload
+### Upload
 
 | Url                           | Short Description | Details Page |
 | ----------------------------- | ----------------- | ------------ |
 | `api/v1/livechat/upload/:rid` | post              |              |
 
-## Live chat Users
+### Live chat Users
 
 | Url                                | Short Description                   | Details Page                                                                                                                         |
 | ---------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -665,7 +670,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager) |
 | `api/v1/livechat/users/:type/:_id` | Removes an agent or manager         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager)      |
 
-## Visitors
+### Visitors
 
 | Url                                                                    | Short Description                           | Details Page                                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -676,28 +681,28 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-autocomplete)                  |
 | `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitors-search)                       |
 
-## Monitors
+### Monitors
 
 | Url                               | Short Description              | Details Page                                                                                                             |
 | --------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/monitors.list`   | Retrieves a list of monitors   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/list-of-monitors) |
 | `api/v1/livechat/monitors.getOne` | Gives the details of a monitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/get-one-monitor)  |
 
-## Priorities
+### Priorities
 
 | Url                                      | Short Description               | Details Page                                        |
 | ---------------------------------------- | ------------------------------- | --------------------------------------------------- |
 | `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](priorities/priorities-old/get-priorities.md) |
 | `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](priorities/priorities-old/get-a-priority.md) |
 
-## Livechat Tags
+### Livechat Tags
 
 | Url                           | Short Description          | Details Page                       |
 | ----------------------------- | -------------------------- | ---------------------------------- |
 | `api/v1/livechat/tags`        | Retrieves a list of tags   | [Link](livechat-tags/get-tags.md)  |
 | `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](livechat-tags/get-a-tag.md) |
 
-## Units
+### Units
 
 | Url                                     | Short Description             | Details Page                                                                                                                   |
 | --------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -708,14 +713,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/unitMonitors.list/:id` | Update Unit by Id             | [Link](units/update-unit.md)                                                                                                   |
 | `api/v1/livechat/unitMonitors.list/:id` | Delete unit using ID          | [Link](units/delete-unit.md)                                                                                                   |
 
-# SLA Policies
+## SLA Policies
 
 | URL                          | Description                                         | Details Page                                                                                                            |
 | ---------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/sla`        | Get a list of SLA policies and create an SLA policy | [Fetch](sla-policies/get-sla-policies.md), [Create](core-endpoints/teams-endpoints/create-a-new-team.md)                |
 | `api/v1/livechat/sla/:slaId` | Used to fetch, update and delete an SLA policy      | [Get one](sla-policies/get-an-sla.md), [Update](sla-policies/update-an-sla.md), [Delete](sla-policies/delete-an-sla.md) |
 
-# Voice Channel
+## Voice Channel
 
 | URL                                                                                           | Description                                     | Details Page                                                                           |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
@@ -737,7 +742,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/voip/events`                                                                         | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                       |
 | `/api/v1/voip/room.clos`                                                                      | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                             |
 
-# Licenses
+## Licenses
 
 | Url                             | Short Description                            | Details Page                                   |
 | ------------------------------- | -------------------------------------------- | ---------------------------------------------- |
@@ -745,7 +750,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/licenses.isEnterprise` | Confirm if workspace has enterprise license. | [Link](licenses/confirm-enterprise-license.md) |
 | `licenses.maxActiveUsers`       | Get maximum active users.                    | [Link](licenses/get-maximum-active-user.md)    |
 
-# WhatsApp
+## WhatsApp
 
 | Description                                       | Details Page                                                                      |
 | ------------------------------------------------- | --------------------------------------------------------------------------------- |
