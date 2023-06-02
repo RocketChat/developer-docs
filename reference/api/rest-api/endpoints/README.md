@@ -291,6 +291,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | `/api/v1/useInviteToken`      | Reports to the server that an invite token was used.                      | [Link](core-endpoints/invite-endpoints/report-use-invite-token.md)                                                                       |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid.                                       | [Link](core-endpoints/invite-endpoints/validateinvitetoken.md)                                                                           |
 
+## LDAP  <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
+
+<table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/ldap.syncNow</code></td><td>LDAP SyncNow</td><td><a href="ldap-endpoints/ldap-syncnow.md">Link</a></td></tr></tbody></table>
+
 ## Misc <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
 Just some generic information, such as information about the server and authenticated user.
@@ -305,10 +309,7 @@ Just some generic information, such as information about the server and authenti
 
 ## OAuth App <a href="#email-inbox-endpoints" id="email-inbox-endpoints"></a>
 
-| Url                       | Short Description                          | Details Page                                       |
-| ------------------------- | ------------------------------------------ | -------------------------------------------------- |
-| `/api/v1/oauth-apps.get`  | Retrieves an OAuth App by id or client id. | [Link](core-endpoints/oauthapps-endpoints/get.md)  |
-| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps.            | [Link](core-endpoints/oauthapps-endpoints/list.md) |
+<table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/oauth-apps.get</code></td><td>Retrieves an OAuth App by id or client id.</td><td><a href="core-endpoints/oauthapps-endpoints/get.md">Link</a></td></tr><tr><td><code>/api/v1/oauth-apps.list</code></td><td>Retrieves a list of OAuth Apps.</td><td><a href="core-endpoints/oauthapps-endpoints/list.md">Link</a></td></tr></tbody></table>
 
 ## Permissions
 

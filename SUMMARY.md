@@ -662,6 +662,8 @@
         * [Add License](reference/api/rest-api/endpoints/licenses/add-license.md)
         * [Confirm Enterprise License](reference/api/rest-api/endpoints/licenses/confirm-enterprise-license.md)
         * [Get Maximum Active User](reference/api/rest-api/endpoints/licenses/get-maximum-active-user.md)
+      * [LDAP Endpoints](reference/api/rest-api/endpoints/ldap-endpoints/README.md)
+        * [LDAP SyncNow](reference/api/rest-api/endpoints/ldap-endpoints/ldap-syncnow.md)
       * [WhatsApp Endpoints](reference/api/rest-api/endpoints/apps-endpoints/whatsapp-endpoints/README.md)
         * [WhatsApp omnichannel integration API](reference/api/rest-api/endpoints/apps-endpoints/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md)
         * [Template Whatsapp message](reference/api/rest-api/endpoints/apps-endpoints/whatsapp-endpoints/template-message.md)
