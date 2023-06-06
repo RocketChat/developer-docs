@@ -17,10 +17,10 @@ description: Create agent-extension association information. Requires authentica
 
 ### Payload
 
-| **Argument**        | **Data Type** | **Required** | **Description**               |
-| ------------------- | ------------- | ------------ | ----------------------------- |
-| `userId\| username` | `string`      | Yes          | The user name or user Id      |
-| `extension`         | `string`      | Yes          | The phone extension for VoIP  |
+| **Argument**        | **Data Type** | **Required** | **Description**              |
+| ------------------- | ------------- | ------------ | ---------------------------- |
+| `userId\| username` | `string`      | Yes          | The user name or user Id     |
+| `extension`         | `string`      | Yes          | The phone extension for VoIP |
 
 ### Example Call
 

@@ -132,4 +132,3 @@ curl -X GET\
 ### Error Response
 
 401 Unauthorized
-

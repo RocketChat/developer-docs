@@ -1,10 +1,10 @@
 ---
-description: Use this endpoint to check the VoIP management server connection status
+description: Use this endpoint to check the SIP call server connection status.
 ---
 
-# Check Management Server Connection
+# Check Call Server Connection
 
-## Check Management Server Connection Status
+## Check Call Server Connection Status
 
 | **URL**                                                                    | **Requires Authentication** | **HTTP Method** |
 | -------------------------------------------------------------------------- | --------------------------- | --------------- |
@@ -19,22 +19,24 @@ description: Use this endpoint to check the VoIP management server connection st
 
 ### Query Parameters
 
+| **Argument**   | **Example** | **Required** | **Description**                   |
+| -------------- | ----------- | ------------ | --------------------------------- |
+| `websocketUrl` | `string`    | Yes          | The Websocket URL                 |
+| `host`         | `string`    | Yes          | The hostname of the Call Server.  |
+| `port`         | `string`    | Yes          | The port number of the Websocket. |
+| `path`         | `string`    | Yes          | The path of the Websocket.        |
 
-
-| **Argument** | **Data Type** | **Required** | **Description**                          |
-| ------------ | ------------- | ------------ | ---------------------------------------- |
-| `host`       | `string`      | Yes          | The hostname of the management server.   |
-| `port`       | `string`      | Yes          | The port number of the management server |
-| `username`   | `string`      | Yes          | The user name of the administrator user. |
-| `password`   | `string`      | Yes          | The password of the administrator user.  |
-
-### Example Call <a href="#example-call" id="example-call"></a>
+### Example Call <a href="#example-result" id="example-result"></a>
 
 ```json
-curl --location --request GET 'localhost:3000/api/v1/voip/managementServer/checkConnection?host=localhost&port=3000&username=christysujitha&password=' \
+curl --location --request GET 'localhost:3000/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws' \
 --header 'X-Auth-Token: aEoKaT8qus3IZHlr_OlAzcsnz46SzZLJeqoRbbctcDQ' \
 --header 'X-User-Id: 6vHSSqdBHdm2R4gfi' \
---data-raw ''
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "rid": "c9YW3rejo7HeL6ZDW",
+    "token": "yHoawq4s9bDn4dM5H"
+}'
 ```
 
 ### Example Response <a href="#example-result" id="example-result"></a>

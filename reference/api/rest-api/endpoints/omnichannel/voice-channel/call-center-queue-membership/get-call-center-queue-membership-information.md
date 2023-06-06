@@ -17,9 +17,9 @@ description: Retrieves the Queue Membership Information
 
 ### Payload
 
-| **Argument** | **Data Type** | **Required** | **Description**               |
-| ------------ | ------------- | ------------ | ----------------------------- |
-| `extension`  | `string`      | Required     | The phone extension for VoIP  |
+| **Argument** | **Data Type** | **Required** | **Description**              |
+| ------------ | ------------- | ------------ | ---------------------------- |
+| `extension`  | `string`      | Required     | The phone extension for VoIP |
 
 ### Example Call <a href="#example-call" id="example-call"></a>
 
