@@ -4,6 +4,8 @@ description: List all the server the user already saved
 
 # List servers
 
+<figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
 | URL                                    | Requires Auth | HTTP Method |
 | -------------------------------------- | ------------- | ----------- |
 | `/api/v1/federation/listServersByUser` | y`es`         | `GET`       |

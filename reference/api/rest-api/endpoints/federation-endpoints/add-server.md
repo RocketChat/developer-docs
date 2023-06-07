@@ -1,8 +1,8 @@
----
-description: Adds a new federated server to search for public rooms later
----
-
 # Add federated server
+
+<figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
+Add a new federated server. The [search-public-rooms.md](search-public-rooms.md "mention") endpoint will also return public rooms from this server.
 
 | URL                                  | Requires Auth | HTTP Method |
 | ------------------------------------ | ------------- | ----------- |
@@ -33,11 +33,50 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Example Result
 
+### Success
+
 ```javascript
 {
   "success": true
 }
 ```
+
+### Error&#x20;
+
+Any of the following errors can occur on the endpoint.
+
+* **Authorization**: Requires an authentication token for the request to be made.
+* **Already Added**: Occurs when the server has already been added.
+* **Invalid Server Name**: This occurs when the server name is invalid.
+
+{% tabs %}
+{% tab title="Authorization" %}
+```json
+ {
+    "status": "error",
+    "message": "You must be logged in to do this."
+}
+```
+{% endtab %}
+
+{% tab title="Already Added" %}
+```json
+{
+    "success": false,
+    "error": "already-a-default-server"
+}
+```
+{% endtab %}
+
+{% tab title="Invalid Server Name" %}
+```json
+{
+    "success": false,
+    "error": "invalid-server-name"
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Change Log
 

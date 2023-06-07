@@ -4,6 +4,8 @@ description: Join an external public room
 
 # Join external public room
 
+<figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
 | URL                                         | Requires Auth | HTTP Method |
 | ------------------------------------------- | ------------- | ----------- |
 | `/api/v1/federation/joinExternalPublicRoom` | `yes`         | `POST`      |
