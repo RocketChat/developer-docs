@@ -1,8 +1,8 @@
-# Create a Canned Response
+# Update a Canned Response
 
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Create a new [canned response](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses).
+Update a [canned response](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses).
 
 {% hint style="info" %}
 It requires the `save-canned-responses and save-all-canned-responses` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
@@ -18,16 +18,17 @@ It requires the `save-canned-responses and save-all-canned-responses` [permissio
 
 ## Payload
 
-<table><thead><tr><th width="140">Argument</th><th width="171">Example</th><th width="109">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>shortcut</code></td><td><code>card-declined</code></td><td>Required</td><td>The shortcut to the message snippet.</td></tr><tr><td><code>text</code></td><td><code>reasons for your cardmalfunction</code></td><td>Required</td><td>The message snippet</td></tr><tr><td><code>scope</code></td><td><code>global</code></td><td>Required</td><td>The scope of the canned response. It can either be <code>global</code>, <code>user</code> or <code>department</code>.</td></tr><tr><td><code>tags</code></td><td><code>card</code></td><td>Optional</td><td>The tags for your canned response.</td></tr><tr><td><code>departmentId</code></td><td><code>64181a0728384134ed600dcc</code></td><td>Optional; required, only if the <code>scope</code> is <code>department</code>.</td><td>The <code>departmentId</code> where the canned response belongs to. It is required if the <code>scope</code> is <code>department</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="140">Argument</th><th width="171">Example</th><th width="109">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>_id</code></td><td><code>646ff3c3a8c3a3ba32d0fa95</code></td><td>Required</td><td>The canned response's id.</td></tr><tr><td><code>shortcut</code></td><td><code>card-declined-update</code></td><td>Required</td><td>The shortcut to the message snippet.</td></tr><tr><td><code>text</code></td><td><code>updated reasons for your card malfunction</code></td><td>Required</td><td>The message snippet</td></tr><tr><td><code>scope</code></td><td><code>department</code></td><td>Required</td><td>The scope of the canned response. It can either be <code>global</code>, <code>user</code> or <code>department</code>.</td></tr><tr><td><code>tags</code></td><td><code>["card", "failure"]</code></td><td>Optional</td><td>The tags for your canned response.</td></tr><tr><td><code>departmentId</code></td><td><code>64181a0728384134ed600dcc</code></td><td>Optional; required, only if the <code>scope</code> is <code>department</code>.</td><td>The <code>departmentId</code> where the canned response belongs to. It is required if the <code>scope</code> is <code>department</code>.</td></tr></tbody></table>
 
 ## Example payload
 
 ```javascript
 {
-    "shortcut": "test-canned",
-    "text": "This is an example test for canned response",
-    "scope": "global",
-    "tags": ["tag1", "tag2"]
+           "_id": "646ff3c3a8c3a3ba32d0fa95",
+            "shortcut": "dcard-declined-update",
+            "text": "updated reasons for your card malfunction",
+            "scope": "department",
+            "departmentId": "64181a0728384134ed600dcc"
 }
 ```
 
@@ -39,10 +40,11 @@ curl --location 'http://localhost:3000/api/v1/canned-responses' \
 --header 'X-Auth-Token: A6PF2Qa-wXunBXi3j77OBY-T-gl1BvJ11jYiSMt6Z_G' \
 --header 'Content-Type: application/json' \
 --data '{
-    "shortcut": "test-canned",
-    "text": "This is an example test for canned response",
-    "scope": "global",
-    "tags": ["tag1", "tag2"]
+            "_id": "646ff3c3a8c3a3ba32d0fa95",
+            "shortcut": "department-check",
+            "text": "This is check test for departmental canned response",
+            "scope": "global",
+            "departmentId": "64181a0728384134ed600dcc"
 }'
 ```
 

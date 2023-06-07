@@ -1,8 +1,12 @@
 # Get a Canned Response
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
 Get a [canned response](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses).
+
+{% hint style="info" %}
+It requires only the `view-canned-responses` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).&#x20;
+{% endhint %}
 
 | URL                             | Requires Auth | HTTP Method |
 | ------------------------------- | ------------- | ----------- |
@@ -21,12 +25,17 @@ Get a [canned response](https://docs.rocket.chat/use-rocket.chat/omnichannel/can
 ## Example Call
 
 ```bash
-curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/canned-responses/EwmbZ9nLSx7kFamYB
+curl --location --request DELETE 'http://localhost:3000/api/v1/canned-responses' \
+--header 'X-User-Id: 2tTEqR7ZNMJ4HGGNa' \
+--header 'X-Auth-Token: A6PF2Qa-wXunBXi3j77OBY-T-gl1BvJ11jYiSMt6Z_G' \
+--data '{
+            "_id": "64700874a8c3a3ba32d0fb1c"
+}'
 ```
 
 ## Example Result
+
+### Success
 
 ```javascript
 {
@@ -46,6 +55,33 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
   "success": true
 }
 ```
+
+### Error
+
+Any of the following errors can occur on the endpoint.
+
+* **Authorization**: Requires an authentication token for the request to be made.
+* **No Permission**: Occurs when the authenticated user doesn't have the  `view-canned-responses` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).&#x20;
+
+{% tabs %}
+{% tab title="Authorization" %}
+```json
+{
+    "status": "error",
+    "message": "You must be logged in to do this."
+}
+```
+{% endtab %}
+
+{% tab title="No Permission" %}
+```json
+{
+    "success": false,
+    "error": "User does not have the permissions required for this action [error-unauthorized]"
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Change Log
 
