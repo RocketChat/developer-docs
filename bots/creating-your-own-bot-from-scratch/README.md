@@ -15,7 +15,7 @@ To add user accounts you need to have admin privileges:
 * Fill in the user information, verify the user, and assign it a `bot` role.
 * Click **Save**
 
-Once saved, the bot's credentials can be configured with the `HAT_USER` and `ROCKETCHAT_PASSWORD` [environmental variables](../bots-development-environment-setup.md) of your bot.
+Once saved, the bot's credentials can be configured with the `CHAT_USER` and `ROCKETCHAT_PASSWORD` [environmental variables](../bots-development-environment-setup.md) of your bot.
 
 {% hint style="info" %}
 To avoid creating multiple accounts for bot emails, you can use Gmail +`address` alias. For example: `youremail+botnam@gmail.com`. [See this issue for more](https://github.com/RocketChat/Rocket.Chat/issues/7125).
