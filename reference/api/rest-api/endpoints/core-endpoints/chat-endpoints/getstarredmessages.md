@@ -1,6 +1,6 @@
 # Get Starred Messages
 
-Retrieve starred messages. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
+Retrieve starred messages. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
 
 | URL                               | Requires Auth | HTTP Method |
 | --------------------------------- | ------------- | ----------- |

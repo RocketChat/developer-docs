@@ -1,6 +1,6 @@
 # Get Discussions of A Room
 
-Retrieve the discussions of a room. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
+Retrieve the discussions of a room. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
 
 | URL                           | Requires Auth | HTTP Method |
 | ----------------------------- | ------------- | ----------- |

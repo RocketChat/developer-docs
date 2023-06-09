@@ -2,7 +2,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace that belong to the current user scope. It is helpful for [omnichannel agents](https://docs.rocket.chat/use-rocket.chat/omnichannel/agents) to see all private canned responses that belong to them, canned responses in their departments, and all public canned responses. It supports the [Offset, Count, and Sort Query Parameters](../other-important-endpoints/offset-and-count-and-sort-info.md).
+Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace that belong to the current user scope. It is helpful for [omnichannel agents](https://docs.rocket.chat/use-rocket.chat/omnichannel/agents) to see all private canned responses that belong to them, canned responses in their departments, and all public canned responses. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
 
 {% hint style="info" %}
 It requires only the `view-canned-responses` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).&#x20;

@@ -1,6 +1,6 @@
 # Messages
 
-Lists all of the specific direct message on the server. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md) along with [Query and Fields Query Parameters](../../other-important-endpoints/query-and-fields-info.md).
+Lists all of the specific direct message on the server. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameters](broken-reference).
 
 | URL                   | Requires Auth | HTTP Method |
 | --------------------- | ------------- | ----------- |

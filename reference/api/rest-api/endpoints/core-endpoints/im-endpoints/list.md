@@ -1,6 +1,6 @@
 # List
 
-Lists all of the direct messages the calling user has joined. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
+Lists all of the direct messages the calling user has joined. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
 
 | URL               | Requires Auth | HTTP Method |
 | ----------------- | ------------- | ----------- |

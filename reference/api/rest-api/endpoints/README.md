@@ -1,20 +1,19 @@
 # Endpoints
 
-## Endpoints
+## Authentication
 
-[**Access Tokens**](other-important-endpoints/access-tokens-endpoints.md)
+| Url              | Short Description                                  | Details Page                                                           |
+| ---------------- | -------------------------------------------------- | ---------------------------------------------------------------------- |
+| `/api/v1/login`  | Authenticate with username and password.           | [Link](other-important-endpoints/authentication-endpoints/login.md)    |
+| `/api/v1/login`  | Authenticate with facebook.                        | [Link](other-important-endpoints/authentication-endpoints/facebook.md) |
+| `/api/v1/login`  | Authenticate with google.                          | [Link](other-important-endpoints/authentication-endpoints/google.md)   |
+| `/api/v1/login`  | Authenticate with twitter.                         | [Link](other-important-endpoints/authentication-endpoints/twitter.md)  |
+| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](other-important-endpoints/authentication-endpoints/logout.md)   |
+| `/api/v1/me`     | Displays information about the authenticated user. | [Link](other-important-endpoints/authentication-endpoints/me.md)       |
 
-[**Pagination**](other-important-endpoints/offset-and-count-and-sort-info.md)
+## Avatar
 
-[**Query and Fields**](other-important-endpoints/query-and-fields-info.md)
-
-[**Rate Limiter Endpoints**](other-important-endpoints/rate-limiter-endpoints.md)
-
-[**Avatars**](../avatars.md)
-
-[**Authentication**](other-important-endpoints/authentication-endpoints/)
-
-[**Two Factor Authentication**](../../realtime-api/2fa.md)
+<table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/avatar/{subject}</code></td><td>Fetch room avatar</td><td><a href="../avatars.md">Link</a></td></tr></tbody></table>
 
 ## Assets
 

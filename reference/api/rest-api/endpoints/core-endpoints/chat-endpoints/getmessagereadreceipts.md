@@ -2,7 +2,7 @@
 
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md)
+Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](broken-reference)
 
 | URL                                   | Requires Auth | HTTP Method |
 | ------------------------------------- | ------------- | ----------- |

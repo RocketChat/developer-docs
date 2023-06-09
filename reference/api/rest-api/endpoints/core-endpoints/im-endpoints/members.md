@@ -1,6 +1,6 @@
 # Members
 
-Lists the users of participants of a direct message. It supports the [Offset, Count, and Sort Query Parameters](../../other-important-endpoints/offset-and-count-and-sort-info.md).
+Lists the users of participants of a direct message. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
 
 | URL                  | Requires Auth | HTTP Method |
 | -------------------- | ------------- | ----------- |

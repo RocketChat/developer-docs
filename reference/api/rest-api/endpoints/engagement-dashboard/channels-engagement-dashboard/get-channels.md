@@ -1,6 +1,6 @@
 # Get Channels
 
-Retrieve all channels and the number of messages in each channel within a specific period. It supports the [Offset and Count](../../other-important-endpoints/offset-and-count-and-sort-info.md) query parameters.
+Retrieve all channels and the number of messages in each channel within a specific period. It supports the [Offset and Count](broken-reference) query parameters.
 
 {% hint style="info" %}
 It requires `view-engagement-dashboard` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
