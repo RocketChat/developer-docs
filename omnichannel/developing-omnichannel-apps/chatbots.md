@@ -1,0 +1,3 @@
+# Chatbots
+
+These apps allow you to build chatbots to assist your customers. Examples of these apps include [Dialogflow](https://github.com/RocketChat/Apps.Dialogflow) and [Rasa](https://github.com/RocketChat/Apps.Rasa). These app uses the app's engine's event handlers (namely [executePostMessageSentHandler](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/messages\_ipostmessagesent.ipostmessagesent.html)) to listen to messages from visitors and then forwards those messages to respective services like Dialogflow/Rasa. Upon receiving a response from these services, these apps would send the response back to the RC room.

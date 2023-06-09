@@ -121,7 +121,10 @@
 ## Omnichannel
 
 * [Omnichannel Environment Setup](omnichannel/omnichannel-environment-setup.md)
-* [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps.md)
+* [Developing Omnichannel Apps](omnichannel/developing-omnichannel-apps/README.md)
+  * [Channel Apps](omnichannel/developing-omnichannel-apps/channel-apps.md)
+  * [Chatbots](omnichannel/developing-omnichannel-apps/chatbots.md)
+  * [CRM Apps](omnichannel/developing-omnichannel-apps/crm-apps.md)
 * [Livechat widget development and customization](omnichannel/livechat-widget-development-and-customization.md)
 * [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
@@ -146,7 +149,7 @@
         * [Login with Google](reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/google.md)
         * [Logout](reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/logout.md)
         * [My Profile](reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/me.md)
-        * [Two Factor Authentication](reference/api/rest-api/endpoints/authentication-endpoints/2fa.md)
+        * [Two Factor Authentication](reference/api/rest-api/endpoints/other-important-endpoints/2fa.md)
       * [Avatars](reference/api/rest-api/avatars.md)
       * [Assets Endpoints](reference/api/rest-api/endpoints/core-endpoints/assets-endpoints/README.md)
         * [Set Asset](reference/api/rest-api/endpoints/core-endpoints/assets-endpoints/setasset.md)
