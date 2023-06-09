@@ -1,5 +1,9 @@
 # Server Environment Setup
 
+{% hint style="warning" %}
+None of this is a recommended method of deploying Rocket.Chat for day-to-day use. If you wish to deploy and set up a workspace, check the docs at [https://docs.rocket.chat/deploy/](https://docs.rocket.chat/deploy/).
+{% endhint %}
+
 You can set up a server development environment locally to develop, contribute and make changes to the source code regardless of the system that you have.
 
 In order to set up a development environment for Rocket.Chat server, you need to install and configure a number of dependencies on your local machine. See below how it can be done depending on your system.
