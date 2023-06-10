@@ -1,6 +1,6 @@
 # Directory
 
-A method, that searches by users or channels on all users and channels available on server. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameters](broken-reference).
+A method, that searches by users or channels on all users and channels available on server. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 | URL                 | Requires Auth | HTTP Method |
 | ------------------- | ------------- | ----------- |

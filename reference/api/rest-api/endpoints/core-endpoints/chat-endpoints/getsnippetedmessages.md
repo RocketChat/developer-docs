@@ -1,6 +1,6 @@
 # Get Snippeted Messages
 
-Retrieve snippeted messages. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Retrieve snippeted messages.  It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                                 | Requires Auth | HTTP Method |
 | ----------------------------------- | ------------- | ----------- |

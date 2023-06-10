@@ -4,9 +4,9 @@ description: Get a list of all priorities
 
 # Get Priorities
 
-This supports the [Offset, Count, and Sort Query Parameters](broken-reference).
-
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
+It supports the [#pagination](../../#pagination "mention") parameters.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` or `view-l-room permission`.

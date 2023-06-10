@@ -1,6 +1,6 @@
 # Role Get Users In Role
 
-Gets the users that belongs to a role. It supports the [Offset and Count Only](broken-reference).
+Gets the users that belongs to a role. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
 
 | URL                            | Requires Auth | HTTP Method |
 | ------------------------------ | ------------- | ----------- |

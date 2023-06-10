@@ -2,7 +2,7 @@
 
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Retrieve message read receipts. It supports ONLY the [Offset and Count Query Parameters](broken-reference)
+Retrieve message read receipts. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
 
 | URL                                   | Requires Auth | HTTP Method |
 | ------------------------------------- | ------------- | ----------- |

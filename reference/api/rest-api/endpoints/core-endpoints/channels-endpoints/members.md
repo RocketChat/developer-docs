@@ -1,6 +1,6 @@
 # Channel Members List
 
-Lists all channel users. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Lists all channel users. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 {% hint style="info" %}
 The list of elements a user can use to sort the list is limited. The current sortable element is:`username`

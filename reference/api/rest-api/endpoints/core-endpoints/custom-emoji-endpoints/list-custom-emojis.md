@@ -4,7 +4,7 @@ description: Get an updated list of custom emojis
 
 # Get Updated list of custom emojis
 
-It supports the [Query Parameters only](broken-reference).
+It supports only the query parameter for [#query-and-fields](../../../#query-and-fields "mention").
 
 | URL                         | Requires Auth | HTTP Method |
 | --------------------------- | ------------- | ----------- |

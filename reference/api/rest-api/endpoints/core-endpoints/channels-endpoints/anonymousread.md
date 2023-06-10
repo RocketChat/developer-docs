@@ -1,6 +1,6 @@
 # Channel Anonymous Read
 
-Gets the messages in public channels to an anonymous user, if the server has the setting `Accounts_AllowAnonymousRead` enabled. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameters](broken-reference).
+Gets the messages in public channels to an anonymous user, if the server has the setting `Accounts_AllowAnonymousRead` enabled. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |

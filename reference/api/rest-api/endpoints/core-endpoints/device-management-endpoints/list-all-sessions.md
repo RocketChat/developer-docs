@@ -6,7 +6,7 @@ description: List all sessions on the workspace.
 
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-Retrieve the sessions of all users on the workspace.  It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Retrieve the sessions of all users on the workspace.  It supports the [#pagination](../../../#pagination "mention") parameters.
 
 {% hint style="info" %}
 * It requires the `view-device-management`[permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).

@@ -4,7 +4,7 @@ description: Get the queued chats.
 
 # Livechat Queue
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+It supports the [#pagination](../#pagination "mention") parameters.
 
 | URL                      | Requires Auth | HTTP Method |
 | ------------------------ | ------------- | ----------- |

@@ -4,7 +4,7 @@ description: Get a list of all priorities
 
 # Get Priorities
 
-This supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+It supports the [#pagination](../../../#pagination "mention") parameters.
 
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 

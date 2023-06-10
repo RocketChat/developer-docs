@@ -4,7 +4,7 @@ description: Lists all of the open livechat inquiries.
 
 # Inquiries List
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+It supports the [#pagination](../../#pagination "mention") parameters.
 
 | URL                               | Requires Auth | HTTP Method |
 | --------------------------------- | ------------- | ----------- |

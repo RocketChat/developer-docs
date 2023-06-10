@@ -1,10 +1,8 @@
 # Get SLA Policies
 
-Get a list of all SLA policies.
-
 <figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Get a list of all SLA policies. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-sla` or `view-l-room` permission.

@@ -1,6 +1,6 @@
 # Members
 
-Lists the users of participants of a direct message. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Lists the users of participants of a direct message. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                  | Requires Auth | HTTP Method |
 | -------------------- | ------------- | ----------- |

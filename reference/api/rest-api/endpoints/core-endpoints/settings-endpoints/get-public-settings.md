@@ -1,8 +1,8 @@
 # Get public settings
 
-List all public settings. Learn how this can be used in configuring your server in [this guide](https://docs.rocket.chat/quick-start/environment-configuration/environment-variables#other-environment-variables).
+List all public settings. Learn how this can be used in configuring your server in [this guide](https://docs.rocket.chat/quick-start/environment-configuration/environment-variables#other-environment-variables).&#x20;
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                       | Requires Auth | HTTP Method |
 | ------------------------- | ------------- | ----------- |

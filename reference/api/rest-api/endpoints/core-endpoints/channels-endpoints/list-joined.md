@@ -1,6 +1,6 @@
 # Channel List Joined
 
-Lists all of the channels the calling user has joined. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with just the [Fields Query Parameter](broken-reference).
+Lists all of the channels the calling user has joined. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the field parameter for [#query-and-fields](../../../#query-and-fields "mention").
 
 | URL                            | Requires Auth | HTTP Method |
 | ------------------------------ | ------------- | ----------- |

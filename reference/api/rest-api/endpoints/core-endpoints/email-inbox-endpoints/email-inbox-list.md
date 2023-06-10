@@ -4,7 +4,7 @@ description: Gets email inbox list
 
 # Email inbox list
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Fields Query Parameters](broken-reference).
+&#x20;It supports the [#pagination](../../../#pagination "mention") parameters, alongside the field parameter for [#query-and-fields](../../../#query-and-fields "mention").
 
 {% hint style="info" %}
 Requires the user to have`manage-email-inbox`permission.

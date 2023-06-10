@@ -4,9 +4,9 @@ description: Get a list of Livechat custom fields.
 
 # List livechat custom fields
 
-{% hint style="info" %}
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
-{% endhint %}
+It supports the [#pagination](../../#pagination "mention") parameters.
+
+
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |

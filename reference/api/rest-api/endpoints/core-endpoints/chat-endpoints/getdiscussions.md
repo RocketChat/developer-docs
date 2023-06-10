@@ -1,6 +1,6 @@
 # Get Discussions of A Room
 
-Retrieve the discussions of a room. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Retrieve the discussions of a room. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                           | Requires Auth | HTTP Method |
 | ----------------------------- | ------------- | ----------- |

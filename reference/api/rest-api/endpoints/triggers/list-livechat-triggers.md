@@ -4,7 +4,7 @@ description: Lists all Livechat triggers.
 
 # List Livechat Triggers
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+&#x20;It supports the [#pagination](../../#pagination "mention") parameters.
 
 | URL                         | Requires Auth | HTTP Method |
 | --------------------------- | ------------- | ----------- |

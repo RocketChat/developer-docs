@@ -4,9 +4,7 @@ description: Search for a Visitor using their name, username, email or phone.
 
 # Search for Visitors
 
-{% hint style="info" %}
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
-{% endhint %}
+It supports the [#pagination](../../#pagination "mention") parameters.
 
 | URL                                | Requires Auth | HTTP Method |
 | ---------------------------------- | ------------- | ----------- |

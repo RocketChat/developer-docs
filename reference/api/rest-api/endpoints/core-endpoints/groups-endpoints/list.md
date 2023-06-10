@@ -1,6 +1,6 @@
 # Group List
 
-Lists all of the private groups the calling user has joined. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Lists all of the private groups the calling user has joined. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                   | Requires Auth | HTTP Method |
 | --------------------- | ------------- | ----------- |

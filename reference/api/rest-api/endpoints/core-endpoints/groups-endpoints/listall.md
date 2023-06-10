@@ -1,6 +1,6 @@
 # Group List All
 
-Lists all of the private groups of any users. The calling user requires to have 'view-room-administration' right. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with just the [Fields Query Parameters](broken-reference).
+Lists all of the private groups of any users. The calling user requires to have 'view-room-administration' right.  It supports the [#pagination](../../../#pagination "mention") parameters, alongside the field parameter for [#query-and-fields](../../../#query-and-fields "mention").
 
 | URL                      | Requires Auth | HTTP Method |
 | ------------------------ | ------------- | ----------- |

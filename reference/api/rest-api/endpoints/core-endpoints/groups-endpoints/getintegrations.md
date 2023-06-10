@@ -1,6 +1,6 @@
 # Get Integrations
 
-Retrieves the integrations which the group has, requires at least one integration permission: `manage-incoming-integrations`, `manage-own-incoming-integrations`, `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on the user permission. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameters](broken-reference).
+Retrieves the integrations which the group has, requires at least one integration permission: `manage-incoming-integrations`, `manage-own-incoming-integrations`, `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on the user permission. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |

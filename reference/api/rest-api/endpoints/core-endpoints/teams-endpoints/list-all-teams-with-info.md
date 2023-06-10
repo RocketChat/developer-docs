@@ -1,6 +1,6 @@
 # List All Teams with Info
 
-Lists all of the teams and their information. Requires `view-all-teams` permission. It supports the [Offset and Count Parameters](broken-reference).
+Lists all of the teams and their information. Requires `view-all-teams` permission. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
 
 | URL                     | Requires Auth | HTTP Method |
 | ----------------------- | ------------- | ----------- |

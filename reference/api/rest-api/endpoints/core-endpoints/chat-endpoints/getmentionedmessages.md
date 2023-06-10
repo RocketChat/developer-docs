@@ -1,6 +1,6 @@
 # Get Mentioned Messages
 
-Retrieve mentioned messages. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Retrieve mentioned messages. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                                 | Requires Auth | HTTP Method |
 | ----------------------------------- | ------------- | ----------- |

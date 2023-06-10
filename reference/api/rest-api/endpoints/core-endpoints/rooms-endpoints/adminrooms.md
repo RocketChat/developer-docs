@@ -4,7 +4,7 @@ description: REST API Admin Rooms Methods
 
 # Admin Rooms
 
-Retrieves all rooms (requires the `view-room-administration` permission). It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Retrieves all rooms (requires the `view-room-administration` permission). It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                        | Requires Auth | HTTP Method |
 | -------------------------- | ------------- | ----------- |

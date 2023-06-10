@@ -1,7 +1,7 @@
 # Get statistics list
 
 {% hint style="info" %}
-Selectable statistics about the Rocket.Chat server. It supports the [Offset, Count and Sort Query Parameters](broken-reference) along with just the [Fields and Query Parameters](broken-reference). Requires `view-statistics` permission.
+Selectable statistics about the Rocket.Chat server. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters. Requires `view-statistics` permission.
 {% endhint %}
 
 | URL                      | Requires Auth | HTTP Method |

@@ -1,6 +1,6 @@
 # Group Members
 
-Lists the users of participants of a private group. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Lists the users of participants of a private group. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 Requires `view-broadcast-member-list` if room is a broadcast.
 

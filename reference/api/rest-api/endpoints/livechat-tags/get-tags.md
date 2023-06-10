@@ -1,10 +1,8 @@
 # Get Tags
 
-Get a list of all tags
-
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
-
 <figure><img src="../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+
+Get a list of all tags. It supports the [#pagination](../../#pagination "mention") parameters.
 
 | URL                    | Requires Auth | HTTP Method |
 | ---------------------- | ------------- | ----------- |

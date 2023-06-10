@@ -1,10 +1,10 @@
 # Get Units
 
+![](../../../../../.gitbook/assets/enterprise.jpg)
+
 Gets the list of all Omnichannel units. This requires the `manage-livechat-units` permission.
 
-It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameters](broken-reference).
-
-![](../../../../../.gitbook/assets/enterprise.jpg)
+It supports the [#pagination](../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../#query-and-fields "mention") parameters.
 
 <table><thead><tr><th width="268.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/units</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 

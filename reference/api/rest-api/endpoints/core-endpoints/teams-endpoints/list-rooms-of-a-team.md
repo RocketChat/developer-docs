@@ -1,6 +1,6 @@
 # List Rooms of a team
 
-List all rooms of the team. It supports the [Offset and Count Parameters](broken-reference).
+List all rooms of the team. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
 
 | URL                       | Requires Auth | HTTP Method |
 | ------------------------- | ------------- | ----------- |

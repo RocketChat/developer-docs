@@ -1,6 +1,6 @@
 # Sync Thread Messages
 
-It supports the [Query, Fields](broken-reference) and [sort](broken-reference).
+It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                               | Requires Auth | HTTP Method |
 | --------------------------------- | ------------- | ----------- |

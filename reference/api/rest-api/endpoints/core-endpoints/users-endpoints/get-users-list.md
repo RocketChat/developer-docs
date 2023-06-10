@@ -1,6 +1,6 @@
 # Get Users List
 
-Gets all of the users in the system and their information, the result is only limited to what the callee has access to view. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameter](broken-reference).
+Gets all of the users in the system and their information, the result is only limited to what the callee has access to view. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 | URL                  | Requires Auth | HTTP Method |
 | -------------------- | ------------- | ----------- |

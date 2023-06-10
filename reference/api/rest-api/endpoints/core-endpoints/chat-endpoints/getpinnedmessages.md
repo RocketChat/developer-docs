@@ -1,6 +1,6 @@
 # Get Pinned Messages
 
-Retrieve pinned messages from a room. It supports ONLY the [Offset and Count Query Parameters](broken-reference)
+Retrieve pinned messages from a room. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
 
 | URL                              | Requires Auth | HTTP Method |
 | -------------------------------- | ------------- | ----------- |

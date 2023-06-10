@@ -1,6 +1,6 @@
 # Files
 
-Retrieves the files from a direct message. It supports the [Offset, Count, and Sort Query Parameters](broken-reference) along with [Query and Fields Query Parameters](broken-reference).
+Retrieves the files from a direct message. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 | URL                | Requires Auth | HTTP Method |
 | ------------------ | ------------- | ----------- |

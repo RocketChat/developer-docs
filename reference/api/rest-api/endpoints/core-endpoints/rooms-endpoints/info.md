@@ -4,7 +4,7 @@ description: REST API Rooms Info Methods
 
 # Rooms Info
 
-Retrieves the information about the room. It supports [Fields Query Parameters](broken-reference) **only**.
+Retrieves the information about the room.  It supports only the field parameter for [#query-and-fields](../../../#query-and-fields "mention").
 
 | URL                  | Requires Auth | HTTP Method |
 | -------------------- | ------------- | ----------- |

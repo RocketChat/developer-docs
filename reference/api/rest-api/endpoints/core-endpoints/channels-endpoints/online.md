@@ -1,6 +1,6 @@
 # Channel Online
 
-Lists all online users of a channel if the channel's id is provided, otherwise it gets all online users of all channels. It supports the [Query Parameters only](broken-reference).
+Lists all online users of a channel if the channel's id is provided, otherwise it gets all online users of all channels. It only supports the query parameter for [#query-and-fields](../../../#query-and-fields "mention").
 
 | URL                       | Requires Auth | HTTP Method |
 | ------------------------- | ------------- | ----------- |

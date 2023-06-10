@@ -1,6 +1,6 @@
 # List of teams of caller
 
-Lists the public and private teams the caller is part of. It supports the [Offset, Count, and Sort Query Parameters](broken-reference).
+Lists the public and private teams the caller is part of. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                  | Requires Auth | HTTP Method |
 | -------------------- | ------------- | ----------- |
