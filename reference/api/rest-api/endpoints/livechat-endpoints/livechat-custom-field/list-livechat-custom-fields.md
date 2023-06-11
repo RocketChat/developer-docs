@@ -4,7 +4,7 @@ description: Get a list of Livechat custom fields.
 
 # List livechat custom fields
 
-It supports the [#pagination](../../#pagination "mention") parameters.
+It supports the [#pagination](../../../#pagination "mention") parameters.
 
 
 

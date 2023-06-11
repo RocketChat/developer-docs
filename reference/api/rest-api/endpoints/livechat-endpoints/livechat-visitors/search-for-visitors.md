@@ -4,7 +4,7 @@ description: Search for a Visitor using their name, username, email or phone.
 
 # Search for Visitors
 
-It supports the [#pagination](../../#pagination "mention") parameters.
+It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                                | Requires Auth | HTTP Method |
 | ---------------------------------- | ------------- | ----------- |

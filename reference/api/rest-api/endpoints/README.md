@@ -119,9 +119,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ## Cloud
 
-| URL                            | Short Description              | Details Page                                                                                                                              |
-| ------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/cloud.manualRegister` | Manually registers a workspace | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/cloud-endpoints/cloud-manual-register) |
+| URL                            | Short Description              | Details Page                                                    |
+| ------------------------------ | ------------------------------ | --------------------------------------------------------------- |
+| `/api/v1/cloud.manualRegister` | Manually registers a workspace | [Link](core-endpoints/cloud-endpoints/cloud-manual-register.md) |
 
 ## Commands
 
@@ -473,20 +473,20 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ## Livechat
 
-### Agent
+### &#x20;Livechat Agent
 
 | Url                               | Short Description                              | Details Page                                                                                                                                |
 | --------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent)      |
 | `livechat/agent.next/:token`      | Retrieves the data of the next available agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
 
-### Configuration
+### Livechat Configuration
 
 | Url               | Short Description                                                         | Details Page                                                                                                                      |
 | ----------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/config` | Retrieves LiveChat widget configuration info and additional visitor data. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-config) |
 
-### Contacts
+### Livechat Contacts
 
 | Url                          | Short Description                                   | Details Page                                                                                                                                                    |
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -494,7 +494,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `omnichannel/contact`        | Retrieves a contact information                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-fetch-contact)    |
 | `omnichannel/contact.search` | Searches a contact information                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-search-contact)   |
 
-### Custom Field
+### Livechat Custom Field
 
 | Url                           | Short Description                             | Details Page                                                                                                                                                            |
 | ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -503,7 +503,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/list-livechat-custom-fields)             |
 | `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/get-info-about-a-custom-field)           |
 
-### Message
+### Livechat Message
 
 | Url                              | Short Description                      | Details Page                                                                                                                                                      |
 | -------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -514,19 +514,19 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/messages.history/:rid` | Retrieves omnichannel messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
 | `livechat/messages`              | Sends array of messages                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages)                            |
 
-### Offline Message
+### Livechat Offline Message
 
 | Url                        | Short Description                                   | Details Page                                                                                                                               |
 | -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | `livechat/offline.message` | Sends an offline message when no agent is available | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-offline-message) |
 
-### Page Visited
+### Livechat Page Visited
 
 | Url                     | Short Description                                                    | Details Page                                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history) |
 
-### Room
+### Livechat Room
 
 | Url                      | Short Description                                                 | Details Page                                                                                                                                           |
 | ------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -536,19 +536,19 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-forward)  |
 | `livechat/room.visitor`  | Updates room visitor's information                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/change-room-visitor)    |
 
-### Transcript
+### Livechat Transcript
 
 | Url                   | Short Description              | Details Page                                                                                                                          |
 | --------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/transcript` | Requests a Livechat transcript | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transcript) |
 
-### Transfer
+### Livechat Transfer
 
 | Url                              | Short Description                           | Details Page                                                                                                                        |
 | -------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transfer) |
 
-### Visitor
+### Livechat Visitor
 
 | Url                            | Short Description                        | Details Page                                                                                                                                                 |
 | ------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -558,7 +558,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `livechat/visitor/:token/room` | Retrieves open conversation of a visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/get-open-conversation-of-a-visitor) |
 | `livechat/visitor.status`      | Sets visitor status                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/set-visitor-status)                 |
 
-### Agent
+### Livechat Agent Stats
 
 <table><thead><tr><th width="272">Url</th><th width="276">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/livechat/agents/:agentId/departments</code></td><td>Returns all the departments associated with an agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-departments">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/average-service-time</code></td><td>Retrieves average service time per agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/total-service-time</code></td><td>Retrieves total service time sorted by agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/available-for-service-history</code></td><td>Retrieves a list of agents and their available time for the provided time frame</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history">Link</a></td></tr></tbody></table>
 
@@ -568,14 +568,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
 
-### Business Hours
+### Livechat Business Hours
 
 | Url                                   | Short Description                                           | Details Page                                                                                                                      |
 | ------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/business-hour`       | Retrieves all the information of a particular business hour | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hour-info)  |
 | `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hours-list) |
 
-### Dashboards
+### Livechat Dashboards
 
 | Url                                                                   | Short Description                                       | Details Page                                                                                                                            |
 | --------------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -583,13 +583,13 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agent-productivity-totalizers) |
 | `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chat-totalizers)               |
 | `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/productivity-totalizers)       |
-| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chat for a department                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-chart)                   |
+| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-chart)                   |
 | `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-agent-chart)         |
 | `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agents-statuses-chart)         |
 | `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart)    |
 | `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/timings-charts)                |
 
-### Departments
+### Livechat Departments
 
 | Url                                                                | Short Description                                             | Details Page                                                                                                                                  |
 | ------------------------------------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -612,7 +612,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/analytics/departments/total-abandoned-chats`      | Retrieves abandoned chats                                     | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/total-abandoned-chats-by-department) |
 | `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats                       | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department)                |
 
-### Inquiries
+### Livechat Inquiries
 
 | Url                                  | Short Description                        | Details Page                                                                                                                |
 | ------------------------------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -623,45 +623,45 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
 | `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](inquiries/set-sla-to-inquiry.md)                                                                                     |
 
-### Integrations
+### Livechat Integrations
 
 | Url                                     | Short Description                        | Details Page                                                                                                |
 | --------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/integrations) |
 
-### Queue
+### Livechat Queue
 
 | Url                     | Short Description          | Details Page                                                                                                  |
 | ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/queue` | Retrieves the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
 
-### Rooms
+### Livechat Rooms
 
 | Url                           | Short Description                            | Details Page                                                                                                             |
 | ----------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/rooms`       | Retrieves a list of livechat rooms           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/livechat-rooms-list) |
 | `api/v1/livechat/room.onHold` | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/room-onhold)         |
 
-### SMS
+### Livechat SMS
 
 | Url                                     | Short Description | Details Page                                                                                                       |
 | --------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/sms-incoming/:service` | Receives SMS      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/sms-incoming-twilio) |
 
-### Triggers
+### Livechat Triggers
 
 | Url                             | Short Description                  | Details Page                                                                                                                      |
 | ------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-the-livechat-triggers) |
 | `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-a-livechat-trigger)    |
 
-### Upload
+### Livechat Upload
 
 | Url                           | Short Description | Details Page |
 | ----------------------------- | ----------------- | ------------ |
 | `api/v1/livechat/upload/:rid` | post              |              |
 
-### Live chat Users
+### Livechat Users
 
 | Url                                | Short Description                   | Details Page                                                                                                                         |
 | ---------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -670,7 +670,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager) |
 | `api/v1/livechat/users/:type/:_id` | Removes an agent or manager         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager)      |
 
-### Visitors
+### Livechat Visitors
 
 | Url                                                                    | Short Description                           | Details Page                                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -681,14 +681,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-autocomplete)                  |
 | `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitors-search)                       |
 
-### Monitors
+### Livechat Monitors
 
 | Url                               | Short Description              | Details Page                                                                                                             |
 | --------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/monitors.list`   | Retrieves a list of monitors   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/list-of-monitors) |
 | `api/v1/livechat/monitors.getOne` | Gives the details of a monitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/get-one-monitor)  |
 
-### Priorities
+### Livechat Priorities
 
 | Url                                      | Short Description               | Details Page                                        |
 | ---------------------------------------- | ------------------------------- | --------------------------------------------------- |
@@ -702,7 +702,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/tags`        | Retrieves a list of tags   | [Link](livechat-tags/get-tags.md)  |
 | `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](livechat-tags/get-a-tag.md) |
 
-### Units
+### Livechat Units
 
 | Url                                     | Short Description             | Details Page                                                                                                                   |
 | --------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
