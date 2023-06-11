@@ -102,7 +102,7 @@ A Rocket.Chat App is basically a TypeScript file on the root of your project con
 
 Let's take a look at our own project's root. You should find a TypeScript file named `HelloWorldApp.ts`.
 
-![](<../../.gitbook/assets/image (16) (2).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
 Open the `HelloWorldApp.ts` file. Ignore all the import statements for now. Focus on the main exported class.
 

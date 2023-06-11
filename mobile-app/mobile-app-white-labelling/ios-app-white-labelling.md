@@ -148,7 +148,7 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 
 ### Create an App Identifier for our Notification Service
 
-![](<../../.gitbook/assets/image (38).png>)
+![](<../../.gitbook/assets/image (38) (1).png>)
 
 ### Creating an App Group
 

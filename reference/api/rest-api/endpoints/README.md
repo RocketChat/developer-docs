@@ -621,7 +621,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `api/v1/livechat/inquiries.queued`   | Lists queued inquiries                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-queued)   |
 | `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one)    |
 | `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
-| `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](inquiries/set-sla-to-inquiry.md)                                                                                     |
+| `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](livechat-endpoints/livechat-inquiries/set-sla-to-inquiry.md)                                                         |
 
 ### Livechat Integrations
 
@@ -637,10 +637,12 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Livechat Rooms
 
-| Url                           | Short Description                            | Details Page                                                                                                             |
-| ----------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/rooms`       | Retrieves a list of livechat rooms           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/livechat-rooms-list) |
-| `api/v1/livechat/room.onHold` | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/room-onhold)         |
+| Url                                  | Short Description                            | Details Page                                                                                                     |
+| ------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/rooms`              | Retrieves a list of livechat rooms           | [Link](livechat-endpoints/livechat-rooms/livechat-rooms-list.md)                                                 |
+| `api/v1/livechat/room/:rid/priority` | Set the priority of a Livechat room.         | [Link](livechat-endpoints/livechat-rooms/set-livechat-room-priority.md)                                          |
+| `api/v1/livechat/room/:rid/priority` | Remove the priority set to a Livechat room.  | [Link](livechat-endpoints/livechat-rooms/remove-livechat-room-priority.md)                                       |
+| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/room-onhold) |
 
 ### Livechat SMS
 
@@ -690,28 +692,28 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Livechat Priorities
 
-| Url                                      | Short Description               | Details Page                                        |
-| ---------------------------------------- | ------------------------------- | --------------------------------------------------- |
-| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](priorities/priorities-old/get-priorities.md) |
-| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](priorities/priorities-old/get-a-priority.md) |
+| Url                                      | Short Description               | Details Page                                                                               |
+| ---------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------ |
+| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md) |
 
 ### Livechat Tags
 
-| Url                           | Short Description          | Details Page                       |
-| ----------------------------- | -------------------------- | ---------------------------------- |
-| `api/v1/livechat/tags`        | Retrieves a list of tags   | [Link](livechat-tags/get-tags.md)  |
-| `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](livechat-tags/get-a-tag.md) |
+| Url                           | Short Description          | Details Page                                          |
+| ----------------------------- | -------------------------- | ----------------------------------------------------- |
+| `api/v1/livechat/tags`        | Retrieves a list of tags   | [Link](livechat-endpoints/livechat-tags/get-tags.md)  |
+| `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](livechat-endpoints/livechat-tags/get-a-tag.md) |
 
 ### Livechat Units
 
 | Url                                     | Short Description             | Details Page                                                                                                                   |
 | --------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/units`                 | Create unit                   | [Link](units/create-unit.md)                                                                                                   |
+| `api/v1/livechat/units`                 | Create unit                   | [Link](livechat-endpoints/livechat-units/create-unit.md)                                                                       |
 | `api/v1/livechat/units.list`            | Gives a list of units         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit)          |
 | `api/v1/livechat/units.getOne`          | Retrieves details of a unit   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/get-one-unit)          |
 | `api/v1/livechat/unitMonitors.list`     | Gives a list of unit monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit-monitors) |
-| `api/v1/livechat/unitMonitors.list/:id` | Update Unit by Id             | [Link](units/update-unit.md)                                                                                                   |
-| `api/v1/livechat/unitMonitors.list/:id` | Delete unit using ID          | [Link](units/delete-unit.md)                                                                                                   |
+| `api/v1/livechat/unitMonitors.list/:id` | Update Unit by Id             | [Link](livechat-endpoints/livechat-units/update-unit.md)                                                                       |
+| `api/v1/livechat/unitMonitors.list/:id` | Delete unit using ID          | [Link](livechat-endpoints/livechat-units/delete-unit.md)                                                                       |
 
 ## SLA Policies
 
@@ -727,7 +729,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/v1/connector.extension.getRegistrationInfoByUserId`                                         | Get registration information by ID              | [Link](./#voip-registration-information)                                                                       |
 | `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                  |
 | `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                  |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP queue membership data                  | [Link](omnichannel/voice-channel/call-center-queue-membership/get-call-center-queue-membership-information.md) |
+| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP queue membership data                  | [Link](voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
 | `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                               |
 | `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                               |
 | `v1/voip/queues.getMembershipSubscription`                                                    | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                                               |

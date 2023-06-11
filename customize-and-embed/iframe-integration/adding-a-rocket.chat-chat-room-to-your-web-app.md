@@ -4,7 +4,7 @@
 
 Before adding a room to your application, here are some conditions that must be met:
 
-* A running Rocket.Chat server with at least one [room](../../reference/api/rest-api/endpoints/rooms/).
+* A running Rocket.Chat server with at least one [room](../../reference/api/rest-api/endpoints/livechat-endpoints/livechat-rooms/).
 
 {% hint style="info" %}
 See the different ways of [deploying](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods) and [configuring](https://docs.rocket.chat/setup-and-configure/accessing-your-workspace) a Rocket.Chat server.
