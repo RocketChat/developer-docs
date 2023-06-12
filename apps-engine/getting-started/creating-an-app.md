@@ -4,7 +4,7 @@ description: Getting Started in creating your first ever Rocket.Chat App
 
 # Creating Your First App
 
-Now, that you've understood the basic concepts of the Apps Engine and installed the CLI, you can create an extremely basic RC App and test it out to understand things. To get started, just recall the commands inside the Apps Engine CLI.
+Now, that you've understood the basic concepts of the Apps-Engine and installed the CLI, you can create an extremely basic RC App and test it out to understand things. To get started, just recall the commands inside the Apps-Engine CLI.
 
 ## Creating a new RocketChat App
 

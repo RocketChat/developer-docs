@@ -11,7 +11,7 @@ Apps are allowed to open a contextual bar with UIKit content. It works just like
 
 It does need a valid `IUIKitInteractionParam` object with the `triggerId` and the `IUser` calling the from the user calling the method.
 
-A sample application opening the contextual bar would consist of 2 main parts: a slashcommand from where we can get a valid `triggerId` and the function that opens the contextual bar using it.\\
+A sample application opening the contextual bar would consist of 2 main parts: a slashcommand from where we can get a valid `triggerId` and the function that opens the contextual bar using it.
 
 You can clone the app and test it in your own Rocker.Chat server:\
 [https://github.com/RocketChat/apps-contextual-bar-open-example](https://github.com/RocketChat/apps-contextual-bar-open-example)

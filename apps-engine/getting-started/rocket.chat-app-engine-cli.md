@@ -1,12 +1,12 @@
 ---
 description: >-
-  This guide will help you get started with our official Apps Engine Command
+  This guide will help you get started with our official Apps-Engine Command
   Line Interface (CLI)  to start creating your own apps.
 ---
 
-# The Apps Engine CLI
+# The Apps-Engine CLI
 
-The Rocket.Chat Apps Engine CLI is a simple Command Line Interface, that gives you a kickstart in developing your Rocket.Chat App.&#x20;
+The Rocket.Chat Apps-Engine CLI is a simple Command Line Interface, that gives you a kickstart in developing your Rocket.Chat App.
 
 Using simple commands, you can create a basic app structure and package & deploy it into your RC Server. We have extended its capability to generate boilerplate code for various functions, display autocomplete installation instructions, submit an App to the Marketplace for review, and more.
 
@@ -51,7 +51,7 @@ The development tools provide a command to quickly scaffold a new Rocket.Chat Ap
 
 The app description file, named `app.json`, contains basic information about the app. You can check the [app-schema.json](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/master/src/definition/app-schema.json) file for all the detailed information and fields allowed in the app description file, the basic structure is similar to this:
 
-``` json
+```json
 {
     "id": "5cb9a329-0613-4d39-b20f-cc2cc9175df5",
     "name": "App Name",

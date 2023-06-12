@@ -2,7 +2,7 @@
 
 ## How it works
 
-Each feature available in the Apps Engine is mapped to a permission. Adding the permission in the app's manifest (`app.json` file) will unlock said feature to be used by the app. For example, if you add "send messages" as a permission in your app's manifest, your app will be able to send messages in the Rocket.Chat server. If your app tries to send a message without having the "send messages" permission listed in the manifest, the Apps Engine will block the feature and the app will not be able to perform the desired action.
+Each feature available in the Apps-Engine is mapped to a permission. Adding the permission in the app's manifest (`app.json` file) will unlock said feature to be used by the app. For example, if you add "send messages" as a permission in your app's manifest, your app will be able to send messages in the Rocket.Chat server. If your app tries to send a message without having the "send messages" permission listed in the manifest, the Apps-Engine will block the feature and the app will not be able to perform the desired action.
 
 When installing an app, be it by the Marketplace or installing it manually via zip file, a window asks the user to review the permissions the app requires to work properly. The user installing the app can either accept and install the app or deny the permissions and not install it.
 
@@ -30,7 +30,7 @@ In your app's manifest file (`app.json`), add the field `permissions`. It receiv
 
 ### Notice about rule enforcement
 
-As of right now, the Apps Engine does not enforce the use of the permissions to make your apps work, meaning your current apps (including the ones published at the Marketplace) will still work as expected. All the apps that do not have the permissions listed in their manifest will still have access to all the features they need through the `default permissions`. They are applied to your app automatically when no `permissions` property is found in the app's manifest.
+As of right now, the Apps-Engine does not enforce the use of the permissions to make your apps work, meaning your current apps (including the ones published at the Marketplace) will still work as expected. All the apps that do not have the permissions listed in their manifest will still have access to all the features they need through the `default permissions`. They are applied to your app automatically when no `permissions` property is found in the app's manifest.
 
 Until no sunsetting period for the "permissionless engine" is defined, setting permissions in your app's manifest will be optional.
 

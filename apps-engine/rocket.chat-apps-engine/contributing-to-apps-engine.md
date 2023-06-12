@@ -4,7 +4,7 @@ description: >-
   possibilities of integrations around the Rocket.Chat ecosystem
 ---
 
-# Contributing to Apps Engine
+# Contributing to Apps-Engine
 
 Being Open Source, we always welcome contributors to help us out develop the ultimate chat platform. You can check out our Apps Engine repository here.
 
@@ -16,7 +16,7 @@ An awesome place to start is looking at our open issues and determining if you c
 When developing new functionalities, you need to integrate the local version of the Apps-Engine with your local version of Rocket.Chat.
 {% endhint %}
 
-## Get the Apps Engine Code
+## Get the Apps-Engine Code
 
 * To start, clone the Apps Engine repository and navigate into the directory by running
 
@@ -50,7 +50,7 @@ Where `PATH_TO_APPS_ENGINE` is the path to the Apps-Engine repo you cloned earli
 Whenever you make changes to the engine, run `npm run compile` again - meteor will take care of restarting the server due to the changes.
 {% endhint %}
 
-## Troubleshooting Apps Engine Development
+## Troubleshooting Apps-Engine Development
 
 1. Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running; you run into errors similar to these:
 
