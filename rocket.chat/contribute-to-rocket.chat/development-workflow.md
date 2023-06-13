@@ -27,12 +27,43 @@ Anytime you start to work on something different, make sure you create or switch
 * \[FIX] for bug fixes. You should include the issue number(s) in parenthesis whenever possible. (eg. `[FIX] OTR timeout problems (#629, #2535)`)
 * \[BREAK] for giving proper attention to changes that will break previous versions of Rocket.Chat (eg. `[BREAK] Change notification setting type from boolean to string`)
 
+### Adding changeset to your Pull Request
+
+A changeset is a piece of information about changes made in a branch or commit, that will be present in the changelog of the release. It holds three bits of information:
+
+* What we need to release
+* What version we are releasing packages at (using a [semver bump type](https://semver.org/))
+* A changelog entry for the released packages
+
+#### How to write **good** changesets
+
+* Changesets are for customers, so keep that in mind when writing
+* The language should correspond the audience, so try to not to delve into tech details
+* On the same line, try to avoid just duplicating the PR title, since PR titles are not meant to customers, but for developers
+* Should be written in past tense, using a descriptive verb
+  * No: `fix: Something i did`
+  * Yes: `Fixed a problem where...` or `Added capability for users to...`
+* Should be in english, and with good writing :)
+  * This is important since changesets are meant to be used automatically
+  * Reviewers should take this into consideration when checking PRs
+* Should be small and concise
+  * No: `Once upon a time...`
+  * Yes: `Fixed problem caused by X`
+* Feature branches should, in general, have one changeset on the main branch.
+  * Try to create this at the end of the development so it picks all the changes to packages :)
+* PRs can have more than one changeset, with different information/packages updated.
+  * Avoid creating more than one changeset if all will include the exact same information
+* Since changesets are not for devs, `refactors` and `chore` tasks should generally not include one
+* `fix`, `regression` and `improve` should always have one
+
+
+
 ## Getting your pull request reviewed, approved, and merged
 
 There are a few rules to get your pull request accepted:
 
 1. All checks have passed
-2. Travis CI runs automatically when you push your pull request. If Travis fails, take a look at the reasons for failure. If it fails for no apparent reason, try running it again.
+2. Travis CI runs automatically when you push your pull request. If Tra,vis fails, take a look at the reasons for failure. If it fails for no apparent reason, try running it again.
 3. You must sign the [Contributor License Agreement (CLA)](https://cla-assistant.io/RocketChat/Rocket.Chat)
 4. At least one team member must approve the Pull Request. If you don't know who to ask for approval, let your team, lead, or manager know you need one, and someone will be assigned as a reviewer.
 
