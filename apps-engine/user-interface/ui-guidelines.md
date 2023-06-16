@@ -21,7 +21,7 @@ The user menu contains items specific to the user such as status and preferences
 
 * **Do** add only user-specific items to this menu
 
-<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption><p>User menu visual guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1.png" alt=""><figcaption><p>User menu visual guide</p></figcaption></figure>
 
 ## Room kebab menu
 
@@ -31,7 +31,7 @@ The room kebab menu is located at the top right of any [Rocket.Chat Room](https:
 * Items on this menu must relate to or affect the current room or its context in some way.
 * **Don't** include icons or use emojis in item labels.
 
-<figure><img src="../.gitbook/assets/2.png" alt=""><figcaption><p>Room kebab menu UI guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2.png" alt=""><figcaption><p>Room kebab menu UI guide</p></figcaption></figure>
 
 ## Message kebab menu
 
@@ -41,7 +41,7 @@ The message kebab menu can be seen by the right of a message when hovered upon o
 * Only Rocket.Chat core actions can use icons.
 * **Don't** include icons or emoji anywhere inside the item label.
 
-<figure><img src="../.gitbook/assets/3 (3) (1).png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3 (3) (1).png" alt=""><figcaption><p>Message kebab menu UI guide</p></figcaption></figure>
 
 ## Chat messages
 
@@ -50,7 +50,7 @@ The message kebab menu can be seen by the right of a message when hovered upon o
 * **Don't** send messages on a user's behalf.
 * **Don't** over-communicate or use emojis excessively.
 
-<figure><img src="../.gitbook/assets/4.png" alt=""><figcaption><p>Chat message UI Guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4.png" alt=""><figcaption><p>Chat message UI Guide</p></figcaption></figure>
 
 ## Slash commands
 
@@ -59,7 +59,7 @@ Slash commands are usually the simplest ways users can interact with installed a
 * Slash command descriptions should appear by the side of the command when typed in the message composer.
 * Commands must have hyphens between words and include a description.
 
-<figure><img src="../.gitbook/assets/5.png" alt=""><figcaption><p>Slash commands UI Guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/5.png" alt=""><figcaption><p>Slash commands UI Guide</p></figcaption></figure>
 
 * All apps using a slash command must have a `/help` command showing the possibilities of the app and it's commands
 
@@ -73,7 +73,7 @@ Apps can utilize the contextual bar surface to offer information and actions to 
 * **Don't** use titled case in the contextual bar header.
 * **Do** use sentence case in contextual bar header.
 
-<figure><img src="../.gitbook/assets/6.png" alt=""><figcaption><p>Contextual bar UI Guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/6.png" alt=""><figcaption><p>Contextual bar UI Guide</p></figcaption></figure>
 
 ## Modals
 
@@ -84,7 +84,7 @@ As a default setting, the app logo asset will be presented in modals that are li
 * **Don't** use modals without the app name in the tagline.
 * **Do** use the app name in the modal tagline.
 
-<figure><img src="../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/7.png" alt=""><figcaption><p>Modals UI Guide</p></figcaption></figure>
 
 ## App (bot) username
 

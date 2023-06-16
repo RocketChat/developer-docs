@@ -9,31 +9,31 @@
 As explained in the [Important section](https://developer.rocket.chat/mobile-app/mobile-app-white-labelling#important), we have two targets and we're going to cover the default one on this doc, which is the Experimental app.
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.41.png)
+![](../../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.41.png)
 
 * Select “ShareRocketChatRN” and change the same properties
   * `Display Name` and `Bundle Identifier` are different from the previous target
   * `Version` and `Build` must be the same on all targets
 
-![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.50.png)
+![](../../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.50.png)
 
 * Select “NotificationService” and change the same properties
   * `Display Name` and `Bundle Identifier` are different from the previous target
   * `Version` and `Build` must be the same on all targets
 
-![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.59.png)
+![](../../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.59.png)
 
 * On Signing and Capabilities, check “Automatically manage signing”, select your app group and add a keychain group
 
-![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.48.png)
+![](../../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.48.png)
 
 * Select “ShareRocketChatRN”, check “Automatically manage signing”, select your app group and add the same keychain group
 
-![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.33.png)
+![](../../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.33.png)
 
 * Select “NotificationService”, check “Automatically manage signing”, select your app group and add the same keychain group
 
-![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.58.png)
+![](../../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.58.png)
 
 * Set the same app group on `RocketChatRN/Info.plist`, `ShareRocketChatRN/Info.plist` and `NotificationService/Info.plist`
 
@@ -113,7 +113,7 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 * Enter your credentials
 * Click on Certificates, Identifiers & Profiles
 
-![](../../.gitbook/assets/23.png)
+![](../../../.gitbook/assets/23.png)
 
 ### Creating an App Identifier
 
@@ -179,7 +179,7 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 * Click on the first identifier you created
 * On “Push Notifications”, click “Configure”
 
-![](../../.gitbook/assets/30.png)
+![](../../../.gitbook/assets/30.png)
 
 #### Development SSL Certificate
 

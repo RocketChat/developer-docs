@@ -33,7 +33,7 @@ Registering a button requires `ui.registerButton` permission. Make sure to add i
 ```
 {% endcode %}
 
-You can [deploy your app](../../getting-started/creating-an-app.md#testing-rocketchat-app) to test and see that the button gets added to the list of options against the context specified. In this case, a message.
+You can [deploy your app](../../creating-your-first-app.md#testing-rocketchat-app) to test and see that the button gets added to the list of options against the context specified. In this case, a message.
 
 Click on the options icon across any message and you will see the action we just created like seen below.
 

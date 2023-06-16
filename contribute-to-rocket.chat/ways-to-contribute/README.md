@@ -6,10 +6,9 @@ You can contribute to making Rocket.Chat in any of the following ways.
 
 {% hint style="info" %}
 
-
 **To join other contributors:**
 
-* Create an account on our [**Open Server** ](https://open.rocket.chat/)
+* Create an account on our [**Open Server**](https://open.rocket.chat/)
 * Create an account on our [**Community Forum**](https://forums.rocket.chat/)
 * And visit our [**GitHub Repository**](https://github.com/RocketChat/Rocket.Chat)
 {% endhint %}
