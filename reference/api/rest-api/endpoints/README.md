@@ -685,35 +685,37 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Livechat Monitors
 
-| Url                               | Short Description              | Details Page                                                                                                             |
-| --------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/monitors.list`   | Retrieves a list of monitors   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/list-of-monitors) |
-| `api/v1/livechat/monitors.getOne` | Gives the details of a monitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/monitors/get-one-monitor)  |
+| Url                                  | Short Description | Details Page                                                  |
+| ------------------------------------ | ----------------- | ------------------------------------------------------------- |
+| `api/v1/livechat/monitors`           | List all monitors | [Link](livechat-endpoints/livechat-monitors/get-monitors.md)  |
+| `api/v1/livechat/monitors/:username` | Get a Monitor     | [Link](livechat-endpoints/livechat-monitors/get-a-monitor.md) |
 
 ### Livechat Priorities
 
-| Url                                      | Short Description               | Details Page                                                                               |
-| ---------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/priorities`             | Gives a list of priorities      | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md) |
-| `api/v1/livechat/priorities/:priorityId` | Gives the details of a priority | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md) |
+| Url                                      | Short Description   | Details Page                                                                               |
+| ---------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------ |
+| `api/v1/livechat/priorities`             | Get priorities      | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Get a priority      | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md) |
+| `api/v1/livechat/priorities/:priorityId` | Update the priority | [Link](livechat-endpoints/livechat-priorities/update-priority.md)                          |
+| `api/v1/livechat/priorities.reset`       | Reset the priority  | [Link](livechat-endpoints/livechat-priorities/reset-priorities.md)                         |
 
 ### Livechat Tags
 
-| Url                           | Short Description          | Details Page                                          |
-| ----------------------------- | -------------------------- | ----------------------------------------------------- |
-| `api/v1/livechat/tags`        | Retrieves a list of tags   | [Link](livechat-endpoints/livechat-tags/get-tags.md)  |
-| `api/v1/livechat/tags.getOne` | Retrieves details of a tag | [Link](livechat-endpoints/livechat-tags/get-a-tag.md) |
+| Url                    | Short Description        | Details Page                                          |
+| ---------------------- | ------------------------ | ----------------------------------------------------- |
+| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](livechat-endpoints/livechat-tags/get-tags.md)  |
+| `livechat/tags/:tagId` | Get a tag.               | [Link](livechat-endpoints/livechat-tags/get-a-tag.md) |
 
 ### Livechat Units
 
-| Url                                     | Short Description             | Details Page                                                                                                                   |
-| --------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/units`                 | Create unit                   | [Link](livechat-endpoints/livechat-units/create-unit.md)                                                                       |
-| `api/v1/livechat/units.list`            | Gives a list of units         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit)          |
-| `api/v1/livechat/units.getOne`          | Retrieves details of a unit   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/get-one-unit)          |
-| `api/v1/livechat/unitMonitors.list`     | Gives a list of unit monitors | [Link](https://developer.rocket.chat/api/rest-api/endpoints/livechat/enterprise-edition-endpoints/units/list-of-unit-monitors) |
-| `api/v1/livechat/unitMonitors.list/:id` | Update Unit by Id             | [Link](livechat-endpoints/livechat-units/update-unit.md)                                                                       |
-| `api/v1/livechat/unitMonitors.list/:id` | Delete unit using ID          | [Link](livechat-endpoints/livechat-units/delete-unit.md)                                                                       |
+| Url                                      | Short Description           | Details Page                                                           |
+| ---------------------------------------- | --------------------------- | ---------------------------------------------------------------------- |
+| `api/v1/livechat/units`                  | Create unit                 | [Link](livechat-endpoints/livechat-units/create-unit.md)               |
+| `api/v1/livechat/units`                  | List all omnichannel units. | [Link](livechat-endpoints/livechat-units/get-units.md)                 |
+| `api/v1/livechat/units/:unitId`          | Retrieves details of a unit | [Link](livechat-endpoints/livechat-units/get-a-unit.md)                |
+| `api/v1/livechat/units/:unitId/monitors` | List unit monitors          | [Link](livechat-endpoints/livechat-units/get-list-of-unit-monitors.md) |
+| `api/v1/livechat/units/:id`              | Update Unit by Id           | [Link](livechat-endpoints/livechat-units/update-unit.md)               |
+| `api/v1/livechat/units/:id`              | Delete unit using ID        | [Link](livechat-endpoints/livechat-units/delete-unit.md)               |
 
 ## SLA Policies
 
