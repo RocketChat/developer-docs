@@ -773,10 +773,10 @@
 ## Fuselage Design System
 
 * [Monorepo](fuselage-design-system/monorepo.md)
-* [Conventions](fuselage/conventions.md)
-* [Componentization](fuselage/componentization.md)
-* [Color Palette](fuselage/color-palette.md)
+* [Conventions](fuselage-design-system/conventions.md)
+* [Componentization](fuselage-design-system/componentization.md)
+* [Color Palette](fuselage-design-system/color-palette.md)
 * [Testing](fuselage/testing/README.md)
   * [Fuselage's component in RC](fuselage-design-system/testing/fuselages-component-in-rc.md)
-* [Third party libraries](fuselage/third-party-libraries.md)
+* [Third party libraries](fuselage-design-system/third-party-libraries.md)
 * [Contributing](fuselage-design-system/contributing.md)
