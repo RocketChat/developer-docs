@@ -63,7 +63,7 @@ A changeset is a piece of information about changes made in a branch or commit, 
 There are a few rules to get your pull request accepted:
 
 1. All checks have passed
-2. Travis CI runs automatically when you push your pull request. If Tra,vis fails, take a look at the reasons for failure. If it fails for no apparent reason, try running it again.
+2. Travis CI runs automatically when you push your pull request. If Travis fails, take a look at the reasons for failure. If it fails for no apparent reason, try running it again.
 3. You must sign the [Contributor License Agreement (CLA)](https://cla-assistant.io/RocketChat/Rocket.Chat)
 4. At least one team member must approve the Pull Request. If you don't know who to ask for approval, let your team, lead, or manager know you need one, and someone will be assigned as a reviewer.
 
