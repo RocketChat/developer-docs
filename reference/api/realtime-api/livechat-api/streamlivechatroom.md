@@ -13,7 +13,7 @@
             "useCollection":false,
             "args":[
                 {
-                    "visitorToken":"jkGaw6duhiuh45"
+                    "token":"jkGaw6duhiuh45"
                 }
             ]
         }
