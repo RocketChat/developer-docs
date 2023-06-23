@@ -1,16 +1,25 @@
 # API
 
-{% page-ref page="deprecation.md" %}
+{% content-ref url="deprecation.md" %}
+[deprecation.md](deprecation.md)
+{% endcontent-ref %}
 
-{% page-ref page="schema-definition/" %}
+{% content-ref url="schema-definition/" %}
+[schema-definition](schema-definition/)
+{% endcontent-ref %}
 
-{% page-ref page="schema-definition-v2/" %}
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-{% page-ref page="realtime-api/livechat-api/" %}
+{% content-ref url="realtime-api/livechat-api/" %}
+[livechat-api](realtime-api/livechat-api/)
+{% endcontent-ref %}
 
-{% page-ref page="rest-api/" %}
+{% content-ref url="rest-api/" %}
+[rest-api](rest-api/)
+{% endcontent-ref %}
 
-{% page-ref page="livechat-api.md" %}
-
-
-
+{% content-ref url="livechat-api.md" %}
+[livechat-api.md](livechat-api.md)
+{% endcontent-ref %}
