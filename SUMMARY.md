@@ -238,6 +238,7 @@
         * [Cloud Manual Register](reference/api/rest-api/endpoints/core-endpoints/cloud-endpoints/cloud-manual-register.md)
       * [DNS Endpoints](reference/api/rest-api/endpoints/core-endpoints/dns-endpoints/README.md)
         * [DNS Resolve txt](reference/api/rest-api/endpoints/core-endpoints/dns-endpoints/dns-resolve-txt.md)
+        * [DNS Resolve srv](reference/api/rest-api/endpoints/dns-endpoints/dns-resolve-txt-1.md)
       * [E2E Endpoints](reference/api/rest-api/endpoints/core-endpoints/e2e-endpoints/README.md)
         * [Fetch your E2E Keys](reference/api/rest-api/endpoints/core-endpoints/e2e-endpoints/fetch-your-e2e-keys.md)
         * [Get Users Of Room Without E2E Key](reference/api/rest-api/endpoints/core-endpoints/e2e-endpoints/get-users-of-room-without-e2e-key.md)
