@@ -253,17 +253,17 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ## Imports
 
-| URL                                 | Short Description              | Details Page                                                                                                                                       |
-| ----------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/uploadImportFile`          | `Content`                      | Document Under Development                                                                                                                         |
-| `/api/v1/downloadPublicImportFile`  | `Content`                      | Document Under Development                                                                                                                         |
-| `/api/v1/startImport`               | `Content`                      | Document Under Development                                                                                                                         |
-| `/api/v1/getImportFileData`         | Get file data of an upload.    | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-file-data)          |
-| `/api/v1/getImportProgress`         | Get the progress of an import. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-import-progress)           |
-| `/api/v1/getLatestImportOperations` | Get latest import operations   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-latest-import-operations)  |
-| `/api/v1/downloadPendingFiles`      | Download pending files         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-files)        |
-| `/api/v1/downloadPendingAvata`      | Download pending avatars       | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/download-pending-avatars)      |
-| `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/import-endpoints/get-current-import-operations) |
+| URL                                 | Short Description              | Details Page                                                             |
+| ----------------------------------- | ------------------------------ | ------------------------------------------------------------------------ |
+| `/api/v1/uploadImportFile`          | Upload import file.            | [Link](core-endpoints/import-endpoints/upload-import-file.md)            |
+| `/api/v1/downloadPublicImportFile`  | Download public import file.   | [Link](core-endpoints/import-endpoints/download-public-import-file.md)   |
+| `/api/v1/startImport`               | Start import.                  | [Link](core-endpoints/import-endpoints/start-import.md)                  |
+| `/api/v1/getImportFileData`         | Get file data of an upload.    | [Link](core-endpoints/import-endpoints/get-import-file-data.md)          |
+| `/api/v1/getImportProgress`         | Get the progress of an import. | [Link](core-endpoints/import-endpoints/get-import-progress.md)           |
+| `/api/v1/getLatestImportOperations` | Get latest import operations   | [Link](core-endpoints/import-endpoints/get-latest-import-operations.md)  |
+| `/api/v1/downloadPendingFiles`      | Download pending files         | [Link](core-endpoints/import-endpoints/download-pending-files.md)        |
+| `/api/v1/downloadPendingAvata`      | Download pending avatars       | [Link](core-endpoints/import-endpoints/download-pending-avatars.md)      |
+| `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](core-endpoints/import-endpoints/get-current-import-operations.md) |
 
 ## Instances
 
