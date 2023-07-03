@@ -4,9 +4,9 @@ You can only join yourself to public channels, private groups are not joinable. 
 
 ## Requirements
 
-| Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | `view-c-room` | _none_ |
+| Logged In | Permission    | Setting |
+| --------- | ------------- | ------- |
+| Yes       | `view-c-room` | _none_  |
 
 ## Payload
 
@@ -41,7 +41,6 @@ The response from calling the method will return a result of whether the user jo
 
 ## See Also
 
-* [Create Channels](create-channels.md)
-* [Delete Rooms](delete-rooms.md)
-* [Archive Rooms](archive-rooms.md)
-
+* [Create Channels](channels/create-channels.md)
+* [Delete Rooms](rooms/delete-rooms.md)
+* [Archive Rooms](rooms/archive-rooms.md)

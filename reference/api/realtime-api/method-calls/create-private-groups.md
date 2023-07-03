@@ -5,8 +5,8 @@ Creates a private group.
 ## Requirements
 
 | Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | `create-p` | _none_ |
+| --------- | ---------- | ------- |
+| Yes       | `create-p` | _none_  |
 
 ## Payload
 
@@ -43,8 +43,7 @@ The response will be an object with one property `rid` which is the id of the ne
 
 ## See Also
 
-* [Create Channels](create-channels.md)
-* [Delete Private Groups](delete-rooms.md)
-* [Archive Rooms](archive-rooms.md)
-* [Unarchive Rooms](unarchive-rooms.md)
-
+* [Create Channels](channels/create-channels.md)
+* [Delete Private Groups](rooms/delete-rooms.md)
+* [Archive Rooms](rooms/archive-rooms.md)
+* [Unarchive Rooms](rooms/unarchive-rooms.md)

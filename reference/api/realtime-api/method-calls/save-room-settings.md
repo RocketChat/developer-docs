@@ -2,9 +2,9 @@
 
 ## Requirements
 
-| Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | `edit-room` | _none_ |
+| Logged In | Permission  | Setting |
+| --------- | ----------- | ------- |
+| Yes       | `edit-room` | _none_  |
 
 ## Payload
 
@@ -14,16 +14,16 @@
 
 ## Available Settings
 
-| Setting | Accepted Values |
-| :--- | :--- |
-| `roomName` | String |
-| `roomTopic` | String |
-| `roomDescription` | String |
-| `roomType` | `c` or `p` |
-| `readOnly` | Boolean |
-| `systemMessages` | Boolean |
-| `default` | Boolean |
-| `joinCode` | String |
+| Setting           | Accepted Values |
+| ----------------- | --------------- |
+| `roomName`        | String          |
+| `roomTopic`       | String          |
+| `roomDescription` | String          |
+| `roomType`        | `c` or `p`      |
+| `readOnly`        | Boolean         |
+| `systemMessages`  | Boolean         |
+| `default`         | Boolean         |
+| `joinCode`        | String          |
 
 ## Example Call
 
@@ -55,9 +55,8 @@
 
 ## See Also
 
-* [Create Channels](create-channels.md)
+* [Create Channels](channels/create-channels.md)
 * [Create Private Groups](create-private-groups.md)
-* [Delete Rooms](delete-rooms.md)
-* [Archive Rooms](archive-rooms.md)
-* [Unarchive Rooms](unarchive-rooms.md)
-
+* [Delete Rooms](rooms/delete-rooms.md)
+* [Archive Rooms](rooms/archive-rooms.md)
+* [Unarchive Rooms](rooms/unarchive-rooms.md)

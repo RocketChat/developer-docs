@@ -1,14 +1,20 @@
 # Realtime API
 
-Point your client to the Websocket of the server you want to connect to:
+The Rocket.Chat real-time API enables developers to integrate Rocket real-time messaging and collaboration features in their applications. It utilizes WebSockets, a technology that enables real-time communication between a client (your application) and the Rocket.Chat server. By leveraging this API, you can create dynamic, interactive experiences within your application, enabling users to send and receive messages, participate in live chats, and access various collaboration features.&#x20;
 
-```text
+To get started with the Rocket.Chat Real-Time API, point your client to the WebSocket of the server you want to connect to:
+
+```
 wss://[ABC.DOMAIN.COM]/websocket
 ```
 
-Our real-time API is composed of two elements: [Method Calls](method-calls/) and [Subscriptions](subscriptions/). Both of them are supported directly in the websocket connection.
+{% hint style="info" %}
+For localhost, use `ws://localhost:3000/websocket.`
+{% endhint %}
 
-To make it possible to have everything working on the same connection we use RPC with the following format.
+The Rocket.Chat real-time API encompasses two integral components: [Method Calls](method-calls/) and [Subscriptions](subscriptions/), both of which are seamlessly supported within the WebSocket connection.&#x20;
+
+To ensure streamlined functionality within a single connection, we leverage RPC (Remote Procedure Call) using the following format:
 
 ```javascript
 {
@@ -18,16 +24,16 @@ To make it possible to have everything working on the same connection we use RPC
 }
 ```
 
-The type of communication is defined according to the call:
+The "`type-of-communication`" is defined based on its purpose:
 
 * [Method Calls](method-calls/): `method`
 * [Subscriptions](subscriptions/): `sub`
 
-  Please note, the server will send you "ping" and you must respond with "pong" otherwise the server will close the connection.
+## Connect to the WebSocket
 
-Before requesting any method / subscription you have to send a connect message:
+Before requesting any [method calls](method-calls/) and [subscriptions](subscriptions/), it is necessary to send a connect message. This connect message serves as an initial step to establish the connection and prepare for subsequent requests.
 
-```javascript
+```json
 {
     "msg": "connect",
     "version": "1",
@@ -35,9 +41,18 @@ Before requesting any method / subscription you have to send a connect message:
 }
 ```
 
+{% hint style="info" %}
+The server periodically sends a "`ping`" message, and it's essential to respond with a "`pong`" message to maintain the connection. Failure to respond appropriately will result in the server closing the connection.
+{% endhint %}
+
+```json
+{
+    "msg": "pong"
+}
+```
+
 ## Resources
 
-* A basic example script that uses the 'ddp' NodeJS package to subscribe to the Realtime-API stream of a Group/Channel here [https://github.com/jszaszvari/rocketchat-ddp-listener](https://github.com/jszaszvari/rocketchat-ddp-listener)
-* [Rocket.Chat.RealTime.API.RxJS](https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS) Abstraction for Utilizing [Rocket.Chat](https://rocket.chat/)'s [Realtime API](https://rocket.chat/docs/developer-guides/realtime-api) Methods with [RxJS](http://reactivex.io/rxjs/). [https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS](https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS)
-* asyncio-based Python wrapper for the Rocket.Chat Realtime API: [rocketchat-async](https://github.com/hynek-urban/rocketchat-async)
-
+* [rocketchat-ddp-listener](https://github.com/JSzaszvari/rocketchat-ddp-listener):  A basic example script that uses the 'ddp' NodeJS package to subscribe to the Realtime-API stream of a Group/Channel.
+* [Rocket.Chat.RealTime.API.RxJS](https://github.com/inf3cti0n95/Rocket.Chat.RealTime.API.RxJS) Abstraction for Utilizing Rocket.Chat's [Realtime API](https://rocket.chat/docs/developer-guides/realtime-api) Methods with [RxJS](http://reactivex.io/rxjs/).&#x20;
+* [rocketchat-async](https://github.com/hynek-urban/rocketchat-async) : asyncio-based Python wrapper for the Rocket.Chat Realtime API
