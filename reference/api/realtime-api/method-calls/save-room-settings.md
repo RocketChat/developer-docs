@@ -56,7 +56,7 @@
 ## See Also
 
 * [Create Channels](channels/create-channels.md)
-* [Create Private Groups](create-private-groups.md)
+* [Create Private Groups](channels/create-private-groups.md)
 * [Delete Rooms](rooms/delete-rooms.md)
 * [Archive Rooms](rooms/archive-rooms.md)
 * [Unarchive Rooms](rooms/unarchive-rooms.md)

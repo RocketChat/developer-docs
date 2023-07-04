@@ -4,9 +4,9 @@ Updating a message is what should be called when a user "edits" a message, passi
 
 ## Requirements
 
-| Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | `edit-message` | `Message_AllowEditing` - "Allow Message Editing" |
+| Logged In | Permission     | Setting                                          |
+| --------- | -------------- | ------------------------------------------------ |
+| Yes       | `edit-message` | `Message_AllowEditing` - "Allow Message Editing" |
 
 ## Example Call
 
@@ -38,6 +38,5 @@ As mentioned in requirements, you must be logged in to be able to edit a message
 ## See Also
 
 * [The Message Object](../../schema-definition/message.md)
-* [Send Message Method](send-message.md)
-* [Delete Message Method](delete-message.md)
-
+* [Send Message Method](messages/send-message.md)
+* [Delete Message Method](messages/delete-message.md)
