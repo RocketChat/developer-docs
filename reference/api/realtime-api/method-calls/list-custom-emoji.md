@@ -1,16 +1,12 @@
 # List Custom Emoji
 
-Returns a list of custom emoji registered with the server. There's no need for parameters.
+Returns a list of [custom emoji ](https://docs.rocket.chat/use-rocket.chat/workspace-administration/custom-emoji)registered in the workspace.
 
-The `result` will be a collection of `emoji`. The `emoji` is defined as:
+| Name              | Requires Auth | Permission | Setting |
+| ----------------- | ------------- | ---------- | ------- |
+| `listEmojiCustom` | Yes           |            |         |
 
-* `_id`: The emoji id
-* `name`: The emoji friendly name
-* `aliases`: A collection of alias for the emoji. The alias is used to identify the emoji on text and for fast reference from typing - the famous `:emoji-alias:`. \(Each emoji alias is unique per server\)
-* `extension`: The emoji file extension
-* `_updatedAt`: The date when the emoji was updated to the server
-
-Example request:
+### Example Call
 
 ```javascript
 {
@@ -21,7 +17,7 @@ Example request:
 }
 ```
 
-Response:
+### Example Response
 
 ```javascript
 {
@@ -29,22 +25,35 @@ Response:
     "id": "42",
     "result": [
         {
-            "_id": "emoji-id",
-            "name": "emoji-name",
-            "aliases": [ "emoji-alias" ],
-            "extension": "emoji-file-extension",
-            "_updatedAt": { "$date": 1480377601 }
-        },
-        ... // more emojis
+            "_id": "64a4ac9c7d04b8fc25af9c9d",
+            "name": "hola",
+            "aliases": [
+                "smiley"
+            ],
+            "extension": "png",
+            "_updatedAt": {
+                "$date": 1688513692757
+            }
+        }
     ]
 }
 ```
+
+## The Emoji Object
+
+The `emoji` is defined as:
+
+* `_id`: The emoji id
+* `name`: The emoji friendly name
+* `aliases`: A collection of alias for the emoji. The alias is used to identify the emoji on the text and for fast reference from typing( `:emoji-alias:`) .
+* `extension`: The emoji file extension
+* `_updatedAt`: The date when the emoji was updated to the server
 
 ## Showing the emoji image
 
 To show the custom emoji images, you simply need to request this URL:
 
-> ${ path }/emoji-custom/${ encoded\(name\) } }.${ extension }.
+> ${ path }/emoji-custom/${ encoded(name) } }.${ extension }.
 
 Example:
 
@@ -61,4 +70,3 @@ Example:
 The URL to access this emoji will be:
 
 `http://yourhost.com/emoji-custom/Emoji%20Name.png`
-

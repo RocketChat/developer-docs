@@ -1,8 +1,20 @@
 # Get Public Settings
 
-This method is used to retrieve the public settings, such as Site Name. It accepts a timestamp as the first and only parameter which causes the results to be an object that contains the updated and removed settings after the provided time. If you want to retrieve all of the public settings, just omit the parameter.
+Retrieve all public settings.
 
-## Example call to retrieve everything
+| Name                  | Requires Auth | Permission | Setting |
+| --------------------- | ------------- | ---------- | ------- |
+| `public-settings/get` | Yes           |            |         |
+
+### Payload Parameters <a href="#payload-parameters" id="payload-parameters"></a>
+
+| Argument | Example                   | Required | Description                                                                                                     |
+| -------- | ------------------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
+| `date`   | `{ "$date": 1480377601 }` | Optional | Filters the results to  contain the updated and removed settings after the provided time. It accepts timestamp. |
+
+
+
+## Example call to retrieve all settings
 
 ```javascript
 {
@@ -12,9 +24,7 @@ This method is used to retrieve the public settings, such as Site Name. It accep
 }
 ```
 
-## Response
-
-The `_id` value is id of the setting and is how it should be referenced. The `value` is exactly what the name describes, the value of the setting.
+### Response
 
 ```javascript
 {
@@ -22,18 +32,45 @@ The `_id` value is id of the setting and is how it should be referenced. The `va
     "id": "42",
     "result": [
         {
-            "_id": "uniqueID",
-            "value": "z3cDS83TYjCfHatrf"
-        }, {
-            "_id": "Accounts_AllowDeleteOwnAccount",
-            "value": false
+            "_id": "FileUpload_Enabled",
+            "value": true,
+            "enterprise": false,
+            "requiredOnWizard": false
         },
-        ...
-    ]
+        {
+            "_id": "FileUpload_MaxFileSize",
+            "value": 104857600,
+            "enterprise": false,
+            "requiredOnWizard": false
+        },
+        {
+            "_id": "FileUpload_MediaTypeWhiteList",
+            "value": "",
+            "enterprise": false,
+            "requiredOnWizard": false
+        },
+        {
+            "_id": "FileUpload_MediaTypeBlackList",
+            "value": "image/svg+xml",
+            "enterprise": false,
+            "requiredOnWizard": false
+        },
+        {
+            "_id": "FileUpload_ProtectFiles",
+            "value": true,
+            "enterprise": false,
+            "requiredOnWizard": false
+        },
+        {
+            "_id": "FileUpload_RotateImages",
+            "value": true,
+            "enterprise": false,
+            "requiredOnWizard": false
+        },
 }
 ```
 
-## Example call to retrieve the updated and removed ones since the provided date
+## Example call to retrieve the updated and removed settings since the provided date
 
 ```javascript
 {
@@ -44,36 +81,49 @@ The `_id` value is id of the setting and is how it should be referenced. The `va
 }
 ```
 
-## Response
-
-The `_id` value is id of the setting and is how it should be referenced. The `value` is exactly what the name describes, the value of the setting.
+### Response
 
 ```javascript
-{
-    "msg": "result",
-    "id": "42",
-    "result": {
+"result": {
         "update": [
             {
-                "_id": "uniqueID",
-                "value": "z3cDS83TYjCfHatrf"
-            }, {
-                "_id": "Accounts_AllowDeleteOwnAccount",
-                "value": true
+                "_id": "FileUpload_Enabled",
+                "value": true,
+                "enterprise": false,
+                "requiredOnWizard": false
             },
-            ...
-        ],
-        "remove": [
             {
-                "_id": "somethingElse",
-                "value": "valueRemoved"
-            }, {
-                "_id": "OldSomething",
-                "value": false
+                "_id": "FileUpload_MaxFileSize",
+                "value": 104857600,
+                "enterprise": false,
+                "requiredOnWizard": false
             },
-            ...
-        ]
+            {
+                "_id": "FileUpload_MediaTypeWhiteList",
+                "value": "",
+                "enterprise": false,
+                "requiredOnWizard": false
+            },
+            {
+                "_id": "FileUpload_MediaTypeBlackList",
+                "value": "image/svg+xml",
+                "enterprise": false,
+                "requiredOnWizard": false
+            },
+            {
+                "_id": "FileUpload_ProtectFiles",
+                "value": true,
+                "enterprise": false,
+                "requiredOnWizard": false
+            },
+            {
+                "_id": "FileUpload_RotateImages",
+                "value": true,
+                "enterprise": false,
+                "requiredOnWizard": false
+            }
+             ],
+        "remove": []
     }
 }
 ```
-
