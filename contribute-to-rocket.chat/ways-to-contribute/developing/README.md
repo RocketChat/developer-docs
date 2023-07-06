@@ -24,8 +24,6 @@ An in-depth procedure for setting up your development environment can be found h
 
 {% embed url="https://developer.rocket.chat/rocket.chat/rocket-chat-environment-setup" %}
 
-{% embed url="https://developer.rocket.chat/rocket.chat/contribute-to-rocket.chat" %}
-
 * ### Priority Features and/or Bug fixes
 
 If you want a feature or bug fix to be developed with a higher priority:
