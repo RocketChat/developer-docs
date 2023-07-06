@@ -41,6 +41,6 @@ The response from calling the method will return a result of whether the user jo
 
 ## See Also
 
-* [Create Channels](channels/create-channels.md)
-* [Delete Rooms](rooms/delete-rooms.md)
-* [Archive Rooms](rooms/archive-rooms.md)
+* [Create Channels](create-channels.md)
+* [Delete Rooms](../rooms/delete-rooms.md)
+* [Archive Rooms](../rooms/archive-rooms.md)

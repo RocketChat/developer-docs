@@ -35,5 +35,5 @@ This API is intended to be used for having a Livechat conversation;
 * Call [livechat:registerGuest](registerguest.md) to register guest and get the response containing the visitor's data.
 * Before sending the first message you have to generate a random `room _id`;
 * Now you can send messages to method [sendMessageLivechat](sendmessagelivechat.md)
-* Subscribe to: [stream-room-messages](../subscriptions/stream-room-messages.md) and `stream-livechat-room`
+* Subscribe to: [stream-room-messages](stream-room-messages.md) and `stream-livechat-room`
 * Get agent info by calling `livechat:getAgentData`

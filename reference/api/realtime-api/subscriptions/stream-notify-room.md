@@ -1,22 +1,23 @@
 # stream-notify-room
 
-This is a room stream.
+Stream for a room.
 
-Replace event from one in the list Events available:
+## Event
 
 * deleteMessage
 * typing
 * user-activity
 
+## Example Call
+
 ```javascript
 {
     "msg": "sub",
-    "id": "unique-id",
+    "id": "90q9",
     "name": "stream-notify-room",
     "params":[
-        "room-id/event",
+        "room-id/deleteMessage",
         false
     ]
 }
 ```
-

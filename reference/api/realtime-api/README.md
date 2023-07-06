@@ -1,6 +1,6 @@
 # Realtime API
 
-The Rocket.Chat real-time API enables developers to integrate Rocket real-time messaging and collaboration features in their applications. It utilizes WebSockets, a technology that enables real-time communication between a client (your application) and the Rocket.Chat server. By leveraging this API, you can create dynamic, interactive experiences within your application, enabling users to send and receive messages, participate in live chats, and access various collaboration features.&#x20;
+The Rocket.Chat real-time API allows developers to integrate Rocket real-time messaging and collaboration features in their applications. It utilizes WebSockets, a technology that enables real-time communication between a client (your application) and the Rocket.Chat server. By leveraging this API, you can create dynamic, interactive experiences within your application, enabling users to send and receive messages, participate in live chats, and access various collaboration features.&#x20;
 
 To get started with the Rocket.Chat Real-Time API, point your client to the WebSocket of the server you want to connect to:
 
@@ -12,7 +12,7 @@ wss://[ABC.DOMAIN.COM]/websocket
 For localhost, use `ws://localhost:3000/websocket.`
 {% endhint %}
 
-The Rocket.Chat real-time API encompasses two integral components: [Method Calls](method-calls/) and [Subscriptions](subscriptions/), both of which are seamlessly supported within the WebSocket connection.&#x20;
+The API encompasses two integral components: [Method Calls](method-calls/) and [Subscriptions](subscriptions/), seamlessly supported within the WebSocket connection.&#x20;
 
 To ensure streamlined functionality within a single connection, we leverage RPC (Remote Procedure Call) using the following format:
 
@@ -31,7 +31,7 @@ The "`type-of-communication`" is defined based on its purpose:
 
 ## Connect to the WebSocket
 
-Before requesting any [method calls](method-calls/) and [subscriptions](subscriptions/), it is necessary to send a connect message. This connect message serves as an initial step to establish the connection and prepare for subsequent requests.
+Before requesting any [method calls](method-calls/) and [subscriptions](subscriptions/), it is necessary to send a connect message. This connect message is an initial step to establish the connection and prepare for subsequent requests.
 
 ```json
 {

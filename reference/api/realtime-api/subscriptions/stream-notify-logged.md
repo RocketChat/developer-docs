@@ -1,8 +1,8 @@
 # stream-notify-logged
 
-Stream for logged users
+Stream for logged in users.
 
-Events available:
+## Events
 
 * Users:NameChanged
 * Users:Deleted
@@ -12,21 +12,25 @@ Events available:
 * roles-change
 * [user-status](stream-notify-logged.md#user-status)
 
+## Example Call
+
 ```javascript
 {
     "msg": "sub",
-    "id": "unique-id",
+    "id": "7489",
     "name": "stream-notify-logged",
     "params":[
-        "event",
+        "user-status",
         false
     ]
 }
 ```
 
-## user-status
+## Example Response
 
-Event about user status changes. Example:
+### user-status
+
+Event about user status changes.&#x20;
 
 ```javascript
 {
@@ -40,16 +44,14 @@ Event about user status changes. Example:
 }
 ```
 
+
+
 The `args` property will always be an array with the following values:
 
-* User `_id`
-* `username`
-* Status indicator, where:
+| Argument   | Example           | Description                                                                                                                                                                       |
+| ---------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `user_id`  | uNqJeFuag2344i62k | The id of the                                                                                                                                                                     |
+| `username` | `rocket.cat`      | The username.                                                                                                                                                                     |
+| `status`   | `1`               | <p>The indicator of the user status. The integers represent the following: <br>0 - <code>offline</code>, 1-<code>online</code>, 2 - <code>away</code>, 3 - <code>busy</code>.</p> |
 
-  | Value | Meaning |
-  | ---: | :--- |
-  | `0` | Offline |
-  | `1` | Online |
-  | `2` | Away |
-  | `3` | Busy |
-
+*

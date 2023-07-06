@@ -1,6 +1,6 @@
 # Method Calls
 
-Method calls are used to perform actions based on given data. The response to these calls is asynchronous, meaning they don't occur in a specific order. To track the outcome of a call, it's essential to use a unique ID. This ID will be used in the response, allowing the client to identify and retrieve the result of the corresponding call.
+Method calls are used to perform actions based on given data. The response to these calls is asynchronous, meaning they don't occur in a specific order. To track the outcome of a call, it's essential to use a unique id. This id will be used in the response, allowing the client to identify and retrieve the result of the corresponding call.
 
 Here is an example of a method call and response for [creating a channel](channels/create-channels.md):
 

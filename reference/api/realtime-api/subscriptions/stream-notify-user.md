@@ -1,15 +1,17 @@
 # stream-notify-user
 
-This is the user stream.
+Stream for a user.
 
-Events available:
+## Events
 
 * message
-* otr \(Off the Record Message\)
+* otr (Off the Record Message)
 * webrtc
 * notification
 * rooms-changed
 * subscriptions-changed
+
+## Example Call
 
 ```javascript
 {
@@ -17,9 +19,8 @@ Events available:
     "id": "unique-id",
     "name": "stream-notify-user",
     "params":[
-        "user-id/event",
+        "user-id/webrtc",
         false
     ]
 }
 ```
-

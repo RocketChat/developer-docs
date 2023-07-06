@@ -1,8 +1,10 @@
 # Subscriptions
 
-Streams are the way to plug into a continuous source of updates \(changes\). Any subscriber registered will receive the latest changes as they occur.
+Streams are a way of plugging into a continuous source of updates (changes). Any subscriber registered will receive the latest changes as they occur.&#x20;
 
-In order to subscribe to a stream you must send a message with `msg: sub`, an unique `id`, the stream `name` and the `params` to be applied on the stream.
+## Subscribe to a Stream
+
+To subscribe to a stream, you must send a message with msg: sub, a unique id, the stream name, and the parameters to be applied on the stream.
 
 ```javascript
 {
@@ -13,11 +15,15 @@ In order to subscribe to a stream you must send a message with `msg: sub`, an un
 }
 ```
 
-The new stream API will propagate only changes to subscribers, which may break some drivers. In order to keep it back-compatible the last parameter in the parameters must be a boolean: whatever or not you required back-compatibility. If set to `true` you should receive an `add` event every time something new is created.
+{% hint style="info" %}
+You must be logged in before you send any subscription request.
+{% endhint %}
 
-_NOTE_: before you can subscribe to any stream or use any Subscription related features, you have to send a [login request](https://docs.rocket.chat/developer-guides/realtime-api/method-calls/login/) using the RealTime API.
+Recent changes to the stream API aim to notify subscribers about changes more selectively, which could cause issues with existing drivers. To ensure compatibility, a boolean parameter is suggested as the last option. If set to `true`, subscribers will receive an "add" event whenever something new is created. This parameter allows subscribers to decide if they need to be notified about all changes or only specific ones, keeping things compatible with older drivers.
 
-Unsubscribing from a stream can be done in the following way:
+## Unsubscribe from a Stream
+
+To unsubscribe from a room, send this request:
 
 ```javascript
 {
@@ -26,7 +32,7 @@ Unsubscribing from a stream can be done in the following way:
 }
 ```
 
-Where the `subcription_id` is the unique `id` that was used when you initially made the call to subscription. The response will be following:
+The response will look like this:
 
 ```javascript
 {
@@ -35,5 +41,4 @@ Where the `subcription_id` is the unique `id` that was used when you initially m
 }
 ```
 
-Be aware that even a call to an invalid or nonexistent `subscription_id` will produce a non-error response containing at least `"msg": "nosub"`, and whatever `id` you provided. The `id` field is omitted if no `id` was provided.
-
+When you make a call to an invalid or non-existent `subscription_id`, the response will not produce an error. Instead, it will respond with at least a "msg" field set to "nosub" and include the provided `id` value. If no `id` was provided, the `id` field will be omitted from the response.&#x20;

@@ -1,112 +1,51 @@
-# Spotlight \(search\)
+# Spotlight (search)
 
 Search for rooms or users.
 
-## Requirements
+| Name        | Requires Auth | Permission | Setting |
+| ----------- | ------------- | ---------- | ------- |
+| `spotlight` | Yes           |            |         |
 
-| Logged In | Permission | Setting |
-| :--- | :--- | :--- |
-| Yes | _none_ | _none_ |
+## Payload Parameters
 
-## Payload
-
-1. `searchString` - String - the name of the thing being searched for
-2. `exclude` - Array of strings - any items to exclude from the results \(e.g. users you already know about\)
-3. `options` - Object - what kinds of items to search for, containing `users` and `rooms` - both booleans.
+| Argument       | Example                             | Required | Description                                                               |
+| -------------- | ----------------------------------- | -------- | ------------------------------------------------------------------------- |
+| `searchString` | `test`                              | Required | The term to be searched for.                                              |
+| `exclude`      | `test.rc`                           | Optional | Any items to exclude from the results (e.g. users you already know about) |
+| `options`      | `{ "users": true, "rooms": false }` | Required | What kinds of fields to search for                                        |
 
 ## Example Call
 
-```text
+```
 {
     "msg": "method",
     "method": "spotlight",
-    "params": ["test", ["testuser1"], {
+    "params": ["test", ["testrc"], {
         "users": true,
         "rooms": false
     }],
-    "id": "unique-id"
+    "id": "74290"
 }
 ```
 
 ## Example Response
 
-```text
+```
 {
     "msg": "result",
-    "id": "unique-id",
+    "id": "74290",
     "result": {
         "users": [
             {
-                "_id": "q779pX2DPQdHpJuid",
-                "status": "online",
-                "name": "Admin",
-                "username": "admin"
-            },
-            {
-                "_id": "T5xeLJEC2FSagZp5X",
-                "username": "alice",
+                "_id": "ZoJM4tvohREwJbtAh",
+                "username": "testrc",
                 "status": "offline",
-                "name": "alice"
-            },
-            {
-                "_id": "rocket.cat",
-                "name": "Rocket.Cat",
-                "username": "rocket.cat",
-                "status": "online"
+                "name": "TestRc",
+                "outside": true
             }
         ],
-        "rooms": [
-            {
-                "_id": "YGKfY5j7hAGKjhwPF",
-                "name": "chatter",
-                "t": "c",
-                "lastMessage": {
-                    "_id": "Oinnp7OtD4z2AdmNk",
-                    "rid": "YGKfY5j7hAGKjhwPF",
-                    "msg": "Hello",
-                    "ts": {
-                        "$date": 1588252316473
-                    },
-                    "u": {
-                        "_id": "T5xeLJEC2FSagZp5X",
-                        "username": "alice"
-                    },
-                    "mentions": [],
-                    "channels": [],
-                    "_updatedAt": {
-                        "$date": 1588252316498
-                    }
-                }
-            },
-            {
-                "_id": "GENERAL",
-                "t": "c",
-                "name": "general",
-                "lastMessage": {
-                    "_id": "KqcDbY6Ab3wmEY5N9",
-                    "rid": "GENERAL",
-                    "msg": "test1",
-                    "ts": {
-                        "$date": 1589383273561
-                    },
-                    "u": {
-                        "_id": "q779pX2DPQdHpJuid",
-                        "username": "admin"
-                    },
-                    "mentions": [],
-                    "channels": [],
-                    "_updatedAt": {
-                        "$date": 1589383273645
-                    }
-                }
-            },
-            {
-                "_id": "xbE8idJpsTuNzi8Ax",
-                "name": "testing",
-                "t": "c"
-            }
-        ]
+        "rooms": []
     }
 }
-```
 
+```

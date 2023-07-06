@@ -1,36 +1,36 @@
 # Get User Roles
 
-This method call is used to get server-wide special users and their roles. You may send an empty list of parameters.
+Get the role(s) of a user in a room. It can be used to identify key users in the workspace.
 
-The `result` will be a collection of `user`. The `user` is defined as:
+| Name           | Requires Auth | Permission | Setting |
+| -------------- | ------------- | ---------- | ------- |
+| `getUserRoles` | Yes           |            |         |
 
-* `username`: The username of the user
-* `roles`: The collection of roles the user belongs to \(at least one `role-name` will be present\)
-* `_id`: The user id
-
-That information is used to identify key users on the server \(ex.: admins\).
-
-Example call:
+## Example Call
 
 ```javascript
-    {
-        "msg": "method",
-        "method": "getUserRoles",
-        "id": "42",
-        "params": []
-    }
+{
+    "msg": "method",
+    "method": "listEmojiCustom",
+    "id": "42",
+    "params": []
+}
 ```
 
-Response:
+## Example Response
 
 ```javascript
-    {
-        "msg": "result",
-        "id": "42",
-        "result": [
-            { "username": "username", "roles": [ "role-name" ], "_id": "user-id" },
-            ... // more users
-        ]
-    }
+{
+    "msg": "result",
+    "id": "4022",
+    "result": [
+        {
+            "_id": "LFdhbcNHx5zsMA7T4",
+            "roles": [
+                "admin"
+            ],
+            "username": "test.rc"
+        }
+    ]
+}
 ```
-

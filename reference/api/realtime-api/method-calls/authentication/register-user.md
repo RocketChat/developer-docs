@@ -1,38 +1,45 @@
 # Register User
 
-Used for user registration.
+Register a user to your workspace.
 
-There is the possibility of `customFields` as extra fields for user registration. The information of extra fields is found in setting `Accounts_CustomFields` in JSON format.
+## Payload Parameters
 
-The call format is:
+| Argument | Example         | Required | Description               |
+| -------- | --------------- | -------- | ------------------------- |
+| `email`  | `test@test.com` | Required | The email of the channel. |
+| `pass`   | `["rocket.12"]` | Required | The password              |
+| `name`   | `Test`          | Required | The name of the account.  |
+
+## Example Call
 
 ```javascript
 {
     "msg": "method",
     "method": "registerUser",
-    "id":"42",
+    "id":"482",
     "params": [{
-        "email": "String",
-        "pass": "String",
-        "name": "String",
-        "secretURL": "String" // Optional
-    }]
+        "email": "test@tes1t.com",
+        "pass": "test31457",
+        "name": "new te1st",
+        "secretURL": "" 
+        }]
+	
 }
 ```
 
-The response is just the created user's \_id:
+## Example Response
 
 ```javascript
 {
     "msg": "result",
-    "id": "42",
-    "result": "random_id"
+    "id": "482",
+    "result": "3Dw26TXWxvi8gwfgM"
 }
 ```
 
 ## Errors
 
-In the case there's an error on the request, a possible error response would be in this format:
+If there are any errors during registration, here is a sample response format to expect:
 
 ```javascript
 {
@@ -49,7 +56,7 @@ In the case there's an error on the request, a possible error response would be 
 
 ### Possible errors
 
-```text
+```
 "reason": "error-user-registration-disabled",
 "message": "User registration is disabled [403]",
 
@@ -62,7 +69,7 @@ In the case there's an error on the request, a possible error response would be 
 
 #### Custom Fields related
 
-```text
+```
 "reason": "error-user-registration-custom-field",
 "message": "Field ${ fieldName } is required [403]",
 
@@ -78,10 +85,23 @@ In the case there's an error on the request, a possible error response would be 
 
 ## Accounts\_CustomFields
 
-Example of what we can find inside the `Accounts_CustomFields` **encoded as JSON**
+{% hint style="info" %}
+You can use `customFields` as extra fields for user registration.
+{% endhint %}
+
+To register with custom fields, add  `Accounts_CustomFields` encoded as JSON:
 
 ```javascript
 {
+    "msg": "method",
+    "method": "registerUser",
+    "id":"482",
+    "params": [{
+        "email": "test@tes1t.com",
+        "pass": "test31457",
+        "name": "new te1st",
+        "secretURL": "" ,
+	"Accounts_CustomFields": {
     "role": {
         "type": "select",
         "defaultValue": "student",
@@ -99,5 +119,6 @@ Example of what we can find inside the `Accounts_CustomFields` **encoded as JSON
         "maxLength": 10
     }
 }
+    }]
+}
 ```
-

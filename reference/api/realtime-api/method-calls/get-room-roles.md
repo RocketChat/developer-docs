@@ -1,8 +1,6 @@
 # Get Room Roles
 
-This method call is used to get room-wide special users and their roles. You may send a collection of room ids \(at least one\).
-
-The `result` is a collection of users and its roles per room.
+Get a collection of users and their roles per room. You can send a collection of room ids (at least one).
 
 The user roles per room object is defined as:
 
@@ -11,7 +9,7 @@ The user roles per room object is defined as:
 * `roles`: The collection of roles of the user in the room
 * `_id`: the id of this object
 
-Example call:
+## Example Call
 
 ```javascript
 {
@@ -22,7 +20,7 @@ Example call:
 }
 ```
 
-Response:
+## Example Response&#x20;
 
 ```javascript
 {
@@ -38,4 +36,3 @@ Response:
     ]
 }
 ```
-

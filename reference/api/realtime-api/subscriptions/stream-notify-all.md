@@ -2,7 +2,7 @@
 
 General user-wide stream.
 
-Events available:
+## Available Events
 
 * roles-change
 * updateEmojiCustom
@@ -10,6 +10,8 @@ Events available:
 * updateAvatar
 * public-settings-changed
 * permissions-changed
+
+## Example Call
 
 ```javascript
 {
@@ -23,3 +25,13 @@ Events available:
 }
 ```
 
+## Example Response
+
+```
+{
+    "msg": "ready",
+    "subs": [
+        "03903"
+    ]
+}
+```
