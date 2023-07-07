@@ -1,6 +1,6 @@
 # Livechat Widget API
 
-The Livechat Widget API allows developers to integrate Livechat widget functionalities into their apps seamlessly. The code must be after the[ Livechat Widget installation](https://docs.rocket.chat/use-rocket.chat/omnichannel/livechat-widget-installation) script and wrapped as a callback of `RocketChat();` function..
+The Livechat Widget API allows developers to integrate Livechat widget functionalities into their apps seamlessly. The code must be after the[ Livechat Widget installation](https://docs.rocket.chat/use-rocket.chat/omnichannel/livechat-widget-installation) script and wrapped as a callback of `RocketChat();` function.
 
 {% hint style="info" %}
 You can call multiple Livechat Widget APIs on the same page.
@@ -110,7 +110,7 @@ See supported languages [here](https://github.com/RocketChat/Rocket.Chat/tree/de
 
 ### Set a default Agent before starting a new conversation
 
-Set a specific agent before the conversation starts, use this to set up:
+Set a specific agent before the conversation starts. Use this to set up:
 
 ```javascript
 RocketChat(function() {
@@ -144,7 +144,7 @@ RocketChat(function() {
 
 ### Change widget visibility
 
-You can either hide or show widget in your application. To hide widget use this:
+You can either hide or show widget in your application. To hide the widget use this:
 
 ```javascript
 RocketChat(function() {
@@ -160,9 +160,9 @@ RocketChat(function() {
 });
 ```
 
-### Change widget window state
+### Change the widget window state
 
-You can either open or close then widget in your website. To open widget by default, use this:
+You can either open or close the widget on your website. To open the widget by default, use this:
 
 ```javascript
 RocketChat(function() {
@@ -184,7 +184,7 @@ RocketChat(function() {
 
 
 
-Assign a business unit to a widget instance, so that the widget will only allow the visitors to select departments connected to that particular business unit on the widget's registration form.
+Assign a business unit to a widget instance so that the widget will only allow the visitors to select departments connected to that particular business unit on the widget's registration form.
 
 {% hint style="info" %}
 Enterprises need to deal with hundreds of business units in the same workspace, and each Business Unit represents a specific website where Live Chat is installed. Therefore, once a BU is set, only departments associated with the current BU set should be available on the Live Chat Registration Form.
@@ -234,7 +234,7 @@ RocketChat(function() {
 
 ### onChatStarted
 
-Fired when the chat is started (when the first message issent).
+Fired when the chat is started (when the first message is sent).
 
 ```javascript
 RocketChat(function() {
@@ -245,7 +245,7 @@ RocketChat(function() {
 });
 ```
 
-## onChatEnded
+### onChatEnded
 
 Fired when the chat is ended either by the agent or the visitor.
 
@@ -290,7 +290,7 @@ RocketChat(function() {
 
 ### onWidgetHidden
 
-Fired when widget is hidden.
+Fired when the widget is hidden.
 
 ```javascript
 RocketChat(function() {
@@ -301,7 +301,7 @@ RocketChat(function() {
 });
 ```
 
-### _onAssignAgent_
+### onAssignAgent
 
 Fired when an agent is assigned to the chat.
 
@@ -316,9 +316,9 @@ RocketChat(function() {
 });
 ```
 
-### _onWidgetShown_
+### onWidgetShown
 
-Fired when widget is shown.
+Fired when the widget is shown.
 
 ```javascript
 RocketChat(function() {
