@@ -1,16 +1,16 @@
 # Livechat Widget API
 
-## Usage
+The Livechat Widget API allows developers to integrate Livechat widget functionalities into their apps seamlessly. The code must be after the[ Livechat Widget installation](https://docs.rocket.chat/use-rocket.chat/omnichannel/livechat-widget-installation) script and wrapped as a callback of `RocketChat();` function..
 
-Livechat Widget API code must be inserted after the Livechat Widget installation script and wrapped as a callback of `RocketChat();` function.
-
+{% hint style="info" %}
 You can call multiple Livechat Widget APIs on the same page.
+{% endhint %}
 
-### Methods
+## Methods
 
-#### _Set custom field_
+### Set custom field
 
-To set a custom field for a visitor, you can use the following code:
+To set a custom field for a visitor, you can use the following:
 
 ```javascript
 RocketChat(function() {
@@ -19,9 +19,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Set theme options_
+### Set theme options
 
-To change the online color of the Livechat widget, use the following code:
+To change the color of the online status on the Livechat widget, use the following:
 
 ```javascript
 RocketChat(function() {
@@ -35,9 +35,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Assign chats to a specific department_
+### Assign chats to a specific department
 
-To automatically assign a Livechat widget to a specific department (for example, to use a unique Livechat widget on more than one website), use the following code:
+To automatically assign a Livechat widget to a specific department (for example, to use a unique Livechat widget on more than one website), use the following :
 
 ```javascript
 RocketChat(function() {
@@ -45,9 +45,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Set visitor token_
+### Set visitor token
 
-To set an external token for a visitor, you can use the following code:
+To set an external token for a visitor, use this:
 
 ```javascript
 RocketChat(function() {
@@ -55,9 +55,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Set name field_
+### Set name field
 
-To set the visitor name field, you can use the following code:
+To set the visitor name field, use this:
 
 ```javascript
 RocketChat(function() {
@@ -65,9 +65,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Set email field_
+### Set email field
 
-To set the visitor email field, you can use the following code:
+To set the visitor email field, use this:
 
 ```javascript
 RocketChat(function() {
@@ -75,12 +75,12 @@ RocketChat(function() {
 });
 ```
 
-#### _Register visitor_
+### Register visitor
 
-To register the visitor without using the registration form, you can use the following code:
+To register the visitor without using the registration form, use this:
 
 ```javascript
-RocketChat(function() {
+RocketChat(function() t{
     this.registerGuest({
         token: 'FHwaLnp8fzjMupSAj', // The token field is not required. If it is not passed, a new token will be generated
         name: 'visitor Name',
@@ -94,9 +94,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Set Language for Widget_
+### Set Language for Widget
 
-There are number of language options, which you can choose from to set language for your widget. To check supported languages refer [here](https://github.com/RocketChat/Rocket.Chat/tree/develop/packages/livechat/src/i18n). To set language of widget use the following code.
+To select a language for the widget, use this:
 
 ```javascript
 RocketChat(function() {
@@ -104,9 +104,13 @@ RocketChat(function() {
 });
 ```
 
-#### _Set a default Agent before starting a new conversation_
+{% hint style="info" %}
+See supported languages [here](https://github.com/RocketChat/Rocket.Chat/tree/develop/packages/livechat/src/i18n).
+{% endhint %}
 
-The widget allows setting a specific agent before the conversation starts, to do this follow these steps:
+### Set a default Agent before starting a new conversation
+
+Set a specific agent before the conversation starts, use this to set up:
 
 ```javascript
 RocketChat(function() {
@@ -117,9 +121,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Initialize the widget by configuring all available properties in just one call_
+### Initialize the widget by configuring all available properties in just one call
 
-The widget allows configuring all the settings in just one method, the following properties are acceptable:
+To configure all the settings in just one method, use this:
 
 ```javascript
 RocketChat(function() {
@@ -138,9 +142,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Change widget visibility_
+### Change widget visibility
 
-You can either hide or show widget in your website. To hide widget use the following code:
+You can either hide or show widget in your application. To hide widget use this:
 
 ```javascript
 RocketChat(function() {
@@ -148,7 +152,7 @@ RocketChat(function() {
 });
 ```
 
-To show widget use the following code.
+To show widget, use this:.
 
 ```javascript
 RocketChat(function() {
@@ -156,9 +160,9 @@ RocketChat(function() {
 });
 ```
 
-#### _Change widget window state_
+### Change widget window state
 
-You can either open or close then widget in your website. To open widget(default state) use the following code:
+You can either open or close then widget in your website. To open widget by default, use this:
 
 ```javascript
 RocketChat(function() {
@@ -166,7 +170,7 @@ RocketChat(function() {
 });
 ```
 
-To close the widget use the following code.
+To close the widget, use this:
 
 ```javascript
 RocketChat(function() {
@@ -174,17 +178,17 @@ RocketChat(function() {
 });
 ```
 
-#### _Set Business Unit to filter departments on Registration page_
+### Set Business Unit to filter departments on Registration page
 
-> Only available on Enterprise license
+<figure><img src="../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
 
-With this method, you can assign a business Unit to a widget instance, so that the widget will only allow the visitors to select departments connected to that particular business Unit on the widget's registration form.
+
+
+Assign a business unit to a widget instance, so that the widget will only allow the visitors to select departments connected to that particular business unit on the widget's registration form.
 
 {% hint style="info" %}
 Enterprises need to deal with hundreds of business units in the same workspace, and each Business Unit represents a specific website where Live Chat is installed. Therefore, once a BU is set, only departments associated with the current BU set should be available on the Live Chat Registration Form.
 {% endhint %}
-
-To set the business Unit on the widget use the following code: (Note, Business Unit ID is required)
 
 ```javascript
 RocketChat(function() {
@@ -192,7 +196,7 @@ RocketChat(function() {
 });
 ```
 
-To clear any connected business Unit on the widget the following code.
+To clear any connected business unit on the widget, use this:
 
 ```javascript
 RocketChat(function() {
@@ -200,9 +204,9 @@ RocketChat(function() {
 });
 ```
 
-### Events
+## Events
 
-#### _onChatMaximized_
+### onChatMaximized
 
 Fired when the chat widget is maximized.
 
@@ -215,7 +219,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onChatMinimized_
+### onChatMinimized
 
 Fired when the chat widget is minimized.
 
@@ -228,9 +232,9 @@ RocketChat(function() {
 });
 ```
 
-#### _onChatStarted_
+### onChatStarted
 
-Fired when the chat is started (the first message was sent).
+Fired when the chat is started (when the first message issent).
 
 ```javascript
 RocketChat(function() {
@@ -241,7 +245,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onChatEnded_
+## onChatEnded
 
 Fired when the chat is ended either by the agent or the visitor.
 
@@ -254,7 +258,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onPrechatFormSubmit_
+### onPrechatFormSubmit
 
 Fired when the pre-chat form is submitted.
 
@@ -269,7 +273,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onOfflineFormSubmit_
+### onOfflineFormSubmit
 
 Fired when the offline form is submitted.
 
@@ -284,7 +288,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onWidgetHidden_
+### onWidgetHidden
 
 Fired when widget is hidden.
 
@@ -297,7 +301,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onAssignAgent_
+### _onAssignAgent_
 
 Fired when an agent is assigned to the chat.
 
@@ -312,7 +316,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onWidgetShown_
+### _onWidgetShown_
 
 Fired when widget is shown.
 
@@ -325,7 +329,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onAgentStatusChange_
+### onAgentStatusChange
 
 Fired when the status of the current agent changes.
 
@@ -340,7 +344,7 @@ RocketChat(function() {
 });
 ```
 
-#### _onServiceOffline_
+### onServiceOffline
 
 Fired when a visitor tries to start a new conversation and the Livechat service is offline.
 
