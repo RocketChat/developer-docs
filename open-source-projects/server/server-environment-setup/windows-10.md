@@ -66,7 +66,7 @@ Information on the various versions of packages needed can be found in the `pack
 
 ```bash
 npm install -g n
-n 14.19.3
+n 14.21.3
 node -v
 ```
 
