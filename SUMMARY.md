@@ -126,6 +126,9 @@
   * [Chatbots](omnichannel/developing-omnichannel-apps/chatbots.md)
   * [CRM Apps](omnichannel/developing-omnichannel-apps/crm-apps.md)
 * [Livechat widget development and customization](omnichannel/livechat-widget-development-and-customization.md)
+* [Developing Omnichannel Bots](omnichannel/developing-omnichannel-bots/README.md)
+  * [Dialogflow](omnichannel/developing-omnichannel-bots/dialogflow.md)
+  * [Rasa](omnichannel/developing-omnichannel-bots/rasa.md)
 * [Omnichannel FAQs](omnichannel/omnichannel-faqs.md)
 
 ## Bots
