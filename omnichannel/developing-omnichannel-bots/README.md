@@ -4,5 +4,5 @@ Rocket.Chat allows you to easily develop chatbots that interact seamlessly with 
 
 The Omnichannel bot apps include the following:
 
-* [Rasa ](rasa.md)
-* [Dialogflow](dialogflow.md)
+* [**Rasa** ](rasa.md)
+* [**Dialogflow**](dialogflow.md)

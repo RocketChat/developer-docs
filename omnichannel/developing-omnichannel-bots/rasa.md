@@ -29,7 +29,7 @@ To get your app callback URL, navigate to the **Rasa App Info > Details > APIs**
 
 ## Install Rasa App
 
-It's recommended to install the Rasa app from the[ Rocket.Chat marketplace](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/rasa-app#install-rasa-app).
+It's recommended to install the Rasa app from[ Rocket.Chat marketplace](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/rasa-app#install-rasa-app).
 
 ## Set up Rasa App
 

@@ -8,7 +8,7 @@ To set up your [Dialogflow](https://cloud.google.com/dialogflow) agent, visit th
 
 ## Install the Dialogflow app
 
-It's recommended to install the Dialogflow app from the[ Rocket.Chat marketplace](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/dialogflow-app#install-dialogflow-app).
+It's recommended to install the Dialogflow app from[ Rocket.Chat marketplace](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/dialogflow-app#install-dialogflow-app).
 
 ## How to get Google Credential File or Private key file
 
@@ -29,10 +29,10 @@ After creating a service account and private key on your [Google Cloud Console](
 * On the **Dialogflow App Info** screen, navigate to **Settings.**
 * Update the required fields:
   * **Bot Username:** Set the username of the bot you created earlier.
-  * **Project Id:** The `project_id` property of the google credentials file.
+  * **Project Id:** The `project_id` property of the Google credentials file.
   * **Environment:** The [environment](https://cloud.google.com/dialogflow/es/docs/agents-versions) where the bot is set up.
-  * **Client Email:** The `client_email`  property of the google credentials file.
-  * **Private Key:** The `private_key` property of the google credentials file.
+  * **Client Email:** The `client_email`  property of the Google credentials file.
+  * **Private Key:** The `private_key` property of the Google credentials file.
   * **Language:** Select the language you'd be interacting with the Bot.
   * **Fallback Responses Limit:** If the Omnichannel end-user asks something that the bot is not trained to answer and fails. **Fallback Responses Limit** defines how many failures of the conversation should be forwarded to a human agent.
   * **Target Department for Handover:** Select the department to transfer customers when there is a bot-to-live agent handover.
