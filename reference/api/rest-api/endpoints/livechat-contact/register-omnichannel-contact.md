@@ -2,7 +2,11 @@
 description: Registers a guest user as a new omnichannel contact.
 ---
 
-# Register Omnichannel Contact
+# Register or Update Omnichannel Contact
+
+{% hint style="info" %}
+To register a new contact, add a random unique string as the`token`parameter. To update a contact, use the existing`token`of that contact.
+{% endhint %}
 
 | URL                          | Requires Auth | HTTP Method |
 | ---------------------------- | ------------- | ----------- |
@@ -19,7 +23,6 @@ description: Registers a guest user as a new omnichannel contact.
 
 | Argument         | Example             | Required | Description            |
 | ---------------- | ------------------- | -------- | ---------------------- |
-| `_Id`            | `7ipCD6NDtkkRDCiNM` | Required | Contact ID             |
 | `token`          | `4WcmeBE4spXx6AxrC` | Required | Contact Token          |
 | `name`           | `Chris`             | Required | Contact Name           |
 | `email`          | `chris@gmail.com`   | Optional | Contact Email          |
@@ -33,11 +36,10 @@ curl --location --request POST http://localhost:3000/api/v1/omnichannel/contact\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 -d {
-"_id": "7ipCD6NDtkkRDCiNM",
 "token" : "434lxd7iss8yh8c4m80wh",
 "name" :  "Chris",
 "email" : "chris@gmail.com",
-"phone" : "+93334432224444"
+"phone" : "+93334432224444",
 "contactManager":{
       "username":"murtaza9"
    },

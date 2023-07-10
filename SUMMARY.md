@@ -487,7 +487,7 @@
           * [Next Agent](reference/api/rest-api/endpoints/livechat-agent/next-agent.md)
         * [Livechat Configurations](reference/api/rest-api/endpoints/livechat-config.md)
         * [Livechat Contact](reference/api/rest-api/endpoints/livechat-contact/README.md)
-          * [Register Omnichannel Contact](reference/api/rest-api/endpoints/livechat-contact/register-omnichannel-contact.md)
+          * [Register or Update Omnichannel Contact](reference/api/rest-api/endpoints/livechat-contact/register-omnichannel-contact.md)
           * [Fetch Omnichannel Contact](reference/api/rest-api/endpoints/livechat-contact/omnichannel-fetch-contact.md)
           * [Search Omnichannel Contact](reference/api/rest-api/endpoints/livechat-contact/omnichannel-search-contact.md)
         * [Livechat Custom Field](reference/api/rest-api/endpoints/custom-fields/README.md)
