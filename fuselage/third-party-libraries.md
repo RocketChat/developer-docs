@@ -2,6 +2,12 @@
 
 Here's the list of third-party libraries we encourage you to use in production.
 
+## React
+
+The library for web and native user interfaces
+
+[website](https://react.dev/) · [github](https://github.com/facebook/react)
+
 ## React Hook Form
 
 React Hooks for forms validation (Web + React Native)
