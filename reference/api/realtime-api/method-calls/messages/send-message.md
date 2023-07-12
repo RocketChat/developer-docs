@@ -78,5 +78,5 @@ The `message` object contains the following properties:
 ```
 
 {% hint style="info" %}
-To send a file, use the [Upload File to a Room](../../../rest-api/endpoints/core-endpoints/rooms-endpoints/upload-file-to-a-room.md) endpoint.
+To send a file, use the [Upload File to a Room](../../../rest-api/endpoints/rooms/rooms-endpoints/upload-file-to-a-room.md) endpoint.
 {% endhint %}

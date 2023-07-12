@@ -111,7 +111,7 @@ The message object contains these fields.
 | file            | FileProp (deprecated)                    | The file property associated with the message.                                                                                                                                                                                                       |
 | fileUpload      | Object                                   | Information about a file upload associated with the message.                                                                                                                                                                                         |
 | files           | Array of FileProp objects                | An array of file properties associated with the message.                                                                                                                                                                                             |
-| attachments     | Array of MessageAttachment objects       | An array of [attachment objects](../rest-api/endpoints/core-endpoints/chat-endpoints/postmessage.md#attachments-detail), available only when the message has at least one attachment.                                                                |
+| attachments     | Array of MessageAttachment objects       | An array of [attachment objects](../rest-api/endpoints/messaging/chat-endpoints/postmessage.md#attachments-detail), available only when the message has at least one attachment.                                                                     |
 | reactions       | Object                                   | Object containing reaction information associated with the message.                                                                                                                                                                                  |
 | private         | boolean                                  | Indicates whether the message is private.                                                                                                                                                                                                            |
 | bot             | boolean (deprecated)                     | Indicates whether the message is sent by a bot.                                                                                                                                                                                                      |
@@ -155,7 +155,7 @@ Some of the message types are listed below. A full list of the message-type prop
 
 ### Attachment Object
 
-[The attachment object is fully described here](../rest-api/endpoints/core-endpoints/chat-endpoints/postmessage.md#attachments-detail)
+[The attachment object is fully described here](../rest-api/endpoints/messaging/chat-endpoints/postmessage.md#attachments-detail)
 
 ```javascript
 {
