@@ -227,9 +227,15 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### Directory
 
+<<<<<<< HEAD
 | Url                   | Short Description                                                   | Details Page                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/directory`   | Searches by all users and channels available on the server.         | [Link](rooms/directory.md)
+=======
+| Url                 | Short Description                                       | Details Page                                                |
+| ------------------- | ------------------------------------------------------- | ----------------------------------------------------------- |
+| `/api/v1/directory` | Searches by all users and channels available on server. | [Link](core-endpoints/miscellaneous-endpoints/directory.md) |
+>>>>>>> cb2e849029c17201e655aebfabf96ec9fabad300
 
 ## Messaging
 
@@ -767,9 +773,9 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Device Management
 
-| URL                                 | Short Description              | Details Page                                                       |
-| ----------------------------------- | ------------------------------ | ------------------------------------------------------------------ |
-| `/api/v1/sessions/list` | Retrieves all sessions of the authenticated user | [Link](settings/device-management-endpoints/get-current-user-sessions.md)
+| URL                     | Short Description                                | Details Page                                                              |
+| ----------------------- | ------------------------------------------------ | ------------------------------------------------------------------------- |
+| `/api/v1/sessions/list` | Retrieves all sessions of the authenticated user | [Link](settings/device-management-endpoints/get-current-user-sessions.md) |
 
 ## Miscellaneous
 
@@ -790,7 +796,6 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/commands.run`     | Executes a slash command in the specified room.                           | [Link](miscellaneous/commands-endpoints/execute-a-slash-command.md)                                                              |
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](miscellaneous/commands-endpoints/preview.md)                                                                              |
 | `/api/v1/commands.preview` | Executes command's preview item                                           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
-
 
 ### Email Inbox
 
@@ -826,6 +831,12 @@ You can get and update the settings via the REST API, only if you have permissio
 | URL                                             | Short Description                                           | Details Page                                                                                                                              |
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
+
+
+
+### Install Private Apps&#x20;
+
+<table><thead><tr><th width="248.5388701110575">URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/apps</code></td><td>Install a private app via URL</td><td><a href="miscellaneous/install-private-apps.md">Link</a></td></tr></tbody></table>
 
 ### WhatsApp
 

@@ -1,7 +1,7 @@
 # API
 
-{% content-ref url="deprecation.md" %}
-[deprecation.md](deprecation.md)
+{% content-ref url="deprecated-endpoints.md" %}
+[deprecated-endpoints.md](deprecated-endpoints.md)
 {% endcontent-ref %}
 
 {% content-ref url="schema-definition/" %}
