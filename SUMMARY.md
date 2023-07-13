@@ -761,7 +761,7 @@
       * [stream-notify-room](reference/api/realtime-api/subscriptions/stream-notify-room.md)
       * [stream-room-messages](reference/api/realtime-api/subscriptions/streamlivechatroom.md)
       * [stream-notify-user](reference/api/realtime-api/subscriptions/stream-notify-user.md)
-  * [Deprecation](reference/api/deprecation.md)
+  * [Deprecated Endpoints](reference/api/deprecated-endpoints.md)
   * [Schema Definition](reference/api/schema-definition/README.md)
     * [User](reference/api/schema-definition/user.md)
     * [Room](reference/api/schema-definition/room.md)

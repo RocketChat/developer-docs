@@ -788,13 +788,13 @@ You can get and update the settings via the REST API, only if you have permissio
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
 
-## WhatsApp
 
-## Install Private Apps&#x20;
+
+### Install Private Apps&#x20;
 
 <table><thead><tr><th width="248.5388701110575">URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/apps</code></td><td>Install a private app via URL</td><td><a href="miscellaneous/install-private-apps.md">Link</a></td></tr></tbody></table>
 
-## WhatsApp
+### WhatsApp
 
 | Description                                       | Details Page                                                                     |
 | ------------------------------------------------- | -------------------------------------------------------------------------------- |
