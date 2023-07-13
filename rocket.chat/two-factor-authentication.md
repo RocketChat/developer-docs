@@ -34,4 +34,4 @@ Visit the [Two Factor Authentication](../reference/api/realtime-api/method-calls
 
 ## REST API
 
-Visit the [Two Factor Authentication](../reference/api/rest-api/endpoints/other-important-endpoints/2fa.md) page at REST API guides for more information.
+Visit the [Two Factor Authentication](../reference/api/rest-api/endpoints/authentication-endpoints/2fa.md) page at REST API guides for more information.

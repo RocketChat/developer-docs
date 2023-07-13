@@ -4,18 +4,20 @@
 
 | Url              | Short Description                                  | Details Page                                                           |
 | ---------------- | -------------------------------------------------- | ---------------------------------------------------------------------- |
-| `/api/v1/login`  | Authenticate with username and password.           | [Link](other-important-endpoints/authentication-endpoints/login.md)    |
-| `/api/v1/login`  | Authenticate with facebook.                        | [Link](other-important-endpoints/authentication-endpoints/facebook.md) |
-| `/api/v1/login`  | Authenticate with google.                          | [Link](other-important-endpoints/authentication-endpoints/google.md)   |
-| `/api/v1/login`  | Authenticate with twitter.                         | [Link](other-important-endpoints/authentication-endpoints/twitter.md)  |
-| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](other-important-endpoints/authentication-endpoints/logout.md)   |
-| `/api/v1/me`     | Displays information about the authenticated user. | [Link](other-important-endpoints/authentication-endpoints/me.md)       |
+| `/api/v1/login`  | Authenticate with username and password.           | [Link](authentication-endpoints/login.md)    |
+| `/api/v1/login`  | Authenticate with facebook.                        | [Link](authentication-endpoints/facebook.md) |
+| `/api/v1/login`  | Authenticate with google.                          | [Link](authentication-endpoints/google.md)   |
+| `/api/v1/login`  | Authenticate with twitter.                         | [Link](authentication-endpoints/twitter.md)  |
+| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](authentication-endpoints/logout.md)   |
+| `/api/v1/me`     | Displays information about the authenticated user. | [Link](authentication-endpoints/me.md)       |
 
 ## User Management
 
 ### Avatar
 
-<table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/avatar/{subject}</code></td><td>Fetch room avatar</td><td><a href="../avatars.md">Link</a></td></tr></tbody></table>
+| URL                | Short Description    | Details Page     |
+| ------------------ | -------------------- | ---------------- |
+| `/avatar/{subject}`| Fetch room avatar    | [Link](../avatars.md) |
 
 ### Users
 
@@ -61,7 +63,9 @@
 
 ### LDAP
 
-<table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/ldap.syncNow</code></td><td>LDAP SyncNow</td><td><a href="ldap-endpoints/ldap-syncnow.md">Link</a></td></tr></tbody></table>
+| Url                    | Short Description | Details Page                            |
+| ---------------------- | ----------------- | --------------------------------------- |
+| `/api/v1/ldap.syncNow` | LDAP SyncNow      | [Link](ldap-endpoints/ldap-syncnow.md) |
 
 ### Permissions
 
@@ -223,11 +227,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### Directory
 
-| Url                    | Short Description                                                                | Details Page                                                                                                                                 |
-| ---------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/directory`    | Searches by all users and channels available on server.                          | [Link](core-endpoints/miscellaneous-endpoints/directory.md)  
-
-
+| Url                   | Short Description                                                   | Details Page                                                                                                                             |
+| --------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/v1/directory`   | Searches by all users and channels available on the server.         | [Link](core-endpoints/miscellaneous-endpoints/directory.md)
 
 ## Messaging
 
@@ -285,8 +287,6 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 {% hint style="info" %}
 From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 {% endhint %}
-
-
 
 ## Omnichannel
 
@@ -379,7 +379,12 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Agent Stats
 
-<table><thead><tr><th width="272">Url</th><th width="276">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/livechat/agents/:agentId/departments</code></td><td>Returns all the departments associated with an agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-departments">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/average-service-time</code></td><td>Retrieves average service time per agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/total-service-time</code></td><td>Retrieves total service time sorted by agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/available-for-service-history</code></td><td>Retrieves a list of agents and their available time for the provided time frame</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history">Link</a></td></tr></tbody></table>
+| Url                                  | Short Description                            | Details Page                                                                                                                             |
+| ------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/agents/:agentId/departments`                             | Returns all the departments associated with an agent  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-departments)                  |
+| `api/v1/livechat/analytics/agents/average-service-time`                   | Retrieves average service time per agent        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time)        |
+| `api/v1/livechat/analytics/agents/total-service-time`                     | Retrieves total service time sorted by agent     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time)          |
+| `api/v1/livechat/analytics/agents/available-for-service-history`           | Retrieves a list of agents and their available time for the provided time frame | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history) |
 
 #### Livechat Appearance
 
@@ -538,25 +543,25 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### Voice Channel
 
-| URL                                                                                           | Description                                     | Details Page                                                                                                               |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `/v1/connector.extension.getRegistrationInfoByUserId`                                         | Get registration information by ID              | [Link](./#voip-registration-information)                                                                                   |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP queue membership data                  | [Link](omnichannel/voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
-| `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
-| `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
-| `v1/voip/queues.getMembershipSubscription`                                                    | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                                                           |
-| `api/v1/livechat/visitor`                                                                     | Create a VoIP visitor                           | [Link](./#create-visitor)                                                                                                  |
-| `/api/v1/voip/events`                                                                         | Send VoIP events                                | [Link](./#send-voip-events)                                                                                                |
-| `/api/v1/omnichannel/extension`                                                               | Retrieve VoIP extension information             | [Link](./#fetch-voip-extensions)                                                                                           |
-| `/api/v1/omnichannel/extensions?count=10&offset=10`                                           | Retrieve VoIP extensions                        | [Link](./#fetch-voip-extensions)                                                                                           |
-| `/v1/omnichannel/agent/extension`                                                             | Create, update and delete VoIP extension        | [Link](./#agent-extensions)                                                                                                |
-| `/api/v1/voip/managementServer/checkConnection?host&port&username&password`                   | Check management server connection status       | [Link](./#check-management-server-connection)                                                                              |
+| URL                                                     | Description                                     | Details Page                                                                                                               |
+| ------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId`    | Get registration information by ID              | [Link](./#voip-registration-information)                                                                                   |
+| `/api/v1/voip/queues.getSummary`                         | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
+| `/api/v1/voip/queues.getSummary`                         | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
+| `/api/v1/voip/queues.getSummary`                         | Get VoIP queue membership data                  | [Link](omnichannel/voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
+| `/v1/voip/queues.getMembershipSubscription`              | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
+| `/v1/voip/queues.getMembershipSubscription`              | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
+| `v1/voip/queues.getMembershipSubscription`               | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                                                           |
+| `api/v1/livechat/visitor`                                | Create a VoIP visitor                           | [Link](./#create-visitor)                                                                                                  |
+| `/api/v1/voip/events`                                    | Send VoIP events                                | [Link](./#send-voip-events)                                                                                                |
+| `/api/v1/omnichannel/extension`                          | Retrieve VoIP extension information             | [Link](./#fetch-voip-extensions)                                                                                           |
+| `/api/v1/omnichannel/extensions?count=10&offset=10`      | Retrieve VoIP extensions                        | [Link](./#fetch-voip-extensions)                                                                                           |
+| `/v1/omnichannel/agent/extension`                        | Create, update and delete VoIP extension        | [Link](./#agent-extensions)                                                                                                |
+| `/api/v1/voip/managementServer/checkConnection?host&port&username&password` | Check management server connection status       | [Link](./#check-management-server-connection)                                                                              |
 | `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Check call server connection status             | [Link](./#check-call-server-connection)                                                                                    |
-| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi`          | Create VoIP room                                | [Link](./#create-voip-room)                                                                                                |
-| `/api/v1/voip/events`                                                                         | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                                                           |
-| `/api/v1/voip/room.clos`                                                                      | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                                                                 |
+| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi` | Create VoIP room                                | [Link](./#create-voip-room)                                                                                                |
+| `/api/v1/voip/events`                                    | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                                                           |
+| `/api/v1/voip/room.clos`                                 | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                                                                 |
 
 ### Canned Response
 
@@ -590,7 +595,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### OAuth App
 
-<table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/oauth-apps.get</code></td><td>Retrieves an OAuth App by id or client id.</td><td><a href="integrations/oauthapps-endpoints/get.md">Link</a></td></tr><tr><td><code>/api/v1/oauth-apps.list</code></td><td>Retrieves a list of OAuth Apps.</td><td><a href="integrations/oauthapps-endpoints/list.md">Link</a></td></tr></tbody></table>
+| Url                      | Short Description                             | Details Page                                           |
+| ------------------------ | --------------------------------------------- | ------------------------------------------------------ |
+| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id.     | [Link](integrations/oauthapps-endpoints/get.md)        |
+| `/api/v1/oauth-apps.list`| Retrieves a list of OAuth Apps.                | [Link](integrations/oauthapps-endpoints/list.md)       |
 
 ## Notifications
 
@@ -614,7 +622,11 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### Assets
 
-<table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/assets.setAsset</code></td><td>Sets an asset image by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset">Link</a></td></tr><tr><td><code>/api/v1/assets.unsetAsset</code></td><td>Unsets an asset by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset">Link</a></td></tr></tbody></table>
+| URL                           | Short Description                 | Details Page                                                                                 |
+| ----------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------- |
+| `/api/v1/assets.setAsset`     | Sets an asset image by name.      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset)     |
+| `/api/v1/assets.unsetAsset`   | Unsets an asset by name.          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset)   |
+
 
 ### Custom Emoji
 
@@ -654,15 +666,27 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Users Engagement Dashboard Endpoints
 
-<table><thead><tr><th width="227">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/engagement-dashboard/users/new-users</code></td><td>List new users during a specific period</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/list-new-users.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/active-users</code></td><td>List active users in the workspace.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/list-active-users.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/users-by-time-of-the-day-in-a-week</code></td><td>List users by hours at a particular time of the day in a week.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/list-user-by-time-of-the-day.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/chat-busier/hourly-data</code></td><td>Get hourly data when chat is busier.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/get-hourly-data-when-chat-is-busier.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/chat-busier/weekly-data</code></td><td>Get weekly data when chat is busier.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/get-weekly-data-when-chat-is-busier.md">Link</a></td></tr></tbody></table>
+| Url                                                | Short Description                                      | Details Page                                                                                     |
+| -------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `/api/v1/engagement-dashboard/users/new-users`      | List new users during a specific period                | [Link](statistics/engagement-dashboard/users-engagement-dashboard/list-new-users.md)             |
+| `/api/v1/engagement-dashboard/users/active-users`   | List active users in the workspace                     | [Link](statistics/engagement-dashboard/users-engagement-dashboard/list-active-users.md)          |
+| `/api/v1/engagement-dashboard/users/users-by-time-of-the-day-in-a-week` | List users by hours at a particular time of the day in a week | [Link](statistics/engagement-dashboard/users-engagement-dashboard/list-user-by-time-of-the-day.md) |
+| `/api/v1/engagement-dashboard/users/chat-busier/hourly-data` | Get hourly data when chat is busier              | [Link](statistics/engagement-dashboard/users-engagement-dashboard/get-hourly-data-when-chat-is-busier.md) |
+| `/api/v1/engagement-dashboard/users/chat-busier/weekly-data` | Get weekly data when chat is busier              | [Link](statistics/engagement-dashboard/users-engagement-dashboard/get-weekly-data-when-chat-is-busier.md) |
 
 #### Messages Engagement Dashboard Endpoints
 
-<table><thead><tr><th width="227">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/engagement-dashboard/messages/messages-sent</code></td><td>Get number of messages sent daily during a specific period.</td><td><a href="statistics/engagement-dashboard/messages-engagement-dashboard/get-messages-sent.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/messages/origin</code></td><td>Get the origin of messages sent during a specific period.</td><td><a href="statistics/engagement-dashboard/messages-engagement-dashboard/get-origin-of-message-sent.md">Link</a></td></tr><tr><td><code>api/v1/engagement-dashboard/messages/top-five-popular-channels</code></td><td>Get the top 5 popular channels in your workspace by the number of messages sent.</td><td><a href="statistics/engagement-dashboard/messages-engagement-dashboard/get-the-most-popular-channels.md">Link</a></td></tr></tbody></table>
+| URL                                                         | Short Description                                        | Details Page                                                                                         |
+| ----------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `/api/v1/engagement-dashboard/messages/messages-sent`        | Get number of daily messages sent during a period         | [Link](statistics/engagement-dashboard/messages-engagement-dashboard/get-messages-sent.md)         |
+| `/api/v1/engagement-dashboard/messages/origin`               | Get origin of messages sent during a period               | [Link](statistics/engagement-dashboard/messages-engagement-dashboard/get-origin-of-message-sent.md) |
+| `/api/v1/engagement-dashboard/messages/top-five-popular-channels` | Get top 5 popular channels by message count          | [Link](statistics/engagement-dashboard/messages-engagement-dashboard/get-the-most-popular-channels.md) |
 
 #### Channels Engagement Dashboard Endpoints
 
-<table><thead><tr><th width="227">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>api/v1/engagement-dashboard/channels/list</code></td><td>Get all channels and the number of messages in each.</td><td><a href="statistics/engagement-dashboard/channels-engagement-dashboard/get-channels.md">Link</a></td></tr></tbody></table>
+| URL                                       | Short Description                                  | Details Page                                                                             |
+| ----------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `api/v1/engagement-dashboard/channels/list` | Get all channels and the number of messages in each | [Link](statistics/engagement-dashboard/channels-engagement-dashboard/get-channels.md) |
 
 ### Subscription
 
@@ -733,7 +757,13 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Federation
 
-<table><thead><tr><th width="180">Url</th><th width="215">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/federation/addServerByUser</code></td><td>Adds a server to search public rooms later</td><td><a href="add-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/listServersByUser</code></td><td>Retrieves all the server names saved by the user</td><td><a href="list-servers.md">Link</a></td></tr><tr><td><code>api/v1/federation/removeServerByUser</code></td><td>Remove a server name</td><td><a href="remove-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/searchPublicRooms</code></td><td>Returns all the public room given a server name</td><td><a href="search-public-rooms.md">Link</a></td></tr><tr><td><code>api/v1/joinExternalPublicRoom</code></td><td>Joins an External public Matrix room</td><td><a href="join-external-public-room.md">Link</a></td></tr></tbody></table>
+| Url                                    | Short Description                           | Details Page              |
+|----------------------------------------|---------------------------------------------|---------------------------|
+| `api/v1/federation/addServerByUser`    | Adds a server to search public rooms later   | [Link](add-server.md)     |
+| `api/v1/federation/listServersByUser`  | Retrieves all the server names saved by the user | [Link](list-servers.md) |
+| `api/v1/federation/removeServerByUser` | Remove a server name                         | [Link](remove-server.md)  |
+| `api/v1/federation/searchPublicRooms`  | Returns all the public room given a server name | [Link](search-public-rooms.md) |
+| `api/v1/joinExternalPublicRoom`        | Joins an External public Matrix room         | [Link](join-external-public-room.md) |
 
 ### Device Management
 
@@ -785,7 +815,11 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Licenses
 
-<table><thead><tr><th width="246">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/licenses.get</code></td><td>Gets all registered licenses.</td><td><a href="miscellaneous/licenses/get-licenses.md">Link</a></td></tr><tr><td><code>/api/v1/licenses.isEnterprise</code></td><td>Confirm if workspace has enterprise license.</td><td><a href="miscellaneous/licenses/confirm-enterprise-license.md">Link</a></td></tr><tr><td><code>licenses.maxActiveUsers</code></td><td>Get maximum active users.</td><td><a href="miscellaneous/licenses/get-maximum-active-user.md">Link</a></td></tr></tbody></table>
+| Url                            | Short Description                           | Details Page                                   |
+|--------------------------------|---------------------------------------------|------------------------------------------------|
+| `/api/v1/licenses.get`        | Gets all registered licenses.               | [Link](miscellaneous/licenses/get-licenses.md)               |
+| `/api/v1/licenses.isEnterprise` | Confirm if workspace has enterprise license. | [Link](miscellaneous/licenses/confirm-enterprise-license.md) |
+| `licenses.maxActiveUsers`      | Get maximum active users.                   | [Link](miscellaneous/licenses/get-maximum-active-user.md)   |
 
 ### Video conference
 
