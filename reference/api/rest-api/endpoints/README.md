@@ -2,230 +2,240 @@
 
 ## Authentication
 
-| Url              | Short Description                                  | Details Page                                                           |
-| ---------------- | -------------------------------------------------- | ---------------------------------------------------------------------- |
-| `/api/v1/login`  | Authenticate with username and password.           | [Link](other-important-endpoints/authentication-endpoints/login.md)    |
-| `/api/v1/login`  | Authenticate with facebook.                        | [Link](other-important-endpoints/authentication-endpoints/facebook.md) |
-| `/api/v1/login`  | Authenticate with google.                          | [Link](other-important-endpoints/authentication-endpoints/google.md)   |
-| `/api/v1/login`  | Authenticate with twitter.                         | [Link](other-important-endpoints/authentication-endpoints/twitter.md)  |
-| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](other-important-endpoints/authentication-endpoints/logout.md)   |
-| `/api/v1/me`     | Displays information about the authenticated user. | [Link](other-important-endpoints/authentication-endpoints/me.md)       |
+| Url              | Short Description                                  | Details Page                                 |
+| ---------------- | -------------------------------------------------- | -------------------------------------------- |
+| `/api/v1/login`  | Authenticate with username and password.           | [Link](authentication-endpoints/login.md)    |
+| `/api/v1/login`  | Authenticate with facebook.                        | [Link](authentication-endpoints/facebook.md) |
+| `/api/v1/login`  | Authenticate with google.                          | [Link](authentication-endpoints/google.md)   |
+| `/api/v1/login`  | Authenticate with twitter.                         | [Link](authentication-endpoints/twitter.md)  |
+| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](authentication-endpoints/logout.md)   |
+| `/api/v1/me`     | Displays information about the authenticated user. | [Link](authentication-endpoints/me.md)       |
 
 ## User Management
 
 ### Avatar
 
-<table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/avatar/{subject}</code></td><td>Fetch room avatar</td><td><a href="../avatars.md">Link</a></td></tr></tbody></table>
+| URL                | Short Description    | Details Page     |
+| ------------------ | -------------------- | ---------------- |
+| `/avatar/{subject}`| Fetch room avatar    | [Link](user-management/avatars.md) |
 
 ### Users
 
-| URL                                           | Short Description                                                                                                        | Details Page                                                                                                                             |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/users.create`                        | Creates a new user                                                                                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-user-endpoint)           |
-| `/api/v1/users.delete`                        | Deletes an existing user                                                                                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/delete)                         |
-| `/api/v1/users.deleteOwnAccount`              | Deletes your own user                                                                                                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deleteownaccount)               |
-| `/api/v1/users.getAvatar`                     | Gets the URL for a user’s avatar.                                                                                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getavatar)                      |
-| `/api/v1/users.setActiveStatus`               | Sets user's active status                                                                                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-users-status-active)        |
-| `/api/v1/users.deactivateIdle`                | Deactivates Idle users                                                                                                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/deactivate-idle-users)          |
-| `/api/v1/users.getPresence`                   | Gets a user's presence                                                                                                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-presence)             |
-| `/api/v1/users.info`                          | Retrieves information about a user                                                                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-info)                 |
-| `/api/v1/users.list`                          | Retrieves all of the users in the system and their information                                                           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-users-list)                 |
-| `/api/v1/users.register`                      | Registers users                                                                                                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/register-users)                 |
-| `/api/v1/users.resetAvatar`                   | Resets avatar                                                                                                            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/reset-avatar)                   |
-| `/api/v1/users.setAvatar`                     | Sets avatar                                                                                                              | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-avatar)                     |
-| `/api/v1/users.getStatus`                     | Gets a user's status                                                                                                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-status)                     |
-| `/api/v1/users.setStatus`                     | Sets a user status                                                                                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-status)                     |
-| `/api/v1/users.update`                        | Updates user                                                                                                             | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-user)                    |
-| `/api/v1/users.updateOwnBasicInfo`            | Updates own basic information                                                                                            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/update-own-basic-information)   |
-| `/api/v1/users.createToken`                   | Creates a user authentication token                                                                                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/create-users-token)             |
-| `/api/v1/users.getPreferences`                | Gets all preferences of the user.                                                                                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/get-user-preferences)           |
-| `/api/v1/users.setPreferences`                | Sets preferences of the user.                                                                                            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/set-preferences)                |
-| `/api/v1/users.forgotPassword`                | Sends `an` email to reset your password.                                                                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/forgotpassword)                 |
-| `/api/v1/users.getUsernameSuggestion`         | Suggestion of new username to user.                                                                                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getusernamesuggestion)          |
-| `/api/v1/users.generatePersonalAccessToken`   | Generates Personal Access Token                                                                                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/generatepersonalaccesstoken)    |
-| `/api/v1/users.regeneratePersonalAccessToken` | Regenerates a user's personal access token                                                                               | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/regeneratepersonalaccesstoken)  |
-| `/api/v1/users.getPersonalAccessTokens`       | Gets the user’s personal access tokens                                                                                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/getpersonalaccesstokens)        |
-| `/api/v1/users.removePersonalAccessToken`     | Removes a personal access token                                                                                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/removepersonalaccesstoken)      |
-| `/api/v1/users.2fa.enableEmail`               | Enables 2fa email                                                                                                        | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/enable-2fa-email)     |
-| `/api/v1/users.2fa.disableEmail`              | Disables 2fa email                                                                                                       | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/disable-2fa-email)    |
-| `/api/v1/users.2fa.sendEmailCode`             | Sends 2fa code                                                                                                           | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/send-2fa-code)        |
-| `/api/v1/users.presence`                      | Gets all connected users presence.                                                                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/presence)                       |
-| `/api/v1/users.requestDataDownload`           | Requests the user's data for download.                                                                                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/requestdatadownload)            |
-| `/api/v1/users.logoutOtherClients`            | Logs out other clients                                                                                                   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-other-clients) |
-| `/api/v1/users.autocomplete`                  | Lists the user whose names match a given pattern.                                                                        | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/autocomplete-user)    |
-| `/api/v1/users.removeOtherTokens`             | Removes other tokens                                                                                                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/remove-other-tokens)            |
-| `/api/v1/users.resetE2EKey`                   | [Reset the E2E key](https://docs.rocket.chat/use-rocket.chat/user-guides/user-panel/my-account#reset-e2e-key) for a user | [Link](core-endpoints/users-endpoints/reset-users-e2e-key.md)                                                                            |
-| `/api/v1/users.resetTOTP`                     | Reset the Two-factor authentication via TOTP for a user.                                                                 | [Link](core-endpoints/users-endpoints/reset-users-totp.md)                                                                               |
-| `/api/v1/users.listTeams`                     | Lists users teams                                                                                                        | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/list-users-teams)     |
-| `/api/v1/users.logout`                        | Logs user out.                                                                                                           | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/users-endpoints/logout-user-endpoint) |
+| URL                                      | Short Description                   | Details Page                                                    |
+| ---------------------------------------- | ---------------------------------- | --------------------------------------------------------------- |
+| `/api/v1/users.create`                   | Creates a new user                 | [Link](user-management/users-endpoints/create-user.md)          |
+| `/api/v1/users.delete`                   | Deletes an existing user           | [Link](user-management/users-endpoints/delete.md)                |
+| `/api/v1/users.deleteOwnAccount`         | Deletes your own user              | [Link](user-management/users-endpoints/deleteownaccount.md)      |
+| `/api/v1/users.getAvatar`                | Gets the URL for a user’s avatar   | [Link](user-management/users-endpoints/getavatar.md)             |
+| `/api/v1/users.setActiveStatus`          | Sets user's active status          | [Link](user-management/users-endpoints/set-users-status-active.md) |
+| `/api/v1/users.deactivateIdle`           | Deactivates Idle users             | [Link](user-management/users-endpoints/deactivate-idle-users.md) |
+| `/api/v1/users.getPresence`              | Gets a user's presence             | [Link](user-management/users-endpoints/get-users-presence.md)    |
+| `/api/v1/users.info`                     | Retrieves information about a user | [Link](user-management/users-endpoints/get-users-info.md)        |
+| `/api/v1/users.list`                     | Retrieves all of the users         | [Link](user-management/users-endpoints/get-users-list.md)        |
+| `/api/v1/users.register`                 | Registers users                    | [Link](user-management/users-endpoints/register-users.md)        |
+| `/api/v1/users.resetAvatar`              | Resets avatar                      | [Link](user-management/users-endpoints/reset-avatar.md)          |
+| `/api/v1/users.setAvatar`                | Sets avatar                        | [Link](user-management/users-endpoints/set-avatar.md)            |
+| `/api/v1/users.getStatus`                | Gets a user's status               | [Link](user-management/users-endpoints/get-status.md)            |
+| `/api/v1/users.setStatus`                | Sets a user status                 | [Link](user-management/users-endpoints/set-status.md)            |
+| `/api/v1/users.update`                   | Updates user                       | [Link](user-management/users-endpoints/update-user.md)           |
+| `/api/v1/users.updateOwnBasicInfo`       | Updates own basic information      | [Link](user-management/users-endpoints/update-own-basic-information.md) |
+| `/api/v1/users.createToken`              | Creates a user authentication token| [Link](user-management/users-endpoints/create-users-token.md)    |
+| `/api/v1/users.getPreferences`           | Gets all preferences of the user   | [Link](user-management/users-endpoints/get-user-preferences.md)  |
+| `/api/v1/users.setPreferences`           | Sets preferences of the user       | [Link](user-management/users-endpoints/set-preferences.md)       |
+| `/api/v1/users.forgotPassword`           | Sends an email to reset your password | [Link](user-management/users-endpoints/forgotpassword.md)       |
+| `/api/v1/users.getUsernameSuggestion`    | Suggestion of new username to user | [Link](user-management/users-endpoints/getusernamesuggestion.md) |
+| `/api/v1/users.generatePersonalAccessToken` | Generates Personal Access Token | [Link](user-management/users-endpoints/generatepersonalaccesstoken.md) |
+| `/api/v1/users.regeneratePersonalAccessToken` | Regenerates a user's personal access token | [Link](user-management/users-endpoints/regeneratepersonalaccesstoken.md) |
+| `/api/v1/users.getPersonalAccessTokens` | Gets the user’s personal access tokens | [Link](user-management/users-endpoints/getpersonalaccesstokens.md) |
+| `/api/v1/users.removePersonalAccessToken` | Removes a personal access token   | [Link](user-management/users-endpoints/removepersonalaccesstoken.md) |
+| `/api/v1/users.2fa.enableEmail`          | Enables 2fa email                  | [Link](user-management/users-endpoints/enable-2fa-email.md)       |
+| `/api/v1/users.2fa.disableEmail`         | Disables 2fa email                 | [Link](user-management/users-endpoints/disable-2fa-email.md)      |
+| `/api/v1/users.2fa.sendEmailCode`        | Sends 2fa code                     | [Link](user-management/users-endpoints/send-2fa-code.md)          |
+| `/api/v1/users.presence`                 | Gets all connected users presence | [Link](user-management/users-endpoints/presence.md)               |
+| `/api/v1/users.requestDataDownload`      | Requests the user's data for download | [Link](user-management/users-endpoints/requestdatadownload.md)  |
+| `/api/v1/users.logoutOtherClients`       | Logs out other clients             | [Link](user-management/users-endpoints/logout-other-clients.md)    |
+| `/api/v1/users.autocomplete`             | Lists the user whose names match a given pattern | [Link](user-management/users-endpoints/autocomplete-user.md)  |
+| `/api/v1/users.removeOtherTokens`        | Removes other tokens               | [Link](user-management/users-endpoints/remove-other-tokens.md)     |
+| `/api/v1/users.resetE2EKey`              | Reset the E2E key for a user       | [Link](user-management/users-endpoints/reset-users-e2e-key.md)     |
+| `/api/v1/users.resetTOTP`                | Reset the Two-factor authentication via TOTP | [Link](user-management/users-endpoints/reset-users-totp.md)    |
+| `/api/v1/users.listTeams`                | Lists users teams                  | [Link](user-management/users-endpoints/list-users-teams.md)       |
+| `/api/v1/users.logout`                   | Logs user out                      | [Link](user-management/users-endpoints/logout-user-endpoint.md)   |
 
 ### LDAP
 
-<table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/ldap.syncNow</code></td><td>LDAP SyncNow</td><td><a href="ldap-endpoints/ldap-syncnow.md">Link</a></td></tr></tbody></table>
+| Url                    | Short Description | Details Page                            |
+| ---------------------- | ----------------- | --------------------------------------- |
+| `/api/v1/ldap.syncNow` | LDAP SyncNow      | [Link](user-management/ldap-endpoints/ldap-syncnow.md) |
 
 ### Permissions
 
 | Url                           | Short Description                | Details Page                                                         |
 | ----------------------------- | -------------------------------- | -------------------------------------------------------------------- |
-| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](core-endpoints/permissions-endpoints/list-all-permissions.md) |
-| `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](core-endpoints/permissions-endpoints/update-permissions.md)   |
+| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](user-management/permissions-endpoints/list-all-permissions.md) |
+| `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](user-management/permissions-endpoints/update-permissions.md)   |
 
 ### Roles
 
-| Url                                | Short Description                                                   | Details Page                                                                                                                              |
-| ---------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/roles.list`               | Lists all roles on the server.                                      | [Link](core-endpoints/roles-endpoints/list.md)                                                                                            |
-| `/api/v1/roles.sync`               | Lists all roles on the server which are updated after a given date. | [Link](core-endpoints/roles-endpoints/sync.md)                                                                                            |
-| `/api/v1/roles.create`             | Creates a new role.                                                 | [Link](core-endpoints/roles-endpoints/create.md)                                                                                          |
-| `/api/v1/roles.addUserToRole`      | Edits permissions on the server.                                    | [Link](core-endpoints/roles-endpoints/addusertorole.md)                                                                                   |
-| `/api/v1/roles.getUsersInRole`     | Retrieves the users that belong to a role.                          | [Link](core-endpoints/roles-endpoints/getusersinrole.md)                                                                                  |
-| `/api/v1/roles.update`             | Updates an existing role in the system.                             | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/update.md) |
-| `/api/v1/roles.delete`             | Deletes a role.                                                     | [Link](https://github.com/RocketChat/developer-docs/tree/a1d1fa7a40079462e8ee83df925258c15b84f653/api/rest-api/endpoints/roles/delete.md) |
-| `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user.                                       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/roles-endpoints/role-remove)                     |
+| Url                            | Short Description                                  | Details Page                                                   |
+| ------------------------------ | -------------------------------------------------- | -------------------------------------------------------------- |
+| `/api/v1/roles.list`           | Lists all roles on the server                      | [Link](user-management/roles-endpoints/list.md)                |
+| `/api/v1/roles.sync`           | Lists all roles on the server updated after a date | [Link](user-management/roles-endpoints/sync.md)                |
+| `/api/v1/roles.create`         | Creates a new role                                 | [Link](user-management/roles-endpoints/create.md)              |
+| `/api/v1/roles.addUserToRole`  | Edits permissions on the server                    | [Link](user-management/roles-endpoints/addusertorole.md)       |
+| `/api/v1/roles.getUsersInRole` | Retrieves users that belong to a role               | [Link](user-management/roles-endpoints/getusersinrole.md)      |
+| `/api/v1/roles.update`         | Updates an existing role in the system             | [Link](user-management/roles-endpoints/update.md)              |
+| `/api/v1/roles.delete`         | Deletes a role                                    | [Link](user-management/roles-endpoints/delete.md)              |
+| `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user                    | [Link](user-management/roles-endpoints/role-remove.md)         |
 
 ## Rooms
 
 ### Group
 
-| Url                              | Short Description                                           | Details Page                                                                                                                             |
-| -------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/groups.addAll`          | Adds all of the users on the server to a private group.     | [Link](core-endpoints/groups-endpoints/addall.md)                                                                                        |
-| `/api/v1/groups.addLeader`       | Gives the role of Leader for a user in the current group.   | [Link](core-endpoints/groups-endpoints/addleader.md)                                                                                     |
-| `/api/v1/groups.addModerator`    | Gives the role of moderator to a user in a group.           | [Link](core-endpoints/groups-endpoints/addmoderator.md)                                                                                  |
-| `/api/v1/groups.addOwner`        | Gives the role of owner to a user in a group.               | [Link](core-endpoints/groups-endpoints/addowner.md)                                                                                      |
-| `/api/v1/groups.archive`         | Archives a private group.                                   | [Link](core-endpoints/groups-endpoints/archive.md)                                                                                       |
-| `/api/v1/groups.close`           | Removes a private group from the list of groups.            | [Link](core-endpoints/groups-endpoints/close.md)                                                                                         |
-| `/api/v1/groups.counters`        | Retrieves group counters.                                   | [Link](core-endpoints/groups-endpoints/counters.md)                                                                                      |
-| `/api/v1/groups.create`          | Creates a new private group.                                | [Link](core-endpoints/groups-endpoints/create.md)                                                                                        |
-| `/api/v1/groups.delete`          | Removes a private group.                                    | [Link](core-endpoints/groups-endpoints/delete.md)                                                                                        |
-| `/api/v1/groups.files`           | Retrieves a list of files from a private group.             | [Link](core-endpoints/groups-endpoints/files.md)                                                                                         |
-| `/api/v1/groups.getIntegrations` | Retrieves the integrations assigned to the group.           | [Link](core-endpoints/groups-endpoints/getintegrations.md)                                                                               |
-| `/api/v1/groups.history`         | Retrieves the messages from a private group.                | [Link](core-endpoints/groups-endpoints/history.md)                                                                                       |
-| `/api/v1/groups.info`            | Retrieves the information about a private group.            | [Link](core-endpoints/groups-endpoints/info.md)                                                                                          |
-| `/api/v1/groups.invite`          | Adds a user to the private group.                           | [Link](team-collaboration-endpoints/groups-endpoints/invite.md)                                                                          |
-| `/api/v1/groups.kick`            | Removes a user from a private group.                        | [Link](core-endpoints/groups-endpoints/kick.md)                                                                                          |
-| `/api/v1/groups.leave`           | Removes the calling user from the private group.            | [Link](core-endpoints/groups-endpoints/leave.md)                                                                                         |
-| `/api/v1/groups.list`            | Lists the private groups the caller is part of.             | [Link](core-endpoints/groups-endpoints/list.md)                                                                                          |
-| `/api/v1/groups.listAll`         | Lists all the private groups.                               | [Link](core-endpoints/groups-endpoints/listall.md)                                                                                       |
-| `/api/v1/groups.moderators`      | Lists all moderators of a group.                            | [Link](core-endpoints/groups-endpoints/moderators.md)                                                                                    |
-| `/api/v1/groups.members`         | Retrieves the users of participants of a private group.     | [Link](core-endpoints/groups-endpoints/members.md)                                                                                       |
-| `/api/v1/groups.messages`        | Retrieves all group messages.                               | [Link](core-endpoints/groups-endpoints/messages.md)                                                                                      |
-| `/api/v1/groups.online`          | Lists all online users of a group.                          | [Link](https://github.com/RocketChat/docs/tree/aeb4dd8de5017b7cd9c9d9367a0e2155f911ba5a/api/rest-api/methods/groups/online.md)           |
-| `/api/v1/groups.open`            | Adds the private group back to the list of groups.          | [Link](core-endpoints/groups-endpoints/open.md)                                                                                          |
-| `/api/v1/groups.removeLeader`    | Removes the role of Leader for a user in the current group. | [Link](core-endpoints/groups-endpoints/removeleader.md)                                                                                  |
-| `/api/v1/groups.removeModerator` | Removes the role of moderator from a user in a group.       | [Link](core-endpoints/groups-endpoints/removemoderator.md)                                                                               |
-| `/api/v1/groups.removeOwner`     | Removes the role of owner from a user in a group.           | [Link](core-endpoints/groups-endpoints/removeowner.md)                                                                                   |
-| `/api/v1/groups.rename`          | Changes the name of the private group.                      | [Link](core-endpoints/groups-endpoints/rename.md)                                                                                        |
-| `/api/v1/groups.roles`           | Retrieves the user's roles in the private group.            | [Link](core-endpoints/groups-endpoints/roles.md)                                                                                         |
-| `/api/v1/groups.setAnnouncement` | Sets a group's announcement.                                | [Link](core-endpoints/groups-endpoints/setannouncement.md)                                                                               |
-| `/api/v1/groups.setCustomFields` | Sets private group's custom fields.                         | [Link](core-endpoints/groups-endpoints/setcustomfields.md)                                                                               |
-| `/api/v1/groups.setDescription`  | Sets a private group's description.                         | [Link](core-endpoints/groups-endpoints/setdescription.md)                                                                                |
-| `/api/v1/groups.setPurpose`      | Sets a private group's description.                         | [Link](core-endpoints/groups-endpoints/setpurpose.md)                                                                                    |
-| `/api/v1/groups.setReadOnly`     | Sets whether the room is read-only or not.                  | [Link](core-endpoints/groups-endpoints/setreadonly.md)                                                                                   |
-| `/api/v1/groups.setTopic`        | Sets a private group's topic.                               | [Link](core-endpoints/groups-endpoints/settopic.md)                                                                                      |
-| `/api/v1/groups.setType`         | Sets the type of room this group will be.                   | [Link](core-endpoints/groups-endpoints/settype.md)                                                                                       |
-| `/api/v1/groups.unarchive`       | Unarchives a private group.                                 | [Link](core-endpoints/groups-endpoints/unarchive.md)                                                                                     |
-| `/api/v1/groups.setEncrypted`    | Sets the encryption for a group                             | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-set-encrypted) |
-| `/api/v1/groups.convertToTeam`   | Convert a private group to a team                           | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/groups-endpoints/group-converttoteam) |
+| Url                                | Short Description                                    | Details Page                                                   |
+| ---------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------- |
+| `/api/v1/groups.addAll`            | Adds all users to a private group                    | [Link](rooms/groups-endpoints/addall.md)                       |
+| `/api/v1/groups.addLeader`         | Gives Leader role to a user in the current group     | [Link](rooms/groups-endpoints/addleader.md)                    |
+| `/api/v1/groups.addModerator`      | Gives moderator role to a user in a group            | [Link](rooms/groups-endpoints/addmoderator.md)                 |
+| `/api/v1/groups.addOwner`          | Gives owner role to a user in a group                | [Link](rooms/groups-endpoints/addowner.md)                     |
+| `/api/v1/groups.archive`           | Archives a private group                             | [Link](rooms/groups-endpoints/archive.md)                      |
+| `/api/v1/groups.close`             | Removes a private group from the list of groups      | [Link](rooms/groups-endpoints/close.md)                        |
+| `/api/v1/groups.counters`          | Retrieves group counters                             | [Link](rooms/groups-endpoints/counters.md)                     |
+| `/api/v1/groups.create`            | Creates a new private group                          | [Link](rooms/groups-endpoints/create.md)                       |
+| `/api/v1/groups.delete`            | Removes a private group                              | [Link](rooms/groups-endpoints/delete.md)                       |
+| `/api/v1/groups.files`             | Retrieves files from a private group                 | [Link](rooms/groups-endpoints/files.md)                        |
+| `/api/v1/groups.getIntegrations`   | Retrieves integrations assigned to the group         | [Link](rooms/groups-endpoints/getintegrations.md)              |
+| `/api/v1/groups.history`           | Retrieves messages from a private group              | [Link](rooms/groups-endpoints/history.md)                      |
+| `/api/v1/groups.info`              | Retrieves information about a private group          | [Link](rooms/groups-endpoints/info.md)                         |
+| `/api/v1/groups.invite`            | Adds a user to the private group                     | [Link](rooms/groups-endpoints/invite.md)                       |
+| `/api/v1/groups.kick`              | Removes a user from a private group                  | [Link](rooms/groups-endpoints/kick.md)                         |
+| `/api/v1/groups.leave`             | Removes the caller from the private group            | [Link](rooms/groups-endpoints/leave.md)                        |
+| `/api/v1/groups.list`              | Lists private groups the caller is part of           | [Link](rooms/groups-endpoints/list.md)                         |
+| `/api/v1/groups.listAll`           | Lists all private groups                              | [Link](rooms/groups-endpoints/listall.md)                      |
+| `/api/v1/groups.moderators`        | Lists moderators of a group                          | [Link](rooms/groups-endpoints/moderators.md)                   |
+| `/api/v1/groups.members`           | Retrieves users of a private group                   | [Link](rooms/groups-endpoints/members.md)                      |
+| `/api/v1/groups.messages`          | Retrieves all group messages                         | [Link](rooms/groups-endpoints/messages.md)                     |
+| `/api/v1/groups.online`            | Lists online users of a group                        | [Link](rooms/groups-endpoints/online.md)                       |
+| `/api/v1/groups.open`              | Adds the private group back to the list of groups     | [Link](rooms/groups-endpoints/open.md)                         |
+| `/api/v1/groups.removeLeader`      | Removes Leader role from a user in the current group | [Link](rooms/groups-endpoints/removeleader.md)                 |
+| `/api/v1/groups.removeModerator`   | Removes moderator role from a user in a group        | [Link](rooms/groups-endpoints/removemoderator.md)              |
+| `/api/v1/groups.removeOwner`       | Removes owner role from a user in a group            | [Link](rooms/groups-endpoints/removeowner.md)                  |
+| `/api/v1/groups.rename`            | Changes the name of the private group                | [Link](rooms/groups-endpoints/rename.md)                       |
+| `/api/v1/groups.roles`             | Retrieves user's roles in the private group          | [Link](rooms/groups-endpoints/roles.md)                        |
+| `/api/v1/groups.setAnnouncement`   | Sets a group's announcement                          | [Link](rooms/groups-endpoints/setannouncement.md)              |
+| `/api/v1/groups.setCustomFields`   | Sets private group's custom fields                   | [Link](rooms/groups-endpoints/setcustomfields.md)              |
+| `/api/v1/groups.setDescription`    | Sets a private group's description                   | [Link](rooms/groups-endpoints/setdescription.md)               |
+| `/api/v1/groups.setPurpose`        | Sets a private group's purpose                       | [Link](rooms/groups-endpoints/setpurpose.md)                   |
+| `/api/v1/groups.setReadOnly`       | Sets whether the room is read-only or not            | [Link](rooms/groups-endpoints/setreadonly.md)                  |
+| `/api/v1/groups.setTopic`          | Sets a private group's topic                          | [Link](rooms/groups-endpoints/settopic.md)                      |
+| `/api/v1/groups.setType`           | Sets the type of room this group will be              | [Link](rooms/groups-endpoints/settype.md)                       |
+| `/api/v1/groups.unarchive`         | Unarchives a private group                            | [Link](rooms/groups-endpoints/unarchive.md)                     |
+| `/api/v1/groups.setEncrypted`      | Sets the encryption for a group                       | [Link](rooms/groups-endpoints/group-set-encrypted.md)           |
+| `/api/v1/groups.convertToTeam`     | Converts a private group to a team                    | [Link](rooms/groups-endpoints/group-converttoteam.md)           |
 
 ### Channels
 
 These methods apply to public channels only. Use `groups.*` methods for private channels.
 
-| URL                                            | Short Description                                             | Details Page                                                                                                                         |
-| ---------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `/api/v1/channels.addAll`                      | Adds all of the users on the server to a channel.             | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/addall)                                      |
-| `/api/v1/channels.addLeader`                   | Gives the role of Leader for a user in the current channel.   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/addleader)                                   |
-| `/api/v1/channels.addModerator`                | Gives the role of moderator to a user in a channel.           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/addmoderator)                                |
-| `/api/v1/channels.addOwner`                    | Gives the role of owner to a user in a channel.               | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/addowner)                                    |
-| `/api/v1/channels.anonymousread`               | Gets the messages in public channels to an anonymous user     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/anonymousread)                               |
-| `/api/v1/channels.archive`                     | Archives a channel.                                           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/archive)                                     |
-| `/api/v1/channels.close`                       | Removes a channel from a user's list of channels.             | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/close)                                       |
-| `/api/v1/channels.counters`                    | Retrieves channel counters.                                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/counters)                                    |
-| `/api/v1/channels.create`                      | Creates a new channel.                                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/create)                                      |
-| `/api/v1/channels.delete`                      | Removes a channel.                                            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/delete)                                      |
-| `/api/v1/channels.getAllUserMentionsByChannel` | Retrieves all the mentions of a channel.                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/getallusermentionsbychannel)                 |
-| `/api/v1/channels.files`                       | Retrieves a list of files from a channel.                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/files)                                       |
-| `/api/v1/channels.getIntegrations`             | Retrieves the channel's integration.                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/getintegrations)                             |
-| `/api/v1/channels.history`                     | Retrieves the messages from a channel.                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/history)                                     |
-| `/api/v1/channels.info`                        | Gets a channel's information.                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/info)                                        |
-| `/api/v1/channels.invite`                      | Adds a user to a channel.                                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/invite)                                      |
-| `/api/v1/channels.join`                        | Joins yourself to a channel.                                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/join)                                        |
-| `/api/v1/channels.kick`                        | Removes a user from a channel.                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/kick)                                        |
-| `/api/v1/channels.leave`                       | Removes the calling user from a channel.                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/leave)                                       |
-| `/api/v1/channels.list`                        | Retrieves all of the channels from the server.                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/list)                                        |
-| `/api/v1/channels.list.joined`                 | Retrieves only the channels the calling user has joined.      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/list-joined)                                 |
-| `/api/v1/channels.members`                     | Retrieves all channel users.                                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/members)                                     |
-| `/api/v1/channels.messages`                    | Retrieves all channel messages.                               | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/messages)                                    |
-| `/api/v1/channels.moderators`                  | Lists all moderators of a channel.                            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/moderators)                                  |
-| `/api/v1/channels.online`                      | Lists all online users of a channel.                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/online)                                      |
-| `/api/v1/channels.open`                        | Adds the channel back to the user's list of channels.         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/open)                                        |
-| `/api/v1/channels.removeleader`                | Removes the role of Leader for a user in the current channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/channels/removeleader)                                |
-| `/api/v1/channels.removeModerator`             | Removes the role of moderator from a user in a channel.       | [Link](core-endpoints/channels-endpoints/removemoderator.md)                                                                         |
-| `/api/v1/channels.removeOwner`                 | Removes the role of the owner from a user in a channel.       | [Link](core-endpoints/channels-endpoints/removeowner.md)                                                                             |
-| `/api/v1/channels.rename`                      | Changes a channel's name.                                     | [Link](core-endpoints/channels-endpoints/rename.md)                                                                                  |
-| `/api/v1/channels.roles`                       | Gets the user's roles in the channel.                         | [Link](core-endpoints/channels-endpoints/roles.md)                                                                                   |
-| `/api/v1/channels.setAnnouncement`             | Sets a channel's announcement.                                | [Link](core-endpoints/channels-endpoints/setannouncement.md)                                                                         |
-| `/api/v1/channels.setCustomFields`             | Sets a channel's custom fields.                               | [Link](core-endpoints/channels-endpoints/setcustomfields.md)                                                                         |
-| `/api/v1/channels.setDefault`                  | Sets a channel's default status.                              | [Link](core-endpoints/channels-endpoints/setdefault.md)                                                                              |
-| `/api/v1/channels.setDescription`              | Sets a channel's description.                                 | [Link](core-endpoints/channels-endpoints/setdescription.md)                                                                          |
-| `/api/v1/channels.setJoinCode`                 | Sets the channel's code required to join it.                  | [Link](core-endpoints/channels-endpoints/setjoincode.md)                                                                             |
-| `/api/v1/channels.setPurpose`                  | Sets a channel's description.                                 | [Link](core-endpoints/channels-endpoints/setpurpose.md)                                                                              |
-| `/api/v1/channels.setReadOnly`                 | Sets whether a channel is read-only or not.                   | [Link](core-endpoints/channels-endpoints/setreadonly.md)                                                                             |
-| `/api/v1/channels.setTopic`                    | Sets a channel's topic.                                       | [Link](core-endpoints/channels-endpoints/settopic.md)                                                                                |
-| `/api/v1/channels.setType`                     | Sets the type of room the channel should be.                  | [Link](core-endpoints/channels-endpoints/settype.md)                                                                                 |
-| `/api/v1/channels.unarchive`                   | Unarchives a channel.                                         | [Link](core-endpoints/channels-endpoints/unarchive.md)                                                                               |
-| `/api/v1/channels.convertToTeam`               | Converts channel to team                                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/channels-endpoints/convert-channel-to-team) |
+| URL                               | Short Description                                     | Details Page                                                     |
+| --------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------- |
+| `/api/v1/channels.addAll`         | Adds all users to a channel                           | [Link](rooms/channels-endpoints/addall.md)                        |
+| `/api/v1/channels.addLeader`      | Gives Leader role to a user in the current channel    | [Link](rooms/channels-endpoints/addleader.md)                     |
+| `/api/v1/channels.addModerator`   | Gives moderator role to a user in a channel           | [Link](rooms/channels-endpoints/addmoderator.md)                  |
+| `/api/v1/channels.addOwner`       | Gives owner role to a user in a channel               | [Link](rooms/channels-endpoints/addowner.md)                      |
+| `/api/v1/channels.anonymousread`  | Gets messages in public channels for an anonymous user | [Link](rooms/channels-endpoints/anonymousread.md)                 |
+| `/api/v1/channels.archive`        | Archives a channel                                    | [Link](rooms/channels-endpoints/archive.md)                       |
+| `/api/v1/channels.close`          | Removes a channel from a user's list                  | [Link](rooms/channels-endpoints/close.md)                         |
+| `/api/v1/channels.counters`       | Retrieves channel counters                            | [Link](rooms/channels-endpoints/counters.md)                      |
+| `/api/v1/channels.create`         | Creates a new channel                                 | [Link](rooms/channels-endpoints/create.md)                        |
+| `/api/v1/channels.delete`         | Removes a channel                                     | [Link](rooms/channels-endpoints/delete.md)                        |
+| `/api/v1/channels.getAllUserMentionsByChannel` | Retrieves mentions of a channel           | [Link](rooms/channels-endpoints/getallusermentionsbychannel.md)   |
+| `/api/v1/channels.files`          | Retrieves files from a channel                        | [Link](rooms/channels-endpoints/files.md)                         |
+| `/api/v1/channels.getIntegrations`| Retrieves channel integrations                        | [Link](rooms/channels-endpoints/getintegrations.md)               |
+| `/api/v1/channels.history`        | Retrieves messages from a channel                     | [Link](rooms/channels-endpoints/history.md)                       |
+| `/api/v1/channels.info`           | Gets channel information                              | [Link](rooms/channels-endpoints/info.md)                          |
+| `/api/v1/channels.invite`         | Adds a user to a channel                              | [Link](rooms/channels-endpoints/invite.md)                        |
+| `/api/v1/channels.join`           | Joins a channel                                       | [Link](rooms/channels-endpoints/join.md)                          |
+| `/api/v1/channels.kick`           | Removes a user from a channel                         | [Link](rooms/channels-endpoints/kick.md)                          |
+| `/api/v1/channels.leave`          | Removes the caller from a channel                     | [Link](rooms/channels-endpoints/leave.md)                         |
+| `/api/v1/channels.list`           | Retrieves all channels from the server                | [Link](rooms/channels-endpoints/list.md)                          |
+| `/api/v1/channels.list.joined`    | Retrieves joined channels of the calling user         | [Link](rooms/channels-endpoints/list-joined.md)                   |
+| `/api/v1/channels.members`        | Retrieves all channel users                            | [Link](rooms/channels-endpoints/members.md)                       |
+| `/api/v1/channels.messages`       | Retrieves all channel messages                         | [Link](rooms/channels-endpoints/messages.md)                      |
+| `/api/v1/channels.moderators`     | Lists all moderators of a channel                      | [Link](rooms/channels-endpoints/moderators.md)                    |
+| `/api/v1/channels.online`         | Lists all online users of a channel                    | [Link](rooms/channels-endpoints/online.md)                        |
+| `/api/v1/channels.open`           | Adds the channel back to the user's list               | [Link](rooms/channels-endpoints/open.md)                          |
+| `/api/v1/channels.removeleader`   | Removes Leader role from a user in the current channel | [Link](rooms/channels-endpoints/removeleader.md)                  |
+| `/api/v1/channels.removeModerator`| Removes moderator role from a user in a channel        | [Link](rooms/channels-endpoints/removemoderator.md)               |
+| `/api/v1/channels.removeOwner`    | Removes owner role from a user in a channel            | [Link](rooms/channels-endpoints/removeowner.md)                   |
+| `/api/v1/channels.rename`         | Changes a channel's name                              | [Link](rooms/channels-endpoints/rename.md)                        |
+| `/api/v1/channels.roles`          | Gets user's roles in the channel                       | [Link](rooms/channels-endpoints/roles.md)                         |
+| `/api/v1/channels.setAnnouncement`| Sets a channel's announcement                         | [Link](rooms/channels-endpoints/setannouncement.md)               |
+| `/api/v1/channels.setCustomFields`| Sets a channel's custom fields                         | [Link](rooms/channels-endpoints/setcustomfields.md)               |
+| `/api/v1/channels.setDefault`     | Sets a channel's default status                        | [Link](rooms/channels-endpoints/setdefault.md)                    |
+| `/api/v1/channels.setDescription` | Sets a channel's description                           | [Link](rooms/channels-endpoints/setdescription.md)                |
+| `/api/v1/channels.setJoinCode`    | Sets the channel's join code                           | [Link](rooms/channels-endpoints/setjoincode.md)                   |
+| `/api/v1/channels.setPurpose`     | Sets a channel's purpose                               | [Link](rooms/channels-endpoints/setpurpose.md)                    |
+| `/api/v1/channels.setReadOnly`    | Sets whether a channel is read-only or not             | [Link](rooms/channels-endpoints/setreadonly.md)                   |
+| `/api/v1/channels.setTopic`       | Sets a channel's topic                                 | [Link](rooms/channels-endpoints/settopic.md)                      |
+| `/api/v1/channels.setType`        | Sets the type of room the channel should be            | [Link](rooms/channels-endpoints/settype.md)                       |
+| `/api/v1/channels.unarchive`      | Unarchives a channel                                   | [Link](rooms/channels-endpoints/unarchive.md)                     |
+| `/api/v1/channels.convertToTeam`  | Converts channel to team                              | [Link](rooms/channels-endpoints/convert-channel-to-team.md)       |
 
 ### Room
 
-| Url                                            | Short Description                                        | Details Page                                                                                                                                        |
-| ---------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/rooms.adminRooms`                     | Retrieves all rooms (requires special permission).       | [Link](core-endpoints/rooms-endpoints/adminrooms.md)                                                                                                |
-| `/api/v1/rooms.cleanHistory`                   | Cleans up a room's history, requires special permission. | [Link](core-endpoints/rooms-endpoints/clean-room-history.md)                                                                                        |
-| `/api/v1/rooms.createDiscussion`               | Creates a new discussion.                                | [Link](core-endpoints/rooms-endpoints/creatediscussion.md)                                                                                          |
-| `/api/v1/rooms.favorite`                       | Favorites/Unfavorites room.                              | [Link](core-endpoints/rooms-endpoints/favorite-unfavourite-a-room.md)                                                                               |
-| `/api/v1/rooms.get`                            | Retrieves rooms.                                         | [Link](core-endpoints/rooms-endpoints/get-rooms.md)                                                                                                 |
-| `/api/v1/rooms.getDiscussions`                 | Retrieves room's discussions.                            | [Link](core-endpoints/rooms-endpoints/getdiscussions.md)                                                                                            |
-| `/api/v1/rooms.info`                           | Gets info from a room.                                   | [Link](core-endpoints/rooms-endpoints/info.md)                                                                                                      |
-| `/api/v1/rooms.leave`                          | Leaves a room.                                           | [Link](core-endpoints/rooms-endpoints/leave-room.md)                                                                                                |
-| `/api/v1/rooms.saveNotification`               | Sets the notification settings of a specific channel.    | [Link](core-endpoints/rooms-endpoints/save-room-notification.md)                                                                                    |
-| `/api/v1/rooms.upload/:rid`                    | Uploads a message with the attached file.                | [Link](core-endpoints/rooms-endpoints/upload-file-to-a-room.md)                                                                                     |
-| `/api/v1/rooms.adminRooms.getRoom`             | Retrieves all admin rooms                                | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/get-admin-rooms)                 |
-| `/api/v1/rooms.autocomplete.channelAndPrivate` | Autocompletes private channel                            | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/autocomplete-private-channel)    |
-| `/api/v1/rooms.autocomplete.availableForTeams` | Autocompletes room name available for conversion to team | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/room-name-autocomplete-for-team) |
-| `/api/v1/rooms.saveRoomSettings`               | Save the settings of a room                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/save-room-settings)              |
-| `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/change-archivation-state)        |
-| `/api/v1/rooms.export`                         | Export room to a file or email.                          | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/rooms-endpoints/export-room)                     |
+| Url                                          | Short Description                                      | Details Page                                                            |
+| -------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------- |
+| `/api/v1/rooms.adminRooms`                     | Retrieves all rooms (requires special permission).       | [Link](rooms/rooms-endpoints/adminrooms.md)                        |
+| `/api/v1/rooms.cleanHistory`                   | Cleans up a room's history, requires special permission. | [Link](rooms/rooms-endpoints/clean-room-history.md)                |
+| `/api/v1/rooms.createDiscussion`               | Creates a new discussion.                              | [Link](rooms/rooms-endpoints/creatediscussion.md)                  |
+| `/api/v1/rooms.favorite`                       | Favorites/Unfavorites room.                            | [Link](rooms/rooms-endpoints/favorite-unfavourite-a-room.md)       |
+| `/api/v1/rooms.get`                            | Retrieves rooms.                                       | [Link](rooms/rooms-endpoints/get-rooms.md)                         |
+| `/api/v1/rooms.getDiscussions`                 | Retrieves room's discussions.                          | [Link](rooms/rooms-endpoints/getdiscussions.md)                    |
+| `/api/v1/rooms.info`                           | Gets info from a room.                                 | [Link](rooms/rooms-endpoints/info.md)                               |
+| `/api/v1/rooms.leave`                          | Leaves a room.                                         | [Link](rooms/rooms-endpoints/leave-room.md)                         |
+| `/api/v1/rooms.saveNotification`               | Sets the notification settings of a specific channel.  | [Link](rooms/rooms-endpoints/save-room-notification.md)            |
+| `/api/v1/rooms.upload/:rid`                    | Uploads a message with the attached file.              | [Link](rooms/rooms-endpoints/upload-file-to-a-room.md)              |
+| `/api/v1/rooms.adminRooms.getRoom`             | Retrieves all admin rooms                              | [Link](rooms/rooms-endpoints/get-admin-rooms.md)                    |
+| `/api/v1/rooms.autocomplete.channelAndPrivate` | Autocompletes private channel                          | [Link](rooms/rooms-endpoints/autocomplete-private-channel.md)       |
+| `/api/v1/rooms.autocomplete.availableForTeams` | Autocompletes room name available for conversion to team | [Link](rooms/rooms-endpoints/room-name-autocomplete-for-team.md)    |
+| `/api/v1/rooms.saveRoomSettings`               | Save the settings of a room                            | [Link](rooms/rooms-endpoints/save-room-settings.md)                 |
+| `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                    | [Link](rooms/rooms-endpoints/change-archivation-state.md)           |
+| `/api/v1/rooms.export`                         | Export room to a file or email.                        | [Link](rooms/rooms-endpoints/export-room.md)                        |
 
 ### Teams
 
 | Url                              | Short Description                                         | Details Page                                                                                                                                |
 | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/teams.list`             | Lists the public and private teams the caller is part of. | [Link](core-endpoints/teams-endpoints/list-of-teams-of-caller.md)                                                                           |
-| `/api/v1/teams.listAll`          | Lists all of the teams and their information.             | [Link](core-endpoints/teams-endpoints/list-all-teams-with-info.md)                                                                          |
-| `/api/v1/teams.create`           | Creates a new team.                                       | [Link](core-endpoints/teams-endpoints/create-a-new-team.md)                                                                                 |
-| `/api/v1/teams.convertToChannel` | Converts team to channel.                                 | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/teams-endpoints/convert-team-to-channel) |
-| `/api/v1/teams.addRooms`         | Adds rooms to the team.                                   | [Link](core-endpoints/teams-endpoints/add-rooms-to-a-team.md)                                                                               |
-| `/api/v1/teams.removeRoom`       | Removes a room from a team.                               | [Link](core-endpoints/teams-endpoints/remove-a-room-from-team.md)                                                                           |
-| `/api/v1/teams.updateRoom`       | Updates a room from a team, limited to permissions.       | [Link](core-endpoints/teams-endpoints/update-room-from-a-team.md)                                                                           |
-| `/api/v1/teams.listRooms`        | Lists all rooms of the team.                              | [Link](core-endpoints/teams-endpoints/list-rooms-of-a-team.md)                                                                              |
-| `/api/v1/teams.listRoomsOfUser`  | Lists only the team's rooms the user has joined.          | [Link](core-endpoints/teams-endpoints/list-rooms-of-user-of-a-team.md)                                                                      |
-| `/api/v1/teams.members`          | Retrieves all team members.                               | [Link](core-endpoints/teams-endpoints/get-teams-members.md)                                                                                 |
-| `/api/v1/teams.addMembers`       | Adds members to the team.                                 | [Link](core-endpoints/teams-endpoints/add-members.md)                                                                                       |
-| `/api/v1/teams.updateMember`     | Updates a team member's roles, limited to permissions.    | [Link](core-endpoints/teams-endpoints/update-a-teams-member.md)                                                                             |
-| `/api/v1/teams.removeMember`     | Removes a member from a team.                             | [Link](core-endpoints/teams-endpoints/remove-member-from-team.md)                                                                           |
-| `/api/v1/teams.leave`            | Leaves a team.                                            | [Link](core-endpoints/teams-endpoints/leave-a-team.md)                                                                                      |
-| `/api/v1/teams.info`             | Gets a team's information.                                | [Link](core-endpoints/teams-endpoints/get-teams-info.md)                                                                                    |
-| `/api/v1/teams.delete`           | Removes a team.                                           | [Link](core-endpoints/teams-endpoints/delete-a-team.md)                                                                                     |
-| `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](core-endpoints/teams-endpoints/autocomplete-team.md)                                                                                 |
-| `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](core-endpoints/teams-endpoints/update-a-team.md)                                                                                     |
+| `/api/v1/teams.list`             | Lists the public and private teams the caller is part of. | [Link](rooms/teams-endpoints/list-of-teams-of-caller.md)                                                                           |
+| `/api/v1/teams.listAll`          | Lists all of the teams and their information.             | [Link](rooms/teams-endpoints/list-all-teams-with-info.md)                                                                          |
+| `/api/v1/teams.create`           | Creates a new team.                                       | [Link](rooms/teams-endpoints/create-a-new-team.md)                                                                                 |
+| `/api/v1/teams.convertToChannel` | Converts team to channel.                                 | [Link](rooms/teams-endpoints/convert-team-to-channel.md) |
+| `/api/v1/teams.addRooms`         | Adds rooms to the team.                                   | [Link](rooms/teams-endpoints/add-rooms-to-a-team.md)                                                                               |
+| `/api/v1/teams.removeRoom`       | Removes a room from a team.                               | [Link](rooms/teams-endpoints/remove-a-room-from-team.md)                                                                           |
+| `/api/v1/teams.updateRoom`       | Updates a room from a team, limited to permissions.       | [Link](rooms/teams-endpoints/update-room-from-a-team.md)                                                                           |
+| `/api/v1/teams.listRooms`        | Lists all rooms of the team.                              | [Link](rooms/teams-endpoints/list-rooms-of-a-team.md)                                                                              |
+| `/api/v1/teams.listRoomsOfUser`  | Lists only the team's rooms the user has joined.          | [Link](rooms/teams-endpoints/list-rooms-of-user-of-a-team.md)                                                                      |
+| `/api/v1/teams.members`          | Retrieves all team members.                               | [Link](rooms/teams-endpoints/get-teams-members.md)                                                                                 |
+| `/api/v1/teams.addMembers`       | Adds members to the team.                                 | [Link](rooms/teams-endpoints/add-members.md)                                                                                       |
+| `/api/v1/teams.updateMember`     | Updates a team member's roles, limited to permissions.    | [Link](rooms/teams-endpoints/update-a-teams-member.md)                                                                             |
+| `/api/v1/teams.removeMember`     | Removes a member from a team.                             | [Link](rooms/teams-endpoints/remove-member-from-team.md)                                                                           |
+| `/api/v1/teams.leave`            | Leaves a team.                                            | [Link](rooms/teams-endpoints/leave-a-team.md)                                                                                      |
+| `/api/v1/teams.info`             | Gets a team's information.                                | [Link](rooms/teams-endpoints/get-teams-info.md)                                                                                    |
+| `/api/v1/teams.delete`           | Removes a team.                                           | [Link](rooms/teams-endpoints/delete-a-team.md)                                                                                     |
+| `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](rooms/teams-endpoints/autocomplete-team.md)                                                                                 |
+| `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](rooms/teams-endpoints/update-a-team.md)                                                                                     |
 
 ### Directory
 
+<<<<<<< HEAD
+| Url                   | Short Description                                                   | Details Page                                                                                                                             |
+| --------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/v1/directory`   | Searches by all users and channels available on the server.         | [Link](rooms/directory.md)
+=======
 | Url                 | Short Description                                       | Details Page                                                |
 | ------------------- | ------------------------------------------------------- | ----------------------------------------------------------- |
 | `/api/v1/directory` | Searches by all users and channels available on server. | [Link](core-endpoints/miscellaneous-endpoints/directory.md) |
+>>>>>>> cb2e849029c17201e655aebfabf96ec9fabad300
 
 ## Messaging
 
@@ -233,52 +243,52 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL                                    | Short Description                                                | Details Page                                                                                                                     |
 | -------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/chat.delete`                  | Deletes an existing chat message.                                | [Link](core-endpoints/chat-endpoints/delete.md)                                                                                  |
-| `/api/v1/chat.followMessage`           | Follows an existing chat message.                                | [Link](core-endpoints/chat-endpoints/follow-message.md)                                                                          |
-| `/api/v1/chat.getDeletedMessages`      | Retrieves the deleted messages from a specific date.             | [Link](core-endpoints/chat-endpoints/getdeletedmessages.md)                                                                      |
-| `/api/v1/chat.getDiscussions`          | Retrieves the discussions of a room.                             | [Link](core-endpoints/chat-endpoints/getdiscussions.md)                                                                          |
-| `/api/v1/chat.getMentionedMessages`    | Retrieves the mentioned messages.                                | [Link](core-endpoints/chat-endpoints/getmentionedmessages.md)                                                                    |
-| `/api/v1/chat.getMessage`              | Retrieves a single chat message.                                 | [Link](core-endpoints/chat-endpoints/getmessage.md)                                                                              |
-| `/api/v1/chat.getMessageReadReceipts`  | Retrieves message read receipts.                                 | [Link](core-endpoints/chat-endpoints/getmessagereadreceipts.md)                                                                  |
-| `/api/v1/chat.getPinnedMessages`       | Retrieves pinned messages from a room.                           | [Link](core-endpoints/chat-endpoints/getpinnedmessages.md)                                                                       |
-| `/api/v1/chat.getSnippetedMessages`    | Retrieves snippet messages.                                      | [Link](core-endpoints/chat-endpoints/getsnippetedmessages.md)                                                                    |
-| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippet message by id.                                 | [Link](core-endpoints/chat-endpoints/getsnippetedmessagebyid.md)                                                                 |
-| `/api/v1/chat.getStarredMessages`      | Retrieves the starred messages.                                  | [Link](core-endpoints/chat-endpoints/getstarredmessages.md)                                                                      |
-| `/api/v1/chat.getThreadMessages`       | Retrieves thread's messages.                                     | [Link](core-endpoints/chat-endpoints/getthreadmessages.md)                                                                       |
-| `/api/v1/chat.getThreadsList`          | Retrieves channel's threads.                                     | [Link](core-endpoints/chat-endpoints/getthreadslist.md)                                                                          |
-| `/api/v1/chat.ignoreUser`              | Ignores abuser from a chat.                                      | [Link](core-endpoints/chat-endpoints/ignoreuser.md)                                                                              |
-| `/api/v1/chat.pinMessage`              | Pins a chat message to the message's channel.                    | [Link](core-endpoints/chat-endpoints/pinmessage.md)                                                                              |
-| `/api/v1/chat.postMessage`             | Posts a new chat message.                                        | [Link](core-endpoints/chat-endpoints/postmessage.md)                                                                             |
-| `/api/v1/chat.react`                   | Sets/unsets the user's reaction to an existing chat message.     | [Link](core-endpoints/chat-endpoints/chat-message-reactions.md)                                                                  |
-| `/api/v1/chat.reportMessage`           | Reports a message.                                               | [Link](core-endpoints/chat-endpoints/reportmessage.md)                                                                           |
-| `/api/v1/chat.search`                  | Searches for messages in a channel.                              | [Link](core-endpoints/chat-endpoints/search-message.md)                                                                          |
-| `/api/v1/chat.starMessage`             | Stars a chat message for the authenticated user.                 | [Link](core-endpoints/chat-endpoints/starmessage.md)                                                                             |
-| `/api/v1/chat.sendMessage`             | Sends a new chat message.                                        | [Link](core-endpoints/chat-endpoints/send-message.md)                                                                            |
-| `/api/v1/chat.syncThreadMessages`      | Retrieves synced thread's messages.                              | [Link](core-endpoints/chat-endpoints/syncthreadmessages.md)                                                                      |
-| `/api/v1/chat.syncThreadsList`         | Retrieves thread's synced channel threads.                       | [Link](core-endpoints/chat-endpoints/syncthreadslist.md)                                                                         |
-| `/api/v1/chat.unfollowMessage`         | Unfollows an existing chat message.                              | [Link](core-endpoints/chat-endpoints/unfollowmessage.md)                                                                         |
-| `/api/v1/chat.unPinMessage`            | Removes the pinned status of the provided chat message.          | [Link](core-endpoints/chat-endpoints/unpinmessage.md)                                                                            |
-| `/api/v1/chat.unStarMessage`           | Removes the star on the chat message for the authenticated user. | [Link](core-endpoints/chat-endpoints/unstarmessage.md)                                                                           |
-| `/api/v1/chat.update`                  | Updates the text of the chat message.                            | [Link](core-endpoints/chat-endpoints/message-update.md)                                                                          |
-| `/api/v1/chat.syncMessages`            | Syncs messages                                                   | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/chat-endpoints/sync-messages) |
+| `/api/v1/chat.delete`                  | Deletes an existing chat message.                                | [Link](messaging/chat-endpoints/delete.md)                                                                                  |
+| `/api/v1/chat.followMessage`           | Follows an existing chat message.                                | [Link](messaging/chat-endpoints/follow-message.md)                                                                          |
+| `/api/v1/chat.getDeletedMessages`      | Retrieves the deleted messages from a specific date.             | [Link](messaging/chat-endpoints/getdeletedmessages.md)                                                                      |
+| `/api/v1/chat.getDiscussions`          | Retrieves the discussions of a room.                             | [Link](messaging/chat-endpoints/getdiscussions.md)                                                                          |
+| `/api/v1/chat.getMentionedMessages`    | Retrieves the mentioned messages.                                | [Link](messaging/chat-endpoints/getmentionedmessages.md)                                                                    |
+| `/api/v1/chat.getMessage`              | Retrieves a single chat message.                                 | [Link](messaging/chat-endpoints/getmessage.md)                                                                              |
+| `/api/v1/chat.getMessageReadReceipts`  | Retrieves message read receipts.                                 | [Link](messaging/chat-endpoints/getmessagereadreceipts.md)                                                                  |
+| `/api/v1/chat.getPinnedMessages`       | Retrieves pinned messages from a room.                           | [Link](messaging/chat-endpoints/getpinnedmessages.md)                                                                       |
+| `/api/v1/chat.getSnippetedMessages`    | Retrieves snippet messages.                                      | [Link](messaging/chat-endpoints/getsnippetedmessages.md)                                                                    |
+| `/api/v1/chat.getSnippetedMessageById` | Retrieves snippet message by id.                                 | [Link](messaging/chat-endpoints/getsnippetedmessagebyid.md)                                                                 |
+| `/api/v1/chat.getStarredMessages`      | Retrieves the starred messages.                                  | [Link](messaging/chat-endpoints/getstarredmessages.md)                                                                      |
+| `/api/v1/chat.getThreadMessages`       | Retrieves thread's messages.                                     | [Link](messaging/chat-endpoints/getthreadmessages.md)                                                                       |
+| `/api/v1/chat.getThreadsList`          | Retrieves channel's threads.                                     | [Link](messaging/chat-endpoints/getthreadslist.md)                                                                          |
+| `/api/v1/chat.ignoreUser`              | Ignores abuser from a chat.                                      | [Link](messaging/chat-endpoints/ignoreuser.md)                                                                              |
+| `/api/v1/chat.pinMessage`              | Pins a chat message to the message's channel.                    | [Link](messaging/chat-endpoints/pinmessage.md)                                                                              |
+| `/api/v1/chat.postMessage`             | Posts a new chat message.                                        | [Link](messaging/chat-endpoints/postmessage.md)                                                                             |
+| `/api/v1/chat.react`                   | Sets/unsets the user's reaction to an existing chat message.     | [Link](messaging/chat-endpoints/chat-message-reactions.md)                                                                  |
+| `/api/v1/chat.reportMessage`           | Reports a message.                                               | [Link](messaging/chat-endpoints/reportmessage.md)                                                                           |
+| `/api/v1/chat.search`                  | Searches for messages in a channel.                              | [Link](messaging/chat-endpoints/search-message.md)                                                                          |
+| `/api/v1/chat.starMessage`             | Stars a chat message for the authenticated user.                 | [Link](messaging/chat-endpoints/starmessage.md)                                                                             |
+| `/api/v1/chat.sendMessage`             | Sends a new chat message.                                        | [Link](messaging/chat-endpoints/send-message.md)                                                                            |
+| `/api/v1/chat.syncThreadMessages`      | Retrieves synced thread's messages.                              | [Link](messaging/chat-endpoints/syncthreadmessages.md)                                                                      |
+| `/api/v1/chat.syncThreadsList`         | Retrieves thread's synced channel threads.                       | [Link](messaging/chat-endpoints/syncthreadslist.md)                                                                         |
+| `/api/v1/chat.unfollowMessage`         | Unfollows an existing chat message.                              | [Link](messaging/chat-endpoints/unfollowmessage.md)                                                                         |
+| `/api/v1/chat.unPinMessage`            | Removes the pinned status of the provided chat message.          | [Link](messaging/chat-endpoints/unpinmessage.md)                                                                            |
+| `/api/v1/chat.unStarMessage`           | Removes the star on the chat message for the authenticated user. | [Link](messaging/chat-endpoints/unstarmessage.md)                                                                           |
+| `/api/v1/chat.update`                  | Updates the text of the chat message.                            | [Link](messaging/chat-endpoints/message-update.md)                                                                          |
+| `/api/v1/chat.syncMessages`            | Syncs messages                                                   | [Link](messaging/chat-endpoints/sync-messages.md) |
 
 ### DM/IM
 
-| URL                          | Short Description                                             | Details Page                                                                                                            |
-| ---------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/im.delete`          | Removes a direct message session                              | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/im-endpoints/delete) |
-| `/api/v1/im.close`           | Removes a direct message from the list of direct messages.    | [Link](core-endpoints/im-endpoints/close.md)                                                                            |
-| `/api/v1/im.counters`        | Gets counters of direct messages.                             | [Link](core-endpoints/im-endpoints/counters.md)                                                                         |
-| `/api/v1/im.create`          | Creates a direct message session with another user.           | [Link](core-endpoints/im-endpoints/create.md)                                                                           |
-| `/api/v1/im.history`         | Retrieves the messages from a direct message.                 | [Link](core-endpoints/im-endpoints/history.md)                                                                          |
-| `/api/v1/im.files`           | Retrieves a list of files from a direct message.              | [Link](core-endpoints/im-endpoints/files.md)                                                                            |
-| `/api/v1/im.members`         | Retrieves the users of participants of a direct message.      | [Link](core-endpoints/im-endpoints/members.md)                                                                          |
-| `/api/v1/im.messages`        | Retrieves the messages from the specific direct messages.     | [Link](core-endpoints/im-endpoints/messages.md)                                                                         |
-| `/api/v1/im.messages.others` | Retrieves the messages from any direct message in the server. | [Link](core-endpoints/im-endpoints/messages-others.md)                                                                  |
-| `/api/v1/im.list`            | Lists the direct messages the caller is part of.              | [Link](core-endpoints/im-endpoints/list.md)                                                                             |
-| `/api/v1/im.list.everyone`   | Lists all direct messages to the caller in the server.        | [Link](core-endpoints/im-endpoints/list-everyone.md)                                                                    |
-| `/api/v1/im.open`            | Adds the direct message back to the list of direct messages.  | [Link](core-endpoints/im-endpoints/open.md)                                                                             |
-| `/api/v1/im.setTopic`        | Sets a direct message topic.                                  | [Link](core-endpoints/im-endpoints/settopic.md)                                                                         |
+| URL                          | Short Description                                | Details Page                                             |
+| ---------------------------- | ------------------------------------------------ | -------------------------------------------------------- |
+| `/api/v1/im.delete`          | Removes a direct message session                 | [Link](messaging/chat-endpoints/delete.md)               |
+| `/api/v1/im.close`           | Removes a direct message from the list of messages | [Link](messaging/im-endpoints/close.md)                  |
+| `/api/v1/im.counters`        | Gets counters of direct messages                  | [Link](core-endpoints/im-endpoints/counters.md)          |
+| `/api/v1/im.create`          | Creates a direct message session                  | [Link](core-endpoints/im-endpoints/create.md)            |
+| `/api/v1/im.history`         | Retrieves messages from a direct message          | [Link](core-endpoints/im-endpoints/history.md)           |
+| `/api/v1/im.files`           | Retrieves a list of files from a direct message   | [Link](core-endpoints/im-endpoints/files.md)             |
+| `/api/v1/im.members`         | Retrieves participants of a direct message        | [Link](core-endpoints/im-endpoints/members.md)           |
+| `/api/v1/im.messages`        | Retrieves messages from specific direct messages  | [Link](core-endpoints/im-endpoints/messages.md)          |
+| `/api/v1/im.messages.others` | Retrieves messages from any direct message        | [Link](core-endpoints/im-endpoints/messages-others.md)   |
+| `/api/v1/im.list`            | Lists direct messages the caller is part of       | [Link](core-endpoints/im-endpoints/list.md)              |
+| `/api/v1/im.list.everyone`   | Lists all direct messages to the caller           | [Link](core-endpoints/im-endpoints/list-everyone.md)     |
+| `/api/v1/im.open`            | Adds direct message back to the list of messages  | [Link](core-endpoints/im-endpoints/open.md)              |
+| `/api/v1/im.setTopic`        | Sets a direct message topic                       | [Link](core-endpoints/im-endpoints/settopic.md)          |
 
 {% hint style="info" %}
 From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
@@ -292,185 +302,190 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | Url                               | Short Description                              | Details Page                                                                                                                                |
 | --------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/agent)      |
-| `livechat/agent.next/:token`      | Retrieves the data of the next available agent | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-agent/next-agent) |
+| `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data   | [Link](omnichannel/livechat-endpoints/livechat-agent/agent.md)      |
+| `livechat/agent.next/:token`      | Retrieves the data of the next available agent | [Link](omnichannel/livechat-endpoints/livechat-agent/next-agent) |
 
 #### Livechat Configuration
 
 | Url               | Short Description                                                         | Details Page                                                                                                                      |
 | ----------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/config` | Retrieves LiveChat widget configuration info and additional visitor data. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-config) |
+| `livechat/config` | Retrieves LiveChat widget configuration info and additional visitor data. | [Link](omnichannel/livechat-endpoints/livechat-config) |
 
 #### Livechat Contacts
 
 | Url                          | Short Description                                   | Details Page                                                                                                                                                    |
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `omnichannel/contact`        | Registers a guest user as a new omnichannel contact | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/register-omnichannel-contact) |
-| `omnichannel/contact`        | Retrieves a contact information                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-fetch-contact)    |
-| `omnichannel/contact.search` | Searches a contact information                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-contact/omnichannel-search-contact)   |
+| `omnichannel/contact`        | Registers a guest user as a new omnichannel contact | [Link](omnichannel/livechat-endpoints/livechat-contact/register-omnichannel-contact) |
+| `omnichannel/contact`        | Retrieves a contact information                     | [Link](omnichannel/livechat-endpoints/livechat-contact/omnichannel-fetch-contact)    |
+| `omnichannel/contact.search` | Searches a contact information                      | [Link](omnichannel/livechat-endpoints/livechat-contact/omnichannel-search-contact)   |
 
 #### Livechat Custom Field
 
 | Url                           | Short Description                             | Details Page                                                                                                                                                            |
 | ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/custom.field`       | Sends a custom field                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/send-a-livechat-custom-field)            |
-| `livechat/custom.fields`      | Sends an array of custom field                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/send-an-array-of-livechat-custom-fields) |
-| `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/list-livechat-custom-fields)             |
-| `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/custom-fields/get-info-about-a-custom-field)           |
+| `livechat/custom.field`       | Sends a custom field                          | [Link](omnichannel/livechat-endpoints/custom-fields/send-a-livechat-custom-field)            |
+| `livechat/custom.fields`      | Sends an array of custom field                | [Link](omnichannel/livechat-endpoints/custom-fields/send-an-array-of-livechat-custom-fields) |
+| `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](omnichannel/livechat-endpoints/custom-fields/list-livechat-custom-fields)             |
+| `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](omnichannel/livechat-endpoints/custom-fields/get-info-about-a-custom-field)           |
 
 #### Livechat Message
 
 | Url                              | Short Description                      | Details Page                                                                                                                                                      |
 | -------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/message`               | Sends a new omnichannel message        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/livechat-send-new-message)      |
-| `livechat/message/:_id`          | Retrieves a specific message           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/retrieve-a-livechat-message)    |
-| `livechat/message/:_id`          | Updates an omnichannel message         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/update-a-livechat-message)      |
-| `livechat/message/:_id`          | Removes an omnichannel message         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/remove-a-livechat-message)      |
-| `livechat/messages.history/:rid` | Retrieves omnichannel messages history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-message/load-livechat-messages-history) |
+| `livechat/message`               | Sends a new omnichannel message        | [Link](omnichannel/livechat-endpoints/livechat-message/livechat-send-new-message)      |
+| `livechat/message/:_id`          | Retrieves a specific message           | [Link](omnichannel/livechat-endpoints/livechat-message/retrieve-a-livechat-message)    |
+| `livechat/message/:_id`          | Updates an omnichannel message         | [Link](omnichannel/livechat-endpoints/livechat-message/update-a-livechat-message)      |
+| `livechat/message/:_id`          | Removes an omnichannel message         | [Link](omnichannel/livechat-endpoints/livechat-message/remove-a-livechat-message)      |
+| `livechat/messages.history/:rid` | Retrieves omnichannel messages history | [Link](omnichannel/livechat-endpoints/livechat-message/load-livechat-messages-history) |
 | `livechat/messages`              | Sends array of messages                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages)                            |
 
 #### Livechat Offline Message
 
 | Url                        | Short Description                                   | Details Page                                                                                                                               |
 | -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `livechat/offline.message` | Sends an offline message when no agent is available | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-offline-message) |
+| `livechat/offline.message` | Sends an offline message when no agent is available | [Link](omnichannel/livechat-endpoints/livechat-offline-message) |
 
 #### Livechat Page Visited
 
 | Url                     | Short Description                                                    | Details Page                                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history) |
+| `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history) |
 
 #### Livechat Room
 
 | Url                      | Short Description                                                 | Details Page                                                                                                                                           |
 | ------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `livechat/room`          | GetRetrievesthe omnichannel room data or open a new conversation. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-info)     |
-| `livechat/room.close`    | Closes an omnichannel conversation                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-close)    |
-| `livechat/room.transfer` | Transfers an omnichannel conversation                             | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-transfer) |
-| `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/livechat-room-forward)  |
-| `livechat/room.visitor`  | Updates room visitor's information                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-room/change-room-visitor)    |
+| `livechat/room`          | GetRetrievesthe omnichannel room data or open a new conversation. | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-info)     |
+| `livechat/room.close`    | Closes an omnichannel conversation                                | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-close)    |
+| `livechat/room.transfer` | Transfers an omnichannel conversation                             | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-transfer) |
+| `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent                  | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-forward)  |
+| `livechat/room.visitor`  | Updates room visitor's information                                | [Link](omnichannel/livechat-endpoints/livechat-room/change-room-visitor)    |
 
 #### Livechat Transcript
 
 | Url                   | Short Description              | Details Page                                                                                                                          |
 | --------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/transcript` | Requests a Livechat transcript | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transcript) |
+| `livechat/transcript` | Requests a Livechat transcript | [Link](omnichannel/livechat-endpoints/livechat-transcript) |
 
 #### Livechat Transfer
 
 | Url                              | Short Description                           | Details Page                                                                                                                        |
 | -------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/livechat-transfer) |
+| `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](omnichannel/livechat-endpoints/livechat-transfer) |
 
 #### Livechat Visitor
 
 | Url                            | Short Description                        | Details Page                                                                                                                                                 |
 | ------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `livechat/visitor`             | Registers a new visitor                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/register-a-new-livechat-visitor)    |
-| `livechat/visitor/:token`      | Retrieves a visitor                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/retrieve-a-visitor-data)            |
-| `livechat/visitor/:token`      | Deletes a visitor                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/delete-a-visitor)                   |
-| `livechat/visitor/:token/room` | Retrieves open conversation of a visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/get-open-conversation-of-a-visitor) |
-| `livechat/visitor.status`      | Sets visitor status                      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-livechat-endpoints/visitor/set-visitor-status)                 |
+| `livechat/visitor`             | Registers a new visitor                  | [Link](omnichannel/livechat-endpoints/visitor/register-a-new-livechat-visitor)    |
+| `livechat/visitor/:token`      | Retrieves a visitor                      | [Link](omnichannel/livechat-endpoints/visitor/retrieve-a-visitor-data)            |
+| `livechat/visitor/:token`      | Deletes a visitor                        | [Link](omnichannel/livechat-endpoints/visitor/delete-a-visitor)                   |
+| `livechat/visitor/:token/room` | Retrieves open conversation of a visitor | [Link](omnichannel/livechat-endpoints/visitor/get-open-conversation-of-a-visitor) |
+| `livechat/visitor.status`      | Sets visitor status                      | [Link](omnichannel/livechat-endpoints/visitor/set-visitor-status)                 |
 
 #### Livechat Agent Stats
 
-<table><thead><tr><th width="272">Url</th><th width="276">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/livechat/agents/:agentId/departments</code></td><td>Returns all the departments associated with an agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-departments">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/average-service-time</code></td><td>Retrieves average service time per agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-average-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/total-service-time</code></td><td>Retrieves total service time sorted by agent</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-total-service-time">Link</a></td></tr><tr><td><code>api/v1/livechat/analytics/agents/available-for-service-history</code></td><td>Retrieves a list of agents and their available time for the provided time frame</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/agents/agents-available-for-service-history">Link</a></td></tr></tbody></table>
+| Url                                  | Short Description                            | Details Page                                                                                                                             |
+| ------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/agents/:agentId/departments`                             | Returns all the departments associated with an agent  | [Link](omnichannel/livechat-endpoints/agents/agents-departments)                  |
+| `api/v1/livechat/analytics/agents/average-service-time`                   | Retrieves average service time per agent        | [Link](omnichannel/livechat-endpoints/agents/agents-average-service-time)        |
+| `api/v1/livechat/analytics/agents/total-service-time`                     | Retrieves total service time sorted by agent     | [Link](omnichannel/livechat-endpoints/agents/agents-total-service-time)          |
+| `api/v1/livechat/analytics/agents/available-for-service-history`           | Retrieves a list of agents and their available time for the provided time frame | [Link](omnichannel/livechat-endpoints/agents/agents-available-for-service-history) |
 
 #### Livechat Appearance
 
 | Url                          | Short Description                                   | Details Page                                                                                              |
 | ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/appearance) |
+| `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](omnichannel/livechat-endpoints/appearance) |
 
 #### Livechat Business Hours
 
 | Url                                   | Short Description                                           | Details Page                                                                                                                      |
 | ------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/business-hour`       | Retrieves all the information of a particular business hour | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hour-info)  |
-| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/business-hours/business-hours-list) |
+| `api/v1/livechat/business-hour`       | Retrieves all the information of a particular business hour | [Link](omnichannel/livechat-endpoints/business-hours/business-hour-info)  |
+| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours                 | [Link](omnichannel/livechat-endpoints/business-hours/business-hours-list) |
 
 #### Livechat Dashboards
 
 | Url                                                                   | Short Description                                       | Details Page                                                                                                                            |
 | --------------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/analytics/dashboards/conversation-totalizers`        | Retrieves conversation totalizers for a department      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/conversation-totalizers)       |
-| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agent-productivity-totalizers) |
-| `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chat-totalizers)               |
-| `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/productivity-totalizers)       |
-| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-chart)                   |
-| `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-agent-chart)         |
-| `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/agents-statuses-chart)         |
-| `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/chats-per-department-chart)    |
-| `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/dashboards/timings-charts)                |
+| `api/v1/livechat/analytics/dashboards/conversation-totalizers`        | Retrieves conversation totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/conversation-totalizers)       |
+| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](omnichannel/livechat-endpoints/dashboards/agent-productivity-totalizers) |
+| `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](omnichannel/livechat-endpoints/dashboards/chat-totalizers)               |
+| `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/productivity-totalizers)       |
+| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](omnichannel/livechat-endpoints/dashboards/chats-chart)                   |
+| `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-agent-chart)         |
+| `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](omnichannel/livechat-endpoints/dashboards/agents-statuses-chart)         |
+| `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-department-chart)    |
+| `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](omnichannel/livechat-endpoints/dashboards/timings-charts)                |
 
 #### Livechat Departments
 
 | Url                                                                | Short Description                                             | Details Page                                                                                                                                  |
 | ------------------------------------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/department`                                       | Retrieves a list of departments                               | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-a-list-of-departments)           |
-| `api/v1/livechat/department`                                       | Registers a new department                                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/register-a-new-department)           |
-| `api/v1/livechat/department/:_id`                                  | Retrieves a department's info                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/get-info-about-a-department)         |
-| `api/v1/livechat/department/:_id`                                  | Updates a department                                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-a-department)                 |
-| `api/v1/livechat/department/:_id`                                  | Removes a department                                          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/remove-a-department)                 |
-| `api/v1/livechat/department.autocomplete`                          | Autocompletes department name                                 | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/department-autocomplete)             |
-| `api/v1/livechat/department/:departmentId/agents`                  | Retrieves agents of a specific department                     | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/retrieve-agents-of-a-department)     |
-| `api/v1/livechat/department/:departmentId/agents`                  | Updates agents of a department                                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/update-agents-of-a-department)       |
-| `api/v1/livechat/department.listByIds`                             | Retrieves a list of departments by an array of department ids | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/listing-departments-by-ids)          |
-| `api/v1/livechat/departments.available-by-unit/:unitId`            | Retrieves departments available by unit Id                    | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/departments-available-by-unit-id)                           |
-| `api/v1/livechat/analytics/departments/amount-of-chats`            | Retrieves the number of incoming chats                        | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/amount-of-chat)                                             |
-| `api/v1/livechat/analytics/departments/average-service-time`       | Retrieves average service time                                | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-service-time-by-department)                         |
-| `api/v1/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration                              | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-chat-duration-time-by-department)                   |
-| `api/v1/livechat/analytics/departments/total-service-time`         | Retrieves total service time                                  | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-service-time-by-department)                           |
-| `api/v1/livechat/analytics/departments/average-waiting-time`       | Retrieves avg waiting time                                    | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/average-waiting-time-by-department)                         |
-| `api/v1/livechat/analytics/departments/total-transferred-chats`    | Retrieves total transferred chats                             | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/total-transferred-chat-by-department)                       |
-| `api/v1/livechat/analytics/departments/total-abandoned-chats`      | Retrieves abandoned chats                                     | [Info](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/department/total-abandoned-chats-by-department) |
-| `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats                       | [Info](https://developer.rocket.chat/api/rest-api/endpoints/livechat/department-1/percentage-of-abandoned-chats-by-department)                |
+| `api/v1/livechat/department`                                       | Retrieves a list of departments                               | [Link](omnichannel/livechat-endpoints/livechat-department/get-a-list-of-departments)           |
+| `api/v1/livechat/department`                                       | Registers a new department                                    | [Link](omnichannel/livechat-endpoints/livechat-department/register-a-new-department)           |
+| `api/v1/livechat/department/:_id`                                  | Retrieves a department's info                                 | [Link](omnichannel/livechat-endpoints/livechat-department/get-info-about-a-department)         |
+| `api/v1/livechat/department/:_id`                                  | Updates a department                                          | [Link](omnichannel/livechat-endpoints/livechat-department/update-a-department)                 |
+| `api/v1/livechat/department/:_id`                                  | Removes a department                                          | [Link](omnichannel/livechat-endpoints/livechat-department/remove-a-department)                 |
+| `api/v1/livechat/department.autocomplete`                          | Autocompletes department name                                 | [Link](omnichannel/livechat-endpoints/livechat-department/department-autocomplete)             |
+| `api/v1/livechat/department/:departmentId/agents`                  | Retrieves agents of a specific department                     | [Link](omnichannel/livechat-endpoints/livechat-department/retrieve-agents-of-a-department)     |
+| `api/v1/livechat/department/:departmentId/agents`                  | Updates agents of a department                                | [Link](omnichannel/livechat-endpoints/livechat-department/update-agents-of-a-department)       |
+| `api/v1/livechat/department.listByIds`                             | Retrieves a list of departments by an array of department ids | [Link](omnichannel/livechat-endpoints/livechat-department/listing-departments-by-ids)          |
+| `api/v1/livechat/departments.available-by-unit/:unitId`            | Retrieves departments available by unit Id                    | [Info](omnichannel/livechat-endpoints/livechat-department/departments-available-by-unit-id)                           |
+| `api/v1/livechat/analytics/departments/amount-of-chats`            | Retrieves the number of incoming chats                        | [Info](omnichannel/livechat-endpoints/livechat-department/amount-of-chat)                                             |
+| `api/v1/livechat/analytics/departments/average-service-time`       | Retrieves average service time                                | [Info](omnichannel/livechat-endpoints/livechat-department/average-service-time-by-department)                         |
+| `api/v1/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration                              | [Info](omnichannel/livechat-endpoints/livechat-department/average-chat-duration-time-by-department)                   |
+| `api/v1/livechat/analytics/departments/total-service-time`         | Retrieves total service time                                  | [Info](omnichannel/livechat-endpoints/livechat-department/total-service-time-by-department)                           |
+| `api/v1/livechat/analytics/departments/average-waiting-time`       | Retrieves avg waiting time                                    | [Info](omnichannel/livechat-endpoints/livechat-department/average-waiting-time-by-department)                         |
+| `api/v1/livechat/analytics/departments/total-transferred-chats`    | Retrieves total transferred chats                             | [Info](omnichannel/livechat-endpoints/livechat-department/total-transferred-chat-by-department)                       |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats`      | Retrieves abandoned chats                                     | [Info](omnichannel/livechat-endpoints/livechat-department/total-abandoned-chats-by-department) |
+| `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats                       | [Info](omnichannel/livechat-endpoints/livechat-department/percentage-of-abandoned-chats-by-department)                |
 
 #### Livechat Inquiries
 
 | Url                                  | Short Description                        | Details Page                                                                                                                |
 | ------------------------------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/inquiries.list`     | Lists all of the open livechat inquiries | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-list)     |
-| `api/v1/livechat/inquiries.take`     | Takes an open inquiry                    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/take-inquiry)       |
-| `api/v1/livechat/inquiries.queued`   | Lists queued inquiries                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiries-queued)   |
-| `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-get-one)    |
-| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/inquiries/inquiry-prioritize) |
+| `api/v1/livechat/inquiries.list`     | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-list)     |
+| `api/v1/livechat/inquiries.take`     | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry)       |
+| `api/v1/livechat/inquiries.queued`   | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued)   |
+| `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-get-one)    |
+| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-prioritize) |
 | `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](livechat-endpoints/livechat-inquiries/set-sla-to-inquiry.md)                                                         |
 
 #### Livechat Integrations
 
 | Url                                     | Short Description                        | Details Page                                                                                                |
 | --------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/integrations) |
+| `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](omnichannel/livechat-endpoints/livechat-integrations.md) |
 
 #### Livechat Queue
 
 | Url                     | Short Description          | Details Page                                                                                                  |
 | ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/livechat-queue) |
+| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](omnichannel/livechat-endpoints/livechat-queue) |
 
 #### Livechat Rooms
 
 | Url                                  | Short Description                            | Details Page                                                                                                     |
 | ------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/rooms`              | Retrieves a list of livechat rooms           | [Link](livechat-endpoints/livechat-rooms/livechat-rooms-list.md)                                                 |
-| `api/v1/livechat/room/:rid/priority` | Set the priority of a Livechat room.         | [Link](livechat-endpoints/livechat-rooms/set-livechat-room-priority.md)                                          |
-| `api/v1/livechat/room/:rid/priority` | Remove the priority set to a Livechat room.  | [Link](livechat-endpoints/livechat-rooms/remove-livechat-room-priority.md)                                       |
-| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/rooms/room-onhold) |
+| `api/v1/livechat/rooms`              | Retrieves a list of livechat rooms           | [Link](omnichannel/livechat-endpoints/livechat-rooms/livechat-rooms-list.md)                                                 |
+| `api/v1/livechat/room/:rid/priority` | Set the priority of a Livechat room.         | [Link](omnichannel/livechat-endpoints/livechat-rooms/set-livechat-room-priority.md)                                          |
+| `api/v1/livechat/room/:rid/priority` | Remove the priority set to a Livechat room.  | [Link](omnichannel/livechat-endpoints/livechat-rooms/remove-livechat-room-priority.md)                                       |
+| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](omnichannel/livechat-endpoints/rooms/room-onhold) |
 
 #### Livechat SMS
 
 | Url                                     | Short Description | Details Page                                                                                                       |
 | --------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/sms-incoming/:service` | Receives SMS      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/sms-incoming-twilio) |
+| `api/v1/livechat/sms-incoming/:service` | Receives SMS      | [Link](omnichannel/livechat-endpoints/sms-incoming-twilio) |
 
 #### Livechat Triggers
 
 | Url                             | Short Description                  | Details Page                                                                                                                      |
 | ------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-the-livechat-triggers) |
-| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/triggers/get-a-livechat-trigger)    |
+| `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](omnichannel/livechat-endpoints/triggers/get-the-livechat-triggers) |
+| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/triggers/get-a-livechat-trigger)    |
 
 #### Livechat Upload
 
@@ -483,20 +498,20 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | Url                                | Short Description                   | Details Page                                                                                                                         |
 | ---------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `api/v1/livechat/users/:type`      | Gets a list of agents or managers   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users)     |
-| `api/v1/livechat/users/:type`      | Registers a new agent or manager    | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/register-new-agent-or-manager)   |
-| `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/get-info-of-an-agent-or-manager) |
-| `api/v1/livechat/users/:type/:_id` | Removes an agent or manager         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/users/remove-an-agent-or-manager)      |
+| `api/v1/livechat/users/:type`      | Registers a new agent or manager    | [Link](omnichannel/livechat-endpoints/livechat-users/register-new-agent-or-manager.md)   |
+| `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](omnichannel/livechat-endpoints/livechat-users/get-info-of-an-agent-or-manager) |
+| `api/v1/livechat/users/:type/:_id` | Removes an agent or manager         | [Link](omnichannel/livechat-endpoints/livechat-users/remove-an-agent-or-manager)      |
 
 #### Livechat Visitors
 
 | Url                                                                    | Short Description                           | Details Page                                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-info-by-id)                    |
-| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-pages-visited-by-livechat-visitor) |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/get-livechat-visitors-chat-history)    |
-| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/search-a-visitors-chat)                |
-| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitor-autocomplete)                  |
-| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/omnichannel-endpoints/visitors/visitors-search)                       |
+| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/visitors/visitor-info-by-id)                    |
+| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/visitors/get-pages-visited-by-livechat-visitor) |
+| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/visitors/get-livechat-visitors-chat-history)    |
+| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/visitors/search-a-visitors-chat)                |
+| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/visitors/visitor-autocomplete)                  |
+| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/visitors/visitors-search)                       |
 
 #### Livechat Monitors
 
@@ -534,25 +549,25 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### Voice Channel
 
-| URL                                                                                           | Description                                     | Details Page                                                                                                               |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `/v1/connector.extension.getRegistrationInfoByUserId`                                         | Get registration information by ID              | [Link](./#voip-registration-information)                                                                                   |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
-| `/api/v1/voip/queues.getSummary`                                                              | Get VoIP queue membership data                  | [Link](omnichannel/voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
-| `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
-| `/v1/voip/queues.getMembershipSubscription`                                                   | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
-| `v1/voip/queues.getMembershipSubscription`                                                    | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                                                           |
-| `api/v1/livechat/visitor`                                                                     | Create a VoIP visitor                           | [Link](./#create-visitor)                                                                                                  |
-| `/api/v1/voip/events`                                                                         | Send VoIP events                                | [Link](./#send-voip-events)                                                                                                |
-| `/api/v1/omnichannel/extension`                                                               | Retrieve VoIP extension information             | [Link](./#fetch-voip-extensions)                                                                                           |
-| `/api/v1/omnichannel/extensions?count=10&offset=10`                                           | Retrieve VoIP extensions                        | [Link](./#fetch-voip-extensions)                                                                                           |
-| `/v1/omnichannel/agent/extension`                                                             | Create, update and delete VoIP extension        | [Link](./#agent-extensions)                                                                                                |
-| `/api/v1/voip/managementServer/checkConnection?host&port&username&password`                   | Check management server connection status       | [Link](./#check-management-server-connection)                                                                              |
+| URL                                                     | Description                                     | Details Page                                                                                                               |
+| ------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId`    | Get registration information by ID              | [Link](./#voip-registration-information)                                                                                   |
+| `/api/v1/voip/queues.getSummary`                         | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
+| `/api/v1/voip/queues.getSummary`                         | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
+| `/api/v1/voip/queues.getSummary`                         | Get VoIP queue membership data                  | [Link](omnichannel/voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
+| `/v1/voip/queues.getMembershipSubscription`              | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
+| `/v1/voip/queues.getMembershipSubscription`              | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
+| `v1/voip/queues.getMembershipSubscription`               | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                                                           |
+| `api/v1/livechat/visitor`                                | Create a VoIP visitor                           | [Link](./#create-visitor)                                                                                                  |
+| `/api/v1/voip/events`                                    | Send VoIP events                                | [Link](./#send-voip-events)                                                                                                |
+| `/api/v1/omnichannel/extension`                          | Retrieve VoIP extension information             | [Link](./#fetch-voip-extensions)                                                                                           |
+| `/api/v1/omnichannel/extensions?count=10&offset=10`      | Retrieve VoIP extensions                        | [Link](./#fetch-voip-extensions)                                                                                           |
+| `/v1/omnichannel/agent/extension`                        | Create, update and delete VoIP extension        | [Link](./#agent-extensions)                                                                                                |
+| `/api/v1/voip/managementServer/checkConnection?host&port&username&password` | Check management server connection status       | [Link](./#check-management-server-connection)                                                                              |
 | `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Check call server connection status             | [Link](./#check-call-server-connection)                                                                                    |
-| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi`          | Create VoIP room                                | [Link](./#create-voip-room)                                                                                                |
-| `/api/v1/voip/events`                                                                         | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                                                           |
-| `/api/v1/voip/room.clos`                                                                      | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                                                                 |
+| `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi` | Create VoIP room                                | [Link](./#create-voip-room)                                                                                                |
+| `/api/v1/voip/events`                                    | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                                                           |
+| `/api/v1/voip/room.clos`                                 | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                                                                 |
 
 ### Canned Response
 
@@ -586,7 +601,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### OAuth App
 
-<table><thead><tr><th>Url</th><th width="198">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/oauth-apps.get</code></td><td>Retrieves an OAuth App by id or client id.</td><td><a href="integrations/oauthapps-endpoints/get.md">Link</a></td></tr><tr><td><code>/api/v1/oauth-apps.list</code></td><td>Retrieves a list of OAuth Apps.</td><td><a href="integrations/oauthapps-endpoints/list.md">Link</a></td></tr></tbody></table>
+| Url                      | Short Description                             | Details Page                                           |
+| ------------------------ | --------------------------------------------- | ------------------------------------------------------ |
+| `/api/v1/oauth-apps.get` | Retrieves an OAuth App by id or client id.     | [Link](integrations/oauthapps-endpoints/get.md)        |
+| `/api/v1/oauth-apps.list`| Retrieves a list of OAuth Apps.                | [Link](integrations/oauthapps-endpoints/list.md)       |
 
 ## Notifications
 
@@ -610,7 +628,11 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### Assets
 
-<table><thead><tr><th>URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/assets.setAsset</code></td><td>Sets an asset image by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset">Link</a></td></tr><tr><td><code>/api/v1/assets.unsetAsset</code></td><td>Unsets an asset by name.</td><td><a href="https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset">Link</a></td></tr></tbody></table>
+| URL                           | Short Description                 | Details Page                                                                                 |
+| ----------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------- |
+| `/api/v1/assets.setAsset`     | Sets an asset image by name.      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset)     |
+| `/api/v1/assets.unsetAsset`   | Unsets an asset by name.          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset)   |
+
 
 ### Custom Emoji
 
@@ -650,15 +672,27 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Users Engagement Dashboard Endpoints
 
-<table><thead><tr><th width="227">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/engagement-dashboard/users/new-users</code></td><td>List new users during a specific period</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/list-new-users.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/active-users</code></td><td>List active users in the workspace.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/list-active-users.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/users-by-time-of-the-day-in-a-week</code></td><td>List users by hours at a particular time of the day in a week.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/list-user-by-time-of-the-day.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/chat-busier/hourly-data</code></td><td>Get hourly data when chat is busier.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/get-hourly-data-when-chat-is-busier.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/users/chat-busier/weekly-data</code></td><td>Get weekly data when chat is busier.</td><td><a href="statistics/engagement-dashboard/users-engagement-dashboard/get-weekly-data-when-chat-is-busier.md">Link</a></td></tr></tbody></table>
+| Url                                                | Short Description                                      | Details Page                                                                                     |
+| -------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `/api/v1/engagement-dashboard/users/new-users`      | List new users during a specific period                | [Link](statistics/engagement-dashboard/users-engagement-dashboard/list-new-users.md)             |
+| `/api/v1/engagement-dashboard/users/active-users`   | List active users in the workspace                     | [Link](statistics/engagement-dashboard/users-engagement-dashboard/list-active-users.md)          |
+| `/api/v1/engagement-dashboard/users/users-by-time-of-the-day-in-a-week` | List users by hours at a particular time of the day in a week | [Link](statistics/engagement-dashboard/users-engagement-dashboard/list-user-by-time-of-the-day.md) |
+| `/api/v1/engagement-dashboard/users/chat-busier/hourly-data` | Get hourly data when chat is busier              | [Link](statistics/engagement-dashboard/users-engagement-dashboard/get-hourly-data-when-chat-is-busier.md) |
+| `/api/v1/engagement-dashboard/users/chat-busier/weekly-data` | Get weekly data when chat is busier              | [Link](statistics/engagement-dashboard/users-engagement-dashboard/get-weekly-data-when-chat-is-busier.md) |
 
 #### Messages Engagement Dashboard Endpoints
 
-<table><thead><tr><th width="227">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/engagement-dashboard/messages/messages-sent</code></td><td>Get number of messages sent daily during a specific period.</td><td><a href="statistics/engagement-dashboard/messages-engagement-dashboard/get-messages-sent.md">Link</a></td></tr><tr><td><code>/api/v1/engagement-dashboard/messages/origin</code></td><td>Get the origin of messages sent during a specific period.</td><td><a href="statistics/engagement-dashboard/messages-engagement-dashboard/get-origin-of-message-sent.md">Link</a></td></tr><tr><td><code>api/v1/engagement-dashboard/messages/top-five-popular-channels</code></td><td>Get the top 5 popular channels in your workspace by the number of messages sent.</td><td><a href="statistics/engagement-dashboard/messages-engagement-dashboard/get-the-most-popular-channels.md">Link</a></td></tr></tbody></table>
+| URL                                                         | Short Description                                        | Details Page                                                                                         |
+| ----------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `/api/v1/engagement-dashboard/messages/messages-sent`        | Get number of daily messages sent during a period         | [Link](statistics/engagement-dashboard/messages-engagement-dashboard/get-messages-sent.md)         |
+| `/api/v1/engagement-dashboard/messages/origin`               | Get origin of messages sent during a period               | [Link](statistics/engagement-dashboard/messages-engagement-dashboard/get-origin-of-message-sent.md) |
+| `/api/v1/engagement-dashboard/messages/top-five-popular-channels` | Get top 5 popular channels by message count          | [Link](statistics/engagement-dashboard/messages-engagement-dashboard/get-the-most-popular-channels.md) |
 
 #### Channels Engagement Dashboard Endpoints
 
-<table><thead><tr><th width="227">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>api/v1/engagement-dashboard/channels/list</code></td><td>Get all channels and the number of messages in each.</td><td><a href="statistics/engagement-dashboard/channels-engagement-dashboard/get-channels.md">Link</a></td></tr></tbody></table>
+| URL                                       | Short Description                                  | Details Page                                                                             |
+| ----------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `api/v1/engagement-dashboard/channels/list` | Get all channels and the number of messages in each | [Link](statistics/engagement-dashboard/channels-engagement-dashboard/get-channels.md) |
 
 ### Subscription
 
@@ -729,7 +763,13 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Federation
 
-<table><thead><tr><th width="180">Url</th><th width="215">Short Description</th><th width="323.3333333333333">Details Page</th></tr></thead><tbody><tr><td><code>api/v1/federation/addServerByUser</code></td><td>Adds a server to search public rooms later</td><td><a href="add-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/listServersByUser</code></td><td>Retrieves all the server names saved by the user</td><td><a href="list-servers.md">Link</a></td></tr><tr><td><code>api/v1/federation/removeServerByUser</code></td><td>Remove a server name</td><td><a href="remove-server.md">Link</a></td></tr><tr><td><code>api/v1/federation/searchPublicRooms</code></td><td>Returns all the public room given a server name</td><td><a href="search-public-rooms.md">Link</a></td></tr><tr><td><code>api/v1/joinExternalPublicRoom</code></td><td>Joins an External public Matrix room</td><td><a href="join-external-public-room.md">Link</a></td></tr></tbody></table>
+| Url                                    | Short Description                           | Details Page              |
+|----------------------------------------|---------------------------------------------|---------------------------|
+| `api/v1/federation/addServerByUser`    | Adds a server to search public rooms later   | [Link](add-server.md)     |
+| `api/v1/federation/listServersByUser`  | Retrieves all the server names saved by the user | [Link](list-servers.md) |
+| `api/v1/federation/removeServerByUser` | Remove a server name                         | [Link](remove-server.md)  |
+| `api/v1/federation/searchPublicRooms`  | Returns all the public room given a server name | [Link](search-public-rooms.md) |
+| `api/v1/joinExternalPublicRoom`        | Joins an External public Matrix room         | [Link](join-external-public-room.md) |
 
 ### Device Management
 
@@ -780,7 +820,11 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Licenses
 
-<table><thead><tr><th width="246">Url</th><th>Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/v1/licenses.get</code></td><td>Gets all registered licenses.</td><td><a href="miscellaneous/licenses/get-licenses.md">Link</a></td></tr><tr><td><code>/api/v1/licenses.isEnterprise</code></td><td>Confirm if workspace has enterprise license.</td><td><a href="miscellaneous/licenses/confirm-enterprise-license.md">Link</a></td></tr><tr><td><code>licenses.maxActiveUsers</code></td><td>Get maximum active users.</td><td><a href="miscellaneous/licenses/get-maximum-active-user.md">Link</a></td></tr></tbody></table>
+| Url                            | Short Description                           | Details Page                                   |
+|--------------------------------|---------------------------------------------|------------------------------------------------|
+| `/api/v1/licenses.get`        | Gets all registered licenses.               | [Link](miscellaneous/licenses/get-licenses.md)               |
+| `/api/v1/licenses.isEnterprise` | Confirm if workspace has enterprise license. | [Link](miscellaneous/licenses/confirm-enterprise-license.md) |
+| `licenses.maxActiveUsers`      | Get maximum active users.                   | [Link](miscellaneous/licenses/get-maximum-active-user.md)   |
 
 ### Video conference
 

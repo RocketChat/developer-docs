@@ -10,7 +10,7 @@ Syncs your [LDAP data](https://docs.rocket.chat/use-rocket.chat/workspace-admini
 
 {% hint style="info" %}
 * It requires the `sync-auth-services-users` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-* It requires [two-factor authentication.](../../other-important-endpoints/2fa.md#calling-an-endpoint-with-two-factor)
+* It requires [two-factor authentication.](../../authentication-endpoints/2fa.md#calling-an-endpoint-with-two-factor)
 {% endhint %}
 
 | URL                    | Requires Auth | HTTP Method |
