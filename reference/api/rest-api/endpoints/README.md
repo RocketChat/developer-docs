@@ -506,68 +506,68 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | Url                                                                    | Short Description                           | Details Page                                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/visitors/visitor-info-by-id)                    |
-| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/visitors/get-pages-visited-by-livechat-visitor) |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/visitors/get-livechat-visitors-chat-history)    |
-| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/visitors/search-a-visitors-chat)                |
-| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/visitors/visitor-autocomplete)                  |
-| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/visitors/visitors-search)                       |
+| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-info-by-id.md)                    |
+| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-pages-visited-by-livechat-visitor) |
+| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-livechat-visitors-chat-history)    |
+| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/search-a-visitors-chat)                |
+| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-autocomplete)                  |
+| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitors-search)                       |
 
 #### Livechat Monitors
 
 | Url                                  | Short Description | Details Page                                                  |
 | ------------------------------------ | ----------------- | ------------------------------------------------------------- |
-| `api/v1/livechat/monitors`           | List all monitors | [Link](livechat-endpoints/livechat-monitors/get-monitors.md)  |
-| `api/v1/livechat/monitors/:username` | Get a Monitor     | [Link](livechat-endpoints/livechat-monitors/get-a-monitor.md) |
+| `api/v1/livechat/monitors`           | List all monitors | [Link](omnichannel/livechat-endpoints/livechat-monitors/get-monitors.md)  |
+| `api/v1/livechat/monitors/:username` | Get a Monitor     | [Link](omnichannel/livechat-endpoints/livechat-monitors/get-a-monitor.md) |
 
 #### Livechat Priorities
 
 | Url                                      | Short Description   | Details Page                                                                               |
 | ---------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------ |
-| `api/v1/livechat/priorities`             | Get priorities      | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md) |
-| `api/v1/livechat/priorities/:priorityId` | Get a priority      | [Link](livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md) |
-| `api/v1/livechat/priorities/:priorityId` | Update the priority | [Link](livechat-endpoints/livechat-priorities/update-priority.md)                          |
-| `api/v1/livechat/priorities.reset`       | Reset the priority  | [Link](livechat-endpoints/livechat-priorities/reset-priorities.md)                         |
+| `api/v1/livechat/priorities`             | Get priorities      | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Get a priority      | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md) |
+| `api/v1/livechat/priorities/:priorityId` | Update the priority | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/update-priority.md)                          |
+| `api/v1/livechat/priorities.reset`       | Reset the priority  | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/reset-priorities.md)                         |
 
 #### Livechat Tags
 
 | Url                    | Short Description        | Details Page                                          |
 | ---------------------- | ------------------------ | ----------------------------------------------------- |
-| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](livechat-endpoints/livechat-tags/get-tags.md)  |
-| `livechat/tags/:tagId` | Get a tag.               | [Link](livechat-endpoints/livechat-tags/get-a-tag.md) |
+| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-tags.md)  |
+| `livechat/tags/:tagId` | Get a tag.               | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-tag.md) |
 
 #### Livechat Units
 
 | Url                                      | Short Description           | Details Page                                                           |
 | ---------------------------------------- | --------------------------- | ---------------------------------------------------------------------- |
-| `api/v1/livechat/units`                  | Create unit                 | [Link](livechat-endpoints/livechat-units/create-unit.md)               |
-| `api/v1/livechat/units`                  | List all omnichannel units. | [Link](livechat-endpoints/livechat-units/get-units.md)                 |
-| `api/v1/livechat/units/:unitId`          | Retrieves details of a unit | [Link](livechat-endpoints/livechat-units/get-a-unit.md)                |
-| `api/v1/livechat/units/:unitId/monitors` | List unit monitors          | [Link](livechat-endpoints/livechat-units/get-list-of-unit-monitors.md) |
-| `api/v1/livechat/units/:id`              | Update Unit by Id           | [Link](livechat-endpoints/livechat-units/update-unit.md)               |
-| `api/v1/livechat/units/:id`              | Delete unit using ID        | [Link](livechat-endpoints/livechat-units/delete-unit.md)               |
+| `api/v1/livechat/units`                  | Create unit                 | [Link](omnichannel/livechat-endpoints/livechat-units/create-unit.md)               |
+| `api/v1/livechat/units`                  | List all omnichannel units. | [Link](omnichannel/livechat-endpoints/livechat-units/get-units.md)                 |
+| `api/v1/livechat/units/:unitId`          | Retrieves details of a unit | [Link](omnichannel/livechat-endpoints/livechat-units/get-a-unit.md)                |
+| `api/v1/livechat/units/:unitId/monitors` | List unit monitors          | [Link](omnichannel/livechat-endpoints/livechat-units/get-list-of-unit-monitors.md) |
+| `api/v1/livechat/units/:id`              | Update Unit by Id           | [Link](omnichannel/livechat-endpoints/livechat-units/update-unit.md)               |
+| `api/v1/livechat/units/:id`              | Delete unit using ID        | [Link](omnichannel/livechat-endpoints/livechat-units/delete-unit.md)               |
 
 ### Voice Channel
 
-| URL                                                     | Description                                     | Details Page                                                                                                               |
-| ------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `/v1/connector.extension.getRegistrationInfoByUserId`    | Get registration information by ID              | [Link](./#voip-registration-information)                                                                                   |
-| `/api/v1/voip/queues.getSummary`                         | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
-| `/api/v1/voip/queues.getSummary`                         | Get VoIP query summary data                     | [Link](./#voip-query-summary)                                                                                              |
-| `/api/v1/voip/queues.getSummary`                         | Get VoIP queue membership data                  | [Link](omnichannel/voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
-| `/v1/voip/queues.getMembershipSubscription`              | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
-| `/v1/voip/queues.getMembershipSubscription`              | Get VoIP queue membership subscription data     | [Link](./#voip-queue-membership)                                                                                           |
-| `v1/voip/queues.getMembershipSubscription`               | Get the VoIP queue membership subscription data | [Link](./#voip-queue-membership)                                                                                           |
-| `api/v1/livechat/visitor`                                | Create a VoIP visitor                           | [Link](./#create-visitor)                                                                                                  |
-| `/api/v1/voip/events`                                    | Send VoIP events                                | [Link](./#send-voip-events)                                                                                                |
-| `/api/v1/omnichannel/extension`                          | Retrieve VoIP extension information             | [Link](./#fetch-voip-extensions)                                                                                           |
-| `/api/v1/omnichannel/extensions?count=10&offset=10`      | Retrieve VoIP extensions                        | [Link](./#fetch-voip-extensions)                                                                                           |
-| `/v1/omnichannel/agent/extension`                        | Create, update and delete VoIP extension        | [Link](./#agent-extensions)                                                                                                |
-| `/api/v1/voip/managementServer/checkConnection?host&port&username&password` | Check management server connection status       | [Link](./#check-management-server-connection)                                                                              |
-| `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Check call server connection status             | [Link](./#check-call-server-connection)                                                                                    |
+| URL                                                       | Description                                           | Details Page                                                                                                               |
+| --------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `/v1/connector.extension.getRegistrationInfoByUserId`      | Get registration information by ID                    | [Link](./#voip-registration-information)                                                                                   |
+| `/api/v1/voip/queues.getSummary`                           | Get VoIP query summary data                           | [Link](./#voip-query-summary)                                                                                              |
+| `/api/v1/voip/queues.getSummary`                           | Get VoIP query summary data                           | [Link](./#voip-query-summary)                                                                                              |
+| `/api/v1/voip/queues.getSummary`                           | Get VoIP queue membership data                        | [Link](omnichannel/voice-channel-endpoints/voice-channel-queue-membership/get-call-center-queue-membership-information.md) |
+| `/v1/voip/queues.getMembershipSubscription`                | Get VoIP queue membership subscription data           | [Link](./#voip-queue-membership)                                                                                           |
+| `/v1/voip/queues.getMembershipSubscription`                | Get VoIP queue membership subscription data           | [Link](./#voip-queue-membership)                                                                                           |
+| `v1/voip/queues.getMembershipSubscription`                 | Get the VoIP queue membership subscription data       | [Link](./#voip-queue-membership)                                                                                           |
+| `api/v1/livechat/visitor`                                  | Create a VoIP visitor                                 | [Link](./#create-visitor)                                                                                                  |
+| `/api/v1/voip/events`                                      | Send VoIP events                                      | [Link](./#send-voip-events)                                                                                                |
+| `/api/v1/omnichannel/extension`                            | Retrieve VoIP extension information                   | [Link](./#fetch-voip-extensions)                                                                                           |
+| `/api/v1/omnichannel/extensions?count=10&offset=10`        | Retrieve VoIP extensions                              | [Link](./#fetch-voip-extensions)                                                                                           |
+| `/v1/omnichannel/agent/extension`                          | Create, update and delete VoIP extension              | [Link](./#agent-extensions)                                                                                                |
+| `/api/v1/voip/managementServer/checkConnection?host&port&username&password` | Check management server connection status   | [Link](./#check-management-server-connection)                                                                              |
+| `/api/v1/voip/callServer/checkConnection?websocketUrl=wss://omni-asterisk.dev.rocket.chat/ws` | Check call server connection status | [Link](./#check-call-server-connection)                                                                                    |
 | `/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi` | Create VoIP room                                | [Link](./#create-voip-room)                                                                                                |
-| `/api/v1/voip/events`                                    | Retrieve VoIP room information by ID            | [Link](./#fetch-voip-room-by-id)                                                                                           |
-| `/api/v1/voip/room.clos`                                 | Close the VoIP conversation                     | [Link](./#close-voip-room)                                                                                                 |
+| `/api/v1/voip/events`                                      | Retrieve VoIP room information by ID                  | [Link](./#fetch-voip-room-by-id)                                                                                           |
+| `/api/v1/voip/room.clos`                                   | Close the VoIP conversation                           | [Link](./#close-voip-room)                                                                                                 |
 
 ### Canned Response
 
@@ -597,7 +597,7 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | URL                            | Short Description                    | Details Page                                                                                                            |
 | ------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/webdav-endpoint/getmyaccounts) |
+| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts | [Link](integrations/webdav-endpoint/getmyaccounts.md) |
 
 ### OAuth App
 
@@ -612,9 +612,9 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | URL                       | Short Description                                      | Details Page                                                                                                                 |
 | ------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/banners/:id`     | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banner-by-id) |
-| `/api/v1/banners`         | Gets the banners to be shown to the authenticated user | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/get-banners)      |
-| `/api/v1/banners.dismiss` | Dismisses a banner                                     | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/banners/dismiss-a-banner) |
+| `/api/v1/banners/:id`     | Gets the banners to be shown to the authenticated user | [Link](notifications/banners/get-banner-by-id.md) |
+| `/api/v1/banners`         | Gets the banners to be shown to the authenticated user | [Link](notifications/banners/get-banners.md)      |
+| `/api/v1/banners.dismiss` | Dismisses a banner                                     | [Link](notifications/banners/dismiss-a-banner.md) |
 
 ### Push
 
@@ -622,7 +622,7 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | -------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/push.token` | Saves push token.                   | [Link](notifications/push-token-endpoints/push-token.md)                                                                                           |
 | `/api/v1/push.token` | Removes push token.                 | [Link](notifications/push-token-endpoints/deletepushtoken.md)                                                                                      |
-| `/api/v1/push.get`   | Get push notification for a message | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/push-token-endpoints/Get%20push%20notification) |
+| `/api/v1/push.get`   | Get push notification for a message | [Link](notifications/push-token-endpoints/getpushnotification.md) |
 
 ## Content Management
 
@@ -630,15 +630,14 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | URL                           | Short Description                 | Details Page                                                                                 |
 | ----------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------- |
-| `/api/v1/assets.setAsset`     | Sets an asset image by name.      | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/setasset)     |
-| `/api/v1/assets.unsetAsset`   | Unsets an asset by name.          | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/assets/unsetasset)   |
-
+| `/api/v1/assets.setAsset`     | Sets an asset image by name.      | [Link](content-management/assets-endpoints/setasset.md)     |
+| `/api/v1/assets.unsetAsset`   | Unsets an asset by name.          | [Link](content-management/assets-endpoints/unset-asset.md)   |
 
 ### Custom Emoji
 
 | Url                           | Short Description                          | Details Page                                                                                                                                      |
 | ----------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/emoji-custom.all`    | Retrieves all custom emojis                | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/custom-emoji-endpoints/list-all-custom-emojis) |
+| `/api/v1/emoji-custom.all`    | Retrieves all custom emojis                | [Link](content-management/custom-emoji-endpoints/list-all-custom-emojis) |
 | `/api/v1/emoji-custom.list`   | Retrieves an updated list of custom emojis | [Link](content-management/custom-emoji-endpoints/list-custom-emojis.md)                                                                           |
 | `/api/v1/emoji-custom.create` | Creates new custom emoji.                  | [Link](content-management/custom-emoji-endpoints/create-new-custom-emoji.md)                                                                      |
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji.           | [Link](content-management/custom-emoji-endpoints/delete-custom-emoji.md)                                                                          |
@@ -648,7 +647,7 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | URL                          | Short Description                  | Details Page                                                                                                                                                     |
 | ---------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](https://app.gitbook.com/@rocket-chat/s/rocket-chat-developer/\~/drafts/-MgSmy428hAP1znS6g3V/api/rest-api/endpoints/team-collaboration/custom-sounds/list) |
+| `/api/v1/custom-sounds.list` | Retrieves a list of custom sounds. | [Link](content-management/custom-sounds-endpoints/custom-sounds-list.md) |
 
 ### Custom User Status
 
@@ -665,8 +664,8 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | URL                       | Short Description         | Details Page                                                                                                                            |
 | ------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/statistics`      | Retrieves statistics      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics)      |
-| `/api/v1/statistics.list` | Retrieves statistics list | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/stats-endpoints/get-statistics-list) |
+| `/api/v1/statistics`      | Retrieves statistics      | [Link](statistics/stats-endpoints/get-statistics.md)      |
+| `/api/v1/statistics.list` | Retrieves statistics list | [Link](statistics/stats-endpoints/get-statistics-list.md) |
 
 ### Engagement Dashboard
 
@@ -735,11 +734,11 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL                                       | Short Description                                               | Details Page                                                                                                                                        |
 | ----------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/e2e.fetchMyKeys`                 | Retrieves E2E keys of logged in user                            | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/fetch-your-e2e-keys)               |
-| `/api/v1/e2e.getUsersOfRoomWithoutKey`    | Retrieves Users Of Room Without E2E Key                         | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/get-users-of-room-without-e2e-key) |
-| `/api/v1/e2e.setRoomKeyID`                | Sets the end-to-end encryption key ID for a room                | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/set-room-e2e-key)                  |
-| `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/set-users-key)                     |
-| `/api/v1/e2e.updateGroupKey`              | Updates the end-to-end encryption key for a user in a room.     | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/e2e-endpoints/update-user-e2e-key-in-room)       |
+| `/api/v1/e2e.fetchMyKeys`                 | Retrieves E2E keys of logged in user                            | [Link](settings/e2e-endpoints/fetch-your-e2e-keys)               |
+| `/api/v1/e2e.getUsersOfRoomWithoutKey`    | Retrieves Users Of Room Without E2E Key                         | [Link](settings/e2e-endpoints/get-users-of-room-without-e2e-key) |
+| `/api/v1/e2e.setRoomKeyID`                | Sets the end-to-end encryption key ID for a room                | [Link](settings/e2e-endpoints/set-room-e2e-key)                  |
+| `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](settings/e2e-endpoints/set-users-key)                     |
+| `/api/v1/e2e.updateGroupKey`              | Updates the end-to-end encryption key for a user in a room.     | [Link](settings/e2e-endpoints/update-user-e2e-key-in-room)       |
 
 ### Imports
 
@@ -759,17 +758,17 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL                     | Short Description   | Details Page                                                                                                                          |
 | ----------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/instances.get` | Retrieves instances | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/instances-endpoints/get-instances) |
+| `/api/v1/instances.get` | Retrieves instances | [Link](settings/instances-endpoints/get-instances) |
 
 ### Federation
 
 | Url                                    | Short Description                           | Details Page              |
 |----------------------------------------|---------------------------------------------|---------------------------|
-| `api/v1/federation/addServerByUser`    | Adds a server to search public rooms later   | [Link](add-server.md)     |
-| `api/v1/federation/listServersByUser`  | Retrieves all the server names saved by the user | [Link](list-servers.md) |
-| `api/v1/federation/removeServerByUser` | Remove a server name                         | [Link](remove-server.md)  |
-| `api/v1/federation/searchPublicRooms`  | Returns all the public room given a server name | [Link](search-public-rooms.md) |
-| `api/v1/joinExternalPublicRoom`        | Joins an External public Matrix room         | [Link](join-external-public-room.md) |
+| `api/v1/federation/addServerByUser`    | Adds a server to search public rooms later   | [Link](settings/federation-endpoints/add-server.md)     |
+| `api/v1/federation/listServersByUser`  | Retrieves all the server names saved by the user | [Link](settings/federation-endpoints/list-servers.md) |
+| `api/v1/federation/removeServerByUser` | Remove a server name                         | [Link](settings/federation-endpoints/remove-server.md)  |
+| `api/v1/federation/searchPublicRooms`  | Returns all the public room given a server name | [Link](settings/federation-endpoints/search-public-rooms.md) |
+| `api/v1/joinExternalPublicRoom`        | Joins an External public Matrix room         | [Link](settings/federation-endpoints/join-external-public-room.md) |
 
 ### Device Management
 
@@ -783,9 +782,9 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL                                           | Short Description                               | Details Page                                                                                                        |
 | --------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/autotranslate.getSupportedLanguages` | Gets the supported languages by auto-translate. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/getsupportedlanguages) |
-| `/api/v1/autotranslate.saveSettings`          | Saves some settings about auto-translate.       | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/savesettings)          |
-| `/api/v1/autotranslate.translateMessage`      | Translates the message.                         | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration/autotranslate/translatemessage)      |
+| `/api/v1/autotranslate.getSupportedLanguages` | Gets the supported languages by auto-translate. | [Link](miscellaneous/autotranslate/getsupportedlanguages) |
+| `/api/v1/autotranslate.saveSettings`          | Saves some settings about auto-translate.       | [Link](miscellaneous/autotranslate/savesettings)          |
+| `/api/v1/autotranslate.translateMessage`      | Translates the message.                         | [Link](miscellaneous/autotranslate/translatemessage)      |
 
 ### Commands
 
@@ -795,18 +794,18 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/commands.list`    | Lists all available slash commands.                                       | [Link](miscellaneous/commands-endpoints/list.md)                                                                                 |
 | `/api/v1/commands.run`     | Executes a slash command in the specified room.                           | [Link](miscellaneous/commands-endpoints/execute-a-slash-command.md)                                                              |
 | `/api/v1/commands.preview` | Retrieves the preview data for the command and executes the preview item. | [Link](miscellaneous/commands-endpoints/preview.md)                                                                              |
-| `/api/v1/commands.preview` | Executes command's preview item                                           | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/commands/execute-commands-preview-item) |
+| `/api/v1/commands.preview` | Executes command's preview item                                           | [Link](miscellaneous/commands-endpoints/execute-commands-preview-item.md) |
 
 ### Email Inbox
 
 | URL                                  | Short Description                    | Details Page                                                                                                                                             |
 | ------------------------------------ | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/email-inbox.list`           | Retrieves mail Inbox list            | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-list)               |
-| `/api/v1/email-inbox`                | Sets the email inbox for your server | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/set-email-inbox)                |
-| `/api/v1/email-inbox/:_id`           | Retrieves email Inbox by id          | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/email-inbox-by-id)              |
-| `/api/v1/email-inbox/:_id`           | Delete email inbox using id          | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/delete-email-inbox-by-id)       |
-| `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/search-email-inbox-by-email)    |
-| `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/email-inbox-endpoints/send-test-email-to-email-inbox) |
+| `/api/v1/email-inbox.list`           | Retrieves mail Inbox list            | [Link](miscellaneous/email-inbox-endpoints/email-inbox-list)               |
+| `/api/v1/email-inbox`                | Sets the email inbox for your server | [Link](miscellaneous/email-inbox-endpoints/set-email-inbox)                |
+| `/api/v1/email-inbox/:_id`           | Retrieves email Inbox by id          | [Link](miscellaneous/email-inbox-endpoints/email-inbox-by-id)              |
+| `/api/v1/email-inbox/:_id`           | Delete email inbox using id          | [Link](miscellaneous/email-inbox-endpoints/delete-email-inbox-by-id)       |
+| `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](miscellaneous/email-inbox-endpoints/search-email-inbox-by-email)    |
+| `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](miscellaneous/email-inbox-endpoints/send-test-email-to-email-inbox) |
 
 ### Invite
 
@@ -814,7 +813,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | ----------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/findOrCreateInvite`  | Created a new Invite or returns an existing one with the same parameters. | [Link](miscellaneous/invite-endpoints/findorcreateinvite.md)                                                                             |
 | `/api/v1/listInvites`         | Lists all of the invite tokens.                                           | [Link](miscellaneous/invite-endpoints/listinvites.md)                                                                                    |
-| `/api/v1/removeInvite/:_id`   | Deletes an invite from the server.                                        | [Link](https://developer.rocket.chat/reference/api/rest-api/endpoints/team-collaboration-endpoints/invite-endpoints/delete-invite-by-id) |
+| `/api/v1/removeInvite/:_id`   | Deletes an invite from the server.                                        | [Link](miscellaneous/invite-endpoints/delete-invite-by-id) |
 | `/api/v1/useInviteToken`      | Reports to the server that an invite token was used.                      | [Link](miscellaneous/invite-endpoints/report-use-invite-token.md)                                                                        |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid.                                       | [Link](miscellaneous/invite-endpoints/validateinvitetoken.md)                                                                            |
 
@@ -830,13 +829,15 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL                                             | Short Description                                           | Details Page                                                                                                                              |
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](https://developer.rocket.chat/api/rest-api/endpoints/team-collaboration-endpoints/video-conference-endpoints/jitsi-update-timeout) |
+| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](miscellaneous/video-conference-endpoints/jitsi-update-timeout) |
 
 
 
 ### Install Private Apps&#x20;
+| URL              | Short Description                     | Details Page                           |
+| ---------------- | ------------------------------------ | -------------------------------------- |
+| `/api/apps`      | Install a private app via URL         | [Link](miscellaneous/install-private-apps.md) |
 
-<table><thead><tr><th width="248.5388701110575">URL</th><th width="290.3333333333333">Short Description</th><th>Details Page</th></tr></thead><tbody><tr><td><code>/api/apps</code></td><td>Install a private app via URL</td><td><a href="miscellaneous/install-private-apps.md">Link</a></td></tr></tbody></table>
 
 ### WhatsApp
 
