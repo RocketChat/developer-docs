@@ -15,10 +15,17 @@ import { createOAuth2Client } from '@rocket.chat/apps-engine/definition/oauth2/O
 
 ```typescript
 protected async extendConfiguration(configuration: IConfigurationExtend): Promise<void> {
+        const oauthConfig = {
+                alias: 'test',
+                accessTokenUri: 'https://oauth2.googleapis.com/token',
+                authUri: 'https://accounts.google.com/o/oauth2/v2/auth',
+                refreshTokenUri: 'https://oauth2.googleapis.com/token',
+                revokeTokenUri: 'https://oauth2.googleapis.com/revoke',
+        };
+        
         try {
-            await createOAuth2Client(this, this.config)
+            await createOAuth2Client(this, oauthConfig)
                 .setup(configuration);
-            await configuration.slashCommands.provideSlashCommand(new AuthCommandCommand(this));
         } catch (error) {
             this.getLogger().error('[extendConfiguration] error', error);
         }
@@ -27,20 +34,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend): Promis
 
 * The `createOAuth2Client` method takes in two parameters:
   * `app`: being the app itself
-  * `options`: An object with props as configuration\
-    Below is a sample of the config parameter as seen in the [definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2clientoptions.html)
-
-```
-private config = {
-        alias: 'test',
-        accessTokenUri: 'https://oauth2.googleapis.com/token',
-        authUri: 'https://accounts.google.com/o/oauth2/v2/auth',
-        refreshTokenUri: 'https://oauth2.googleapis.com/token',
-        revokeTokenUri: 'https://oauth2.googleapis.com/revoke',
-        callback: this.autorizationCallback.bind(this),
-    };
-```
-
+  * `options`: An object with props as configuration - see [definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2clientoptions.html) for more details
 * Now calling the `setup(configuration)` method on the `createOAuth2Client` creates all the setup APIs you need to use.
 
 ### Using OAuth2
