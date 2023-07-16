@@ -17,13 +17,15 @@ Assign a role to a user. Optionally, you can set this role to a room.
 ## Example Call
 
 ```bash
-curl -H "Content-type:application/json" \
-     -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/roles.addUserToRole \
-     -d '{ "roleName": "guest" }' \
-     -d '{ "username": "rocket.chat" }' \
-     -d '{ "roomId": "dK7vNYXMdHGLdukpL" }' \
+curl --location 'http://localhost:3000/api/v1/roles.addUserToRole' \
+--header 'x-auth-token: o9UKV2D7A5Ggl2vqgyEcItF-YPj4-R93NlMcA6XnE3B' \
+--header 'x-user-id: rbAXPnMktTFbNpwtJ' \
+--header 'Content-Type: application/json' \
+--data '{
+    "roleName": "auditor-log", 
+    "username": "test.funke", 
+    "roomId": "64adb09baa5ad4273bfc0cbf" 
+}'
 ```
 
 ## Example Result
@@ -31,11 +33,13 @@ curl -H "Content-type:application/json" \
 ```javascript
 {
     "role": {
-        "_id": "guest",
-        "name": "guest",
-        "scope": "Subscriptions",
+        "_id": "auditor-log",
+        "scope": "Users",
         "description": "",
-        "_updatedAt": "2018-08-23T03:57:54.603Z"
+        "mandatory2fa": false,
+        "name": "auditor-log",
+        "protected": true,
+        "_updatedAt": "2023-07-10T23:20:56.702Z"
     },
     "success": true
 }
