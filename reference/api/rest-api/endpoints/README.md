@@ -227,15 +227,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### Directory
 
-<<<<<<< HEAD
-| Url                   | Short Description                                                   | Details Page                                                                                                                             |
-| --------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/v1/directory`   | Searches by all users and channels available on the server.         | [Link](rooms/directory.md)
-=======
 | Url                 | Short Description                                       | Details Page                                                |
 | ------------------- | ------------------------------------------------------- | ----------------------------------------------------------- |
 | `/api/v1/directory` | Searches by all users and channels available on server. | [Link](core-endpoints/miscellaneous-endpoints/directory.md) |
->>>>>>> cb2e849029c17201e655aebfabf96ec9fabad300
 
 ## Messaging
 
@@ -775,8 +769,11 @@ You can get and update the settings via the REST API, only if you have permissio
 | URL                     | Short Description                                | Details Page                                                              |
 | ----------------------- | ------------------------------------------------ | ------------------------------------------------------------------------- |
 | `/api/v1/sessions/list` | Retrieves all sessions of the authenticated user | [Link](settings/device-management-endpoints/get-current-user-sessions.md) |
+| `/api/v1/sessions/list.all` | Retrieve the sessions of all users on the workspace | [Link](settings/device-management-endpoints/list-all-sessions.md) |
+| `/api/v1/sessions/info` | Get user's session | [Link](settings/device-management-endpoints/get-current-user-session-information.md) |
+| `/api/v1/sessions/logout.me` | Logout the authenticated user from the current session | [Link](settings/device-management-endpoints/logout-current-user-session.md) |
+| `/api/v1/sessions/logout` | Logout of a session | [Link](settings/device-management-endpoints/logout-session.md) |
 
-## Miscellaneous
 
 ### Auto Translate
 
@@ -831,13 +828,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | ----------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](miscellaneous/video-conference-endpoints/jitsi-update-timeout) |
 
+### Others
 
-
-### Install Private Apps&#x20;
 | URL              | Short Description                     | Details Page                           |
 | ---------------- | ------------------------------------ | -------------------------------------- |
 | `/api/apps`      | Install a private app via URL         | [Link](miscellaneous/install-private-apps.md) |
-
+| `/api/v1/shield.svg`  | Get the the shield svg(badge)     | [Link](miscellaneous/shield-svg.md) |
+| `/api/v1/spotlight`  | Searches for users or rooms that are visible to the user   | [Link](miscellaneous/spotlight.md) |
+| `/api/v1/stdout.queue`  | Retrieves last 1000 lines of server logs | [Link](miscellaneous/get-stdout-queue.md) |
 
 ### WhatsApp
 
