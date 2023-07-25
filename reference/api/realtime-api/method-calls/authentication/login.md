@@ -1,12 +1,12 @@
 # Login
 
-Log in a user.&#x20;
+Log in a user.
 
 Rocket.Chat supports various methods of authentication. The list of supported auth services (and their configurations) are in the `meteor_accounts_loginServiceConfiguration` collection.
 
 ## Using username and password
 
-To ensure the security of the user's account, it is important not to submit the user's password as plain text. Instead, apply a hashing algorithm (_**for example - sha-256**_).&#x20;
+To ensure the security of the user's account, it is important not to submit the user's password as plain text. Instead, apply a hashing algorithm (_**for example - sha-256**_).
 
 {% hint style="info" %}
 The digest must be lowercase.
@@ -14,15 +14,21 @@ The digest must be lowercase.
 
 ### Payload Parameters
 
-| Argument   | Example                                                                                                                                                                   | Required | Description                                                                |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------- |
+| Argument   | Example                                        | Required                                                 | Description |
+| ---------- | ---------------------------------------------- | -------------------------------------------------------- | ----------- |
 | `user`     | <pre><code>{ "username": "him" }
-</code></pre>                                                                                                                            | Required | The user object containing either the username or email.                   |
+</code></pre> |                                                          |             |
+|            | Required                                       | The user object containing either the username or email. |             |
 | `password` | <pre><code>{
-                "digest": "52c53f4abbfe42e1ccd4fd9d864453ee57f8efbd4c9ecec6d88bd83d7f7a9c02",
-                "algorithm":"sha-256"
-         }
-</code></pre> | Required | The password object containing the hashed password and the hash algorithm. |
+</code></pre>                     |                                                          |             |
+
+```
+            "digest": "52c53f4abbfe42e1ccd4fd9d864453ee57f8efbd4c9ecec6d88bd83d7f7a9c02",
+            "algorithm":"sha-256"
+     }
+```
+
+\| Required | The password object containing the hashed password and the hash algorithm. |
 
 ### Example Call
 
@@ -102,7 +108,7 @@ You can use a previous user authentication token or a [Personal Access Token](ht
 ### Example Response
 
 {% hint style="info" %}
-This success response format remains the same irrespective of the login method used.&#x20;
+This success response format remains the same irrespective of the login method used.
 {% endhint %}
 
 ```
@@ -126,7 +132,7 @@ If the `auth-token` is expired, send another[ login request](../../../rest-api/e
 
 ## Using Authentication providers
 
-&#x20;OAuth is used to support additional auth providers.
+OAuth is used to support additional auth providers.
 
 ### Example Call
 

@@ -1,12 +1,16 @@
 # Developing
 
-Thank you for your interest in contributing to Rocket.Chat. If this is the first Open Source project you will contribute to, we strongly suggest reading GitHub's excellent guide ["Contributing to Open Source"](https://guides.github.com/activities/contributing-to-open-source/).
+Thank you for your interest in contributing to Rocket.Chat. If this is your first foray into the world of Open Source, we highly recommend GitHub's comprehensive guide, [Contributing to Open Source](https://opensource.guide/how-to-contribute/).
 
 ## Getting Started
 
 You can find our projects [here](https://github.com/RocketChat). Go to the Issues tab, and when you find something you would like to work on, just comment on it, and we will add an [In Progress label](https://github.com/RocketChat/Rocket.Chat/labels/stat%3A%20in%20progress).
 
 If you already have a work in progress pull request open for that issue, you can link that issue on your pull request or write `Closes #ISSUE_NUMBER` where the `ISSUE_NUMBER` is the number at the end of the link URL.
+
+Our projects can be found [here](https://github.com/RocketChat). Navigate to the **Issues** tab to find a project that interests you. Once you've found a suitable project, simply leave a comment and we'll add an [In Progress label ](https://github.com/RocketChat/Rocket.Chat/labels/stat%3A%20in%20progress)to it.
+
+If you're already working on a pull request for that issue, you can link the issue to your pull request or use the format 'Closes #ISSUE\_NUMBER' where ISSUE\_NUMBER corresponds to the number at the end of the link URL.
 
 **Assigned Issues:**
 
