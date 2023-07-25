@@ -2,7 +2,7 @@
 
 ## Rocket.Chat Apps-Engine
 
-The Rocket.Chat Apps Engine provides a framework that enables users to create and host  Rocket.Chat Apps. It provides the APIs for Rocket.Chat Apps to interact with the host system. These apps allow for a tighter incoming/outgoing integration with Rocket.Chat&#x20;
+The Rocket.Chat Apps Engine provides a framework that enables users to create and host  Rocket.Chat custom apps. It provides the APIs for Rocket.Chat Apps to interact with the host system. These apps allow for a tighter incoming/outgoing integration with Rocket.Chat&#x20;
 
 ## Rocket.Chat App
 
