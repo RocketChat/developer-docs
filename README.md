@@ -1,6 +1,12 @@
+---
+description: >-
+  A resource created to assist developers in building upon the Rocket.Chat
+  platform.
+---
+
 # Rocket.Chat Developer
 
-Rocket.Chat is more than just a communication platform. It's a versatile workspace that you can tailor to your needs with unique integrations, powerful apps, and webhooks. You can even integrate your custom apps using Rocket.Chat's webhooks to funnel data from external services.
+[Rocket.Chat](https://www.rocket.chat/) is more than just a communication platform. It's a versatile workspace that you can tailor to your needs with unique integrations, powerful apps, and webhooks. You can even integrate your custom apps using Rocket.Chat's webhooks to funnel data from external services.
 
 Here's what you can do:
 
