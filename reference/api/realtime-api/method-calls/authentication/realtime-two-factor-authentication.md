@@ -1,7 +1,7 @@
-# Two Factor Authentication
+# Realtime Two Factor Authentication
 
 {% hint style="info" %}
-To learn more about about Two Factor Authentication(2FA) in Rocket.Chat, see [two-factor-authentication.md](../../../../../rocket.chat/two-factor-authentication.md "mention").
+To learn more about Two Factor Authentication(2FA) in Rocket.Chat, see [two-factor-authentication.md](../../../../../rocket.chat/two-factor-authentication.md "mention") and [rest-two-factor-authentication.md](../../../rest-api/endpoints/authentication-endpoints/rest-two-factor-authentication.md "mention").
 {% endhint %}
 
 ## Call a method with 2FA
@@ -38,7 +38,7 @@ To learn more about about Two Factor Authentication(2FA) in Rocket.Chat, see [tw
 ```
 
 {% hint style="info" %}
-If the two factor was not accepted the **error** [`totp-invalid`](2fa.md#errors) will be returned;
+If the two factor was not accepted the **error** [`totp-invalid`](realtime-two-factor-authentication.md#errors) will be returned;
 {% endhint %}
 
 ## Errors
@@ -122,7 +122,7 @@ This Method requires 2FA to be executed.
 ### Result
 
 * **success**: **true** is returned;
-* **error**: A [2FA error](2fa.md#errors) is returned;
+* **error**: A [2FA error](realtime-two-factor-authentication.md#errors) is returned;
 
 ### Example
 

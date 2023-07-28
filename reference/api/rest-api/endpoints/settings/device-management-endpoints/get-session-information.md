@@ -6,7 +6,7 @@ Retrieve session information for any session on the workspace, regardless of the
 
 {% hint style="info" %}
 * It requires the `view-device-management`[permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-* It requires [two-factor authentication.](../../authentication-endpoints/2fa.md#calling-an-endpoint-with-two-factor)
+* It requires [two-factor authentication.](../../authentication-endpoints/rest-two-factor-authentication.md#calling-an-endpoint-with-two-factor)
 {% endhint %}
 
 | URL                           | Requires Auth | HTTP Method |
@@ -15,9 +15,9 @@ Retrieve session information for any session on the workspace, regardless of the
 
 ## Headers
 
-<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750Required</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
+<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750Required</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
 
-## &#x20;Query Parameter
+## Query Parameter
 
 | Argument    | Example           | Required | Description     |
 | ----------- | ----------------- | -------- | --------------- |
@@ -67,10 +67,10 @@ curl --location 'http://localhost:3000/api/v1/sessions/info.admin?sessionId=uBNL
 Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **No Permission**: Occurs when the authenticated user doesn't have the  `view-device-management` permission.
+* **No Permission**: Occurs when the authenticated user doesn't have the `view-device-management` permission.
 * **TOTP Required:** Requires two-factor authentication for the request to be made.
 * **Invalid TOTP:** Requires a valid two-factor authentication code.
-* **Session not found:**  Occurs when the `sessionId`  does not exist.
+* **Session not found:** Occurs when the `sessionId` does not exist.
 
 {% tabs %}
 {% tab title="Authorization" %}

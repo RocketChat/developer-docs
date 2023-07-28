@@ -18,7 +18,7 @@ Login with your username and password.
 
 * **Whilst none of the arguments are required in every request, every request requires some arguments to be provided. You MUST provide either `user` AND `password`, or provide `resume`.**
 * **You will need to provide the `authToken` and `userId` for any of the authenticated methods.**
-* **If your user has two-factor(2FA) authentication enabled, you must send a request like** [**this**](2fa.md)**.**
+* **If your user has two-factor(2FA) authentication enabled, you must send a request like** [**this**](rest-two-factor-authentication.md)**.**
 * **If LDAP authentication is enabled, you must maintain the login in the same way as you normally do. Similarly if 2FA is enabled for an LDAP user. Everything stays the same.**
 
 ## Example Call - As Form Data

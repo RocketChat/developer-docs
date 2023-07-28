@@ -1,37 +1,19 @@
 # Two Factor Authentication
 
-Rocket.Chat uses Two Factor to authorize important actions. There is a list of possible sources for the two-factor code:
+Rocket.Chat's Two-Factor Authentication (2FA) is a robust security feature that significantly enhances the protection of user accounts. It operates on the principle of "something you know and something you have," requiring not only a password and username but also a unique piece of information only the user possesses on them, i.e., a second factor.
 
-* **Authenticator App**: like Google Authenticator or Authy (need to be configured by the user);
-* **Email**: users will receive the code via email (configured by default and enabled for those users with verified emails);
-* **Password\***: it's not a two factor by itself, but a fallback for the cases where the user has no other option to configure;
+**Sources for Two-Factor Code**: Users have a variety of sources for generating the two-factor code:
 
-> \* The password fallback is disabled for the login process, so the login will not require the password twice when the user has no other two factor method configure.
+1. **Authenticator App**: Users can configure apps like Google Authenticator or Authy to generate the 2FA code.
+2. **Email**: Users with verified emails cann receive the 2FA code via email.
+3. **Password**:Although not a two-factor method in itself, the password serves as a fallback for cases where the user has no other 2FA option configured. However, this password fallback is disabled for the login process to prevent the system from requiring the password twice when the user has no other 2FA method configured.
 
-Any **DDP Method** or **REST call** may have the two-factor requirement; for that reason, we suggest creating a wrapper for your calls to handle the errors described here and executing the request again, passing the required info as we will describe here as well.
+**API Calls and Two-Factor Authentication**: Any DDP Method or REST call may require two-factor authentication. Therefore, it's recommended to create a wrapper for your calls to handle the errors and execute the request again, passing the required info.
 
-## Remember Me
+**Trusted Clients**: By default, after a two-factor validation, the client used (a hash of user-agent + IP address) will be trusted for 5 minutes. This duration is configurable in the workspace administration. Some methods may disable this feature, forcing the API to always require the two-factor for that method/endpoint. The method to disable the two-factor by email and the login are examples. We are using the error `totp-required` for compatibility purposes, it doesn't mean that the error is related to TOTP only, so we pass more details to identify the action required.
 
-By default, after a two-factor validation, the client used (a hash of user-agent + IP address) will be trusted for 5 minutes. It's configurable via the admin panel.
+**Personal Access Tokens**: **Personal Access Tokens**: Personal Access Tokens are a unique feature of Rocket.Chat's 2FA system. Users can create these tokens, which do not expire and can bypass the 2FA requirement. This feature is particularly useful for users who need to maintain long-term integrations or automated processes with their Rocket.Chat account. However, it's crucial to keep these tokens secure and confidential, as a compromised token could provide unrestricted access to the user's account.
 
-Some methods may disable this feature forcing the API to always require the two-factor for that method/endpoint. The method to disable the two-factor by email and the login are examples.
+**Realtime API and REST API**: For more detailed information on how Two-Factor Authentication works with the [Realtime API](../reference/api/realtime-api/method-calls/authentication/realtime-two-factor-authentication.md) and [REST API](../reference/api/rest-api/endpoints/authentication-endpoints/rest-two-factor-authentication.md), you can visit the respective pages on the Rocket.Chat developer documentation.
 
-## Compatibility
-
-We are using the error `totp-required` for compatibility purposes, it doesn't mean that the error is related to TOTP only, so we pass more details to identify the action required.
-
-## Personal Access Tokens
-
-Personal Access Tokens are tokens created by the users (when enabled by the server) and commonly used to give access to other applications, bots, etc. Those tokens do not expire, and they have the option to **bypass** the Two-Factor (required by default), allowing users to use their integrations without restrictions when needed.
-
-Now it's the two-factor required to create personal access tokens.
-
-> The bypass should be used carefully because it gives super powers to who gain access to the token
-
-## Realtime API
-
-Visit the [Two Factor Authentication](../reference/api/realtime-api/method-calls/authentication/2fa.md) page at Realtime API guides for more information.
-
-## REST API
-
-Visit the [Two Factor Authentication](../reference/api/rest-api/endpoints/authentication-endpoints/2fa.md) page at REST API guides for more information.
+In summary, Rocket.Chat's Two-Factor Authentication feature, combined with the use of Personal Access Tokens, provides a balance of security and convenience. It provides robust protection for user accounts while facilitating seamless integrations and interactions with other applications and services.

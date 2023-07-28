@@ -10,7 +10,7 @@ Syncs your [LDAP data](https://docs.rocket.chat/use-rocket.chat/workspace-admini
 
 {% hint style="info" %}
 * It requires the `sync-auth-services-users` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-* It requires [two-factor authentication.](../../authentication-endpoints/2fa.md#calling-an-endpoint-with-two-factor)
+* It requires [two-factor authentication.](../../authentication-endpoints/rest-two-factor-authentication.md#calling-an-endpoint-with-two-factor)
 {% endhint %}
 
 | URL                    | Requires Auth | HTTP Method |
@@ -19,7 +19,7 @@ Syncs your [LDAP data](https://docs.rocket.chat/use-rocket.chat/workspace-admini
 
 ## Headers
 
-<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
+<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -44,7 +44,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/ldap.syncNow' \
 Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **No Permission**: This occurs when the authenticated user doesn't have the  `sync-auth-services-users` permission.
+* **No Permission**: This occurs when the authenticated user doesn't have the `sync-auth-services-users` permission.
 * **LDAP Disabled**: This occurs when the [LDAP connection](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/ldap/ldap-connection-setting) is disabled.
 * **TOTP Required:** Requires two-factor authentication for the request to be made.
 * **Invalid TOTP:** Requires a valid two-factor authentication code.

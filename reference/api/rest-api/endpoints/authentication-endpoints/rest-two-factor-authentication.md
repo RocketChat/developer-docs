@@ -1,6 +1,8 @@
-# Two Factor Authentication
+# REST Two Factor Authentication
 
-Visit the [Two Factor Authentication](../../../../../rocket.chat/two-factor-authentication.md) guide for general information.
+{% hint style="info" %}
+To learn more about Two Factor Authentication(2FA) in Rocket.Chat, see [two-factor-authentication.md](../../../../../rocket.chat/two-factor-authentication.md "mention") and [realtime-two-factor-authentication.md](../../../realtime-api/method-calls/authentication/realtime-two-factor-authentication.md "mention")
+{% endhint %}
 
 ## Errors
 
