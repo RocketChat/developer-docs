@@ -1,39 +1,20 @@
 # Architecture and Components
 
-The architecture of Rocket.Chat is based on a client-server model with the server component written in JavaScript using Node.js and the MongoDB database for data storage. It is designed for scalability, high performance, and real-time communication. It can be deployed on-premise or in the cloud, making it suitable for many use cases.
-
-## Basic Components
+Rocket.Chat's architecture is a comprehensive, multi-component system that is designed for robustness, flexibility, and scalability. It is based on a client-server model, with the server component written in JavaScript using Node.js and MongoDB for data storage. This architecture is designed for scalability, high performance, and real-time communication, making it suitable for many use cases, whether deployed on-premise or on the cloud.
 
 <figure><img src="../.gitbook/assets/Architecture.png" alt=""><figcaption><p>Rocket.Chat architecture</p></figcaption></figure>
 
-### Server
+1. **Server**: The server, referred to as the Rocket.Chat Monolith, manages the logic and computation, user accounts, message storage, and communication with other components. This central processing unit interacts with all other components, ensuring the smooth operation of the system.
+2. **Clients**: Rocket.Chat clients provide users with an interface on the web, desktop, or mobile application, connecting with the server mainly through HTTP requests and Websockets. This multi-platform design ensures that users can access the chat application from virtually any device.
+3. **Push Notifications**: Push notifications are sent to mobile devices through a ccloud [push notification gateway](../open-source-projects/mobile-app/mobile-app-white-labelling/configuring-push-notifications.md), ensuring real-time communication. SMTP and email notifications can also be configured, providing flexibility in how users receive notifications.
+4. **Apps, Integrations, and Bridges**: Rocket.Chat is designed to be extensible and interoperable. Apps are developed using the [Apps Engine](../apps-engine/getting-started/), which interfaces with the Rocket.Chat server. Examples include the [WhatsApp app](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp) and [Google Calendar app](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/google-calendar). [Integrations](https://docs.rocket.chat/use-rocket.chat/workspace-administration/integrations) allow for the incorporation of other external systems and services using APIs and webhooks. Bridge services provide a way of seamlessly transmitting data and conversation with different conversational platforms or protocols. Rocket.Chat currently supports bridging with the [Matrix protocol](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/federation).
+5. **Authentication and Authorization**: User authentication, authorization, and access control can be managed using open standard protocols like [OAuth](https://oauth.net/), [SAML](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/saml), [LDAP](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/ldap), and OpenID. This integration with multiple authentication protocols ensures secure user login processes.
+6. **Database and Storage**: Rocket.Chat uses MongoDB as a database to store all chat messages, user information, and other system configurations and related data. Files like assets, user files, images, and other media files are stored locally on the system running the server or over network services like Amazon S3, and WebDAV. This layered approach to data storage ensures efficient management of data.
+7. **WebSocket**: Rocket.Chat uses the WebSocket protocol to enable real-time communication between the client and server. The WebSocket protocol is a high-performance, bi-directional communication protocol that enables instant data transfer, essential for a real-time chat application.
+8. **Reverse Proxy**: Rocket.Chat uses a reverse proxy for load balancing or caching purposes. This helps optimize the performance of the application, ensuring smooth and efficient operation even under heavy load.
+9. **Reactivity (OpLog) Layer**: Rocket.Chat features a reactivity layer, which ensures real-time data updates in the system. This is crucial for a real-time chat application like Rocket.Chat, ensuring that users see the most up-to-date information in their chat interfaces.
+10. **Module ("M")**: Rocket.Chat is modular, meaning it's composed of separate components (modules) that can function independently but are designed to work together. This modular design enhances the flexibility and scalability of the application.
+11. **Permission Management**: Rocket.Chat has components for managing user permissions. This is crucial for access control within the chat application, ensuring that users can only access the features and data they are authorized to use.
+12. **Matrix Protocol Integration**: Rocket.Chat supports bridging with the [Matrix protocol](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/federation), which is an open standard for interoperable, decentralized, real-time communication. This integration allows Rocket.Chat to transmit data and conversations seamlessly with different conversational platforms or protocols that also support Matrix.
 
-The server manages the logic and computation, user accounts, message storage, and communication with other components.
-
-### Clients
-
-Rocket.Chat clients provide users with an interface on the web, using a desktop or mobile application in connecting with a server. Server communication with the clients is done mainly through HTTP requests and Websockets.
-
-Push notifications are sent to mobile devices through a cloud [push notification gateway](../open-source-projects/mobile-app/mobile-app-white-labelling/configuring-push-notifications.md). SMTP and email notifications can be configured.
-
-### Apps, Integrations, and Bridges
-
-**Rocket.Cht apps:** Apps are developed using the Apps Engine which is the medium of interfacing with the Rocket.Chat server. Examples include the [WhatsApp app](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp) and [Google Calendar app](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/google-calendar).
-
-**Integrations:** Allows for integrating other external systems and services using APIs and webhooks. A list of common integrations can be seen [here](https://docs.rocket.chat/use-rocket.chat/workspace-administration/integrations).&#x20;
-
-**Bridge services:** Provides a way of seamlessly transmitting data and conversation with different conversational platforms or protocols. Rocket.Chat implementation currently supports bridging with the Matrix protocol, see [Matrix Bridge](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/federation/matrix-bridge).
-
-### Authentication and Authorization
-
-User authentication, authorization, and access control can be managed using open standard protocols like [OAuth](https://oauth.net/), [SAML](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/saml), [LDAP](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/ldap), and OpenID.
-
-### Database and Storage
-
-**Database**: Rocket.Chat server uses MongoDB as a database to store all chat messages, user information, and other system configurations and related data.
-
-**File Storage**: Files like assets, user files, images, and other media files are stored locally on the system running the server or over network services like Amazon S3, and WebDAV.
-
-### WebSocket
-
-Rocket.Chat uses the WebSocket protocol to enable real-time communication between the client and server. The WebSocket protocol is a high-performance, bi-directional communication protocol that enables instant data transfer.
+In summary, the Rocket.Chat architecture is a testament to its power and versatility as a chat solution. It accommodates various platforms, integrates with multiple protocols and systems, and effectively manages data, ensuring a seamless and efficient chat experience for its users.

@@ -4,7 +4,7 @@ Thank you for your interest in contributing to Rocket.Chat. You can help in test
 
 ## Testing Core Server
 
-[Set up your development environment](../../getting-started/rocket-chat-environment-setup.md) then continue.
+[Set up your development environment](../../getting-started/rocket.chat-development-environment-setup.md) then continue.
 
 ### Requirements
 

@@ -5,7 +5,7 @@
 ## Getting Started
 
 * [Deploy Rocket.Chat](https://docs.rocket.chat/deploy/prepare-for-your-deployment)
-* [Rocket.Chat Environment Setup](getting-started/rocket-chat-environment-setup.md)
+* [Rocket.Chat Development Environment Setup](getting-started/rocket.chat-development-environment-setup.md)
 * [Architecture and Components](getting-started/architecture-and-components.md)
 * [Deeplink](rocket.chat/deeplink.md)
 * [Two Factor Authentication](rocket.chat/two-factor-authentication.md)
