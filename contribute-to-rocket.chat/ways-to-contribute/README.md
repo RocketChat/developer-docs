@@ -2,7 +2,19 @@
 
 You can contribute to making Rocket.Chat in any of the following ways.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-type="select"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Developing</h3></td><td>Help make Rocket.Chat better by contributing code.</td><td></td><td></td><td><a href="developing/">developing</a></td></tr><tr><td><h3>Documentation</h3></td><td>Contribute to Rocket.Chat documentation.</td><td></td><td></td><td><a href="documenting/">documenting</a></td></tr><tr><td><h3>Testing</h3></td><td>Test and provide feedback on various Rocket.Chat apps.</td><td></td><td></td><td><a href="help-test-rocket.chat.md">help-test-rocket.chat.md</a></td></tr><tr><td><h3>Security</h3></td><td>Help improve or report  security issues to keep Rocket.Chat secure.</td><td></td><td></td><td><a href="security-issues/">security-issues</a></td></tr><tr><td><h3>Translating</h3></td><td>Improve and bring Rocket.Chat translation to multiple languages.</td><td></td><td></td><td><a href="translating.md">translating.md</a></td></tr><tr><td><h3>Promoting</h3></td><td>Help promote Rocket.Chat by spreading the word.</td><td></td><td></td><td><a href="promoting.md">promoting.md</a></td></tr><tr><td><h3>Reporting bugs</h3></td><td>Report bugs and any broken functionalities.</td><td></td><td></td><td><a href="report-bugs.md">report-bugs.md</a></td></tr></tbody></table>
+**Develop**: Help make Rocket.Chat better by contributing code.
+
+**Test**: Test and provide feedback on various Rocket.Chat apps.
+
+**Report bugs**: Report bugs and any broken functionalities.
+
+**Document**: Contribute to Rocket.Chat documentation.
+
+**Security**: Help improve or report security issues to keep Rocket.Chat secure.
+
+**Translating**: Improve and bring Rocket.Chat translation to multiple languages.
+
+**Promoting**: Help promote Rocket.Chat by spreading the word.
 
 {% hint style="info" %}
 
