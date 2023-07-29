@@ -1,4 +1,4 @@
-# Rocket.Chat Code Review Process
+# Code Review Process
 
 Contributing to an open-source project like Rocket.Chat can be an exciting and fulfilling experience. However, it's crucial to understand the process that your contribution will undergo before it can be integrated into the main codebase. This guide aims to help you comprehend the stages involved in the Rocket.Chat code review process.
 
@@ -38,4 +38,4 @@ We understand that putting time and effort into a contribution only for it to be
 
 We hope this guide gives you a clear picture of our code review process. We look forward to your contributions and to you being part of the Rocket.Chat community.
 
-Now that you understand the process, let's proceed to explore the many different  [ways-to-contribute](ways-to-contribute/ "mention") to Rocket.Chat.
+Now that you understand the process, let's proceed to explore the many different  [modes-of-contribution](modes-of-contribution/ "mention") to Rocket.Chat.
