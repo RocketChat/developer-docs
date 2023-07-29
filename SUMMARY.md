@@ -28,8 +28,8 @@
   * [Security Issues](contribute-to-rocket.chat/modes-of-contribution/security-issues/README.md)
     * [Responsible Disclosure Policy](contribute-to-rocket.chat/modes-of-contribution/security-issues/responsible-disclosure-policy.md)
   * [Translating](contribute-to-rocket.chat/modes-of-contribution/translating.md)
-  * [Promoting](contribute-to-rocket.chat/modes-of-contribution/promoting.md)
-  * [Report bugs](contribute-to-rocket.chat/modes-of-contribution/report-bugs.md)
+  * [Report Bugs](contribute-to-rocket.chat/modes-of-contribution/report-bugs.md)
+  * [Promoting Rocket.Chat](contribute-to-rocket.chat/modes-of-contribution/promoting-rocket.chat.md)
 * [Contribute to Rocket.Chat FAQs](rocket.chat/contribute-to-rocket.chat/contribute-to-rocket.chat-faqs.md)
 
 ## Customize and Embed

@@ -2,15 +2,11 @@
 description: Help promote Rocket.Chat
 ---
 
-# Promoting
+# Promoting Rocket.Chat
 
-If you are not a developer (or even if you are), you can still contribute to the project a lot by helping us promote it. As we are a free, open-source project, the community is our most important asset, so here are some ways that you can help the project continue to grow.
+Whether you're a developer or not, your contribution can significantly help our project grow. As a free, open-source initiative, our community is our greatest strength. Here are some ways you can contribute to our ongoing growth. Consider this as your checklist, as these tasks are important.
 
-Please use this as a to-do list, as they are important:
-
-## Follow us
-
-Please follow us on as many social networks as you can:
+**Follow us**: Please follow us on as many social networks as you can.
 
 * [Facebook](https://www.facebook.com/RocketChat)
 * [Twitter](https://twitter.com/RocketChat)
@@ -19,9 +15,7 @@ Please follow us on as many social networks as you can:
 * [Angel](https://angel.co/rocket-chat)
 * [LinkedIn](https://www.linkedin.com/company/rocket-chat)
 
-## Vote, recommend, favorite, and star us
-
-And vote for us on all these various polls and contests:
+**Vote, recommend, favorite, and star us**: And vote for us on all these various polls and contests.
 
 * [GitHub](https://github.com/RocketChat/Rocket.Chat)
 * [ProductHunt](http://www.producthunt.com/tech/rocket-chat)
@@ -32,9 +26,7 @@ And vote for us on all these various polls and contests:
 * [DockerHub](https://hub.docker.com/\_/rocket.chat/)
 * [AlternativeTo](https://alternativeto.net/software/rocket-chat/)
 
-## Blog about us
-
-Here are some nice blog posts about our project for you to get some inspiration:
+**Blog about us**: Here are some nice blog posts about our project for you to get some inspiration.
 
 * [http://www.thehacktoday.com/how-to-install-rocket-chat-make-your-own-chatting-website](http://www.thehacktoday.com/how-to-install-rocket-chat-make-your-own-chatting-website)
 * [https://sameroom.io/blog/self-hosted-team-chat-options-and-alternatives](https://sameroom.io/blog/self-hosted-team-chat-options-and-alternatives)
@@ -43,6 +35,6 @@ Here are some nice blog posts about our project for you to get some inspiration:
 * [https://thishosting.rocks/how-to-install-rocket-chat-on-ubuntu-and-use-it-on-your-wordpress/](https://thishosting.rocks/how-to-install-rocket-chat-on-ubuntu-and-use-it-on-your-wordpress/)
 * [https://linuxstans.com/install-configure-rocket-chat-centos-8/](https://linuxstans.com/install-configure-rocket-chat-centos-8/)
 
-## Presentations
+**Presentations**:
 
 * [http://slides.com/gabrielengel/meteordevshop#/](http://slides.com/gabrielengel/meteordevshop#/)

@@ -1,70 +1,69 @@
-# Report bugs
+---
+description: Welcome to our Error Reporting Guide
+---
 
-## Is it a bug?
+# Report Bugs
 
-**GitHub Issues are for bugs only.**
+We're thrilled to have you here! To ensure a smooth and efficient bug-reporting process, we've put together this guide. Please take a moment to familiarize yourself with our practices and procedures.
 
-Examples of things that aren't considered bugs:
+### Identifying Bugs
 
-* Can't figure out how to do something
-* Having issues accessing your server
-* Can't get the server installed
-* Want a new widget in Rocket.Chat
+Before you proceed, it's crucial to ascertain whether what you're encountering is indeed a bug. If you're struggling to understand how to perform a task, experiencing problems accessing your server, unable to install the server or want a new widget in Rocket.Chat, these are not considered bugs.
 
-If your issue falls into one of these categories, please see [Getting Support](broken-reference)
+{% hint style="success" %}
+If your concern aligns with the non-bug category, kindly refer to the provided resources in our [documentation](https://docs.rocket.chat/). Suggestions for new features should be submitted in the [forums](https://forums.rocket.chat).
+{% endhint %}
 
-New feature requests should be posted in the [forums](https://forums.rocket.chat).
+### Before Reporting a Bug
 
-## It is a bug!
+Before you report a new issue, please:
 
-### Before reporting a new issue
+* Thoroughly read the [documentation](https://docs.rocket.chat/).
+* Ensure you're running the latest version of Rocket.Chat. An update might resolve your issue.
+* Try to identify reproducible steps. If we can reproduce it, we can fix it faster.
+* Check all your logs for errors. See the [#gathering-logs](report-bugs.md#gathering-logs "mention") section for guidance.
+* [Search the Forums](https://forums.rocket.chat) using a few different search terms.
+* [Search the Issues](https://github.com/RocketChat/Rocket.Chat/issues) for your bug. If you find it, carefully check that it is identical and give it a thumbs up, or add some additional information to the ticket if it differs. This will help give us a fuller picture.
 
-1. [Read the Documentation](https://docs.rocket.chat) carefully all the way through.
-2. Make sure you are running the latest version of Rocket.Chat. It's very likely that simply updating will resolve your issue.
-3. Try to narrow it down to reproducible steps. If we can reproduce it, we will be able to fix the issue a lot quicker.
-4. Look at all of your logs for errors. See below for how to gather logs.
-5. [Search the Forums](https://forums.rocket.chat) using a few different search terms.
-6. [Search the Issues](https://github.com/RocketChat/Rocket.Chat/issues) for your bug. If you find it carefully, check that it is identical and give it a thumbs up, or add some additional information to the ticket if it differs. This will help give us a fuller picture.
-7. If you got this far, then report an issue.
+If you've done all of the above and still need to report a bug, please proceed.
 
-### Reporting a new issue
+### How to Report a Bug?
 
-Giving clear background information will help save a lot of time.
+Giving clear background information will help save a lot of time. When reporting a new bug, please include the following information to promote effective bug fixing:
 
-Please include the following information to promote effective fixing.
-
-* Operating System / Version / Architecture (64 bit?)
+* Operating System / Version / Architecture (64-bit?)
 * Browser type and version, including any add-ons. (e.g., AdBlocker, NoScript, etc.)
 * Rocket.Chat version
 * Expected behavior
 * Actual behavior
-* Can the bug consistently be reproduced? If so, how?
+* Steps to reproduce the bug consistently
 * Relevant errors and other log output
-* Screenshots are necessary
+* Screenshots, if applicable
 
-Here are some links to help you register your bug in the right place:
+{% hint style="info" %}
+You can register your bug at the following places based on the platform you're using:
 
 [Rocket.Chat Server](https://github.com/RocketChat/Rocket.Chat/issues/new/choose)
 
 [Rocket.Chat Mobile Apps](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues/new)
 
 [Rocket.Chat Electron desktop app](https://github.com/RocketChat/Rocket.Chat.Electron)
+{% endhint %}
 
+{% hint style="info" %}
 #### Determining Rocket.Chat Version
 
-1. **Administration** -> **Workspace** -> **Info**
-2. Your Rocket.Chat URL followed by _`/api/info`_
+You can find your Rocket.Chat version in two ways:
 
-#### Gathering Logs
+* As an Admin, log into your Rocket.Chat. Navigate to **Administration -> Workspace -> Info**
+* Append `/api/info` to your Rocket.Chat URL
+{% endhint %}
 
-**Browser**
+{% hint style="info" %}
+**Gathering Logs**
 
-To collect logs from your browser press `Ctrl/Cmd + Shift + j`. Errors appear in red.
+* **Browser Logs**: To collect logs from your browser, press Ctrl/Cmd + Shift + j. Errors will appear in red.
+* **Server Logs**: As an Admin, log into your Rocket.Chat. Navigate to **Administration -> Workspace -> View Logs** It's often helpful to open this in another browser, reproduce the issue, and observe any exceptions that pop up in the logs. Don't forget to check your web server logs and general system logs as well.
+{% endhint %}
 
-**Server**
-
-To collect logs from your browser as an Admin, log into your Rocket.Chat. From there, click the arrow by your avatar and go to Administration. Once there, you will see: `View Logs`.
-
-It is often useful to open this in another browser and reproduce the problem again, and you will see an exception pop up in the logs.
-
-Also, consider your web server logs and general system logs.
+We appreciate your effort in helping us improve our software. Thank you for your contribution!

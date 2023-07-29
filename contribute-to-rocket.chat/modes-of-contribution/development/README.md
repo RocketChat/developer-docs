@@ -6,7 +6,7 @@ We're thrilled that you're interested in contributing to Rocket.Chat! Whether yo
 
 **Assigned Issues:** You may notice that some issues already have an assignee. These are trusted individuals, often core team members, who are responsible for resolving the issue. However, this doesn't mean you can't contribute! All issues are open for contribution, and any help is greatly appreciated. We encourage you to work on any issue that interests you and share your progress with the community in the comments. Remember, multiple people can work on the same issue, so don't be discouraged from tackling an issue you're passionate about.
 
-Priority Features and Bug Fixes: If there's a particular feature or bug fix with higher priority you'd like to sponsor develop via [BountySource](https://app.bountysource.com/teams/rocketchat), please [let us know](https://www.rocket.chat/contact).
+**Priority Features and Bug Fixes**: If there's a particular feature or bug fix with higher priority you'd like to sponsor develop via [BountySource](https://app.bountysource.com/teams/rocketchat), please [let us know](https://www.rocket.chat/contact).
 
 {% hint style="info" %}
 &#x20;If you're looking for a simple task to get started, check out our [easy tasks](https://github.com/RocketChat/Rocket.Chat/labels/contrib%3A%20easy) or search for issues tagged with `contrib:easy`.
@@ -15,3 +15,5 @@ Priority Features and Bug Fixes: If there's a particular feature or bug fix with
 {% hint style="success" %}
 You can find a detailed guide on [development-environment-setup.md](../../../getting-started/development-environment-setup.md "mention") here.
 {% endhint %}
+
+Now that you're ready to contribute, it's time to understand our development process. Visit the [development-workflow.md](development-workflow.md "mention") guide to learn about issue prioritization, pull request approval, and more. This guide will help you navigate your journey as a contributor to Rocket.Chat. Happy coding!"
