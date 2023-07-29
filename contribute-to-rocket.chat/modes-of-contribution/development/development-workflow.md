@@ -60,13 +60,10 @@ A changeset is a piece of information about changes made in a branch or commit, 
 
 There are a few rules to get your pull request accepted:
 
-All checks have passed
-
-Travis CI runs automatically when you push your pull request. If Travis fails, take a look at the reasons for failure. If it fails for no apparent reason, try running it again.
-
-You must sign the [Contributor License Agreement (CLA)](https://cla-assistant.io/RocketChat/Rocket.Chat)
-
-At least one team member must approve the Pull Request. If you don't know who to ask for approval, let your team, lead, or manager know you need one, and someone will be assigned as a reviewer.
+* All checks have passed.
+* Travis CI runs automatically when you push your pull request. If Travis fails, take a look at the reasons for failure. If it fails for no apparent reason, try running it again.
+* You must sign the [Contributor License Agreement (CLA)](https://cla-assistant.io/RocketChat/Rocket.Chat).
+* At least one team member must approve the Pull Request. If you don't know who to ask for approval, let your team, lead, or manager know you need one, and someone will be assigned as a reviewer.
 
 ### **6. Finishing a release branch**:&#x20;
 
@@ -158,4 +155,4 @@ All labels are listed on the [labels page](https://github.com/RocketChat/Rocket.
 
 ### 9. Bugs reporting
 
-For information on bug reporting, please refer to [#8.-bugs-reporting](development-workflow.md#8.-bugs-reporting "mention").
+For information on bug reporting, please refer to [report-bugs.md](../report-bugs.md "mention")
