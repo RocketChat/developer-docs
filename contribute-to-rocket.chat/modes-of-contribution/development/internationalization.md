@@ -1,16 +1,14 @@
 # Internationalization
 
-When developing in Rocket.Chat, you have the ability to add strings to our translation files which later will be translated to other languages by our community translators.
+Internationalization, often abbreviated as i18n, is a crucial aspect of software development that ensures a product's usability across various languages and regions. This document provides a brief guide on how to implement internationalization in Rocket.Chat.
 
-### Tools Used
+When developing for Rocket.Chat, you have the ability to add strings to our translation files which later will be translated into other languages by our community translators.
 
-For selecting strings for the correct language we use the [TAP:i18n](https://github.com/TAPevents/tap-i18n) meteor package.
-
-For managing contributions from the translator's community we use [lingohub](https://lingohub.com/).
+**Tools Used**: In Rocket.Chat, internationalization is implemented using the [TAP:i18n](https://github.com/TAPevents/tap-i18n) meteor package, and managing contributions from the translator's community is done using [lingohub](https://lingohub.com/).
 
 ### Adding Strings to the Translation Files
 
-To have a string translated you will firstly need a `key` that would be the identifier of the string you want to be translated, for example, the string `This room is read only` should have the key as `room_is_read_only`. Please have in mind when naming a key that spaces should be replaced with underscores (`_`) and it should be named in English, as is the language selected for Rocket.Chat's code. Finally, you will have the `key/value` pair will look like this: `"room_is_read_only": "This room is read only"`
+To have a string translated you will first need a `key` that would be the identifier of the string you want to be translated, for example, the string `This room is read only` should have the key as `room_is_read_only`. Please keep in mind that when naming a key spaces should be replaced with underscores (`_`) and it should be named in English, as is the language selected for Rocket.Chat's code. Finally, you will have the `key/value` pair will look like this: `"room_is_read_only": "This room is read only"`
 
 You can also specify `placeholders`, that will allow you to change information on the string via parameters when calling the `i18n` method. A parameter will be surrounded by two double underscores (`__ __`), and it will look like this, `"Conversation_closed": "Conversation closed: __comment__."` where `__comment__` can be replaced by any string provided in the parameters.
 

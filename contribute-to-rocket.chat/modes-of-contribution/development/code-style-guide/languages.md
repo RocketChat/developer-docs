@@ -17,3 +17,7 @@ _**TypeScript**_: ESLint is responsible for formatting all JavaScript and TypeSc
 These formatters help maintain a consistent style across different languages used in the Rocket.Chat codebase.
 
 Contributing to Rocket.Chat involves more than just writing code; it's about adhering to established conventions and maintaining a consistent style across the project. By using tools like VSCode, Prettier, ESLint, gofmt, and shfmt, developers can ensure their contributions align with the existing codebase. This consistency not only makes the code easier to read and understand but also facilitates collaboration among contributors from around the world. Happy coding!
+
+{% hint style="info" %}
+For a comprehensive understanding of Rocket.Chat's coding conventions and style, refer to and [.](./ "mention").
+{% endhint %}
