@@ -1,29 +1,19 @@
 # Languages
 
-[Vscode](https://code.visualstudio.com/) is the most used and recommended text editor for the Rocket.Chat codebase. Together with the [Prettier plugin](https://code.visualstudio.com/), we have a set of rules defined in the codebase for best formatting.
+To maintain consistency and readability across the project, Rocket.Chat has established specific coding conventions and formatting rules. This guide provides a brief overview of these guidelines, focusing on the use of different languages and formatting tools in the Rocket.Chat codebase.
 
-Specific language configurations are in the [.editorconfig](https://github.com/RocketChat/Rocket.Chat/blob/develop/.editorconfig).
+Rocket.Chat primarily uses [Visual Studio Code ](https://code.visualstudio.com/)(VSCode) as its text editor of choice due to its wide usage and versatility. To ensure uniformity in code formatting, Rocket.Chat employs the [Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). As long as you use it, the code style will be automatically adhered to Rocket.Chat standards. Specific language configurations are in the [.editorconfig](https://github.com/RocketChat/Rocket.Chat/blob/develop/.editorconfig).
 
 {% hint style="info" %}
 We provide a [prettier config](https://github.com/RocketChat/Rocket.Chat/blob/develop/.prettierrc) and [eslint config](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc) in our repos, so as long as those plugins are installed on your editor, code style will be automatically followed
 {% endhint %}
 
-## TypeScript
+_**TypeScript**_: ESLint is responsible for formatting all JavaScript and TypeScript code. Rocket.Chat has transitioned to using only TypeScript (`.ts`) files in its codebase. Conventions for TypeScript, React, and Components are specified in the Fuselage [conventions.md](../../../../fuselage/conventions.md "mention"), ensuring that all contributors follow the same standards.
 
-The eslint takes charge of formatting all the javascript and typescript code.&#x20;
+**Go**: For code written in Go, the the [gofmt](https://pkg.go.dev/cmd/gofmt) formatter should be used to ensure proper formatting.&#x20;
 
-The Rocket.Chat codebase has migrated to using only typescript `.ts` files.
+**Shell Script**: For Shell-related code, the [shfmt](https://github.com/mvdan/sh) formatter should be used.&#x20;
 
-Convention for Typescript, React and Components are specified in the Fuselage Conventions page.
+These formatters help maintain a consistent style across different languages used in the Rocket.Chat codebase.
 
-{% content-ref url="../../../../fuselage/conventions.md" %}
-[conventions.md](../../../../fuselage/conventions.md)
-{% endcontent-ref %}
-
-## Go
-
-Any Go related piece of code should be formatted with the [gofmt](https://pkg.go.dev/cmd/gofmt) formatter.
-
-## Shell Script
-
-Any Shell related piece of code should be formatted with the [shfmt](https://github.com/mvdan/sh) formatter.
+Contributing to Rocket.Chat involves more than just writing code; it's about adhering to established conventions and maintaining a consistent style across the project. By using tools like VSCode, Prettier, ESLint, gofmt, and shfmt, developers can ensure their contributions align with the existing codebase. This consistency not only makes the code easier to read and understand but also facilitates collaboration among contributors from around the world. Happy coding!
