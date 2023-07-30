@@ -41,7 +41,7 @@ A changeset is a piece of information about changes made in a branch or commit, 
 * Similarly, refrain from merely replicating the PR title in the changeset, as PR titles are designed for developers, not customers.
 *   Should be written in the past tense, using a descriptive verb
 
-    ❌`fix: Something i did`
+    ❌`fix: Something I did`
 
     ✅`Fixed a problem where...` or `Added capability for users to...`
 * Ensure your changesets are written in clear, grammatically correct English. This is crucial as changesets are processed automatically. Reviewers should bear this in mind when evaluating pull requests.
