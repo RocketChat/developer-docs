@@ -23,7 +23,7 @@ you can resolve this by installing the mentioned package with the command:
 meteor npm install --save babel-runtime
 ```
 
-1. **bcrypt**:
+* **bcrypt**:
 
 If you see the following warning in the `meteor` logs:
 
@@ -81,4 +81,4 @@ Rocket.Chat@0.46.0-develop /Users/douglas/work/github/Rocket.Chat
   └── nan@2.3.5
 ```
 
-Troubleshooting is a vital part of the development process, and understanding how to navigate and resolve common issues can significantly enhance your productivity. This guide provides solutions to some common Rocket.Chat development problems, but remember, each issue is unique, and sometimes, you may need to dig deeper to find the root cause. Keep exploring, keep learning, and most importantly, keep developing!
+Troubleshooting is a vital part of the development process, and understanding how to navigate and resolve common issues can significantly enhance your productivity. This guide provides solutions to some common Rocket.Chat development problems, but remember, each issue is unique, and sometimes, you may need to dig deeper to find the root cause.
