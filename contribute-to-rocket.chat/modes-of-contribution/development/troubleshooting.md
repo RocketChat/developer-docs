@@ -1,8 +1,10 @@
 # Troubleshooting
 
-1. **babel-runtime**:
+This guide aims to provide solutions to some common issues you may encounter while developing with Rocket.Chat, such as missing npm packages, warnings in meteor logs, and Python interpreter version mismatches.
 
-If you are having the following error:
+* **babel-runtime**:
+
+If you encounter an error stating:
 
 ```bash
 (STDERR) Error: The babel-runtime npm package could not be found in your node_modules
@@ -15,7 +17,7 @@ If you are having the following error:
 => Your application is crashing. Waiting for file change.
 ```
 
-Just install the mentioned package with the following command:
+you can resolve this by installing the mentioned package with the command:
 
 ```bash
 meteor npm install --save babel-runtime
@@ -35,9 +37,9 @@ If you see the following warning in the `meteor` logs:
 (STDERR)
 ```
 
-Don't panic =) It means that the `bcrypt` library is not installed on your system and `meteor` will use a javascript alternative that is about three times slower.
+This simply means that the `bcrypt` library is not installed on your system and meteor will use a JavaScript alternative that is about three times slower.
 
-If you want to install the library to make it faster, use the following command:
+To install the library and make it faster, use the command:
 
 ```bash
 meteor npm install --save bcrypt
@@ -78,3 +80,5 @@ Rocket.Chat@0.46.0-develop /Users/douglas/work/github/Rocket.Chat
   ├── bindings@1.2.1
   └── nan@2.3.5
 ```
+
+Troubleshooting is a vital part of the development process, and understanding how to navigate and resolve common issues can significantly enhance your productivity. This guide provides solutions to some common Rocket.Chat development problems, but remember, each issue is unique, and sometimes, you may need to dig deeper to find the root cause. Keep exploring, keep learning, and most importantly, keep developing!
