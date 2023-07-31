@@ -24,7 +24,7 @@
     * [Troubleshooting](contribute-to-rocket.chat/modes-of-contribution/development/troubleshooting.md)
   * [Documentation](contribute-to-rocket.chat/modes-of-contribution/documentation/README.md)
     * [Markdown Style Guide](contribute-to-rocket.chat/modes-of-contribution/documentation/markdown-style-guide.md)
-    * [Repository Template](contribute-to-rocket.chat/modes-of-contribution/documentation/repository-template.md)
+    * [Documentation Template](contribute-to-rocket.chat/modes-of-contribution/documentation/documentation-template.md)
   * [Help Test Rocket.Chat](contribute-to-rocket.chat/modes-of-contribution/help-test-rocket.chat.md)
   * [Security Issues](contribute-to-rocket.chat/modes-of-contribution/security-issues/README.md)
     * [Responsible Disclosure Policy](contribute-to-rocket.chat/modes-of-contribution/security-issues/responsible-disclosure-policy.md)

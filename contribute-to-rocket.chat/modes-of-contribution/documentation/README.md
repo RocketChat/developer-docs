@@ -28,5 +28,5 @@ Thank you for your interest in contributing to Rocket.Chat documentation. Here's
    * Using GitBook: Simply fork our docs repository, [create a space](https://docs.gitbook.com/getting-started/content-structure/what-is-a-space#create-a-spacehttps://docs.gitbook.com/getting-started/content-structure/what-is-a-space#create-a-space) on GitBook, and activate the [GitHub Integration](https://docs.gitbook.com/integrations/git-sync) on your fork. This gives you a means of previewing your changes before submitting a PR.
 
 {% hint style="info" %}
-For further guidelines on contributing to Rocket.Chat documentation, visit [markdown-style-guide.md](markdown-style-guide.md "mention") and [repository-template.md](repository-template.md "mention")
+For further guidelines on contributing to Rocket.Chat documentation, visit [markdown-style-guide.md](markdown-style-guide.md "mention") and [documentation-template.md](documentation-template.md "mention")
 {% endhint %}
