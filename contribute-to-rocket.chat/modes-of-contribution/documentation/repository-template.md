@@ -117,3 +117,7 @@ Please include any relevant information or images
 ```
 
 </details>
+
+{% hint style="info" %}
+For a comprehensive guide on contributing to Rocket.Chat documentation, visit [.](./ "mention")and [markdown-style-guide.md](markdown-style-guide.md "mention")
+{% endhint %}
