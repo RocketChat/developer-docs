@@ -1,6 +1,6 @@
 # Internationalization
 
-Internationalization, often abbreviated as i18n, is a crucial aspect of software development that ensures a product's usability across various languages and regions. This document provides a brief guide on how to implement internationalization in Rocket.Chat.
+Internationalization, often abbreviated as i18n, is the process of designing and developing a product in a way that removes barriers to its use in different locales. It involves ensuring that the software can handle different languages, character sets, and cultural conventions (like date and time formats) without modification. Essentially, internationalization prepares the software for localization. This guide provides a briefs you on how to implement internationalization in Rocket.Chat.
 
 When you're building for Rocket.Chat, you can add text to our files. Later, our community will translate this text into different languages.
 
