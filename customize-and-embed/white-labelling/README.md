@@ -1,18 +1,12 @@
 # White Labelling
 
-Rocket.Chat offers a wide range of customization options, including basic color switching and complete CSS control. More importantly, you can make customizations without changing the source code.
+Rocket.Chat, a robust open-source communication platform, provides a comprehensive suite of customization options, including the ability to white-label your workspace. White-labeling allows you to tailor the platform's appearance and functionality to align with your brand identity and specific needs, with or without altering the source code. This feature enhances the user experience, promotes brand consistency, and provides a unique, personalized touch to your communication platform.
 
 {% hint style="info" %}
-To learn more, see [Basic White-Labeling](https://docs.rocket.chat/quick-start/basic-white-labeling).
+To learn more, see [Basic White-Labeling](https://docs.rocket.chat/quick-start/basic-white-labeling) without altering the source code.
 {% endhint %}
 
-## Customizing Rocket.Chat from Code
-
-Rocket.Chat is open source and flexible for customization and modifications.
-
-{% hint style="warning" %}
-Rather than making changes from the forked Rocket.Chat repository, developers are advised to focus on building the same codebase that can be customized for each user.&#x20;
-{% endhint %}
+**Customizing Rocket.Chat from Code**: Rocket.Chat's open-source nature encourages customization and modification. However, instead of making changes from a forked Rocket.Chat repository, developers are advised to build on the existing codebase, which can then be customized according to each user's needs. This approach ensures that the core functionality remains intact while allowing individualized adjustments.
 
 If you are customizing Rocket.Chat's codebase, it is assumed that you are a developer. As a developer, your focus should be building the product, then packaging it in your desired format.
 
@@ -26,22 +20,14 @@ Fork the [Rocket.Chat GitHub repository](https://github.com/RocketChat/Rocket.Ch
 Due to the unique needs of each user, it is difficult to provide detailed information on the specific customizations that can be made with the Rocket.Chat codebase. The extent and nature of these customizations will depend on individual requirements and preferences.
 {% endhint %}
 
-### Deploying a Customized version of Rocket.Chat
+**Deploying a Customized version of Rocket.Chat**: The process of deploying a customized version of Rocket.Chat is straightforward. If you're planning to build a custom deployment option, such as a Docker image or snap package, you can refer to the Rocket.Chat [Dockerfile](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.docker/Dockerfile) and [build script](https://github.com/RocketChat/Rocket.Chat/actions/workflows/build\_and\_test.yml). These resources provide all the necessary information and tools to kickstart your customization journey.
 
-Suppose you are planning to build a custom deployment option for Rocket.Chat, such as a Docker image or snap package, refer to the Rocket.Chat [Dockerfile](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.docker/Dockerfile) and [build script](https://github.com/RocketChat/Rocket.Chat/actions/workflows/build\_and\_test.yml). These files contain all the necessary information and tools to start your customization.
+**Advanced White-Labeling of server**: Advanced white-labeling options extend to server customization as well. You can extensively customize your workspace, adjust layouts, and personalize email templates to suit your preferences. This includes the ability to modify the appearance of your workspace with custom CSS and Javascript, as well as customizing emails sent from your workspace.
 
-## Advanced White-Labeling of server
-
-You can customize your workspace extensively, allowing you to adjust layouts and customize email templates according to your preferences.&#x20;
-
-### Layout
-
-Customize the look of your workspace with custom CSS and Javascript by following the guide below.
+**Layout:** Customize the look of your workspace with custom CSS and Javascript by following the guide below.
 
 {% embed url="https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/layout#custom-css" %}
 
-### Email Templates
-
-Customize emails sent from your workspace and email notifications following the guide below.
+**Email Templates**: Customize emails sent from your workspace and email notifications following the guide below.
 
 {% embed url="https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/email" %}
