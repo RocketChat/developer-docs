@@ -8,10 +8,6 @@
 [schema-definition](schema-definition/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="realtime-api/livechat-api/" %}
 [livechat-api](realtime-api/livechat-api/)
 {% endcontent-ref %}
