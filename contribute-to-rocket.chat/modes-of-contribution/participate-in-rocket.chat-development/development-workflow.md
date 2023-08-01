@@ -153,4 +153,4 @@ All labels are listed on the [labels page](https://github.com/RocketChat/Rocket.
 
 #### 9. Bugs reporting
 
-For information on bug reporting, please refer to [report-bugs.md](../report-bugs.md "mention")
+For information on bug reporting, please refer to [contribute-through-bug-reporting.md](../contribute-through-bug-reporting.md "mention")

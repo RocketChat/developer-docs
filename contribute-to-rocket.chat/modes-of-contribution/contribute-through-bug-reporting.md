@@ -2,7 +2,7 @@
 description: Welcome to our Error Reporting Guide
 ---
 
-# Report Bugs
+# Contribute Through Bug Reporting
 
 We're thrilled to have you here! To ensure a smooth and efficient bug-reporting process, we've put together this guide. Please take a moment to familiarize yourself with our practices and procedures.
 
@@ -21,7 +21,7 @@ Before you report a new issue, please:
 * Thoroughly read the [documentation](https://docs.rocket.chat/).
 * Ensure you're running the latest version of Rocket.Chat. An update might resolve your issue.
 * Try to identify reproducible steps. If we can reproduce it, we can fix it faster.
-* Check all your logs for errors. See the [#gathering-logs](report-bugs.md#gathering-logs "mention") section for guidance.
+* Check all your logs for errors. See the [#gathering-logs](contribute-through-bug-reporting.md#gathering-logs "mention") section for guidance.
 * [Search the Forums](https://forums.rocket.chat) using a few different search terms.
 * [Search the Issues](https://github.com/RocketChat/Rocket.Chat/issues) for your bug. If you find it, carefully check that it is identical and give it a thumbs up, or add some additional information to the ticket if it differs. This will help give us a fuller picture.
 

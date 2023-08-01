@@ -6,7 +6,7 @@ The Rocket.Chat Server is the foundation of the Rocket.Chat project, providing a
 
 Data is stored in MongoDB and files are stored locally on the system running the server or over network services like Amazon S3.
 
-The Rocket.Chat Server is open source, highly customizable, and extensible, allowing developers to contribute and develop custom and new functionalities to the platform. Learn more about contributing here [development](../../contribute-to-rocket.chat/modes-of-contribution/development/ "mention").
+The Rocket.Chat Server is open source, highly customizable, and extensible, allowing developers to contribute and develop custom and new functionalities to the platform. Learn more about contributing here [participate-in-rocket.chat-development](../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/ "mention").
 
 It can be compiled and deployed on-premise or in the cloud, providing flexibility for organizations to choose the hosting environment that best meets their needs. Get more information about deployment [here](https://docs.rocket.chat/deploy/prepare-for-your-deployment).
 

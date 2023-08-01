@@ -27,4 +27,6 @@ Please provide as many relevant details as you can. In particular:
 
 Rocket.Chat's approach to handling security issues reflects its commitment to maintaining a secure and reliable platform. By encouraging users to report vulnerabilities and rewarding them for their efforts, Rocket.Chat fosters a community that actively contributes to its security. This not only enhances the platform's integrity but also strengthens the trust between Rocket.Chat and its users.
 
+{% hint style="info" %}
 For more information, please visit our [responsible-disclosure-policy.md](responsible-disclosure-policy.md "mention")
+{% endhint %}

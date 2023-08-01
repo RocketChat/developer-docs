@@ -128,5 +128,5 @@ The Rocket.Chat code base is vast. You may need to increase this [system paramet
 ## References
 
 * [Supporting SSL for Mobile Apps](../../mobile-app/supporting-ssl-for-development-on-rocket.chat.md)
-* [Development Troubleshooting](../../../contribute-to-rocket.chat/modes-of-contribution/development/troubleshooting.md)
+* [Development Troubleshooting](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/troubleshooting.md)
 * [Deployment Methods](linux.md)

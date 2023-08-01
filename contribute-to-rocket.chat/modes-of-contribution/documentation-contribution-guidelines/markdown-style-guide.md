@@ -213,5 +213,5 @@ codeblock without indentation.
 </code></pre>                                                          |
 
 {% hint style="info" %}
-For a comprehensive guide on contributing to Rocket.Chat documentation, visit [.](./ "mention")and [repository-template.md](repository-template.md "mention")
+For a comprehensive guide on contributing to Rocket.Chat documentation, visit [.](./ "mention")and [documentation-template.md](documentation-template.md "mention")
 {% endhint %}
