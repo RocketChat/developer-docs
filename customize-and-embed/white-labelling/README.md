@@ -22,7 +22,7 @@ Due to the unique needs of each user, it is difficult to provide detailed inform
 
 **Deploying a Customized version of Rocket.Chat**: The process of deploying a customized version of Rocket.Chat is straightforward. If you're planning to build a custom deployment option, such as a Docker image or snap package, you can refer to the Rocket.Chat [Dockerfile](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.docker/Dockerfile) and [build script](https://github.com/RocketChat/Rocket.Chat/actions/workflows/build\_and\_test.yml). These resources provide all the necessary information and tools to kickstart your customization journey.
 
-**Advanced White-Labeling of server**: Advanced white-labeling options extend to server customization as well. You can extensively customize your workspace, adjust layouts, and personalize email templates to suit your preferences. This includes the ability to modify the appearance of your workspace with custom CSS and Javascript, as well as customizing emails sent from your workspace.
+**Advanced White-Labeling of server**: Advanced white-labeling options also extend to server customization. You can extensively customize your workspace, adjust layouts, and personalize email templates to suit your preferences. This includes the ability to modify the appearance of your workspace with custom CSS and Javascript, as well as customizing emails sent from your workspace.
 
 **Layout:** Customize the look of your workspace with custom CSS and Javascript by following the guide below.
 
@@ -31,3 +31,5 @@ Due to the unique needs of each user, it is difficult to provide detailed inform
 **Email Templates**: Customize emails sent from your workspace and email notifications following the guide below.
 
 {% embed url="https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/email" %}
+
+Rocket.Chat's white-labeling feature, combined with color [customization options](customizing-colors.md), provides a powerful toolset for creating a unique, branded communication platform. By adjusting the color variables, you can ensure that your Rocket.Chat workspace aligns perfectly with your brand identity, providing a consistent and engaging user experience.

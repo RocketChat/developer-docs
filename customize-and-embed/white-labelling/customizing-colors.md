@@ -8,9 +8,11 @@ description: Ensure your Rocket.Chat workspace has a unique color palette.
 Customizing colors are applicable from Rocket.Chat `v 6.0`
 {% endhint %}
 
-By customizing colors according to the new semantic color palette, you can achieve a diverse range of customization options easily. The semantic color scheme is highly descriptive, clearly showing where a specific color applies and why a particular token should be used simply by specifying its name.
+One of the key aspects of white-labeling your Rocket.Chat workspace is the ability to customize colors. This feature allows you to ensure that your Rocket.Chat workspace aligns with your brand's color palette, further enhancing the sense of brand consistency and identity.
 
-## Token
+Rocket.Chat provides a comprehensive list of color variables that you can adjust to match your brand's color scheme. These variables control various workspace elements, including stroke colors, surface colors, font colors, status colors, shadow colors, and button colors.
+
+
 
 **Token name**
 
@@ -25,13 +27,9 @@ button-background-primary-default
 * `primary`: type of UI element.
 * `default`: state of this UI element.
 
-### **Where and How to customize colors**
+**Where and How to customize colors**: Colors are customizable through the custom CSS field in the admin panel.
 
-Colors are customizable through the custom CSS field in the admin panel.
-
-To customize colors,&#x20;
-
-* Navigate to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**
+To customize colors, navigate to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**
 
 **Variables List**
 
@@ -136,3 +134,5 @@ To customize colors,&#x20;
 --rcx-color-button-icon-disabled-color: #6C727A;
 }
 ```
+
+By adjusting the color variables, you can ensure that your Rocket.Chat workspace aligns perfectly with your brand identity, providing a consistent and engaging user experience.
