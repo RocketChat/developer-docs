@@ -1,6 +1,8 @@
 # Repository Structure
 
-This section is intended to familiarize you with the [Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat) structure.
+Understanding the structure of software repositories is essential for both seasoned developers and beginners alike. This guide will focus on the Rocket.Chat Server, a part of the Rocket.Chat Open Source Project suite. Its server-side functionality is a key aspect of the ecosystem, hence understanding the [Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat) structure is integral to understanding the platform as a whole.
+
+Rocket.Chat Server is built with several principles in mind: readability, maintainability, and the ability to handle high-volume, real-time data. It adheres to a [clean architectural pattern](../../getting-started/architecture-and-components.md) which ensures that it remains modular and easy to comprehend. The server's repository structure is constructed to compartmentalize the software's various functionalities and processes, making it accessible to developers of different expertise levels. As we delve into this guide, we will examine the structure in greater depth, focusing on the different directories and their functionalities, as well as the underlying principles that guide the project's organization.
 
 Rocket.Chat uses a [monorepo](https://github.com/RocketChat/fuselage/wiki#fuselage-monorepo) to house several pieces of required code and packages needed by various Rocket.Chat projects like the [Apps Engine](https://github.com/RocketChat/Rocket.Chat.Apps-engine), [LiveChat](https://github.com/RocketChat/Rocket.Chat.Livechat), etc.
 
