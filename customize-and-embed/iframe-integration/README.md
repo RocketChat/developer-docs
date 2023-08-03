@@ -1,6 +1,6 @@
 # Iframe Integration
 
-Rocket.Chat, a leading open-source communication platform, offers a multitude of customization and embedding options to integrate its functionalities into your existing digital ecosystem seamlessly. One such powerful feature is the iframe integration. This feature allows you to embed Rocket.Chat within an external web page or application interface, providing a unified and consistent user experience.
+Rocket.Chat offers a multitude of customization and embedding options to integrate its functionalities into your existing digital ecosystem seamlessly. One such powerful feature is the iframe integration. This feature allows you to embed Rocket.Chat within an external web page or application interface, providing a unified and consistent user experience.
 
 The iframe integration not only enables you to incorporate Rocket.Chat into your application but also allows you to authenticate users with your own login page, replacing the need for Rocket.Chat's login. This ensures a smooth and uninterrupted user journey, enhancing user satisfaction and engagement.
 
