@@ -2,9 +2,11 @@
 description: Help promote Rocket.Chat
 ---
 
-# Promoting Rocket.Chat
+# Promote Rocket.Chat
 
-Whether you're a developer or not, your contribution can significantly help our project grow. As a free, open-source initiative, our community is our greatest strength. Here are some ways you can contribute to our ongoing growth. Consider this as your checklist, as these tasks are important.
+If you are not a developer (or even if you are), you can still contribute to the project a lot by helping us promote it. As we are a free, open-source project, the community is our most important asset, so here are some ways that you can help the project continue to grow.
+
+Please use this as a to-do list, as they are important:
 
 **Follow us**: Please follow us on as many social networks as you can.
 
