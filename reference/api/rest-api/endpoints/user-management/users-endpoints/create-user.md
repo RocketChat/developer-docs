@@ -19,12 +19,24 @@ Create a new user. Requires `create-user` permission.
 | `password`              | `pass@w0rd`               | Required                      | The password for the user.                                             |
 | `username`              | `example`                 | Required                      | The username for the user.                                             |
 | `active`                | `false`                   | Optional Default: `true`      | Whether the user is active, which determines if they can login or not. |
-| `roles`                 | `['bot']`                 | Optional Default: `['user']`  | The roles the user has assigned to them on creation.                   |
+| `roles`                 | `["bot"]`                 | Optional Default: `['user']`  | The roles the user has assigned to them on creation.                   |
 | `joinDefaultChannels`   | `false`                   | Optional Default: `true`      | Whether the user should join the default channels when created.        |
 | `requirePasswordChange` | `true`                    | Optional Default: `false`     | Should the user be required to change their password when they login?  |
 | `sendWelcomeEmail`      | `true`                    | Optional Default: `false`     | Should the user get a welcome email?                                   |
 | `verified`              | `true`                    | Optional Default: `false`     | Should the user's email address be verified when created?              |
 | `customFields`          | `{ twitter: '@example' }` | Optional Default: `undefined` | Any custom fields the user should have on their account.               |
+
+## Example Payload
+
+<pre class="language-json"><code class="lang-json">{
+    "name": "name", 
+<strong>    "email": "email@user.tld", 
+</strong>    "password": "anypassyouwant", 
+    "username": "uniqueusername", 
+    "roles":["bot"]
+}
+
+</code></pre>
 
 ## Example Call
 
@@ -33,7 +45,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/users.create \
-     -d '{"name": "name", "email": "email@user.tld", "password": "anypassyouwant", "username": "uniqueusername"}'
+     -d '{"name": "name", "email": "email@user.tld", "password": "anypassyouwant", "username": "uniqueusername", "roles":["bot","user"]}'
 ```
 
 ## Example Result
