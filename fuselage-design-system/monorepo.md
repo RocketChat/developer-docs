@@ -12,7 +12,7 @@ In order to avoid confusion, we will refer to the _Fuselage_ monorepo as the _Fu
 
 #### Why a monorepo?
 
-From the very beginning, the Rocket.Chat project embraced the idea of splitting the codebase into multiple packages, as the Meteor community has done. It was a way to separate the codebase into smaller pieces from feature point of view, and to make it easier to work on them. This approach was successful specially when some dependencies became stale and were not updated.
+FromFrom the very beginning, the Rocket.Chat project embraced the idea of splitting the codebase into multiple packages, as the Meteor community has done. It was a way to separate the codebase into smaller pieces from feature point of view, and to make it easier to work on them. This approach was successful specially when some dependencies became stale and were not updated.
 
 Interdependencies between packages is a maintenance issue, and it is not easy to find a way to keep everything in sync when you have multiple repositories. Naturally, the [Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat) became a monorepo managed by Meteor (but no one really knew it). Then everything changed when ~~the Fire Nation attacked~~ server scalability issues started to appear, and a "de-meteorization" of the codebase was needed. At the time this is written, less than ten of Meteor packages remain in the Rocket.Chat repository.
 

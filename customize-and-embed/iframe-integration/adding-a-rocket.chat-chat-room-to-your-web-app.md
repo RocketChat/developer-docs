@@ -1,26 +1,21 @@
 # Adding a Rocket.Chat chat room to your web app
 
-## **Requirements**
+After [configuring-iframe-auth](configuring-iframe-auth/ "mention"), you can explore Rocket.Chat cutomize and embed by adding a Rocket.Chat room to your webapp. Iframe integration in Rocket.Chat allows you to embed chat rooms from your Rocket.Chat server on other websites or web apps. Once iframe integration is enabled on your Rocket.Chat server, you can connect your application to the server.
 
-Before adding a room to your application, here are some conditions that must be met:
+**Prerequisites**
 
 * A running Rocket.Chat server with at least one [room](../../reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-rooms/).
 
 {% hint style="info" %}
-See the different ways of [deploying](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods) and [configuring](https://docs.rocket.chat/setup-and-configure/accessing-your-workspace) a Rocket.Chat server.
+&#x20;See the [official deployment guide](https://docs.rocket.chat/deploy/prepare-for-your-deployment) to explore various ways of setting up your Rocket.Chat workspace.
 {% endhint %}
 
-## **Activate the Iframe Integration**
+**Activate the Iframe Integration**
 
 To enable the iframe integration setting in your Rocket.Chat server,
 
 * Navigate to **Administration > Workspace > Settings > Accounts > Iframe.**
 * Toggle **on** the **Enabled** option.
-
-{% hint style="info" %}
-It lets you integrate iframes from your Rocket.chat server on other websites/web apps. When iframe integration is enabled in your Rocket.Chat server, you can connect the server to your application.
-{% endhint %}
-
 * Fill in the **iframe URL** with the application URL where you want to integrate the current Rocket.Chat application.
 * Add the **API URL**, which is essential for Rocket.Chat to verify that a user is logged into the application. If a user from your application goes to a web page containing the Rocket.Chat Room iframe, the Rocket.Chat server will use this API endpoint to verify the following:
   * The user is identified on your web app.

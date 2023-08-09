@@ -39,7 +39,7 @@
 * [White Labelling](customize-and-embed/white-labelling/README.md)
   * [Customizing Colors](customize-and-embed/white-labelling/customizing-colors.md)
 * [Iframe Integration](customize-and-embed/iframe-integration/README.md)
-  * [Configuring iframe auth](customize-and-embed/iframe-integration/configuring-iframe-auth/README.md)
+  * [Configuring iFrame auth](customize-and-embed/iframe-integration/configuring-iframe-auth/README.md)
     * [Testing the iFrame Authentication](rocket.chat/iframe-integration/configuring-iframe-auth/testing-the-iframe-authentication.md)
   * [Adding a Rocket.Chat chat room to your web app](customize-and-embed/iframe-integration/adding-a-rocket.chat-chat-room-to-your-web-app.md)
   * [Iframe Events](customize-and-embed/iframe-integration/iframe-events.md)

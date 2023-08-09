@@ -1,6 +1,6 @@
 # Iframe Events
 
-When the iframe integration is enabled, some events are triggered.
+When the iframe integration is enabled, some events are triggered. These events include the following:
 
 | Event name                       | Description                                                                                      |
 | -------------------------------- | ------------------------------------------------------------------------------------------------ |
