@@ -21,10 +21,14 @@ Retrieve the sessions of all users on the workspace. It supports the [#paginatio
 
 <table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
 
+## Query Parameter
+
+<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>filter</code></td><td>funke</td><td>Optional</td><td>Filter sessions list using regex</td></tr></tbody></table>
+
 ## Example Call
 
 ```json
-curl --location 'http://localhost:3000/api/v1/sessions/list.all' \
+curl --location 'http://localhost:3000/api/v1/sessions/list.all?filter=funke' \
 --header 'X-Auth-Token: ocFlTSMfowj9tSH1vQV6ANL9SiahkKUK1KhU_PpAUtT' \
 --header 'X-User-Id: 2tTEqR7ZNMJ4HGGNa' \
 --header 'x-2fa-code: 148750'

@@ -16,6 +16,10 @@ Retrieves all sessions of the authenticated user making the request.  It support
 
 <table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
+## Query Parameter
+
+<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>filter</code></td><td>windows</td><td>Optional</td><td>Filter sessions list using regex</td></tr></tbody></table>
+
 ## Example Call
 
 ```javascript
