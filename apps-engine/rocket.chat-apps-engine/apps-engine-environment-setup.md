@@ -1,36 +1,26 @@
----
-description: The Pre-Requisites for developing a Rocket.Chat App
----
+# Apps Engine Environment Setup
 
-# Apps-Engine Environment Setup
+Before beginning, the following must be installed on your machine:&#x20;
 
-The Rocket.Chat Apps-Engine is built on top of Node.js VM module, which means most of the environment setup will be around running that module within your RC workspace.
+* [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Node.js](https://nodejs.org/en) (version 12 and above)&#x20;
+* Rocket.Chat Apps Engine CLI&#x20;
+* [Yarn](https://yarnpkg.com/)&#x20;
 
-Setting up the development environment requires you to download and install multiple dependencies. You will need an active internet connection throughout the process.
+Git, Node.js, and Yarn have been covered in the preceding sections. The Apps Engine CLI will be elaborated upon in forthcoming documents.
 
-## Requirements
+We expect you to have a fundamental understanding of the topics outlined below while using Apps Engine.
 
-You must have the following installed already on your machine before starting. If you don't, please take a minute and get them ready.
+### Command Line
 
-* [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* [Node.js](https://nodejs.org) (version 12 and above)
-* [Rocket.Chat Apps-Engine CLI](../getting-started/rocket.chat-app-engine-cli.md#installation)
-* [Yarn](http://yarnpkg.com/) (recommended instead of npm)
+The Rocket.Chat Apps Engine CLI is extremely basic and easy to use. However, a basic understanding of Command Line navigation would be advantageous.
 
-## Pre-requisites
+### TypeScript Development&#x20;
 
-While using the Apps-Engine, we expect you to have a basic understanding of a few topics listed below.
+To develop an application, you must write and execute [TypeScript](https://www.typescriptlang.org/) code. Although the majority of definitions are managed by the Apps Engine CLI, you must grasp where the code guides you in order to comprehend how your application interacts with the Rocket.Chat server and external APIs.
 
-#### A basic understanding of Command Line
+### Lifecycle methods of Apps Engine and Node.js VM&#x20;
 
-The Rocket.Chat Apps-Engine CLI is very basic in terms of its usage. Still, a brief understanding of navigation within the Command Line will be beneficial to understanding where the project is leading you.
+Our documentation contains a section detailing the Apps Engine lifecycle methods. We highly recommend you read it before beginning.
 
-#### Basic knowledge of TypeScript Development
-
-For writing an App, you need to write and execute [TypeScript](https://www.typescriptlang.org/) code. Although most definitions are handled within the Apps-Engine CLI, you need to understand where the code leads you to know how your App interacts with the Rocket.Chat server and external APIs.
-
-#### Understanding the Lifecycle methods of Apps-Engine and Node.js VM
-
-You'll find here a section explaining the [Lifecycle methods of Apps Engine](../getting-started/understanding-app-lifecycle.md#introduction). We highly recommend you read it before getting started.
-
-Additionally, you'll find yourself executing some [Node.js VM](https://nodejs.org/api/vm.html) methods from time to time. Hence reading that documentation will be helpful as well.
+In addition, you will occasionally discover yourself executing Node.js VM methods. Consequently, perusing [this documentation](https://nodejs.org/api/vm.html) will also be beneficial.
