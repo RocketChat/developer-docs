@@ -8,7 +8,7 @@ Requires the `run-import` permission.
 
 | URL                    | Requires Auth | HTTP Method |
 | ---------------------- | ------------- | ----------- |
-| `/api/v1/import.start` | `yes`         | `POST`      |
+| `/api/v1/import.new`   | `yes`         | `POST`      |
 
 
 ## Example Call
