@@ -10,9 +10,9 @@ Requires the `run-import` permission.
 ## Example Call
 
 ```bash
-curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     -H "Content-type:application/json" \
+curl -H 'X-Auth-Token: YDthX6agkT6yn96u__5YmLdSCmmTZDndr4zlJmuDADC' \
+     -H 'X-User-Id: 7TY57bBj3xQXvf2i2' \
+     -H 'Content-Type: application/json' \
      http://localhost:3000/api/v1/import.status
 ```
 
@@ -20,25 +20,22 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ```javascript
 {
-   "success": true,
-   "state": "ready",
-   "operation": {
-        "type": "api",
-        "importerKey": "api",
-        "ts": "2016-09-13T14:57:56.037Z",
-        "status": "importer_user_selection",
-        "valid": true,
-        "user" "aobEdbYhXfu5hkeqG",
-        "_updatedAt": "2016-09-13T14:57:56.037Z",
-        "count": {
-            "total": 8000,
-            "users": 8000,
-            "messages": 0,
-            "channels": 0,
-            "completed": 0,
-            "error": 0
-        }
+  "state": "ready",
+  "operation": {
+    "_id": "64d51ea91558939980aab371",
+    "type": "api",
+    "importerKey": "api",
+    "ts": "2023-08-10T17:30:17.519Z",
+    "status": "importer_user_selection",
+    "valid": true,
+    "user": "7TY57bBj3xQXvf2i2",
+    "_updatedAt": "2023-08-10T17:41:20.052Z",
+    "count": {
+      "total": 2,
+      "users": 2
     }
+  },
+  "success": true
 }
 ```
 

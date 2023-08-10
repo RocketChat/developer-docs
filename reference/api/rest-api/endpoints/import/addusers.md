@@ -48,9 +48,9 @@ Requires the `run-import` permission.
 ## Example Call
 
 ```bash
-curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     -H "Content-type:application/json" \
+curl -H 'X-Auth-Token: YDthX6agkT6yn96u__5YmLdSCmmTZDndr4zlJmuDADC' \
+     -H 'X-User-Id: 7TY57bBj3xQXvf2i2' \
+     -H 'Content-Type: application/json' \
      http://localhost:3000/api/v1/import.addUsers \
      -d '{"users": [{ "username": "john.doe", "emails": ["john.doe@example.com"], "importIds": ["1523"], "name": "John Doe", "password": "P@ssw0rd" }, { "username": "jane.doe", "emails": ["jane.doe@example.com"], "importIds": ["1524"], "name": "Jane Doe" }]}'
 ```
