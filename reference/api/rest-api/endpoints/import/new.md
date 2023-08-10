@@ -18,7 +18,7 @@ curl -H 'X-Auth-Token: YDthX6agkT6yn96u__5YmLdSCmmTZDndr4zlJmuDADC' \
     -H 'X-User-Id: 7TY57bBj3xQXvf2i2' \
     -H 'Content-Type: application/json' \
     http://localhost:3000/api/v1/import.new \
---data ''
+    -d ''
 ```
 
 ## Example Result
