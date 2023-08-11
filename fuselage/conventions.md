@@ -1,12 +1,12 @@
 # Conventions
 
-### TypeScript
+The code conventions for Rocket.Chat provides guidelines for writing clear, concise, and consistent code. By following these guidelines, you can write code that is easy to read, understand, and maintain.
 
-#### General tips
+### TypeScript General Tips
 
-**Don't use CommonJS features**
+1. **Don't use CommonJS features**
 
-The `require` function and the `module` object are CommonJS features, and should not be mixed with ES modules constructs like `import` and `export`. We prefer ES modules because they are more portable and easier to use. The drawback is that you cannot do "synchronous conditional imports" as you can in CommonJS:
+Avoid utilizing CommonJS features such as the `require` function and the `module` object alongside ES module constructs like `import` and `export`. Our preference lies with ES modules due to their enhanced portability and user-friendly nature. However, it's worth noting that unlike CommonJS, synchronous conditional imports aren't feasible in ES modules.
 
 ```tsx
 // commonjs.ts
@@ -32,9 +32,9 @@ if (condition) {
 }
 ```
 
-**Prefer `import type` over `import`**
+2. **Prefer `import type` over `import`**
 
-The `import` statement is common to both JavaScript and TypeScript, and it's relevant during runtime. If your code is being bundled, the imported module output code (the original JavaScript one or the one transpiled from TypeScript) will end up in the bundle. This is not what you want sometimes. However, `import type` is only available in TypeScript compilation.
+Prioritize using `import type` over the standard `import` statement. While the regular `import` works for both JavaScript and TypeScript and has runtime implications, it can lead to the inclusion of module output code (either the original JavaScript or the transpiled TypeScript) in the bundle. This behavior might not be desired in certain cases. However, the `import type` construct is specific to TypeScript compilation and helps avoid unnecessary inclusion of code in the bundle.
 
 ```tsx
 // Foo.ts
@@ -72,9 +72,9 @@ declare const bar: Bar;
 import { Foo } from './Foo';
 ```
 
-**Know the difference between `type` and `interface`**
+3. **Know the difference between `type` and `interface`**
 
-The `interface` construct is a TypeScript construct that is similar to the `class` construct in JavaScript. The difference is that `interface` is a type declaration, and `class` is a class declaration.
+The `interface` construct in TypeScript bears resemblance to the class `construct` in JavaScript, with a key distinction: an `interface` serves as a type declaration, while a `class` functions as a class declaration.
 
 ```tsx
 interface IThing {
@@ -108,35 +108,35 @@ class Thing implements IThing {
 }
 ```
 
-However, the `type` construct is less restrictive than the `interface` construct. For example, the `type` construct allows you to declare a union type:
+Nonetheless, the `type` construct offers greater flexibility compared to the `interface` construct. For instance, the `type` construct permits the declaration of union types, as demonstrated by:
 
-```tsx
+```typescript
 type Foo = string | number;
 ```
 
-Despite the fact [`interface` was lighter weight for `tsc`](https://ncjamieson.com/prefer-interfaces/), it's still a good idea to use `type` when you're not dealing with a class. They also are different when generic types are involved. For example, the `interface` construct allows you to declare a generic type:
+While [`interface` was indeed lighter for TypeScript Compiler (tsc](https://ncjamieson.com/prefer-interfaces/)), it remains beneficial to employ `type` when not dealing with a class. Moreover, they exhibit differences in handling generic types. For instance, the `interface` construct enables the declaration of a generic type:
 
-```tsx
+```typescript
 interface IFoo<T> {
   prop: T;
 }
 ```
 
-But `type` allows it too and, combined with conditional types, can make the whole type structure change:
+However, the `type` construct also supports this, and when combined with conditional types, it can radically reshape the entire type structure:
 
-```tsx
+```typescript
 type Foo<T> = T extends string
   ? { foo: number; }
   : { bar: number; };
 ```
 
-This makes it possible to use the `type` construct in a more flexible way than the `interface` construct.
+This versatility empowers the `type` construct to offer a more adaptable approach than the `interface` construct.
 
-**Don't use classes as namespaces**
+4. **Avoid using classes as namespaces**.&#x20;
 
-Absolutely don't do this:
+Refrain from utilizing this pattern:
 
-```tsx
+```typescript
 // foo.ts
 class Foo {
   bar(): void {
@@ -152,9 +152,9 @@ import { foo } from './foo';
 foo.bar();
 ```
 
-if the `foo` singleton is just a namespace holding functions and variables. Instead, consider using the module as the singleton:
+When the `foo` singleton functions as a mere namespace housing functions and variables, opt for the following approach using the module itself as the singleton:
 
-```tsx
+```typescript
 // foo.ts
 export function bar(): void {
   // ...
@@ -166,15 +166,14 @@ import * as foo from './foo';
 foo.bar();
 ```
 
-The **only** valid use case for using a class as a namespace is when you want to hold state inside the singleton:
+The sole valid scenario for employing a class as a namespace is when you need to manage state within the singleton:
 
-```tsx
+```typescript
 // foo.ts
 class Foo {
   baz: number;
-t
   bar(): void {
-    // ... do stuff referencing and mutating `this.baz`
+    // ... perform actions referencing and modifying `this.baz`
   }
 }
 
@@ -186,35 +185,39 @@ import { foo } from './foo';
 foo.bar();
 ```
 
-It makes sense here because a class is the perfect abstraction for encapsulating state and exposing a restricted interface to mutate it.
+In this context, using a class is reasonable because it provides an effective abstraction for encapsulating state and offering a controlled interface for modifying it.
 
-**Don't use `any`. Ever. (Unless it's in a constraint)**
+5. **Avoid using the `any` type except when it's used as a constraint.**
 
-The mental model to follow here should be:
+Refrain from using `any` under most circumstances. Instead, adhere to this model:
 
-* `unknown` is the universal type, representing all possible values.
-* `any` is not really a type, but a mechanism to express that `tsc` should not perform any type checking.
+* `unknown` serves as the universal type, encompassing all potential values.
+* `any` should not be seen as an actual type, but rather as a means to disable TypeScript's type checking.
 
-Using `any` is a bad practice as it implies that you are not aware of the type of the value you're dealing with **and that you don't care**. At least `unknown` requires type narrowing, which is a good thing.
+Using `any` is discouraged as it indicates a lack of awareness regarding the type of value being manipulated and implies indifference toward type safety. In contrast, working with `unknown` necessitates type narrowing, leading to more robust code.
 
-```tsx
+For instance, consider these scenarios:
+
+```typescript
+// Avoid using any
 declare const foo: any;
 
-foo.bar(); // no compilation error
+foo.bar(); // No compilation error
 
+// Prefer using unknown
 declare const bar: unknown;
 
-bar.baz(); // compilation error
+bar.baz(); // Compilation error
 
-const hasBaz = (bar: unknown): bar is { baz(): void } => // type guard
+const hasBaz = (bar: unknown): bar is { baz(): void } => 
   typeof bar === 'object' && bar !== null && 'baz' in bar && (typeof (bar as { baz: unknown }).baz === 'function')
 
 if (hasBaz(bar)) {
-  bar.baz(); // no compilation error
+  bar.baz(); // No compilation error
 }
 ```
 
-The notable exception to this rule is when you're dealing with a generic type constraint like a function:
+A \n important exception to this rule is when you're dealing with a generic type constraint like a function:
 
 ```tsx
 type X<F> = F extends (x: unknown) => void ? true : false;
@@ -224,27 +227,18 @@ type A = X<(x: string) => void>; // `false`, because x is not `unknown`
 type B = Y<(x: string) => void>; // `true`, because x is anything
 ```
 
-#### Migrating from JavaScript
+### Migrating from JavaScript
 
 **TypeScript is a superset of JavaScript**
 
-When migrating from JavaScript to TypeScript, you can use the same syntax as JavaScript. Mostly of the errors from `tsc` and `eslint` are there just to make sure you are doing the right thing and can be ignored. As someone suggested on the internet, "just massage the code until you make it work".
+TypeScript is an extension of JavaScript, meaning that when transitioning from JavaScript to TypeScript, you can employ the identical syntax used in JavaScript. It's worth noting that a significant portion of the errors flagged by tools like TypeScript Compiler (tsc) and eslint are intended to ensure adherence to best practices. However, some of these errors can be overlooked or ignored, especially when they don't hinder the functionality of your code.&#x20;
 
 **JSDoc**
 
-If `allowJs` is set to `true` in the `tsconfig.json` file, you can use JSDoc comments to document types on your JavaScript code, which is particularly useful when you are migrating from JavaScript to TypeScript in stages and `tsc` is not able to infer types. Consider the following JavaScript code:
+When the `allowJs` option is enabled in the tsconfig.json configuration file, you can harness the power of JSDoc comments to document types within your JavaScript code. This proves especially valuable during the gradual transition from JavaScript to TypeScript, particularly when TypeScript Compiler (tsc) struggles to deduce types accurately. Take the following JavaScript code as an example:
 
-```tsx
-export const foo = {
-  bar: 'baz'
-};
-
-foo.qux = 'quux';
-```
-
-`tsc` will infer the type of `foo` to be `{ bar: string }` and ignore the `qux` property. To fix this, you can add the following JSDoc comment to the `module.js` file:
-
-```tsx
+```javascript
+// module.js
 /**
  * @typedef {Object} Foo
  * @property {string} bar
@@ -257,9 +251,12 @@ export const foo = {
 foo.qux = 'quux';
 ```
 
-Alternatively, you can use `@type` and a syntax closer to the `type` construct in TypeScript:
+Here, tsc would initially infer the type of `foo` as `{ bar: string }`, inadvertently ignoring the `qux` property. To rectify this, you can introduce a JSDoc comment to explicitly define the type, enabling TypeScript to grasp the full structure.
 
-```tsx
+Alternatively, you can use the `@type` tag along with a syntax resembling TypeScript's `type` construct:
+
+```javascript
+// module.js
 /**
  * @type {{ bar: string; qux: string }}
  */
@@ -270,9 +267,15 @@ export const foo = {
 foo.qux = 'quux';
 ```
 
-**At least try to declare a `*.d.ts` file**
+Both approaches aid in bridging the gap between JavaScript and TypeScript, ensuring that the types are accurately documented and recognized by the TypeScript compiler.
 
-We know that migrating huge JavaScript modules to TypeScript is a hassle. However, it's also a good idea to have a `*.d.ts` file for your module. This file is used by TypeScript to resolve imports and exports, as they are the "interface of a module". Sometimes the size of a module is code smell, indicating that it's better to split it into smaller modules. Writing a `*.d.ts` file makes it easier to plan and to understand the structure of your module than inserting JSDoc comments, therefore it's the recommended way start converting your JavaScript modules to TypeScript.
+**Declare a `*.d.ts` file**
+
+It's strongly advised to create a _.d.ts file as a starting point when migrating significant JavaScript modules to TypeScript. Although this transition can be complex, having a dedicated declaration file (_.d.ts) for your module is crucial. TypeScript utilizes these files to manage imports and exports, essentially serving as the "interface of a module."
+
+A module's large size might indicate the need for decomposition into smaller, more manageable modules. Crafting a \*.d.ts file simplifies the planning process and enhances your understanding of the module's structure, surpassing the utility of JSDoc comments. As a result, this approach is highly recommended for commencing the conversion of JavaScript modules to TypeScript.
+
+Here's an example of a \*.d.ts file for a hypothetical module:
 
 ```tsx
 // hugeModule.d.ts
@@ -282,53 +285,54 @@ export function bar(): void; // maybe it will be placed in another module
 
 ### React
 
-> Most of the recommendations here are based on [Alex Kondov's Tao of React](https://alexkondov.com/tao-of-react/).
+{% hint style="info" %}
+Most of the recommendations here are based on [Alex Kondov's Tao of React](https://alexkondov.com/tao-of-react/).
+{% endhint %}
 
 #### Components
 
-**Prefer functional components**
+1. **Prefer functional components**
 
-Class components were introduced in React to take advantage of the syntactic sugar of JavaScript classes for representing state and effects tied to the component lifecycle. The two major drawbacks of class components are:
+React initially introduced class components to leverage JavaScript class syntax for managing state and component lifecycles. However, class components have significant drawbacks:
 
-* they are verbose;
-* they misuse the inheritance mechanism of `extends` and `super`.
+* They tend to be verbose.
+* They often involve a misuse of the inheritance mechanism through extends and super.
 
-Hooks introduced a new way to declare state and effects whilst still addressing that the core of a component is the render function without the inconvenience of having to use classes.
+Hooks were introduced to provide an alternative approach to declaring state and effects. They maintain the core concept of the component's render function without the need for classes, streamlining the development process.
 
-**Declare one component per file**
+2. **Declare one component per file**
 
-[Colocation](https://kentcdodds.com/blog/colocation) is a great concept, but we don't apply it when it comes to React components in a single file. There are several reasons for this, but the most important one is that we have seen people abusing it in the past. It can start with a simple modal component as companion of a page component and ending up in a mess of components.
+While [colocation](https://kentcdodds.com/blog/colocation) is a commendable concept, it's not consistently followed for React components within a single file. The main reason is that we've noticed people misusing this approach before. It might start with something as straightforward as adding a basic modal component alongside a page component, but it can quickly lead to a confusing jumble of components that becomes difficult to manage.
 
-**Name components**
+3. **Name components**
 
-Not naming a component is a common mistake that leads to longer debugging time: the error stack becomes not very helpful and traversing components on React Dev Tools is a pain.
+Failing to name a component is a common mistake that can lead to prolonged debugging efforts. It results in less informative error stacks and challenges while navigating components in React Dev Tools. There are two approaches to properly name a component:
 
-There two ways to name a component:
+* By writing a non-anonymous function:
 
-1.  writing a non-anonymous function:
+```tsx
+const Foo = () => {
+  return <div>Foo</div>;
+};
 
-    ```tsx
-    const Foo = () => {
-      return <div>Foo</div>;
-    };
+console.log('The component name is:', Foo.name);
+```
 
-    console.log('The component name is:', Foo.name);
-    ```
-2.  using the `displayName` property:
+* By using the `displayName` property:
 
-    ```tsx
-    const Foo = memo(() => {
-      return <div>Foo</div>;
-    });
+```tsx
+const Foo = memo(() => {
+  return <div>Foo</div>;
+});
 
-    Foo.displayName = 'Foo'; // `Foo.name` is `undefined`
+Foo.displayName = 'Foo'; // `Foo.name` is `undefined`
 
-    console.log('The component name is:', Foo.displayName);
-    ```
+console.log('The component name is:', Foo.displayName);
+```
 
-**Use default export (at the bottom of the file)**
+3. **Use default export at the end of file**
 
-It follows from the previous rule as modules only declare one component that it can be exported as default. Most of time we prefer using named exports, but provides a more readable code when using HOCs like `memo` and `forwardRef` and it ties nicely to `lazy`.
+While named exports are often preferred, using default export enhances code readability, especially when dealing with Higher Order Components (HOCs) like `memo` and `forwardRef`, and it aligns neatly with code splitting using `lazy`.
 
 ```tsx
 // Component.tsx
@@ -385,9 +389,9 @@ const Component = lazy(async () => {
 });
 ```
 
-**Extract helper functions**
+4. **Extract helper functions**
 
-One perceived downside to the introduction of React Hooks is that people often tend to declare helper functions inside the component because you don't need to pass arguments, just hold variables from the scope above:
+A drawback associated with the adoption of React Hooks is the tendency for individuals to define helper functions within the component. This is facilitated by the fact that there is no requirement to pass arguments; instead, variables from the encompassing scope can be directly accessed and used.
 
 ```tsx
 const Component = () => {
@@ -399,7 +403,7 @@ const Component = () => {
 };
 ```
 
-Usually, good helper functions are [pure](https://en.wikipedia.org/wiki/Pure\_function) (therefore easier to debug) and by binding variables into the helper's scope, you're making it impure. Additionally, each rendering redeclares the function value, which is cheap in terms of CPU/memory, but at the same time you may find yourself in the situation of depending of `useCallback` and other techniques to avoid re-rendering child components receiving your helper as a prop.
+Typically, effective helper functions adhere to the principle of being  [pure](https://en.wikipedia.org/wiki/Pure\_function), which makes them simpler to debug. However, when you bind variables into the helper's scope, you're making it impure. Furthermore, with each rendering cycle, the function value gets redefined. While this process is efficient in terms of CPU and memory usage, it can lead to scenarios where you must rely on techniques like `useCallback` to prevent unnecessary re-renders of child components that receive your helper function as a prop.
 
 Here's the ideal case:
 
