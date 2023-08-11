@@ -1,73 +1,58 @@
 # Color Palette
 
-When setting up colors for components, the palette system from fuselage must be used. The Palette system offers an easy and semantic way to implement colors using tokens.&#x20;
+When establishing color schemes for components, it's essential to leverage Fuselage's palette system. This system provides a straightforward and meaningful approach to integrating colors through **tokens**. **Tokens** function similarly to [Fuselage components](componentization.md), allowing updates to be made solely within the component, rather than requiring changes across the entire Rocket.Chat implementation. Additionally, the palette system facilitates the creation of diverse themes, as each theme can possess its palette implementation. For instance, a dark theme can share the same token groups while differing in token values, enabling versatile and consistent theming.
 
-Tokens work like fuselage components, in the way that only the component itself needs to be updated, not the whole implementation on Rocket.Chat.
+### How to use the Palette System
 
-The Palette system will also enable the creation of themes, as each theme can have its implementation of the palette (for example a dark theme will have the same groups and tokens, only differing in the value of the tokens).
-
-
-
-### How to use the Palette system
-
-#### On Box component:
+**On Box component**
 
 ```jsx
 <Box bg='status-background-info' color='status-font-on-info' />
 ```
 
-In order to ease and minimize wrong usage of tokens, there's a shortcut that adds automatically the correct prefixes:&#x20;
-
-when using **surface** tokens on `bg` and **font** tokens on `color` you can omit the _surface-_ and _font-_ prefixes (preferred way):
+To enhance simplicity and mitigate the risk of token misuse, a convenient shortcut exists that automatically applies the appropriate prefixes. When using surface tokens with the `bg` prop and font tokens with the `color` prop, you have the option to exclude the `surface-` and `font-` prefixes.&#x20;
 
 ```jsx
 <Box bg='neutral' color='default' />
 ```
 
-But you can also use the long term:
+Alternatively, you can use the longer form:
 
 ```jsx
 <Box bg='surface-neutral' color='font-default' />
 ```
 
+**In Rocket.Chat and/or Fuselage - React Components**
 
-
-#### On Rocket.chat and/or Fuselage - React components:
-
-Like other components, the Palette can be imported from the Fuselage's package.
+Similar to other components, you can import the Palette from the Fuselage package using:
 
 ```jsx
 import { Palette } from '@rocket.chat/fuselage';
 ```
 
-Then is just a simple as accessing the tokens from the groups in \`Palette\`
+Accessing tokens from the `Palette` becomes straightforward. For instance:
 
 ```jsx
-const example = Palette.GroupName['TokenName']
-
-const SurfaceHoverColor = Palette.surface['surface-hover']
-
-const StrokeColor = Palette.stroke['stroke-extra-light']
+const SurfaceHoverColor = Palette.surface['surface-hover'];
+const StrokeColor = Palette.stroke['stroke-extra-light'];
 ```
 
-Now the Palette system should handle any changes to the colors in fuselage and deal with changes done by the active theme automatically.
+By using the Palette system, any color modifications within Fuselage are automatically managed. This system also seamlessly adapts to changes introduced by the active theme, providing a streamlined and automated approach to color management.
 
+#### On Fuselage .scss files
 
-
-#### On Fuselage .scss files:
-
-If you are styling on a .scss file inside fuselage, you can use the tokens as shown below:
+When working within a .scss file within the Fuselage package, you can seamlessly integrate tokens into your styles using the following approach:
 
 ```scss
-@use '/packages/fuselage/src/styles/colors.scss'; // relative path
+@use '/packages/fuselage/src/styles/colors.scss'; // Use relative path
 
 .example {
     color: colors.font(titles-labels);
     background-color: colors.surface(neutral);
     border: 1px solid colors.stroke(extra-light);
-};
+}
 ```
 
-
+By incorporating the tokens provided by the `colors.scss` file, you can easily apply color styles to your components and ensure consistency with Fuselage's color palette.
 
 _See theme() function - WIP_

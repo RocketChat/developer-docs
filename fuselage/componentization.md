@@ -1,10 +1,15 @@
 # Componentization
 
-The components can be: `Simple` or `Complex` and `Visual` or `Logical`
+In Rocket.Chat, a component is a reusable piece of code that represents a single UI element. Components can be [**simple**](componentization.md#simple-components) or [**complex**](componentization.md#complex-components) and [**visual** ](componentization.md#visual-components)or [**logical**](componentization.md#logical-components). There are various guidelines governing each component type.
 
-The components can live on: `Application` or `Fuselage Library`
+These components can either live on the **Application** or the **Fuselage** library.
 
-The components rules matrix
+* **Application components** are specific to a particular Rocket.Chat application. They are not reusable across applications.
+* **Fuselage library components** are reusable across all Rocket.Chat applications. They are the recommended way to create components for Rocket.Chat applications.
+
+**Components Rules Matrix**
+
+The components rules matrix includes the table below:
 
 |                   | Fuselage Level | Application Level |
 | ----------------- | -------------- | ----------------- |
@@ -15,35 +20,35 @@ The components rules matrix
 
 ### Simple Components
 
-This is the lowest level of your component, a unique part of an interface. A good example of this is the `Button` Component
+These are the lowest level of components. They represent a single, atomic UI element in the interface, such as a `button` component or a text field.
 
-#### Variation over styles
+1. **Variation over Styles**
 
-Instead of using style based props names e.g. Blue or Gray, uses names that suggest the variation of your component e.g Primary or Secondary
+Use prop names that suggest the variation of a component, rather than using style-based prop names. For example, instead of using a prop name like `color` with a value of `blue`, you could use a prop name like `variation` with a value of `primary`. This makes the code more readable and maintainable, and it also makes it easier to create consistent and reusable components.
 
 ![](https://user-images.githubusercontent.com/27704687/186257526-a3bce55a-3eeb-4815-9bf0-569e79528f5f.png)
 
-#### Do not use magic numbers or values
+2. **Avoid using hardcoded values or magic numbers**.&#x20;
 
-✅ Correct example, passing the `small` and `square` prop that will handle the size of the component
+✅ **Preferred exampl**e: Use the 'small' and 'square' props to dynamically adjust the component size.
 
-```tsx
+```jsx
 <Button small square>
     <Icon name='circle-arrow-down' size='x24' />
 </Button>
 ```
 
-❌ Wrong example, using magic numbers to define the size of the component
+❌ Not recommended: Defining component size using specific numeric values.
 
-```tsx
+```jsx
 <Button height='50px' width='50px' square>
     <Icon name='circle-arrow-down' size='x24' />
 </Button>
 ```
 
-#### Prefer customization through CSS-vars
+3. **Opt for Customization via CSS Variables**
 
-It's not appropriate using CSS random values, do prefer to use customization using CSS-vars
+Avoid the use of random CSS values and instead, prioritize customization by utilizing CSS variables.
 
 ```scss
 $modal-margin: theme('modal-margin', auto);
@@ -59,16 +64,15 @@ $modal-margin: theme('modal-margin', auto);
 }
 ```
 
-#### Every variation should be exposed and described in Storybook
+4. **Document and Display All Variations in Storybook**
 
-It's important to expose each variation to allow developers or designers to check the existing possibilities.\
-Also, it should have a description, if the variation, isn't self-explanatory
+Ensure that all possible variations are documented and showcased within the Storybook. This enables developers and designers to explore the full range of available options. Additionally, include descriptive explanations for variations that might not be self-explanatory.
 
 ![Screen Shot 2022-08-23 at 17 31 17](https://user-images.githubusercontent.com/27704687/186259765-4ee6e5e1-da1f-439b-aaac-05683714f75f.png)
 
-#### Unit tests for the all possible component behaviors
+5. **Unit Testing for All Possible Component Behaviors**
 
-Guarantee that all the planned behaviors be covered by unit tests
+Ensure comprehensive coverage of all intended component behaviors through unit tests. It's crucial to highlight the importance of writing unit tests that cover all possible scenarios and functionalities of the component. This practice helps ensure the reliability and correctness of the codebase.
 
 ```tsx
 describe('[Menu Component]', () => {
@@ -103,21 +107,21 @@ describe('[Menu Component]', () => {
 });
 ```
 
-#### Avoid Box Component
+6. **Avoid Box Component**
 
 The usage of `Box` is recommended for Simple or Complex Components **mainly** (save the cases when we need to quickly prototype a component) on the Application Level as it's a wildcard component, for simple components, we suggest avoiding it and building the component using HTML tags
 
 ### Complex Components
 
-A mix of simple components results in a complex component
+**Complex components** are made up of multiple simple components. They can be used to create more complex UI elements, such as a modal or a table.
 
-#### Only visual, no logic
+1. **Only visual, no logic**
 
-Handle just the user interface and left it prepared to receive the logic
+Concentrate solely on the user interface design, ensuring it is poised to incorporate the required logic seamlessly .
 
 ![](https://user-images.githubusercontent.com/27704687/186262142-bb6a3354-d1f4-410d-bde9-6640bd7ccbcd.png)
 
-#### Split the component in an easy to understanding way
+2. **Split the component in an easy to understanding way**
 
 ```tsx
 export const Default = () => {
@@ -141,7 +145,7 @@ export const Default = () => {
 };
 ```
 
-#### Preferred get started using Storybook, allowing to keep the logic away
+3. **Initiate your development process by adopting Storybook, which facilitates the separation of logic from the user interface.**
 
 ```tsx
 export const CallingDM: ComponentStory<typeof VideoConfMessage> = () => (
@@ -171,11 +175,11 @@ export const CallEndedDM: ComponentStory<typeof VideoConfMessage> = () => (
 );
 ```
 
-#### Child Components can't be used outside of the scope
+4. **Child Components can't be used outside of the scope**
 
-❌ Wrong example on composing components
+❌ Incorrect example of component composition:
 
-```tsx
+```jsx
 export const MyComponent: ComponentStory<typeof VideoConfMessage> = () => (
     <Box display='flex'>
         <form>
@@ -185,9 +189,9 @@ export const MyComponent: ComponentStory<typeof VideoConfMessage> = () => (
 );
 ```
 
-✅ Correct example of composing components
+✅ Correct example of component composition:
 
-```tsx
+```jsx
 export const MyComponent: ComponentStory<typeof VideoConfMessage> = () => (
     <Box display='flex'>
         <form>
@@ -201,9 +205,13 @@ export const MyComponent: ComponentStory<typeof VideoConfMessage> = () => (
 );
 ```
 
-#### HTML elements, Box, and Box props should be encapsulated
+5. **HTML elements, Box, and Box props should be encapsulated**
 
-❌ Wrong example on composing components
+Encapsulation is a valuable software design principle that enhances code quality. By defining clear responsibilities for components, it improves understanding, maintenance, and testing.
+
+In the context of HTML elements, Box components, and Box props, encapsulation means accessing them solely through the Box component's API. This prevents unintended modifications to the Box component's internal state, ensuring predictable behavior and streamlined debugging.
+
+❌ Incorrect example of component composition:
 
 {% code overflow="wrap" %}
 ```tsx
@@ -218,7 +226,7 @@ export const VideoConfMessage: ComponentStory<typeof VideoConfMessage> = () => (
 ```
 {% endcode %}
 
-✅ Correct example of composing components
+✅ Correct example of component composition:
 
 {% code overflow="wrap" %}
 ```tsx
@@ -228,9 +236,9 @@ const VideoConfMessage = ({ ...props }): ReactElement => (
 ```
 {% endcode %}
 
-#### Offer hooks as helpers
+6. **Provide Hooks as Helpers**
 
-In the example below the `useVideoConfControllers` was provided to control the state of the popup's controllers
+In the following example, the **useVideoConfControllers** hook is provided as a helper to manage the state of the popup's controllers.
 
 ```tsx
 export const useVideoConfControllers = (
@@ -280,17 +288,21 @@ return (
 );
 ```
 
-#### Understanding the component and defining the scope (where it's going to live)
+7. **Understanding the component and defining the scope**
 
-Usually, a new component is born based on the needing of the Product Design Team, and it's the responsibility of the front-end engineer to verify the real need of this new component. A new component generates a big effort, so it's highly recommended to validate with the product manager and the designers involved the possibility of using Complex Components as an MVP to validate the new idea and the user flow and only after, moving on to creating a new component on Fuselage Level.
+New components typically emerge from requirements put forth by the Product Design Team. The front-end engineer holds the responsibility of assessing the genuine necessity of such components. Due to the substantial effort involved in creating a new component, it is prudent to collaborate with product managers and designers. It is advisable to explore the feasibility of employing Complex Components as an MVP to validate concepts and user flows. Subsequent to successful validation, the progression to developing a new Fuselage Level component can be considered.
 
-> How do I know my component should be part of the Fuselage library?
+{% hint style="warning" %}
+How do I know my component should be part of the Fuselage library?
+{% endhint %}
 
-A good example of this process is the `VerticalBar` the component which started as a Complex Component on the Application Level and now we're moving it to the Fuselage Level because more than one application can benefit from the component. E.g Rocket.Chat Application and Cloud Portal
+Consider the `VerticalBar` component as a clear example. It began as a Complex Component for a single application but has now advanced to the Fuselage Level. This shift is driven by its usefulness in multiple applications, like Rocket.Chat and Cloud Portal. This case demonstrates how components can grow from specific solutions to versatile tools with broader applications.
 
 ### Logical Components
 
-#### Use the child components, to compose a logical complex component
+1. **Use the child components to compose a logical complex component**
+
+Leverage the integration of child components to construct a unified and logical complex component.
 
 ```tsx
 const OutgoingPopup = ({ room, onClose, id }: OutgoingPopupProps): ReactElement => {
@@ -322,11 +334,9 @@ const OutgoingPopup = ({ room, onClose, id }: OutgoingPopupProps): ReactElement 
 }
 ```
 
-#### Hold the logic and state
+2. **Customization through the variations**
 
-_In development_
-
-#### Customization through the variations
+Provide users with the ability to customize a component's appearance or behavior by selecting from predefined variations or options. This approach enhances user experience and flexibility in adapting components to specific requirements.
 
 <pre class="language-tsx"><code class="lang-tsx">&#x3C;VideoConfController
 <strong>    active={controllersConfig.mic}
@@ -356,7 +366,9 @@ const VideoConfController = ({ icon, active, secondary, disabled, small = true, 
 ```
 {% endcode %}
 
-#### Avoid direct styles
+3. **Avoid direct styles**
+
+Refrain from applying direct styles to components. By avoiding inline styling, the code maintains a cleaner structure and promotes better separation of concerns, enhancing maintainability and readability.
 
 ```tsx
 <VideoConfPopup>
@@ -385,39 +397,53 @@ const VideoConfController = ({ icon, active, secondary, disabled, small = true, 
 
 ```
 
-#### Avoid CSS-in-JS
+4. **Don't write CSS styles in JS files**
 
-```tsx
-const customClass = css`
+This approach separates your component's logic from styling, promoting better code organization and maintainability while avoiding inline CSS-in-JS styling.
+
+Define your custom styling in an external CSS file:
+
+```css
+/* styles.css */
+.customClass {
 	border: 1px solid black;
 	padding: 1.5rem;
-`;
+}
+```
+
+Then, apply the class to your component:
+
+```jsx
+import './styles.css';
 
 return (
-	<VideoConfPopup>
-		<VideoConfPopupHeader>
-			<VideoConfPopupTitle text={t('Calling')} counter />
-			<VideoConfPopupControllers>
-				<VideoConfController
-					className={customClass}
-					active={controllersConfig.cam}
-					title={controllersConfig.cam ? t('Cam_on') : t('Cam_off')}
-					icon={controllersConfig.cam ? 'video' : 'video-off'}
-					disabled
-				/>
-				<VideoConfController
-					active={controllersConfig.mic}
-					title={controllersConfig.mic ? t('Mic_on') : t('Mic_off')}
-					icon={controllersConfig.mic ? 'mic' : 'mic-off'}
-					disabled
-				/>
-			</VideoConfPopupControllers>
-		</VideoConfPopupHeader>
-	</VideoConfPopup>
+    <VideoConfPopup>
+        <VideoConfPopupHeader>
+            <VideoConfPopupTitle text={t('Calling')} counter />
+            <VideoConfPopupControllers>
+                <VideoConfController
+                    className="customClass"
+                    active={controllersConfig.cam}
+                    title={controllersConfig.cam ? t('Cam_on') : t('Cam_off')}
+                    icon={controllersConfig.cam ? 'video' : 'video-off'}
+                    disabled
+                />
+                <VideoConfController
+                    active={controllersConfig.mic}
+                    title={controllersConfig.mic ? t('Mic_on') : t('Mic_off')}
+                    icon={controllersConfig.mic ? 'mic' : 'mic-off'}
+                    disabled
+                />
+            </VideoConfPopupControllers>
+        </VideoConfPopupHeader>
+    </VideoConfPopup>
 );
 ```
 
-#### Use the states of the component
+5. **Use the states of the component**
+
+By using component states to conditionally render different complex components, you maintain a clear and organized structure in your code, enhancing readability and maintainability.\
+
 
 ```tsx
 if (isReceiving) {
@@ -431,7 +457,7 @@ if (isCalling) {
 return <StartCallPopup loading={starting} room={room} id={id} onClose={dismissOutgoing} onConfirm={handleStartCall} />
 ```
 
-Each state should render the proper Complex Component
+Each state should render the proper **Complex Component**:
 
 ```tsx
 const OutgoingPopup = ({ room, onClose, id }: OutgoingPopupProps): ReactElement => {
@@ -462,3 +488,9 @@ const OutgoingPopup = ({ room, onClose, id }: OutgoingPopupProps): ReactElement 
 	);
 }
 ```
+
+### Visual Components
+
+**Visual components** are responsible for the appearance of a UI element. They define the element's style, layout, and other visual properties.
+
+Adhering to guidelines in the Fuselage's componentization offers the value of modular, reusable, and maintainable UI components. This approach enables efficient development, ensures consistent behavior, and supports the evolution of solutions from specific contexts to broader applications. By encapsulating logic, avoiding direct styles, and leveraging API-driven customization, developers can create a streamlined and user-centered experience.
