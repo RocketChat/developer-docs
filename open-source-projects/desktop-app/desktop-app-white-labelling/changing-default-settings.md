@@ -1,65 +1,67 @@
 # Desktop Changing Default Settings
 
-## Introduction
+After successfully setting up your [..](../ "mention"), you have the option to change the app's default settings. In this guide, you'll learn how to customize various settings in the ROcket.Chat Desktop app.
 
-In changing the Desktop App default settings, we assume you have followed the guide on [..](../ "mention") and that you are familiar with the development stack which makes use of (_git, node. javascript, and electron_).
+{% hint style="info" %}
+You are required to have basic knowledge of Git, Node, Javascript, and Electron.
+{% endhint %}
 
-## Assets
+### Assets
 
-Usually, the first thing you want to change are the icons. There are a few folders that you need to take note of. From your root project directory, assets can be changed or customized in the following directories.
+Commonly, the primary adjustment is altering icons. Some specific folders in your root project directory where assets can be customized include:
 
 ```
 ./src/ui/icons/
 ./src/ui/assets/
 ```
 
-Pay attention that these files are React components and you can change them correctly. When the changes are done, generate your new files by running...
+Take extra caution as these files are React components, ensure to modify them correctly. When the changes are done, generate your new files by running this command:
 
 ```bash
 yarn build-assets
 ```
 
-## Tray Icon
+### Tray Icon
 
 If you want to customize the TrayIcon, there are two ways:
 
 * Open `public/images/tray` there you can check all current icons used by the application. You can change files if you want.
 * Open and change `ui/icon/AppIcon.tsx` this is the icon base used to automatically generate all the icons, if you are used with `tsx/jsx` probably this is the easiest way to go.
 
+For customizing the TrayIcon, you have two options:
+
+1. Navigate to `public/images/tray` to review and potentially modify the icons used by the application. You can replace files as desired.
+2. Alternatively, open and modify `ui/icon/AppIcon.tsx`file. It is the icon base used to automatically generate all the icons. If you're familiar with tsx/jsx, this might be the more straightforward approach to take. After making the changes, run this command:
+
 ```
-// change ui/icon/AppIcon.tsx and run
 yarn build-assets
 ```
 
-## About
+### About
 
-To change the About screen, head on to `./src/ui/components/AboutDialog/index.tsx` where you can change the copyright. If you've changed the logo already, it will automatically reflect on this page.
+To change the About screen, navigate to `./src/ui/components/AboutDialog/index.tsx` where you can change the copyright. If you've changed the logo already, it will automatically reflect on this page.
 
 ```bash
 const copyright = `© 2016-${new Date().getFullYear()}, Rocket.Chat`;
 ```
 
-## Building and Packaging
+### Building and Packaging
 
-We use [electron-builder](https://www.electron.build/) to "compile" and produce the executable files, just check the file `electron-builder.json`
+We use [electron-builder](https://www.electron.build/) to "compile" and produce the executable files. To make any updates, check the file `electron-builder.json`. Update all references to the term `rocket.chat/rocket/chat.rocket/rocketchat` based on the context of each setting.
 
-Here you should change all references to the term `rocket.chat/rocket/chat.rocket/rocketchat` according to what each setting means.
+{% hint style="info" %}
+See the[ electron-builder configuration](https://www.electron.build/configuration/configuration) guide for more details.
 
-See the electron builder configuration page for more details not covered here.
+To maintain automatic updates, see the [electron-builder publish guide](https://www.electron.build/configuration/publish).
+{% endhint %}
 
-{% embed url="https://www.electron.build/configuration/configuration" %}
-
-Automatic updates can be maintained as specified here.
-
-{% embed url="https://www.electron.build/configuration/publish" %}
-
-After any change in configuration is made, bu sure to build a new release by running:
+After making any  change in the configuration, build a new release by running these commands:
 
 ```bash
 yarn build
 yarn release
 ```
 
-For more information or to see how we configure the CI/CD, please check out
-
-{% embed url="https://github.com/RocketChat/Rocket.Chat.Electron" %}
+{% hint style="info" %}
+See the [GitHub repository](https://github.com/RocketChat/Rocket.Chat.Electron) for more information on configuring CI/CD.
+{% endhint %}

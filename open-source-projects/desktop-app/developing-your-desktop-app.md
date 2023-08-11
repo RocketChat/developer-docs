@@ -1,32 +1,30 @@
 # Developing your Desktop App
 
-## Development
-
-### TypeScript
-
-Following the recent changes in the codebase, developing desktop apps takes into consideration the use of TypeScript 4. This is to address issues regarding maintainability.
-
-Be sure to check out the [TypeScript 4 release handbook](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html) and be updated.
+Following the recent changes in the codebase, developing desktop apps takes into consideration the use of TypeScript 4. This adoption is aimed at addressing maintainability concerns. Consult the [TypeScript 4 release handbook](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html) to stay informed and updated..
 
 ### The Build Pipeline
 
 The build process is founded upon [rollup](https://rollupjs.org/) bundler which compiles and brings every piece together. There are three entry files for your code:
 
-* `src/main.ts`, the script running at the main Electron process, orchestrating the whole application;
-* `src/rootWindow.ts`, the script that renders the UI of the _root window_, the app's main window;
-* and `src/preload.ts`, which runs in a privileged mode to connect the app and the webviews rendering Rocket.Chat's web client.
+The foundation of the build process relies on the [rollup](https://rollupjs.org/) bundler, responsible for compiling and integrating all components. Your codebase has three entry files:
 
-### Adding Node.js Modules
+* `src/main.ts`: The script running at the main Electron process, orchestrating the whole application.
+* `src/rootWindow.ts`: The script that renders the UI of the _root window_ which serves as the app's main window;
+* `src/preload.ts`:  The script runs in a privileged mode to connect the app and the webviews rendering Rocket.Chat's web client.
 
-To extend the app's functionalities with modules, always remember to differentiate between modules needed as `dependencies` and `devDependencies` in `package.json.` Like any other package depending project, only modules listed in `dependencies` will be included in the final distributable app.
+**Adding Node.js Modules**
 
-## Servers
+When extending the app's functionalities with modules, it's crucial to distinguish between modules required as `dependencies` and those marked as `devDependencies` in the `package.json` file.  Similar to any other project relying on packages, only modules listed in `dependencies` will be included in the final distributable app.
 
-### Default Servers
+When extending the app's functionalities with modules, it's crucial to distinguish between modules required as dependencies and those marked as devDependencies in the package.json file. Similar to any other project relying on packages, only modules specified under dependencies will be incorporated into the eventual distributable application.
 
-Default servers can be specified to automatically connect when the application runs. This can be done by creating a `servers.json` file in the project root directory. When specified, the server list sidebar automatically gets populated on running the app or when all servers are removed.
+### Servers
 
-The file syntax is as follows:
+**Default Servers**
+
+To establish automatic connections when the application launches, you can define default servers. This involves creating a `servers.json` file in the root directory of the project. This configuration ensures that the server list sidebar is automatically populated when the app launches or when all servers are deleted.
+
+The `servers.json` file syntax is as follows:
 
 {% code title="servers.json" %}
 ```json
@@ -38,19 +36,17 @@ The file syntax is as follows:
 ```
 {% endcode %}
 
-### Pre-Release Configuration
+**Pre-Release Server Configuration**
 
-You can bundle a `servers.json` with the install package, the file should be located in the root of the project application (same level as the `package.json`).
-
-If the file is found, the initial "**Connect to server**" screen will be skipped and it will attempt to connect to the first server defined in the array. When that is done, it will take the user straight to the login screen.
+You have the option to bundle a `servers.json` file with the installation package. This file should be located at the root level of the project application, in the same directory as the `package.json` file. When the file is located, the initial "**Connect to server**" screen won't appear. Instead, the app will try to connect to the first server listed in the array. Once connected, the user will be taken directly to the login screen.
 
 {% hint style="info" %}
-Note that the `servers.json` will only be checked if no other servers have already been added, even if you uninstall the app without removing older preferences, it will not be triggered again.
+Please be aware that the `servers.json` file will only be checked if no other servers have been added previously. Even if you uninstall the app without removing previous preferences, this check will not be triggered again.
 {% endhint %}
 
-### Post-Install Configuration
+**Post-Install Server Configuration**
 
-If you cannot (or don't want to) bundle the file inside the app, you can create a `servers.json` in the user preferences folder which will overwrite the packaged one. The file should be located in any of the directories listed below.
+If you are unable or prefer not to include the file within the app bundle, an alternative approach is available. You can generate a servers.json file in the user preferences folder, which will override the packaged one. This file should be positioned in any of the directories outlined below depending on your operating system:
 
 {% tabs %}
 {% tab title="Windows" %}
@@ -69,26 +65,28 @@ If you cannot (or don't want to) bundle the file inside the app, you can create 
 {% endtab %}
 {% endtabs %}
 
-## Testing
+### Testing
 
-### **Unit tests**
+**Unit tests**
 
 We use [Jest](https://jestjs.io/) testing framework with the [Jest electron runner](https://github.com/facebook-atom/jest-electron-runner). It searches for all files in the `src/` directory that matches the glob pattern `*.(spec|test).{js,ts,tsx}` and performs tests on them.
 
-Run this command to execute tests on your changes.
+Run this command to execute tests on your changes:
 
 ```bash
 yarn test
 ```
 
-## Making a Release
+**Making a Release**&#x20;
 
-To package your app into an installer use command:
+To bundle your application into an installer, utilize the following command:
 
-```bash
+```
 yarn release
 ```
 
-This starts the packaging process for the operating system you are running this command on. When it is done, the output file is ready for distribution and can be found in the `dist/` directory.
+This command initiates the packaging procedure for the specific operating system you're currently using. Once completed, the resulting output file is prepared for distribution and can be located in the _dist/_ directory.
 
-All packaging actions are handled by [electron-builder](https://www.electron.build/). It has a lot of customization options not mentioned here.
+It's important to note that all packaging operations are managed by [electron-builder](https://www.electron.build/). This tool offers a multitude of customization possibilities, although not all are detailed here.
+
+Now that you have successfully deployed and developed your Rocket.Chat desktop application, you can proceed to[ debug it for any errors or unexpected behaviors](../../desktop-app/debugging-your-desktop-app.md).
