@@ -405,6 +405,7 @@
             * [Livechat Room Info](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/livechat-room-info.md)
             * [Livechat Room Close](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/livechat-room-close.md)
             * [Join Livechat Room](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/join-livechat-room.md)
+            * [LiveChat Room SaveInfo](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/livechat-room-saveinfo.md)
             * [Livechat Room Transfer](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/livechat-room-transfer.md)
             * [Livechat Room Forward](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/livechat-room-forward.md)
             * [Survey Room](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/survey-room.md)
