@@ -9,6 +9,8 @@ Before beginning, the following must be installed on your machine:&#x20;
 
 Git, Node.js, and Yarn have been covered in the preceding sections. The Apps Engine CLI will be elaborated upon in forthcoming documents.
 
+We recommend that you [install Visual Studio Code](https://code.visualstudio.com/download). In addition, a local [development instance](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods/docker-and-docker-compose) of Rocket.Chat must be running on your system.
+
 We expect you to have a fundamental understanding of the topics outlined below while using Apps Engine.
 
 ### Command Line
