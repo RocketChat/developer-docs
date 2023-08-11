@@ -268,21 +268,21 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### DM/IM
 
-| URL                          | Short Description                                  | Details Page                                           |
-| ---------------------------- | -------------------------------------------------- | ------------------------------------------------------ |
-| `/api/v1/im.delete`          | Removes a direct message session                   | [Link](messaging/chat-endpoints/delete.md)             |
-| `/api/v1/im.close`           | Removes a direct message from the list of messages | [Link](messaging/im-endpoints/close.md)                |
-| `/api/v1/im.counters`        | Gets counters of direct messages                   | [Link](core-endpoints/im-endpoints/counters.md)        |
-| `/api/v1/im.create`          | Creates a direct message session                   | [Link](core-endpoints/im-endpoints/create.md)          |
-| `/api/v1/im.history`         | Retrieves messages from a direct message           | [Link](core-endpoints/im-endpoints/history.md)         |
-| `/api/v1/im.files`           | Retrieves a list of files from a direct message    | [Link](core-endpoints/im-endpoints/files.md)           |
-| `/api/v1/im.members`         | Retrieves participants of a direct message         | [Link](core-endpoints/im-endpoints/members.md)         |
-| `/api/v1/im.messages`        | Retrieves messages from specific direct messages   | [Link](core-endpoints/im-endpoints/messages.md)        |
-| `/api/v1/im.messages.others` | Retrieves messages from any direct message         | [Link](core-endpoints/im-endpoints/messages-others.md) |
-| `/api/v1/im.list`            | Lists direct messages the caller is part of        | [Link](core-endpoints/im-endpoints/list.md)            |
-| `/api/v1/im.list.everyone`   | Lists all direct messages to the caller            | [Link](core-endpoints/im-endpoints/list-everyone.md)   |
-| `/api/v1/im.open`            | Adds direct message back to the list of messages   | [Link](core-endpoints/im-endpoints/open.md)            |
-| `/api/v1/im.setTopic`        | Sets a direct message topic                        | [Link](core-endpoints/im-endpoints/settopic.md)        |
+| URL                          | Short Description                                  | Details Page                                      |
+| ---------------------------- | -------------------------------------------------- | ------------------------------------------------- |
+| `/api/v1/im.delete`          | Removes a direct message session                   | [Link](messaging/im-endpoints/delete.md)          |
+| `/api/v1/im.close`           | Removes a direct message from the list of messages | [Link](messaging/im-endpoints/close.md)           |
+| `/api/v1/im.counters`        | Gets counters of direct messages                   | [Link](messaging/im-endpoints/counters.md)        |
+| `/api/v1/im.create`          | Creates a direct message session                   | [Link](messaging/im-endpoints/create.md)          |
+| `/api/v1/im.history`         | Retrieves messages from a direct message           | [Link](messaging/im-endpoints/history.md)         |
+| `/api/v1/im.files`           | Retrieves a list of files from a direct message    | [Link](messaging/im-endpoints/files.md)           |
+| `/api/v1/im.members`         | Retrieves participants of a direct message         | [Link](messaging/im-endpoints/members.md)         |
+| `/api/v1/im.messages`        | Retrieves messages from specific direct messages   | [Link](messaging/im-endpoints/messages.md)        |
+| `/api/v1/im.messages.others` | Retrieves messages from any direct message         | [Link](messaging/im-endpoints/messages-others.md) |
+| `/api/v1/im.list`            | Lists direct messages the caller is part of        | [Link](messaging/im-endpoints/list.md)            |
+| `/api/v1/im.list.everyone`   | Lists all direct messages to the caller            | [Link](messaging/im-endpoints/list-everyone.md)   |
+| `/api/v1/im.open`            | Adds direct message back to the list of messages   | [Link](messaging/im-endpoints/open.md)            |
+| `/api/v1/im.setTopic`        | Sets a direct message topic                        | [Link](messaging/im-endpoints/settopic.md)        |
 
 {% hint style="info" %}
 From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
@@ -526,10 +526,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Tags
 
-| Url                    | Short Description        | Details Page                                                                                      |
-| ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-tags.md)  |
-| `livechat/tags/:tagId` | Get a tag.               | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-tag.md) |
+| Url                    | Short Description        | Details Page                                                      |
+| ---------------------- | ------------------------ | ----------------------------------------------------------------- |
+| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](omnichannel/livechat-endpoints/livechat-tags/get-tags.md)  |
+| `livechat/tags/:tagId` | Get a tag.               | [Link](omnichannel/livechat-endpoints/livechat-tags/get-a-tag.md) |
 
 #### Livechat Units
 
