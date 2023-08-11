@@ -30,7 +30,3 @@ From inception, Rocket.Chat adopted a strategy of splitting the codebase into mu
 
 \
 Initially, the _Fuselage Monorepo_ aimed to bridge the void left by old packages, while introducing a separate design system implementation. Its success is evident through the repository's diverse contents, extending beyond components and assets to encompass a wide array of packages beneficial for front-end development.
-
-From inception, Rocket.Chat adopted a strategy of splitting the codebase into multiple packages, similar to the Meteor community's approach. This segmentation was implemented to organize the codebase according to specific features, enabling a more targeted approach to development. It proved particularly effective in addressing issues arising from stagnant dependencies that lacked updates.\
-\
-Initially, the _Fuselage Monorepo_ aimed to bridge the void left by old packages, while introducing a separate design system implementation. Its success is evident through the repository's diverse contents, extending beyond components and assets to encompass a wide array of packages beneficial for front-end development.
