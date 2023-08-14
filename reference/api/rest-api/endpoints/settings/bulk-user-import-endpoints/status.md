@@ -63,7 +63,7 @@ curl --location 'http://localhost:3000/api/v1/import.status' \
 
 **Here are some key points to note:**
 
-1. The operation is considered successful if it gets to process every user in the staging area, even if no user is imported.
+1. The operation is considered successful if it processes every user in the staging area, even if no user is imported.
 2. You can check how many users have been imported or failed to import with the `operation.count.completed` and `operation.count.error` attributes.
 3. The data from users that failed to import will remain in the staging area after the operation is complete.
 4. While the operation is running, the values on `operation.count` are only updated once after every 50 users are processed.

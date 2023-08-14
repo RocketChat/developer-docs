@@ -32,7 +32,7 @@ It requires the `run-import` [permission](https://docs.rocket.chat/use-rocket.ch
 | `bio`       | String       | Optional  |                                                          | The user's profile bio.                                  |
 | `password`  | String       | Optional  | "P@ssw0rd"                                               | A password to assign to this user.                       |
 | `deleted`   | Boolean      | Optional  | false                                                    | Was the user deleted from the previous system?           |
-| `avatarUrl` | String       | Optional  |                                                          | An URL pointing to the user's avatar picture.            |
+| `avatarUrl` | String       | Optional  |                                                          | A URL pointing to the user's avatar picture.             |
 
 ## Example Payload
 
