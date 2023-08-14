@@ -1,54 +1,55 @@
 # Windows 10
 
-Windows Subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index)) is a complete architectural overhaul of Linux on Windows, installing an entire Linux kernel (built by Microsoft) alongside the classic Windows kernel. The Linux and Windows kernels can now share system resources, such as memory and CPU, at a previously impossible granularity. Setting up Rocket.Chat on Windows requires using the WSL2.
+Setting up Rocket.Chat on Windows requires using the WSL2. Windows Subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index)) is a complete architectural overhaul of Linux on Windows, installing an entire Linux kernel (built by Microsoft) alongside the classic Windows kernel. The Linux and Windows kernels can now share system resources, such as memory and CPU, at a previously impossible granularity.
 
-## Requirements
+## Preparation Steps
 
-### Software Requirements
+**Software Requirements**
 
-Before you build Rocket.Chat on Windows 10,
-
-* Ensure you have **Windows 10, version 2004** or above.
-* Install and configure **WSL 2** following [Microsoft documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10).  Select **Ubuntu 20.04 LTS** distribution as your choice of Linux.
+* **Windows 10, version 2004** or above.
+* Install and configure **WSL 2** following [Microsoft documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10). The default Linux distribution to be installed is Ubuntu.
 * Download and install the latest [Linux Kernel Updates](https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel).
 
-### Machine Requirements
+**Machine Requirements**
 
-You will need a Windows machine with the following minimum requirement to develop Rocket.Chat,
+To set up Rocket.Chat development environment, you'll require a Windows machine that meets the following minimum specifications:
 
 * 12 GB of RAM (16+ GB highly recommended)
 * Four or more cores on CPU (at least 3 GHz boosted, 4.2 GHz or higher recommended)
 * 80 GB of available fast SSD storage (PCIe 4.0 NVMe SSD recommended)
 
-Before setting up a development environment on Windows, here are some essential things to note:
+Before establishing a Rocket.Chat development environment on Windows, consider these key points:
 
-* &#x20;There is no need to install Mongo, NodeJs, or NPM separately.
+* There is no need to install Mongo, NodeJs, or NPM separately.
 * Clone the Rocket.Chat repository under `~` (`/home/username`) directory. Otherwise, [MongoDB won't start](https://stackoverflow.com/a/39278452).
 * Use a regular user account, not an administrator.
-* During the build, you may notice _peer or transitive dependencies warnings_. They are typically safe to ignore unless you are coding the required features or modules.
 
-## Setting up a Development Environment on Windows
+{% hint style="warning" %}
+During the build, you may notice _peer or transitive dependencies warnings_. They are typically safe to ignore unless you are coding the required features or modules.
+{% endhint %}
 
-* Open a **WSL 2 shell** and update the distro by running this command.
+## Setting up a Rocket.Chat Development Environment on Windows
+
+* Open the Ubuntu **WSL 2 shell** and update the distro by running this command.
 
 ```
  sudo apt-get update && sudo apt-get dist-upgrade -y
 ```
 
-* Install tools required
+* Install the necessary tools using the following command:
 
 ```
 sudo apt-get install build-essential git curl python3-minimal pkg-config
 ```
 
-* Install [Meteor](https://www.meteor.com/install).
+* Install [Meteor](https://www.meteor.com/install) with this command:
 
 ```
 curl https://install.meteor.com/ | sh
 ```
 
-{% hint style="info" %}
-Sometimes, you may need to install an older release of Meteor. Always check the `.meteor/release` file of the GitHub code repository.
+{% hint style="warning" %}
+Occasionally, you might have to install a previous Meteor release. Ensure to verify the[ `.meteor/release file`](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.meteor/release) in the GitHub code repository for guidance.
 {% endhint %}
 
 * There is no need to install `node` or `npm`, as Meteor already includes them. Confirm by running this command:
@@ -62,24 +63,17 @@ meteor npm -v
 Information on the various versions of packages needed can be found in the `package.json`
 {% endhint %}
 
-* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to any specified node version.
-
-```bash
-npm install -g n
-n 14.21.3
-node -v
-```
-
-* Install the `yarn` package manager.&#x20;
+* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine.  You can use it to switch to the [required node version](https://github.com/RocketChat/Rocket.Chat/releases) for Rocket.Chat.
+* Install the `yarn` package manager.
 
 ```
 npm install --global yarn
 ```
 
-* Fork the Rocket.Chat repository on [GitHub](https://github.com/RocketChat/Rocket.Chat). Open the WSL 2 shell and navigate to `/home/yourusername`  directory.  Then, pull the code by running this command:
+* Fork the Rocket.Chat repository on [GitHub](https://github.com/RocketChat/Rocket.Chat). Open the WSL 2 shell and navigate to `/home/yourusername` directory. Then, pull the code by running this command:
 
 ```
-git clone https://github.com/yourforkedrepo.git
+git clone https://github.com/<your-username>/Rocket.Chat
 ```
 
 {% hint style="info" %}
@@ -93,7 +87,7 @@ cd Rocket.Chat
 yarn
 ```
 
-* When completed, build and run the server by executing
+* When completed, build and run the server by executing this command:
 
 ```
 yarn build
@@ -104,7 +98,7 @@ yarn dev
 The first build can take ten or more minutes, and you may see various warnings or minor errors. Subsequent dev builds will take lesser time.
 {% endhint %}
 
-* The server will start up on port `3000` and you will see the "Server Running"  screen
+* The server will start up on port `3000` and you will see the "Server Running" screen
 
 ![](<../../../.gitbook/assets/image (23).png>)
 

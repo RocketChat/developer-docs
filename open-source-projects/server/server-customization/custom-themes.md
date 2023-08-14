@@ -1,16 +1,12 @@
 # Custom Themes
 
-Theming for Rocket.Chat is an incomplete feature and we encourage developers to contribute to [this issue](https://github.com/RocketChat/Rocket.Chat/issues/277). We'd love to hear from anyone working on themes in the [#skins-and-theming](https://open.rocket.chat/channel/skins-and-theming) channel on the open server.
+To customize the Rocket.Chat UI you can either modify the `rocketchat-theme` or `rocketchat-ui` packages directly.If you want to avoid conflicts with active development, it is recommended to create your own theme package.
 
-To customize the Rocket.Chat UI you can either modify the `rocketchat-theme` or `rocketchat-ui` packages directly. If you are keeping in sync with active development it is easier to avoid conflicts by creating your own theme package.
+### Creating a Theme
 
-## Creating a Theme
+To add theme customizations to Rocket.Chat, you can create a Meteor package with your code and add it to the package file. If you want to share your theme with others, you can publish it as a public Meteor package outside the Rocket.Chat repo. Private themes would need to be maintained on your own fork of Rocket.Chat
 
-You can add theme customizations to Rocket.Chat by just creating a Meteor package with your code, then adding it to the package file.
-
-Private themes would need to be maintained on your own fork of Rocket.Chat, but public themes can be published as a Meteor package outside the Rocket.Chat repo.
-
-The minimum contents for a theme package would be a `package.js` file containing the description, e.g:
+&#x20;The minimum contents for a theme package is a `package.js` file containing the description below:
 
 ```javascript
 Package.describe({
@@ -21,7 +17,7 @@ Package.describe({
 });
 ```
 
-Then include dependent packages and your custom theme files. e.g:
+Then, include dependent packages and your custom theme files like this:
 
 ```javascript
 Package.onUse(function(api) {
@@ -34,9 +30,9 @@ Package.onUse(function(api) {
     api.use('templating', 'client');
 ```
 
-## Adding Stylesheets
+### Adding Stylesheets
 
-The `rocketchat-theme` package has methods for including [Less](http://lesscss.org/) asset files in the build. Less files (and the server.coffee or .js file to load them) must first be included in the `package.js` manifest (within the `Package.onUse` function), e.g.:
+The `rocketchat-theme` package provides methods for including [Less](https://lesscss.org/) asset files in the build. To use these methods, first include the _Less files_ and the server.coffee or server.js file to load them in the `package.js` manifest (within the `Package.onUse` function).
 
 ```javascript
     api.addAssets([
@@ -47,17 +43,22 @@ The `rocketchat-theme` package has methods for including [Less](http://lesscss.o
     ], 'server');
 ```
 
-Then in `server.coffee`
+Then, in `server.coffee` file,&#x20;
 
 ```javascript
 RocketChat.theme.addPackageAsset -> Assets.getText 'assets/theme.less'
 ```
 
-That will read in any styles and variables from your custom less file and compile it with the rest of the css.
+That will read in any styles and variables from your custom less file and compile it with the rest of the CSS.
 
-## Adding and Modifying Templates
+### Adding and Modifying Templates
 
-A suggested approach for including custom templates and helpers is to use the `'aldeed:template-extension'` package (include it in your main package file). In your package manifest, declare use of the `template-extension` package, then add your template files to Meteor `api.addFiles([myfiles], 'client')`.
+Here's an example of replacing the unauthorized page template:
+
+An effective method to add your own templates and helpers is by utilizing the `'aldeed:template-extension`' package. Simply include it in your main package file.&#x20;
+
+* In your package's manifest,  declare use of the `template-extension` package.&#x20;
+* Next, add your template files into Meteor using the command `api.addFiles([myfiles], 'client')`.
 
 Here's an example of replacing the unauthorized page template:
 
@@ -81,4 +82,10 @@ Here's an example of replacing the unauthorized page template:
 Template.myNotAuthorized.replaces 'notAuthorized'
 ```
 
-See the [docs for that package](https://github.com/aldeed/meteor-template-extension) for more info on inheriting and overwriting templates and helpers.
+{% hint style="info" %}
+For more detailed information about inheriting and overwriting templates and helpers, see the [official documentation](https://github.com/longshotlabs/meteor-template-extension) for meteor-template-extension.
+{% endhint %}
+
+{% hint style="info" %}
+Rocket.Chat's theming feature is not fully developed, and developers are highly encouraged to help improve it by contributing to the [related issue](https://github.com/RocketChat/Rocket.Chat/issues/277). If you're working on themes, you're welcome to share your progress in the[#skins-and-theming](https://open.rocket.chat/channel/skins-and-theming) channel on the open server.
+{% endhint %}

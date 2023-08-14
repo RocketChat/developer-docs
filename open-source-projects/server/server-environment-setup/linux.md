@@ -1,12 +1,12 @@
 # Linux
 
-You can run Rocket.Chat for development on a clean Linux machine or Virtual Machine.
+You can set up the Rocket.Chat development server on either a Linux device or a virtual machine with Linux installed.
 
 ## Requirements
 
-* A minimum of 12GB RAM to build when running a development environment. For deployment and non-development purposes, 2GB RAM is enough.
-* No need to have `nodejs` or `mongo` pre-installed. Start with a clean system.
-* Setup using a regular user account(not root). Running with `sudo` can mess up file permissions.
+* At least 12GB RAM is required for building in a development environment. For deployment and other uses, 2GB RAM suffices.
+* There's no requirement to have pre-installed Nodejs or Mongo. Begin with a fresh system.
+* Utilize a standard user account (not root) for setup. Avoid using sudo to prevent potential file permission issues.
 
 {% hint style="info" %}
 You may notice build WARNINGs related to _peer dependencies_ or other transitive dependencies. They are typically safe to ignore unless you are coding the required features or modules.
@@ -46,7 +46,7 @@ sudo apt-get install software-properties-common
 
 </details>
 
-* Install [Meteor](https://www.meteor.com/install).
+* Install [Meteor](https://www.meteor.com/install) with this command:
 
 ```
 curl https://install.meteor.com/ | sh
@@ -59,6 +59,14 @@ meteor node -v
 meteor npm -v
 ```
 
+* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to the [required node version](https://github.com/RocketChat/Rocket.Chat/releases) for Rocket.Chat.
+
+```bash
+npm install -g n
+n 14.21.3
+node -v
+```
+
 * Install the `yarn` package manager.&#x20;
 
 ```bash
@@ -69,7 +77,7 @@ npm install --global yarn
 Information on the various versions of packages needed can be found in the `package.json`
 {% endhint %}
 
-* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to any specified node version.
+* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to any specified node version. Here is an example of switching node versions with the [n node package manager](https://www.npmjs.com/package/n) :
 
 ```bash
 npm install -g n
@@ -77,21 +85,25 @@ n 14.21.1
 node -v
 ```
 
-* Fork the [Rocket.Chat repository on GitHub](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory.
+{% hint style="warning" %}
+Check the [release notes](https://github.com/RocketChat/Rocket.Chat/releases) for the compatible Node.js version and install it accordingly.
+{% endhint %}
+
+* Fork the [Rocket.Chat GitHub repository GitHub](https://github.com/RocketChat/Rocket.Chat), clone it to your local system navigate into the directory.
 
 ```bash
 git clone https://github.com/<your-username>/Rocket.Chat
 cd Rocket.Chat
 ```
 
-* Navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file
+* Navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file with these commands:
 
 ```bash
 cd apps/meteor
 meteor --version
 ```
 
-* Navigate back into the project root directory and install packages by simply running the following commands:
+* Navigate back to the project root directory and install the required packages by running the following commands:
 
 <pre class="language-bash"><code class="lang-bash">cd ../../
 <strong>yarn
@@ -115,18 +127,16 @@ A successful running server will open up port `3000` on your machine where you c
 
 ### Editing Rocket.Chat Files on Linux
 
-To edit Rocket.Chat files,
+For editing Rocket.Chat files,
 
-* Open the cloned repository folder on your IDE.
-* When you make changes to Rocket.Chat the server will automatically rebuild.
-* Sometimes changes can shut down the server. If that happens, restart the server again.
+1. Launch your IDE and navigate to the cloned repository folder.
+2. Any modifications to Rocket.Chat trigger an automatic server rebuild.
+3. Occasionally, changes might cause the server to shut down. In such cases, simply restart the server to continue.
 
 {% hint style="info" %}
-The Rocket.Chat code base is vast. You may need to increase this [system parameter ](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md)on your operating system for the files-change watcher to operate efficiently.
+Given the extensive Rocket.Chat codebase, it's neccessary to adjust the [system parameter](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md) on your OS to optimize the efficiency of the file-change watcher.
 {% endhint %}
 
-## References
+**References**
 
-* [Supporting SSL for Mobile Apps](../../mobile-app/supporting-ssl-for-development-on-rocket.chat.md)
-* [Development Troubleshooting](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/troubleshooting.md)
-* [Deployment Methods](linux.md)
+* [Development Environment Troubleshooting](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/troubleshooting.md)

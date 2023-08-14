@@ -1,21 +1,21 @@
 # Server
 
-This brief overview introduces the Rocket.Chat Server, a core component of the larger Rocket.Chat Open Source Project ecosystem. As a secure and scalable communication platform, Rocket.Chat delivers robust features. In the interest of fostering a comprehensive understanding of the platform, the focus here will be on the server-side functionalities, which form the backbone of Rocket.Chat's extensive offering.
+The Rocket.Chat Server is a secure and scalable communication platform among Rocket.Chat open source projects. It is responsible for providing the core functionality of Rocket.Chat. It is built using modern web technologies, such as Node.js, MongoDB, and Meteor, and is designed to be scalable and secure for organizations of various sizes. This guide focuses on the essential server-side features that power many Rocket.Chat capabilities.&#x20;
 
-It is built using modern web technologies, including Node.js, MongoDB, and Meteor, and is designed to be scalable and secure, making it suitable for organizations of all sizes.
+[Rocket.Chat clients](https://docs.rocket.chat/setup-and-configure/installing-client-apps) use **APIs** and **websockets** to communicate with the server in real-time, giving users a seamless experience. It stores data in MongoDB, a NoSQL database. Files can be stored locally on the server or on a network service like Amazon S3. For more information on how these components interact, please see [architecture-and-components.md](../../getting-started/architecture-and-components.md "mention"). Rocket.Chat also supports various deployment methods including Docker and AWS.&#x20;
 
-[Rocket.Chat clients](https://docs.rocket.chat/deploy/installing-client-apps) communicate with the server mainly through APIs and WebSocket connections, thus allowing for real-time communication and updates, providing a seamless experience for users.
+{% hint style="info" %}
+For detailed information on deployments, please refer to the [official deployment guide](https://docs.rocket.chat/deploy/prepare-for-your-deployment).
+{% endhint %}
 
-Data is stored in MongoDB, and files are stored locally on the system running the server or over network services like Amazon S3. You can obtain a detailed view of all these components and understand how they interact in [architecture-and-components.md](../../getting-started/architecture-and-components.md "mention")
+&#x20;The Rocket.Chat server code can be found on [GitHub](https://github.com/RocketChat/Rocket.Chat).
 
-The Rocket.Chat Server is open source, highly customizable, and extensible, allowing developers to contribute and develop custom and new functionalities. Learn more about contributing here [participate-in-rocket.chat-development](../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/ "mention").
+{% hint style="info" %}
+See the [repository-structure.md](repository-structure.md "mention") guide to dive deeper into the code structure.
+{% endhint %}
 
-It can be compiled and deployed on-premise or in the cloud, allowing organizations to choose the hosting environment that best meets their needs. Get more information about deployment [here](https://docs.rocket.chat/deploy/prepare-for-your-deployment).
+The Rocket.Chat Server is an open-source, highly customizable, and extensible platform that allows developers to contribute and develop custom and new functionalities. With a deep understanding of the server's role and capabilities, developers can more effectively contribute to and utilize Rocket.Chat's services. This knowledge will remain valuable as the project evolves, ensuring that all stakeholders can fully participate in and benefit from this remarkable open-source platform.
 
-The server code can be found on this repository
-
-{% embed url="https://github.com/RocketChat/Rocket.Chat" %}
-
-Rocket.Chat Server plays a crucial role in the functioning of the comprehensive communication platform. With a keen understanding of the server's role and capabilities, developers can more effectively contribute to and utilize Rocket.Chat's services. As the project evolves, this knowledge remains invaluable, ensuring all stakeholders can fully engage with and benefit from this remarkable open-source platform.&#x20;
-
-Get familiar with the  [repository-structure.md](repository-structure.md "mention").
+{% hint style="info" %}
+To learn more about contributing to Rocket.Chat, see [participate-in-rocket.chat-development](../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/ "mention").
+{% endhint %}

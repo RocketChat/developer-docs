@@ -1,16 +1,15 @@
 # Repository Structure
 
-Understanding the structure of software repositories is essential for both seasoned developers and beginners alike. This guide will focus on the Rocket.Chat Server, a part of the Rocket.Chat Open Source Project suite. Its server-side functionality is a key aspect of the ecosystem, hence understanding the [Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat) structure is integral to understanding the platform as a whole.
+Gaining a deep understanding of our server repository's structure is a foundational requirement for developers. In this guide, you'll gain insight into the organized framework of the Rocket.Chat server repository, facilitating your navigation and understanding of its key components.
 
-Rocket.Chat Server is built with several principles in mind: readability, maintainability, and the ability to handle high-volume, real-time data. It adheres to a [clean architectural pattern](../../getting-started/architecture-and-components.md) which ensures that it remains modular and easy to comprehend. The server's repository structure is constructed to compartmentalize the software's various functionalities and processes, making it accessible to developers of different expertise levels. As we delve into this guide, we will examine the structure in greater depth, focusing on the different directories and their functionalities, as well as the underlying principles that guide the project's organization.
+The Rocket.Chat Server embodies readability, maintainability, and real-time data handling. Its[ architectural design](../../getting-started/architecture-and-components.md) prioritizes modularity and clarity, reflected in the repository structure that segregates functions for diverse developer levels. This guide delves into this structure, exploring directories, functionalities, and organizational principles.
 
-Rocket.Chat uses a [monorepo](https://github.com/RocketChat/fuselage/wiki#fuselage-monorepo) to house several pieces of required code and packages needed by various Rocket.Chat projects like the [Apps Engine](https://github.com/RocketChat/Rocket.Chat.Apps-engine), [LiveChat](https://github.com/RocketChat/Rocket.Chat.Livechat), etc.
+Rocket.Chat uses a [monorepo](https://github.com/RocketChat/fuselage/wiki#fuselage-monorepo) to house essential code and packages required by various Rocket.Chat projects like the [Apps Engine](https://github.com/RocketChat/Rocket.Chat.Apps-engine), [LiveChat](https://github.com/RocketChat/Rocket.Chat.Livechat), etc. This makes it easier to maintain and share the code, and it allows developers to work on different projects simultaneously.
 
-This makes it easier to maintain and share the code without duplicating it.
+Rocket.Chat uses the [Meteor framework](https://www.meteor.com/) and [React](https://reactjs.org/) to build its components. You should be familiar with the [**Meteor project structure**](https://guide.meteor.com/structure.html) **and** [**React project structure**](https://reactjs.org/docs/faq-structure.html) to understand the Rocket.Chat repository structure.&#x20;
 
 {% hint style="info" %}
-* Rocket.Chat uses [Meteor framework](https://www.meteor.com/) and [React ](https://reactjs.org/)to build components. You should be familiar with those and their project structure([**Meteor project structure**](https://guide.meteor.com/structure.html), [**React project structure**](https://reactjs.org/docs/faq-structure.html)) to better understand Rocket.Chat repository structure.
-* In the nearest future, the Rocket.Chat codebase is diverting from Meteor to a more manual structure.
+&#x20;In the near future, Rocket.Chat will be moving away from Meteor to a more manual structure, which will allow it to be more flexible and scalable.
 {% endhint %}
 
 ### Directory Structure
@@ -57,43 +56,36 @@ Rocket.Chat
 │   └── ui-video-conf/
 ```
 
-#### **`apps/meteor/app/`**
+**`apps/meteor/app/`**
 
-Here you will find the various features available in Rocket.Chat. Each main folder under this directory has a **`client/`** and a **`server/`** subdirectories that hold the client and server-side code for that feature, respectively.\
-In some cases, you will find the **`lib/`** directory, which contains code that can be used by both the server and client part of the app.\
-Learn more from the [Meteor guide](https://guide.meteor.com/structure.html).
-
-{% hint style="success" %}
-New features are being added to Rocket.Chat and will not follow this legacy meteor structure under the **`apps/`**folder. It will follow a different structure, but the code in the existing structure will still be maintained.
-{% endhint %}
-
-#### **`apps/meteor/client/views/`**
-
-Where a combination of multiple components comes together in action to build a single Rocket.Chat page is seen by client-side users.
+In this directory, you'll discover a range of features offered by Rocket.Chat. Each primary folder here contains a `client/` and `server/` subdirectory, housing feature-specific code for the feature respectively. Occasionally, a lib/ directory contains code usable by both the app's server and client .&#x20;
 
 {% hint style="info" %}
-* **`apps/meteor/client/views/`**is a very good starting point for beginners to see and trace code functionality
-* The root view here can be seen in **`apps/meteor/client/views/root/AppRoot.tsx`** where execution in the front begins
+To learn more, see the  [Meteor guide](https://guide.meteor.com/structure.html).
 {% endhint %}
 
-#### **`apps/meteor/client/lib/`**
+{% hint style="warning" %}
+Rocket.Chat is incorporating new features that won't adhere to the legacy Meteor structure within the `apps/` directory. These new features will adopt a distinct structure, while the existing code structure will continue to be mantained.
+{% endhint %}
 
-A collection of objects that are reused on all of the client sides.\
-This is to:
+**`apps/meteor/client/views/`**
 
-* Limit code duplication
-* Encourage contributors to use the code that is already existing in the codebase
-* Avoid re-implementing logic or re-create functions
+When client-side users see a Rocket.Chat page, it's the result of multiple components working together. A good starting point for beginners to see how this works is the `apps/meteor/client/views/` directory, which contains all of the views for Rocket.Chat. The root view of Rocket.Chat, which is the first file that is executed when a user opens Rocket.Chat in their web browser, can be found in `apps/meteor/client/views/root/AppRoot.tsx`.
 
-#### `apps/meteor/packages/`
+**`apps/meteor/client/lib/`**
 
-Any meteor packages used within the project or customized for a specific purpose.\
-Examples include the [meteor-accounts-linkedin](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/accounts-linkedin) for Linkedin login service, [rocketchat-i18n](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n) for internationalization, etc
+It contains a collection of objects that are reused on all of the client sides. This is done to limit code duplication, encourage contributors to use the code that is already existing in the codebase, and avoid re-implementing logic or re-creating functions.
 
-#### `apps/meteor/server/methods/`
+**`apps/meteor/packages/`**
 
-Has meteor methods.
+This directory houses any meteor packages used in the project or r customized for a specific purpose. Notable examples include the [meteor-accounts-linkedin](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/accounts-linkedin) for Linkedin login service, [rocketchat-i18n](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n) for internationalization, etc.
 
-#### `apps/meteor/server/lib/`
+**`apps/meteor/server/methods/`**
 
-Has general-purpose functions relating to server-side code.
+All meteor methods are located here.
+
+**`apps/meteor/server/lib/`**
+
+The `apps/meteor/server/lib/` directory holds versatile functions related to server-side code.
+
+Now that you are familiar with the repository structure, you can confidently continue with your [server-environment-setup](server-environment-setup/ "mention").

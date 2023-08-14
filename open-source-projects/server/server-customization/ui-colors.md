@@ -1,24 +1,20 @@
 # UI Colors
 
+In Rocket.Chat, you can customize colors by adjusting [layout settings](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/layout) in workspace administration. Developers are encouraged to use defined variables in their work instead of hard coding colors. This allows site owners to change the color scheme with consistent results.&#x20;
+
 {% hint style="info" %}
-The UI is in active development. Component refactoring will change and hopefully improve the use of colors. The immediate goal is to consolidate use of color and styles, before moving forward to a consistent style guide for Rocket.Chat.
+See the [theme variables file](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/app/theme/client/imports/general) for the currently available color settings.&#x20;
 {% endhint %}
 
-[Most](https://github.com/RocketChat/Rocket.Chat/issues/4091) use of color in Rocket.Chat can be customised by changing the color settings under **Administration** > **Layout** > **Colors**. We encourage developers to use the defined variables in their contributions (instead of hard-coding colors), to allow site owners to change the color scheme with consistent results.
-
-See the [theme variables file](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/app/theme/client/imports/general) for the currently available color settings. All color settings are available to `Less files` as variables, as long as the Less files were compiled using the `addPackageAsset` method of `rocketchat-theme`.
+These settings are accessible as variables in `Less files`, provided the files were compiled using the `addPackageAsset` method of `rocketchat-theme`.
 
 ## Color Scheme
 
-The Rocket.Chat color scheme consists of three groups of color settings, [Alpha](ui-colors.md#alpha-colors), [Major](ui-colors.md#major-colors), and [Minor](ui-colors.md#minor-colors) Colors.
-
-Some further variations of these colors are created in Less and not exposed to settings.
-
-The naming of color settings/variables is not related to any specific component, the names reflect the visual hierarchy that makes it obvious and easy to carry forward consistent color usage in newly contributed components and theme development.
+The Rocket.Chat color scheme comprises three sets of color settings:  [Alpha](ui-colors.md#alpha-colors), [Major](ui-colors.md#major-colors), and [Minor](ui-colors.md#minor-colors) Colors. Additional variations are created in Less but aren't exposed to settings. The naming of these settings isn't tied to specific components; instead, they reflect a visual hierarchy that promotes consistent color use in new components and theme development.
 
 ### Alpha Colors
 
-Semi-transparent black or white, used in components to shade/tint the background color, e.g. to indicate a selected or disabled state. The use of alpha colors allows site owners to easily change color scheme without defining every variation for every state of a component.
+Semi-transparent black or white used in components to add shading or tinting to the background color. This is useful for denoting selected or disabled states. The use of these semi-transparent colors allows site owners to easily change color scheme without defining variations for every component state individually.
 
 * transparent-dark
 * transparent-darker
@@ -31,7 +27,11 @@ Semi-transparent black or white, used in components to shade/tint the background
 
 ### Major Colors
 
-The primary palette of the app. Contributions and modifications to components should make use of these colors.
+The primary palette of the app.&#x20;
+
+{% hint style="info" %}
+Contributions and modifications to components should make use of these colors.
+{% endhint %}
 
 * content-background-color **#FFFFFF**
 * primary-background-color **#04436A**
@@ -49,7 +49,7 @@ The primary palette of the app. Contributions and modifications to components sh
 
 ### Minor Colors
 
-A set of minor colors for specific use cases will inherit from the major colors by default but can be used by admins who want more granular control over the color scheme.
+Minor colors designated for specific use cases will inherently derive their properties from the major colors as the default behavior. However, administrators seeking more intricate management of the color scheme can opt to utilize these minor colors.
 
 * tertiary-background-color _defaults to component-color_
 * tertiary-font-color _defaults to transparent-light_
@@ -63,9 +63,13 @@ A set of minor colors for specific use cases will inherit from the major colors 
 
 ### Dark UI
 
-The computed colors allow owners to choose a **dark UI** with appropriate contrast. e.g. in a light UI, the disabled state might darken an element, but on a dark UI, it should be lightened. The mixins achieve this by mixing the color with a contrast of the background color instead of using darken/lighten. See [this example](https://codepen.io/owlandfox/pen/EyJROO) of form input states that dynamically contrast to both dark and light backgrounds.
+Computed colors enable owners to select a dark user interface (UI) with appropriate contrast. For instance, in a light UI, the disabled state might darken an element, while in a dark UI, it should lighten. This is achieved through mixins that blend the color with the background's contrast, rather than using darkening or lightening functions.&#x20;
 
-Developers are encouraged to use mixins and computed colors in contributions instead of hard-coding variations, to maintain consistent balance and contrasts of colors regardless of how the scheme settings may be changed by owners.
+{% hint style="success" %}
+See [this example](https://codepen.io/owlandfox/pen/EyJROO) of form input states that dynamically contrast to both dark and light backgrounds.
+{% endhint %}
+
+Developers are advised to incorporate mixins and computed colors in their contributions, instead of hard-coding variations. This ensures a consistent balance and contrast of colors, irrespective of how the scheme settings may be changed by owners.
 
 ## Default Colors
 
@@ -90,3 +94,7 @@ These examples show the implementation of the default color scheme with the main
 ### Settings Page
 
 ![Settings page example colors](../../../.gitbook/assets/settings-page.png)
+
+{% hint style="info" %}
+The user interface (UI) is currently undergoing active development. Component refactoring is anticipated to alter and, optimistically, enhance the use of colors. The immediate objective is to centralize the application of colors and styles, laying the groundwork for the subsequent creation of a unified style guide for Rocket.Chat.
+{% endhint %}
