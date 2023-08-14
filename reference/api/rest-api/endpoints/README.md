@@ -749,6 +749,16 @@ You can get and update the settings via the REST API, only if you have permissio
 | `/api/v1/downloadPendingAvata`      | Download pending avatars       | [Link](settings/import-endpoints/download-pending-avatars.md)      |
 | `/api/v1/getCurrentImportOperation` | Gets current import operations | [Link](settings/import-endpoints/get-current-import-operations.md) |
 
+### Bulk User Import
+
+| Url                       | Short Description                                                                       | Details Page                                             |
+| ------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `/api/v1/import.addUsers` | Adds user data to the import staging area.                                              | [Link](settings/bulk-user-import-endpoints/add-users.md) |
+| `/api/v1/import.clear`    | Abort any import operation currently in progress                                        | [Link](settings/bulk-user-import-endpoints/clear.md)     |
+| `/api/v1/import.run`      | Process the data from the current import operation and create  the users on Rocket.Chat | [Link](settings/bulk-user-import-endpoints/run.md)       |
+| `/api/v1/import.new`      | Creates a new import operation.                                                         | [Link](settings/bulk-user-import-endpoints/new.md)       |
+| `/api/v1/import.status`   | Get the status of the current import operation                                          | [Link](settings/bulk-user-import-endpoints/status.md)    |
+
 ### Instances
 
 | URL                     | Short Description   | Details Page                                        |
