@@ -3,35 +3,35 @@
 ## General setup
 
 * Open [RocketChatRN.xcworkspace](https://github.com/RocketChat/Rocket.Chat.ReactNative/tree/single-server/ios/RocketChatRN.xcworkspace) on Xcode (13.0 or newer)
-* On the General tab, select “RocketChatRN” and change Display Name, Bundle Identifier, Version and Build
+* On the General tab, select “**RocketChatRN**” and change **Display Name**, **Bundle Identifier**, **Version,** and **Build**.
 
 {% hint style="info" %}
-As explained in the [Important section](https://developer.rocket.chat/mobile-app/mobile-app-white-labelling#important), we have two targets and we're going to cover the default one on this doc, which is the Experimental app.
+As explained[ earlier](../../open-source-projects/mobile-app/mobile-app-white-labelling/#requirements), the repo contains targets/build flavors to build our **experimental** and **official** apps. This guide covers the default one, which is the **Experimental app**.
 {% endhint %}
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.41.png)
 
-* Select “ShareRocketChatRN” and change the same properties
-  * `Display Name` and `Bundle Identifier` are different from the previous target
-  * `Version` and `Build` must be the same on all targets
+* Select “**ShareRocketChatRN**” and change the same properties
+  * `Display Name` and `Bundle Identifier` are different from the previous target.
+  * `Version` and `Build` must be the same on all targets.
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.50.png)
 
-* Select “NotificationService” and change the same properties
-  * `Display Name` and `Bundle Identifier` are different from the previous target
-  * `Version` and `Build` must be the same on all targets
+* Select “**NotificationService**” and change the same properties
+  * `Display Name` and `Bundle Identifier` are different from the previous target.
+  * `Version` and `Build` must be the same on all targets.
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.42.59.png)
 
-* On Signing and Capabilities, check “Automatically manage signing”, select your app group and add a keychain group
+* On Signing and Capabilities, check “**Automatically manage signing**”, select your app group, and add a keychain group.
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.48.png)
 
-* Select “ShareRocketChatRN”, check “Automatically manage signing”, select your app group and add the same keychain group
+* Select “**ShareRocketChatRN**”, check “**Automatically manage signing**”, select your app group, and add the same keychain group.
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.33.png)
 
-* Select “NotificationService”, check “Automatically manage signing”, select your app group and add the same keychain group
+* Select “**NotificationServic**e”, check **“Automatically manage signing**”, select your app group and add the same keychain group.
 
 ![](../../.gitbook/assets/screen-shot-2020-10-05-at-16.39.58.png)
 
@@ -77,16 +77,16 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 
 ## Generating iOS app on Firebase
 
-* Visit the project overview on [https://console.firebase.google.com](https://console.firebase.google.com)
-* Click on the gear icon and then “Project settings”
+* Visit the project overview on your[ Firebase Console](https://console.firebase.google.com).
+* &#x20;Navigate to **Settings > Project settings.**
 
 ![](https://lh6.googleusercontent.com/W9wKhlYZOFc\_f9G7CEpOM\_87qw\_8dvxE08nscN\_QIskcTW9ImOSqVckJewhp2j-f5wnClxkE8EaAszD7Z1rLFDbtfc56dXH-S\_aEou6HLwcEA\_rEDDIQTyEy4d1dtPwxXVxVu-JO)
 
-* On “General” tab, click on “iOS” button under “Your apps” section
+* On “**General**” tab, click on “**iOS**” button under “Your apps” section
 
 ![](https://lh3.googleusercontent.com/yWR4dImy-l6-B79Xtw1VR1bOOeKFFS05h9yh3dsulbv6pbr1dLljd0KgxNn3MpzInUZF6xtw\_KAOfYVZKXuqzVf-ybavOTtJ92tX-N\_h7QhHi6X0AA3qZuqsenUnDHNvnqwmTvpX)
 
-* Enter your bundle ID and then “Register app”
+* Enter your **bundle ID** and then “**Register app**”
 
 ![](https://lh6.googleusercontent.com/64SZsPUtnHS1xw3UPvG0Pxd4ljeJ4r42KQWqhrOn-aYQQMvqaH7hXH07T9aaWv\_ImTRnDMm0QQdst0hVnIFtAz6cd-I8Tr8K9YDpld6mcNYc6Q6-5nsRlXqQibdnJSBVrHjtXrzE)
 
@@ -133,18 +133,18 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 ### Creating an App Identifier for our Share Extension
 
 * Share Extension is a version of the app that opens when you share data from another app to Rocket.Chat. For example, share a photo from the gallery.
-* Visit [https://developer.apple.com/account/resources/identifiers/list](https://developer.apple.com/account/resources/identifiers/list)
-* Click to add Identifier
-* Select App IDs and Continue
+* Visit the[ Resources Identifier List](https://developer.apple.com/account/resources/identifiers/list).
+* Click to add Identifier.
+* Select **App IDs** and Continue.
 
 ![](https://lh5.googleusercontent.com/fBgW0bm87EUIxW6yJwWIA3qE96RRXXvesYyrGuzQ63OuXpJmPsEtYgnFFaVsuR0\_ho3xorv1rE\_UuxNlhHj9ewYyk57fENVQykRtn-Zpm8rKmHIBi9r9lmAsNH6Fhxx8wCZfOq4b)
 
-* Add description and Bundle ID
+* Add a **description** and **Bundle ID**.
 
 ![](https://lh5.googleusercontent.com/KJWk8QgL8lVOczT4DMaTrPvZrLsqwyJSguCuH9\_\_NPDLOx\_s0CojrUE5COtAU\_frKHVHbDmoyRIrUmzMB9m28g9g4v7E87365bPZuCULfyHgGLCnLJryhbfXJA9XzLoQ0TXIFCSP)
 
 * This time, select only App Groups under Capabilities
-* Click “Continue” and then “Register”
+* Click “**Continue**” and then “**Register**”
 
 ### Create an App Identifier for our Notification Service
 
@@ -152,9 +152,9 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 
 ### Creating an App Group
 
-* Visit [https://developer.apple.com/account/resources/identifiers/list](https://developer.apple.com/account/resources/identifiers/list)
-* Click to add Identifier
-* Select App Groups and Continue
+* Visit the[ Resources Identifier List](https://developer.apple.com/account/resources/identifiers/list).
+* Click to add Identifier.
+* Select **App IDs** and Continue.
 
 ![](https://lh6.googleusercontent.com/9HIEqXPESh2ovfCnnGsq40A9cvrUYdrRZGMnP9j71Ssxoz5xBfdkoaD-D7Gpds6RJz3psb-eze8kaKUfrM6IZdK1e\_9Zx8jKAI02\_mD74JGhCEA4exVI6Dp9IJImI5pdFQvfn4Kh)
 
@@ -166,35 +166,35 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 
 ### Applying App Group
 
-* Visit [https://developer.apple.com/account/resources/identifiers/list](https://developer.apple.com/account/resources/identifiers/list)
+* Visit the[ Resources Identifier List](https://developer.apple.com/account/resources/identifiers/list).
 * Click on the first identifier you created
-* On “App Groups”, click “Configure”
-* Select the App Group you created and click “Continue”
-* Click “Save”
-* Repeat these steps for the second identifier you created for the Share Extension and NotificationService
+* On “**App Groups**”, click “**Configure**”
+* Select the App Group you created and click “**Continue”**
+* Click “**Save**”
+* Repeat these steps for the second identifier you created for the Share Extension and notification service.
 
 ### Creating Push Notifications certificates
 
-* Visit [https://developer.apple.com/account/resources/identifiers/list](https://developer.apple.com/account/resources/identifiers/list)
+* Visit the[ Resources Identifier List](https://developer.apple.com/account/resources/identifiers/list).
 * Click on the first identifier you created
-* On “Push Notifications”, click “Configure”
+* On “**Push Notifications**”, click “Configure”
 
 ![](../../.gitbook/assets/30.png)
 
 #### Development SSL Certificate
 
 * On “Development SSL Certificate”, click “Create Certificate”
-* Follow Apple’s tutorial to generate a Certificate Signing Request: [https://help.apple.com/developer-account/#/devbfa00fef7](https://help.apple.com/developer-account/#/devbfa00fef7)
+* Follow the [official tutorial](https://help.apple.com/developer-account/#/devbfa00fef7) to generate a Certificate Signing Request.
 * Select the certificate you created and click “Continue”
 
 ![](https://lh4.googleusercontent.com/pv8BFR0k34C4G72y1-KxqgHmKbTMN59gCI2p2NbxevJNG7TtW2G3fpPhYjds-tSnbLCEdB9xj6N5P4XCxtJwaKAJSP2diMoP8jp3AN-pdIWlYfcaIDsVabzq1qvQ8aUBcAzOWPxn)
 
-* Download the certificate and install it on your machine (follow the instructions on the screen)
+* Download the certificate and proceed to install it on your machine as per the on-screen instructions.
 
 ![](https://lh6.googleusercontent.com/bxWWaArRsUZ3XrQ3s5ldGTwuLjwc9BhqvEOODJWTe8ep5rKdfqCVMWeZF0ZBg0oWS69Uwr\_0WBApU9oLMZdqiG8G\_DX7UEqqsjE\_OAsjPyIxXKSNMpjFGJgVf6H7GUUzArkmCBAP)
 
-* After installing it, “Keychain Access” should have opened automatically on your Mac
-* Export the certificate to generate a .p12 file
+* After installing it, “Keychain Access” should have opened automatically on your Mac.
+* Export the certificate to generate a .p12 file.
 
 ![](https://lh4.googleusercontent.com/QXJ01OEmH9V67hw\_pphtNyuVL25iLu3H1335ZBt6L8yvQQZU4NkllRYcBFSushRZk1IzY1kC0J62POYWg0XoeSmdolQ2d-g4NnD2Y4JlEdoVQXF6RRoRNoBZuRZBWAfsqZy334LN)
 
@@ -203,12 +203,12 @@ As explained in the [Important section](https://developer.rocket.chat/mobile-app
 #### Production SSL Certificate
 
 * On “Production SSL Certificate” click “Create Certificate”
-* Follow Apple’s tutorial to generate a Certificate Signing Request: [https://help.apple.com/developer-account/#/devbfa00fef7](https://help.apple.com/developer-account/#/devbfa00fef7)
+* Follow the [official tutorial](https://help.apple.com/developer-account/#/devbfa00fef7) to generate a Certificate Signing Request.
 * Select the certificate you created and click “Continue”
 
 ![](https://lh5.googleusercontent.com/bdlcvworJPKW1iUzy3G\_wAASYOILEpCWDkI7BRdl7uk\_JD0FqK7n-\_M7rOY-Nd194IkU0KbaGjRRR2Zxf93xYyxUqW129t7lDaZErzqQzhYriYVxYn2qPPFjA3mcnN6YCM6zOqcu)
 
-* Download the certificate and install it on your machine (follow the instructions on the screen)
+* Download the certificate and proceed to install it on your machine as per the on-screen instructions.
 
 ![](https://lh3.googleusercontent.com/qEWMSoSAlC8ETDC3sVKOsbNo5bM34ZbSrKRavq\_XP\_b2KdsUaC1H8NCUfE-cAF3k-JAxEk4pyWk6S-NEoPCKcTA56IwcETJiMgQK2sRvpuF\_kzaWBrDTEF1y0Lz6ewzUDbgfj6I1)
 

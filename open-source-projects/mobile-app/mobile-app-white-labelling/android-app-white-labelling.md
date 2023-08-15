@@ -29,7 +29,7 @@
 
 ![](<../../../.gitbook/assets/image (174).png>)
 
-## Generate Upload Key
+### Generate Upload Key
 
 To generate the Keystore for verifying your app on Google Play,
 
@@ -63,9 +63,9 @@ To learn more about generating an upload key in ReactNative, see the [official d
 
 ![](<../../../.gitbook/assets/image (33).png>)
 
-## Running the app
+### Running the app
 
-To run the app, execute these commands:&#x20;
+* To run the app, execute these commands:&#x20;
 
 ```
 yarn
@@ -73,7 +73,11 @@ yarn
 yarn android-whitelabel <YOURAPPID>
 ```
 
-* For example, the app created on this document would use `yarn android-whitelabel chat.rocket.whitelabel`
+For example, the app created on this document would use&#x20;
+
+```
+yarn android-whitelabel chat.rocket.whitelabel
+```
 
 {% hint style="info" %}
 This script uses `experimentalPlayDebug` build flavor. When you build your app on release mode, use `experimentalPlayRelease.` See the [official documentation](https://developer.android.com/studio/build/build-variants) for more info.

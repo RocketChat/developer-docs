@@ -72,7 +72,7 @@
   * [Mobile App White Labelling](open-source-projects/mobile-app/mobile-app-white-labelling/README.md)
     * [iOS App White Labelling](mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
     * [Android App White Labelling](open-source-projects/mobile-app/mobile-app-white-labelling/android-app-white-labelling.md)
-    * [Configuring Push Notifications](open-source-projects/mobile-app/mobile-app-white-labelling/configuring-push-notifications.md)
+  * [Configuring Push Notifications](open-source-projects/mobile-app/configuring-push-notifications.md)
   * [Mobile App FAQs](open-source-projects/mobile-app/mobile-app-faqs.md)
 
 ## Chat Engine

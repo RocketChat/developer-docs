@@ -16,14 +16,14 @@ You can manually configure push notifications to your customized App build witho
 
 ## Configuring iOS
 
-* Ensure you have done "Creating Push Notifications certificates”.
+* Ensure you have done "**Creating Push Notifications certificates**”.
 * In your terminal, go to the folder which contains your push files (CSR, .cer, .p12).
 
 #### Generating PEM files (Development)
 
 To generate PEM files for a development environment,
 
-* Run these commands:
+* Run the following commands:
 
 <pre><code>openssl x509 -in aps_development.cer -inform der -out DevPushCert.pem
 <strong>
@@ -36,7 +36,7 @@ To generate PEM files for a development environment,
 
 To generate PEM files for a production environment,
 
-* Run these commands:
+* Run the following commands::
 
 ```
 openssl x509 -in aps.cer -inform der -out PushCert.pem
@@ -48,7 +48,7 @@ openssl pkcs12 -nocerts -out PushKey.pem -in yourP12File.p12
 
 #### Copying PEM files to Rocket.Chat
 
-* Copy the contents of your development PEM files and password into APN Dev Key, APN Dev Cert, and APN Dev Passphrase on your **Push > Certificates and Keys** workspace settings.
+* Copy the contents of your development PEM files and password into **APN Dev Key**, **APN Dev Cer**t, and **APN Dev Passphras**e on your **Push > Certificates and Keys** workspace settings.
 * Copy the contents of your production PEM files and password into **APN Key, APN Cert, and APN Passphrase** on your  **Push > Certificates and Keys .**
 * Get the content of your PEM files using `cat` by running this command:
 
@@ -58,7 +58,7 @@ cat PushKey.pem
 
 * Save and restart your server.
 * Log into the server as the same user on your mobile device and close it (it won’t receive push notification if it’s open).
-* Navigate to  **Administration > Workspace > Settings** > **Push** and click o  the **Send a test push to my user** button**.**
+* Navigate to  **Administration > Workspace > Settings** > **Push** and click on  the **Send a test push to my user** button**.**
 
 ## Notification Workflow
 

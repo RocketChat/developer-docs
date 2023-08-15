@@ -14,7 +14,7 @@ Explore other possible reasons for not receiving push notifications on our [work
 
 <summary><strong>Will</strong> <strong>Rocket.Chat</strong> <strong>push notification gateway work on my Whitelabel app?</strong></summary>
 
-No, Rocket.Chat gateway works only for Rocket.Chat apps on the stores. You need to [configure push notification](mobile-app-white-labelling/configuring-push-notifications.md) on your server.
+No, Rocket.Chat gateway works only for Rocket.Chat apps on the stores. You need to [configure push notification](configuring-push-notifications.md) on your server.
 
 </details>
 
@@ -30,7 +30,7 @@ Yes! You need intermediate iOS and Android experience to build and upload your a
 
 <summary>Why is Bugsnag required to build my white-label app?</summary>
 
-Every app should contain some level of error tracking so you can find issues happening and fix them. If you find any bugs in your app built from the source, you can contribute back to the community or open a new issue on our [GitHub Repository](https://github.com/RocketChat/Rocket.Chat.ReactNative/), and we can fix them on an upcoming version of the app.&#x20;
+Every app should contain some level of error tracking so you can find issues happening and fix them. If you find any bugs in your app built from the source, you can contribute back to the community or open a new issue on our [GitHub Repository](https://github.com/RocketChat/Rocket.Chat.ReactNative/), and we can fix them on an upcoming version of the app.
 
 A bug might be caused during the white-label process, so awareness is essential. If you know these risks and want to remove Bugsnag from your app, you can follow their [installation guide](https://docs.bugsnag.com/platforms/react-native/react-native/#installation-and-configuration) but undo everything. Additionally, if you think we should remove the Bugsnag dependency from our project, let us know by [filing an issue](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues/new), and we're happy to discuss it with you further!
 
