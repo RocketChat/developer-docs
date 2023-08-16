@@ -9,7 +9,7 @@ Thank you for your interest in contributing to Rocket.Chat documentation. Here's
 1. **Finding a Task**: Locate an issue you'd like to work on from our issues list for [user documentation](https://github.com/RocketChat/docs/issues) or [developer documentation](https://github.com/RocketChat/developer-docs/issues) and comment with your interest. We'll add an **In Progress** label.
 2. **Using a Gitbook Workspace**: Set up a Gitbook workspace and follow these steps:
    * Fork the [user docs](https://github.com/RocketChat/docs) or [developers docs](https://github.com/RocketChat/developer-docs) repository.
-   * [Create a space](https://docs.gitbook.com/getting-started/content-structure/what-is-a-space#create-a-spacehttps://docs.gitbook.com/getting-started/content-structure/what-is-a-space#create-a-space) on GitBook, and activate the [GitHub Integration](https://docs.gitbook.com/integrations/git-sync) on your fork.
+   * [Create a space](https://docs.gitbook.com/getting-started/content-structure/what-is-a-space#create-a-spacehttps://docs.gitbook.com/getting-started/content-structure/what-is-a-space#create-a-space) on GitBook, and activate the [GitHub Integration](https://docs.gitbook.com/product-tour/git-sync) on your fork.
    * Make your changes on Gitbook.
    * Create a PR on GitHub after sync.
 3. **Local Environment Setup**: Set up your local environment using this guide.

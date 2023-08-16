@@ -102,7 +102,7 @@ Back on your botpress server dashboard, do these settings to complete. This invo
 To test the integration,
 
 * Visit `http://<your Rocket.Chat server>/livechat` and start a new Live Chat conversation.
-* Optionally you can integrate the [Live Chat widget ](https://docs.rocket.chat/guides/omnichannel/livechat-widget-installation)while taking into consideration the [X-Frame-Options](https://docs.rocket.chat/guides/administration/admin-panel/settings/general)
+* Optionally you can integrate the [Live Chat widget ](https://docs.rocket.chat/use-rocket.chat/omnichannel/livechat-widget-installation)while taking into consideration the [X-Frame-Options](https://docs.rocket.chat/guides/administration/admin-panel/settings/general)
 
 When successful, you should see something like below
 

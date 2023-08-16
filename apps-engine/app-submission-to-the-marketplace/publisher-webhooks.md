@@ -6,13 +6,7 @@ A marketplace publisher can register a webhook endpoint link to receive news and
 
 **Setting Webhook during publisher registration:** During your publisher registration, you can input a link in the optional `webhook link` field.
 
-![Publisher account add webhook link](https://lh6.googleusercontent.com/EvhcOA9SiZurEjcKQMDgEED-BMD384-vN5Z1oXE5DA4uCugdZU1\_hGvAogh9d3XzFdyo8FBZWjxiZUCalCSFo1FVPtbglbsg7VG4WRVXUDmCHONW46\_si\_d5zky2\_PExe72qfZ6PM587bS9Zbg)
-
-or
-
 **For already registered publishers:** This webhook information can be added or edited on their own dashboard in the **Publisher Information** section.
-
-![](https://lh5.googleusercontent.com/F5r8gPcsS1JWEK7sVVI2QyM9jw3LeRxWZhMBOmdNkh2vTBFDkWbEG7E0IrPz9Udgik9fNyS6p1ePnNilnu\_sxcWtWXxxh\_Xoikqn6ROZ3STltyIWrTmtbw3gEiXg1\_Tp4VgKitQ2LgI0YZXk-Q)
 
 ## Publisher Webhook Payload
 
@@ -28,7 +22,7 @@ The payload when an event occurs is of this format.
 }
 ```
 
-The fields are:&#x20;
+The fields are:
 
 * **type**: The type of event. Possible events are `compile`, `adminAction` and `purchaseOrSubscription.`
 * **appName**: The name of the app the event is related to.

@@ -206,6 +206,7 @@
           * [Role Get Users In Role](reference/api/rest-api/endpoints/user-management/roles-endpoints/getusersinrole.md)
           * [Role List](reference/api/rest-api/endpoints/user-management/roles-endpoints/list.md)
           * [Role Sync](reference/api/rest-api/endpoints/user-management/roles-endpoints/sync.md)
+          * [Role Delete](reference/api/rest-api/endpoints/user-management/roles-endpoints/role-delete.md)
           * [Role Remove](reference/api/rest-api/endpoints/user-management/roles-endpoints/role-remove.md)
       * [Rooms](reference/api/rest-api/endpoints/rooms/README.md)
         * [Groups Endpoints](reference/api/rest-api/endpoints/rooms/groups-endpoints/README.md)

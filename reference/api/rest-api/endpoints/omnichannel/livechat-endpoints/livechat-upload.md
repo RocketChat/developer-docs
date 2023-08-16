@@ -111,8 +111,8 @@ Returns a success true if the file was uploaded successfully.
 Any of the following errors can occur upon the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **File type error**: Occurs when the file to be uploaded is of a type that has been blocked in the [upload settings](../omnichannel-endpoints/broken-reference/).
-* **File size error**: This happens when the file to be uploaded is larger than the maximum file size set in the [upload settings](../omnichannel-endpoints/broken-reference/).
+* **File type error**: Occurs when the file to be uploaded is of a type that has been blocked in the upload settings.
+* **File size error**: This happens when the file to be uploaded is larger than the maximum file size set in the upload settings.
 * **Invalid file**: This is seen when the upload fails for some reason.
 
 {% tabs %}

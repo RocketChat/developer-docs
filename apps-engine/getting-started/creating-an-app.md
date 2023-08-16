@@ -199,7 +199,7 @@ Now to verify that it actually is working, you need to check the logs.
 3. From the side panel, click on `Apps`.
 4.  Now you should see your `HelloWorld` app right there. Click on it.
 
-    <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
+    <img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="original">
 5.  On the right-hand side there is a three-dot button, click on it, and then from the menu click on logs.
 
     <img src="../../.gitbook/assets/image (2) (2).png" alt="" data-size="original">

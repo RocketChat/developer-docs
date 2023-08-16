@@ -32,7 +32,7 @@ Please use this as a to-do list, as they are important:
 
 * [http://www.thehacktoday.com/how-to-install-rocket-chat-make-your-own-chatting-website](http://www.thehacktoday.com/how-to-install-rocket-chat-make-your-own-chatting-website)
 * [https://sameroom.io/blog/self-hosted-team-chat-options-and-alternatives](https://sameroom.io/blog/self-hosted-team-chat-options-and-alternatives)
-* [https://snowulf.com/2015/09/25/why-slack-when-you-can-rocket-chat/](https://snowulf.com/2015/09/25/why-slack-when-you-can-rocket-chat/)
+* [https://obviate.io/2015/09/26/why-slack-when-you-can-rocket-chat/](https://obviate.io/2015/09/26/why-slack-when-you-can-rocket-chat/)
 * [https://www.rosehosting.com/blog/install-rocketchat-on-an-ubuntu-14-04-vps/](https://www.rosehosting.com/blog/install-rocketchat-on-an-ubuntu-14-04-vps/)
 * [https://thishosting.rocks/how-to-install-rocket-chat-on-ubuntu-and-use-it-on-your-wordpress/](https://thishosting.rocks/how-to-install-rocket-chat-on-ubuntu-and-use-it-on-your-wordpress/)
 * [https://linuxstans.com/install-configure-rocket-chat-centos-8/](https://linuxstans.com/install-configure-rocket-chat-centos-8/)

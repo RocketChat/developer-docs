@@ -6,7 +6,7 @@ Rocket.Chat's architecture is a comprehensive, multi-component system designed f
 
 The Enterprise Edition of Rocket.Chat is an advanced, scalable solution that extends the capabilities of the Community Edition. It is specifically designed to cater to the needs of larger organizations and complex use cases, focusing on scalability, reliability, and ease of maintenance.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Enterprise edition architecture </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Enterprise edition architecture </p></figcaption></figure>
 
 1. **Server: Rocket.Chat Monolith/Microservices**: The Enterprise Edition employs a microservices architecture, allowing multiple monolith servers or microservices to be deployed. This architecture enhances scalability, load balancing, and high availability. Each system component can be deployed and scaled independently, thereby improving the system's overall scalability and reliability. This architecture facilitates easier updates and maintenance, as individual components can be updated without affecting the entire system.
 2. **Clients**: Rocket.Chat clients provide users with an interface on the web, desktop, or mobile application, connecting with the server mainly through HTTP requests and Websockets. This multi-platform design ensures that users can access the chat application from virtually any device.
@@ -23,7 +23,7 @@ The Enterprise Edition of Rocket.Chat is an advanced, scalable solution that ext
 
 ## Rocket.Chat Community Edition Architecture
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Community edition architecture </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Community edition architecture </p></figcaption></figure>
 
 1. **Server**: The server is referred to as the Rocket.Chat Monolith, manages the logic and computation, user accounts, message storage, and communication with other components. This central processing unit interacts with all other components, ensuring the system's smooth operation.
 2. **Clients**: Rocket.Chat clients provide users with an interface on the web, desktop, or mobile application, connecting with the server mainly through HTTP requests and Websockets. This multi-platform design ensures that users can access the chat application from virtually any device.

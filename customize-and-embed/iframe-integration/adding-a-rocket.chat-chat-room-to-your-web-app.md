@@ -25,7 +25,7 @@ To enable the iframe integration setting in your Rocket.Chat server,
 <figure><img src="../../.gitbook/assets/iframe-url.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-This demo sample uses [http://localhost:3030/](http://localhost:3030/) and assumes the application is running on this port.
+This demo sample uses _http://localhost:3030/_ and assumes the application is running on port _3000_.
 {% endhint %}
 
 * Navigate to  **Administration > Workspace > Settings > General.**

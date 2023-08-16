@@ -12,9 +12,9 @@ description: >-
 
 ## Query Parameters
 
-| Argument | Example                       | Required | Description                                                                                                                                   |
-| -------- | ----------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `query`  | `{"_id":"5HmCfpoB7jp2uibTC"}` | Optional | See [Query Parameter](https://github.com/RocketChat/docs/blob/aeb4dd8de5017b7cd9c9d9367a0e2155f911ba5a/api/rest-api/query-and-fields-info.md) |
+| Argument | Example                       | Required | Description                                         |
+| -------- | ----------------------------- | -------- | --------------------------------------------------- |
+| `query`  | `{"_id":"5HmCfpoB7jp2uibTC"}` | Optional | See [Query Parameters](../../../#query-parameters). |
 
 ## Example Call
 

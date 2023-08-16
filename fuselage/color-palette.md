@@ -54,5 +54,3 @@ When working within a .scss file within the Fuselage package, you can seamlessly
 ```
 
 By incorporating the tokens provided by the `colors.scss` file, you can easily apply color styles to your components and ensure consistency with Fuselage's color palette.
-
-_See theme() function - WIP_

@@ -10,12 +10,12 @@ Key points include:
 
 1. **Language and UI Engine:** TypeScript is now the default language for projects.&#x20;
 2. **Component Library:** The [Fuselage](https://github.com/RocketChat/Rocket.Chat.Fuselage), a component library based on React, is used for Rocket.Chat UI. Check it out when contributing to the Rocket.Chat UI and feel free to contribute new components or fixes.
-3. **Best Practices:** Most of the coding standards are covered by ESLint configured at [.eslintrc](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc), and most of them came from our own [ESLint Config Package](https://github.com/RocketChat/eslint-config-rocketchat).
+3. **Best Practices:** Most of the coding standards are covered by ESLint configured at [.eslintrc](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc.json), and most of them came from our own [ESLint Config Package](https://github.com/RocketChat/eslint-config-rocketchat).
 
 Things not covered by `eslint`:
 
 * Prefer longer/descriptive variable names, e.g. `error` vs `err`, unless dealing with common record properties already shortened, e.g. `rid` and `uid`
-* Use return early pattern. [See more](https://blog.timoxley.com/post/47041269194/avoid-else-return-early)
+* Use return early pattern.
 * Prefer `Promise` over `callbacks`
 * Prefer `await` over `then/catch` (also valid for unit/e2e test callbacks)
 * Queries should be created inside models, not outside. The query description should be inside the model class.
@@ -30,7 +30,7 @@ yarn lint
 ```
 
 {% hint style="success" %}
-We provide a[ .editorconfig](https://github.com/RocketChat/Rocket.Chat/blob/develop/.editorconfig) and an [.eslintrc](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc), file that will help you to keep some standards in place.
+We provide a[ .editorconfig](https://github.com/RocketChat/Rocket.Chat/blob/develop/.editorconfig) and an [.eslintrc](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.eslintrc.json), file that will help you to keep some standards in place.
 {% endhint %}
 
 4. **Testing:** Two types of tests are run on Rocket.Chat: Unit tests and End to End tests. The major difference is that End to End tests require a Rocket.Chat instance running to execute the API and UI checks.

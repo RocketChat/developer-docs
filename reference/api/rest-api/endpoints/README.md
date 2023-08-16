@@ -24,9 +24,9 @@
 | URL                                           | Short Description                                | Details Page                                                             |
 | --------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------ |
 | `/api/v1/users.create`                        | Creates a new user                               | [Link](user-management/users-endpoints/create-user.md)                   |
-| `/api/v1/users.delete`                        | Deletes an existing user                         | [Link](user-management/users-endpoints/delete.md)                        |
-| `/api/v1/users.deleteOwnAccount`              | Deletes your own user                            | [Link](user-management/users-endpoints/deleteownaccount.md)              |
-| `/api/v1/users.getAvatar`                     | Gets the URL for a user’s avatar                 | [Link](user-management/users-endpoints/getavatar.md)                     |
+| `/api/v1/users.delete`                        | Deletes an existing user                         | [Link](user-management/users-endpoints/delete-user.md)                   |
+| `/api/v1/users.deleteOwnAccount`              | Deletes your own user                            | [Link](user-management/users-endpoints/delete-own-account.md)            |
+| `/api/v1/users.getAvatar`                     | Gets the URL for a user’s avatar                 | [Link](user-management/users-endpoints/get-avatar.md)                    |
 | `/api/v1/users.setActiveStatus`               | Sets user's active status                        | [Link](user-management/users-endpoints/set-users-status-active.md)       |
 | `/api/v1/users.deactivateIdle`                | Deactivates Idle users                           | [Link](user-management/users-endpoints/deactivate-idle-users.md)         |
 | `/api/v1/users.getPresence`                   | Gets a user's presence                           | [Link](user-management/users-endpoints/get-users-presence.md)            |
@@ -83,8 +83,8 @@
 | `/api/v1/roles.create`             | Creates a new role                                 | [Link](user-management/roles-endpoints/create.md)         |
 | `/api/v1/roles.addUserToRole`      | Edits permissions on the server                    | [Link](user-management/roles-endpoints/addusertorole.md)  |
 | `/api/v1/roles.getUsersInRole`     | Retrieves users that belong to a role              | [Link](user-management/roles-endpoints/getusersinrole.md) |
-| `/api/v1/roles.update`             | Updates an existing role in the system             | [Link](user-management/roles-endpoints/update.md)         |
-| `/api/v1/roles.delete`             | Deletes a role                                     | [Link](user-management/roles-endpoints/delete.md)         |
+| `/api/v1/roles.update`             | Updates an existing role in the system             | [Link](user-management/roles-endpoints/create-1.md)       |
+| `/api/v1/roles.delete`             | Deletes a role                                     | [Link](user-management/roles-endpoints/role-delete.md)    |
 | `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user                       | [Link](user-management/roles-endpoints/role-remove.md)    |
 
 ## Rooms
@@ -114,7 +114,7 @@
 | `/api/v1/groups.moderators`      | Lists moderators of a group                          | [Link](rooms/groups-endpoints/moderators.md)          |
 | `/api/v1/groups.members`         | Retrieves users of a private group                   | [Link](rooms/groups-endpoints/members.md)             |
 | `/api/v1/groups.messages`        | Retrieves all group messages                         | [Link](rooms/groups-endpoints/messages.md)            |
-| `/api/v1/groups.online`          | Lists online users of a group                        | [Link](rooms/groups-endpoints/online.md)              |
+| `/api/v1/groups.online`          | Lists online users of a group                        | [Link](rooms/groups-endpoints/group-online.md)        |
 | `/api/v1/groups.open`            | Adds the private group back to the list of groups    | [Link](rooms/groups-endpoints/open.md)                |
 | `/api/v1/groups.removeLeader`    | Removes Leader role from a user in the current group | [Link](rooms/groups-endpoints/removeleader.md)        |
 | `/api/v1/groups.removeModerator` | Removes moderator role from a user in a group        | [Link](rooms/groups-endpoints/removemoderator.md)     |
@@ -150,7 +150,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.delete`                      | Removes a channel                                      | [Link](rooms/channels-endpoints/delete.md)                      |
 | `/api/v1/channels.getAllUserMentionsByChannel` | Retrieves mentions of a channel                        | [Link](rooms/channels-endpoints/getallusermentionsbychannel.md) |
 | `/api/v1/channels.files`                       | Retrieves files from a channel                         | [Link](rooms/channels-endpoints/files.md)                       |
-| `/api/v1/channels.getIntegrations`             | Retrieves channel integrations                         | [Link](rooms/channels-endpoints/getintegrations.md)             |
+| `/api/v1/channels.getIntegrations`             | Retrieves channel integrations                         | [Link](rooms/channels-endpoints/get-integrations-of-channel.md) |
 | `/api/v1/channels.history`                     | Retrieves messages from a channel                      | [Link](rooms/channels-endpoints/history.md)                     |
 | `/api/v1/channels.info`                        | Gets channel information                               | [Link](rooms/channels-endpoints/info.md)                        |
 | `/api/v1/channels.invite`                      | Adds a user to a channel                               | [Link](rooms/channels-endpoints/invite.md)                      |
@@ -227,9 +227,9 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### Directory
 
-| Url                 | Short Description                                       | Details Page                                                |
-| ------------------- | ------------------------------------------------------- | ----------------------------------------------------------- |
-| `/api/v1/directory` | Searches by all users and channels available on server. | [Link](core-endpoints/miscellaneous-endpoints/directory.md) |
+| Url                 | Short Description                                       | Details Page               |
+| ------------------- | ------------------------------------------------------- | -------------------------- |
+| `/api/v1/directory` | Searches by all users and channels available on server. | [Link](rooms/directory.md) |
 
 ## Messaging
 
@@ -294,67 +294,67 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Agent
 
-| Url                               | Short Description                              | Details Page                                                      |
-| --------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------- |
-| `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data   | [Link](omnichannel/livechat-endpoints/livechat-agent/agent.md)    |
-| `livechat/agent.next/:token`      | Retrieves the data of the next available agent | [Link](omnichannel/livechat-endpoints/livechat-agent/next-agent/) |
+| Url                               | Short Description                              | Details Page                                                        |
+| --------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------- |
+| `livechat/agent.info/:rid/:token` | Retrieves the current omnichannel agent data   | [Link](omnichannel/livechat-endpoints/livechat-agent/agent.md)      |
+| `livechat/agent.next/:token`      | Retrieves the data of the next available agent | [Link](omnichannel/livechat-endpoints/livechat-agent/next-agent.md) |
 
 #### Livechat Configuration
 
-| Url               | Short Description                                                         | Details Page                                            |
-| ----------------- | ------------------------------------------------------------------------- | ------------------------------------------------------- |
-| `livechat/config` | Retrieves LiveChat widget configuration info and additional visitor data. | [Link](omnichannel/livechat-endpoints/livechat-config/) |
+| Url               | Short Description                                                         | Details Page                                              |
+| ----------------- | ------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `livechat/config` | Retrieves LiveChat widget configuration info and additional visitor data. | [Link](omnichannel/livechat-endpoints/livechat-config.md) |
 
 #### Livechat Contacts
 
-| Url                          | Short Description                                   | Details Page                                                                          |
-| ---------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `omnichannel/contact`        | Registers a guest user as a new omnichannel contact | [Link](omnichannel/livechat-endpoints/livechat-contact/register-omnichannel-contact/) |
-| `omnichannel/contact`        | Retrieves a contact information                     | [Link](omnichannel/livechat-endpoints/livechat-contact/omnichannel-fetch-contact/)    |
-| `omnichannel/contact.search` | Searches a contact information                      | [Link](omnichannel/livechat-endpoints/livechat-contact/omnichannel-search-contact/)   |
+| Url                          | Short Description                                   | Details Page                                                                            |
+| ---------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `omnichannel/contact`        | Registers a guest user as a new omnichannel contact | [Link](omnichannel/livechat-endpoints/livechat-contact/register-omnichannel-contact.md) |
+| `omnichannel/contact`        | Retrieves a contact information                     | [Link](omnichannel/livechat-endpoints/livechat-contact/omnichannel-fetch-contact.md)    |
+| `omnichannel/contact.search` | Searches a contact information                      | [Link](omnichannel/livechat-endpoints/livechat-contact/omnichannel-search-contact.md)   |
 
 #### Livechat Custom Field
 
-| Url                           | Short Description                             | Details Page                                                                                  |
-| ----------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `livechat/custom.field`       | Sends a custom field                          | [Link](omnichannel/livechat-endpoints/custom-fields/send-a-livechat-custom-field/)            |
-| `livechat/custom.fields`      | Sends an array of custom field                | [Link](omnichannel/livechat-endpoints/custom-fields/send-an-array-of-livechat-custom-fields/) |
-| `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](omnichannel/livechat-endpoints/custom-fields/list-livechat-custom-fields/)             |
-| `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](omnichannel/livechat-endpoints/custom-fields/get-info-about-a-custom-field/)           |
+| Url                           | Short Description                             | Details Page                                                                                    |
+| ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `livechat/custom.field`       | Sends a custom field                          | [Link](omnichannel/livechat-endpoints/custom-fields/send-a-livechat-custom-field.md)            |
+| `livechat/custom.fields`      | Sends an array of custom field                | [Link](omnichannel/livechat-endpoints/custom-fields/send-an-array-of-livechat-custom-fields.md) |
+| `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](omnichannel/livechat-endpoints/custom-fields/list-livechat-custom-fields.md)             |
+| `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](omnichannel/livechat-endpoints/custom-fields/get-info-about-a-custom-field.md)           |
 
 #### Livechat Message
 
-| Url                              | Short Description                      | Details Page                                                                                                                           |
-| -------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `livechat/message`               | Sends a new omnichannel message        | [Link](omnichannel/livechat-endpoints/livechat-message/livechat-send-new-message/)                                                     |
-| `livechat/message/:_id`          | Retrieves a specific message           | [Link](omnichannel/livechat-endpoints/livechat-message/retrieve-a-livechat-message/)                                                   |
-| `livechat/message/:_id`          | Updates an omnichannel message         | [Link](omnichannel/livechat-endpoints/livechat-message/update-a-livechat-message/)                                                     |
-| `livechat/message/:_id`          | Removes an omnichannel message         | [Link](omnichannel/livechat-endpoints/livechat-message/remove-a-livechat-message/)                                                     |
-| `livechat/messages.history/:rid` | Retrieves omnichannel messages history | [Link](omnichannel/livechat-endpoints/livechat-message/load-livechat-messages-history/)                                                |
-| `livechat/messages`              | Sends array of messages                | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages) |
+| Url                              | Short Description                      | Details Page                                                                              |
+| -------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `livechat/message`               | Sends a new omnichannel message        | [Link](omnichannel/livechat-endpoints/livechat-message/livechat-send-new-message.md)      |
+| `livechat/message/:_id`          | Retrieves a specific message           | [Link](omnichannel/livechat-endpoints/livechat-message/retrieve-a-livechat-message.md)    |
+| `livechat/message/:_id`          | Updates an omnichannel message         | [Link](omnichannel/livechat-endpoints/livechat-message/update-a-livechat-message.md)      |
+| `livechat/message/:_id`          | Removes an omnichannel message         | [Link](omnichannel/livechat-endpoints/livechat-message/remove-a-livechat-message.md)      |
+| `livechat/messages.history/:rid` | Retrieves omnichannel messages history | [Link](omnichannel/livechat-endpoints/livechat-message/load-livechat-messages-history.md) |
+| `livechat/messages`              | Sends array of messages                | [Link](omnichannel/livechat-endpoints/livechat-message/send-an-array-of-messages.md)      |
 
 #### Livechat Offline Message
 
-| Url                        | Short Description                                   | Details Page                                                     |
-| -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------- |
-| `livechat/offline.message` | Sends an offline message when no agent is available | [Link](omnichannel/livechat-endpoints/livechat-offline-message/) |
+| Url                        | Short Description                                   | Details Page                                                       |
+| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------ |
+| `livechat/offline.message` | Sends an offline message when no agent is available | [Link](omnichannel/livechat-endpoints/livechat-offline-message.md) |
 
 #### Livechat Page Visited
 
-| Url                     | Short Description                                                    | Details Page                                                                                  |
-| ----------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history/) |
+| Url                     | Short Description                                                    | Details Page                                                                                    |
+| ----------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `livechat/page.visited` | Retrieves the pages your omnichannel user navigated on your website. | [Link](omnichannel/livechat-endpoints/livechat-page-visited/send-visitor-navigation-history.md) |
 
 #### Livechat Room
 
-| Url                      | Short Description                                                 | Details Page                                                                   |
-| ------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `livechat/room`          | GetRetrievesthe omnichannel room data or open a new conversation. | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-info/)       |
-| `livechat/room.close`    | Closes an omnichannel conversation                                | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-close/)      |
-| `livechat/room.transfer` | Transfers an omnichannel conversation                             | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-transfer/)   |
-| `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent                  | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-forward/)    |
-| `livechat/room.visitor`  | Updates room visitor's information                                | [Link](omnichannel/livechat-endpoints/livechat-room/change-room-visitor/)      |
-| `livechat/room.saveInfo` | Update a LiveChat room information.                               | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-saveinfo.md) |
+| Url                      | Short Description                                              | Details Page                                                                     |
+| ------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `livechat/room`          | Retrievesthe omnichannel room data or open a new conversation. | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-info.md)       |
+| `livechat/room.close`    | Closes an omnichannel conversation                             | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-close.md)      |
+| `livechat/room.transfer` | Transfers an omnichannel conversation                          | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-transfer.md)   |
+| `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent               | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-forward.md)    |
+| `livechat/room.visitor`  | Updates room visitor's information                             | [Link](omnichannel/livechat-endpoints/livechat-room/update-room-visitor-info.md) |
+| `livechat/room.saveInfo` | Update a LiveChat room information.                            | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-saveinfo.md)   |
 
 #### Livechat Transcript
 
@@ -364,89 +364,90 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Transfer
 
-| Url                              | Short Description                           | Details Page                                              |
-| -------------------------------- | ------------------------------------------- | --------------------------------------------------------- |
-| `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](omnichannel/livechat-endpoints/livechat-transfer/) |
+| Url                              | Short Description                           | Details Page                                                |
+| -------------------------------- | ------------------------------------------- | ----------------------------------------------------------- |
+| `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](omnichannel/livechat-endpoints/livechat-transfer.md) |
 
 #### Livechat Visitor
 
-| Url                            | Short Description                        | Details Page                                                                       |
-| ------------------------------ | ---------------------------------------- | ---------------------------------------------------------------------------------- |
-| `livechat/visitor`             | Registers a new visitor                  | [Link](omnichannel/livechat-endpoints/visitor/register-a-new-livechat-visitor/)    |
-| `livechat/visitor/:token`      | Retrieves a visitor                      | [Link](omnichannel/livechat-endpoints/visitor/retrieve-a-visitor-data/)            |
-| `livechat/visitor/:token`      | Deletes a visitor                        | [Link](omnichannel/livechat-endpoints/visitor/delete-a-visitor/)                   |
-| `livechat/visitor/:token/room` | Retrieves open conversation of a visitor | [Link](omnichannel/livechat-endpoints/visitor/get-open-conversation-of-a-visitor/) |
-| `livechat/visitor.status`      | Sets visitor status                      | [Link](omnichannel/livechat-endpoints/visitor/set-visitor-status/)                 |
+| Url                            | Short Description                        | Details Page                                                                         |
+| ------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------ |
+| `livechat/visitor`             | Registers a new visitor                  | [Link](omnichannel/livechat-endpoints/visitor/register-a-new-livechat-visitor.md)    |
+| `livechat/visitor/:token`      | Retrieves a visitor                      | [Link](omnichannel/livechat-endpoints/visitor/retrieve-a-visitor-data.md)            |
+| `livechat/visitor/:token`      | Deletes a visitor                        | [Link](omnichannel/livechat-endpoints/visitor/delete-a-visitor.md)                   |
+| `livechat/visitor/:token/room` | Retrieves open conversation of a visitor | [Link](omnichannel/livechat-endpoints/visitor/get-open-conversation-of-a-visitor.md) |
+| `livechat/visitor.status`      | Sets visitor status                      | [Link](omnichannel/livechat-endpoints/visitor/set-visitor-status.md)                 |
 
 #### Livechat Agent Stats
 
-| Url                                                              | Short Description                                                               | Details Page                                                                        |
-| ---------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| `api/v1/livechat/agents/:agentId/departments`                    | Returns all the departments associated with an agent                            | [Link](omnichannel/livechat-endpoints/agents/agents-departments/)                   |
-| `api/v1/livechat/analytics/agents/average-service-time`          | Retrieves average service time per agent                                        | [Link](omnichannel/livechat-endpoints/agents/agents-average-service-time/)          |
-| `api/v1/livechat/analytics/agents/total-service-time`            | Retrieves total service time sorted by agent                                    | [Link](omnichannel/livechat-endpoints/agents/agents-total-service-time/)            |
-| `api/v1/livechat/analytics/agents/available-for-service-history` | Retrieves a list of agents and their available time for the provided time frame | [Link](omnichannel/livechat-endpoints/agents/agents-available-for-service-history/) |
+| Url                                                              | Short Description                                                               | Details Page                                                                          |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `api/v1/livechat/agents/:agentId/departments`                    | Returns all the departments associated with an agent                            | [Link](omnichannel/livechat-endpoints/agents/agents-departments.md)                   |
+| `api/v1/livechat/analytics/agents/average-service-time`          | Retrieves average service time per agent                                        | [Link](omnichannel/livechat-endpoints/agents/agents-average-service-time.md)          |
+| `api/v1/livechat/analytics/agents/total-service-time`            | Retrieves total service time sorted by agent                                    | [Link](omnichannel/livechat-endpoints/agents/agents-total-service-time.md)            |
+| `api/v1/livechat/analytics/agents/available-for-service-history` | Retrieves a list of agents and their available time for the provided time frame | [Link](omnichannel/livechat-endpoints/agents/agents-available-for-service-history.md) |
 
 #### Livechat Appearance
 
-| Url                          | Short Description                                   | Details Page                                       |
-| ---------------------------- | --------------------------------------------------- | -------------------------------------------------- |
-| `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](omnichannel/livechat-endpoints/appearance/) |
+| Url                          | Short Description                                   | Details Page                                         |
+| ---------------------------- | --------------------------------------------------- | ---------------------------------------------------- |
+| `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](omnichannel/livechat-endpoints/appearance.md) |
 
 #### Livechat Business Hours
 
-| Url                                   | Short Description                                           | Details Page                                                               |
-| ------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `api/v1/livechat/business-hour`       | Retrieves all the information of a particular business hour | [Link](omnichannel/livechat-endpoints/business-hours/business-hour-info/)  |
-| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours                 | [Link](omnichannel/livechat-endpoints/business-hours/business-hours-list/) |
+| Url                                   | Short Description                                        | Details Page                                                                  |
+| ------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `api/v1/livechat/business-hour`       | Fetches the default business hours of a workspace        | [Link](omnichannel/livechat-endpoints/business-hours/business-hour-info-1.md) |
+| `api/v1/livechat/business-hours`      | Retrieves all the business hours attached to a workspace | [Link](omnichannel/livechat-endpoints/business-hours/business-hour-info.md)   |
+| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours              | [Link](omnichannel/livechat-endpoints/business-hours/business-hours-list.md)  |
 
 #### Livechat Dashboards
 
-| Url                                                                   | Short Description                                       | Details Page                                                                     |
-| --------------------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `api/v1/livechat/analytics/dashboards/conversation-totalizers`        | Retrieves conversation totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/conversation-totalizers/)       |
-| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](omnichannel/livechat-endpoints/dashboards/agent-productivity-totalizers/) |
-| `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](omnichannel/livechat-endpoints/dashboards/chat-totalizers/)               |
-| `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/productivity-totalizers/)       |
-| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](omnichannel/livechat-endpoints/dashboards/chats-chart/)                   |
-| `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-agent-chart/)         |
-| `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](omnichannel/livechat-endpoints/dashboards/agents-statuses-chart/)         |
-| `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-department-chart/)    |
-| `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](omnichannel/livechat-endpoints/dashboards/timings-charts/)                |
+| Url                                                                   | Short Description                                       | Details Page                                                                       |
+| --------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `api/v1/livechat/analytics/dashboards/conversation-totalizers`        | Retrieves conversation totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/conversation-totalizers.md)       |
+| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](omnichannel/livechat-endpoints/dashboards/agent-productivity-totalizers.md) |
+| `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](omnichannel/livechat-endpoints/dashboards/chat-totalizers.md)               |
+| `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/productivity-totalizers.md)       |
+| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](omnichannel/livechat-endpoints/dashboards/chats-chart.md)                   |
+| `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-agent-chart.md)         |
+| `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](omnichannel/livechat-endpoints/dashboards/agents-statuses-chart.md)         |
+| `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-department-chart.md)    |
+| `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](omnichannel/livechat-endpoints/dashboards/timings-charts.md)                |
 
 #### Livechat Departments
 
-| Url                                                                | Short Description                                             | Details Page                                                                                            |
-| ------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/department`                                       | Retrieves a list of departments                               | [Link](omnichannel/livechat-endpoints/livechat-department/get-a-list-of-departments/)                   |
-| `api/v1/livechat/department`                                       | Registers a new department                                    | [Link](omnichannel/livechat-endpoints/livechat-department/register-a-new-department/)                   |
-| `api/v1/livechat/department/:_id`                                  | Retrieves a department's info                                 | [Link](omnichannel/livechat-endpoints/livechat-department/get-info-about-a-department/)                 |
-| `api/v1/livechat/department/:_id`                                  | Updates a department                                          | [Link](omnichannel/livechat-endpoints/livechat-department/update-a-department/)                         |
-| `api/v1/livechat/department/:_id`                                  | Removes a department                                          | [Link](omnichannel/livechat-endpoints/livechat-department/remove-a-department/)                         |
-| `api/v1/livechat/department.autocomplete`                          | Autocompletes department name                                 | [Link](omnichannel/livechat-endpoints/livechat-department/department-autocomplete/)                     |
-| `api/v1/livechat/department/:departmentId/agents`                  | Retrieves agents of a specific department                     | [Link](omnichannel/livechat-endpoints/livechat-department/retrieve-agents-of-a-department/)             |
-| `api/v1/livechat/department/:departmentId/agents`                  | Updates agents of a department                                | [Link](omnichannel/livechat-endpoints/livechat-department/update-agents-of-a-department/)               |
-| `api/v1/livechat/department.listByIds`                             | Retrieves a list of departments by an array of department ids | [Link](omnichannel/livechat-endpoints/livechat-department/listing-departments-by-ids/)                  |
-| `api/v1/livechat/departments.available-by-unit/:unitId`            | Retrieves departments available by unit Id                    | [Info](omnichannel/livechat-endpoints/livechat-department/departments-available-by-unit-id/)            |
-| `api/v1/livechat/analytics/departments/amount-of-chats`            | Retrieves the number of incoming chats                        | [Info](omnichannel/livechat-endpoints/livechat-department/amount-of-chat/)                              |
-| `api/v1/livechat/analytics/departments/average-service-time`       | Retrieves average service time                                | [Info](omnichannel/livechat-endpoints/livechat-department/average-service-time-by-department/)          |
-| `api/v1/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration                              | [Info](omnichannel/livechat-endpoints/livechat-department/average-chat-duration-time-by-department/)    |
-| `api/v1/livechat/analytics/departments/total-service-time`         | Retrieves total service time                                  | [Info](omnichannel/livechat-endpoints/livechat-department/total-service-time-by-department/)            |
-| `api/v1/livechat/analytics/departments/average-waiting-time`       | Retrieves avg waiting time                                    | [Info](omnichannel/livechat-endpoints/livechat-department/average-waiting-time-by-department/)          |
-| `api/v1/livechat/analytics/departments/total-transferred-chats`    | Retrieves total transferred chats                             | [Info](omnichannel/livechat-endpoints/livechat-department/total-transferred-chat-by-department/)        |
-| `api/v1/livechat/analytics/departments/total-abandoned-chats`      | Retrieves abandoned chats                                     | [Info](omnichannel/livechat-endpoints/livechat-department/total-abandoned-chats-by-department/)         |
-| `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats                       | [Info](omnichannel/livechat-endpoints/livechat-department/percentage-of-abandoned-chats-by-department/) |
+| Url                                                                | Short Description                                             | Details Page                                                                                              |
+| ------------------------------------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/department`                                       | Retrieves a list of departments                               | [Link](omnichannel/livechat-endpoints/livechat-department/get-a-list-of-departments.md)                   |
+| `api/v1/livechat/department`                                       | Registers a new department                                    | [Link](omnichannel/livechat-endpoints/livechat-department/register-a-new-department.md)                   |
+| `api/v1/livechat/department/:_id`                                  | Retrieves a department's info                                 | [Link](omnichannel/livechat-endpoints/livechat-department/get-info-about-a-department.md)                 |
+| `api/v1/livechat/department/:_id`                                  | Updates a department                                          | [Link](omnichannel/livechat-endpoints/livechat-department/update-a-department.md)                         |
+| `api/v1/livechat/department/:_id`                                  | Removes a department                                          | [Link](omnichannel/livechat-endpoints/livechat-department/remove-a-department.md)                         |
+| `api/v1/livechat/department.autocomplete`                          | Autocompletes department name                                 | [Link](omnichannel/livechat-endpoints/livechat-department/department-autocomplete.md)                     |
+| `api/v1/livechat/department/:departmentId/agents`                  | Retrieves agents of a specific department                     | [Link](omnichannel/livechat-endpoints/livechat-department/retrieve-agents-of-a-department.md)             |
+| `api/v1/livechat/department/:departmentId/agents`                  | Updates agents of a department                                | [Link](omnichannel/livechat-endpoints/livechat-department/update-agents-of-a-department.md)               |
+| `api/v1/livechat/department.listByIds`                             | Retrieves a list of departments by an array of department ids | [Link](omnichannel/livechat-endpoints/livechat-department/listing-departments-by-ids.md)                  |
+| `api/v1/livechat/departments.available-by-unit/:unitId`            | Retrieves departments available by unit Id                    | [Link](omnichannel/livechat-endpoints/livechat-department/departments-by-unit-id.md)                      |
+| `api/v1/livechat/analytics/departments/amount-of-chats`            | Retrieves the number of incoming chats                        | [Link](omnichannel/livechat-endpoints/livechat-department/amount-of-chat.md)                              |
+| `api/v1/livechat/analytics/departments/average-service-time`       | Retrieves average service time                                | [Link](omnichannel/livechat-endpoints/livechat-department/average-service-time-by-department.md)          |
+| `api/v1/livechat/analytics/departments/average-chat-duration-time` | Retrieves average chats duration                              | [Link](omnichannel/livechat-endpoints/livechat-department/average-chat-duration-time-by-department.md)    |
+| `api/v1/livechat/analytics/departments/total-service-time`         | Retrieves total service time                                  | [Link](omnichannel/livechat-endpoints/livechat-department/total-service-time-by-department.md)            |
+| `api/v1/livechat/analytics/departments/average-waiting-time`       | Retrieves avg waiting time                                    | [Link](omnichannel/livechat-endpoints/livechat-department/average-waiting-time-by-department.md)          |
+| `api/v1/livechat/analytics/departments/total-transferred-chats`    | Retrieves total transferred chats                             | [Link](omnichannel/livechat-endpoints/livechat-department/total-transferred-chat-by-department.md)        |
+| `api/v1/livechat/analytics/departments/total-abandoned-chats`      | Retrieves abandoned chats                                     | [Link](omnichannel/livechat-endpoints/livechat-department/total-abandoned-chats-by-department.md)         |
+| `api/v1/livechat/analytics/departments/percentage-abandoned-chats` | Retrieves percentage of abandoned chats                       | [Link](omnichannel/livechat-endpoints/livechat-department/percentage-of-abandoned-chats-by-department.md) |
 
 #### Livechat Inquiries
 
-| Url                                  | Short Description                        | Details Page                                                                  |
-| ------------------------------------ | ---------------------------------------- | ----------------------------------------------------------------------------- |
-| `api/v1/livechat/inquiries.list`     | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-list/)     |
-| `api/v1/livechat/inquiries.take`     | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry/)       |
-| `api/v1/livechat/inquiries.queued`   | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued/)   |
-| `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-get-one/)    |
-| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-prioritize/) |
-| `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](livechat-endpoints/livechat-inquiries/set-sla-to-inquiry.md)           |
+| Url                                  | Short Description                        | Details Page                                                                    |
+| ------------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------- |
+| `api/v1/livechat/inquiries.list`     | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-list.md)     |
+| `api/v1/livechat/inquiries.take`     | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry.md)       |
+| `api/v1/livechat/inquiries.queued`   | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued.md)   |
+| `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-get-one.md)    |
+| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-prioritize.md) |
+| `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/set-sla-to-inquiry.md) |
 
 #### Livechat Integrations
 
@@ -456,9 +457,9 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Queue
 
-| Url                     | Short Description          | Details Page                                           |
-| ----------------------- | -------------------------- | ------------------------------------------------------ |
-| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](omnichannel/livechat-endpoints/livechat-queue/) |
+| Url                     | Short Description          | Details Page                                             |
+| ----------------------- | -------------------------- | -------------------------------------------------------- |
+| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](omnichannel/livechat-endpoints/livechat-queue.md) |
 
 #### Livechat Rooms
 
@@ -467,46 +468,46 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | `api/v1/livechat/rooms`              | Retrieves a list of livechat rooms           | [Link](omnichannel/livechat-endpoints/livechat-rooms/livechat-rooms-list.md)           |
 | `api/v1/livechat/room/:rid/priority` | Set the priority of a Livechat room.         | [Link](omnichannel/livechat-endpoints/livechat-rooms/set-livechat-room-priority.md)    |
 | `api/v1/livechat/room/:rid/priority` | Remove the priority set to a Livechat room.  | [Link](omnichannel/livechat-endpoints/livechat-rooms/remove-livechat-room-priority.md) |
-| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](omnichannel/livechat-endpoints/rooms/room-onhold/)                              |
+| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](omnichannel/livechat-endpoints/livechat-rooms/room-onhold.md)                   |
 
 #### Livechat SMS
 
-| Url                                     | Short Description | Details Page                                                |
-| --------------------------------------- | ----------------- | ----------------------------------------------------------- |
-| `api/v1/livechat/sms-incoming/:service` | Receives SMS      | [Link](omnichannel/livechat-endpoints/sms-incoming-twilio/) |
+| Url                                     | Short Description | Details Page                                                           |
+| --------------------------------------- | ----------------- | ---------------------------------------------------------------------- |
+| `api/v1/livechat/sms-incoming/:service` | Receives SMS      | [Link](omnichannel/livechat-endpoints/livechat-sms-incoming-twilio.md) |
 
 #### Livechat Triggers
 
-| Url                             | Short Description                  | Details Page                                                               |
-| ------------------------------- | ---------------------------------- | -------------------------------------------------------------------------- |
-| `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](omnichannel/livechat-endpoints/triggers/get-the-livechat-triggers/) |
-| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/triggers/get-a-livechat-trigger/)    |
+| Url                             | Short Description                  | Details Page                                                                       |
+| ------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------- |
+| `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](omnichannel/livechat-endpoints/livechat-triggers/list-livechat-triggers.md) |
+| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-a-livechat-trigger.md) |
 
 #### Livechat Upload
 
-| Url                           | Short Description | Details Page |
-| ----------------------------- | ----------------- | ------------ |
-| `api/v1/livechat/upload/:rid` | post              |              |
+| Url                           | Short Description               | Details Page                                              |
+| ----------------------------- | ------------------------------- | --------------------------------------------------------- |
+| `api/v1/livechat/upload/:rid` | Uploads files on livechat room. | [Link](omnichannel/livechat-endpoints/livechat-upload.md) |
 
 #### Livechat Users
 
-| Url                                | Short Description                   | Details Page                                                                                                                     |
-| ---------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/users/:type`      | Gets a list of agents or managers   | [Link](https://developer.rocket.chat/api/rest-api/endpoints/omnichannel-endpoints/omnichannel-community-edition-endpoints/users) |
-| `api/v1/livechat/users/:type`      | Registers a new agent or manager    | [Link](omnichannel/livechat-endpoints/livechat-users/register-new-agent-or-manager.md)                                           |
-| `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](omnichannel/livechat-endpoints/livechat-users/get-info-of-an-agent-or-manager/)                                           |
-| `api/v1/livechat/users/:type/:_id` | Removes an agent or manager         | [Link](omnichannel/livechat-endpoints/livechat-users/remove-an-agent-or-manager/)                                                |
+| Url                                | Short Description                   | Details Page                                                                              |
+| ---------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
+| `api/v1/livechat/users/:type`      | Gets a list of agents or managers   | [Link](omnichannel/livechat-endpoints/livechat-users/get-a-list-of-agents-or-managers.md) |
+| `api/v1/livechat/users/:type`      | Registers a new agent or manager    | [Link](omnichannel/livechat-endpoints/livechat-users/register-new-agent-or-manager.md)    |
+| `api/v1/livechat/users/:type/:_id` | Gets info about an agent or manager | [Link](omnichannel/livechat-endpoints/livechat-users/get-info-of-an-agent-or-manager.md)  |
+| `api/v1/livechat/users/:type/:_id` | Removes an agent or manager         | [Link](omnichannel/livechat-endpoints/livechat-users/remove-an-agent-or-manager.md)       |
 
 #### Livechat Visitors
 
-| Url                                                                    | Short Description                           | Details Page                                                                                      |
-| ---------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-info-by-id.md)                  |
-| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-pages-visited-by-livechat-visitor/) |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-livechat-visitors-chat-history/)    |
-| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/search-a-visitors-chat/)                |
-| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-autocomplete/)                  |
-| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitors-search/)                       |
+| Url                                                                    | Short Description                           | Details Page                                                                                        |
+| ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-info-by-id.md)                    |
+| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-pages-visited-by-livechat-visitor.md) |
+| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-livechat-visitors-chat-history.md)    |
+| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/search-a-visitors-chat.md)                |
+| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-autocomplete.md)                  |
+| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/search-visitors-by-term.md)               |
 
 #### Livechat Monitors
 
@@ -517,12 +518,12 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Priorities
 
-| Url                                      | Short Description   | Details Page                                                                                             |
-| ---------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------- |
-| `api/v1/livechat/priorities`             | Get priorities      | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md)   |
-| `api/v1/livechat/priorities/:priorityId` | Get a priority      | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md)   |
-| `api/v1/livechat/priorities/:priorityId` | Update the priority | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/update-priority.md)  |
-| `api/v1/livechat/priorities.reset`       | Reset the priority  | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/reset-priorities.md) |
+| Url                                      | Short Description   | Details Page                                                                                           |
+| ---------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| `api/v1/livechat/priorities`             | Get priorities      | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-priorities.md) |
+| `api/v1/livechat/priorities/:priorityId` | Get a priority      | [Link](omnichannel/livechat-endpoints/livechat-priorities/priorities-older-versions/get-a-priority.md) |
+| `api/v1/livechat/priorities/:priorityId` | Update the priority | [Link](omnichannel/livechat-endpoints/livechat-priorities/update-priority.md)                          |
+| `api/v1/livechat/priorities.reset`       | Reset the priority  | [Link](omnichannel/livechat-endpoints/livechat-priorities/reset-priorities.md)                         |
 
 #### Livechat Tags
 
@@ -632,7 +633,7 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | Url                           | Short Description                          | Details Page                                                                 |
 | ----------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
-| `/api/v1/emoji-custom.all`    | Retrieves all custom emojis                | [Link](content-management/custom-emoji-endpoints/list-all-custom-emojis/)    |
+| `/api/v1/emoji-custom.all`    | Retrieves all custom emojis                | [Link](content-management/custom-emoji-endpoints/list-all-custom-emojis.md)  |
 | `/api/v1/emoji-custom.list`   | Retrieves an updated list of custom emojis | [Link](content-management/custom-emoji-endpoints/list-custom-emojis.md)      |
 | `/api/v1/emoji-custom.create` | Creates new custom emoji.                  | [Link](content-management/custom-emoji-endpoints/create-new-custom-emoji.md) |
 | `/api/v1/emoji-custom.delete` | Delete an existent custom emoji.           | [Link](content-management/custom-emoji-endpoints/delete-custom-emoji.md)     |
@@ -727,13 +728,13 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### E2E
 
-| URL                                       | Short Description                                               | Details Page                                                      |
-| ----------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------- |
-| `/api/v1/e2e.fetchMyKeys`                 | Retrieves E2E keys of logged in user                            | [Link](settings/e2e-endpoints/fetch-your-e2e-keys/)               |
-| `/api/v1/e2e.getUsersOfRoomWithoutKey`    | Retrieves Users Of Room Without E2E Key                         | [Link](settings/e2e-endpoints/get-users-of-room-without-e2e-key/) |
-| `/api/v1/e2e.setRoomKeyID`                | Sets the end-to-end encryption key ID for a room                | [Link](settings/e2e-endpoints/set-room-e2e-key/)                  |
-| `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](settings/e2e-endpoints/set-users-key/)                     |
-| `/api/v1/e2e.updateGroupKey`              | Updates the end-to-end encryption key for a user in a room.     | [Link](settings/e2e-endpoints/update-user-e2e-key-in-room/)       |
+| URL                                       | Short Description                                               | Details Page                                                        |
+| ----------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `/api/v1/e2e.fetchMyKeys`                 | Retrieves E2E keys of logged in user                            | [Link](settings/e2e-endpoints/fetch-your-e2e-keys.md)               |
+| `/api/v1/e2e.getUsersOfRoomWithoutKey`    | Retrieves Users Of Room Without E2E Key                         | [Link](settings/e2e-endpoints/get-users-of-room-without-e2e-key.md) |
+| `/api/v1/e2e.setRoomKeyID`                | Sets the end-to-end encryption key ID for a room                | [Link](settings/e2e-endpoints/set-room-e2e-key.md)                  |
+| `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](settings/e2e-endpoints/set-users-key.md)                     |
+| `/api/v1/e2e.updateGroupKey`              | Updates the end-to-end encryption key for a user in a room.     | [Link](settings/e2e-endpoints/update-user-e2e-key-in-room.md)       |
 
 ### Imports
 
@@ -761,9 +762,9 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Instances
 
-| URL                     | Short Description   | Details Page                                        |
-| ----------------------- | ------------------- | --------------------------------------------------- |
-| `/api/v1/instances.get` | Retrieves instances | [Link](settings/instances-endpoints/get-instances/) |
+| URL                     | Short Description   | Details Page                                          |
+| ----------------------- | ------------------- | ----------------------------------------------------- |
+| `/api/v1/instances.get` | Retrieves instances | [Link](settings/instances-endpoints/get-instances.md) |
 
 ### Federation
 
@@ -787,11 +788,11 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Auto Translate
 
-| URL                                           | Short Description                               | Details Page                                               |
-| --------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
-| `/api/v1/autotranslate.getSupportedLanguages` | Gets the supported languages by auto-translate. | [Link](miscellaneous/autotranslate/getsupportedlanguages/) |
-| `/api/v1/autotranslate.saveSettings`          | Saves some settings about auto-translate.       | [Link](miscellaneous/autotranslate/savesettings/)          |
-| `/api/v1/autotranslate.translateMessage`      | Translates the message.                         | [Link](miscellaneous/autotranslate/translatemessage/)      |
+| URL                                           | Short Description                               | Details Page                                                            |
+| --------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------- |
+| `/api/v1/autotranslate.getSupportedLanguages` | Gets the supported languages by auto-translate. | [Link](miscellaneous/auto-translate-endpoints/getsupportedlanguages.md) |
+| `/api/v1/autotranslate.saveSettings`          | Saves some settings about auto-translate.       | [Link](miscellaneous/auto-translate-endpoints/savesettings.md)          |
+| `/api/v1/autotranslate.translateMessage`      | Translates the message.                         | [Link](miscellaneous/auto-translate-endpoints/translatemessage.md)      |
 
 ### Commands
 
@@ -805,14 +806,14 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Email Inbox
 
-| URL                                  | Short Description                    | Details Page                                                                |
-| ------------------------------------ | ------------------------------------ | --------------------------------------------------------------------------- |
-| `/api/v1/email-inbox.list`           | Retrieves mail Inbox list            | [Link](miscellaneous/email-inbox-endpoints/email-inbox-list/)               |
-| `/api/v1/email-inbox`                | Sets the email inbox for your server | [Link](miscellaneous/email-inbox-endpoints/set-email-inbox/)                |
-| `/api/v1/email-inbox/:_id`           | Retrieves email Inbox by id          | [Link](miscellaneous/email-inbox-endpoints/email-inbox-by-id/)              |
-| `/api/v1/email-inbox/:_id`           | Delete email inbox using id          | [Link](miscellaneous/email-inbox-endpoints/delete-email-inbox-by-id/)       |
-| `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](miscellaneous/email-inbox-endpoints/search-email-inbox-by-email/)    |
-| `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](miscellaneous/email-inbox-endpoints/send-test-email-to-email-inbox/) |
+| URL                                  | Short Description                    | Details Page                                                                  |
+| ------------------------------------ | ------------------------------------ | ----------------------------------------------------------------------------- |
+| `/api/v1/email-inbox.list`           | Retrieves mail Inbox list            | [Link](miscellaneous/email-inbox-endpoints/email-inbox-list.md)               |
+| `/api/v1/email-inbox`                | Sets the email inbox for your server | [Link](miscellaneous/email-inbox-endpoints/set-email-inbox.md)                |
+| `/api/v1/email-inbox/:_id`           | Retrieves email Inbox by id          | [Link](miscellaneous/email-inbox-endpoints/email-inbox-by-id.md)              |
+| `/api/v1/email-inbox/:_id`           | Delete email inbox using id          | [Link](miscellaneous/email-inbox-endpoints/delete-email-inbox-by-id.md)       |
+| `/api/v1/email-inbox.search`         | Searches email inbox by address      | [Link](miscellaneous/email-inbox-endpoints/search-email-inbox-by-email.md)    |
+| `/api/v1/email-inbox.send-test/:_id` | Sends test email to email inbox      | [Link](miscellaneous/email-inbox-endpoints/send-test-email-to-email-inbox.md) |
 
 ### Invite
 
@@ -820,7 +821,7 @@ You can get and update the settings via the REST API, only if you have permissio
 | ----------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | `/api/v1/findOrCreateInvite`  | Created a new Invite or returns an existing one with the same parameters. | [Link](miscellaneous/invite-endpoints/findorcreateinvite.md)      |
 | `/api/v1/listInvites`         | Lists all of the invite tokens.                                           | [Link](miscellaneous/invite-endpoints/listinvites.md)             |
-| `/api/v1/removeInvite/:_id`   | Deletes an invite from the server.                                        | [Link](miscellaneous/invite-endpoints/delete-invite-by-id/)       |
+| `/api/v1/removeInvite/:_id`   | Deletes an invite from the server.                                        | [Link](miscellaneous/invite-endpoints/delete-invite-by-id.md)     |
 | `/api/v1/useInviteToken`      | Reports to the server that an invite token was used.                      | [Link](miscellaneous/invite-endpoints/report-use-invite-token.md) |
 | `/api/v1/validateInviteToken` | Checks if an invite token is valid.                                       | [Link](miscellaneous/invite-endpoints/validateinvitetoken.md)     |
 
@@ -834,9 +835,9 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Video conference
 
-| URL                                             | Short Description                                           | Details Page                                                           |
-| ----------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](miscellaneous/video-conference-endpoints/jitsi-update-timeout/) |
+| URL                                             | Short Description                                           | Details Page                                                             |
+| ----------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `/api/v1/video-conference/jitsi.update-timeout` | Updates the timeout of Jitsi video conference in a channel. | [Link](miscellaneous/video-conference-endpoints/jitsi-update-timeout.md) |
 
 ### Others
 

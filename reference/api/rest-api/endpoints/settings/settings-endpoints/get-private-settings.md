@@ -1,6 +1,6 @@
 # Get private settings
 
-List all private settings. Learn how this can be used in configuring your server in [this guide](https://docs.rocket.chat/quick-start/environment-configuration/environment-variables#other-environment-variables).
+List all private settings. Learn how this can be used in configuring your server in [this guide](https://docs.rocket.chat/setup-and-configure/rocket.chat-environment-configuration/environment-variables).
 
 | URL                | Requires Auth | HTTP Method |
 | ------------------ | ------------- | ----------- |

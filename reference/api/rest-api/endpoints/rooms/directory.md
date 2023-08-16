@@ -8,9 +8,9 @@ A method, that searches by users or channels on all users and channels available
 
 ## Payload
 
-| Argument | Example                                                     | Required | Description                                                                                                                                                                                                                          |
-| -------- | ----------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `query`  | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` (default) or `all`. `workspace=all` will work only if [Federation](../core-endpoints/miscellaneous-endpoints/broken-reference/) is enabled. |
+| Argument | Example                                                     | Required | Description                                                                                                                                                                                                |
+| -------- | ----------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query`  | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` (default) or `all`. `workspace=all` will work only if [Federation](../settings/federation-endpoints/) is enabled. |
 
 ## Example Call
 
