@@ -4,7 +4,7 @@ A marketplace publisher can register a webhook endpoint link to receive news and
 
 ## Set Publisher Webhook Link
 
-**Setting Webhook during publisher registration:** During your publisher registration, you can input a link in the optional `webhook link` field.
+**Setting Webhook during publisher registration:** During your [publisher registration](./#create-a-publisher-account), you can input a link in the optional `webhook link` field.
 
 **For already registered publishers:** This webhook information can be added or edited on their own dashboard in the **Publisher Information** section.
 
