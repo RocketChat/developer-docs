@@ -1,57 +1,51 @@
 # Mac OSX
 
-You can set up and run a Rocket.Chat development environment on your macOS system.
-
-* [Apple Silicon](mac-osx.md#apple-silicon)
-* [Non-Apple Silicon Chips](mac-osx.md#non-apple-silicon-chips)
+You can set up and configure a  Rocket.Chat development environment on your macOS system running on [**Apple Silicon**](mac-osx.md#apple-silicon) or systems with [**non-Apple Silicon chips**](mac-osx.md#setting-up-a-rocket.chat-development-environment-non-apple-silicon-chips)**.**
 
 ## Apple Silicon
 
-{% hint style="info" %}
-If you face any issues, see the [Troubleshooting](mac-osx.md#troubleshooting) section below.
-{% endhint %}
+**Preparation Steps**
 
-{% hint style="info" %}
-#### Prerequisite
-
-* Install yarn - read yarn's official documentation on [how to install yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
-* Install Meteor - read the official documentation on [how to install Meteor](https://docs.meteor.com/install.html).
+* Install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* Install [Meteor](https://docs.meteor.com/install.html)
 * Install [Homebrew](https://brew.sh/)
-*   Install the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
+* Install the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) with this command:
 
-    ```shell
-    brew install nvm
-    ```
-
-    *   Important! Make sure you are running nvm version >= 0.39.2
-
-        ```shell
-        nvm --version
-        ```
-{% endhint %}
-
-* [Fork the Rocket.Chat repository](https://github.com/RocketChat/Rocket.Chat/fork) into your own GitHub account
-* Clone your fork of the Rocket.Chat repository to your local dev box, navigate into the directory, and configure an additional remote so we can later fetch updates from the main Rocket.Chat repo
-
-```shell
-git clone https://github.com/your-username/Rocket.Chat
-cd Rocket.Chat
-git remote add upstream https://github.com/RocketChat/Rocket.Chat.git
+```bash
+brew install nvm
 ```
 
-* Find which version of node your version of RocketChat needs by running.
+{% hint style="warning" %}
+Confirm that your nvm version is 0.39.2 or higher by running the command `nvm --version` in your terminal.
+{% endhint %}
+
+**Setting up a Rocket.Chat Development Environment on MacOS Apple Silicon**
+
+* Fork the [Rocket.Chat repository](https://github.com/RocketChat) on GitHub. Clone the forked repository to your local dev box using this command:
+
+```
+git clone https://github.com/<your-username>/Rocket.Chat.git
+```
+
+* Navigate into the project directory and configure an additional remote so we can later fetch updates from the main Rocket.Chat repo with these commands:
+
+<pre class="language-shell"><code class="lang-shell"><strong>git clone https://github.com/your-username/Rocket.Chat
+</strong>git remote add upstream https://github.com/RocketChat/Rocket.Chat.git
+</code></pre>
+
+* Confirm the Node.js version required by your RocketChat version by executing the following command:
 
 ```
 cat package.json | grep -A4 engines | grep node
 ```
 
-* Install the required version of node, _for example_:
+* Install the required version of NodeJS replacing `x.x.x` with the required NodeJs version number:
 
 ```
-nvm install 14.19.3
+nvm install x.x.x
 ```
 
-* Initialize the `meteor` framework. This will show the version of meteor requested by Rocket.Chat (incidentally, specified in `apps/meteor/.meteor/release`) and will initialize it as a side-effect.
+* Initialize the `meteor` framework. This will show the version of meteor requested by Rocket.Chat (located in `apps/meteor/.meteor/release`). It will also initialize the framework.
 
 ```shell
 cd apps/meteor
@@ -59,51 +53,55 @@ meteor --version
 cd ../..
 ```
 
-* Install all needed packages and build the Rocket.Chat app
+* Install all needed packages and proceed to build the Rocket.Chat app with these commands:
 
 ```shell
 yarn
 yarn build
 ```
 
-*   Start your development server
+* Start your development server.&#x20;
 
-    There are two ways to start the server. For systems with >= 16 GB of memory, use
+For systems with 16 GB of memory or higher, use this command:
 
-    ```shell
-    yarn dev
-    ```
+```shell
+yarn dev
+```
 
-    For systems with less than 16 GB of memory, use
+For systems with less than 16 GB of memory, use
 
-    ```shell
-    yarn dsv
-    ```
+```shell
+yarn dsv
+```
 
-When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
+Once it is finished, the following output will be displayed on your terminal and the local server will be running on _`http://localhost:3000`._
 
 <figure><img src="../../../.gitbook/assets/Rocket.Chat server running on macOS.png" alt=""><figcaption></figcaption></figure>
 
-## Non-Apple Silicon Chips
-
-{% hint style="info" %}
-This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,i5
+{% hint style="danger" %}
+If you encounter any issues, see [#troubleshooting](mac-osx.md#troubleshooting "mention").
 {% endhint %}
 
-* Install Meteor by executing:
+## Setting up a Rocket.Chat Development Environment Non-Apple Silicon Chips
+
+{% hint style="warning" %}
+This setup instruction has been tested on MacBook Pro 2015, 8Gig Ram, 512Gb SSD,i5.
+{% endhint %}
+
+* Install Meteor by executing this command:
 
 ```
 curl https://install.meteor.com/ | sh
 ```
 
-Meteor comes pre-installed with npm and node, verify by executing:
+* Meteor comes pre-installed with npm and node, confirm the versions by executing this command:
 
 ```
 meteor node -v
 meteor npm -v
 ```
 
-* Install Yarn if you don't already have it on your system. Yarn is the recommended package manager
+* Install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) if it's not already on your system. It is the recommended package manager.
 
 ```
 npm install --global yarn
@@ -113,44 +111,51 @@ npm install --global yarn
 Information on the various versions of packages needed can be found in the `package.json`
 {% endhint %}
 
-* To easily manage the node versions on your machine, install the [n node package manager](https://www.npmjs.com/package/n) and switch to the desired node version you want to use
+* To easily manage the node versions on your machine, install the [n node package manager](https://www.npmjs.com/package/n) and switch to your desired NodeJs version.
 
 ```
 npm install -g n
-n 14.18.3
+n x.x.x
 node -v
 ```
 
-* Fork and clone the Rocket.Chat repository [https://github.com/RocketChat/Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) and navigate into the directory
+{% hint style="warning" %}
+Replace x.x.x with the NodeJs version number.&#x20;
+{% endhint %}
+
+* Fork the [Rocket.Chat repository](https://github.com/RocketChat) on GitHub. Clone the forked repository and navigate to the project directory using this command:
 
 ```
 git clone https://github.com/your-username/Rocket.Chat
 cd Rocket.Chat
 ```
 
-* Run the following commands to navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file
+* Run the following commands to navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file:
 
 ```
 cd apps/meteor
 meteor --version
 ```
 
-* Back in the main directory, install all the packages by simply running
+* Navigate to the project root directory and  install all the needed packages by executing this command:
 
-```
+```bash
+cd ../..
 yarn
 ```
 
-* Build and startup your development server by executing
+* Build and startup your development server by running this command:
 
 ```
 yarn build
 yarn dev
 ```
 
-When done, you should see the following printed on your terminal and the local server running on `http://localhost:3000`
+Once it is finished, the following output will be displayed on your terminal and the local server will be running on _`http://localhost:3000`._
 
 <figure><img src="../../../.gitbook/assets/Rocket.Chat server running on macOS.png" alt=""><figcaption><p>Rocket.Chat server successfully running on macOS</p></figcaption></figure>
+
+You can modify the code in your IDE and see the changes on the server instance. Now, you can start contributing to Rocket.Chat!
 
 ## Troubleshooting
 
