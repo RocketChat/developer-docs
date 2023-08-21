@@ -14,21 +14,21 @@ The digest must be lowercase.
 
 ### Payload Parameters
 
-| Argument   | Example                                        | Required                                                 | Description |
-| ---------- | ---------------------------------------------- | -------------------------------------------------------- | ----------- |
+| Argument   | Example                                        | Required                                                                  | Description |
+| ---------- | ---------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
 | `user`     | <pre><code>{ "username": "him" }
-</code></pre> |                                                          |             |
-|            | Required                                       | The user object containing either the username or email. |             |
-| `password` | <pre><code>{
-</code></pre>                     |                                                          |             |
+</code></pre> |                                                                           |             |
+|            | Required                                       | The user object containing either the username or email.                  |             |
+| `password` | Required                                       | The password object containing the hashed password and the hash algorithm |             |
+
+### Example Payload
 
 ```
+       {
             "digest": "52c53f4abbfe42e1ccd4fd9d864453ee57f8efbd4c9ecec6d88bd83d7f7a9c02",
             "algorithm":"sha-256"
      }
 ```
-
-\| Required | The password object containing the hashed password and the hash algorithm. |
 
 ### Example Call
 
