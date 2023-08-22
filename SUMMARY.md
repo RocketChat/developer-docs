@@ -86,7 +86,7 @@
 * [Introduction to Apps Engine](apps-engine/rocket.chat-apps-and-apps-engine.md)
 * [Getting Started with Apps Engine](apps-engine/getting-started/README.md)
   * [Apps Engine Environment Setup](apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md)
-  * [The Apps-Engine CLI](apps-engine/getting-started/rocket.chat-app-engine-cli.md)
+  * [Apps Engine Client](apps-engine/getting-started/rocket.chat-app-engine-cli.md)
   * [Understanding the App Lifecycle](apps-engine/getting-started/understanding-app-lifecycle.md)
   * [Event Interfaces](apps-engine/fundamentals-of-apps/event-interfaces.md)
   * [Permission System](apps-engine/permission-system.md)

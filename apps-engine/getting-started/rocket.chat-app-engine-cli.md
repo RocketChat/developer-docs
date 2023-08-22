@@ -1,20 +1,16 @@
----
-description: >-
-  This guide will help you get started with our official Apps-Engine Command
-  Line Interface (CLI)  to start creating your own apps.
----
+# Apps Engine Client
 
-# The Apps-Engine CLI
+The Rocket.Chat Apps Engine CLI is a simple command-line interface that facilitates the development of Rocket.Chat applications. This computer program allows you to create and delete files, execute programs, and navigate through folders and files. On a Mac, it is referred to as Terminal, whereas on Windows, it is Command Prompt. The Command Line is a potent application that will expand your programming capabilities.
 
-The Rocket.Chat Apps-Engine CLI is a simple Command Line Interface, that gives you a kickstart in developing your Rocket.Chat App.
+\
+Using straightforward commands, you can compile and deploy a basic app structure to your Rocket.Chat Server. We have enhanced its capacity to generate boilerplate code for various functions, display autocomplete installation instructions, submit an app for review in the marketplace, and more. The Rocket.Chat Apps Engine client enables you to create new applications and deploy them on your deployment environment, as well as package your application for shipment and future deployment on other installations.
 
-Using simple commands, you can create a basic app structure and package & deploy it into your RC Server. We have extended its capability to generate boilerplate code for various functions, display autocomplete installation instructions, submit an App to the Marketplace for review, and more.
+\
+The CLI is hosted on [GitHub](https://github.com/RocketChat/Rocket.Chat.Apps-cli) and distributed via [NPM](https://www.npmjs.com/package/@rocket.chat/apps-cli). It provides an easy interface for developing extensions.
 
-The CLI is available on [GitHub](https://github.com/RocketChat/Rocket.Chat.Apps-cli) and published on [NPM](https://www.npmjs.com/package/@rocket.chat/apps-cli). It provides an easy interface for developing extensions. Follow the quick steps below to create your first application.
+## Installing Rocket.Chat Apps Engine CLI
 
-## Installation
-
-Before installing the CLI, ensure that you have [Node](https://nodejs.org/en/) already installed on your machine. To verify Node installation, use the following command in your terminal.
+Before installing the CLI, you must ensure that [Node.js is already installed](https://nodejs.org/en) on your system. Use the following command in your terminal to verify the installation of Node.js:&#x20;
 
 ```bash
 node -v
@@ -22,106 +18,34 @@ node -v
 # It should return you a valid version.
 ```
 
-Once you have installed Node, run the following command in your terminal to install the CLI globally.
+Run the following command in your terminal after installing Node.js to deploy the CLI globally.
 
 ```bash
 npm install -g @rocket.chat/apps-cli
 ```
 
-Depending on your internet connection, installing the CLI will take a while. After installation, run the following command to verify the installation.
+{% hint style="info" %}
+**Troubleshooting Tip**\
+\
+**Error:** While attempting to execute the preceding command, if your operating system rejects the operation, it is likely that you do not have permission to access the file as the current user. If you suspect a permissions issue, please double-check the permissions of the file and its parent directories, or rerun the command as root/Administrator.
+
+\
+**Resolution:** Prefix the command with sudo and execute as follows:\
+
+
+**`sudo npm install -g @rocket.chat/apps-cli`**\
+\
+After executing this command, enter the system user's password. This will grant the application all necessary permissions, as this command must be executed as an administrator.
+{% endhint %}
 
 ```bash
 rc-apps -v
 # @rocket.chat/apps-cli/1.4.0 darwin-x64 node-v10.15.3
 ```
 
-Note that the response may vary depending on your machine and environment, but it should look similar. Now, you are all set to create your first app.
+Depending on the speed of your Internet connection, CLI installation will take some time. After installation, run the following command to verify the installation. Note that the response may differ depending on your system and environment, but it should have a similar appearance.
 
-## App Development using CLI
+Additionally, we recommend that you [install Visual Studio Code](https://code.visualstudio.com/download). In addition, a local [development instance](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods/docker-and-docker-compose) of Rocket.Chat must be running on your system.
 
-### Logging Inside an App
-
-Due to limitations of NodeJS's `vm` the package, we have had to implement a custom logger class. To make usage of this you can use `this.getLogger()` and then do the normal `console` style logging.
-
-### `rc-apps create`
-
-The development tools provide a command to quickly scaffold a new Rocket.Chat App, run `rc-apps create` and a new folder will be created inside the current working directory with a basic App which does nothing but will compile and be packaged in the `dist` folder.
-
-### App description
-
-The app description file, named `app.json`, contains basic information about the app. You can check the [app-schema.json](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/master/src/definition/app-schema.json) file for all the detailed information and fields allowed in the app description file, the basic structure is similar to this:
-
-```json
-{
-    "id": "5cb9a329-0613-4d39-b20f-cc2cc9175df5",
-    "name": "App Name",
-    "nameSlug": "app-name",
-    "version": "0.0.1",
-    "requiredApiVersion": "^1.4.0",
-    "description": "App which provides something very useful for Rocket.Chat users.",
-    "author": {
-        "name": "Author Name <author@email.com>",
-        "support": "Support Url or Email"
-    },
-    "classFile": "main.ts",
-    "iconFile": "beautiful-app-icon.jpg"
-}
-```
-
-### Extending the App class
-
-The basic creation of an App is based on extending the `App` class from the Rocket.Chat Apps _definition_ library. Your class also has to implement the constructor and optionally the `initialize` function. For more details on it check the [App definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/classes/app.app-1.html).
-
-```ts
-import {
-    IAppAccessors,
-    IConfigurationExtend,
-    IEnvironmentRead,
-    ILogger,
-} from '@rocket.chat/apps-engine/definition/accessors';
-import { App } from '@rocket.chat/apps-engine/definition/App';
-import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
-
-export class TodoListApp extends App {
-    constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-        super(info, logger, accessors);
-    }
-
-    public async initialize(configurationExtend: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
-        await this.extendConfiguration(configurationExtend, environmentRead);
-        this.getLogger().log('Hello world from my app');
-    }
-}
-```
-
-### Packaging the app
-
-Currently, the Rocket.Chat servers and Marketplace allow submission of zip files, these files can be created by running `rc-apps package` which packages your app and creates the zip file under `dist` folder.
-
-### Uploading the app
-
-For uploading the app you need to add the required parameters in the `.rcappsconfig` already created in the apps directory. It accepts two types of objects:-
-
-* Upload using username, password
-
-```js
-{
-    url: string;
-    username: string;
-    password: string;
-}
-```
-
-* Upload using personal access token and userId
-
-```
-{
-    url: string;
-    userId: string;
-    token: string;
-}
-```
-
-### Enabling autocomplete for commands
-
-To enable autocomplete for the apps cli use the command `rc-apps autocomplete <your-shell-type>` with the shell type as `zsh` or `bash` as the supported types. This would provide step-by-step instructions to enable shell completion in your preferred shell.
+\
+You are now all set to develop your first app.
