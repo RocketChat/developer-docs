@@ -761,6 +761,7 @@
       * [Get Public Settings](reference/api/realtime-api/method-calls/get-public-settings.md)
       * [Check Username Availability](reference/api/realtime-api/method-calls/check-username-availability.md)
       * [Restart Server](reference/api/realtime-api/method-calls/restart-server.md)
+      * [Add OAuth Service](reference/api/realtime-api/method-calls/add-oauth-service.md)
       * [Get Subscriptions](reference/api/realtime-api/method-calls/get-subscriptions.md)
       * [Spotlight (search)](reference/api/realtime-api/method-calls/spotlight-search.md)
     * [Livechat Realtime API](reference/api/realtime-api/livechat-api/README.md)
