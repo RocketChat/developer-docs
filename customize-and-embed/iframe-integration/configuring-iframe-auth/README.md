@@ -210,10 +210,8 @@ The reply will be either a postMessage or an error back to your page.
 **Login in Rocket.Chat with the default account system while in development**
 
 {% hint style="danger" %}
-When you activate the iframe auth, you cannot access Rocket.Chat's default login page on your workspace.
+When you activate the iframe auth, you cannot access Rocket.Chat's default login page on your workspace. However, if you still want to use your Rocket.Chat's credentials to log in on your workspace, you can do that by opening the browser's developer console and executing the following code:&#x20;
 {% endhint %}
-
-However, if you still want to use your Rocket.Chat's credentials to log in on your workspace, you can do that by opening the browser's developer console and executing the following code:
 
 ```javascript
 Meteor.loginWithPassword('username-or-email', 'your-password');
