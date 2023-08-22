@@ -104,3 +104,9 @@ To edit Rocket.Chat files,
 * Open the cloned repository folder on your IDE.
 * When you make changes to Rocket.Chat the server will automatically rebuild.
 * Sometimes changes can shut down the server. If that happens, run `yarn dsv` again.
+
+#### **References**
+
+* [Development Environment Troubleshooting](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/troubleshooting.md)
+
+Now that your development server is running, you're welcome to contribute to the Rocket.Chat server! See [participate-in-rocket.chat-development](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/ "mention") to learn more about Rocket.Chat contributions.

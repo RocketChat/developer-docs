@@ -1,14 +1,17 @@
 # Linux
 
-You can set up the Rocket.Chat development server on either a Linux device or a virtual machine with Linux installed.
+Setting up a Rocket.Chat development server on Linux involves several steps, including installing the necessary dependencies, configuring the server, and deploying Rocket.Chat. This guide will walk you through the process step by step.&#x20;
+
+{% hint style="info" %}
+The sample Linux distribution for this guide is Ubuntu. However, the steps are similar for other Linux distributions.
+{% endhint %}
 
 ## Requirements
 
 * At least 12GB RAM is required for building in a development environment. For deployment and other uses, 2GB RAM suffices.
-* There's no requirement to have pre-installed Nodejs or Mongo. Begin with a fresh system.
-* Utilize a standard user account (not root) for setup. Avoid using sudo to prevent potential file permission issues.
+* Use a standard user account (not root) for setup. Avoid using sudo to prevent potential file permission issues.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 You may notice build WARNINGs related to _peer dependencies_ or other transitive dependencies. They are typically safe to ignore unless you are coding the required features or modules.
 {% endhint %}
 
@@ -46,80 +49,62 @@ sudo apt-get install software-properties-common
 
 </details>
 
+* Install **NodeJs 14.x (LTS)** either [manually](https://nodejs.org/dist/latest-v14.x/) or using a tool like [nvm](https://github.com/creationix/nvm) or [volta](https://volta.sh/).
+
+{% hint style="warning" %}
+Kindly check the [releases](https://github.com/RocketChat/Rocket.Chat/releases) to see the required NodeJS  version for Rocket.Chat.
+{% endhint %}
+
 * Install [Meteor](https://www.meteor.com/install) with this command:
 
 ```
 curl https://install.meteor.com/ | sh
 ```
 
-* There is no need to install `node` or `npm`, as Meteor already includes them. Confirm by running this command:
+{% hint style="warning" %}
+Occasionally, you might have to install a previous Meteor release. Ensure to verify the required Meteor version for Rocket.Chat from the  [`.meteor/release file`](https://github.com/RocketChat/Rocket.Chat/blob/develop/apps/meteor/.meteor/release)`.`
+{% endhint %}
+
+Alternatively, install a specific Meteor version using this command replacing `x.x` with the version number:
 
 ```
-meteor node -v
-meteor npm -v
+curl https://install.meteor.com/?release=x.x | sh
 ```
 
-* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to the [required node version](https://github.com/RocketChat/Rocket.Chat/releases) for Rocket.Chat.
+* Install the [`yarn`](https://yarnpkg.com/getting-started/install) package manager with this command.
 
-```bash
-npm install -g n
-n 14.21.3
-node -v
 ```
-
-* Install the `yarn` package manager.&#x20;
-
-```bash
 npm install --global yarn
 ```
 
-{% hint style="success" %}
-Information on the various versions of packages needed can be found in the `package.json`
-{% endhint %}
+* Fork the Rocket.Chat repository on [GitHub](https://github.com/RocketChat/Rocket.Chat) and clone it to your local system.
 
-* Install the [n node package manager](https://www.npmjs.com/package/n) or [nvm ](https://github.com/nvm-sh/nvm)to help you manage node versions on your machine. You can use it to switch to any specified node version. Here is an example of switching node versions with the [n node package manager](https://www.npmjs.com/package/n) :
-
-```bash
-npm install -g n
-n 14.21.1
-node -v
+```
+git clone https://github.com/<your-username>/Rocket.Chat.git
 ```
 
-{% hint style="warning" %}
-Check the [release notes](https://github.com/RocketChat/Rocket.Chat/releases) for the compatible Node.js version and install it accordingly.
+{% hint style="info" %}
+To install Git on Linux, see the [official guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 {% endhint %}
 
-* Fork the [Rocket.Chat GitHub repository GitHub](https://github.com/RocketChat/Rocket.Chat), clone it to your local system navigate into the directory.
+* Navigate to the project directory and install all the dependencies by running these commands:
 
-```bash
-git clone https://github.com/<your-username>/Rocket.Chat
+```
 cd Rocket.Chat
+yarn
 ```
 
-* Navigate to the `meteor` directory and download the necessary meteor version for Rocket.Chat, as configured in `.meteor/release` file with these commands:
+* When completed, build and run the server by executing this command:
 
-```bash
-cd apps/meteor
-meteor --version
 ```
-
-* Navigate back to the project root directory and install the required packages by running the following commands:
-
-<pre class="language-bash"><code class="lang-bash">cd ../../
-<strong>yarn
-</strong></code></pre>
-
-* Build and startup your development server by executing this command:
-
-```bash
 yarn dsv
 ```
 
 {% hint style="info" %}
-Building for the first time will take a while, and you may see some warnings or errors.
+The first build can take ten or more minutes, and you may see various warnings or minor errors. Subsequent dev builds will take lesser time.
 {% endhint %}
 
-* When the server is ready, you will see the "Server Running" screen:
+* The server will start up on port `3000` and you will see the "Server Running" screen:
 
 ![Rocket.Chat Development server running](<../../../.gitbook/assets/Rocket.Chat Development server running>)
 
@@ -134,9 +119,11 @@ For editing Rocket.Chat files,
 3. Occasionally, changes might cause the server to shut down. In such cases, simply restart the server to continue.
 
 {% hint style="info" %}
-Given the extensive Rocket.Chat codebase, it's neccessary to adjust the [system parameter](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md) on your OS to optimize the efficiency of the file-change watcher.
+Given the extensive Rocket.Chat codebase, it's necessary to adjust the [system parameter](https://github.com/meteor/docs/blob/master/long-form/file-change-watcher-efficiency.md) on your OS to optimize the efficiency of the file-change watcher.
 {% endhint %}
 
-**References**
+#### **References**
 
 * [Development Environment Troubleshooting](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/troubleshooting.md)
+
+Now that your development server is running, you're welcome to contribute to the Rocket.Chat server! See [participate-in-rocket.chat-development](../../../contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/ "mention") to learn more about Rocket.Chat contributions.
