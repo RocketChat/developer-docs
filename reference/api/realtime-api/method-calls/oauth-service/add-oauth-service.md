@@ -2,10 +2,6 @@
 
 Add an [OAuth service](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/oauth) for users to log in to your workspace.
 
-{% hint style="info" %}
-* It requires the `add-oauth-service` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-{% endhint %}
-
 | Name              | Requires Auth | Permission          | Setting |
 | ----------------- | ------------- | ------------------- | ------- |
 | `addOAuthService` | Yes           | `add-oauth-service` | `None`  |
