@@ -850,7 +850,10 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### WhatsApp
 
-| Description                                       | Details Page                                                                     |
-| ------------------------------------------------- | -------------------------------------------------------------------------------- |
-| WhatsApp Business API integration for Rocket.Chat | [Link](miscellaneous/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md) |
-| Send a template message.                          | [Link](miscellaneous/whatsapp-endpoints/template-message.md)                     |
+<table><thead><tr><th width="308.5">Description</th><th>Details Page</th></tr></thead><tbody><tr><td>WhatsApp Business API integration for Rocket.Chat</td><td><a href="miscellaneous/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md">Link</a></td></tr><tr><td>Send a template message.</td><td><a href="miscellaneous/whatsapp-endpoints/template-message.md">Link</a></td></tr></tbody></table>
+
+### Mailer
+
+| URL              | Short Description                         | Details Page                             |
+| ---------------- | ----------------------------------------- | ---------------------------------------- |
+| `/api/v1/mailer` | Send an email to users on your workspace. | [Link](miscellaneous/mailer-endpoint.md) |

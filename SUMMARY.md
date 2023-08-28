@@ -707,6 +707,7 @@
           * [Execute command's preview item](reference/api/rest-api/endpoints/miscellaneous/commands-endpoints/execute-commands-preview-item.md)
           * [Execute a slash command](reference/api/rest-api/endpoints/miscellaneous/commands-endpoints/execute-a-slash-command.md)
         * [Install Private Apps](reference/api/rest-api/endpoints/miscellaneous/install-private-apps.md)
+        * [Mailer Endpoint](reference/api/rest-api/endpoints/miscellaneous/mailer-endpoint.md)
         * [Invite Endpoints](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/README.md)
           * [Find or Create Invite](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/findorcreateinvite.md)
           * [List Invites](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/listinvites.md)
