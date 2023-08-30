@@ -734,6 +734,7 @@
         * [Create Private Group](reference/api/realtime-api/method-calls/rooms/create-direct-message-1.md)
         * [Notify Room Stream](reference/api/realtime-api/method-calls/rooms/notify-room-stream.md)
         * [Load History](reference/api/realtime-api/method-calls/rooms/load-history.md)
+        * [Add Room Leader](reference/api/realtime-api/method-calls/rooms/load-history-1.md)
         * [Save Room Settings](reference/api/realtime-api/method-calls/rooms/save-room-settings.md)
         * [Get Room Roles](reference/api/realtime-api/method-calls/rooms/get-room-roles.md)
       * [Channels](reference/api/realtime-api/method-calls/channels/README.md)
