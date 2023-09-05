@@ -1,6 +1,6 @@
 # Group Members
 
-Lists the users of participants of a private group. It supports the [#pagination](../../../#pagination "mention") parameters.
+Lists the participants of a private group. It supports the [#pagination](../../../#pagination "mention") parameters.
 
 Requires `view-broadcast-member-list` if room is a broadcast.
 
@@ -10,9 +10,12 @@ Requires `view-broadcast-member-list` if room is a broadcast.
 
 ## Query Parameters
 
-| Argument            | Example                    | Required | Description                 |
-| ------------------- | -------------------------- | -------- | --------------------------- |
-| `roomId` `roomName` | `ByehQjC44FwMeiLbX` `user` | Required | The room id. The room name. |
+| Argument            | Example                    | Required                   | Description                                                                                      |
+| ------------------- | -------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
+| `roomId`            | `ByehQjC44FwMeiLbX`        | Required(if no `roomName`) | The group's id                                                                                   |
+| `roomName`          | `testChannel`              | Required(if no `roomId`)   | The group's name                                                                                 |
+| `status`            | `['online', 'away']`       | Optional                   | The user's status (search filter).                                                               |
+| `filter`            | `my-nickname`              | Optional                   | Extra search filters to be applied to the fields defined in the `Accounts_SearchFields` setting. |
 
 ## Example Call
 
@@ -24,7 +27,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Example Result
 
-```javascript
+```json
 {
     "members": [
         {

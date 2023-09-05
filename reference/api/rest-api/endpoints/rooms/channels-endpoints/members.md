@@ -12,10 +12,12 @@ The list of elements a user can use to sort the list is limited. The current sor
 
 ## Query Parameters
 
-| Argument   | Example             | Required                  | Description        |
-| ---------- | ------------------- | ------------------------- | ------------------ |
-| `roomId`   | `ByehQjC44FwMeiLbX` | Required (if no roomName) | The channel's id   |
-| `roomName` | `general`           | Required (if no roomId)   | The channel's name |
+| Argument            | Example                    | Required                  | Description                                                                                      |
+| ------------------- | -------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------ |
+| `roomId`            | `ByehQjC44FwMeiLbX`        | Required (if no roomName) | The channel's id                                                                                 |
+| `roomName`          | `general`                  | Required (if no roomId)   | The channel's name                                                                               |
+| `status`            | `['online', 'away']`       | Optional                  | The user's status (search filter).                                                               |
+| `filter`            | `my-nickname`              | Optional                  | Extra search filters to be applied to the fields defined in the `Accounts_SearchFields` setting. |
 
 ## Example Call
 
