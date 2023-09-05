@@ -8,10 +8,10 @@ Lists all of the specific group messages on the server. It supports the [#pagina
 
 ## Query Parameters
 
-| Argument   | Example             | Required                  | Description              |
-| ---------- | ------------------- | ------------------------- | ------------------------ |
-| `roomId`   | `ByehQjC44FwMeiLbX` | Required(if no `roomName` | The private group's id   |
-| `roomName` | `testGroup`         | Required(if no `roomId`)  | The private group's name |
+| Argument   | Example             | Required                   | Description              |
+| ---------- | ------------------- | -------------------------- | ------------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required(if no `roomName`) | The private group's id   |
+| `roomName` | `testGroup`         | Required(if no `roomId`)   | The private group's name |
 
 ## Example Call
 
