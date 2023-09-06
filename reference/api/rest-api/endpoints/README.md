@@ -854,6 +854,7 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Mailer
 
-| URL              | Short Description                         | Details Page                             |
-| ---------------- | ----------------------------------------- | ---------------------------------------- |
-| `/api/v1/mailer` | Send an email to users on your workspace. | [Link](miscellaneous/mailer-endpoint.md) |
+| URL                        | Short Description                         | Details Page                                                         |
+| -------------------------- | ----------------------------------------- | -------------------------------------------------------------------- |
+| `/api/v1/mailer`           | Send an email to users on your workspace. | [Link](miscellaneous/mailer-endpoint/send-mailer-endpoint.md)        |
+| `/api/v1/mailer.subscribe` | Unsubscribe from mailer                   | [Link](miscellaneous/mailer-endpoint/mailer-unsubscribe-endpoint.md) |

@@ -1,4 +1,4 @@
-# Mailer Endpoint
+# Send Mailer Endpoint
 
 Send emails to users from your workspace.
 
