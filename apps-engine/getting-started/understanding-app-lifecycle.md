@@ -1,4 +1,4 @@
-# Understanding the RC Apps Lifecycle
+# Understanding the App Lifecycle
 
 ## Introduction
 
