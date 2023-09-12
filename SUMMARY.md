@@ -725,6 +725,8 @@
         * [Realtime Two Factor Authentication](reference/api/realtime-api/method-calls/authentication/realtime-two-factor-authentication.md)
       * [Rooms](reference/api/realtime-api/method-calls/rooms/README.md)
         * [Get Rooms](reference/api/realtime-api/method-calls/rooms/get-rooms.md)
+        * [Get Room By Id](reference/api/realtime-api/method-calls/rooms/get-rooms-1.md)
+        * [Get Room Name By Id](reference/api/realtime-api/method-calls/rooms/get-rooms-2.md)
         * [Archive Rooms](reference/api/realtime-api/method-calls/rooms/archive-rooms.md)
         * [Unarchive Rooms](reference/api/realtime-api/method-calls/rooms/unarchive-rooms.md)
         * [Favorite/Unfavourite a Room](reference/api/realtime-api/method-calls/rooms/favoriting-rooms.md)
