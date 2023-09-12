@@ -1,10 +1,11 @@
----
-description: Getting Started in creating your first ever Rocket.Chat App
----
-
-# Creating Your First App
+# Creating Apps
 
 Now, that you've understood the basic concepts of the Apps-Engine and installed the CLI, you can create an extremely basic RC App and test it out to understand things. To get started, just recall the commands inside the Apps-Engine CLI.
+
+`rc-apps` is a command-line interface (CLI) utility that facilitates the app development process by providing commands to rapidly scaffold an RC application. Once you initiate rc-apps in your terminal, you will be presented with a list of commands that you can execute as needed. Here is a list of commands that RC Apps-Engine supports:&#x20;
+
+\
+
 
 ## Creating a new RocketChat App
 

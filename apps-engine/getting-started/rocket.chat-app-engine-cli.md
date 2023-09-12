@@ -1,9 +1,9 @@
-# Apps Engine Client
+# Apps Engine CLI
 
 The Rocket.Chat Apps Engine CLI is a simple command-line interface that facilitates the development of Rocket.Chat applications. This computer program allows you to create and delete files, execute programs, and navigate through folders and files. On a Mac, it is referred to as Terminal, whereas on Windows, it is Command Prompt. The Command Line is a potent application that will expand your programming capabilities.
 
 \
-Using straightforward commands, you can compile and deploy a basic app structure to your Rocket.Chat Server. We have enhanced its capacity to generate boilerplate code for various functions, display autocomplete installation instructions, submit an app for review in the marketplace, and more. The Rocket.Chat Apps Engine client enables you to create new applications and deploy them on your deployment environment, as well as package your application for shipment and future deployment on other installations.
+Using straightforward commands, you can compile and deploy a basic app structure to your Rocket.Chat Server. We have enhanced its capacity to generate boilerplate code for various functions, display autocomplete installation instructions, submit an app for review in the marketplace, and more. The Rocket.Chat Apps Engine CLI enables you to create new applications and deploy them on your deployment environment, as well as package your application for shipping and future deployment on other installations.
 
 \
 The CLI is hosted on [GitHub](https://github.com/RocketChat/Rocket.Chat.Apps-cli) and distributed via [NPM](https://www.npmjs.com/package/@rocket.chat/apps-cli). It provides an easy interface for developing extensions.
@@ -27,7 +27,7 @@ npm install -g @rocket.chat/apps-cli
 {% hint style="info" %}
 **Troubleshooting Tip**\
 \
-**Error:** While attempting to execute the preceding command, if your operating system rejects the operation, it is likely that you do not have permission to access the file as the current user. If you suspect a permissions issue, please double-check the permissions of the file and its parent directories, or rerun the command as root/Administrator.
+**Error:** While attempting to execute the preceding command, if your operating system rejects the operation, it is likely that you do not have permission to access the file as the current user. If you suspect a permissions issue, please double-check your NPM installation, or rerun the command as root/Administrator.
 
 \
 **Resolution:** Prefix the command with sudo and execute as follows:\
@@ -47,5 +47,14 @@ Depending on the speed of your Internet connection, CLI installation will take s
 
 Additionally, we recommend that you [install Visual Studio Code](https://code.visualstudio.com/download). In addition, a local [development instance](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods/docker-and-docker-compose) of Rocket.Chat must be running on your system.
 
-\
+Open the terminal in Visual Studio and execute the following command:&#x20;
+
+```bash
+npm install
+```
+
+This installs the Apps-Engine framework/library, allowing applications to recognize Apps-Engine.
+
+
+
 You are now all set to develop your first app.
