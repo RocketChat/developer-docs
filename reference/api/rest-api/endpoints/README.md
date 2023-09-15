@@ -60,6 +60,7 @@
 | `/api/v1/users.resetTOTP`                     | Reset the Two-factor authentication via TOTP     | [Link](user-management/users-endpoints/reset-users-totp.md)              |
 | `/api/v1/users.listTeams`                     | Lists users teams                                | [Link](user-management/users-endpoints/list-users-teams.md)              |
 | `/api/v1/users.logout`                        | Logs user out                                    | [Link](user-management/users-endpoints/logout-user-endpoint.md)          |
+| `/api/v1/moderation.reportUser`               | Report a user.                                   | [Link](user-management/users-endpoints/report-user.md)                   |
 
 ### LDAP
 
@@ -858,3 +859,14 @@ You can get and update the settings via the REST API, only if you have permissio
 | -------------------------- | ----------------------------------------- | -------------------------------------------------------------------- |
 | `/api/v1/mailer`           | Send an email to users on your workspace. | [Link](miscellaneous/mailer-endpoint/send-mailer-endpoint.md)        |
 | `/api/v1/mailer.subscribe` | Unsubscribe from mailer                   | [Link](miscellaneous/mailer-endpoint/mailer-unsubscribe-endpoint.md) |
+
+### Moderation
+
+| Url                                              | Short Description                                        | Details Page                                                                |
+| ------------------------------------------------ | -------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `/api/v1/moderation.reportsByUsers`              | Retrieves all the reported messages grouped by users     | [Link](settings/moderation-endpoints/get-reported-messages.md)              |
+| `/api/v1/moderation.user.reportedMessages`       | Retrieve all reported messages of a user.                | [Link](settings/moderation-endpoints/get-a-users-reported-messages.md)      |
+| `/api/v1/moderation.reports`                     | Retrieve all the reports of a single message             | [Link](settings/moderation-endpoints/fetch-reports-of-a-message.md)         |
+| `/api/v1/moderation.reportInfo`                  | Get more details of a single report.                     | [Link](settings/moderation-endpoints/fetch-info-of-a-report.md)             |
+| `/api/v1/moderation.dismissReports`              | Dismiss all the reports of a particular user.            | [Link](settings/moderation-endpoints/dismiss-reports.md)                    |
+| `/api/v1/moderation.user.deleteReportedMessages` | Delete all the reports of messages that belongs to user. | [Link](settings/moderation-endpoints/delete-reported-messages-of-a-user.md) |
