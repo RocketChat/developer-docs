@@ -393,9 +393,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Appearance
 
-| Url                          | Short Description                                   | Details Page                                         |
-| ---------------------------- | --------------------------------------------------- | ---------------------------------------------------- |
-| `api/v1/livechat/appearance` | Retrieves LiveChat widget settings about appearance | [Link](omnichannel/livechat-endpoints/appearance.md) |
+| Url                          | Short Description                             | Details Page                                                      |
+| ---------------------------- | --------------------------------------------- | ----------------------------------------------------------------- |
+| `api/v1/livechat/appearance` | Retrieves LiveChat widget appearance settings | [Link](omnichannel/livechat-endpoints/appearance/appearance.md)   |
+| `api/v1/livechat/appearance` | Update Livechat widget appearance settings.   | [Link](omnichannel/livechat-endpoints/appearance/appearance-1.md) |
 
 #### Livechat Business Hours
 
