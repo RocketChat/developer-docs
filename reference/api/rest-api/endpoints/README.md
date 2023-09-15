@@ -398,6 +398,13 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | `api/v1/livechat/appearance` | Retrieves LiveChat widget appearance settings | [Link](omnichannel/livechat-endpoints/appearance/appearance.md)   |
 | `api/v1/livechat/appearance` | Update Livechat widget appearance settings.   | [Link](omnichannel/livechat-endpoints/appearance/appearance-1.md) |
 
+#### Livechat Statistics
+
+| Url                                         | Short Description                  | Details Page                                                                   |
+| ------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------ |
+| `/api/v1/livechat/analytics/overview`       | Get omnichannel analytics overview | [Link](omnichannel/livechat-endpoints/livechat-statistics/get-priorities-1.md) |
+| `/api/v1/livechat/analytics/agent-overview` | Get Agent Analytics Overview       | [Link](omnichannel/livechat-endpoints/livechat-statistics/get-priorities.md)   |
+
 #### Livechat Business Hours
 
 | Url                                   | Short Description                                        | Details Page                                                                  |

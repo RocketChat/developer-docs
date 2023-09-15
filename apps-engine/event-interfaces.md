@@ -64,7 +64,7 @@ export class MessageEventsApp extends App implements IPreMessageSentPrevent {
 
 #### Result
 
-![Message prevented by app](<../../.gitbook/assets/image (18).png>)
+![Message prevented by app](<../.gitbook/assets/image (18).png>)
 
 And you will see the following in the server console.
 
@@ -121,7 +121,7 @@ export class MessageEventsApp extends App implements IPostMessageSent {
 
 #### Result
 
-![Message redirected to #general (top) from #another-channel (bottom)](<../../.gitbook/assets/image (17).png>)
+![Message redirected to #general (top) from #another-channel (bottom)](<../.gitbook/assets/image (17).png>)
 
 This app is going to forward all messages sent to other channels, private groups or DMs to `#general`
 

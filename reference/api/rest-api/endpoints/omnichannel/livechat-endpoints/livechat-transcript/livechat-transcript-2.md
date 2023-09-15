@@ -10,6 +10,13 @@ This endpoint is used to cancel any transcript requests, meaning that the chat t
 | ---------------------------------- | ------------- | ----------- |
 | `/api/v1/livechat/transcript/:rid` | `YES`         | `DELETE`    |
 
+## Headers <a href="#headers" id="headers"></a>
+
+| Argument       | Example        | Required | Description                |
+| -------------- | -------------- | -------- | -------------------------- |
+| `X-User-Id`    | `myuser-name`  | Required | The authenticated user ID. |
+| `X-Auth-Token` | `myauth-token` | Required | Auth token.                |
+
 ## Path Parameters
 
 <table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>Required</td><td>The Id of the Live Chat room.</td></tr></tbody></table>
