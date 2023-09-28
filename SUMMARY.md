@@ -172,7 +172,7 @@
           * [Get Status](reference/api/rest-api/endpoints/user-management/users-endpoints/get-status.md)
           * [Set Status](reference/api/rest-api/endpoints/user-management/users-endpoints/set-status.md)
           * [Update User](reference/api/rest-api/endpoints/user-management/users-endpoints/update-user.md)
-          * [Update own basic information](reference/api/rest-api/endpoints/user-management/users-endpoints/update-own-basic-information.md)
+          * [Update Own Basic Information](reference/api/rest-api/endpoints/user-management/users-endpoints/update-own-basic-information.md)
           * [Create Users Token](reference/api/rest-api/endpoints/user-management/users-endpoints/create-users-token.md)
           * [Get User Preferences](reference/api/rest-api/endpoints/user-management/users-endpoints/get-user-preferences.md)
           * [Set Preferences](reference/api/rest-api/endpoints/user-management/users-endpoints/set-preferences.md)
