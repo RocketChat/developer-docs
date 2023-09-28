@@ -14,18 +14,43 @@ You can only send `alias` and `avatar` properties if your user has the `message-
 
 ## Payload
 
-| Argument              | Example                    | Required | Description                                                                                                                                      |
-| --------------------- | -------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `message._id`         | `ByehQjC44FwMeiLbX`        | Optional | The \_id of message.                                                                                                                             |
-| `message.rid`         | `ByehQjC44FwMeiLbX`        | Required | The room id of where the message is to be sent.                                                                                                  |
-| `message.tmid`        | `ByehQCh2435MeiLbX`        | Optional | The message's id to create a thread.                                                                                                             |
-| `message.msg`         | `Sample message`           | Optional | The text of the message to send, is optional because of attachments.                                                                             |
-| `message.alias`       | `Some Name`                | Optional | This will cause the message's name to appear as the given alias, but your username will still display. Require the `impersonate-other-user` role |
-| `message.emoji`       | `:smirk:`                  | Optional | If provided, this will make the avatar on this message be an emoji. [Emoji Cheetsheet](http://emoji.codes/)                                      |
-| `message.tshow`       | `true`                     | Optional | Used when replying in a thread. Message will be sent in channel also if value is `true`                                                          |
-| `message.avatar`      | `http://site.com/logo.png` | Optional | If provided, this will make the avatar use the provided image url. Require the `impersonate-other-user` role                                     |
-| `message.attachments` | `[{}]`                     | Optional | See the below section, [Attachments Detail](send-message.md#attachments-detail), for details.                                                    |
-| `message.blocks`      | `[{}]`                     | Optional | Add message blocks, see blocks details below.                                                                                                    |
+| Argument       | Example                                                                                                    | Required | Description                                                                  |
+| -------------- | ---------------------------------------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------- |
+| `message`      | <pre><code>{
+      "rid": "64f0f82c2c26843a68c1f7ba",
+      "msg": "Sample message"
+    
+  }
+</code></pre> | Required | A message object containing all message data.                                |
+| `previewUrls`  | <pre><code>['https://google.com', 'https://rocket.chat']
+</code></pre>                                     | Optional | An array to define which URL previews should be retrieved from each message. |
+
+**Some important things to note about `previewUrls`  include:**
+
+* If the `previewUrls` array is empty, no URL will be previewed.
+* If the `previewUrls` parameter isn't sent, all URLs (up to a maximum of five external URLs) will be previewed.
+* If the message contains attachments or quotes, no URL is previewed.
+* Internal URLs are not considered in the `previewUrls` array.
+* A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed.
+
+{% hint style="warning" %}
+URLs that include the same text as the [**Site URL**](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings) are referred to as Internal URLs.
+{% endhint %}
+
+#### Message Object
+
+| Argument      | Example                    | Required | Description                                                                                                                                      |
+| ------------- | -------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `_id`         | `ByehQjC44FwMeiLbX`        | Optional | The \_id of message.                                                                                                                             |
+| `rid`         | `ByehQjC44FwMeiLbX`        | Required | The room id of where the message is to be sent.                                                                                                  |
+| `tmid`        | `ByehQCh2435MeiLbX`        | Optional | The message's id to create a thread.                                                                                                             |
+| `msg`         | `Sample message`           | Optional | The text of the message to send, is optional because of attachments.                                                                             |
+| `alias`       | `Some Name`                | Optional | This will cause the message's name to appear as the given alias, but your username will still display. Require the `impersonate-other-user` role |
+| `emoji`       | `:smirk:`                  | Optional | If provided, this will make the avatar on this message be an emoji. [Emoji Cheetsheet](http://emoji.codes/)                                      |
+| `tshow`       | `true`                     | Optional | Used when replying in a thread. Message will be sent in channel also if value is `true`                                                          |
+| `avatar`      | `http://site.com/logo.png` | Optional | If provided, this will make the avatar use the provided image url. Require the `impersonate-other-user` role                                     |
+| `attachments` | `[{}]`                     | Optional | See the below section, [Attachments Detail](send-message.md#attachments-detail), for details.                                                    |
+| `blocks`      | `[{}]`                     | Optional | Add message blocks, see blocks details below.                                                                                                    |
 
 ### Blocks Detail
 
@@ -165,6 +190,29 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -d '{"message": { "rid": "Xnb2kLD2Pnhdwe3RH", "msg": "This is a test!" }}'
 ```
 
+## Example Call with PreviewURLs
+
+```json
+curl -L -X POST 'http://localhost:3000/api/v1/chat.sendMessage' \
+-H 'x-auth-token: wrhSO31BO6Zn6G5Aa_bj-kMmImONHDjXrOwGtBpQIPM' \
+-H 'x-user-id: rbAXPnMktTFbNpwtJ' \
+-H 'Content-Type: application/json' \
+     -d '{
+   "message": {
+      "rid": "64f0f82c2c26843a68c1f7ba",
+      "msg": "This is a list of links! https://google.com https://hola.org/ https://www.usepayday.com/ https://www.getbumpa.com/ https://www.atlassian.com/software/jira https://writing-demo.dev.rocket.chat"
+   },
+   "previewUrls": [
+      "https://google.com",
+      "https://writing-demo.dev.rocket.chat",
+      "https://hola.org/",
+      "https://www.usepayday.com/",
+      "https://www.getbumpa.com/",
+      "https://www.atlassian.com/software/jira"
+   ]
+}'
+```
+
 ## Example Result
 
 ```javascript
@@ -194,4 +242,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 | ------- | ----------------------------------- |
 | 2.4.0   | Added validation on user's identity |
 | 0.60.0  | Added                               |
+| 6.4.0   | Add `previewUrls` param             |
 
