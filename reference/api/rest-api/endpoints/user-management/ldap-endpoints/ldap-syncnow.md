@@ -4,7 +4,7 @@ description: Sync LDAP users
 
 # LDAP SyncNow
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Syncs your [LDAP data](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/ldap) based on the[ data sync configurations](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/ldap/ldap-data-sync-settings).
 

@@ -4,7 +4,7 @@ description: Puts an active livechat conversation on hold
 
 # Room Onhold
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                           | Requires Auth | HTTP Method |
 | ----------------------------- | ------------- | ----------- |

@@ -1,8 +1,8 @@
 # Remove Livechat room Priority
 
-Remove the priority set to a Live Chat room.
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+Remove the priority set to a Live Chat room.
 
 {% hint style="info" %}
 You are required to have the `view-l-room` permission.

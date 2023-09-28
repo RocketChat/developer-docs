@@ -4,7 +4,7 @@ description: Apply license to a workspace
 
 # Add License
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 You may want to deploy your workspace in an [air-gapped environment](https://docs.rocket.chat/setup-and-configure/rocket.chat-air-gapped-deployment). Since the server has no internet to communicate with the cloud, we provide an enterprise edition license that you can apply manually to upgrade your workspace.
 

@@ -4,7 +4,7 @@ description: Returns the average chat duration of each department
 
 # Average chat duration time by department
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                                                                | Requires Auth | HTTP Method |
 | ------------------------------------------------------------------ | ------------- | ----------- |

@@ -4,7 +4,7 @@ description: Gives the percentage of abandoned chats per department
 
 # Percentage of abandoned chats by department
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                                                                | Requires Auth | HTTP Method |
 | ------------------------------------------------------------------ | ------------- | ----------- |

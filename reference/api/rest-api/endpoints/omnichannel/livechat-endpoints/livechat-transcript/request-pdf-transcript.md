@@ -1,6 +1,6 @@
 # Request PDF Transcript
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 [Request a PDF transcript ](https://docs.rocket.chat/use-rocket.chat/omnichannel-agents-guides/omnichannel-conversation#to-export-the-transcript-as-pdf)for an Omnichannel conversation.
 

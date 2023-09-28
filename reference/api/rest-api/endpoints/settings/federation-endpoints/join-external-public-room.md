@@ -4,7 +4,7 @@ description: Join an external public room
 
 # Join external public room
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                                         | Requires Auth | HTTP Method |
 | ------------------------------------------- | ------------- | ----------- |

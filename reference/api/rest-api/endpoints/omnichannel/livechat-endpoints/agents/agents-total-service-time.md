@@ -4,7 +4,7 @@ description: Gives the total service time sorted by agent
 
 # Agents total service time
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                                                   | Requires Auth | HTTP Method |
 | ----------------------------------------------------- | ------------- | ----------- |

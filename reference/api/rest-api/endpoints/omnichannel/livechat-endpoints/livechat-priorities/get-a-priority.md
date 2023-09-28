@@ -4,7 +4,7 @@ description: Get the details of a priority
 
 # Get a Priority
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` or `view-l-room permission`.

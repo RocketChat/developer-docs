@@ -1,6 +1,6 @@
 # Logout Session
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 This endpoint allows an authenticated user{ "success": false, "error": "User does not have the permissions required for this action \[error-unauthorized]" }{ "success": false, "error": "User does not have the permissions required for this action \[error-unauthorized]" } to log out any user's session on the workspace. It provides the capability to terminate sessions of other users, ensuring workspace security and management.
 

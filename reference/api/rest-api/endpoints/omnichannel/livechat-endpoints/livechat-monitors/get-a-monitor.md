@@ -1,6 +1,6 @@
 # Get a Monitor
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="404.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/monitors/:username</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 

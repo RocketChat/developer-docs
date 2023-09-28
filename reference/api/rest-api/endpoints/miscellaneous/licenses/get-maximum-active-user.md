@@ -1,6 +1,6 @@
 # Get Maximum Active User
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Retrieves a list of the maximum active users.
 

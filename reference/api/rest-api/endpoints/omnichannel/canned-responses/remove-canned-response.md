@@ -1,6 +1,6 @@
 # Remove Canned Response
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Remove a [canned response](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses).
 

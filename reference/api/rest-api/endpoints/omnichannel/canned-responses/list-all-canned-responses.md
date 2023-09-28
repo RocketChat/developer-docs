@@ -1,6 +1,6 @@
 # List All Canned Responses
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace. It is helpful for [omnichannel managers](https://docs.rocket.chat/use-rocket.chat/omnichannel/managers) to get all canned responses in the workspace, including private and departmental canned responses. It supports the [#pagination](../../../#pagination "mention") parameters.
 

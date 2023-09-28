@@ -4,7 +4,7 @@ description: Gives a list of priorities
 
 # List of Priorities
 
-![](../../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 ![](../../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-priorities.md](get-priorities.md "mention") as from Rocket.Chat `5.0`

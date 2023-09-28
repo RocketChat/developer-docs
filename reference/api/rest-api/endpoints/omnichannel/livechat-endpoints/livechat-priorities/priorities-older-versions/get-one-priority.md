@@ -4,7 +4,7 @@ description: Gives the details of a Priority
 
 # Get one Priority
 
-![](../../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 ![](../../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-priority.md](get-a-priority.md "mention") as from Rocket.Chat `5.0`

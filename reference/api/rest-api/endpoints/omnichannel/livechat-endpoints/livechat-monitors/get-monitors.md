@@ -1,8 +1,10 @@
 # Get Monitors
 
-Retrieves a list of monitors&#x20;
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
+Retrieves a list of monitors&#x20;
 
 <table><thead><tr><th width="290.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/monitors</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
 

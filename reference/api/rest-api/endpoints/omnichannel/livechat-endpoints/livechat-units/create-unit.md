@@ -4,9 +4,7 @@ description: Create a unit
 
 # Create Unit
 
-​​
-
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MWf1K8RJU-TjNEtPxvb%2F-MdYMamkk8ovpBMXvbHS%2F-MdYNoNP9yQ4DY7S9i37%2FEnterprise.jpg?alt=media&#x26;token=181a0d13-d261-4a6e-b4b2-ded19b2d5e32" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                     | Requires Auth | HTTP Method |
 | ----------------------- | ------------- | ----------- |

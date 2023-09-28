@@ -1,6 +1,6 @@
 # Confirm Enterprise License
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Confirm if the current workspace is an [enterprise edition](https://www.rocket.chat/enterprise) workspace.
 

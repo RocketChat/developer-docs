@@ -1,8 +1,8 @@
 # Delete an SLA
 
-Delete an SLA.
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+Delete an SLA.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-sla` permission.

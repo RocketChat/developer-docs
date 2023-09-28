@@ -1,6 +1,6 @@
 # Set SLA to Inquiry
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Set [SLA policy ](https://docs.rocket.chat/use-rocket.chat/omnichannel/sla-policies)to an inquiry.
 

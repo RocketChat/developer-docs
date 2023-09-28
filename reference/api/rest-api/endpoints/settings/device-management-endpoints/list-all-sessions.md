@@ -4,7 +4,7 @@ description: List all sessions on the workspace.
 
 # List All Sessions
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Retrieve the sessions of all users on the workspace. It supports the [#pagination](../../../#pagination "mention") parameters.
 

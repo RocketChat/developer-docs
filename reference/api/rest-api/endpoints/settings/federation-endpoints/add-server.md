@@ -1,6 +1,6 @@
 # Add federated server
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Add a new federated server. The [search-public-rooms.md](search-public-rooms.md "mention") endpoint will also return public rooms from this server.
 

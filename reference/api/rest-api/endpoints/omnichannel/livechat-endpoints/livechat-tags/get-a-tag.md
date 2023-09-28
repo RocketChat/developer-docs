@@ -4,7 +4,7 @@ description: Get the details of a tag
 
 # Get a Tag
 
-<figure><img src="https://2858450009-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWf1K8RJU-TjNEtPxvb%2Fuploads%2Fgit-blob-1654b99a4e9df54521f42da4d3c1a7fbdb9f2238%2FEnterprise.jpg?alt=media" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                    | Requires Auth | HTTP Method |
 | ---------------------- | ------------- | ----------- |

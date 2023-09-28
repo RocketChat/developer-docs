@@ -180,9 +180,7 @@ RocketChat(function() {
 
 ### Set Business Unit to filter departments on Registration page
 
-<figure><img src="../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Assign a business unit to a widget instance so that the widget will only allow the visitors to select departments connected to that particular business unit on the widget's registration form.
 

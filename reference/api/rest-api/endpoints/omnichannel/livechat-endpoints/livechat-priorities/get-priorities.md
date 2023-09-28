@@ -4,7 +4,7 @@ description: Get a list of all priorities
 
 # Get Priorities
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 It supports the [#pagination](../../../../#pagination "mention") parameters.
 

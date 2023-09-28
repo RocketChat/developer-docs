@@ -4,11 +4,9 @@ description: Removes a server
 
 # Remove federated server
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-| URL                                     | Requires Auth | HTTP Method |
-| --------------------------------------- | ------------- | ----------- |
-| `/api/v1/federation/removeServerByUser` | `yes`         | `POST`      |
+<table><thead><tr><th width="200">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>/api/v1/federation/removeServerByUser</code></td><td><code>yes</code></td><td><code>POST</code></td></tr></tbody></table>
 
 ## Payload
 

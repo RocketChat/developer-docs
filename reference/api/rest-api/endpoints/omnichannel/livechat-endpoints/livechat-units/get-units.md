@@ -1,6 +1,6 @@
 # Get Units
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Gets the list of all Omnichannel units. This requires the `manage-livechat-units` permission.
 

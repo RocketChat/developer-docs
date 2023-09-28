@@ -4,7 +4,7 @@ description: Sets the priority of an inquiry
 
 # Inquiry Prioritize
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 An incoming chat, that has not yet been taken by the agent is called an 'inquiry'. After it's been taken by the agent it is referred to as 'room'.

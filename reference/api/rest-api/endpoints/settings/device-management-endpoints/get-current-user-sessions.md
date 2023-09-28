@@ -4,7 +4,7 @@ description: Get sessions of the authenticated user.
 
 # Get Current User Sessions
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Retrieves all sessions of the authenticated user making the request.  It supports the [#pagination](../../../#pagination "mention") parameters.
 

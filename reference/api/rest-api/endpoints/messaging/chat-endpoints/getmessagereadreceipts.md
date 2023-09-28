@@ -1,6 +1,6 @@
 # Get Message Read Receipts
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Retrieve message read receipts. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
 

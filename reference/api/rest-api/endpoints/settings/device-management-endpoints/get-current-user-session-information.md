@@ -4,7 +4,7 @@ description: Get session info for the authenticated user
 
 # Get Current User Session Information
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Retrieve session information for sessions owned by the authenticated user. This endpoint provides detailed information about the user's sessions on the workspace. It does not grant access to the session information of other users on the workspace.
 

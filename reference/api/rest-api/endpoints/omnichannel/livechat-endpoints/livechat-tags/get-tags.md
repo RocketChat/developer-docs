@@ -1,6 +1,6 @@
 # Get Tags
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Get a list of all tags. It supports the [#pagination](../../../../#pagination "mention") parameters.
 

@@ -4,7 +4,7 @@ description: Retrieves a list of monitors
 
 # List of Monitors
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-monitors.md](get-monitors.md "mention") as from Rocket.Chat `5.0`

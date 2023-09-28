@@ -1,5 +1,7 @@
 # Business Hour Info
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Fetches the default business hours of a workspace
 
 {% hint style="info" %}

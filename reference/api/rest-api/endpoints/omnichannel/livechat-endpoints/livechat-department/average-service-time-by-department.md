@@ -4,7 +4,7 @@ description: Returns average of service time chats by department
 
 # Average service time by department
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                                                          | Requires Auth | HTTP Method |
 | ------------------------------------------------------------ | ------------- | ----------- |

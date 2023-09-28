@@ -1,6 +1,6 @@
 # Get Session Information
 
-<figure><img src="../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Retrieve session information for any session on the workspace, regardless of the session owner. This endpoint allows authorized users to access session details across the workspace.
 

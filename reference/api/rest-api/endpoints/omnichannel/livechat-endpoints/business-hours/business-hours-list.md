@@ -4,7 +4,7 @@ description: Gives a list of existing business hours
 
 # Business Hours List
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [business-hour-info.md](business-hour-info.md "mention") as from Rocket.Chat `5.0`

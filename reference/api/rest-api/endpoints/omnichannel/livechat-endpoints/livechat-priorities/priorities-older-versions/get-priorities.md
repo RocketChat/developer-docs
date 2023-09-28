@@ -6,7 +6,7 @@ description: Get a list of all priorities
 
 It supports the [#pagination](../../../../../#pagination "mention") parameters.
 
-<figure><img src="../../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 | URL                   | Requires Auth | HTTP Method |
 | --------------------- | ------------- | ----------- |

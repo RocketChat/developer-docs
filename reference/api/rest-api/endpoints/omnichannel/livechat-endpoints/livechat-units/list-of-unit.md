@@ -4,7 +4,7 @@ description: Gives a list of units
 
 # List of Unit
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-units.md](get-units.md "mention") as from Rocket.Chat `5.0`

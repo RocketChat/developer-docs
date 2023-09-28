@@ -1,8 +1,8 @@
 # Reset Priorities
 
-This resets all Priorities back to default.
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+This resets all Priorities back to default.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` permission.

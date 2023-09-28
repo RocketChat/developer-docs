@@ -4,7 +4,7 @@ description: Gives the details of a tag
 
 # Get one Tag
 
-![](../../../../../../../.gitbook/assets/enterprise.jpg)
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-tag.md](get-a-tag.md "mention") as from Rocket.Chat `5.0`

@@ -1,6 +1,6 @@
 # Get SLA Policies
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Get a list of all SLA policies. It supports the [#pagination](../../../../#pagination "mention") parameters.
 

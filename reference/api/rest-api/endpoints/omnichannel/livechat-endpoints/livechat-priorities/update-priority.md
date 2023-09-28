@@ -1,8 +1,8 @@
 # Update Priority
 
-Update an existing Priority.
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+Update an existing Priority.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` permission.
