@@ -6,7 +6,7 @@ Gets the messages in public channels to an anonymous user, if the server has the
 | -------------------------------- | ------------- | ----------- |
 | `/api/v1/channels.anonymousread` | `no`          | `GET`       |
 
-## Payload
+## Query Parameters
 
 | Argument   | Example             | Required                  | Description        |
 | ---------- | ------------------- | ------------------------- | ------------------ |

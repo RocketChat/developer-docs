@@ -6,7 +6,7 @@ Gets channel counters.
 | --------------------------- | ------------- | ----------- |
 | `/api/v1/channels.counters` | `yes`         | `GET`       |
 
-## Payload
+## Query Parameters
 
 One of roomId or roomName is required.
 

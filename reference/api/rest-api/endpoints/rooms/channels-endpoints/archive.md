@@ -1,7 +1,5 @@
 # Channel Archive
 
-## Channel Archive
-
 Archives a channel.
 
 | URL                        | Requires Auth | HTTP Method |
@@ -26,23 +24,41 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ### Example Result
 
-```javascript
-{
-   "success": true
-}
-```
-
-## Bad Request Example Result
-
-If the channel is already archived, it will return a `400 bad request` status.
+### Success&#x20;
 
 ```javascript
 {
-   "success": false,
-   "error": "The channel, {Channel name}, is archived [error-room-archived]",
-   "errorType": "error-room-archived"
+    "success": true
 }
 ```
+
+### Error
+
+Any of the following errors can occur on the endpoint.
+
+* **Authorization**: Requires an authentication token for the request to be made.
+* **Room Archived**: This occurs when the channel is already archived.
+
+{% tabs %}
+{% tab title="Authorization" %}
+```json
+{
+    "status": "error",
+    "message": "You must be logged in to do this."
+}
+```
+{% endtab %}
+
+{% tab title="Room Archived" %}
+```json
+{
+    "success": false,
+    "error": "The channel, add-room-websocket, is archived [error-room-archived]",
+    "errorType": "error-room-archived"
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### Change Log
 

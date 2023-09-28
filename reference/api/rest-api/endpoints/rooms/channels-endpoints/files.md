@@ -8,9 +8,10 @@ Retrieves the files from a channel. It supports the [#pagination](../../../#pagi
 
 ## Query Parameters
 
-| Argument            | Example                    | Required | Description                 |
-| ------------------- | -------------------------- | -------- | --------------------------- |
-| `roomId` `roomName` | `ByehQjC44FwMeiLbX` `test` | Required | The room id. The room name. |
+| Argument   | Example             | Required                  | Description        |
+| ---------- | ------------------- | ------------------------- | ------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX` | Required (if no roomName) | The channel's id   |
+| `roomName` | `general`           | Required (if no roomId)   | The channel's name |
 
 ## Example Call
 

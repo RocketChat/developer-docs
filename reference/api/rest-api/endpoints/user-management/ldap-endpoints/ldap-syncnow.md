@@ -15,7 +15,7 @@ Syncs your [LDAP data](https://docs.rocket.chat/use-rocket.chat/workspace-admini
 
 | URL                    | Requires Auth | HTTP Method |
 | ---------------------- | ------------- | ----------- |
-| `/api/v1/ldap.syncNow` | `yes`         | `GET`       |
+| `/api/v1/ldap.syncNow` | `yes`         | `POST`      |
 
 ## Headers
 
