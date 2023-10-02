@@ -30,7 +30,7 @@ This endpoint is used by agents and managers to schedule an email transcript to 
 
 ```json
 {
-    "email":"fim@rocket.chat",
+    "email":"funke@test.com",
     "subject":"Test request Transcript"
 }
 ```
@@ -43,7 +43,7 @@ curl -L -X POST 'http://localhost:3000/api/v1/livechat/transcript/AHsFiNLYWQK35j
 -H 'x-user-id: rbAXPnMktTFbNpwtJ' \
 -H 'Content-Type: application/json' \
 --data-raw '{
-    "email":"funke.olasupo@rocket.chat",
+    "email":"funke@test.com",
     "subject":"Livechat Transcript"
 }'
 ```

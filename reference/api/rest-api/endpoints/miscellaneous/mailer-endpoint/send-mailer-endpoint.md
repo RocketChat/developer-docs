@@ -12,7 +12,7 @@ Send emails to users from your workspace.
 
 ## Body Parameter
 
-<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>from</code></td><td><code>funke.olasupo@rocket.chat</code></td><td>Required</td><td>A valid email address to send mails from.</td></tr><tr><td><code>subject</code></td><td><code>Welcome to the Test Newsletter</code></td><td>Required</td><td>The subject of the email.</td></tr><tr><td><code>body</code></td><td>Today's newsletter is for our new users.<br>Kindly click [unsubscribe] to unsubscribe from this newsletter.</td><td>Required</td><td>The body of the email.You must use [unsubscribe] for the unsubscription link. You may use <code>[name]</code>, <code>[fname]</code>, <code>[lname]</code> for the user's full name, first name or last name, respectively. You may use [email] for the user's email.</td></tr><tr><td><code>dryrun</code></td><td><code>true</code></td><td>Required</td><td>A boolean value. If true, will only send one email to the same address as in the <code>From</code> parameter.</td></tr></tbody></table>
+<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>from</code></td><td><code>test.funke@test.com</code></td><td>Required</td><td>A valid email address to send mails from.</td></tr><tr><td><code>subject</code></td><td><code>Welcome to the Test Newsletter</code></td><td>Required</td><td>The subject of the email.</td></tr><tr><td><code>body</code></td><td>Today's newsletter is for our new users.<br>Kindly click [unsubscribe] to unsubscribe from this newsletter.</td><td>Required</td><td>The body of the email.You must use [unsubscribe] for the unsubscription link. You may use <code>[name]</code>, <code>[fname]</code>, <code>[lname]</code> for the user's full name, first name or last name, respectively. You may use [email] for the user's email.</td></tr><tr><td><code>dryrun</code></td><td><code>true</code></td><td>Required</td><td>A boolean value. If true, will only send one email to the same address as in the <code>From</code> parameter.</td></tr></tbody></table>
 
 ### Example Call <a href="#query-parameters" id="query-parameters"></a>
 
@@ -22,7 +22,7 @@ curl --location 'http://localhost:3000/api/v1/mailer' \
 --header 'x-user-id: rbAXPnMktTFbNpwtJ' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "from":"funke.olasupo@rocket.chat",
+    "from":"test.funke@test.com",
     "subject":"Welcome to the Test Newsletter",
     "body":"Thank you for subscribing to the Test Newsletter. If this was not you feelfree to unsubscribe by hitting the following button [unsubscribe]"
 

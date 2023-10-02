@@ -12,10 +12,10 @@
 
 ## Payload
 
-| Argument                                                                                             | Example                                                                                                                                                                                                                                                                                                                                                                                                                                     | Required                       | Description                                              |
-| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
+| Argument                                                                                             | Example                                                                                                                                                                                                                                                                                                                                                                                                                          | Required                       | Description                                              |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
 | `data`                                                                                               | <pre><code> "data": {
-        "email": "funke.olasupo@rocket.chat",
+        "email": "funke@test.com",
         "newPassword": "va77n796vi7ca32",
         "currentPassword": "aai87908856615052ee58e557a294589088d53bc90a228915e7d7687ea250f3b4b1581d6e53",    "nickname": "baby girl",
         "bio": "Auspicious baby",
@@ -27,7 +27,7 @@
 </code></pre> | Required                       | An object of user data to be updated                     |
 | <p></p><pre class="language-postman_json"><code class="lang-postman_json">customFields
 </code></pre> | <p></p><pre class="language-postman_json"><code class="lang-postman_json">{ twitter: '@example' }
-</code></pre>                                                                                                                                                                                                                                                                                                                             | Optional, Default: `undefined` | Any custom fields the user should have on their account. |
+</code></pre>                                                                                                                                                                                                                                                                                                                  | Optional, Default: `undefined` | Any custom fields the user should have on their account. |
 
 **Data Object**
 
@@ -51,7 +51,7 @@
 ```json
 {
     "data": {
-        "email": "funke.olasupo@rocket.chat",
+        "email": "funke@test.com",
         "newPassword": "testbb",
         "currentPassword": "aa856615052ee58e557a2945d53bc90a228915e7d7687ea250f3b4b1581d6e53",    "nickname": "baby girl",
         "bio": "Auspicious baby",
@@ -74,7 +74,7 @@
 -H 'Content-Type: application/json' \
 --data-raw '{
     "data": {
-        "email": "funke.olasupo@rocket.chat",
+        "email": "funke@test.com",
         "newPassword": "testbb",
         "currentPassword": "aa856615052ee58e557a2945d53bc90a228915e7d7687ea250f3b4b1581d6e53",    "nickname": "baby girl",
         "bio": "Auspicious baby",
@@ -125,7 +125,7 @@
                 "verificationTokens": [
                     {
                         "token": "lHq_4L8Orgxu2p5NhfVb0V9kA7kO1VaBXA5GmaJiuX3",
-                        "address": "funke.olasupo@rocket.chat",
+                        "address": "funke@test.com",
                         "when": "2023-05-23T18:47:07.142Z"
                     }
                 ]
@@ -142,7 +142,7 @@
         "username": "roxie",
         "emails": [
             {
-                "address": "funke.olasupo@rocket.chat",
+                "address": "funke@test.com",
                 "verified": true
             }
         ],
