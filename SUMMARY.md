@@ -96,7 +96,7 @@
   * [App Development Lifecycle](apps-engine/understanding-app-lifecycle/app-development-lifecycle.md)
   * [Lifecycle of a running app](apps-engine/understanding-app-lifecycle/lifecycle-of-a-running-app.md)
 * [App Configuration](apps-engine/app-configuration.md)
-* [Event Interfaces](apps-engine/event-interfaces/README.md)
+* [Event Interfaces](apps-engine/event-interfaces.md)
   * [Email - Event Interfaces](apps-engine/event-interfaces/email-event-interfaces.md)
   * [Livechat - Event Interfaces](apps-engine/event-interfaces/livechat-event-interfaces.md)
   * [Message - Event Interfaces](apps-engine/event-interfaces/message-event-interfaces.md)
