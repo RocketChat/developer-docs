@@ -131,8 +131,6 @@
 * [Apps-Engine Reference](apps-engine/apps-engine-reference/README.md)
   * [Contributing to Apps-Engine](apps-engine/rocket.chat-apps-engine/contributing-to-apps-engine.md)
   * [Apps-Engine API Reference](https://rocketchat.github.io/Rocket.Chat.Apps-engine)
-* [Testing your App](apps-engine/testing-your-app.md)
-* [Slack Compatibility](apps-engine/slack-compatibility.md)
 
 ## Omnichannel
 
