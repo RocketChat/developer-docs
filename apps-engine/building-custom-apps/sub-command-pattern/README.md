@@ -163,4 +163,4 @@ Similarly, you can register and define multiple slash commands for your app that
 
 In addition to slash commands, you can use the other properties supported by the Apps Engine to expand the functionality of your application to meet business requirements.&#x20;
 
-Once the application has been developed and deployed to the Rocket.Chat server, undergoes multiple stages. Visit the App Lifecycle section to learn more about the app development lifecycle and the lifecycle of an Rocket.Chat server app.&#x20;
+Once the application has been developed and deployed to the Rocket.Chat server, undergoes multiple stages. Visit the App Lifecycle section to learn more about the app development lifecycle and the lifecycle of a Rocket.Chat server app.&#x20;
