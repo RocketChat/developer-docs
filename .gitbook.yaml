@@ -3,5 +3,5 @@ root: ./
 redirects:
     apps-development/uikit: apps-engine/adding-features/uikit/README.md
     apps-engine/rocket.chat-apps-engine: apps-engine/rocket.chat-apps-and-apps-engine.md
-    apps-engine/testing-your-app.md: apps-engine/rocket.chat-apps-and-apps-engine.md
-    apps-engine/slack-compatibility.md: apps-engine/rocket.chat-apps-and-apps-engine.md
+    apps-engine/testing-your-app: apps-engine/rocket.chat-apps-and-apps-engine.md
+    apps-engine/slack-compatibility: apps-engine/rocket.chat-apps-and-apps-engine.md
