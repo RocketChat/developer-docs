@@ -13,6 +13,7 @@ Creates a new private group, optionally including specified users. The group cre
 | `name`     | `testing`        | Required                  | The name of the new private group                 |
 | `members`  | `["rocket.cat"]` | Optional Default: `[]`    | The users to add to the group when it is created. |
 | `readOnly` | `true`           | Optional Default: `false` | Set if the group is read only or not.             |
+| `excludeSelf` | `true`           | Optional Default: `false` | If set to `true` the user calling the endpoint is automatically not added as a member of the group. |
 
 ## Example Call
 
@@ -50,4 +51,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 | Version | Description |
 | ------- | ----------- |
+| 6.4.1   | Added `excludeSelf` param |
 | 0.35.0  | Added       |
