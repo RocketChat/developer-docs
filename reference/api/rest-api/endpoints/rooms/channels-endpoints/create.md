@@ -19,6 +19,7 @@ This can be modified in the **Admin** > **General** > **UTF8**. Channel names sh
 | `name`     | `channelname`    | Required                  | The name of the new channel                         |
 | `members`  | `["rocket.cat"]` | Optional Default: `[]`    | The users to add to the channel when it is created. |
 | `readOnly` | `true`           | Optional Default: `false` | Set if the channel is read only or not.             |
+| `excludeSelf` | `true`        | Optional Default: `false` | If set to `true` the user calling the endpoint is not automatically added as a member of the group. |
 
 ## Example Call
 
@@ -56,4 +57,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 | Version | Description |
 | ------- | ----------- |
+| 6.4.1   | Added `excludeSelf` param |
 | 0.13.0  | Added       |
