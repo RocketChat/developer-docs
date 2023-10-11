@@ -1,4 +1,4 @@
-# Mobile App White Labelling
+# Mobile App White Labeling
 
 You can rebrand Rocket.Chat Mobile Apps to suit your style guide. You can customize the App Icons, Splash Screens, App Name, and Colors for your mobile app. This guide provides a step-by-step overview of how to white label the Rocket.Chat mobile app for both Android and iOS platforms.&#x20;
 
@@ -31,7 +31,7 @@ https://github.com/RocketChat/Rocket.Chat.ReactNative
 ```
 {% endhint %}
 
-## General White Labelling
+## General White Labeling
 
 * Create an account on [Bugsnag](https://www.bugsnag.com/).
 * Set `server`, `appGroup`, and `appStoreId` in the [app.json](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/single-server/app.json#L5) file.

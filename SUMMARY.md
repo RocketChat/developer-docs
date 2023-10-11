@@ -36,7 +36,7 @@
 ## Customize and Embed
 
 * [Embedded Layout](customize-and-embed/embedded-layout.md)
-* [White Labelling](customize-and-embed/white-labelling/README.md)
+* [White Labeling](customize-and-embed/white-labelling/README.md)
   * [Customizing Colors](customize-and-embed/white-labelling/customizing-colors.md)
 * [Iframe Integration](customize-and-embed/iframe-integration/README.md)
   * [Configuring iFrame auth](customize-and-embed/iframe-integration/configuring-iframe-auth/README.md)
@@ -63,15 +63,15 @@
 * [Desktop App](open-source-projects/desktop-app/README.md)
   * [Developing your Desktop App](open-source-projects/desktop-app/developing-your-desktop-app.md)
   * [Debugging your Desktop App](desktop-app/debugging-your-desktop-app.md)
-  * [Desktop App White Labelling](open-source-projects/desktop-app/desktop-app-white-labelling/README.md)
+  * [Desktop App White Labeling](open-source-projects/desktop-app/desktop-app-white-labelling/README.md)
     * [Desktop Changing Default Settings](open-source-projects/desktop-app/desktop-app-white-labelling/changing-default-settings.md)
 * [Mobile App](open-source-projects/mobile-app/README.md)
   * [Supporting SSL for development on Rocket.Chat](open-source-projects/mobile-app/supporting-ssl-for-development-on-rocket.chat.md)
   * [Analytics & Data Usage](open-source-projects/mobile-app/analytics-and-data-usage.md)
   * [Testing your Mobile App](open-source-projects/mobile-app/testing-your-mobile-app.md)
-  * [Mobile App White Labelling](open-source-projects/mobile-app/mobile-app-white-labelling/README.md)
-    * [iOS App White Labelling](mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
-    * [Android App White Labelling](open-source-projects/mobile-app/mobile-app-white-labelling/android-app-white-labelling.md)
+  * [Mobile App White Labeling](open-source-projects/mobile-app/mobile-app-white-labelling/README.md)
+    * [iOS App White Labeling](mobile-app/mobile-app-white-labelling/ios-app-white-labelling.md)
+    * [Android App White Labeling](open-source-projects/mobile-app/mobile-app-white-labelling/android-app-white-labelling.md)
   * [Configuring Push Notifications](open-source-projects/mobile-app/configuring-push-notifications.md)
   * [Mobile App FAQs](open-source-projects/mobile-app/mobile-app-faqs.md)
 
