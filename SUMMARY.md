@@ -313,6 +313,7 @@
           * [Get Discussions](reference/api/rest-api/endpoints/rooms/rooms-endpoints/getdiscussions.md)
           * [Get Rooms](reference/api/rest-api/endpoints/rooms/rooms-endpoints/get-rooms.md)
           * [Leave Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/leave-room.md)
+          * [Delete Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/delete-room.md)
           * [Favorite/Unfavourite a Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/favorite-unfavourite-a-room.md)
           * [Upload File to a Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/upload-file-to-a-room.md)
           * [Room name autocomplete for team](reference/api/rest-api/endpoints/rooms/rooms-endpoints/room-name-autocomplete-for-team.md)
