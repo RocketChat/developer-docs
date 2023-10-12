@@ -389,7 +389,7 @@
       * [Omnichannel](reference/api/rest-api/endpoints/omnichannel/README.md)
         * [Livechat Endpoints](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/README.md)
           * [Livechat Agent](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/README.md)
-            * [Agent Info](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/agent.md)
+            * [Get Agent Information](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/agent.md)
             * [Next Agent](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/next-agent.md)
             * [Get available agent information](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-agent/get-available-agent-information.md)
           * [Livechat Statistics](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-statistics/README.md)
