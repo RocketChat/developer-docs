@@ -81,12 +81,12 @@
 * [Chat Engine in iframe](chat-engine/chat-engine-in-iframe.md)
 * [Chat Engine with Custom Frontend](chat-engine/chat-engine-with-custom-frontend.md)
 
-## Apps Engine
+## Apps-Engine
 
-* [Introduction to Apps Engine](apps-engine/rocket.chat-apps-and-apps-engine.md)
-* [Getting Started with Apps Engine](apps-engine/getting-started/README.md)
-  * [Apps Engine Environment Setup](apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md)
-  * [Apps Engine CLI](apps-engine/getting-started/rocket.chat-app-engine-cli.md)
+* [Introduction to Apps-Engine](apps-engine/rocket.chat-apps-and-apps-engine.md)
+* [Getting Started with Apps-Engine](apps-engine/getting-started/README.md)
+  * [Apps-Engine Environment Setup](apps-engine/rocket.chat-apps-engine/apps-engine-environment-setup.md)
+  * [Apps-Engine CLI](apps-engine/getting-started/rocket.chat-app-engine-cli.md)
 * [Creating Apps](apps-engine/getting-started/creating-an-app.md)
 * [Extending App Capabilities](apps-engine/building-custom-apps/README.md)
   * [Slash Commands](apps-engine/building-custom-apps/sub-command-pattern/README.md)
@@ -122,8 +122,8 @@
 * [Advanced Features](apps-engine/adding-features/README.md)
   * [OAuth2 Client](apps-engine/adding-features/oauth2-client.md)
   * [Scheduler API](apps-engine/adding-features/scheduler-api.md)
+  * [Registering API endpoints](apps-engine/adding-features/registering-api-endpoints.md)
   * [NPM Package Support (Experimental)](apps-engine/adding-features/npm-package-support-experimental.md)
-* [Registering API endpoints](apps-engine/registering-api-endpoints.md)
 * [App Submission to the Marketplace](apps-engine/app-submission-to-the-marketplace/README.md)
   * [Written content](apps-engine/app-submission-to-the-marketplace/written-content.md)
   * [Graphics](apps-engine/app-submission-to-the-marketplace/assets-guidelines.md)

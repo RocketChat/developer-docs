@@ -2,12 +2,14 @@
 
 Apps are allowed to open a contextual bar with UIKit content. It works just like a modal: you pass a BlockBuilder object containing the content you want to display on the surface and call the following methods:
 
+{% code lineNumbers="true" %}
 ```typescript
-        // for creating a new contextual bar
-        await modify.getUiController().openContextualBarView(blocks, { triggerId }, user);
-        // for updating a existing contextual bar
-        await modify.getUiController().updateContextualBarView(blocks, { triggerId }, user);
+// for creating a new contextual bar
+await modify.getUiController().openContextualBarView(blocks, { triggerId }, user);
+// for updating a existing contextual bar
+await modify.getUiController().updateContextualBarView(blocks, { triggerId }, user);
 ```
+{% endcode %}
 
 It does need a valid `IUIKitInteractionParam` object with the `triggerId` and the `IUser` calling the from the user calling the method.
 
@@ -16,7 +18,7 @@ A sample application opening the contextual bar would consist of 2 main parts: a
 You can clone the app and test it in your own Rocker.Chat server:\
 [https://github.com/RocketChat/apps-contextual-bar-open-example](https://github.com/RocketChat/apps-contextual-bar-open-example)
 
-{% code title="ContextualBarExample.ts" %}
+{% code title="ContextualBarExample.ts" lineNumbers="true" fullWidth="true" %}
 ```typescript
 import {
     IAppAccessors,

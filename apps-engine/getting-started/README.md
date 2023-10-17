@@ -1,4 +1,4 @@
-# Getting Started with Apps Engine
+# Getting Started with Apps-Engine
 
 ### Setting up Apps Engine development environment&#x20;
 
@@ -7,8 +7,7 @@ This document describes the requirements for developing an application using Roc
 You have to download and install multiple dependencies in order to set up the development environment. Throughout the entire process, an active Internet connection is required. This section will discuss tools that are beneficial for all developers.
 
 1. **Editors:** You will spend a significant amount of time in front of a text editor if you undertake any type of development. There are numerous languages for web computing, with JavaScript being one of the most prevalent. Visual Studio Code (or VSCode) is a free and simple-to-use editor.
-2. **Version Control and Repository Manager:** You will need a system to monitor code modifications (version control) and a location to store your code (a repository manager, or repo manager). Git can be used for version control, while GitHub can be used to manage the repository.
-3. **Rocket.Chat Server:** To test your applications, you will need a server that is active. Ideally, this would be a test environment, so as not to impact the production environment. The following components are related to the Rocket.Chat server, and there is no action required from your end:&#x20;
+2. **Rocket.Chat Server:** To test your applications, you will need a server that is active. Ideally, this would be a test environment, so as not to impact the production environment. The following components are related to the Rocket.Chat server, and there is no action required from your end:&#x20;
    1. **Server Management and Package Manager:** To develop a full-stack JavaScript application, a server-side JavaScript runtime is required. Additionally, you will need a package manager. You can use Node.js as your server environment, as it can serve files and connect to your database using JavaScript. As for the Package Manager, we recommend using yarn because it can install libraries more quickly and is a secure, dependable JavaScript dependency management tool.
    2. **Database:** You need a database to store your application data. The Rocket.Chat server uses MongoDB as a database to store all chat messages, user information, and other system configurations and related data.
 

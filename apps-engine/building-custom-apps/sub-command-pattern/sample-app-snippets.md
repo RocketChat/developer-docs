@@ -15,30 +15,36 @@ The new class will be named `StatusUpdateCmd` and will be placed in the same sub
 * We use the ‘modify’ User updater to update the status accordingly.
 * Finally, we notify the user about the status update.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 export class StatusUpdateCmd implements ISlashCommand {
    command: string;
    i18nParamsExample: string = 'status_update_command_params_example';
    i18nDescription: string = 'status_update_command_description';
    providesPreview: boolean = false;
+   
    async executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp, persis: IPersistence): Promise<void> {
        const user = context.getSender();
        const params = context.getArguments();
        const room: IRoom = context.getRoom();
+       
        if (!params || params.length == 0) {
            return notifyMessage(room, read, user, "At least one status argument is mandatory. A second argument can be passed as status text.");
        }
+       
        let status = params[0];
        let statusText = params.length > 1 ? params.slice(1).join(' ') : '';
-       modify.getUpdater().getUserUpdater().updateStatus(user, statusText, status);
-       notifyMessage(room, read, user, "Status updated to " + status + " (" + statusText + ").");
+       
+       await modify.getUpdater().getUserUpdater().updateStatus(user, statusText, status);
+       await notifyMessage(room, read, user, "Status updated to " + status + " (" + statusText + ").");
    }
 }
 
 ```
+{% endcode %}
 
 \
-**Note:** If applicable, change the localization file and update the main class's extendConfiguration to register the new slash command. All that remains is deployment and testing.
+**Note:** If applicable, change the localization file and update the main class's `extendConfiguration` to register the new slash command. All that remains is deployment and testing.
 
 <div align="left">
 
@@ -64,6 +70,7 @@ Attachments Rocket.Chat supports numerous forms of attachments that can be attac
 
 In this approach, we will implement the `ImageAttachment` class in the project's root as follows:
 
+{% code lineNumbers="true" %}
 ```typescript
 import { IMessageAttachment } from '@rocket.chat/apps-engine/definition/messages';
 
@@ -76,6 +83,7 @@ export class ImageAttachment implements IMessageAttachment{
 
 }
 ```
+{% endcode %}
 
 Here, we \[1] use a class' attribute with the same identifier and type as in the `IMessageAttachment` interface, which is required for your linked media to be visible to the user (since only the variables in your attachment class that are defined in the `IMessageAttachment` interface will be used to retrieve the attachment's media).
 
@@ -91,12 +99,13 @@ Custom fields are structures linked to messages in which each field is organized
 
 It is beneficial to define a few auxiliary methods within our slash command class so that our code remains concise and straightforward.
 
-**Method: sendMessage**
+**Method: `sendMessage`**
 
 First, we must modify the previously provided `sendMessage` method so that the message's ID is returned after it has been sent. The method must now return a `Promise<string>` as opposed to a `Promise<void>`.
 
 The ensuing `sendMessage` method is detailed below:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 private async sendMessage(context: SlashCommandContext, modify: IModify, message: string): Promise<string> {
     const messageStructure = modify.getCreator().startMessage();
@@ -104,14 +113,14 @@ private async sendMessage(context: SlashCommandContext, modify: IModify, message
     const room = context.getRoom();
 
     messageStructure
-    .setSender(sender)
-    .setRoom(room)
-    .setText(message);
+        .setSender(sender)
+        .setRoom(room)
+        .setText(message);
 
-    return (await modify.getCreator().finish(messageStructure)); // [1]
+    return modify.getCreator().finish(messageStructure); // [1]
 }
-
 ```
+{% endcode %}
 
 The only change that must be made (in comparison to the `sendMessage` described in previous pages) is \[1] to return the result of the `finish` method, which is the ID of the message that has just been sent.
 
@@ -121,12 +130,14 @@ After modifying the `sendMessage` method and obtaining the message's ID, we can 
 
 In order to obtain the `messageExtender` object, the following asynchronous method can be used:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 private async getMessageExtender(context: SlashCommandContext, modify: IModify, messageId: string): Promise<IMessageExtender>{
     const sender = context.getSender();
     return modify.getExtender().extendMessage(messageId, sender); // [1]
 }
 ```
+{% endcode %}
 
 Here, \[1]  we use the message's ID returned by the `sendMessage` method in order to obtain the `messageExtender` object using the `modifyExtender` object.
 
@@ -141,6 +152,7 @@ After developing the methods, you only need to invoke them with a slash command.
 
 We have to register it in the app's main class, in the project's root.
 
+{% code lineNumbers="true" %}
 ```typescript
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
@@ -156,11 +168,13 @@ export class RocketChatTester extends App {
     }
 }
 ```
+{% endcode %}
 
 Here we \[1] import our new slash command class and then \[2] register it in the app's configuration.&#x20;
 
 ### Step 2: Create the slash command&#x20;
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 import { IHttp, IModify, IPersistence, IRead, IMessageExtender } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
@@ -203,6 +217,7 @@ export class ExtendMessageCommand implements ISlashCommand{
 }
 
 ```
+{% endcode %}
 
 The main actions performed by the code above are:
 
@@ -217,7 +232,7 @@ The main actions performed by the code above are:
 
 To deploy the app, run:
 
-```
+```bash
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
 ```
 

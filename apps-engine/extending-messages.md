@@ -12,6 +12,7 @@ Rocket.Chat supports numerous types of attachments (and applicable **customisati
 
 In this recipe, we will need to create an `ImageAttachment` class in the project's root, which can be implemented as follows:
 
+{% code lineNumbers="true" %}
 ```typescript
 import { IMessageAttachment } from '@rocket.chat/apps-engine/definition/messages';
 
@@ -24,6 +25,7 @@ export class ImageAttachment implements IMessageAttachment{
 
 }
 ```
+{% endcode %}
 
 Here we **\[1]** use a class' attribute with the **same identifier and type as in the `IMessageAttachment` interface**, which is essential to make your linked media visible to the user (since only the variables in your attachment class are defined in the `IMessageAttachment` interface will be used to retrieve the attachment's media).
 
@@ -47,6 +49,7 @@ Firstly, we will need to modify the [previously given `sendMessage` method](http
 
 The resulting `sendMessage` method is given below:
 
+{% code lineNumbers="true" %}
 ```typescript
 private async sendMessage(context: SlashCommandContext, modify: IModify, message: string): Promise<string> {
     const messageStructure = modify.getCreator().startMessage();
@@ -54,13 +57,14 @@ private async sendMessage(context: SlashCommandContext, modify: IModify, message
     const room = context.getRoom();
 
     messageStructure
-    .setSender(sender)
-    .setRoom(room)
-    .setText(message);
+        .setSender(sender)
+        .setRoom(room)
+        .setText(message);
 
-    return (await modify.getCreator().finish(messageStructure)); // [1]
+    return modify.getCreator().finish(messageStructure); // [1]
 }
 ```
+{% endcode %}
 
 The only change that must be made (in comparison to the `sendMessage` described in previous pages) is **\[1]** to return the result of the `finish` method, which is the ID of the message that has just been sent.
 
@@ -70,12 +74,14 @@ After applying the changes in the `sendMessage` method and having the sent messa
 
 The following asynchronous method can be used in order to obtain the `messageExtender` object:
 
+{% code lineNumbers="true" %}
 ```typescript
 private async getMessageExtender(context: SlashCommandContext, modify: IModify, messageId: string): Promise<IMessageExtender>{
     const sender = context.getSender();
     return modify.getExtender().extendMessage(messageId, sender); // [1]
 }
 ```
+{% endcode %}
 
 Here we **\[1]** use the message's ID returned by the `sendMessage` method in order to obtain the `messageExtender` object using the `modifyExtender` object.
 
@@ -83,12 +89,13 @@ Here we **\[1]** use the message's ID returned by the `sendMessage` method in or
 
 After developing the methods in the previous steps, we just now need to trigger these methods using a slash command, which can be done with the following code:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 import { IHttp, IModify, IPersistence, IRead, IMessageExtender } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
 import { ImageAttachment } from '../ImageAttachment';
 
-export class ExtendMessageCommand implements ISlashCommand{
+export class ExtendMessageCommand implements ISlashCommand {
     public command = 'extend-message';
     public i18nParamsExample = '';
     public i18nDescription = '';
@@ -112,11 +119,11 @@ export class ExtendMessageCommand implements ISlashCommand{
         const room = context.getRoom();
 
         messageStructure
-        .setSender(sender)
-        .setRoom(room)
-        .setText(message);
+            .setSender(sender)
+            .setRoom(room)
+            .setText(message);
 
-        return (await modify.getCreator().finish(messageStructure));
+        return modify.getCreator().finish(messageStructure);
     }
 
     private async getMessageExtender(context: SlashCommandContext, modify: IModify, messageId: string): Promise<IMessageExtender>{
@@ -125,6 +132,7 @@ export class ExtendMessageCommand implements ISlashCommand{
     }
 }
 ```
+{% endcode %}
 
 The main actions performed by the code above are:
 
@@ -139,6 +147,7 @@ The main actions performed by the code above are:
 
 After having the slash command's code done, we have to register it in the app's main class, in the project's root.
 
+{% code lineNumbers="true" %}
 ```typescript
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
@@ -150,10 +159,11 @@ export class RocketChatTester extends App {
     }
 
     public async extendConfiguration(configuration: IConfigurationExtend) {
-        configuration.slashCommands.provideSlashCommand(new ExtendMessageCommand()); // [2]
+        await configuration.slashCommands.provideSlashCommand(new ExtendMessageCommand()); // [2]
     }
 }
 ```
+{% endcode %}
 
 Here we **\[1]** import our new slash command class and then **\[2]** register it in the app's configuration. Now it is available for us.
 
@@ -161,7 +171,7 @@ Here we **\[1]** import our new slash command class and then **\[2]** register i
 
 To deploy the app, run:
 
-```
+```bash
 rc-apps deploy --url <server_url><server_port> -u <user> -p <pwd>
 ```
 

@@ -12,10 +12,12 @@ There's [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/inte
 
 Assuming that we're creating an app which records how many messages on the server sent, we can write a PostMessageSent event handler like bellow:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence, modify: IModify): Promise<void> {
     const association = new RocketChatAssociationRecord(RocketChatAssociationModel.MISC, 'message-count');
     const persis = read.getPersistenceReader();
+    
     try {
         let count = 0;
         const record = await persis.readByAssociation(association);
@@ -29,6 +31,7 @@ public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp,
     }
 }
 ```
+{% endcode %}
 
 Here, the internal state is "count" but not the count variable whose data stored in the memory. We use the temporary variable "count" for storing the number of messages sent retrieving from the persistence. Every time the handler executePostMessageSent called, we increase the count by 1 and then store it back to the persistence storage.
 

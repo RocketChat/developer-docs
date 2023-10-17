@@ -17,12 +17,9 @@ There is a distinct file containing the configuration settings, in which everyth
 
 This is equivalent to executing the command:&#x20;
 
-```
+```typescript
 configuration.settings.provideSetting ({
-
-Define all the parameters of your setting
-
-} )
+})
 ```
 
 Since your app may have multiple settings, it is preferable to organize them all in a separate file and reference them as required in the app's main file.&#x20;

@@ -26,6 +26,7 @@ As per the [Permission System](https://developer.rocket.chat/apps-engine/getting
 
 To use the Scheduler API you'll need two things: the functions to be run as jobs (we call them `processors`) and the schedule in which they will be run on. This is configured in the app's `extendConfiguration` method. During the app's startup, the processors are registered to make them available for scheduling.
 
+{% code lineNumbers="true" %}
 ```typescript
 public async extendConfiguration(configuration: IConfigurationExtend) {
     configuration.scheduler.registerProcessors([
@@ -36,6 +37,7 @@ public async extendConfiguration(configuration: IConfigurationExtend) {
     ]);
 }
 ```
+{% endcode %}
 
 The `processor` is an `async` function and can receive arguments (`jobData`). The arguments are passed during scheduling.
 
@@ -43,53 +45,58 @@ The `processor` is an `async` function and can receive arguments (`jobData`). Th
 
 To trigger the registered processor as a job, you must provide the `id` of the processor, the type of job it will be and optionally an object (`data`) that will be passed to the processor as argument (`jobData`). Available types are `RECURRING`, making the job run in a `interval`, and `ONETIME`, making the job run only once (`when`). Starting a job can be done when running a slashcommand, for example:
 
+{% code lineNumbers="true" %}
 ```typescript
 // slashcommand class
 public async executor(context: SlashCommandContext, read: IRead, modify: IModify): Promise<void> {
     // SCHEDULING A RECURRING TASK
     const task = {
-      id: 'first',
-      interval: '10 seconds',
-      data: { test: true },
+        id: 'first',
+        interval: '10 seconds',
+        data: { test: true },
     };
     await modify.getScheduler().scheduleRecurring(task);
 
     // SCHEDULING ONETIME TASK
     const task = {
-      id: 'first',
-      when: '8 seconds',
+        id: 'first',
+        when: '8 seconds',
     };
     await modify.getScheduler().scheduleOnce(task);
 }
 ```
+{% endcode %}
 
 There's also the possibility of triggering a job as soon as it gets registered, without the need for manual or automated triggering.
 
 When you register your processor in the `extendConfiguration` method, you can pass a prop called `startupSetting` in the processor's object:
 
+{% code lineNumbers="true" %}
 ```typescript
 import { StartupType } from '@rocket.chat/apps-engine/definition/scheduler';
 // ...
-    configuration.scheduler.registerProcessors([
-        {
-            id: 'first',
-            processor: async (jobData) => console.log(`[${ Date() }] this is a task`, jobData),
-            startupSetting: {
-              type: StartupType.ONETIME,
-              when: '20 seconds',
-              data: { test: true },
-            }
-        },
-        {
-            id: 'second',
-            processor: async (jobData) => console.log(`[${ Date() }] this is a task`, jobData),
-            startupSetting: {
-              type: StartupType.RECURRING,
-              interval: '20 seconds',
-            }
-        },
-    ]);
+
+configuration.scheduler.registerProcessors([
+    {
+        id: 'first',
+        processor: async (jobData) => console.log(`[${ Date() }] this is a task`, jobData),
+        startupSetting: {
+          type: StartupType.ONETIME,
+          when: '20 seconds',
+          data: { test: true },
+        }
+    },
+    {
+        id: 'second',
+        processor: async (jobData) => console.log(`[${ Date() }] this is a task`, jobData),
+        startupSetting: {
+          type: StartupType.RECURRING,
+          interval: '20 seconds',
+        }
+    },
+]);
 ```
+{% endcode %}
 
 This indicates that you want that particular processor to be scheduled as soon as it gets registered. You can define the "immediate scheduling" as a recurring job (`StartupType.RECURRING`) or a one-time job (`StartupType.ONETIME`). You can also pass data using the `data` object. It will work just like when you schedule a task using the `modify` accessor.
 
@@ -97,9 +104,11 @@ This indicates that you want that particular processor to be scheduled as soon a
 
 the signature of the processor function:
 
-```
+{% code overflow="wrap" %}
+```typescript
 (jobContext: IJobContext, read: IRead, modify: IModify, http: IHttp, persis: IPersistence) => Promise<void>
 ```
+{% endcode %}
 
 The first argument is the data object you're passing when actually scheduling the job; (`[k: string]:any`) . Rest are passed when the function is run.
 
@@ -108,8 +117,8 @@ The first argument is the data object you're passing when actually scheduling th
 To stop a job, all you have to do is pass the id of the job you want to stop
 
 ```typescript
-    const jobId = 'first';
-    await modify.getScheduler().cancelJob(jobId);
+const jobId = 'first';
+await modify.getScheduler().cancelJob(jobId);
 ```
 
 It will stop the running job (if any).
@@ -119,5 +128,5 @@ It will stop the running job (if any).
 To stop all the current running jobs from the app:
 
 ```typescript
-    await modify.getScheduler().cancelAllJobs();
+await modify.getScheduler().cancelAllJobs();
 ```

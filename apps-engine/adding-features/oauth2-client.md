@@ -13,24 +13,26 @@ import { createOAuth2Client } from '@rocket.chat/apps-engine/definition/oauth2/O
 
 * In setting up the app configurations using the `extendConfiguration` method, we create an instance of the createOAuth2Client imported above.
 
+{% code lineNumbers="true" %}
 ```typescript
 protected async extendConfiguration(configuration: IConfigurationExtend): Promise<void> {
-        const oauthConfig = {
-                alias: 'test',
-                accessTokenUri: 'https://oauth2.googleapis.com/token',
-                authUri: 'https://accounts.google.com/o/oauth2/v2/auth',
-                refreshTokenUri: 'https://oauth2.googleapis.com/token',
-                revokeTokenUri: 'https://oauth2.googleapis.com/revoke',
-        };
-        
-        try {
-            await createOAuth2Client(this, oauthConfig)
-                .setup(configuration);
-        } catch (error) {
-            this.getLogger().error('[extendConfiguration] error', error);
-        }
+    const oauthConfig = {
+            alias: 'test',
+            accessTokenUri: 'https://oauth2.googleapis.com/token',
+            authUri: 'https://accounts.google.com/o/oauth2/v2/auth',
+            refreshTokenUri: 'https://oauth2.googleapis.com/token',
+            revokeTokenUri: 'https://oauth2.googleapis.com/revoke',
+    };
+
+    try {
+        await createOAuth2Client(this, oauthConfig)
+            .setup(configuration);
+    } catch (error) {
+        this.getLogger().error('[extendConfiguration] error', error);
     }
+}
 ```
+{% endcode %}
 
 * The `createOAuth2Client` method takes in two parameters:
   * `app`: being the app itself

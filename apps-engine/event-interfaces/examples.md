@@ -12,19 +12,24 @@
 * The quick way to fix this common issue while coding is to add the async to the method signature. Basically, we are doing the same as before. Return true only for rooms that are not ‘general’.&#x20;
 * Now we need to implement the actual `executePreMessageSentPrevent` method. In this case, if the message will equal ‘test’ we prevent it from getting published we will allow it.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 export class TestApp extends App implements IPreMessageSentPrevent {
-constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-super(info, logger, accessors);
-logger.debug('Hello, World!');
-}
-async checkPreMessageSentPrevent?(message: IMessage, read: IRead, http: IHttp): Promise<boolean> {
-return message.room.slugifiedName != 'general';
-}
-async executePreMessageSentPrevent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence): Promise<boolean> {
-return message.text == 'test';
+    constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
+        super(info, logger, accessors);
+        logger.debug('Hello, World!');
+    }
+    
+    async checkPreMessageSentPrevent?(message: IMessage, read: IRead, http: IHttp): Promise<boolean> {
+        return message.room.slugifiedName != 'general';
+    }
+    
+    async executePreMessageSentPrevent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence): Promise<boolean> {
+        return message.text == 'test';
+    }
 }
 ```
+{% endcode %}
 
 Now after saving, we can deploy our app again as usual and test it. If we write the ‘test’ message in a channel different than general it should not be published (it will show as grayed out) and if the message is something different it will get sent. While for the room general, all messages will be sent including ‘test’.
 
@@ -48,6 +53,7 @@ Now after saving, we can deploy our app again as usual and test it. If we write 
 * Then we create a message for the room general with text information on the message published and the room and user.&#x20;
 * We could also change a bit the code for the message in general to show up as sent by the user who wrote the original message in the other channel. Note that in this case we are calling the `setSender` method on the message builder and using the sender of the original message as value.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 import {
    IAppAccessors,
@@ -70,9 +76,11 @@ export class TestApp extends App implements IPreMessageSentPrevent, IPostMessage
        super(info, logger, accessors);
        logger.debug('Hello, World!');
    }
+   
    async checkPostMessageSent?(message: IMessage, read: IRead, http: IHttp): Promise<boolean> {
        return message.room.slugifiedName != 'general';
    }
+   
    async executePostMessageSent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence, modify: IModify): Promise<void> {
        const general = await read.getRoomReader().getByName('general');
        if (!general) {
@@ -80,36 +88,34 @@ export class TestApp extends App implements IPreMessageSentPrevent, IPostMessage
        }
        const msg = `@${message.sender.username} said "${message.text}" in #${message.room.displayName}`;
        const author = await read.getUserReader().getAppUser();
-       this.sendMessage(general, msg, author?author:message.sender, modify);
+       await this.sendMessage(general, msg, author?author:message.sender, modify);
    }
+   
    async checkPreMessageSentPrevent?(message: IMessage, read: IRead, http: IHttp): Promise<boolean> {
        return message.room.slugifiedName != 'general';
    }
+   
    async executePreMessageSentPrevent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence): Promise<boolean> {
        return message.text == 'test';
    }
-   sendMessage(room: IRoom, textMessage: string, author: IUser, modify: IModify) {
+   
+   private async sendMessage(room: IRoom, textMessage: string, author: IUser, modify: IModify) {
        const messageBuilder = modify.getCreator().startMessage({
            text: textMessage,
        } as IMessage);
        messageBuilder.setRoom(room);
        messageBuilder.setSender(author);
-       modify.getCreator().finish(messageBuilder);
+       return modify.getCreator().finish(messageBuilder);
    }
 }
 ```
+{% endcode %}
 
 The message builder allows us to define richly formatted messages. Now if we save, deploy, and test you should be able to see the warning messages posted to the general channel when writing to any other channel.&#x20;
 
 <div align="left">
 
 <figure><img src="https://lh5.googleusercontent.com/ewAq6AbbvEsLGW7Bk3orChVhTNkPqjuzZ6qvTMWNW2gdOVTvYa77Z0SMRKy-lQgzDPPB61ScAUI3KhyAxkzeFc-s48UCaLfMfBZiaXjYh93fGSE0Kaf86I5odzebjijuLI0rW0pAKzw53zLrQT019R4" alt=""><figcaption></figcaption></figure>
-
-</div>
-
-<div align="left">
-
-<figure><img src="https://lh4.googleusercontent.com/RfA1fwUDng4kJ-L442oTjMxnHTcvB_33ZvHCkJy2XebmfiXmVptrQ9hU7EE-R9EZWedpPbdZII2rxAe4DpM6x57QNu3pX9sWR1RqL4fA8d8B8XaOAdrM1tXT_yf_gt0B3dey4t-AoYhdfnavdN16IBg" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -129,28 +135,32 @@ We already built with the two interfaces a message text content kind of inspecto
 
 So the `IPreFileUpload` would be the next Interface we would want to implement. We won't be preventing the attachment of files but in the case of plain text files, we will print the messages out into the logs of Rocket.Chat server.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 export class TestApp extends App implements IPreMessageSentPrevent, IPostMessageSent, IPreFileUpload {
-   constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-       super(info, logger, accessors);
-       logger.debug('Hello, World!');
-   }
-   async [AppMethod.EXECUTE_PRE_FILE_UPLOAD](context: IFileUploadContext, read: IRead, http: IHttp, persis: IPersistence, modify: IModify): Promise<void> {
-       console.log('ContentInspectionExampleAppApp - File Uploaded - Name: ' + context.file.name);
-       console.log('ContentInspectionExampleAppApp - File Uploaded - Type: ' + context.file.type);
-       console.log('ContentInspectionExampleAppApp - File Uploaded - Size: ' + context.file.size);
+    constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
+        super(info, logger, accessors);
+        logger.debug('Hello, World!');
+    }
+   
+    public async [AppMethod.EXECUTE_PRE_FILE_UPLOAD](context: IFileUploadContext, read: IRead, http: IHttp, persis: IPersistence, modify: IModify): Promise<void> {
+        console.log('ContentInspectionExampleAppApp - File Uploaded - Name: ' + context.file.name);
+        console.log('ContentInspectionExampleAppApp - File Uploaded - Type: ' + context.file.type);
+        console.log('ContentInspectionExampleAppApp - File Uploaded - Size: ' + context.file.size);
 
 
-       if (context.file.type == 'text/plain') {
-           console.log('ContentInspectionExampleAppApp - File Uploaded - Content: ' +
-               String.fromCharCode.apply(null, context.content));
-       }
+        if (context.file.type == 'text/plain') {
+            console.log('ContentInspectionExampleAppApp - File Uploaded - Content: ' +
+                String.fromCharCode.apply(null, context.content));
+        }
 
 
-       //if the file was bad we could throw an exception
-       //throw new FileUploadNotAllowedException('File is Bad');
-   }
+        //if the file was bad we could throw an exception
+        //throw new FileUploadNotAllowedException('File is Bad');
+    }
+}
 ```
+{% endcode %}
 
 As you can see we will always be logging some info on the file but if it’s a text/plain we will log its contents also. The next step is to upload and test.&#x20;
 
@@ -160,36 +170,40 @@ As you can see we will always be logging some info on the file but if it’s a t
 
 </div>
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
-async [AppMethod.EXECUTE_PRE_FILE_UPLOAD](context: IFileUploadContext, read: IRead, http: IHttp, persis: IPersistence, modify: IModify): Promise<void> {
-       console.log('ContentInspectionExampleAppApp - File Uploaded - Name: ' + context.file.name);
-       console.log('ContentInspectionExampleAppApp - File Uploaded - Type: ' + context.file.type);
-       console.log('ContentInspectionExampleAppApp - File Uploaded - Size: ' + context.file.size);
+export class TestApp extends App implements IPreMessageSentPrevent, IPostMessageSent, IPreFileUpload {
+    public async [AppMethod.EXECUTE_PRE_FILE_UPLOAD](context: IFileUploadContext, read: IRead, http: IHttp, persis: IPersistence, modify: IModify): Promise<void> {
+        console.log('ContentInspectionExampleAppApp - File Uploaded - Name: ' + context.file.name);
+        console.log('ContentInspectionExampleAppApp - File Uploaded - Type: ' + context.file.type);
+        console.log('ContentInspectionExampleAppApp - File Uploaded - Size: ' + context.file.size);
+ 
 
+        if (context.file.type == 'text/plain') {
+            console.log('ContentInspectionExampleAppApp - File Uploaded - Content: ' +
+                String.fromCharCode.apply(null, context.content));
+        }
+ 
 
-       if (context.file.type == 'text/plain') {
-           console.log('ContentInspectionExampleAppApp - File Uploaded - Content: ' +
-               String.fromCharCode.apply(null, context.content));
-       }
-
-
-       //if file was bad we could throw an exception
-       //throw new FileUploadNotAllowedException('File is Bad');
-       const user = await read.getUserReader().getById(context.file.userId);
-       const room = await read.getRoomReader().getById(context.file.rid);
-       if (room) {
-           this.notifyMessage(room, read, user, 'File inspected - Check logs');
-       }
-   }
-   async notifyMessage(room: IRoom, read: IRead, sender: IUser, message: string): Promise<void> {
-       const notifier = read.getNotifier();
-       const messageBuilder = notifier.getMessageBuilder();
-       messageBuilder.setText(message);
-       messageBuilder.setRoom(room);
-       notifier.notifyUser(sender, messageBuilder.getMessage());
-   }
-
+        //if file was bad we could throw an exception
+        //throw new FileUploadNotAllowedException('File is Bad');
+        const user = await read.getUserReader().getById(context.file.userId);
+        const room = await read.getRoomReader().getById(context.file.rid);
+        if (room) {
+            await this.notifyMessage(room, read, user, 'File inspected - Check logs');
+        }
+    }
+    
+    private async notifyMessage(room: IRoom, read: IRead, sender: IUser, message: string): Promise<void> {
+        const notifier = read.getNotifier();
+        const messageBuilder = notifier.getMessageBuilder();
+        messageBuilder.setText(message);
+        messageBuilder.setRoom(room);
+        return notifier.notifyUser(sender, messageBuilder.getMessage());
+    }
+}
 ```
+{% endcode %}
 
 Now still for the case of the file let’s notify the user attaching the file that the file was inspected. A notification is like a private temporary message (if you refresh the page the notification is gone) to the user only. If we test now by attaching a file we should see:
 

@@ -22,28 +22,32 @@ The primary step is to register the slash command. It must be registered in the 
 
 Execute the following command to register your slash command, `phone`:
 
+{% code lineNumbers="true" %}
 ```typescript
 public async extendConfiguration(configuration: IConfigurationExtend) {
-configuration.slashCommands.provideSlashCommand(new PhoneCommand());
+    configuration.slashCommands.provideSlashCommand(new PhoneCommand());
 }
 ```
+{% endcode %}
 
-Then, import the new slash command class by executing the following:
+Then, import the new slash command class by adding the following import statements to your file:
 
+{% code lineNumbers="true" %}
 ```typescript
 import { IAppAccessors, IConfigurationExtend, ILogger } from '@rocket.chat/apps-engine/definition/accessors';
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import { PhoneCommand } from './slashcommands/PhoneCommand';
 ```
+{% endcode %}
 
-## Step 2: Create the slash command
+### Step 2: Create the slash command
 
-\
 The following step is to create the slash command.&#x20;
 
 First, create a `PhoneCommand.ts` file in the `slashcommands` directory at the root of the project. In this file, the slash command is defined. Now add the code below:
 
+{% code lineNumbers="true" %}
 ```typescript
 import {
     IHttp,
@@ -83,6 +87,7 @@ export class PhoneCommand implements ISlashCommand {
     }
 }
 ```
+{% endcode %}
 
 What this code tells us:
 
@@ -101,7 +106,7 @@ After registering and defining your slash command, the final step is to deploy y
 \
 To deploy the app, run:&#x20;
 
-```
+```bash
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
 ```
 
@@ -119,41 +124,45 @@ This command outputs the specified text to the console. If you wish to publish i
 
 Add the following method to the `PhoneCommand` class:
 
+{% code lineNumbers="true" %}
 ```typescript
 private async sendMessage(context: SlashCommandContext, modify: IModify, message: string): Promise<void> {
-const messageStructure = modify.getCreator().startMessage();
-const sender = context.getSender(); // [1]
-const room = context.getRoom(); // [2]
-
-messageStructure
-.setSender(sender)
-.setRoom(room)
-.setText(message); // [3]
-
-await modify.getCreator().finish(messageStructure); // [4]
+    const messageStructure = modify.getCreator().startMessage();
+    const sender = context.getSender(); // [1]
+    const room = context.getRoom(); // [2]
+    
+    messageStructure
+        .setSender(sender)
+        .setRoom(room)
+        .setText(message); // [3]
+    
+    await modify.getCreator().finish(messageStructure); // [4]
 }
 
 ```
+{% endcode %}
 
 This function \[1] retrieves the user who invoked the command (in this case, you), \[2] selects the room where the command was executed, \[3] sets the received string as the message, and \[4] sends the message to the room.
 
 Then, change the `console.log` from the switch block of the executor method and call the `sendMessage` method instead:
 
+{% code lineNumbers="true" %}
 ```typescript
 case 'text':
-        await this.sendMessage(context, modify, 'Texting!');
-        break;
+    await this.sendMessage(context, modify, 'Texting!');
+    break;
 
-    case 'call':
-        await this.sendMessage(context, modify, 'Calling!');
-        break;
+case 'call':
+    await this.sendMessage(context, modify, 'Calling!');
+    break;
 ```
+{% endcode %}
 
 Note: `context` and `modify` are the arguments passed to the executor method, and they will be forwarded to the `sendMessage` method.
 
 Save the file and redeploy the app by running:
 
-```
+```bash
 rc-apps deploy --url <server_url> -u <user> -p <pwd> --update
 ```
 

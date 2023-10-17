@@ -20,7 +20,7 @@ When developing new functionalities, you need to integrate the local version of 
 
 * To start, clone the Apps Engine repository and navigate into the directory by running
 
-```
+```bash
 git clone https://github.com/RocketChat/Rocket.Chat.Apps-engine.git
 cd Rocket.Chat.Apps-engine
 ```

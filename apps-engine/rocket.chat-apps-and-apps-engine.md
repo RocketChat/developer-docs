@@ -1,10 +1,10 @@
-# Introduction to Apps Engine
+# Introduction to Apps-Engine
 
 Today’s businesses must innovate to maximize efficiencies and continue to seek out new methods to expand without escalating expenses. They need to make the most of their time, money, and resources because of significant changes in the economy and more people wanting apps, and a lack of skilled app writers. Consequently, IT backlogs are growing, and because IT cannot keep up, shadow IT is widespread. This leads to a lot of uncontrolled, separate apps that raise risk, add to technology debt, and make employees less productive and less happy.
 
 This is where Apps Engine comes in handy because it makes standard app creation easier while speeding up delivery. Developers can use Apps Engine's pre-built components to focus on creating high-value apps instead of rebuilding application infrastructure and current features.
 
-### What is Apps Engine?&#x20;
+### What is the Apps-Engine?&#x20;
 
 Apps Engine is a platform that enables developers to develop and run applications on Rocket.Chat’s infrastructure. It provides a framework and APIs for the apps you develop to interact with Rocket.Chat, thereby allowing a tighter integration with Rocket.Chat. Apps Engine enables developers to develop extensions to Rocket.Chat and add functionalities without having to dive deep into the base code – which is a time-consuming and resource-intensive process. With security, scalability, and high-performance modules built-in, Apps Engine is a popular choice for developers who want to develop apps and accelerate the time to market.
 

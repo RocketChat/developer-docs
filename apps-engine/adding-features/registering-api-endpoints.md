@@ -12,6 +12,7 @@ First of all, let's create a new Rocket.Chat app from scratch using `rc-apps cre
 
 In the main App class, we need to implement the `extendConfiguration` method, within which we use `configuration.api.provideApi` to register a new API endpoint `new Endpoint(this)`.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 // Main App Class
 import { IAppAccessors, IConfigurationExtend, ILogger } from '@rocket.chat/apps-engine/definition/accessors';
@@ -28,7 +29,7 @@ export class RocketChatTester extends App {
 
     public async extendConfiguration(configuration: IConfigurationExtend) {
         // Register API endpoints
-        configuration.api.provideApi({
+        await configuration.api.provideApi({
             visibility: ApiVisibility.PUBLIC,
             security: ApiSecurity.UNSECURE,
             endpoints: [new Endpoint(this)],
@@ -36,9 +37,11 @@ export class RocketChatTester extends App {
     }
 }
 ```
+{% endcode %}
 
 Notice that we imported an `Endpoint` class from another file. Now let's create a new file named `endpoint.ts` and implement the class Endpoint we used above.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 // endpoint.ts
 import { HttpStatusCode, IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-engine/definition/accessors';
@@ -48,7 +51,11 @@ export class Endpoint extends ApiEndpoint {
     public path = 'api';
 
     public async post(
-        request: IApiRequest, endpoint: IApiEndpointInfo, read: IRead, modify: IModify, http: IHttp, persis: IPersistence,
+        request: IApiRequest, endpoint: IApiEndpointInfo, 
+        read: IRead, 
+        modify: IModify, 
+        http: IHttp, 
+        persis: IPersistence,
     ): Promise<IApiResponse> {
         const body = Object.entries(request.content)
             .map(([key, value]) => `${key}: ${value}`)
@@ -71,6 +78,7 @@ export class Endpoint extends ApiEndpoint {
     }
 }
 ```
+{% endcode %}
 
 In the file `endpoint.ts`, we created a class that extends the base class `ApiEndpoint`. We defined the path of the API endpoint by assigning the value `'api'` to the public property `path`.
 
@@ -84,7 +92,7 @@ Using the CLI command `rc-apps deploy` to deploy the app to your Rocket.Chat ser
 
 Open the terminal and use curl post some data to the endpoint. The result should be like below:
 
-```typescript
+```bash
 > curl --data 'Jack=Hello :)&Lucy=Hi!' -X POST http://localhost:3000/api/apps/public/bc4dd4a1-bf9b-408e-83a4-aba7eba0bf02/api
 {"messageId":"dREmKaR7qHyN98rtZ"}
 ```

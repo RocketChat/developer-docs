@@ -43,37 +43,39 @@ Let's examine the `app.json` file for our `HelloWorld` application to comprehend
 
 ```json
 {
-"id": "28d63257-94c3-40e8-83eb-9581244598b6",
-"version": "0.0.1",
-"requiredApiVersion": "^1.4.0",
-"iconFile": "icon.png",
-"author": {
-"name": "Pavithra",
-"homepage": "rocketchat.com",
-"support": "support@rocketchat.com"
-},
-"name": "Hello World",
-"nameSlug": "hello-world",
-"classFile": "HelloWorldApp.ts",
-"description": "A basic app that prints Hello World!"
+    "id": "28d63257-94c3-40e8-83eb-9581244598b6",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.4.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Pavithra",
+        "homepage": "rocketchat.com",
+        "support": "support@rocketchat.com"
+    },
+    "name": "Hello World",
+    "nameSlug": "hello-world",
+    "classFile": "HelloWorldApp.ts",
+    "description": "A basic app that prints Hello World!"
 }
 ```
 
 A Rocket.Chat app is essentially a TypeScript project that contains a main file with a class extending the main `App` class from the Apps Engine. The identity of this file can be found in the `classFile` property of your `app.json` file. The `HelloWorld.ts` TypeScript file should be located. Open the file `HelloWorld.ts`.
 
+{% code lineNumbers="true" %}
 ```typescript
 export class HelloWorldApp extends App {
-constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-super(info, logger, accessors);
+    constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
+        super(info, logger, accessors);
+    }
 }
 ```
+{% endcode %}
 
 The first thing you might observe is that the class name and filename are identical. This is intentional; either use the same name for the class and the file in order for the application to compile successfully, or export the primary app class by default as shown below.
 
 ```typescript
 export default class HelloWorldApp extends App {
-constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-super(info, logger, accessors);
+    // ...
 }
 ```
 
@@ -91,15 +93,18 @@ To log data, you must first have access to the logger, or more precisely, an obj
 
 This can easily be remedied by using the `getLogger` method provided by the `App` class.  Simply store the logger as a separate object, and it can be reused whenever necessary.
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 export class HelloWorldApp extends App {
-  private readonly appLogger: ILogger
-  constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-    super(info, logger, accessors)
-    this.appLogger = this.getLogger()
-  }
+    private readonly appLogger: ILogger
+    
+    constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
+        super(info, logger, accessors)
+        this.appLogger = this.getLogger()
+    }
 }
 ```
+{% endcode %}
 
 We have just stored the accessor for the log file in the `appLogger` variable. Now, we can record anything with it. Add the line shown below to the constructor.
 
@@ -111,7 +116,7 @@ this.appLogger.debug('Hello, World!')
 
 To deploy the app, run:&#x20;
 
-```
+```sh
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
 ```
 
@@ -126,7 +131,11 @@ Alternatively, you can execute the `rc-apps package`, which will provide you wit
 
 To test your app, you need a Rocket.Chat server running locally on your machine and the credentials of an administrator user.
 
+{% hint style="info" %}
+In older versions of Rocket.Chat, you might need to turn own **Apps Development Mode** for manual installations to be allowed.
+
 To run Rocket.Chat in develop mode, refer to the document Installing Rocket.Chat for Developing. Enable Apps development mode by navigating to **Administration** > **General** > **Apps**, and clicking the `True` radio button next to **Enable development mode**.
+{% endhint %}
 
 The function of the application in this example was to log Hello World to the console. In order to test the app's functionality, we must examine the app logs. Follow the steps below to examine the logs and test the application:&#x20;
 

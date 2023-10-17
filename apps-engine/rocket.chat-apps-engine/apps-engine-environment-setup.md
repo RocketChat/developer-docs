@@ -1,4 +1,4 @@
-# Apps Engine Environment Setup
+# Apps-Engine Environment Setup
 
 Before beginning, the following must be installed on your machine:&#x20;
 
@@ -6,7 +6,7 @@ Before beginning, the following must be installed on your machine:&#x20;
 * [Node.js](https://nodejs.org/en) (version 12 and above)&#x20;
 * Rocket.Chat Apps Engine CLI&#x20;
 
-Git, Node.js, and Yarn have been covered in the preceding sections. The Apps Engine CLI will be elaborated upon in forthcoming documents.
+Git, Node.js, and Yarn have been covered in the preceding sections. The Apps-Engine CLI will be elaborated upon in forthcoming documents.
 
 We recommend that you [install Visual Studio Code](https://code.visualstudio.com/download). In addition, a local [development instance](https://docs.rocket.chat/deploy/prepare-for-your-deployment/rapid-deployment-methods/docker-and-docker-compose) of Rocket.Chat must be running on your system.
 
@@ -18,4 +18,4 @@ The Rocket.Chat Apps Engine CLI is simple and easy to use. However, a basic unde
 
 ### TypeScript Development&#x20;
 
-To develop an application, you must write [TypeScript](https://www.typescriptlang.org/) code. Although the majority of definitions are managed by the Apps Engine CLI, you must grasp where the code guides you in order to comprehend how your application interacts with the Rocket.Chat server and external APIs.
+To develop a Rocket.Chat App, you must write [TypeScript](https://www.typescriptlang.org/) code. Although the majority of definitions are managed by the Apps Engine CLI, you must grasp where the code guides you in order to comprehend how your application interacts with the Rocket.Chat server and external APIs.

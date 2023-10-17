@@ -8,6 +8,7 @@ To demonstrate this, we are going to create an action button on a message contex
 
 Action buttons are registered during the `configurationExtend` lifecycle method. Here is an example:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
     configuration.ui.registerButton({
@@ -17,6 +18,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
     });
 }
 ```
+{% endcode %}
 
 Registering a button requires `ui.registerButton` permission. Make sure to add it to your app manifest file (`app.json`); as shown below:
 
@@ -43,7 +45,7 @@ Click on the options icon across any message and you will see the action we just
 
 Whenever the user clicks one of the action buttons, the app receives an interaction event. Here is an example of how to handle it:
 
-{% code title="MyApp.ts" %}
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 export class MyApp extends App implements IUIKitInteractionHandler {
     public async executeActionButtonHandler(
@@ -86,9 +88,10 @@ export class MyApp extends App implements IUIKitInteractionHandler {
 
 Most of the time you will have an action button that does something specific, and should not be displayed everywhere the context is available. For that, you can use the `when` prop when registering the button:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
-    configuration.ui.registerButton({
+    await configuration.ui.registerButton({
         actionId: 'my-action-id',
         labelI18n: 'my-action-name',
         context: UIActionButtonContext.MESSAGE_ACTION,
@@ -105,6 +108,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
     });
 }
 ```
+{% endcode %}
 
 The button above can only be seen in public and private channels and direct messages, by users that have the `create-d` permission and have both the `admin` and `moderator` roles.
 

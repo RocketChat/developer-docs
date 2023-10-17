@@ -1,8 +1,7 @@
-# Apps Engine CLI
+# Apps-Engine CLI
 
 The Rocket.Chat Apps Engine CLI is a simple command-line interface that facilitates the development of Rocket.Chat applications. This computer program allows you to create and delete files, execute programs, and navigate through folders and files. On a Mac, it is referred to as Terminal, whereas on Windows, it is Command Prompt. The Command Line is a potent application that will expand your programming capabilities.
 
-\
 Using straightforward commands, you can compile and deploy a basic app structure to your Rocket.Chat Server. We have enhanced its capacity to generate boilerplate code for various functions, display autocomplete installation instructions, submit an app for review in the marketplace, and more. The Rocket.Chat Apps Engine CLI enables you to create new applications and deploy them on your deployment environment, as well as package your application for shipping and future deployment on other installations.
 
 \

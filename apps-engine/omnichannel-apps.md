@@ -4,6 +4,6 @@ Rocket.Chat Omnichannel apps provide a robust solution by integrating multiple c
 
 The Rocket.Chat omnichannel apps are divided into three categories, namely —
 
-* [Channel Apps](https://developer.rocket.chat/omnichannel/developing-omnichannel-apps/channel-apps)
-* [Chatbots](https://developer.rocket.chat/omnichannel/developing-omnichannel-apps/chatbots)
-* [CRM Apps](https://developer.rocket.chat/omnichannel/developing-omnichannel-apps/crm-apps)
+* [Channel Apps](../omnichannel/developing-omnichannel-apps/channel-apps.md)
+* [Chatbots](../omnichannel/developing-omnichannel-apps/chatbots.md)
+* [CRM Apps](../omnichannel/developing-omnichannel-apps/crm-apps.md)

@@ -9,6 +9,7 @@ This document will explain how to connect your Rocket.Chat application to the ou
 
 The slash command must be registered in the app's main class, at the root of the project.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 import { IAppAccessors, IConfigurationExtend, ILogger } from '@rocket.chat/apps-engine/definition/accessors';
 import { App } from '@rocket.chat/apps-engine/definition/App';
@@ -25,6 +26,7 @@ export class RocketChatTester extends App {
     }
 }
 ```
+{% endcode %}
 
 Here, we \[1] import our new slash command class and then \[2] register it in the configuration of the application.
 
@@ -34,6 +36,7 @@ Our command will be referred to as get, so to invoke it from the conversation, s
 
 Create a `slashcommand` directory at the root of the project and add the `HTTPRequestCommand.ts` file to it. Then paste the code shown below:
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 import {
     IHttp,
@@ -62,6 +65,7 @@ export class HTTPRequestCommand implements ISlashCommand {
     }
 }
 ```
+{% endcode %}
 
 This code indicates:&#x20;
 
@@ -72,16 +76,18 @@ This code indicates:&#x20;
 
 You can optionally store the `GET` request in a console constant. When the command is executed, it is logged.
 
+{% code lineNumbers="true" %}
 ```typescript
 const response = await http.get(url);
 console.log("result: " + response.data);
 ```
+{% endcode %}
 
 ### Step 3: Deploy to the server
 
 To deploy the app, run:&#x20;
 
-```
+```bash
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
 ```
 
@@ -107,20 +113,22 @@ Now, instead of logging console output to the instance's log, let's output it to
 
 Add the following private method to `HTTPRequestCommand.ts`.
 
+{% code lineNumbers="true" fullWidth="true" %}
 ```typescript
 private async sendMessage(context: SlashCommandContext, modify: IModify, message: string): Promise<void> {
-        const messageStructure = modify.getCreator().startMessage();
-        const sender = context.getSender(); // [1]
-        const room = context.getRoom(); // [2]
+    const messageStructure = modify.getCreator().startMessage();
+    const sender = context.getSender(); // [1]
+    const room = context.getRoom(); // [2]
 
-        messageStructure
+    messageStructure
         .setSender(sender)
         .setRoom(room)
         .setText(message); // [3]
 
-        await modify.getCreator().finish(messageStructure); // [4]
-    }
+    await modify.getCreator().finish(messageStructure); // [4]
+}
 ```
+{% endcode %}
 
 \
 This function \[1] gets the user who invoked the command (in this case, you), \[2] selects the room where the command was executed, \[3] sets the received string as the message, and \[4] sends the message to the room.\
@@ -129,17 +137,19 @@ This function \[1] gets the user who invoked the command (in this case, you), \[
 \
 Then, append the following code to the end of the executor method:
 
+{% code lineNumbers="true" %}
 ```typescript
 const response = await http.get(url); // [1]
-    const message = JSON.stringify(response.data, null, 2); // [2]
-    await this.sendMessage(context, modify, message); // [3]
+const message = JSON.stringify(response.data, null, 2); // [2]
+await this.sendMessage(context, modify, message); // [3]
 ```
+{% endcode %}
 
 Instead of simply sending the request and not capturing the response, we \[1] store the response in a constant, \[2] format its content as a string, and \[3] transmit it using our new `sendMessage` method.
 
 Save the file and redeploy the app by running:
 
-```
+```bash
 rc-apps deploy --url <server_url> -u <user> -p <pwd> --update
 ```
 
