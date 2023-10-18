@@ -1,28 +1,40 @@
----
-description: Retrieves the data of agent available next for an incoming conversation.
----
+# Get Next Agent Information
 
-# Next Agent
+Get information about the next available agent for an incoming conversation.
 
-| URL                                  | Requires Auth | HTTP Method |
-| ------------------------------------ | ------------- | ----------- |
-| `/api/v1/livechat/agent.next/:token` | `no`          | `GET`       |
+<table><thead><tr><th width="165">HTTP Method</th><th width="257">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/agent.next/:token</code></td><td><code>no</code></td></tr></tbody></table>
 
-## Payload
+## Path variables
 
-| Argument | Example             | Required | Description          |
-| -------- | ------------------- | -------- | -------------------- |
-| `token`  | `iNKE8a6k6cjbqWhWd` | Required | The visitor `token`. |
+<table><thead><tr><th width="165">Key</th><th width="203">Example value</th><th>Description</th></tr></thead><tbody><tr><td><code>token </code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor <code>token</code>.</td></tr></tbody></table>
+
+{% hint style="info" %}
+To get the `token` value, call the [Get Rooms](https://developer.rocket.chat/reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/get-rooms) endpoint to retrieve the details of all rooms.
+{% endhint %}
 
 ## Example Call
 
-```bash
-curl http://localhost:3000/api/v1/livechat/agent.next/iNKE8a6k6cjbqWhWd
-```
+{% swagger method="get" path="/api/v1/livechat/agent.next/:token" baseUrl="http://localhost:3000" summary="Get information about the next available agent" %}
+{% swagger-description %}
+Get next available agent information
+{% endswagger-description %}
 
-## Example Result
+{% swagger-parameter in="path" name="token" required="true" %}
+The visitor token.
+{% endswagger-parameter %}
 
-```javascript
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+## Example Response
+
+```json
 {
   "agent": {
     "_id": "7Gm3PoFCJWTCJ68XR",

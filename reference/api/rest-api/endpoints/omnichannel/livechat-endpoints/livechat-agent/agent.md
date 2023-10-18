@@ -1,8 +1,6 @@
----
-description: Retrieves Livechat agent data according to the path variables.
----
-
 # Get Agent Information
+
+Get the Livechat agent data according to the path variables.
 
 <table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/agent.info/:rid/:token</code></td><td><code>no</code></td></tr></tbody></table>
 
@@ -16,7 +14,7 @@ To get the `rid` and `token` values, call the [Get Rooms](https://developer.rock
 
 ## Example Call
 
-{% swagger method="get" path="/api/v1/livechat/agent.info/:rid/:token" baseUrl="https://localhost:3000" summary="Get agent information" %}
+{% swagger method="get" path="/api/v1/livechat/agent.info/:rid/:token" baseUrl="http://localhost:3000" summary="Get agent information" %}
 {% swagger-description %}
 
 {% endswagger-description %}
