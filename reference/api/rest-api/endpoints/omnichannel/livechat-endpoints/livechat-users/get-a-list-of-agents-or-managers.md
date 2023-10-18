@@ -1,30 +1,46 @@
----
-description: Get a list of agents or managers.
----
-
 # Get a list of agents or managers
 
-It supports the Offset, Count, and Sort Query Parameters.
+Get a list of agents or managers.&#x20;
 
-| URL                            | Requires Auth | HTTP Method |
-| ------------------------------ | ------------- | ----------- |
-| `/api/v1/livechat/users/:type` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/users/:type</code></td><td><code>yes</code></td></tr></tbody></table>
 
-## Payload
+## Path Variables
 
-| Argument | Example | Required | Description                         |
-| -------- | ------- | -------- | ----------------------------------- |
-| `type`   | `agent` | Required | Can be either `agent` or `manager`. |
+<table><thead><tr><th width="167.00000000000003">Key</th><th width="162">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>type </code><mark style="color:red;"><code>*</code></mark></td><td><code>agent</code></td><td>The type of user. The value can either be <code>agent</code> or <code>manager</code>.</td></tr></tbody></table>
+
+## Query Parameters
+
+The [#pagination](../../../../#pagination "mention") query parameters are supported and optional.
 
 ## Example Call
 
-```bash
-curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/livechat/users/agent
-```
+{% swagger method="get" path="/api/v1/livechat/users/:type" baseUrl="http://localhost:3000" summary="Get the details of all agents or managers" %}
+{% swagger-description %}
 
-## Example Result
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
+Auth token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="X-User-Id" required="true" %}
+User ID
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="type" required="true" %}
+Type of user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+## Example Response
 
 ```javascript
 {
@@ -44,6 +60,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-<table><thead><tr><th>Version</th><th width="376">Description</th></tr></thead><tbody><tr><td>2.2.0</td><td>Added support to pagination</td></tr><tr><td>0.42.0</td><td>Added</td></tr></tbody></table>
+<table><thead><tr><th width="264">Version</th><th width="376">Description</th></tr></thead><tbody><tr><td>2.2.0</td><td>Added support to pagination</td></tr><tr><td>0.42.0</td><td>Added</td></tr></tbody></table>
 
 ##

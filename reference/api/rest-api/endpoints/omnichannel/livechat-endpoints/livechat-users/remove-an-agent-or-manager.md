@@ -1,30 +1,46 @@
----
-description: Removes an agent or manager
----
-
 # Remove an agent or manager
 
-| URL                                 | Requires Auth | HTTP Method |
-| ----------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/users/:type/:_id` | `yes`         | `DELETE`    |
+Remove a user as an agent or a manager.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>DELETE</code></td><td><code>/api/v1/livechat/users/:type/:_id</code></td><td><code>yes</code></td></tr></tbody></table>
 
 ## Payload
 
-| Argument | Example             | Required | Description                         |
-| -------- | ------------------- | -------- | ----------------------------------- |
-| `type`   | `agent`             | Required | Can be either `agent` or `manager`. |
-| `_id`    | `SQafHvoFPuB57NmBD` | Required | The user `_id`.                     |
+<table><thead><tr><th width="158">Argument</th><th width="216">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>type </code><mark style="color:red;"><code>*</code></mark></td><td><code>agent</code></td><td>The type of user. The value can either be <code>agent</code> or <code>manager</code>.</td></tr><tr><td><code>_id </code><mark style="color:red;"><code>*</code></mark></td><td><code>SQafHvoFPuB57NmBD</code></td><td>The user <code>_id</code>.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     -X DELETE \
-     http://localhost:3000/api/v1/livechat/users/agent/SQafHvoFPuB57NmBD
-```
+{% swagger method="delete" path="/api/v1/livechat/users/:type/:_id" baseUrl="http://localhost:3000" summary="Remove an agent or manager" %}
+{% swagger-description %}
 
-## Example Result
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
+Auth token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="X-User-Id" required="true" %}
+User ID
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="type" required="true" %}
+Type of user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="_id" required="true" %}
+User ID
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+## Example Response
 
 ```javascript
 {
@@ -34,6 +50,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| ------- | ----------- |
-| 0.42.0  | Added       |
+<table><thead><tr><th width="298">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.42.0</td><td>Added</td></tr></tbody></table>
