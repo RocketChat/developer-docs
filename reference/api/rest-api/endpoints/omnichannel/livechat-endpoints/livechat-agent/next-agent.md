@@ -1,6 +1,6 @@
 # Get Next Agent Information
 
-Get information about the next available agent for an incoming conversation.
+Get information about the next available agent for an incoming conversation. This endpoint returns the available agents who have not been assigned to any chat yet.
 
 <table><thead><tr><th width="165">HTTP Method</th><th width="257">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/agent.next/:token</code></td><td><code>no</code></td></tr></tbody></table>
 
