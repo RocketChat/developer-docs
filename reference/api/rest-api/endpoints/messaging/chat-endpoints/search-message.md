@@ -8,7 +8,7 @@ description: Search for messages in a channel by id and text message.
 | --------------------- | ------------- | ----------- |
 | `/api/v1/chat.search` | `yes`         | `GET`       |
 
-## Payload
+## Query Parameter
 
 | Argument     | Example             | Required | Description                             |
 | ------------ | ------------------- | -------- | --------------------------------------- |

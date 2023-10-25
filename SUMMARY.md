@@ -351,7 +351,7 @@
           * [Report Message](reference/api/rest-api/endpoints/messaging/chat-endpoints/reportmessage.md)
           * [Follow Message](reference/api/rest-api/endpoints/messaging/chat-endpoints/follow-message.md)
           * [Get Message](reference/api/rest-api/endpoints/messaging/chat-endpoints/getmessage.md)
-          * [Get Channel Threads](reference/api/rest-api/endpoints/messaging/chat-endpoints/getthreadslist.md)
+          * [List Threads](reference/api/rest-api/endpoints/messaging/chat-endpoints/getthreadslist.md)
           * [Get Deleted Messages](reference/api/rest-api/endpoints/messaging/chat-endpoints/getdeletedmessages.md)
           * [Get Discussions of A Room](reference/api/rest-api/endpoints/messaging/chat-endpoints/getdiscussions.md)
           * [Get Mentioned Messages](reference/api/rest-api/endpoints/messaging/chat-endpoints/getmentionedmessages.md)

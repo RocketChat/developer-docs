@@ -6,7 +6,7 @@ Get thread messages. It supports the [#pagination](../../../#pagination "mention
 | -------------------------------- | ------------- | ----------- |
 | `/api/v1/chat.getThreadMessages` | `yes`         | `GET`       |
 
-## Payload
+## Query Parameters
 
 | Argument | Example                    | Required | Description                                                                                       |
 | -------- | -------------------------- | -------- | ------------------------------------------------------------------------------------------------- |

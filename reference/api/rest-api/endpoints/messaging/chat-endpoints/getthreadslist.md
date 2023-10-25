@@ -1,6 +1,6 @@
-# Get Channel Threads
+# List Threads
 
-Get channel threads. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+List threads in a room. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 | URL                           | Requires Auth | HTTP Method |
 | ----------------------------- | ------------- | ----------- |
@@ -8,9 +8,9 @@ Get channel threads. It supports the [#pagination](../../../#pagination "mention
 
 ## Payload
 
-| Argument | Example             | Required | Description            |
-| -------- | ------------------- | -------- | ---------------------- |
-| `rid`    | `7aDSXtjMA3KPLxLjt` | Required | The id of the channel. |
+| Argument | Example             | Required | Description         |
+| -------- | ------------------- | -------- | ------------------- |
+| `rid`    | `7aDSXtjMA3KPLxLjt` | Required | The id of the room. |
 
 ## Example Call
 
@@ -27,48 +27,54 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 {
     "threads": [
         {
-            "_id": "gcGai9bRREqokjyPc",
-            "rid": "GENERAL",
-            "msg": "test",
-            "ts": "2019-04-08T13:15:52.017Z",
+            "_id": "NZieMNQDEdMDmLLip",
+            "rid": "6GFJ3tbmHiyHbahmC",
+            "msg": "hola",
+            "ts": "2023-10-05T20:30:51.052Z",
             "u": {
-                "_id": "p4a8YxvLQEHmiBKTS",
-                "username": "marcos.defendi",
-                "name": "Marcos Defendi"
+                "_id": "rbAXPnMktTFbNpwtJ",
+                "username": "roxie",
+                "name": "Funke Olasupo"
             },
-            "_updatedAt": "2019-04-08T14:40:27.789Z",
+            "_updatedAt": "2023-10-16T22:57:27.362Z",
+            "urls": [],
             "mentions": [],
             "channels": [],
-            "replies": [
-                "p4a8YxvLQEHmiBKTS"
+            "md": [
+                {
+                    "type": "PARAGRAPH",
+                    "value": [
+                        {
+                            "type": "PLAIN_TEXT",
+                            "value": "hola"
+                        }
+                    ]
+                }
             ],
-            "tcount": 5,
-            "tlm": "2019-04-08T14:40:27.724Z"
-        },
-        {
-            "_id": "5iJjPNPhxMeLtEJQt",
-            "rid": "GENERAL",
-            "msg": "Sample message",
-            "ts": "2019-04-07T20:41:15.965Z",
-            "u": {
-                "_id": "rocketchat.internal.admin.test",
-                "username": "rocketchat.internal.admin.test",
-                "name": "RocketChat Internal Admin Test"
+            "reactions": {
+                ":smile:": {
+                    "usernames": [
+                        "test.funke"
+                    ]
+                }
             },
-            "_updatedAt": "2019-04-08T13:41:55.205Z",
-            "mentions": [],
-            "channels": [],
+            "starred": [],
+            "pinned": true,
+            "pinnedAt": "2023-10-05T20:59:44.433Z",
+            "pinnedBy": {
+                "_id": "5fRTXMt7DMJbpPJfh",
+                "username": "test.funke"
+            },
             "replies": [
-                "rocketchat.internal.admin.test",
-                "p4a8YxvLQEHmiBKTS"
+                "rbAXPnMktTFbNpwtJ"
             ],
-            "tcount": 1,
-            "tlm": "2019-04-08T13:41:55.102Z"
+            "tcount": 2,
+            "tlm": "2023-10-16T22:57:27.158Z"
         }
     ],
-    "count": 2,
+    "count": 1,
     "offset": 0,
-    "total": 2,
+    "total": 1,
     "success": true
 }
 ```
