@@ -1,8 +1,8 @@
 # Introduction to Apps-Engine
 
-In today's evolving economy, businesses are pressed to innovate while managing costs. The high demand for apps and a shortage of skilled developers have led to growing IT backlogs and the proliferation of shadow IT, which adds risk and inefficiency. Apps Engine offers a solution by simplifying app development and expediting delivery, thereby optimizing resources.
+In today's evolving economy, businesses are pressed to innovate while also managing costs. The high demand for apps and a shortage of skilled developers have led to the growth of technological backlogs and shadow IT, which adds risk and inefficiency. Rocket.Chat's Apps-Engine offers a solution by simplifying app development and speeding up the delivery process, thereby optimizing resources.
 
-Apps-Engine enables developers to build and run applications on Rocket.Chat's infrastructure. Apps-Engine's pre-built components make standard app creation easier and quickens delivery. It provides a framework and APIs for you to develop secure and scalable apps that interact with Rocket.Chat. With this, you can create extensions and add functionalities without diving deep into the base code.
+Apps-Engine enables developers to build and run applications on Rocket.Chat's infrastructure using pre-built components. It provides a framework and APIs for you to develop secure and scalable apps that interact with Rocket.Chat. With this, you can create extensions and add functionalities without diving deep into the base code.
 
 ### Features of Apps-Engine
 
