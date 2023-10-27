@@ -2,7 +2,7 @@
 
 On this page, you will learn about the Apps-Engine commands and create a basic app.
 
-### Apps-Engine CLI Commands
+## Apps-Engine CLI Commands
 
 `rc-apps` is a command-line interface (CLI) utility that provides commands to rapidly develop a Rocket.Chat application. Initiate `rc-apps` in your terminal to view the list of commands that you can execute as needed.&#x20;
 
@@ -10,7 +10,7 @@ Here is a list of commands that Rocket.Chat Apps-Engine supports:&#x20;
 
 <table><thead><tr><th width="204.5">Command</th><th>Description</th></tr></thead><tbody><tr><td><code>autocomplete</code></td><td>Automatically displays installation instructions.</td></tr><tr><td><code>create</code></td><td>Simplifies the process of creating an app.</td></tr><tr><td><code>deploy</code></td><td>Deploys an app to the server.</td></tr><tr><td><code>generate</code></td><td>Adds boilerplate code for numerous functions.</td></tr><tr><td><code>help</code></td><td>Displays help for <code>rc-apps</code>.</td></tr><tr><td><code>login</code></td><td>Provides the steps for logging into Rocket.Chat Cloud.</td></tr><tr><td><code>logout</code></td><td>Revokes the Rocket.Chat Cloud credentials.</td></tr><tr><td><code>package</code></td><td>Packages the app for distribution.</td></tr><tr><td><code>submit</code></td><td>Submits an app to the marketplace for review.</td></tr><tr><td><code>watch</code></td><td>Monitors app changes and redeploys the modified app to the server.</td></tr></tbody></table>
 
-### Create a Basic App
+## Create a Basic App
 
 Now that you've understood the basic concepts of the Apps-Engine and installed the CLI, let's build our initial app `Hello World`.&#x20;
 

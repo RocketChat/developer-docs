@@ -6,7 +6,7 @@ The CLI is hosted on [GitHub](https://github.com/RocketChat/Rocket.Chat.Apps-cli
 
 ## Installing Rocket.Chat Apps-Engine CLI
 
-1. Before installing the CLI, you must ensure that [Node.js is already installed](https://nodejs.org/en) on your system. Use the following command in your terminal to verify the installation of Node.js. This returns a valid version of Node.js, for example, `v10.15.3`:
+1. Before installing the CLI, you must ensure that [Node.js is installed](https://nodejs.org/en) on your system. Use the following command in your terminal to verify the installation of Node.js. This returns a valid version of Node.js, for example, `v10.15.3`:
 
 ```bash
 node -v
