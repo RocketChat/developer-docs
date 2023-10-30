@@ -18,6 +18,8 @@ You only can send `alias` and `avatar` properties if your user has the `bot` rol
 | `emoji`            | `:smirk:`                                 | Optional | If provided, this will make the avatar on this message be an emoji. [Emoji Cheetsheet](http://emoji.codes/)                                        |
 | `avatar`           | `http://site.com/logo.png`                | Optional | If provided, this will make the avatar use the provided image url.                                                                                 |
 | `attachments`      | `[{}]`                                    | Optional | See the below section, [Attachments Detail](postmessage.md#attachments-detail), for details.                                                       |
+| `tmid`             | `jC9chsFddTvsbFQG7`                       | Optional | The message id of the original message to reply to/create a thread on.                                                                             |
+| `tshow`            | `true`                                    | Optional | Defaults to `true` when `tmid` is specified. Message will also be shown in the channel/room if value is `true`.                                    |
 
 ### Attachments Detail
 
@@ -142,6 +144,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 | Version | Description                                                                  |
 | ------- | ---------------------------------------------------------------------------- |
+| 2.4.1   | Document existing method to post reply/threaded messages                     |
 | 2.4.0   | Added validation on user's identity                                          |
 | 0.49.0  | The `channel` can now be a room's id.                                        |
 | 0.48.0  | Information about the sent message is now returned.                          |
