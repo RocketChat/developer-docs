@@ -1,6 +1,6 @@
 # Slash Commands
 
-The Slash Commands feature enables users to invoke your app or any other functionality by entering a string into the message composer window. This reduces the amount of text needed to produce complex Markdown. The `SlashCommand` method is used to call an app deployed in Rocket.Chat. Your app can contain numerous slash commands and subcommands.&#x20;
+The Slash Commands feature enables users to invoke your app or any other functionality by entering a string in the message composer window. This reduces the amount of text needed to produce complex Markdown. The `SlashCommand` method is used to call an app deployed in Rocket.Chat. Your app can contain numerous slash commands and subcommands.&#x20;
 
 In this section, we'll send a message to any room from our [Hello World app](../../getting-started/) using the `slashCommand` property.
 
@@ -38,13 +38,13 @@ public async extendConfiguration(configuration: IConfigurationExtend) {
 import { IAppAccessors, IConfigurationExtend, ILogger } from '@rocket.chat/apps-engine/definition/accessors';
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
-import { PhoneCommand } from './slashcommands/PhoneCommand';
+import { PhoneCommand } from './commands/PhoneCommand';
 ```
 {% endcode %}
 
 ### Step 2: Create the slash command
 
-1. Create a `PhoneCommand.ts` file in the `slashcommands` directory at the root of the project. In this file, the slash command is defined.&#x20;
+1. Create a `PhoneCommand.ts` file in the `commands` directory that we created at the root of the project. In this file, the slash command is defined.&#x20;
 2. Now add the following code:
 
 {% code lineNumbers="true" %}
@@ -60,28 +60,28 @@ import {
 } from '@rocket.chat/apps-engine/definition/slashcommands';
 
 export class PhoneCommand implements ISlashCommand {
-    public command = 'phone'; // [1]
+    public command = 'phone'; 
     public i18nParamsExample = '';
     public i18nDescription = '';
     public providesPreview = false;
 
     public async executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp): Promise<void> {
-        const [subcommand] = context.getArguments(); // [2]
+        const [subcommand] = context.getArguments(); 
 
-        if (!subcommand) { // [3]
+        if (!subcommand) { 
             throw new Error('Error!');
         }
 
-        switch (subcommand) { // [4]
-            case 'text': // [5]
+        switch (subcommand) { 
+            case 'text': 
                 console.log('Texting!');
                 break;
 
-            case 'call': // [6]
+            case 'call': 
                 console.log('Calling!');
                 break;
 
-            default: // [7]
+            default: 
                 throw new Error('Error!');
         }
     }
@@ -131,15 +131,15 @@ If you want to send it to the channel, follow these steps:&#x20;
 ```typescript
 private async sendMessage(context: SlashCommandContext, modify: IModify, message: string): Promise<void> {
     const messageStructure = modify.getCreator().startMessage();
-    const sender = context.getSender(); // [1]
-    const room = context.getRoom(); // [2]
+    const sender = context.getSender(); 
+    const room = context.getRoom();
     
     messageStructure
         .setSender(sender)
         .setRoom(room)
-        .setText(message); // [3]
+        .setText(message);
     
-    await modify.getCreator().finish(messageStructure); // [4]
+    await modify.getCreator().finish(messageStructure);
 }
 ```
 {% endcode %}
@@ -173,7 +173,7 @@ Here, `context` and `modify` are the arguments passed to the executor method, an
 rc-apps deploy --url <server_url> -u <user> -p <pwd> --update
 ```
 
-All that's left is for you to test it! Go to the channel in Rocket.Chat where you want to test your app by typing `/text` and `/call` in the message composer.&#x20;
+All that's left is for you to test it! Go to the channel in Rocket.Chat where you want to test your app by typing `/phone text` and `/phone call` in the message composer. Press **Enter** and you can see the output as `Texting!` or `Calling!` in the channel.
 
 Similarly, you can register and define multiple slash commands for your app that are tailored to your organization's requirements. In addition to slash commands, you can use other properties supported by the Apps-Engine to expand the functionality of your application to meet business requirements.&#x20;
 

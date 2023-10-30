@@ -30,7 +30,7 @@ Enter the following app details:
 * **Author’s Home Page:** `rocketchat.com`
 * **Author’s Support Page:** `support.rocketchat.com`
 
-A folder with the app name is created in the current working directory. The folder contains a simple app that will only compile and be packaged in the `dist` folder.
+A folder with the app name is created in the current working directory (in this case, `hello-world`). The `hello-world` folder contains a simple app that will only compile and be packaged in the `dist` folder.
 
 {% hint style="info" %}
 **Troubleshooting tip**
@@ -123,7 +123,7 @@ this.appLogger.debug('Hello, World!')
 
 #### Step 5: Deploy to the server
 
-To deploy the app, run:&#x20;
+In the command line, go to the `hello-world` app folder that was created in [#step-1-execute-the-create-command](creating-an-app.md#step-1-execute-the-create-command "mention"). To deploy the app, run:&#x20;
 
 ```sh
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
@@ -161,8 +161,9 @@ Follow these steps to examine the logs:&#x20;
 
 1. Login to your Rocket.Chat workspace as an admin.&#x20;
 2. Navigate to the **Administration** **Panel**.&#x20;
-3. Under **Apps**, select **Marketplace**. Search for the **Hello World** app.&#x20;
-4. Click on the 3 dots icon on the right-hand side of the app. From the menu, click on **View Logs**.&#x20;
-5. The **App Info** page opens on the **Logs** tab. Scroll down until you see the `"constructor"` expandable section. Select it and you can see the message `"Hello, World!"` logged in the console.&#x20;
+3. Under **Apps**, select **Marketplace**.&#x20;
+4. Select **Private Apps** from the left-hand menu. You should see the **Hello World** app.
+5. Click on the three dots icon on the right-hand side of the app. From the menu, click on **View Logs**.&#x20;
+6. The **App Info** page opens on the **Logs** tab. Scroll down until you see the `"constructor"` expandable section. Select it and you can see the message `"Hello, World!"` logged in the console.&#x20;
 
-Congrats, you just created your first app —  a simple Hello World app!
+Congratulations, you just created your first app —  a simple Hello World app!
