@@ -2,7 +2,7 @@
 
 The Slash Commands feature enables users to invoke your app or any other functionality by entering a string in the message composer window. This reduces the amount of text needed to produce complex Markdown. The `SlashCommand` method is used to call an app deployed in Rocket.Chat. Your app can contain numerous slash commands and subcommands.&#x20;
 
-In this section, we'll send a message to any room from our [Hello World app](../../getting-started/) using the `slashCommand` property.
+In this section, we'll send a message to any room from our [Hello World app](../../getting-started/creating-an-app.md) using the `slashCommand` property.
 
 For this app, we will create a main slash command called `phone`, and it will have two subcommands: `text` and `call`. We want to execute these subcommands to invoke an application function. We will use them as follows:&#x20;
 
@@ -13,7 +13,7 @@ For this app, we will create a main slash command called `phone`, and it will ha
 Although it is possible to have everything in a single file, it is not recommended. Put each physical component of your application in its own file, and logically similar components in their own subdirectories. We recommend creating a `commands` subdirectory at the root of your project for slash command-related files, but you are free to choose a different name.
 {% endhint %}
 
-### Step 1: Register the slash command
+### Step 1: Register the Slash Command
 
 {% hint style="info" %}
 The following code excerpts are a recommendation for organizing the slash commands in your application. Even if you do not wish to adhere to the subcommand pattern, you must still register the slash command.&#x20;
@@ -42,7 +42,7 @@ import { PhoneCommand } from './commands/PhoneCommand';
 ```
 {% endcode %}
 
-### Step 2: Create the slash command
+### Step 2: Create the Slash Command
 
 1. Create a `PhoneCommand.ts` file in the `commands` directory that we created at the root of the project. In this file, the slash command is defined.&#x20;
 2. Now add the following code:
@@ -98,7 +98,7 @@ Let's look at the logic of the code in the `PhoneCommand.ts` file:
 * If the argument matches the `call` subcommand, log **"Calling!"**
 * Any other argument throws an error.
 
-### Step 3: Deploy to the server
+### Step 3: Deploy to the Server
 
 After registering and defining your slash command, the final step is to deploy your application to the server.
 
@@ -119,7 +119,7 @@ After executing this command, your application will be deployed to the server.
 Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.&#x20;
 {% endhint %}
 
-### Step 4: Testing your new slash command
+### Step 4: Testing your New Slash Command
 
 After deploying the application, you can input `/phone text` or `/phone call` on any channel. The app logs `"Texting!"` or `"Calling!"` to the console, respectively.
 

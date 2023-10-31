@@ -18,7 +18,7 @@ Now that you've understood the basic concepts of the Apps-Engine and installed t
 Make sure that you have the [setup environment](./) ready.
 {% endhint %}
 
-#### Step 1: Execute the create command
+### Step 1: Execute the Create Command
 
 To create a new app, in the command line, execute `rc-apps create`. &#x20;
 
@@ -38,13 +38,13 @@ A folder with the app name is created in the current working directory (in this 
 If you receive the error message '**TypeError: Cannot read properties of undefined \[reading 'message']**', do not be alarmed. You can disregard this and use the `cd test` command to determine if a folder for your application was created in Visual Studio.&#x20;
 {% endhint %}
 
-#### Step 2: Open the app folder in Visual Studio
+### Step 2: Open the App Folder in Visual Studio
 
 1. Launch **Visual Studio** and select **Open Folder** from the sidebar on the left.&#x20;
 2. Select the app folder that was created in the previous step.
 3. Once the folder has been uploaded, its contents will be displayed in the sidebar.&#x20;
 
-#### Step 3: Comprehend the structure of an app
+### Step 3: Comprehend the Structure of an App
 
 * The app manifest file `app.json` contains basic details about the app:
 
@@ -92,7 +92,7 @@ export default class HelloWorldApp extends App {
   * **An `ILogger` object:** This object is the interface for logging. The `getLogger()` method allows access to this object from within a child class.
   * **An `IAppAccessors` object:** This object contains all app accessors. This can be accessed via the `getAccessors()` method in the child class.
 
-#### Step 4: Implement the app functionality
+### Step 4: Implement the App Functionality
 
 For this example, the app records "Hello, World!" in the Rocket.Chat administration interface.&#x20;
 
@@ -121,7 +121,7 @@ We have just stored the accessor for the log file in the `appLogger` variable. N
 this.appLogger.debug('Hello, World!')
 ```
 
-#### Step 5: Deploy to the server
+### Step 5: Deploy to the Server
 
 In the command line, go to the `hello-world` app folder that was created in [#step-1-execute-the-create-command](creating-an-app.md#step-1-execute-the-create-command "mention"). To deploy the app, run:&#x20;
 
@@ -140,7 +140,7 @@ After executing this command, your application will be deployed to the server.
 Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.&#x20;
 {% endhint %}
 
-#### Step 7: Test the app
+### Step 6: Test the App
 
 To test your app, you need a Rocket.Chat server running locally on your machine and the credentials of an administrator user.
 
