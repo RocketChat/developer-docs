@@ -1,4 +1,4 @@
-# Register new agent or manager
+# Register New Agent or Manager
 
 Register a new [agent](https://docs.rocket.chat/use-rocket.chat/omnichannel/agents) or [manager](https://docs.rocket.chat/use-rocket.chat/omnichannel/managers).
 
@@ -63,5 +63,3 @@ Type of user
 ## Change Log
 
 <table><thead><tr><th width="305">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.42.0</td><td>Added</td></tr></tbody></table>
-
-##

@@ -1,57 +1,56 @@
-# Search Omnichannel Contact
+# Search Omnichannel Contacts
 
-Use this endpoint to find Omnichannel contacts by name, email, phone number, or any custom field values stored in the database.
+Find Omnichannel contacts by name, email, phone number, or any custom field values stored in the database.
 
-| URL                                 | Requires Auth | HTTP Method |
-| ----------------------------------- | ------------- | ----------- |
-| `api/v1/omnichannel/contact.search` | `YES`         | `GET`       |
-
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="163">HTTP Method</th><th width="296">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/omnichannel/contact.search</code></td><td><code>yes</code></td></tr></tbody></table>
 
 ## Query Parameters
 
-<table><thead><tr><th width="139">Argument</th><th>Example</th><th width="154">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>email</code></td><td><code>email@rocket.chat</code></td><td>Optional</td><td>Search contacts by Co email address</td></tr><tr><td><code>phone</code></td><td><code>+13xxxxxxxxx</code></td><td>Optional</td><td>Contact phone number</td></tr><tr><td><code>custom</code></td><td><code>fieldName=value</code></td><td>Optional</td><td>Contact custom field</td></tr></tbody></table>
+The following query parameters are optional:
+
+<table><thead><tr><th width="139">Key</th><th width="229">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>email</code></td><td><code>email@rocket.chat</code></td><td>The contact's email address.</td></tr><tr><td><code>phone</code></td><td><code>+1367895436</code></td><td>The contact's phone number.</td></tr><tr><td><code>custom</code></td><td><code>fieldName=value</code></td><td>The defined custom fields.</td></tr></tbody></table>
 
 ## Example Call
 
 {% hint style="info" %}
-It is important to encode values having characters like **`@`**, **`+`**, **`/`** and **`*`** to avoid breaking the endpoint.
+Encode values having characters like **`@`**,**`+`**, **`/`**and **`*`** to avoid breaking the endpoint.
 {% endhint %}
 
+{% swagger method="get" path="/api/v1/omnichannel/contact.search?email=xyz@email.com&phone=447587922" baseUrl="http://localhost:3000" summary="Search contacts" %}
+{% swagger-description %}
 
+{% endswagger-description %}
 
-### Find contacts by Email ID&#x20;
+{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
+Auth token
+{% endswagger-parameter %}
 
-```bash
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact.search?email=email@rocket.chat \
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
+{% swagger-parameter in="header" name="X-User-Id" required="true" %}
+User ID
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+To find contacts using custom fields, use the `custom` query parameter. The `custom` query parameter must be encoded by [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams). For example, using Postman, the request is:
+
+{% code overflow="wrap" %}
+```http
+http://localhost:300//api/v1/omnichannel/contact.search?custom={ "Subscription": "premium" }
 ```
+{% endcode %}
 
-### Find contacts by Phone Number&#x20;
-
-```url
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact.search?phone=111111111 \
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
-```
-
-### Find contacts through Custom Fields
-
-```
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact.search?custom=field_name%3Dfield_value \
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
-```
-
-The `custom` query parameter can be used to search for a contact by a custom field. The `custom` query parameter must be encoded by [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams).
-
-## Example Result
+## Example Response
 
 ```json
 {
@@ -74,7 +73,7 @@ The `custom` query parameter can be used to search for a contact by a custom fie
             "ts": "2022-08-16T19:24:35.916Z"
         },
         "livechatData": {
-            "hobby": "gamming"
+            "hobby": "gaming"
         }
     },
     "success": true

@@ -1,6 +1,6 @@
 # Omnichannel
 
-With the Rocket.Chat [Omnichannel](https://docs.rocket.chat/use-rocket.chat/omnichannel) feature, you can talk to your customers and website visitors, regardless of which channel they choose to connect with you.
+With the Rocket.Chat [Omnichannel](https://docs.rocket.chat/use-rocket.chat/omnichannel) feature, you can talk to your customers and website visitors, regardless of the channel they choose to connect with you.
 
 The endpoints in this section are:
 

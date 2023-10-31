@@ -2,53 +2,73 @@
 description: Retrieves a contact information.
 ---
 
-# Fetch Omnichannel Contact
+# Get Omnichannel Contact
 
-| URL                          | Requires Auth | HTTP Method |
-| ---------------------------- | ------------- | ----------- |
-| `api/v1/omnichannel/contact` | `YES`         | `GET`       |
+Retrieve a contact's information.
 
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="163">HTTP Method</th><th width="296">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/omnichannel/contact</code></td><td><code>yes</code></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument    | Example             | Required | Description |
-| ----------- | ------------------- | -------- | ----------- |
-| `contactId` | `mAm5YZHwHMrNj8fhu` | Required | Contact ID  |
+<table><thead><tr><th width="196.33333333333331">Key</th><th width="226">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>contactId </code><mark style="color:red;"><code>*</code></mark></td><td><code>mAm5YZHwHMrNj8fhu</code></td><td>The contact ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl --location --request GET http://localhost:3000/api/v1/omnichannel/contact?contactId=mAm5YZHwHMrNj8fhu \
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
-```
+{% swagger method="get" path="/api/v1/omnichannel/contact?contactId=mAm5YZHwHMrNj8fhu" baseUrl="http://localhost:3000" summary="Get the contact's information" %}
+{% swagger-description %}
 
-## Result
+{% endswagger-description %}
 
-```javascript
+{% swagger-parameter in="query" name="contactId" required="true" %}
+Contact ID
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
+Auth token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="X-User-Id" required="true" %}
+User ID
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+## Example Response
+
+```json
 {
     "contact": {
-        "_id": "mAm5YZHwHMrNj8fhu",
-        "username": "13034833887",
-        "ts": "2021-07-07T13:04:38.079Z",
-        "_updatedAt": "2021-07-07T13:04:38.452Z",
-        "name": "Eduardo Pereira",
+        "_id": "653f9ce1a2f73c7460e18e82",
+        "username": "guest-39",
+        "ts": "2023-10-30T12:09:05.982Z",
+        "token": "434lxd7iss8yh8c4m80wh",
+        "_updatedAt": "2023-10-30T13:43:22.044Z",
+        "contactManager": {
+            "username": "kim.jane"
+        },
+        "livechatData": {},
+        "name": "Chris",
         "phone": [
             {
-                "phoneNumber": "13034833887555193469973"
+                "phoneNumber": "+91123456788"
             }
         ],
-        "token": "a90vrvv2r0lywsz1lr24x",
-        "lastChat": {
-            "_id": "67YQrd7secMv99WQ6",
-            "ts": "2021-07-07T13:04:38.452Z"
-        }
+        "visitorEmails": [
+            {
+                "address": "chris@gmail.com"
+            }
+        ]
     },
     "success": true
 }
