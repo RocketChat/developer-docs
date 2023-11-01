@@ -8,10 +8,9 @@ Get thread messages. It supports the [#pagination](../../../#pagination "mention
 
 ## Query Parameters
 
-| Argument | Example                    | Required | Description                                                                                       |
-| -------- | -------------------------- | -------- | ------------------------------------------------------------------------------------------------- |
-| `tmid`   | `7aDSXtjMA3KPLxLjt`        | Required | The id of the the thread message.                                                                 |
-| `tlm`    | `2019-04-08T14:40:27.724Z` | Required | The thread last message, is used to inform the last time some message was sent inside the thread. |
+| Argument | Example             | Required | Description                   |
+| -------- | ------------------- | -------- | ----------------------------- |
+| `tmid`   | `7aDSXtjMA3KPLxLjt` | Required | The id of the thread message. |
 
 ## Example Call
 
@@ -19,7 +18,7 @@ Get thread messages. It supports the [#pagination](../../../#pagination "mention
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
-     http://localhost:3000/api/v1/chat.getThreadMessages?tmid=gcGai9bRREqokjyPc&tlm=2019-04-08T13:25:25.258Z
+     http://localhost:3000/api/v1/chat.getThreadMessages?tmid=gcGai9bRREqokjyPc
 ```
 
 ## Example Result
@@ -95,5 +94,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 | Version | Description                                                          |
 | ------- | -------------------------------------------------------------------- |
+| 1.2.0   | Remove `tlm` field, which is not supported                           |
 | 1.1.0   | Update Example Results - original message in thread is not returned. |
 | 1.0.0   | Added                                                                |
