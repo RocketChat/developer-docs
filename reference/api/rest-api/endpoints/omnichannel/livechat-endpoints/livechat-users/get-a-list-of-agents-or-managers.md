@@ -1,8 +1,8 @@
-# Get a list of agents or managers
+# Get List of Agents or Managers
 
 Get a list of agents or managers.&#x20;
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/users/:type</code></td><td><code>yes</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/users/:type</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Path Variables
 
@@ -14,52 +14,88 @@ The [#pagination](../../../../#pagination "mention") query parameters are suppor
 
 ## Example Call
 
-{% swagger method="get" path="/api/v1/livechat/users/:type" baseUrl="http://localhost:3000" summary="Get the details of all agents or managers" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
-Auth token
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="X-User-Id" required="true" %}
-User ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="type" required="true" %}
-Type of user
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/users/agent' \
+--header 'X-Auth-Token: Y97tM4GkYjgaH_fIO5dwBitQQvm3yp-AptYzGQZMX6e' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC' \
+--data ''
+```
 
 ## Example Response
 
-```javascript
+```json
 {
-  "users": [
-    {
-      "_id": "aobEdbYhXfu5hkeqG",
-      "username": "john.doe"
-    },
-    {
-      "_id": "SQafHvoFPuB57NmBD",
-      "username": "doe.john"
-    }
-  ],
-  "success": true
-}
+    "users": [
+        {
+            "_id": "XLzGrYF9L2miSpPHP",
+            "username": "dialog.bot",
+            "status": "offline",
+            "statusLivechat": "not-available",
+            "name": "Dialog Bot",
+            "emails": [
+                {
+                    "address": "dialog.bot@test.com",
+                    "verified": true
+                }
+            ],
+            "livechat": null,
+            "departments": []
+        },
+        {
+            "_id": "rbAXPnMktTFbNpwtJ",
+            "username": "john.doe",
+            "status": "offline",
+            "statusLivechat": "available",
+            "name": "John Doe",
+            "emails": [
+                {
+                    "address": "john.doe@gmail.com",
+                    "verified": true
+                }
+            ],
+            "livechat": {
+                "maxNumberSimultaneousChat": ""
+            },
+            "departments": [
+                "64181a0728384134ed600dcc"
+            ]
+        },
+        {
+            "_id": "hFDuCPam7sWziWFYa",
+            "username": "hookdeck.write",
+            "status": "offline",
+            "statusLivechat": "not-available",
+            "name": "Hookdeck Write",
+            "emails": [
+                {
+                    "address": "hookdeckwrite@gmail.com",
+                    "verified": true
+                }
+            ],
+            "livechat": null,
+            "departments": []
+        },
+        {
+            "_id": "stjxrXYBWy3EcDugH",
+            "username": "rocket.agent",
+            "status": "offline",
+            "statusLivechat": "not-available",
+            "name": "Rocket Agent",
+            "emails": [
+                {
+                    "address": "rocket.agent@rocket.chat",
+                    "verified": false
+                }
+            ],
+            "livechat": {
+                "maxNumberSimultaneousChat": ""
+            },
+            "departments": [
+                "64181a0728384134ed600dcc"
+            ]
+        }
 ```
 
 ## Change Log
 
 <table><thead><tr><th width="264">Version</th><th width="376">Description</th></tr></thead><tbody><tr><td>2.2.0</td><td>Added support to pagination</td></tr><tr><td>0.42.0</td><td>Added</td></tr></tbody></table>
-
-##

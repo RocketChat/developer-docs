@@ -2,7 +2,7 @@
 
 Find Omnichannel contacts by name, email, phone number, or any custom field values stored in the database.
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="296">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/omnichannel/contact.search</code></td><td><code>yes</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="296">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/omnichannel/contact.search</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
@@ -16,37 +16,23 @@ The following query parameters are optional:
 Encode values having characters like **`@`**,**`+`**, **`/`**and **`*`** to avoid breaking the endpoint.
 {% endhint %}
 
-{% swagger method="get" path="/api/v1/omnichannel/contact.search?email=xyz@email.com&phone=447587922" baseUrl="http://localhost:3000" summary="Search contacts" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
-Auth token
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="X-User-Id" required="true" %}
-User ID
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
-
-To find contacts using custom fields, use the `custom` query parameter. The `custom` query parameter must be encoded by [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams). For example, using Postman, the request is:
+The request to search contacts with the email and phone number is as follows:
 
 {% code overflow="wrap" %}
-```http
-http://localhost:300//api/v1/omnichannel/contact.search?custom={ "Subscription": "premium" }
+```powershell
+curl --location 'http://localhost:3000/api/v1/omnichannel/contact.search?email=mende%40mail.com&phone=447587922' \
+--header 'X-Auth-Token: b5BKhblglC5OU0AfB_Tl9dKmOb0zXUvWK-nhNT_aE8V' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC'
+```
+{% endcode %}
+
+To find contacts using custom fields, use the `custom` query parameter. The `custom` query parameter must be encoded by [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams). For example, to search contacts with premium subscription, the request is as follows:
+
+{% code overflow="wrap" %}
+```powershell
+curl --location --globoff 'http://localhost:3000/api/v1/omnichannel/contact.search?custom={%20%22Subscription%22%3A%20%22premium%22%20}' \
+--header 'X-Auth-Token: b5BKhblglC5OU0AfB_Tl9dKmOb0zXUvWK-nhNT_aE8V' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC'
 ```
 {% endcode %}
 

@@ -6,7 +6,7 @@ description: Retrieves a contact information.
 
 Retrieve a contact's information.
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="296">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/omnichannel/contact</code></td><td><code>yes</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="296">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/omnichannel/contact</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
@@ -14,35 +14,13 @@ Retrieve a contact's information.
 
 ## Example Call
 
-{% swagger method="get" path="/api/v1/omnichannel/contact?contactId=mAm5YZHwHMrNj8fhu" baseUrl="http://localhost:3000" summary="Get the contact's information" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="query" name="contactId" required="true" %}
-Contact ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
-Auth token
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="X-User-Id" required="true" %}
-User ID
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/omnichannel/contact?contactId=653f9ce1a2f73c7460e18e82' \
+--header 'X-Auth-Token: b5BKhblglC5OU0AfB_Tl9dKmOb0zXUvWK-nhNT_aE8V' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC'
+```
+{% endcode %}
 
 ## Example Response
 

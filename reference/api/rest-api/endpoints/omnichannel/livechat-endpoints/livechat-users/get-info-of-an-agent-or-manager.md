@@ -1,8 +1,8 @@
-# Get an agent or manager
+# Get Agent or Manager Information
 
 Get information about a particular agent or a manager.
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/users/:type/:_id</code></td><td><code>yes</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/users/:type/:_id</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Path Variables
 
@@ -10,35 +10,14 @@ Get information about a particular agent or a manager.
 
 ## Example Call
 
-{% swagger method="get" path="/api/v1/livechat/users/:type/:_id" baseUrl="http://localhost:3000" summary="Get information about an agent or a manager" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
-Auth token
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="X-User-Id" required="true" %}
-User ID
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" required="true" name="type" %}
-Type of user
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" required="true" name="_id" %}
-User ID
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/users/agent/PSaBmpB2c9eFaE79q' \
+--header 'X-Auth-Token: Y97tM4GkYjgaH_fIO5dwBitQQvm3yp-AptYzGQZMX6e' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC' \
+--data ''
+```
+{% endcode %}
 
 ## Example Response
 
@@ -69,5 +48,3 @@ User ID
 | Version | Description |
 | ------- | ----------- |
 | 0.42.0  | Added       |
-
-##

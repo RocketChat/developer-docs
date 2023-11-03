@@ -2,7 +2,7 @@
 
 Get information about the currently available agent. &#x20;
 
-<table><thead><tr><th width="165">HTTP Method</th><th width="287">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/omnichannel/agents/available</code></td><td><code>yes</code></td></tr></tbody></table>
+<table><thead><tr><th width="165">HTTP Method</th><th width="287">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/omnichannel/agents/available</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ### Query Parameters (Optional)
 
@@ -12,27 +12,14 @@ Supports the [#pagination](../../../../#pagination "mention") parameters. Additi
 
 ### Example Call
 
-{% swagger method="get" path="/api/v1/omnichannel/agents/available" baseUrl="http://localhost:3000" summary="Get current available agent information" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="X-Auth-Token" required="true" %}
-Auth token
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="X-User-Id" required="true" %}
-User ID
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/omnichannel/agents/available' \
+--header 'X-Auth-Token: Y97tM4GkYjgaH_fIO5dwBitQQvm3yp-AptYzGQZMX6e' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC' \
+--data ''
+```
+{% endcode %}
 
 ### Example Response
 

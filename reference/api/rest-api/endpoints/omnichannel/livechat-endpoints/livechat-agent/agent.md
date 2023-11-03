@@ -14,27 +14,11 @@ To get the `rid` and `token` values, call the [Get Rooms](https://developer.rock
 
 ## Example Call
 
-{% swagger method="get" path="/api/v1/livechat/agent.info/:rid/:token" baseUrl="http://localhost:3000" summary="Get agent information" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" required="true" name="rid" %}
-The room id.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="token" required="true" %}
-The visitor token.
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/agent.info/hGFwSKA28nRKut3pD/54fc5544030bcecda053311cb6b98920bdf953f242c129d7b8065000b1f9b2e9'
+```
+{% endcode %}
 
 ## Example Response
 

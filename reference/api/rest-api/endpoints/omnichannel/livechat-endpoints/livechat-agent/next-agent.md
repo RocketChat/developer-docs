@@ -6,7 +6,7 @@ Get information about the next available agent for an incoming conversation. Thi
 
 ## Path variables
 
-<table><thead><tr><th width="165">Key</th><th width="203">Example value</th><th>Description</th></tr></thead><tbody><tr><td><code>token </code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor <code>token</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="165">Key</th><th width="229">Example value</th><th>Description</th></tr></thead><tbody><tr><td><code>token </code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor <code>token</code>.</td></tr></tbody></table>
 
 {% hint style="info" %}
 To get the `token` value, call the [Get Rooms](https://developer.rocket.chat/reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/get-rooms) endpoint to retrieve the details of all rooms.
@@ -14,23 +14,11 @@ To get the `token` value, call the [Get Rooms](https://developer.rocket.chat/ref
 
 ## Example Call
 
-{% swagger method="get" path="/api/v1/livechat/agent.next/:token" baseUrl="http://localhost:3000" summary="Get information about the next available agent" %}
-{% swagger-description %}
-Get next available agent information
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="token" required="true" %}
-The visitor token.
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-
-{% endswagger-response %}
-{% endswagger %}
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/agent.next/54fc5544030bcecda053311cb6b98920bdf953f242c129d7b8065000b1f9b2e9'
+```
+{% endcode %}
 
 ## Example Response
 
