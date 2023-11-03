@@ -2,43 +2,37 @@
 description: Updates a Livechat message
 ---
 
-# Update a Livechat message
+# Update Livechat Message
 
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/message/:_id` | `no`          | `PUT`       |
+Update a specific livechat message.
 
-## Payload
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>PUT</code></td><td><code>/api/v1/livechat/message/:_id</code></td><td><code>no</code></td></tr></tbody></table>
 
-| Argument | Example                        | Required | Description      |
-| -------- | ------------------------------ | -------- | ---------------- |
-| `_id`    | `ZKWP8LfGnRHQ3ozWa`            | Required | Message `_id`.   |
-| `token`  | `iNKE8a6k6cjbqWhWd`            | Required | Visitor `token`. |
-| `rid`    | `zRAeTszXor8CCPceB`            | Required | Room `_id`.      |
-| `msg`    | `editing a livechat message..` | Required | Message `text`.  |
+## Path Variables
 
-## Example payload
+<table><thead><tr><th width="145">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>_id </code><mark style="color:red;"><code>*</code></mark></td><td><code>ZKWP8LfGnRHQ3ozWa</code></td><td>The message ID that you want to update.</td></tr></tbody></table>
 
-```javascript
-{
-  "token": "iNKE8a6k6cjbqWhWd",
-  "rid": "zRAeTszXor8CCPceB",
-  "msg": "editing a livechat message.."
-}
-```
+## Body
+
+<table><thead><tr><th width="145">Key</th><th width="236">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor token.</td></tr><tr><td><code>rid</code></td><td><code>zRAeTszXor8CCPceB</code></td><td>The room ID.</td></tr><tr><td><code>msg</code></td><td><code>editing a livechat message..</code></td><td>The updated message that you want to send.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl -X PUT \
-     -H "Content-type:application/json" \
-     http://localhost:3000/api/v1/livechat/message/ZKWP8LfGnRHQ3ozWa \
-     -d '{"token": "iNKE8a6k6cjbqWhWd", "rid": "zRAeTszXor8CCPceB", "msg": "editing a livechat message.."}'
+{% code overflow="wrap" %}
+```powershell
+curl --location --request PUT 'http://localhost:3000/api/v1/livechat/message/txHoTpZdqc5GaTbZ3?token=54fc5544030bcecda053311cb6b98920bdf953f242c129d7b8065000b1f9b2e9&rid=hGFwSKA28nRKut3pD' \
+--header 'Content-Type: application/json' \
+--data '{
+    "token": "54fc5544030bcecda053311cb6b9892",
+    "rid": "hGFwSKA28nRKut3pD",
+    "msg": "editing livechat message.."
+}'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "message": {
     "_id": "ZKWP8LfGnRHQ3ozWa",

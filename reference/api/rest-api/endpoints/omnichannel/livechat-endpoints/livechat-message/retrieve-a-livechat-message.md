@@ -1,35 +1,26 @@
----
-description: Retrieve a specific message
----
+# Get a Livechat Message
 
-# Retrieve a Livechat message
+Retrieve specific livechat message information.
 
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/message/:_id` | `no`          | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/livechat/message/:_id</code></td><td><code>no</code></td></tr></tbody></table>
 
-## URL Parameters
+## Path Variables
 
-| Argument | Example             | Required | Description    |
-| -------- | ------------------- | -------- | -------------- |
-| `_id`    | `AgRFdj96mbHDPrTHq` | Required | Message `_id`. |
+<table><thead><tr><th width="186.33333333333331">Key</th><th width="249">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>_id</code><mark style="color:red;"><code>*</code></mark></td><td><code>AgRFdj96mbHDPrTHq</code></td><td>The message ID.</td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument | Example                  | Required | Description      |
-| -------- | ------------------------ | -------- | ---------------- |
-| `token`  | `8s7e9ony6ctl27e1qf8kue` | Required | Visitor `token`. |
-| `rid`    | `mmqCzYgiL8fzRYfuY`      | Required | Room `_id`.      |
+<table><thead><tr><th width="163">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code><mark style="color:red;"><code>*</code></mark></td><td><code>8s7e9ony6ctl27e1qf8kue</code></td><td>The visitor token.</td></tr><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>mmqCzYgiL8fzRYfuY</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl -X GET \
-     http://localhost:3000/api/v1/livechat/message/:_id?token=8s7e9ony6ctl27e1qf8kue&rid=mmqCzYgiL8fzRYfuY
-     
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/message/txHoTpZdqc5GaTbZ3?token=54fc5544030bcecda053311cb6b98920bdf953f242c1' \
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ```javascript
 {

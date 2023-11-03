@@ -336,9 +336,9 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Offline Message
 
-| Url                        | Short Description                                   | Details Page                                                       |
-| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------ |
-| `livechat/offline.message` | Sends an offline message when no agent is available | [Link](omnichannel/livechat-endpoints/livechat-offline-message.md) |
+| Url                        | Short Description                                   | Details Page                                                                        |
+| -------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `livechat/offline.message` | Sends an offline message when no agent is available | [Link](omnichannel/livechat-endpoints/livechat-message/livechat-offline-message.md) |
 
 #### Livechat Page Visited
 

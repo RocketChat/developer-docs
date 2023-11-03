@@ -1,37 +1,28 @@
----
-description: Retrieve livechat messages history (all messages in a conversation)
----
+# Get Livechat Message History
 
-# Load Livechat messages history
+Get the entire message history of a conversation.
 
-| URL                                      | Requires Auth | HTTP Method |
-| ---------------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/messages.history/:rid` | `no`          | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="295">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/messages.history/:rid</code></td><td><code>no</code></td></tr></tbody></table>
 
-## Payload
+## Path Variables
 
-| Argument | Example             | Required | Description     |
-| -------- | ------------------- | -------- | --------------- |
-| `rid`    | `KuACMJ5MpN6SfAFWg` | Required | The room `_id`. |
+<table><thead><tr><th width="191.33333333333331">Key</th><th width="245">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid </code><mark style="color:red;"><code>*</code></mark></td><td><code>KuACMJ5MpN6SfAFWg</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument | Example             | Required | Description                     |
-| -------- | ------------------- | -------- | ------------------------------- |
-| `token`  | `iNKE8a6k6cjbqWhWd` | Required | The visitor `token`.            |
-| `ls`     |                     | Optional | The timestamp to start loading. |
-| `end`    |                     | Optional | The timestamp limit to load.    |
-| `limit`  |                     | Optional | The number of messages to load. |
+<table><thead><tr><th width="160">Key</th><th width="223">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token </code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor token.</td></tr><tr><td><code>ls</code></td><td><code>2018-09-14T13:31:33.201Z</code></td><td>The timestamp to start loading the messages.</td></tr><tr><td><code>end</code></td><td><code>2018-09-14T14:31:33.201Z</code></td><td>The timestamp limit to stop loading the messages.</td></tr><tr><td><code>limit</code></td><td><code>25</code></td><td>The number of messages to load.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl http://localhost:3000/api/v1/livechat/messages.history/KuACMJ5MpN6SfAFWg?token=iNKE8a6k6cjbqWhWd
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/message/txHoTpZdqc5GaTbZ3?token=54fc5544030bcecda053311cb6b98920bdf' \
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "messages": [{
     "_id": "ZKWP8LfGnRHQ3ozWa",
