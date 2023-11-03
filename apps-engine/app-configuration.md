@@ -1,18 +1,17 @@
 # App Configuration
 
-It consists primarily of providing settings that the Apps Engine will then present on the administration interface for the workspace administrator to configure and launch the application.&#x20;
+Once your app is developed and ready to launch, you need to provide settings for the Apps-Engine. The settings are presented on the administration interface for the workspace admin to configure and launch the app.
 
-Everything under the **Settings** menu of the app within a marketplace belongs under the **App Configuration** section. This tab contains various fields and instructions that can be filled out. What you see on this screen must be configured for the application, and that's what this section is about.&#x20;
+Everything under the **Settings** menu of the app within a marketplace belongs under the **App Configuration** section. This tab contains various fields and instructions that can be filled out. What you see on the screen must be configured for the application. In this section, we will look at the configuration details.
 
-Here are some key terms you need familiarize yourself with:&#x20;
+Here are some key terms you need to familiarize yourself with:&#x20;
 
-* ID - for identifying the settings
-* Type - the type of the value that will be saved
-* Required - whether or not configuring the application is required
-* Package value - the default value before the administrator can configure anything
-* I18n label - the translated name or description of an application&#x20;
+* ID - for identifying the settings.
+* Type - the type of the value that will be saved.
+* Required - whether or not configuring the application is required.
+* Package value - the default value before the administrator can configure anything.
+* I18n label - the translated name or description of an application.
 
-\
 There is a distinct file containing the configuration settings, in which everything is defined as a basic object. In this file, each setting is defined separately. In the `extendConfiguration` method, you simply read the file, and for each setting, it calls the `provideSetting` method, so that each setting that is defined is read, called, and displayed in the user interface.&#x20;
 
 This is equivalent to executing the command:&#x20;
@@ -35,8 +34,8 @@ Here are the various categories of configurations that Rocket.Chat supports. Eac
 * String
 * Multi-select
 
-The `onSettingUpdated` method will be invoked each time the administrator modifies the application's configuration via the **Settings** panel. The method will use the new value to make adjustments as necessary. You can use this, for instance, to inform an external service that the parameters have changed and the values have been updated. In the case of `onPreSettingUpdate`, you will receive both the old and updated settings values. The App Lifecycle document explains the various methods and their corresponding statuses in greater detail.&#x20;
+The `onSettingUpdated` method will be invoked each time the administrator modifies the application's configuration via the **Settings** panel. The method will use the new value to make adjustments as necessary. For instance, you can use this to inform an external service that the parameters have changed and the values have been updated. In the case of `onPreSettingUpdate`, you will receive both the old and updated settings values. See the [App Lifecycle](understanding-app-lifecycle.md) section for information about the various methods and the corresponding statuses.
 
-It is common in integrations to want to always transmit certain security protocols for API requests. In the case of the Rocket.Chat REST API, these headers are X-Auth-Token and X-User-Id. Therefore, it would be desirable if these headers were always set when making API queries. In such situations, it is customary to generate a personal access token in Rocket.Chat. Read the [Access Tokens Endpoint documentation](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/access-tokens-endpoints) for more information. In such cases, it makes sense to add configuration parameters to the application. These are configured in the `extendConfiguration` method of the application's primary class.&#x20;
+It is common in integrations to transmit certain security protocols for API requests. In the case of the Rocket.Chat REST API, these headers are `X-Auth-Token` and `X-User-Id`. Therefore, it would be desirable if these headers were always set when making API queries. In such situations, it is customary to generate a personal access token in Rocket.Chat. See the [Access Tokens Endpoint documentation](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/access-tokens-endpoints) for more information. In such cases, it makes sense to add configuration parameters to the application. These are configured in the `extendConfiguration` method of the application's primary class.&#x20;
 
-The **client ID** and **client secret** are routinely generated by one of the mechanisms for the app settings. Client ID and client secret would almost always be required by apps. Therefore, Rocket.Chat has supplied a code template that developers can utilize without having to code it themselves.
+The **client ID** and **client secret** are routinely generated by one of the mechanisms for the app settings. Client ID and client secret would almost always be required by apps. Therefore, Rocket.Chat supplies a code template that developers can utilize without having to code it themselves.
