@@ -1,36 +1,31 @@
----
-description: Sets omnichannel visitor's satus
----
+# Set Visitor Status
 
-# Set visitor status
+Set Omnichannel visitor's status.
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/visitor.status` | `no`          | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="349">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/livechat/visitor.status</code></td><td><code>no</code></td></tr></tbody></table>
 
-## Example payload
+## Body
 
-```javascript
-{
-"token": "8s7e9ony6ctl27e1qf8kue",
-"status": "busy"
-}
-```
+<table><thead><tr><th width="224.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code><mark style="color:red;"><code>*</code></mark></td><td><code>8s7e9ony6ctl27e1qf8kue</code></td><td>The visitor token.</td></tr><tr><td><code>status</code><mark style="color:red;"><code>*</code></mark></td><td><code>busy</code></td><td>The status of the visitor.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl -X POST \
-     -H "Content-type:application/json" \
-     http://localhost:3000/api/v1/livechat/visitor.status
-    -d '{"token": "8s7e9ony6ctl27e1qf8kue", "status": "busy"}'
+{% code overflow="wrap" %}
+```powershell
+curl --location 'https://writing-demo.dev.rocket.chat/api/v1/livechat/visitor.status' \
+--header 'Content-Type: application/json' \
+--data '{
+    "token": "54fc5544030bcecda0533",
+    "status": "busy"
+}'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ```javascript
 {
-    "token": "8s7e9ony6ctl27e1qf8kue",
+    "token": "54fc5544030bcecda0533",
     "status": "busy",
     "success": true
 }

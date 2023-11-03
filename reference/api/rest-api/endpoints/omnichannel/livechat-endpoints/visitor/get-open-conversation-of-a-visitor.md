@@ -1,35 +1,26 @@
----
-description: Retrieve open conversations associated with a particular visitor
----
+# Get Open Conversation of a Visitor
 
-# Get open conversation of a visitor
+Retrieve open conversations associated with a particular visitor.
 
-| URL                                    | Requires Auth | HTTP Method |
-| -------------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/visitor/:token/room` | `Yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="349">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/visitor/:token/room</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+## Path Variables
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
-
-## Query Parameters
-
-| Argument | Example                  | Required | Description          |
-| -------- | ------------------------ | -------- | -------------------- |
-| `token`  | `8s7e9ony6ctl27e1qf8kue` | Required | The visitor `token`. |
+<table><thead><tr><th width="206.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code><mark style="color:red;"><code>*</code></mark></td><td><code>8s7e9ony6ctl27e1qf8kue</code></td><td>The visitor's token.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl http://localhost:3000/api/v1/livechat/visitor/:token/room
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/visitor/54fc5544030bcecda0533/room' \
+--header 'X-Auth-Token: Y97tM4GkYjgaH_fIO5dwBitQQvm3yp-AptYzGQZMX6e' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "rooms": [
         {
@@ -38,7 +29,7 @@ curl http://localhost:3000/api/v1/livechat/visitor/:token/room
             "cl": false,
             "servedBy": {
                 "_id": "XycfA5CetCPuEjqxw",
-                "username": "faria.masood",
+                "username": "kim.jane",
                 "ts": "2021-07-18T11:50:38.822Z"
             }
         }

@@ -1,24 +1,24 @@
-# Retrieve a visitor data
+# Get Visitor Data
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/visitor/:token` | `no`          | `GET`       |
+Get the details of a specific visitor.
 
-## Payload
+<table><thead><tr><th width="163">HTTP Method</th><th width="341">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/visitor/:token</code></td><td><code>no</code></td></tr></tbody></table>
 
-| Argument | Example             | Required | Description          |
-| -------- | ------------------- | -------- | -------------------- |
-| `token`  | `iNKE8a6k6cjbqWhWd` | Required | The visitor `token`. |
+## Path Variables
+
+<table><thead><tr><th width="176">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token </code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor token.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl http://localhost:3000/api/v1/livechat/visitor/iNKE8a6k6cjbqWhWd
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "visitor": {
     "_id": "sGtcfEYz852uguxaS",

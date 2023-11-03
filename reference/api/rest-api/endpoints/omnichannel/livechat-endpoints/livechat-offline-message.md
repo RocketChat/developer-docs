@@ -1,3 +1,9 @@
+---
+description: >-
+  Sends the offline message when no agent is available to attend the omnichannel
+  conversation
+---
+
 # Send Livechat Offline Message
 
 Send the offline message when no agent is available to attend the omnichannel conversation.
