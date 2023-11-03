@@ -94,7 +94,7 @@
 * [App Development Lifecycle](apps-engine/understanding-app-lifecycle.md)
   * [Lifecycle of a Rocket.Chat App](apps-engine/understanding-app-lifecycle/lifecycle-of-a-running-app.md)
 * [App Configuration](apps-engine/app-configuration.md)
-* [Event Interfaces](apps-engine/fundamentals-of-apps/event-interfaces.md)
+* [Event Interfaces and Handlers](apps-engine/fundamentals-of-apps/event-interfaces.md)
   * [Email - Event Interfaces](apps-engine/event-interfaces/email-event-interfaces.md)
   * [Livechat - Event Interfaces](apps-engine/event-interfaces/livechat-event-interfaces.md)
   * [Message - Event Interfaces](apps-engine/event-interfaces/message-event-interfaces.md)
