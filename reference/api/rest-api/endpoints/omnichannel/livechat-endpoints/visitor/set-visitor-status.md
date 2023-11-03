@@ -1,3 +1,7 @@
+---
+description: Sets omnichannel visitor's satus
+---
+
 # Set Visitor Status
 
 Set Omnichannel visitor's status.
