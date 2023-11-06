@@ -103,7 +103,6 @@
   * [Users - Event Interfaces](apps-engine/event-interfaces/users-event-interfaces.md)
   * [Examples](apps-engine/event-interfaces/examples.md)
 * [App Internationalization](apps-engine/app-internationalization.md)
-* [Extending Messages](apps-engine/extending-messages.md)
 * [User Interface](apps-engine/user-interface/README.md)
   * [UIKit](apps-engine/user-interface/uikit/README.md)
     * [Opening the Contextual Bar](apps-engine/user-interface/uikit/opening-the-contextual-bar.md)
