@@ -92,7 +92,6 @@
     * [Examples](apps-engine/building-custom-apps/sub-command-pattern/sample-app-snippets.md)
   * [HTTP Requests](apps-engine/building-custom-apps/making-http-requests.md)
 * [App Development Lifecycle](apps-engine/understanding-app-lifecycle.md)
-  * [Lifecycle of a Rocket.Chat App](apps-engine/understanding-app-lifecycle/lifecycle-of-a-running-app.md)
 * [App Configuration](apps-engine/app-configuration.md)
 * [Event Interfaces and Handlers](apps-engine/fundamentals-of-apps/event-interfaces.md)
   * [Email - Event Interfaces](apps-engine/event-interfaces/email-event-interfaces.md)
