@@ -6,37 +6,23 @@ Get the overview of omnichannel analytics in your workspace.
 * It requires the `view-livechat-manager` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
 {% endhint %}
 
-| URL                                   | Requires Auth | HTTP Method |
-| ------------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/analytics/overview` | `YES`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/analytics/overview</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-## Headers
+## Query Parameters
 
-| Argument       | Example        | Required | Description                |
-| -------------- | -------------- | -------- | -------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated user ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                |
-
-## Query Parameter
-
-<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>Conversations</code></td><td>Required</td><td>The name of the data you want to get</td></tr><tr><td><code>from</code></td><td><code>2019-05-22T12:11:45.392Z</code></td><td>Required</td><td>The start date</td></tr><tr><td><code>to</code></td><td><code>2023-05-22T12:11:45.392Z</code></td><td>Required</td><td>The end date</td></tr><tr><td><code>departmentId</code></td><td><code>jsi9w0oakusss</code></td><td>Optional</td><td>The department Id to return results for.</td></tr></tbody></table>
-
-**The available options for the `name` parameter includes the following:**
-
-* Conversations&#x20;
-* Productivity
+<table><thead><tr><th width="178">Key</th><th width="275">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>Conversations</code></td><td><p>The data that you want to get. The available options are: </p><ul><li>Conversations</li><li>Productivity</li></ul></td></tr><tr><td><code>from</code><mark style="color:red;"><code>*</code></mark></td><td><code>2019-05-22T12:11:45.392Z</code></td><td>The start date</td></tr><tr><td><code>to</code><mark style="color:red;"><code>*</code></mark></td><td><code>2023-05-22T12:11:45.392Z</code></td><td>The end date</td></tr><tr><td><code>departmentId</code></td><td><code>jsi9w0oakusss</code></td><td>The department ID to return results for.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl -L -X GET 'http://localhost:3000/api/v1/livechat/analytics/overview?name=Conversations&from=2019-05-22T12%3A11%3A45.392Z&to=2023-05-22T12%3A11%3A45.392Z' \
 -H 'x-auth-token: qlHA60g5JQjJJG7C_8MgXoFnOiRQ8X9TWVVq4AcQeFb' \
 -H 'x-user-id: rbAXPnMktTFbNpwtJ'
 ```
+{% endcode %}
 
-## Example Result
-
-### Success
+## Example Response
 
 ```javascript
 [
