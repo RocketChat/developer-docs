@@ -46,4 +46,4 @@ Here is an explanation of the handlers:
 
 In the main class of your app, the class name extends `App`. This tells the Apps-Engine that `App` is the main class. To use events, the app must implement the event interfaces and this is done by using the keyword implements and the name of the events, comma separated.
 
-In the following sections, you will find the event interfaces supported by Rocket.Chat. The event interfaces are grouped based on the events such as — email, livechat, messages, rooms, users, and so on.
+In the following sections, you will find the event interfaces supported by Rocket.Chat. The event interfaces are grouped based on the events such as — email, livechat, messages, rooms, users, and so on. You will also find [examples](examples.md) of how these interfaces can be implemented.
