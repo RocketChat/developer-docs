@@ -35,11 +35,11 @@ Registering a button requires `ui.registerButton` permission. Make sure to add i
 ```
 {% endcode %}
 
-You can [deploy your app](../getting-started/creating-an-app.md#testing-rocketchat-app) to test and see that the button gets added to the list of options against the context specified. In this case, a message.
+You can [deploy your app](../../getting-started/creating-an-app.md#testing-rocketchat-app) to test and see that the button gets added to the list of options against the context specified. In this case, a message.
 
 Click on the options icon across any message and you will see the action we just created like seen below.
 
-<figure><img src="../../.gitbook/assets/UI Kit new Action Button" alt=""><figcaption><p>UI Kit new Action button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/UI Kit new Action Button" alt=""><figcaption><p>UI Kit new Action button</p></figcaption></figure>
 
 ## Handling an interaction
 
@@ -134,4 +134,4 @@ The above piece of code will simply create a reference for English against the \
 With these changes, deploy the app again and this time you will see something like the below when the button is clicked
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/UI Kit Action Button triggered" alt=""><figcaption><p>UI Kit Action Button triggered</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/UI Kit Action Button triggered" alt=""><figcaption><p>UI Kit Action Button triggered</p></figcaption></figure>

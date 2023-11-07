@@ -11,9 +11,7 @@ Apart from the typical app development phases such as the design phase, QA phase
 * App Installation
 * App Testing
 
-In many of the lifecycle phases, the app's status will change within the Apps-Engine. In the Rocket.Chat UI, two statuses are displayed, `enabled` and `disabled`. Technically, there are additional statuses that determine the app's current state. This gives developers an insight into an app's phases. The `App` class has a number of extendable methods to provide control over the various aspects of the app's lifecycle.
-
-Here we will learn about the methods that represent the various states of a functioning app:&#x20;
+In the Rocket.Chat UI, two statuses are displayed for apps, `enabled` and `disabled`. In the **Logs** section of an app, you can see additional statuses and their details which give developers an insight into the app's lifecycle phases. You can control various aspects of the app's lifecycle using the extendable methods from the `App` class. Let's learn about these methods that represent the various states of a functioning app:
 
 **`Constructed`**: The app has just been created or instantiated. There is little an app can do at this point.&#x20;
 
