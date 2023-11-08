@@ -108,7 +108,7 @@
   * [Contextual Bar](apps-engine/user-interface/uikit/opening-the-contextual-bar.md)
   * [Building Blocks](apps-engine/user-interface/uikit/building-blocks.md)
   * [Action Buttons](apps-engine/user-interface/uikit/action-buttons.md)
-  * [Surface Guidelines](apps-engine/ui-guidelines.md)
+  * [Apps-Engine UI Guidelines](apps-engine/user-interface/apps-engine-ui-guidelines.md)
 * [Permission System](apps-engine/permission-system.md)
 * [App Data Persistence](apps-engine/app-data-persistence/README.md)
   * [Managing Internal State](apps-engine/recipes/managing-internal-state.md)
