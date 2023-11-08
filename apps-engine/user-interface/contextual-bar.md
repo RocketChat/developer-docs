@@ -1,24 +1,30 @@
-# Opening the Contextual Bar
+# Contextual Bar
 
-Apps are allowed to open a contextual bar with UIKit content. It works just like a modal: you pass a BlockBuilder object containing the content you want to display on the surface and call the following methods:
+On this page, we will see how to use the UIKit components to create a contextual bar.
 
-{% code lineNumbers="true" %}
+A contextual bar is a sidebar displayed on the screen. You need to pass a `BlockBuilder` object containing the content you want to display and call the following methods:
+
 ```typescript
-// for creating a new contextual bar
+// to create a new contextual bar
 await modify.getUiController().openContextualBarView(blocks, { triggerId }, user);
-// for updating a existing contextual bar
+
+// to update an existing contextual bar
 await modify.getUiController().updateContextualBarView(blocks, { triggerId }, user);
 ```
-{% endcode %}
 
-It does need a valid `IUIKitInteractionParam` object with the `triggerId` and the `IUser` calling the from the user calling the method.
+Let's look at a sample app to open the contextual bar. This app consists of two main parts:
 
-A sample application opening the contextual bar would consist of 2 main parts: a slashcommand from where we can get a valid `triggerId` and the function that opens the contextual bar using it.
+* A slash command from where we can get a valid `triggerId.`&#x20;
+* The function that opens the contextual bar using the`triggerId`.
 
+{% hint style="info" %}
 You can clone the app and test it in your own Rocker.Chat server:\
 [https://github.com/RocketChat/apps-contextual-bar-open-example](https://github.com/RocketChat/apps-contextual-bar-open-example)
+{% endhint %}
 
-{% code title="ContextualBarExample.ts" lineNumbers="true" fullWidth="true" %}
+1. We are importing the following files:
+
+{% code overflow="wrap" fullWidth="false" %}
 ```typescript
 import {
     IAppAccessors,
@@ -29,16 +35,24 @@ import {
     IPersistence,
     IRead,
 } from '@rocket.chat/apps-engine/definition/accessors';
+
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
-import { BlockElementType, ISectionBlock, IUIKitResponse, UIKitBlockInteractionContext, UIKitViewSubmitInteractionContext } from '@rocket.chat/apps-engine/definition/uikit';
-import { IUIKitContextualBarViewParam } from '@rocket.chat/apps-engine/definition/uikit/UIKitInteractionResponder';
 
-// This is the slashcommand that opens the contextual bar:
-// - first we get the triggerId  to open the surface (without this it would not be possible to open the contextual bar) ([1])
-// - then we create the blocks we will render inside the contextual bar ([2])
-// - then call the method that opens the contextual bar ([3]).
+import { BlockElementType, ISectionBlock, IUIKitResponse, UIKitBlockInteractionContext, UIKitViewSubmitInteractionContext } from '@rocket.chat/apps-engine/definition/uikit';
+
+import { IUIKitContextualBarViewParam } from '@rocket.chat/apps-engine/definition/uikit/UIKitInteractionResponder';
+```
+{% endcode %}
+
+2. Now we will add a class `OpenCtxBarCommand` that implements `ISlashCommand`. In this class, we are doing the following:&#x20;
+   1. Define the slash command to get the trigger ID. Without the trigger ID, it is not possible to open the contextual bar.
+   2. Call the function to create the blocks that we will render inside the contextual bar.
+   3. Call the method that opens the contextual bar.
+
+{% code overflow="wrap" %}
+```typescript
 class OpenCtxBarCommand implements ISlashCommand {
     // this is what we will type when calling the slashcommand: /contextualbar
     public command = 'contextualbar';
@@ -54,15 +68,23 @@ class OpenCtxBarCommand implements ISlashCommand {
 
         const contextualbarBlocks = createContextualBarBlocks(modify); // [2]
 
-        await modify.getUiController().openContextualBarView(contextualbarBlocks, { triggerId }, user); // [3]
+        await modify.getUiController().openContextualBarView(contextualbarBlocks, {                 triggerId }, user); // [3]
     }
 }
 
-// This method creates the blocks that will be rendered inside the contextual bar.
-// It consisist of:
-// - a message that presents the current date-time ([4])
-// - a button that updates the date-time shown in the message ([5])
-// - the contextual bar structure containing its title and a submit button ([6])
+// [1] - first we get the triggerId  to open the surface (without this it would not be possible to open the contextual bar)
+// [2] - then we create the blocks we will render inside the contextual bar.
+// [3] - then call the method that opens the contextual bar.
+```
+{% endcode %}
+
+3. After creating the class, we will define a method called `createContextualBarBlocks` to implement the following:
+   1. Create the blocks that will be rendered inside the contextual bar.
+   2. Add a section block that consists of a message that shows the current date-time and a button that refreshes the date-time shown in the message.
+   3. Return the contextual bar structure containing its title and a submit button.
+
+{% code overflow="wrap" %}
+```typescript
 function createContextualBarBlocks(modify: IModify, viewId?: string): IUIKitContextualBarViewParam {
     const blocks = modify.getCreator().getBlockBuilder();
 
@@ -87,14 +109,24 @@ function createContextualBarBlocks(modify: IModify, viewId?: string): IUIKitCont
         blocks: blocks.getBlocks(),
     };
 }
+// This method creates the blocks that will be rendered inside the contextual bar.
+// It consists of:
+// [4] - a message that presents the current date-time.
+// [5] - a button that updates the date-time shown in the message.
+// [6] - the contextual bar structure containing its title and a submit button.
+```
+{% endcode %}
 
-// Here in the main class we setup the whole app:
-// - first we provide the slashcommand we will use ([7])
-// - then we listen to when the button on [5] is pressed ([8])
-// - we update the contextual bar's content ([9])
-// - listen for when the user presses the 'submit' button ([10])
-// - get the content (date-time) from the contextual bar ([11])
-// - logs the data to the console ([12])
+4. Finally, we will modify the main app class as follows:
+   1. Provide the slash command that we will use.
+   2. Listen for the date-time button to be clicked.
+   3. Update the contextual bar's content.
+   4. Listen for the user to click the `Submit` button.
+   5. Get the date-time data from the contextual bar.
+   6. Log the data to the console.
+
+{% code overflow="wrap" %}
+```typescript
 export class CtxbarExampleApp extends App {
     constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
         super(info, logger, accessors);
@@ -136,5 +168,19 @@ export class CtxbarExampleApp extends App {
         };
     }
 }
+
+// Here in the main class, we setup the whole app:
+// [7] first we provide the slash command we will use.
+// [8] then we listen to when the button on [5] is pressed.
+// [9] we update the contextual bar's content.
+// [10] listen for when the user presses the 'submit' button.
+// [11] get the content (date-time) from the contextual bar.
+// [12] logs the data to the console.
 ```
 {% endcode %}
+
+5. Deploy and test this app by sending `"/contextualbar <text>"` to any channel. As soon as you send this message, the contextual bar opens on the right-side of the UI. The contextual bar displays the current date-time, the refresh button, and the submit button.&#x20;
+6. Click `Refresh` to update the current date-time. Clicking `Submit` logs the date-time to the console and closes the contextual bar.
+7. Go to the **Logs** section of your app to view the details.
+
+Great work! With this example, you have learned to create user interactions for your apps! While we have only used a contextual bar and buttons here, you can learn about all the building blocks that are available in the UIKit in the next section.
