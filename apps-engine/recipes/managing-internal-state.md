@@ -1,18 +1,14 @@
----
-description: How to manage your app's internal state, here is the recipe!
----
-
 # Managing Internal State
 
-It's a common need to manage internal state in your app. **Storing app's state in the memory inside of an app is not recommended at all** because a Rocket.Chat server can have several instances and each server has its own instance of an app. If the data, such as confirmation for context, stored in the memory between the different instances then the problem occrurs. There're 2 approaches here suggested to be applied to solve the problem above.
+It's a common need to manage the internal state of your app. **Storing an app's state in the memory inside of an app is not recommended at all** because a Rocket.Chat server can have several instances and each server has its own instance of an app. If the data is stored in the memory between different instances, it can lead to issues. To solve this problem, two approaches are suggested here.
 
 ### Persistence APIs (Recommended)
 
-There's [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ipersistence.ipersistence.html) interface provided for creating/updating records in the persistence storage and [IPersistenceRead](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ipersistenceread.ipersistenceread.html) interface provided for reading records. In the exmaple below, we'll teach you how to manage your app's internal state using persistence APIs.
+The [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ipersistence.ipersistence.html) interface is provided to create or update records in the persistence storage. The [IPersistenceRead](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ipersistenceread.ipersistenceread.html) interface is provided to read records. In the example below, you can see how to manage your app's internal state using persistence APIs.
 
-Assuming that we're creating an app which records how many messages on the server sent, we can write a PostMessageSent event handler like bellow:
+Assuming that we're creating an app that records how many messages are sent on the server, we can write a `PostMessageSent` event handler as shown below:
 
-{% code lineNumbers="true" fullWidth="true" %}
+{% code overflow="wrap" lineNumbers="true" fullWidth="false" %}
 ```typescript
 public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence, modify: IModify): Promise<void> {
     const association = new RocketChatAssociationRecord(RocketChatAssociationModel.MISC, 'message-count');
@@ -33,12 +29,12 @@ public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp,
 ```
 {% endcode %}
 
-Here, the internal state is "count" but not the count variable whose data stored in the memory. We use the temporary variable "count" for storing the number of messages sent retrieving from the persistence. Every time the handler executePostMessageSent called, we increase the count by 1 and then store it back to the persistence storage.
+Here, the internal state is `count` but not the count variable whose data is stored in the memory. We use the temporary variable `count` to store the number of messages sent and retrieving from the persistence. Every time the handler `executePostMessageSent` is called, we increase the count by one and then store it back to the persistence storage.
 
-In this way, even in a cluster environment, your app inside each Rocket.Chat instance can share data from a single data source - Rocket.Chat persistence storage and maintain data consistency.
+In this way, even in a cluster environment, your app inside each Rocket.Chat instance can share data from a single data source, the Rocket.Chat persistence storage and maintain data consistency.
 
 [Check the full demo here for more details!](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/recipes/managing-internal-state)
 
-### Message customFields
+### Message `customFields`
 
-Besides Persistence APIs, `customFields` is a public way of storing data related to a message. You can attach some custom "attributes" (called customFields) to a message by creating/modifying the message. You should only use the `customFields` if you're ok with potentially having them read and overwritten by someone else!
+Besides Persistence APIs, `customFields` is a public way of storing data related to a message. You can attach some custom attributes (called `customFields`) to a message by creating or modifying the message. You should only use `customFields` if you're okay with potentially having them read and overwritten by someone else!
