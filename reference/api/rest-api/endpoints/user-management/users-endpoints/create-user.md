@@ -12,19 +12,23 @@ Create a new user. Requires `create-user` permission.
 
 ## Payload
 
-| Argument                | Example                   | Required                      | Description                                                            |
-| ----------------------- | ------------------------- | ----------------------------- | ---------------------------------------------------------------------- |
-| `email`                 | `example@example.com`     | Required                      | The email address for the user.                                        |
-| `name`                  | `Example User`            | Required                      | The display name of the user.                                          |
-| `password`              | `pass@w0rd`               | Required                      | The password for the user.                                             |
-| `username`              | `example`                 | Required                      | The username for the user.                                             |
-| `active`                | `false`                   | Optional Default: `true`      | Whether the user is active, which determines if they can login or not. |
-| `roles`                 | `["bot"]`                 | Optional Default: `['user']`  | The roles the user has assigned to them on creation.                   |
-| `joinDefaultChannels`   | `false`                   | Optional Default: `true`      | Whether the user should join the default channels when created.        |
-| `requirePasswordChange` | `true`                    | Optional Default: `false`     | Should the user be required to change their password when they login?  |
-| `sendWelcomeEmail`      | `true`                    | Optional Default: `false`     | Should the user get a welcome email?                                   |
-| `verified`              | `true`                    | Optional Default: `false`     | Should the user's email address be verified when created?              |
-| `customFields`          | `{ twitter: '@example' }` | Optional Default: `undefined` | Any custom fields the user should have on their account.               |
+| Argument                | Example                   | Required                      | Description                                                                                                                        |
+| ----------------------- | ------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `email`                 | `example@example.com`     | Required                      | The email address for the user.                                                                                                    |
+| `name`                  | `Example User`            | Required                      | The display name of the user.                                                                                                      |
+| `password`              | `pass@w0rd`               | Required                      | The password for the user.                                                                                                         |
+| `username`              | `example`                 | Required                      | The username for the user.                                                                                                         |
+| `active`                | `false`                   | Optional Default: `true`      | Whether the user is active, which determines if they can login or not.                                                             |
+| `bio`                   | `Enginer\|GitHub Star`    | Optional                      | The bio of the user                                                                                                                |
+| `nickname`              | `lola`                    | Optional                      | The nickname of the user                                                                                                           |
+| `statusText`            | `On a vacation`           | Optional                      | The status text of the user.                                                                                                       |
+| `roles`                 | `["bot"]`                 | Optional Default: `['user']`  | The roles the user has assigned to them on creation.                                                                               |
+| `joinDefaultChannels`   | `false`                   | Optional Default: `true`      | Whether the user should join the default channels when created.                                                                    |
+| `requirePasswordChange` | `true`                    | Optional Default: `false`     | Should the user be required to change their password when they login?                                                              |
+| `setRandomPassword`     | `true`                    | Optional                      | Set random password for the user and send by email. If `setRandomPassword` is set to `true`, the password field can be left empty. |
+| `sendWelcomeEmail`      | `true`                    | Optional Default: `false`     | Should the user get a welcome email?                                                                                               |
+| `verified`              | `true`                    | Optional Default: `false`     | Should the user's email address be verified when created?                                                                          |
+| `customFields`          | `{ twitter: '@example' }` | Optional Default: `undefined` | Any custom fields the user should have on their account.                                                                           |
 
 ## Example Payload
 
@@ -37,6 +41,21 @@ Create a new user. Requires `create-user` permission.
 }
 
 </code></pre>
+
+**Example payload with `setRandomPassword`**
+
+```json
+
+{
+  "name": "testuser01", 
+  "email": "testuser01@demo-rocket.chat",
+  "username": "testuser01",
+  "setRandomPassword": "true",
+  "password": "",
+  "roles": ["bot"]
+}
+
+```
 
 ## Example Call
 
