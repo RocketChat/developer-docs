@@ -1,30 +1,29 @@
 # Scheduler API
 
-## How it works
+The Scheduler API gives apps the possibility of creating tasks that run in a defined schedule. It can be a one-time event or a recurring task. It uses [agenda.js](https://github.com/agenda/agenda) as the backend, so the [schedule syntax](https://github.com/agenda/human-interval) and internal processes are all according to its documentation.
 
-The Scheduler API gives apps the possibility of creating tasks that run in a defined schedule. It can be a one-time event or a recurring task. It uses [agenda.js](https://github.com/agenda/agenda) as backend, so [schedule syntax](https://github.com/agenda/human-interval) and internal processes are all according to its documentation.
+See the details on the API in the [Module scheduler](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/scheduler.html) definition. There's also an [example app](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/scheduler) that can be used as a guide.
 
-Detailed documentation on the API can be found in the [Apps Engine's docs](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/scheduler.html).
+## Add permissions
 
-There's also an [example app](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/scheduler) that can be used as a guide.
+As per the [Permission System](https://developer.rocket.chat/apps-engine/getting-started/permission-system), the Schedule API needs the following permission in your app's manifest (`app.json` file):
 
-## Permissions
-
-As per the [Permission System](https://developer.rocket.chat/apps-engine/getting-started/permission-system), the Schedule API needs the following permission in your app's manifest:
-
-```javascript
+```json
 {
   permissions: [
-    { "name":"scheduler" }
+    { "name": "scheduler" }
   ]
 }
 ```
 
-## How to use it
+## Register jobs (processors)
 
-### Registering job functions (processors)
+To use the Scheduler API you'll need two things:&#x20;
 
-To use the Scheduler API you'll need two things: the functions to be run as jobs (we call them `processors`) and the schedule in which they will be run on. This is configured in the app's `extendConfiguration` method. During the app's startup, the processors are registered to make them available for scheduling.
+* The functions to be run as jobs (we call them `processors`).
+* The schedule in which they run.&#x20;
+
+This is configured in the app's `extendConfiguration` method. During the app's startup, the processors are registered to make them available for scheduling.
 
 {% code lineNumbers="true" %}
 ```typescript
@@ -41,9 +40,14 @@ public async extendConfiguration(configuration: IConfigurationExtend) {
 
 The `processor` is an `async` function and can receive arguments (`jobData`). The arguments are passed during scheduling.
 
-### Starting a job
+## Start a job
 
-To trigger the registered processor as a job, you must provide the `id` of the processor, the type of job it will be and optionally an object (`data`) that will be passed to the processor as argument (`jobData`). Available types are `RECURRING`, making the job run in a `interval`, and `ONETIME`, making the job run only once (`when`). Starting a job can be done when running a slashcommand, for example:
+To trigger the registered processor as a job, you must provide:
+
+* The `id` of the processor.
+* The type of job it will be. The available types are `scheduleRecurring` (the job runs in an `interval`) and `scheduleOnce` (the job runs once using the `when` keyword).
+
+Starting a job can be done when running a slash command, for example:
 
 {% code lineNumbers="true" %}
 ```typescript
@@ -67,9 +71,7 @@ public async executor(context: SlashCommandContext, read: IRead, modify: IModify
 ```
 {% endcode %}
 
-There's also the possibility of triggering a job as soon as it gets registered, without the need for manual or automated triggering.
-
-When you register your processor in the `extendConfiguration` method, you can pass a prop called `startupSetting` in the processor's object:
+You can also trigger a job as soon as it gets registered, without the need for manual or automated triggering. When you register your processor in the `extendConfiguration` method, you can pass a prop called `startupSetting` in the processor's object:
 
 {% code lineNumbers="true" %}
 ```typescript
@@ -98,11 +100,11 @@ configuration.scheduler.registerProcessors([
 ```
 {% endcode %}
 
-This indicates that you want that particular processor to be scheduled as soon as it gets registered. You can define the "immediate scheduling" as a recurring job (`StartupType.RECURRING`) or a one-time job (`StartupType.ONETIME`). You can also pass data using the `data` object. It will work just like when you schedule a task using the `modify` accessor.
+This indicates that you want that particular processor to be scheduled as soon as it is registered. You can define the "immediate scheduling" as a recurring job (`StartupType.RECURRING`) or a one-time job (`StartupType.ONETIME`). You can also pass data using the `data` object. It will work just like when you schedule a task using the `modify` accessor.
 
-(`data`) here is not something that's passed to the processor or function as a living object or executable code. This (`data`) is a static piece of data that are passed to the processor's first argument.
+Here, `data` is not something that's passed to the processor or a function as a living object or executable code. This `data` is a static piece of data that is passed to the processor's first argument.
 
-the signature of the processor function:
+The signature of the processor function is as follows:
 
 {% code overflow="wrap" %}
 ```typescript
@@ -110,11 +112,11 @@ the signature of the processor function:
 ```
 {% endcode %}
 
-The first argument is the data object you're passing when actually scheduling the job; (`[k: string]:any`) . Rest are passed when the function is run.
+The first argument is the data object you're passing when actually scheduling the job; (`[k: string]:any`). The rest of the arguments are passed when the function is run.
 
-### Canceling a job
+## Cancel a job
 
-To stop a job, all you have to do is pass the id of the job you want to stop
+To stop a job, all you have to do is pass the ID of the job you want to stop:
 
 ```typescript
 const jobId = 'first';
@@ -123,7 +125,7 @@ await modify.getScheduler().cancelJob(jobId);
 
 It will stop the running job (if any).
 
-### Canceling all jobs from the app
+## Cancel all jobs from the app
 
 To stop all the current running jobs from the app:
 
