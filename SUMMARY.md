@@ -125,7 +125,7 @@
   * [Graphics Guidelines](apps-engine/app-submission-to-the-marketplace/assets-guidelines.md)
   * [Publisher Webhooks](apps-engine/app-submission-to-the-marketplace/publisher-webhooks.md)
 * [Apps-Engine Reference](apps-engine/apps-engine-reference/README.md)
-  * [Contributing to Apps-Engine](apps-engine/rocket.chat-apps-engine/contributing-to-apps-engine.md)
+  * [Contribute to Apps-Engine](apps-engine/rocket.chat-apps-engine/contributing-to-apps-engine.md)
   * [Apps-Engine API Reference](https://rocketchat.github.io/Rocket.Chat.Apps-engine)
 
 ## Omnichannel

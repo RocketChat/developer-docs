@@ -1,60 +1,54 @@
----
-description: >-
-  Contribute to our Open Source Apps Engine framework increasing the world of
-  possibilities of integrations around the Rocket.Chat ecosystem
----
+# Contribute to Apps-Engine
 
-# Contributing to Apps-Engine
-
-Being Open Source, we always welcome contributors to help us out develop the ultimate chat platform. You can check out our Apps Engine repository here.
+Being open source, we always welcome contributors to help us develop the ultimate chat platform. Contribute to our open source Apps-Engine framework, increasing the world of possibilities of integrations around the Rocket.Chat ecosystem. You can check out our Apps-Engine repository here.
 
 {% embed url="https://github.com/RocketChat/Rocket.Chat.Apps-engine" %}
 
-An awesome place to start is looking at our open issues and determining if you can help us with them.
+An excellent place to start looking at is our open issues and determining if you can help us with them.
 
 {% hint style="info" %}
 When developing new functionalities, you need to integrate the local version of the Apps-Engine with your local version of Rocket.Chat.
 {% endhint %}
 
-## Get the Apps-Engine Code
+## Get the Apps-Engine code
 
-* To start, clone the Apps Engine repository and navigate into the directory by running
+1. To start, clone the Apps-Engine repository and navigate into the directory by running the following commands:
 
 ```bash
 git clone https://github.com/RocketChat/Rocket.Chat.Apps-engine.git
 cd Rocket.Chat.Apps-engine
 ```
 
-* Next, install all the required packages and compile the changes since that is what Rocket.Chat itself will execute.
+2. Next, install all the required packages and compile the changes since that is what Rocket.Chat itself will execute.
 
-```
+```bash
 npm install
 npm run compile
 ```
 
-* Setup your Rocket.Chat environment following the guide on
+3. Setup your Rocket.Chat environment following the guide on:
 
 [rocket.chat-server](../../rocket.chat/rocket.chat-server "mention")
 
-* After setting up, navigate into the directory and run
+4. After setting up, go to the directory and run the following command:
 
-```
+```bash
 meteor npm install PATH_TO_APPS_ENGINE
 ```
 
-Where `PATH_TO_APPS_ENGINE` is the path to the Apps-Engine repo you cloned earlier.
+Here `PATH_TO_APPS_ENGINE` is the path to the Apps-Engine repo you cloned earlier.
 
-* You can now start your Rocket.Chat with the `meteor` command, it will use your local Apps-Engine instead of the one on NPM :)
+5. You can now start your Rocket.Chat with the `meteor` command, it will use your local Apps-Engine instead of the one on NPM.
 
 {% hint style="info" %}
 Whenever you make changes to the engine, run `npm run compile` again - meteor will take care of restarting the server due to the changes.
 {% endhint %}
 
-## Troubleshooting Apps-Engine Development
+## Troubleshooting Apps-Engine development
 
-1. Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running; you run into errors similar to these:
+* Sometimes, when you update the Apps-Engine code and compile it while Rocket.Chat is running; you run into errors similar to these:
 
-```
+```bash
 Unable to resolve some modules:
 
   "@rocket.chat/apps-engine/definition/AppStatus" in
@@ -67,9 +61,9 @@ If you notice problems related to these missing modules, consider running:
 
 Restart the meteor process, and it should be fixed.
 
-2\. Sometimes when using `meteor npm install PATH_TO_APPS_ENGINE` causes the following error :-
+* Sometimes using `meteor npm install PATH_TO_APPS_ENGINE` causes the following error:
 
-```
+```bash
 npm ERR! code ENOENT
 npm ERR! syscall rename
 npm ERR! path PATH_TO_ROCKETCHAT/node_modules/.staging/@rocket.chat/apps-engine-c7135600/node_modules/@babel/code-frame
@@ -80,9 +74,9 @@ npm ERR! enoent This is related to npm not being able to find a file.
 npm ERR! enoent 
 ```
 
-Here `PATH_TO_ROCKETCHAT` is the path to the main Rocket.Chat server repo in your system. To fix this, we reinstall the package once again and delete the previous package
+Here `PATH_TO_ROCKETCHAT` is the path to the main Rocket.Chat server repo in your system. To fix this, we reinstall the package once again and delete the previous package.
 
-```
+```bash
 ~/Rocket.Chat$ rm -rf node_modules/@rocket.chat/apps-engine
 ~/Rocket.Chat$ cd PATH_TO_APP_ENGINE
 ~/Rocket.Chat.Apps-engine$ npm install
