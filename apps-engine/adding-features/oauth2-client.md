@@ -4,14 +4,14 @@ The Rocket.Chat App OAuth2 workflow is a feature that lets developers handle OAu
 
 ### OAuth2 Setup
 
-* Start by importing the methods needed from the IOAuth2 definition in the main class of your app.
+1. Import the methods needed from the [`IOAuth2`](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/oauth2\_ioauth2.html) and [`OAuth2`](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/oauth2\_oauth2.html) definitions in the main class of your app.
 
 ```
 import { IAuthData } from '@rocket.chat/apps-engine/definition/oauth2/IOAuth2';
 import { createOAuth2Client } from '@rocket.chat/apps-engine/definition/oauth2/OAuth2';
 ```
 
-* In setting up the app configurations using the `extendConfiguration` method, we create an instance of the createOAuth2Client imported above.
+2. When setting up the app configurations using the `extendConfiguration` method, we create an instance of the `createOAuth2Client` imported above.
 
 {% code lineNumbers="true" %}
 ```typescript
@@ -35,15 +35,13 @@ protected async extendConfiguration(configuration: IConfigurationExtend): Promis
 {% endcode %}
 
 * The `createOAuth2Client` method takes in two parameters:
-  * `app`: being the app itself
-  * `options`: An object with props as configuration - see [definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2clientoptions.html) for more details
+  * `app`: The app itself.
+  * `options`: An object with props as configuration - see the [definition documentation](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2clientoptions.html) for more details.
 * Now calling the `setup(configuration)` method on the `createOAuth2Client` creates all the setup APIs you need to use.
 
-### Using OAuth2
+### Use OAuth2
 
-After setup, however, you want to go about implementing OAuth2 on your app is dependent on the&#x20;
-
-The OAuth2Client gives you access to [multiple methods](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2client.html) like _`getAccessTokenForUser`_, _`revokeUserAccessToken`_ etc.
+After setup, use the `OAuth2Client` to access [multiple methods](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/oauth2\_ioauth2.ioauth2client.html) like _`getAccessTokenForUser`_, _`revokeUserAccessToken`_ etc.
 
 #### `getAccessTokenForUser`
 
@@ -71,7 +69,7 @@ await createOAuth2Client(this, this.config).refreshUserAccessToken(user, persis)
 
 #### `revokeUserAccessToken`
 
-Revokes user's access token in the service provider. When successfully executed, users will ned to be authenticated again before using the service
+Revokes user's access token in the service provider. When successfully executed, users will need to be authenticated again before using the service.
 
 ```typescript
 await createOAuth2Client(this, this.config).revokeUserAccessToken(user, persis);
