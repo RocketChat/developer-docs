@@ -118,7 +118,7 @@
 * [Advanced Features](apps-engine/adding-features/README.md)
   * [OAuth2 Client](apps-engine/adding-features/oauth2-client.md)
   * [Scheduler API](apps-engine/adding-features/scheduler-api.md)
-  * [Registering API endpoints](apps-engine/adding-features/registering-api-endpoints.md)
+  * [Register API Endpoints](apps-engine/adding-features/registering-api-endpoints.md)
   * [NPM Package Support (Experimental)](apps-engine/adding-features/npm-package-support-experimental.md)
 * [App Submission to the Marketplace](apps-engine/app-submission-to-the-marketplace/README.md)
   * [Content Guidelines](apps-engine/app-submission-to-the-marketplace/written-content.md)
