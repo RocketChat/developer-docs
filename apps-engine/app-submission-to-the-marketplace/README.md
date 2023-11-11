@@ -1,16 +1,16 @@
 # App Submission to the Marketplace
 
-You have finished creating your first Rocket.Chat App, and successfully tested it locally. Now, you are ready to submit your App to the marketplace for users to explore.
+You have finished [creating your first Rocket.Chat app](../getting-started/creating-an-app.md), and successfully tested it locally. Now, you are ready to submit your app to the marketplace for users to explore.
 
-The following step-by-step guide will take you through the whole process of application submission.
+The following step-by-step guide will take you through the whole process of app submission.
 
-## Package the App
+## Package the app
 
-Before submitting your App, you need to package it. Currently, the Rocket.Chat Servers and Marketplace allow submission of zip files, these files can be created by running the command `rc-apps package` in your Apps' directory. This will package your App and create a zip file under the `dist` folder.
+Before submitting your app, you need to package it. Currently, the Rocket.Chat servers and Marketplace allow submission of `zip` files, these files can be created by running the command `rc-apps package` in your apps' directory. This will package your app and create a zip file in the `dist` folder.
 
-## App Submission through CLI
+## Submit app via CLI
 
-Submission through CLI sends the App in a `draft` state. The publisher must access the portal to be able to submit the App.
+Submission through CLI sends the app in a `draft` state. The publisher must access the portal to be able to submit the app.
 
 ### Install a package
 
@@ -18,17 +18,7 @@ Submission through CLI sends the App in a `draft` state. The publisher must acce
 npm install -g @rocket.chat/apps-cli
 ```
 
-### Develop Rocket.Chat App
-
-#### Logging inside an app
-
-Due to the limitations of NodeJS's `vm` package, we have had to implement a custom logger class. To make usage of this, you can use `this.getLogger()` and then do the normal `console` style logging.
-
-#### `rc-apps create`
-
-The development tools provide a command to quickly scaffold a new Rocket.Chat App, simply run `rc-apps create` and a new folder will be created inside the current working directory with a basic App that does nothing but will compile and be packaged in the `dist` folder.
-
-#### App description
+### App description
 
 The app description file, named `app.json`, contains basic information about the app. You can check the [app-schema.json](https://github.com/RocketChat/Rocket.Chat.Apps-engine/blob/master/src/definition/app-schema.json) file for all the detailed information and fields allowed in the app description file, the basic structure is similar to this:
 
@@ -49,39 +39,11 @@ The app description file, named `app.json`, contains basic information about the
 }
 ```
 
-#### Extending the App class
+### Upload the app
 
-The basic creation of an App is based on extending the `App` class from the Rocket.Chat Apps _definition_ library. Your class also has to implement the constructor and optionally the `initialize` function. For more details on those, check the App definition documentation.
+To upload the app, you need to add the required parameters in the `.rcappsconfig` file already created in the app's directory. It accepts two types of objects:
 
-{% code lineNumbers="true" fullWidth="true" %}
-```typescript
-import {
-    IAppAccessors,
-    IConfigurationExtend,
-    IEnvironmentRead,
-    ILogger,
-} from '@rocket.chat/apps-engine/definition/accessors';
-import { App } from '@rocket.chat/apps-engine/definition/App';
-import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
-
-export class TodoListApp extends App {
-    constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
-        super(info, logger, accessors);
-    }
-
-    public async initialize(configurationExtend: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
-        await this.extendConfiguration(configurationExtend, environmentRead);
-        this.getLogger().log('Hello world from my app');
-    }
-}
-```
-{% endcode %}
-
-### Upload the App
-
-For uploading the app, you need to add to the required parameters in the .rcappsconfig already created in the apps directory. It accepts two types of objects:-
-
-1. Upload using username, password
+1. Upload using user name and password:
 
 ```typescript
 {
@@ -91,7 +53,7 @@ For uploading the app, you need to add to the required parameters in the .rcapps
 }
 ```
 
-2\. Upload using personal access token and userId
+2\. Upload using personal access token and user ID:
 
 ```typescript
 {
@@ -103,45 +65,45 @@ For uploading the app, you need to add to the required parameters in the .rcapps
 
 ### Enable autocomplete for commands
 
-To enable autocomplete for the apps cli use the command `rc-apps autocomplete <your-shell-type>` with the shell type as zsh or bash as the supported types. This would provide a step- by-step instruction to enable shell completion in your preferred shell.
+To enable autocomplete for the app CLI, use the command `rc-apps autocomplete <your-shell-type>` with the shell type as `zsh` or `bash` as the supported types. This would provide step-by-step instructions to enable shell completion in your preferred shell.
 
-## App Submission through Publisher Account
+## Submit app via publisher account
 
 To submit an app to the marketplace, the publisher must have a Rocket.Chat [Cloud Account](https://cloud.rocket.chat/login) and register their publisher account.
 
-### **Create a Rocket.Chat Cloud Account**
+### **Create a Rocket.Chat cloud account**
 
-* Go to [https://cloud.rocket.chat/register](https://cloud.rocket.chat/register) to create your Rocket.Chat Cloud account.
-* Enter your name, email address, and password.
-* Make sure to accept the Rocket.Chat [Terms and Conditions ](https://docs.rocket.chat/legal/terms)and [Privacy Policy](https://docs.rocket.chat/legal/privacy).
-* Click **Next.** You are notified that an email has been sent with the confirmation link to sign in to your cloud console.
-* Next, go to your inbox and confirm your email address by clicking on the link we sent; your cloud account has been created and is ready to use.
+1. Go to [https://cloud.rocket.chat/register](https://cloud.rocket.chat/register) to create your Rocket.Chat Cloud account.
+2. Enter your name, email address, and password.
+3. Make sure to accept the Rocket.Chat [Terms and Conditions ](https://docs.rocket.chat/legal/terms)and [Privacy Policy](https://docs.rocket.chat/legal/privacy).
+4. Click **Next.** You are notified that an email has been sent with the confirmation link to sign in to your cloud console.
+5. Next, go to your inbox and confirm your email address by clicking the link we sent; your cloud account has been created and is ready to use.
 
-### **Create a Publisher Account**
+### **Create a publisher account**
 
-1. Go to [https://marketplace.rocket.chat/publisher/register](https://marketplace.rocket.chat/publisher/register) to sign up for your publisher account.
+Go to [https://marketplace.rocket.chat/publisher/register](https://marketplace.rocket.chat/publisher/register) to sign up for your publisher account.
 
 ![Publisher Registration](../../.gitbook/assets/PublisherAccountRegistration.png)
 
-Your publisher developer account is created, as shown below:
+After signing up, your publisher developer account is created, as shown below:
 
 ![Publisher Profile](<../../.gitbook/assets/Publisher Profile.png>)
 
-### Add your App
+### Add your app
 
-To add and submit your app, Navigate to **App** > **New App.**
+To add and submit your app, go to **App** > **New App.**
 
 ![Apps](<../../.gitbook/assets/publisher-new-app (1).png>)
 
-#### **Step 01: Upload**
+#### **Step 1: Upload your app package**
 
-* Drag and drop your app package or browse your app package .zip file and click **Next**.
+* Drag and drop your app package or browse your app package `.zip` file and click **Next**.
 
 ![Upload App](<../../.gitbook/assets/publish a new app-Upload (1).png>)
 
-**Step 02: Details**
+**Step 2: Enter the app details**
 
-Add the required information for the app.
+Add the required information for the app:
 
 * Set your app's name under **App Name**.
 * Use the **Upload new app** button to upload and set a display picture for your app.
@@ -153,86 +115,66 @@ Add the required information for the app.
 
 
 
-#### **Step 03: Pricing**
+#### **Step 3: Define the pricing plan**
 
-After entering your app information, the next step is to define the pricing plan and how the users can purchase your app. The pricing model has the following three types: One-time purchase, Subscription, and Free.
+After entering your app information, the next step is to define the pricing plan and how the users can purchase your app. The pricing model has three types, `One-time purchase`, `Subscription`, and `Free`.
 
 * **Purchase Type** - You can choose how you plan to distribute your app.
-* **Price** - Enter the price (USD)you want to set.
+* **Price** - Enter the price (USD) that you want to set.
 * Click **Next.**
 
-For a paid app it is mandatory to connect with [Stripe](https://stripe.com/) account before submission.
+{% hint style="info" %}
+For a paid app, you must connect with a [Stripe](https://stripe.com/) account before submission. You can find more information at [https://stripe.com/docs/payouts](https://stripe.com/docs/payouts).
+{% endhint %}
 
 ![Connect Stripe](<../../.gitbook/assets/Connect Stripe.png>)
 
-{% hint style="warning" %}
-**How do I create a Stripe account?**
-
-* Step 1: Input the [Registration](https://dashboard.stripe.com/register) Page on Stripe.com.
-* Step 2: Fill out the form to create an account.
-* Step:3 Set up your bank account to receive payouts.
-
-You can find more information here: [https://stripe.com/docs/payouts](https://stripe.com/docs/payouts)
-{% endhint %}
-
-**One-time Purchase**: Select **One-time Purchase** when you want your app to have a one-off payment, and your users are allowed to use it forever after that payment.
-
-* **Purchase Type**: Select **One-time Purchase** to allow the users to make a single purchase.
-* **Price:** Enter the price (USD)you want to set.
+* **One-time Purchase**: Select **One-time Purchase** when you want your app to have a one-off payment. Your users are allowed to use it forever after that payment.
+  * **Price:** Enter the price (USD) you want to set.
 
 {% hint style="info" %}
-Your users are allowed to buy the app per workspace. They must purchase the app separately if they have two workspaces and want to use both apps.
+Your users are allowed to buy the app per workspace. They must purchase the app separately if they have two workspaces and want to use the app in both.
 {% endhint %}
 
-**Subscription:** Select the **Subscription** purchase type when you want your app to be subscription-based.
+* **Subscription:** Select the **Subscription** purchase type when you want your app to be subscription-based.
+  * Click **Add pricing plan.** A **New Pricing Plan** pane appears.
+  * Choose a **monthly** or **yearly** subscription.
+  * Enter the **price** (USD) you want to set.
+  * Set the number of days for the trial plan.
+  * Click **Save** **Plan.**
+  * Once done, click **Next.**
+* **Free**: Choose this pricing type when you want your app available to your users for free.&#x20;
 
-* Click **Add pricing plan.** A **New Pricing Plan** pane appears.
-* Choose a **monthly** or **yearly** subscription.
-* Enter the **price** (USD)you want to set.
-* Set the number of days for the trial plan.
-* Click **Save** **Plan.**
-* Once done, click **Next.**
+**Step 4: Screenshots**
 
-**Free**: Choose this pricing type when you want your app available to your users for free of cost. Click **Free**.
-
-**Step 04: Screenshots**
-
-Include your App screenshots and its description, and also provide your app users a summary of the privacy and policies for the app.
-
-* **Screenshot**: Upload some images of your app (Screenshots (1200x600 px), (max of 5 images).
-* **Description**: Set its description.
-* **Privacy Policy Summary**: Provide your app users with a summary of this app's privacy and data handling policies.
+* **Screenshot**: Upload some images of your app (1200x600 px, maximum of 5 images).
+* **Description**: Set your app's description.
+* **Privacy Policy Summary**: Provide your app users with a summary of the app's privacy and data handling policies.
 
 ![Screenshots](../../.gitbook/assets/publish-app-screenshot1.png)
 
 <figure><img src="../../.gitbook/assets/publish-app-screenshot2.png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
 
-#### **Step 05: Submission**
+#### **Step 5: Submission**
 
 Your app is almost ready to submit for review.
 
-* Once you have added the required information, click **Submit for Review.** Our Team will review your code and send you a status update via email.
+* Once you have added the required information, click **Submit for Review.** Our team will review your code and send you a status update via email.
 
 ![Submission](../../.gitbook/assets/publish-app-submission.png)
 
-### Process after the successful App submission:
+### After app submission
 
-After the successful submission following events will happen at Rocket.Chat side that you should be aware of:
+After the successful submission of your app, the following events will happen from Rocket.Chat's side that you should be aware of:
 
-* **Draft**
-
-After you upload your App, you will receive a **draft** status update via email.
-
-* **Compiling**
-
-After we compile, you will receive a **compiled** status update via email.
-
-* **Approval**
-
-Once your App is approved, you will receive an **approved** status update via email, as shown below:
+* **Draft**: After you upload your app, you will receive a **draft** status update via email.
+* **Compiling**: After we compile, you will receive a **compiled** status update via email.
+* **Approval**: Once your app is approved, you will receive an **approved** status update via email, as shown below:
 
 ![Approval](../../.gitbook/assets/appsubmission\_approved.png)
 
-### Publish your App
+### Publish your app
 
-Once approved, you can go to the portal and publish your App.
+Once approved, you can go to the portal and publish your app.
+
+To successfully submit an app, you need to follow some guidelines. In the next sections, you can learn about the content and graphic guidelines. You can also see how to register a webhook endpoint link to get updates about your apps.
