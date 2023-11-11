@@ -1,32 +1,20 @@
----
-description: Updates room visitor's information
----
+# Update Livechat Room Visitor
 
-# Update Room Visitor Info
+Update room visitor's information.
 
 {% hint style="info" %}
 You are required to have `the view-l-room` permission.
 {% endhint %}
 
-<table><thead><tr><th width="364.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>/api/v1/livechat/room.visitor</code></td><td><code>yes</code></td><td><code>PUT</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="338">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>PUT</code></td><td><code>/api/v1/livechat/room.visitor</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Payload
 
-<table><thead><tr><th width="179">Argument</th><th>Example</th><th width="131">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>XFzMqgn33DcsQkpJp</code></td><td>Required</td><td>The room <code>_id</code>.</td></tr><tr><td><code>newvisitorId</code></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>Required</td><td>The visitor's new <code>id</code>.</td></tr><tr><td><code>oldVisitorId</code></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>Required</td><td>The visitor's old <code>id</code>.</td></tr></tbody></table>
-
-## Example payload
-
-```json
-{
-    "rid": "tcbbSmWSLR5uo5PBW",
-    "oldVisitorId": "6425bb86c29657e5b3ba26b2",
-    "newVisitorId": "6425bb86c29657e5b3ba26b2"
-}
-```
+<table><thead><tr><th width="214">Key</th><th width="261">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>XFzMqgn33DcsQkpJp</code></td><td>The room <code>_id</code>.</td></tr><tr><td><code>newvisitorId</code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor's new <code>id</code>.</td></tr><tr><td><code>oldVisitorId</code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor's old <code>id</code>.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location --request PUT 'http://localhost:3000/api/v1/livechat/room.visitor' \
 --header 'X-Auth-Token: 8kZl86mlaQW4tiHelu2GVrn1_DCu26kiLIoE2N3YAzs' \
 --header 'X-User-Id: rYhzFRd2QZjNwAAXX' \
@@ -34,11 +22,11 @@ curl --location --request PUT 'http://localhost:3000/api/v1/livechat/room.visito
 --data '{
     "rid": "tcbbSmWSLR5uo5PBW",
     "oldVisitorId": "6425bb86c29657e5b3ba26b2",
-    "newVisitorId": "6425bb86c29657e5b3ba26b2"
+    "newVisitorId": "6523dc0ba2f73c7460e18d4d"
 }'
 ```
 
-## Example Result
+## Example Response
 
 ```json
 {
@@ -51,7 +39,7 @@ curl --location --request PUT 'http://localhost:3000/api/v1/livechat/room.visito
         "t": "l",
         "ts": "2023-03-30T16:40:48.026Z",
         "v": {
-            "_id": "6425bb86c29657e5b3ba26b2",
+            "_id": "6523dc0ba2f73c7460e18d4d",
             "username": "guest-16",
             "token": "8b15e7f76d3943646b9de8ca1e12aecb55297a321d29500e16143fa5bd6c622d",
             "status": "offline",

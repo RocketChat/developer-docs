@@ -1,75 +1,30 @@
 # Join Livechat Room
 
-Call this endpoint to join a Live chat room.
+Call this endpoint to join a Livechat room.
 
 {% hint style="info" %}
 This requires the `view-l-room` permission.
 {% endhint %}
 
-| URL                          | Requires Auth | HTTP Method |
-| ---------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/room.join` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="324">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/room.join</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-<table><thead><tr><th width="139">Argument</th><th>Example</th><th width="176">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code></td><td><code>gMMeBpWyLeowCrzBv</code></td><td>Required</td><td>Id of the Livechat room to join</td></tr></tbody></table>
+<table><thead><tr><th width="154">Key</th><th width="282">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>gMMeBpWyLeowCrzBv</code></td><td>Room ID that you want to join.</td></tr></tbody></table>
 
 ## Example Call
 
-{% tabs %}
-{% tab title="Curl" %}
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/room.join?roomId=gMMeBpWyLeowCrzBv' \
 --header 'Content-type: application/json' \
 --header 'X-Auth-Token: OsLBoPh6cUgNuh6mWT8z4VIY_nGl8R30XVE4QNDLT6S' \
 --header 'X-User-Id: f5vPj6jfkRXipkwoC' \
 --data-raw ''
 ```
-{% endtab %}
+{% endcode %}
 
-{% tab title="Node.js" %}
-```javascript
-var request = require('request');
-var options = {
-  'method': 'GET',
-  'url': 'http://localhost:3000/api/v1/livechat/room.join?roomId=gMMeBpWyLeowCrzBv',
-  'headers': {
-    'Content-type': 'application/json',
-    'X-Auth-Token': 'OsLBoPh6cUgNuh6mWT8z4VIY_nGl8R30XVE4QNDLT6S',
-    'X-User-Id': 'f5vPj6jfkRXipkwoC'
-  }
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```python
-import requests
-import json
-
-url = "http://localhost:3000/api/v1/livechat/room.join?roomId=gMMeBpWyLeowCrzBv"
-
-payload = ""
-headers = {
-  'Content-type': 'application/json',
-  'X-Auth-Token': 'OsLBoPh6cUgNuh6mWT8z4VIY_nGl8R30XVE4QNDLT6S',
-  'X-User-Id': 'f5vPj6jfkRXipkwoC'
-}
-
-response = requests.request("GET", url, headers=headers, data=payload)
-
-print(response.text)
-
-```
-{% endtab %}
-{% endtabs %}
-
-## Example Result
+## Example Response
 
 ### Success
 

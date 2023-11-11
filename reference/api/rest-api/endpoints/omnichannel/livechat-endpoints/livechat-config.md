@@ -1,30 +1,31 @@
----
-description: Get Livechat widget configuration info and additional visitor data.
----
+# Get Livechat Configurations
 
-# Livechat Configurations&#x20;
+Get Livechat widget configuration information and additional visitor data.
 
-| URL                       | Requires Auth | HTTP Method |
-| ------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/config` | `no`          | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="338">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/config</code></td><td><code>no</code></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument     | Example             | Required | Description                 |
-| ------------ | ------------------- | -------- | --------------------------- |
-| `token`      | `iNKE8a6k6cjbqWhWd` | Optional | The visitor `token`.        |
-| `department` | `department`        | Optional | The visitor's `department`. |
+<table><thead><tr><th width="208.33333333333331">Key</th><th width="241">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor <code>token</code>.</td></tr><tr><td><code>department</code></td><td><code>department</code></td><td>The visitor's <code>department</code>.</td></tr></tbody></table>
 
 ## Example Calls
 
-```bash
-curl http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd
-curl http://localhost:3000/api/v1/livechat/config?department=department
+Without query parameters:
+
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/config'
 ```
 
-## Example Result
+With query parameters:
 
-```javascript
+```powershell
+curl --location 'http://localhost:3000/api/v1/livechat/config?token=iNKE8a6k6cjbqWhWd'
+curl --location 'http://localhost:3000/api/v1/livechat/config?department=department'
+```
+
+## Example Response
+
+```json
 {
   "config": {
     "enabled": true,
@@ -38,7 +39,12 @@ curl http://localhost:3000/api/v1/livechat/config?department=department
       "fileUpload": true,
       "language": "",
       "transcript": false,
-      "historyMonitorType": "url"
+      "historyMonitorType": "url",
+      "forceAcceptDataProcessingConsent": false,
+      "showConnecting": true,
+      "agentHiddenInfo": false,
+      "clearLocalStorageWhenChatEnded": false,
+      "limitTextLength": false
     },
     "theme": {
       "title": "Rocket.Chat",
@@ -81,6 +87,32 @@ curl http://localhost:3000/api/v1/livechat/config?department=department
         "5"
       ],
     },
+    "departments": [
+    {
+        "_id": "64cf6c6feb07a913d946f34d",
+        "name": "Test",
+        "showOnRegistration": false,
+        "showOnOfflineForm": false
+     },
+     {
+        "_id": "6523ff86a2f73c7460e18d6d",
+        "name": "Dept-011",
+        "showOnRegistration": false,
+        "showOnOfflineForm": true
+      },
+      {
+         "_id": "652882d8a2f73c7460e18dc4",
+         "name": "Support",
+         "showOnRegistration": false,
+         "showOnOfflineForm": false
+       },
+       {
+          "_id": "64181a0728384134ed600dcc",
+          "name": "Lost",
+          "showOnRegistration": false,
+          "showOnOfflineForm": false
+        }
+        ],
     "online": true,
     "guest": {
       "_id": "2KNu66RPCwxA4ncy7",

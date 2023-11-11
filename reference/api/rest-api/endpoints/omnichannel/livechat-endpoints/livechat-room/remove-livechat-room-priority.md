@@ -1,22 +1,18 @@
-# Remove Livechat room Priority
+# Remove Livechat Room Priority
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Remove the priority set to a Live Chat room.
+Remove the priority set to a Livechat room.
 
 {% hint style="info" %}
 You are required to have the `view-l-room` permission.
 {% endhint %}
 
-<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/room/:rid/priority</code></td><td><code>YES</code></td><td><code>DELETE</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="338">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>DELETE</code></td><td><code>/api/v1/livechat/room/:rid/priority</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+## Path Variables
 
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated ouser ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
-
-## Path Parameters
-
-<table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>Required</td><td>The Id of the Live Chat room.</td></tr></tbody></table>
+<table><thead><tr><th width="152">Key</th><th width="277">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -26,7 +22,7 @@ curl --location --request DELETE 'http://localhost:3000/api/v1/livechat/room/tcb
 --header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
 
-## Example Result
+## Example Response
 
 ### Success
 

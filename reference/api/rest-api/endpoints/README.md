@@ -348,14 +348,14 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Room
 
-| Url                      | Short Description                                              | Details Page                                                                     |
-| ------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `livechat/room`          | Retrievesthe omnichannel room data or open a new conversation. | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-info.md)       |
-| `livechat/room.close`    | Closes an omnichannel conversation                             | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-close.md)      |
-| `livechat/room.transfer` | Transfers an omnichannel conversation                          | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-transfer.md)   |
-| `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent               | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-forward.md)    |
-| `livechat/room.visitor`  | Updates room visitor's information                             | [Link](omnichannel/livechat-endpoints/livechat-room/update-room-visitor-info.md) |
-| `livechat/room.saveInfo` | Update a LiveChat room information.                            | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-saveinfo.md)   |
+| Url                      | Short Description                                              | Details Page                                                                         |
+| ------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `livechat/room`          | Retrievesthe omnichannel room data or open a new conversation. | [Link](omnichannel/livechat-endpoints/livechat-room/get-or-create-livechat-rooms.md) |
+| `livechat/room.close`    | Closes an omnichannel conversation                             | [Link](omnichannel/livechat-endpoints/livechat-room/close-livechat-room.md)          |
+| `livechat/room.transfer` | Transfers an omnichannel conversation                          | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-transfer.md)       |
+| `livechat/room.forward`  | Chatbot agent forwards the chat to a human agent               | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-forward.md)        |
+| `livechat/room.visitor`  | Updates room visitor's information                             | [Link](omnichannel/livechat-endpoints/livechat-room/update-room-visitor-info.md)     |
+| `livechat/room.saveInfo` | Update a LiveChat room information.                            | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-room-saveinfo.md)       |
 
 #### Livechat Transcript
 
@@ -475,12 +475,12 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Rooms
 
-| Url                                  | Short Description                            | Details Page                                                                           |
-| ------------------------------------ | -------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `api/v1/livechat/rooms`              | Retrieves a list of livechat rooms           | [Link](omnichannel/livechat-endpoints/livechat-rooms/livechat-rooms-list.md)           |
-| `api/v1/livechat/room/:rid/priority` | Set the priority of a Livechat room.         | [Link](omnichannel/livechat-endpoints/livechat-rooms/set-livechat-room-priority.md)    |
-| `api/v1/livechat/room/:rid/priority` | Remove the priority set to a Livechat room.  | [Link](omnichannel/livechat-endpoints/livechat-rooms/remove-livechat-room-priority.md) |
-| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](omnichannel/livechat-endpoints/livechat-rooms/room-onhold.md)                   |
+| Url                                  | Short Description                            | Details Page                                                                          |
+| ------------------------------------ | -------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `api/v1/livechat/rooms`              | Retrieves a list of livechat rooms           | [Link](omnichannel/livechat-endpoints/livechat-room/get-list-of-livechat-rooms.md)    |
+| `api/v1/livechat/room/:rid/priority` | Set the priority of a Livechat room.         | [Link](omnichannel/livechat-endpoints/livechat-room/set-livechat-room-priority.md)    |
+| `api/v1/livechat/room/:rid/priority` | Remove the priority set to a Livechat room.  | [Link](omnichannel/livechat-endpoints/livechat-room/remove-livechat-room-priority.md) |
+| `api/v1/livechat/room.onHold`        | Puts an active livechat conversation on hold | [Link](omnichannel/livechat-endpoints/livechat-room/room-onhold.md)                   |
 
 #### Livechat SMS
 

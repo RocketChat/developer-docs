@@ -59,4 +59,4 @@ curl --location 'http://localhost:3000/api/v1/livechat/visitor' \
 }
 ```
 
-After registering the visitor, [create the Omnichannel room](../livechat-room/livechat-room-info.md) using the same token used in this endpoint.
+After registering the visitor, [create the Omnichannel room](../livechat-room/get-or-create-livechat-rooms.md) using the same token used in this endpoint.

@@ -1,28 +1,22 @@
----
-description: Get the Livechat room data or open a new room.
----
+# Get or Create Livechat Rooms
 
-# Livechat Room Info
+Get the data of an existing room of a visitor. If a room doesn't exist for the visitor, a new room is created.
 
-| URL                     | Requires Auth | HTTP Method |
-| ----------------------- | ------------- | ----------- |
-| `/api/v1/livechat/room` | `no`          | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="286">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/room</code></td><td><code>no</code></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument  | Example             | Required | Description          |
-| --------- | ------------------- | -------- | -------------------- |
-| `token`   | `iNKE8a6k6cjbqWhWd` | Required | The visitor `token`. |
-| `rid`     | `kCJDd5peKiZnGJLPq` | Optional | The room `_id`.      |
-| `agentId` | `XycfA5CetCPuEjqxw` | Optional | The agent id.        |
+<table><thead><tr><th width="189.33333333333331">Key</th><th width="240">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor <code>token</code>.</td></tr><tr><td><code>rid</code></td><td><code>kCJDd5peKiZnGJLPq</code></td><td>The room <code>_id</code>.</td></tr><tr><td><code>agentId</code></td><td><code>XycfA5CetCPuEjqxw</code></td><td>The agent id.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl http://localhost:3000/api/v1/livechat/room?token=8s7e9ony6ctl27e1qf8kue&rid=kCJDd5peKiZnGJLPq&agentId=XycfA5CetCPuEjqxw
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ```javascript
 {

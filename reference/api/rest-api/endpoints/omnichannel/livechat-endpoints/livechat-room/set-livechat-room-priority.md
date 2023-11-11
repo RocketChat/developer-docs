@@ -1,26 +1,22 @@
-# Set Livechat room Priority
+# Set Livechat Room Priority
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Set the priority of a Live Chat room.
+Set the priority of a Livechat room.
 
 {% hint style="info" %}
 You are required to have the `view-l-room` permission.
 {% endhint %}
 
-<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/room/:rid/priority</code></td><td><code>YES</code></td><td><code>POST</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="338">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/livechat/room/:rid/priority</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+## Path Variables
 
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated ouser ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
+<table><thead><tr><th width="152">Key</th><th width="277">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>The room ID.</td></tr></tbody></table>
 
-## Path Parameters
+## Body
 
-<table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>Required</td><td>The Id of the Live Chat room.</td></tr></tbody></table>
-
-## Payload
-
-<table><thead><tr><th width="169">Argument</th><th width="215">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>priorityId</code></td><td><code>64007cc2fa0ed7dd905092e6</code></td><td>Required</td><td>The Id of the priority to set.</td></tr></tbody></table>
+<table><thead><tr><th width="195">Key</th><th width="234">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>priorityId</code><mark style="color:red;"><code>*</code></mark></td><td><code>64007cc2fa0ed7dd905092e6</code></td><td>The ID of the priority to set.</td></tr></tbody></table>
 
 ## Example Call
 

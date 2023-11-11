@@ -4,7 +4,7 @@ After [configuring-iframe-auth](configuring-iframe-auth/ "mention"), you can exp
 
 **Prerequisites**
 
-* A running Rocket.Chat server with at least one [room](../../reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-rooms/).
+* A running Rocket.Chat server with at least one [room](broken-reference).
 
 {% hint style="info" %}
 &#x20;See the [official deployment guide](https://docs.rocket.chat/deploy/prepare-for-your-deployment) to explore various ways of setting up your Rocket.Chat workspace.
