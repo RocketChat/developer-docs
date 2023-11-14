@@ -89,7 +89,7 @@
 * [Creating Apps](apps-engine/getting-started/creating-an-app.md)
 * [Extending App Capabilities](apps-engine/building-custom-apps/README.md)
   * [Slash Commands](apps-engine/building-custom-apps/sub-command-pattern/README.md)
-    * [Examples](apps-engine/building-custom-apps/sub-command-pattern/sample-app-snippets.md)
+    * [Slash Command Examples](apps-engine/building-custom-apps/sub-command-pattern/sample-app-snippets.md)
   * [HTTP Requests](apps-engine/building-custom-apps/making-http-requests.md)
 * [App Development Lifecycle](apps-engine/understanding-app-lifecycle.md)
 * [App Configuration](apps-engine/app-configuration.md)
