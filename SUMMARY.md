@@ -83,7 +83,7 @@
 
 ## Apps-Engine
 
-* [Introduction to Apps-Engine](apps-engine/rocket.chat-apps-and-apps-engine.md)
+* [Rocket.Chat Apps-Engine](apps-engine/rocket.chat-apps-engine.md)
 * [Getting Started with Apps-Engine](apps-engine/getting-started/README.md)
   * [Apps-Engine CLI](apps-engine/getting-started/rocket.chat-app-engine-cli.md)
 * [Create an App](apps-engine/getting-started/creating-an-app.md)
