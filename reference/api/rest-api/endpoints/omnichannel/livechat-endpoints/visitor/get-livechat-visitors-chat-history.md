@@ -1,38 +1,30 @@
----
-description: Get livechat visitor's chat history
----
+# Get Livechat Visitor Chat History
 
-# Get livechat visitor's chat history
+Get the Livechat history of a visitor.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | `YES` | `GET` |
+<table><thead><tr><th width="163">HTTP Method</th><th width="318">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+## Query Parameters
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+This endpoint supports the [#pagination](../../../../#pagination "mention")query parameters.
 
-## URL Parameters
+## Path Variables
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `roomId` | `hhMKhHnnbY79mGs9K` | Required | Livechat room id |
-| `visitorId` | `QyBAKC5Wc8tcv6cco` | Required | Livechat visitor id |
+<table><thead><tr><th width="215.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>hhMKhHnnbY79mGs9K</code></td><td>Livechat room ID.</td></tr><tr><td><code>visitorId</code><mark style="color:red;"><code>*</code></mark></td><td><code>QyBAKC5Wc8tcv6cco</code></td><td>Livechat visitor ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "history": [
         {
@@ -114,4 +106,3 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/visitors.ch
     "success": true
 }
 ```
-

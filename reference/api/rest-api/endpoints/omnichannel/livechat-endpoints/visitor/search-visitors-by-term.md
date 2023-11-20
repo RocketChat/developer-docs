@@ -1,39 +1,26 @@
-# Search Visitors by term
+# Search Visitors by Term
 
-Search Omnichannel visitors using a term.
+Search Livechat visitors using a specific term.
 
-{% hint style="info" %}
-You are required to have the `view-l-room` permission.
-{% endhint %}
+<table><thead><tr><th width="163">HTTP Method</th><th width="351">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/visitors.search</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/visitors.search` | `YES`         | `GET`       |
+## Query Parameters
 
-## Headers
+This endpoint supports the optional [#pagination](../../../../#pagination "mention")query parameters and the additional required parameter as follows:
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
-
-## Parameters
-
-| Argument | Example | Required | Description |
-| -------- | ------- | -------- | ----------- |
-| `term`   | `James` | Required | Search Term |
+<table><thead><tr><th width="218.33333333333331">Key</th><th width="210">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>term</code><mark style="color:red;"><code>*</code></mark></td><td><code>James</code></td><td>The visitor's name, username, email, or phone.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location 'http://localhost:3000/api/v1/livechat/visitors.search?term=James' \
 --header 'X-Auth-Token: EZmA1YMbEfghEPOmc03k0R9QiuVvKWjQClKVoF8x7LY' \
 --header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "visitors": [
         {

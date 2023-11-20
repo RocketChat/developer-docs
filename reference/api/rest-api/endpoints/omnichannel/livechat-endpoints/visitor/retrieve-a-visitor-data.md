@@ -1,4 +1,4 @@
-# Get Visitor Data
+# Get Visitor Information
 
 Get the details of a specific visitor.
 
@@ -6,7 +6,7 @@ Get the details of a specific visitor.
 
 ## Path Variables
 
-<table><thead><tr><th width="176">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token </code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor token.</td></tr></tbody></table>
+<table><thead><tr><th width="176">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjbqWhWd</code></td><td>The visitor token.</td></tr></tbody></table>
 
 ## Example Call
 

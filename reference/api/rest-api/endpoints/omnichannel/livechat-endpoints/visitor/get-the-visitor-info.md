@@ -1,4 +1,4 @@
-# Get Visitor Information
+# Get Visitor Information by ID
 
 Get the information of a specific visitor.
 
@@ -6,14 +6,14 @@ Get the information of a specific visitor.
 
 ## Query Parameters
 
-<table><thead><tr><th width="232">Key</th><th width="225.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>visitorId</code><mark style="color:red;"><code>*</code></mark></td><td><code>642fc15452492a08c3a756de</code></td><td>The visitor's id.</td></tr></tbody></table>
+<table><thead><tr><th width="221">Key</th><th width="225.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>visitorId</code><mark style="color:red;"><code>*</code></mark></td><td><code>642fc15452492a08c3a756de</code></td><td>The visitor's ID.</td></tr></tbody></table>
 
 ## Example Call
 
 {% code overflow="wrap" %}
 ```powershell
 curl --location 'http://localhost:3000/api/v1/livechat/visitors.info?visitorId=642fc15452492a08c3a756de' \
---header 'X-Auth-Token: Y97tM4GkYjgaH_fIO5dwBitQQvm3yp-AptYzGQZMX6e' \
+--header 'X-Auth-Token: Y97tM4GkYjgaH_fIO5dwB' \
 --header 'X-User-Id: CkCPNcvsvCDfmWLqC'
 ```
 {% endcode %}
