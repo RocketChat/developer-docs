@@ -215,7 +215,7 @@ Here is the list of objects, block elements, and blocks you can use to create in
 ```
 
 {% hint style="info" %}
-Notice how the section block and the button element are used in the [Contextual Bar](opening-the-contextual-bar.md) app.
+Notice how the section block and the button element are used in the [Contextual Bar](contextual-bar.md) app.
 {% endhint %}
 
 ### divider
@@ -293,4 +293,4 @@ Notice how the section block and the button element are used in the [Contextual 
 }
 ```
 
-Now that we've seen the different building blocks that can be used for our apps, let's take a look at how to use buttons to initiate a set of actions in the next section.
+Now that we've seen the different building blocks that can be used for our apps, let's take a look at how to use action buttons to initiate a set of actions in the next section.

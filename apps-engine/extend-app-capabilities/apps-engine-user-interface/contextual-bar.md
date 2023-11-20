@@ -180,7 +180,7 @@ export class CtxbarExampleApp extends App {
 {% endcode %}
 
 5. Deploy and test this app by sending `"/contextualbar <text>"` to any channel. As soon as you send this message, the contextual bar opens on the right-side of the UI. The contextual bar displays the current date-time, the refresh button, and the submit button.&#x20;
-6. Click `Refresh` to update the current date-time. Clicking `Submit` logs the date-time to the console and closes the contextual bar.
+6. Click **Refresh** to update the current date-time. Clicking **Submit** logs the date-time to the app logs and closes the contextual bar.
 7. Go to the **Logs** section of your app to view the details.
 
 Great work! With this example, you have learned to create user interactions for your apps! While we have only used a contextual bar and buttons here, you can learn about all the building blocks that are available in the UIKit in the next section.

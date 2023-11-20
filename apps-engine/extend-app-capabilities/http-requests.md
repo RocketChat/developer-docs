@@ -1,10 +1,10 @@
 # HTTP Requests
 
-If you want to connect your app to the outside world, the HTTP property enables users to invoke an external web service.
+HTTP requests are the next feature we will look at to expand your app functionality. If you want to connect your app to the outside world, the HTTP property enables users to invoke an external web service.
 
 In this topic, we will create a slash command `get` for our [Hello World app](../getting-started/creating-an-app.md). This command executes a `GET` HTTP request based on the given URL. You can also use our [Tester App](https://github.com/RocketChat/Apps.RocketChat.Tester) or any app of your choice. Make sure that a Rocket.Chat server is ready to deploy the app.
 
-### Step 1: Register the Slash Command
+## Step 1: Register the slash command
 
 The slash command must be registered in the app's main class, at the root of the project.
 
@@ -27,9 +27,9 @@ export class HelloWorldApp extends App {
 ```
 {% endcode %}
 
-Here, we import our new slash command class and then register it in the configuration of the app.
+Here, we import our new slash command class and then register it in the app's configuration.
 
-### Step 2: Create the Slash Command
+## Step 2: Create the slash command
 
 1. If you haven't created a separate directory for slash commands, it is recommended to create a `commands` directory at the root of the project.&#x20;
 2. Create the `HTTPRequestCommand.ts` file in this directory.&#x20;
@@ -82,7 +82,7 @@ console.log("result: " + response.data);
 ```
 {% endcode %}
 
-### Step 3: Print the Request to a Conversation
+## Step 3: Print the request to a conversation
 
 Now, instead of logging console output to the instance's log, let's output it to the conversation.
 
@@ -125,10 +125,10 @@ await this.sendMessage(context, modify, message);
 Instead of simply sending the request and not capturing the response, we store the response in a constant, format its content as a string, and transmit it using our new `sendMessage` method.
 
 {% hint style="info" %}
-**Note:** To learn more about messaging, see the [IMessageBuilder](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_imessagebuilder.imessagebuilder.html) documentation.
+**Note:** To learn more about messaging, see the [IMessageBuilder](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_IMessageBuilder.IMessageBuilder.html) documentation.
 {% endhint %}
 
-## Step 4: Deploy the App
+## Step 4: Deploy the app
 
 To deploy the app, run:&#x20;
 
@@ -147,12 +147,12 @@ After executing this command, your application will be deployed to the server.
 Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.&#x20;
 {% endhint %}
 
-## Step 5: Test the App
+## Step 5: Test the app
 
-After deploying the application, enter `/get <some_url>` in any channel and the app will send a `GET` request to the specified URL. In this example, we will utilize [JSONPlaceholder](https://jsonplaceholder.typicode.com) to obtain dummy data for testing our application:
+After deploying the application, enter `/get <some_url>` in any channel and the app will send a `GET` request to the specified URL. In this example, we will use [JSONPlaceholder](https://jsonplaceholder.typicode.com) to obtain dummy data to test our app:
 
 * Enter `/get https://jsonplaceholder.typicode.com/todos/1` in a chat.
-* You will receive the following response in the chat:
+* You receive the following response in the chat:
 
 ```json
 {
@@ -162,3 +162,7 @@ After deploying the application, enter `/get <some_url>` in any channel and the 
     "completed": false
 }
 ```
+
+Similarly, you can apply this feature to connect with any domain of your choice.
+
+Next, let's gain an understanding of events and the Apps-Engine-supported features to handle Rocket.Chat events.

@@ -512,14 +512,14 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Visitors
 
-| Url                                                                    | Short Description                           | Details Page                                                                            |
-| ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/visitor/get-the-visitor-info.md)                  |
-| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/visitor/get-pages-visited-by-livechat-visitor.md) |
-| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/visitor/get-livechat-visitors-chat-history.md)    |
-| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/visitor/search-a-visitors-chat.md)                |
-| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/visitor/visitor-autocomplete.md)                  |
-| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/visitor/search-visitors-by-term.md)               |
+| Url                                                                    | Short Description                           | Details Page                                                                                        |
+| ---------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/visitors.info`                                        | Retrieves visitor info by ID                | [Link](omnichannel/livechat-endpoints/visitor/get-the-visitor-info.md)                              |
+| `api/v1/livechat/visitors.pagesVisited/:roomId`                        | Retrieves pages visited by livechat visitor | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-pages-visited-by-livechat-visitor.md) |
+| `api/v1/livechat/visitors.chatHistory/room/:roomId/visitor/:visitorId` | Retrieves livechat visitor's chat history   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/get-livechat-visitors-chat-history.md)    |
+| `api/v1/livechat/visitors.searchChats/room/:roomId/visitor/:visitorId` | Searches a visitor's chat                   | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/search-a-visitors-chat.md)                |
+| `api/v1/livechat/visitors.autocomplete`                                | Autocompletes visitor's name                | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/visitor-autocomplete.md)                  |
+| `api/v1/livechat/visitors.search`                                      | Searches the visitor by the term            | [Link](omnichannel/livechat-endpoints/livechat-visitors-1/search-visitors-by-term.md)               |
 
 #### Livechat Monitors
 

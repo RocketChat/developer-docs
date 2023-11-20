@@ -211,7 +211,7 @@ The main actions performed by the code above are:
 
 Custom fields are structures linked to messages in which each field is organized as if it were an entry in a dictionary. That is, each field must contain a key and corresponding value. These elements are retained in the server's database along with the corresponding messages so that they can be retrieved later.
 
-### Step 3: Create new auxiliary methods&#x20;
+### Step 3: Create auxiliary methods&#x20;
 
 It is beneficial to define a few additional methods within our slash command class so that our code remains concise and straightforward.
 
@@ -283,10 +283,10 @@ Here, we import our new slash command class and register it in the app's configu
 
 ### Step 5: Deploy the app
 
-To deploy the app, follow [#step-3-deploy-the-app](sample-app-snippets.md#step-3-deploy-the-app "mention")from the previous example.
+To deploy the app, follow [#step-3-deploy-the-app](slash-command-examples.md#step-3-deploy-the-app "mention")from the previous example.
 
 ### Step 6: Test the slash command
 
 After the app has been deployed, execute the slash command `/extend-message` in any channel.
 
-When the registered slash command is executed, a message is sent to the current channel and altered to include an image attachment and a custom field. The attached image is visible in the message after editing. In addition, the created custom fields are accessible from any database client of your choosing.
+When you execute the registered slash command, a message is sent to the current channel and altered to include an image attachment and a custom field. The attached image is visible in the message after editing. In addition, the created custom fields are accessible from any database client of your choosing.

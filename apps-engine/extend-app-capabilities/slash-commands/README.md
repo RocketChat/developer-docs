@@ -1,22 +1,22 @@
 # Slash Commands
 
-The Slash Commands feature enables users to invoke your app or any other functionality by entering a string in the message composer window. This reduces the amount of text needed to produce complex Markdown. The `SlashCommand` method is used to call an app deployed in Rocket.Chat. Your app can contain numerous slash commands and subcommands.&#x20;
+The **Slash Commands** feature enables users to invoke your app or any other functionality by entering a string in the message composer window. This reduces the amount of text needed to produce complex Markdown. The `slashCommand` method is used to call an app deployed in Rocket.Chat. Your app can contain numerous slash commands and subcommands.&#x20;
 
 In this section, we'll send a message to any room from our [Hello World app](../../getting-started/creating-an-app.md) using the `slashCommand` property.
 
-For this app, we will create a main slash command called `phone`, and it will have two subcommands: `text` and `call`. We want to execute these subcommands to invoke an application function. We will use them as follows:&#x20;
+For this app, we will create a main slash command called `phone`, and it will have two subcommands: `text` and `call`. We want to execute these subcommands to invoke an app function. We will use them as follows:&#x20;
 
 * `/phone text`&#x20;
 * `/phone call`
 
 {% hint style="info" %}
-Although it is possible to have everything in a single file, it is not recommended. Put each physical component of your application in its own file, and logically similar components in their own subdirectories. We recommend creating a `commands` subdirectory at the root of your project for slash command-related files, but you are free to choose a different name.
+Although it is possible to have everything in a single file, this is not recommended. Put each component of your app in its own file, and logically similar components in their own subdirectories. We recommend creating a `commands` subdirectory at the root of your project for slash command-related files, but you are free to choose a different name.
 {% endhint %}
 
-### Step 1: Register the Slash Command
+### Step 1: Register the slash command
 
 {% hint style="info" %}
-The following code excerpts are a recommendation for organizing the slash commands in your application. Even if you do not wish to adhere to the subcommand pattern, you must still register the slash command.&#x20;
+The following code excerpts are a recommendation for organizing the slash commands in your app. Even if you do not wish to adhere to the subcommand pattern, you must still register the slash command.&#x20;
 {% endhint %}
 
 The primary step is to register the slash command. It must be registered in the app's main class, at the project's root.
@@ -42,7 +42,7 @@ import { PhoneCommand } from './commands/PhoneCommand';
 ```
 {% endcode %}
 
-### Step 2: Create the Slash Command
+### Step 2: Create the slash command
 
 1. Create a `PhoneCommand.ts` file in the `commands` directory that we created at the root of the project. In this file, the slash command is defined.&#x20;
 2. Now add the following code:
@@ -89,7 +89,7 @@ export class PhoneCommand implements ISlashCommand {
 ```
 {% endcode %}
 
-Let's look at the logic of the code in the `PhoneCommand.ts` file:
+Let's look at the logic of this code in the `PhoneCommand.ts` file:
 
 * The slash command is named `phone`.
 * When it gets executed, we get the argument that the user passed after the command. The argument is used as the subcommand and it is mandatory.
@@ -98,11 +98,11 @@ Let's look at the logic of the code in the `PhoneCommand.ts` file:
 * If the argument matches the `call` subcommand, log **"Calling!"**
 * Any other argument throws an error.
 
-### Step 3: Deploy to the Server
+### Step 3: Deploy to the server
 
-After registering and defining your slash command, the final step is to deploy your application to the server.
+After registering and defining your slash command, the final step is to deploy your app to the server.
 
-To deploy the app, run:&#x20;
+To deploy the app, go to the app folder in the command line and run:&#x20;
 
 ```bash
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
@@ -119,9 +119,9 @@ After executing this command, your application will be deployed to the server.
 Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.&#x20;
 {% endhint %}
 
-### Step 4: Testing your New Slash Command
+### Step 4: Test your new slash command
 
-After deploying the application, you can input `/phone text` or `/phone call` on any channel. The app logs `"Texting!"` or `"Calling!"` to the console, respectively.
+After deploying the app, you can input `/phone text` or `/phone call` on any channel. The app logs `"Texting!"` or `"Calling!"` to the **Logs** section, respectively.
 
 If you want to send it to the channel, follow these steps:&#x20;
 
@@ -175,6 +175,6 @@ rc-apps deploy --url <server_url> -u <user> -p <pwd> --update
 
 All that's left is for you to test it! Go to the channel in Rocket.Chat where you want to test your app by typing `/phone text` and `/phone call` in the message composer. Press **Enter** and you can see the output as `Texting!` or `Calling!` in the channel.
 
-Similarly, you can register and define multiple slash commands for your app that are tailored to your organization's requirements. In addition to slash commands, you can use other properties supported by the Apps-Engine to expand the functionality of your application to meet business requirements.&#x20;
+Similarly, you can register and define multiple slash commands tailored to your organization's requirements. Head over to the next page to find more slash command examples.
 
-Once the app has been developed and deployed to the Rocket.Chat server, it undergoes multiple stages. To learn more, see the [App Lifecycle](../../understanding-app-lifecycle.md) section.
+In addition to slash commands, you can use other properties supported by the Apps-Engine to expand the functionality of your app to meet business requirements, as we will see in the upcoming sections.&#x20;

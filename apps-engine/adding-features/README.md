@@ -1,6 +1,6 @@
 # Advanced Features
 
-In this section, you will learn about specific features that you can add to your apps.
+In this section, you will learn about some more features that you can add to your apps.
 
 * [OAuth2 Client](oauth2-client.md): Handle OAuth2 authentication for your apps directly within Rocket.Chat.
 * [Scheduler API](scheduler-api.md): Schedule tasks in your app.

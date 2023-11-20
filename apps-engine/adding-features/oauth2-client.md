@@ -4,7 +4,7 @@ The Rocket.Chat App OAuth2 workflow is a feature that lets developers handle OAu
 
 ### OAuth2 Setup
 
-1. Import the methods needed from the [`IOAuth2`](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/oauth2\_ioauth2.html) and [`OAuth2`](https://rocketchat.github.io/Rocket.Chat.Apps-engine/modules/oauth2\_oauth2.html) definitions in the main class of your app.
+1. Import the methods needed from the `IOAuth2` and `OAuth2` definitions in the main class of your app.
 
 ```
 import { IAuthData } from '@rocket.chat/apps-engine/definition/oauth2/IOAuth2';

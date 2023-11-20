@@ -1,4 +1,4 @@
-# Creating Apps
+# Create an App
 
 On this page, you will learn about the Apps-Engine commands and create a basic app.
 
@@ -18,7 +18,7 @@ Now that you've understood the basic concepts of the Apps-Engine and installed t
 Make sure that you have the [setup environment](./) ready.
 {% endhint %}
 
-### Step 1: Execute the Create Command
+### Step 1: Execute the create command
 
 To create a new app, in the command line, execute `rc-apps create`. &#x20;
 
@@ -38,13 +38,13 @@ A folder with the app name is created in the current working directory (in this 
 If you receive the error message '**TypeError: Cannot read properties of undefined \[reading 'message']**', do not be alarmed. You can disregard this and use the `cd test` command to determine if a folder for your application was created in Visual Studio.&#x20;
 {% endhint %}
 
-### Step 2: Open the App Folder in Visual Studio
+### Step 2: Open the app folder in Visual Studio
 
 1. Launch **Visual Studio** and select **Open Folder** from the sidebar on the left.&#x20;
 2. Select the app folder that was created in the previous step.
 3. Once the folder has been uploaded, its contents will be displayed in the sidebar.&#x20;
 
-### Step 3: Comprehend the Structure of an App
+### Step 3: Comprehend the structure of the app
 
 * The app manifest file `app.json` contains basic details about the app:
 
@@ -66,7 +66,7 @@ If you receive the error message '**TypeError: Cannot read properties of undefin
 }
 ```
 
-* A Rocket.Chat app is a TypeScript project that contains a main file with a class extending the main `App` class from the Apps-Engine. The identity of this file can be found in the `classFile` property of your `app.json` file. For this example, locate and open the `HelloWorldApp.ts` TypeScript file.
+* A Rocket.Chat app is a TypeScript project that contains a main file with a class extending the main [`App`](https://rocketchat.github.io/Rocket.Chat.Apps-engine/classes/app.app-1.html) class from the Apps-Engine. The identity of this file can be found in the `classFile` property of your `app.json` file. For this example, locate and open the `HelloWorldApp.ts` TypeScript file.
 * The following code snippet shows the class in the `HelloWorldApp.ts` file:
 
 {% code lineNumbers="true" %}
@@ -88,17 +88,21 @@ export default class HelloWorldApp extends App {
 ```
 
 * For a functioning app, you must define a constructor to access a large number of parent properties. The constructor accepts three arguments:
-  * **An `IAppInfo` object:** This object contains fundamental information about your application, such as its name, version, description, etc. It is private to the `App` class, but its properties are accessible through multiple GET methods.
-  * **An `ILogger` object:** This object is the interface for logging. The `getLogger()` method allows access to this object from within a child class.
-  * **An `IAppAccessors` object:** This object contains all app accessors. This can be accessed via the `getAccessors()` method in the child class.
+  * **An** [**`IAppInfo`**](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/metadata\_IAppInfo.IAppInfo.html) **object:** This object contains fundamental information about your application, such as its name, version, description, etc. It is private to the `App` class, but its properties are accessible through multiple GET methods.
+  * **An** [**`ILogger`**](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ILogger.ILogger.html) **object:** This object is the interface for logging. The `getLogger()` method allows access to this object from within a child class.
+  * **An** [**`IAppAccessors`**](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_IAppAccessors.IAppAccessors.html) **object:** This object contains all app accessors. This can be accessed via the `getAccessors()` method in the child class.
 
-### Step 4: Implement the App Functionality
+{% hint style="info" %}
+Learn more about the module details from the [Rocket.Chat Apps Typescript Definition](https://rocketchat.github.io/Rocket.Chat.Apps-engine/index.html).
+{% endhint %}
+
+### Step 4: Implement the app functionality
 
 For this example, the app records "Hello, World!" in the Rocket.Chat administration interface.&#x20;
 
 To log data, you must first have access to the logger, that is, an object of type `ILogger`. The parent class logs data to the administration interface using an `ILogger` object. We only require access to this object. Since the logger object is private to the `App` class, the `this` keyword cannot be used to access it directly.
 
-To resolve this, use the `getLogger` method provided by the `App` class. You need to store the logger as a separate object and it can be reused whenever necessary.&#x20;
+To resolve this, use the `getLogger` method provided by the `App` class. You need to store the logger as a separate object that can be reused whenever necessary.&#x20;
 
 Modify the class in the `HelloWorldApp.ts` file as follows:
 
@@ -121,7 +125,7 @@ We have just stored the accessor for the log file in the `appLogger` variable. N
 this.appLogger.debug('Hello, World!')
 ```
 
-### Step 5: Deploy to the Server
+### Step 5: Deploy to the server
 
 In the command line, go to the `hello-world` app folder that was created in [#step-1-execute-the-create-command](creating-an-app.md#step-1-execute-the-create-command "mention"). To deploy the app, run:&#x20;
 
@@ -140,7 +144,7 @@ After executing this command, your application will be deployed to the server.
 Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.&#x20;
 {% endhint %}
 
-### Step 6: Test the App
+### Step 6: Test the app
 
 To test your app, you need a Rocket.Chat server running locally on your machine and the credentials of an administrator user.
 
@@ -167,3 +171,5 @@ Follow these steps to examine the logs:&#x20;
 6. The **App Info** page opens on the **Logs** tab. Scroll down until you see the `"constructor"` expandable section. Select it and you can see the message `"Hello, World!"` logged in the console.&#x20;
 
 Congratulations, you just created your first app —  a simple Hello World app!
+
+To learn how to add more functionalities to your app, proceed to the next section of this guide.

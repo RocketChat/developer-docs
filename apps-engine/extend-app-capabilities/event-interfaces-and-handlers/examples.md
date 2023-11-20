@@ -1,8 +1,6 @@
-# Examples
+# Event Interface Examples
 
-### Messaging Governance
-
-Now that we have learned about the event interfaces, let's go through some examples to implement the interfaces. On this page, we will follow three examples:
+Now that we have learned about the event interfaces, let's go through some examples to implement them. On this page, we will follow three examples:
 
 1. Messaging governance
 2. Notify messages
@@ -10,7 +8,7 @@ Now that we have learned about the event interfaces, let's go through some examp
 
 ## Messaging governance
 
-In this example, we will use the `IPreMessageSentPrevent` interface to control whether a certain message should be sent to a channel or not. We are using our [Hello World app](../getting-started/creating-an-app.md) to test this.
+In this example, we will use the `IPreMessageSentPrevent` interface to control whether a particular message should be sent to a channel. We are using our [Hello World app](../../getting-started/creating-an-app.md) to test this.
 
 1. Open your app folder in Visual Studio and select the main app file, in this case, `HelloWorldApp.ts`.
 2. To the `HelloWorldApp` class, add the `IPreMessageSentPrevent` interface as follows:
@@ -82,7 +80,7 @@ export class HelloWorldApp extends App implements IPreMessageSentPrevent {
 {% endcode %}
 
 9. Save the file and deploy your app.&#x20;
-10. If we send the `‘test’` message in a channel other than **general**, it should not be published (it will show as grayed out). If the message is something different it will get sent. As for the room **general**, all messages will be sent including `‘test’` as shown in the following screenshots:
+10. If we send the `‘test’` message in a channel other than **general**, it should not be published (it will appear grayed out). If the message is something different it will get sent. As for the room **general**, all messages will be sent including `‘test’` as shown in the following screenshots:
 
 <div align="left">
 
@@ -231,4 +229,6 @@ export class HelloWorldApp extends App implements IPreMessageSentPrevent, IPostM
 
 </div>
 
-With these examples, we have looked at the ways in which we can implement event interfaces to handle and react to certain events.
+Great! With these examples, you have learned how to implement event interfaces and react to certain events. You have made significant progress in expanding your app!
+
+In the upcoming sections, we will look at another way to extend your app's capabilities by creating interactive user experiences with the Apps-Engine UIKit.

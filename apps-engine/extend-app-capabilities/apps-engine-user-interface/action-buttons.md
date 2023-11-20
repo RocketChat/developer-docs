@@ -1,10 +1,10 @@
 # Action Buttons
 
-In the previous sections, we have learned about creating contextual bars and the list of building blocks available in the UIKit. Let's expand on this and see how to create interactive buttons and handle the interactions.
+In the previous sections, we have learned about creating contextual bars and the list of building blocks available in the UIKit. Let's add to this knowledge and see how to create interactive buttons and handle the interactions.
 
-Action buttons are UIKit elements that when registered, can be displayed and used in different contexts within the Rocket.Chat UI to trigger or initiate a set of actions. The [Action button context](https://rocketchat.github.io/Rocket.Chat.Apps-engine/enums/ui\_uiactionbuttoncontext.uiactionbuttoncontext.html#message\_action) for example is `MESSAGE_ACTION`, `ROOM_ACTION`, `MESSAGE_BOX_ACTION`, etc.
+Action buttons are UIKit elements that when registered, can be displayed and used in different contexts within the Rocket.Chat UI to trigger or initiate a set of actions. The [Action button context](https://rocketchat.github.io/Rocket.Chat.Apps-engine/enums/ui\_UIActionButtonContext.UIActionButtonContext.html) for example is `MESSAGE_ACTION`, `ROOM_ACTION`, `MESSAGE_BOX_ACTION`, etc.
 
-To demonstrate this, we are going to create an action button on a message context that will simply display a text to let us know that the interaction was received.
+To demonstrate this, we will create an action button on a message context that will simply display a text to let us know that the interaction was received.
 
 ## Register a button
 
@@ -38,10 +38,10 @@ Registering a button requires `ui.registerButton` permission. Add it to your app
 {% endcode %}
 
 {% hint style="info" %}
-For more information, see [Permission System](../../permission-system.md).
+For more information, see [App Permission System](../../app-permission-system.md).
 {% endhint %}
 
-You can deploy your app to test and see that the button gets added to the list of options against the context specified, in this case, a message.
+Deploy your app to test and you can see that the button gets added to the list of options against the context specified, in this case, a message.
 
 Click on the options icon across any message and you will see the action we just created as seen below:
 
@@ -49,7 +49,7 @@ Click on the options icon across any message and you will see the action we just
 
 ## Handle an interaction
 
-After registering the button, we can see the button but cannot take any actions with it. Now whenever the user clicks on the action button, we want the app to receive an interaction event.
+After registering the button, we can see the button but cannot take any actions with it. Now whenever the user clicks the action button, we want the app to receive an interaction event.
 
 Here is an example of how to handle it:
 
@@ -92,7 +92,7 @@ export class MyApp extends App implements IUIKitInteractionHandler {
 ```
 {% endcode %}
 
-Now deploy and test the app again. You will see that when you click the action button that we had registered, a modal named `Interaction received` opens with the message `We received your interaction, thanks!`. You can also view the `Logs` section of your app for details.
+Now deploy and test the app again. You will see that when you click the action button that we had registered, a modal named `Interaction received` opens with the message `We received your interaction, thanks!`. You can also view the **Logs** tab of your app for details.
 
 ## Choose when your button is displayed
 
@@ -136,7 +136,7 @@ For this example, let us add an `en.json` file with the content as follows:
 ```
 {% endcode %}
 
-This code will simply create a reference for the English language against the `labelI18n` value we specified when registering the button.
+This code will create a reference for the English language against the `labelI18n` value we specified when we registered the button in the [#register-a-button](action-buttons.md#register-a-button "mention")section previously.
 
 With these changes, deploy the app again and this time you will see something like the screenshot below when the button is clicked.
 

@@ -4,7 +4,7 @@ It's a common need to manage the internal state of your app. **Storing an app's 
 
 ### Persistence APIs (Recommended)
 
-The [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ipersistence.ipersistence.html) interface is provided to create or update records in the persistence storage. The [IPersistenceRead](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_ipersistenceread.ipersistenceread.html) interface is provided to read records. In the example below, you can see how to manage your app's internal state using persistence APIs.
+The [IPersistence](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_IPersistence.IPersistence.html) interface is provided to create or update records in the persistence storage. The [IPersistenceRead](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_IPersistenceRead.IPersistenceRead.html) interface is provided to read records. The example below shows how to manage your app's internal state using persistence APIs.
 
 Assuming that we're creating an app that records how many messages are sent on the server, we can write a `PostMessageSent` event handler as shown below:
 
@@ -31,7 +31,7 @@ public async executePostMessageSent(message: IMessage, read: IRead, http: IHttp,
 
 Here, the internal state is `count` but not the count variable whose data is stored in the memory. We use the temporary variable `count` to store the number of messages sent and retrieving from the persistence. Every time the handler `executePostMessageSent` is called, we increase the count by one and then store it back to the persistence storage.
 
-In this way, even in a cluster environment, your app inside each Rocket.Chat instance can share data from a single data source, the Rocket.Chat persistence storage and maintain data consistency.
+In this way, even in a cluster environment, your app in each Rocket.Chat instance can share data from a single data source, the Rocket.Chat persistence storage and maintain data consistency.
 
 [Check the full demo here for more details!](https://github.com/RocketChat/Apps.RocketChat.Tester/tree/recipes/managing-internal-state)
 

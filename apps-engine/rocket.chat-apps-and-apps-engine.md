@@ -7,10 +7,12 @@ Apps-Engine enables developers to build and run applications on Rocket.Chat's in
 ### Features of Apps-Engine
 
 * **Security -** Rocket.Chat complies with GDPR, HIPAA, FINRA, FedRAMP, and other regulations. Rocket.Chat is also verified as secure for use under the United States Department of Defense’s Platform One DevSecOps initiative. Since Rocket.Chat operates and manages Apps-Engine, it ensures data privacy, security, and ownership standards for the apps you create.
-* **Reporting infrastructure -** Apps-Engine has reporting tools that you can use to monitor the efficiency of your app and identify potential problems. For example, if there is a bug in your code, you can use the Apps-Engine logs to locate and resolve the issue.
+* **Reporting infrastructure -** Apps-Engine has reporting tools that you can use to monitor the efficiency of your app and identify potential problems. For example, if your code has a bug, you can use the Apps-Engine logs to locate and resolve the issue.
 * **Rocket.Chat servers to run the platform -** Since Apps-Engine uses the same infrastructure that Rocket.Chat is running on, the apps that you create can manage traffic effectively. Developers have access to the recent features and enhancements. In addition, the apps run in JavaScript runtime.
 * **Reduce launch time -** Using Apps-Engine, developers only need to write code. Deployment of code, configuration, or server administration is not required. The Apps-Engine repository and other functionalities reduce the time required for app development and testing, thereby accelerating the introduction of Minimum Viable Products (MVPs) and subsequent products.
 * **Native APIs -** Several APIs and services are included in Apps-Engine which you can use to add features to your apps.
+
+This guide helps you create Rocket.Chat apps using the various features of Apps-Engine. Here you will learn how to create a basic app and extend its function to include slash commands, HTTP requests, event handlers, and interactive UI elements. Furthermore, you can find information on your app configuration, data persistence, and other advanced features as well. Finally, you can submit your app to the Rocket.Chat Marketplace and publish it for other users, or keep the app private for your own workspace.
 
 ### Rocket.Chat Marketplace&#x20;
 

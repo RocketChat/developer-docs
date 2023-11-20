@@ -4,7 +4,7 @@ Now that we know how to create Rocket.Chat apps and extend their functionalities
 
 To add an app to a Rocket.Chat workspace, you must either download it from our [Marketplace](http://marketplace.rocket.chat) or manually [upload it to the server](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace). Once an app is introduced to Rocket.Chat, it goes through several phases.&#x20;
 
-Apart from the typical app development phases such as the design phase, QA phase, and the release phase, additional Rocket.Chat-specific phases include:
+Apart from the typical app development phases such as the design, QA, and release phases, additional Rocket.Chat-specific phases include:
 
 * App Logging
 * App Deployment
@@ -23,7 +23,7 @@ async initialize(configurationExtend: IConfigurationExtend, environmentRead: IEn
 ```
 {% endcode %}
 
-* **`extendConfiguration`**: This method is executed as part of the app's default initialization procedure. The configuration accessor enables the app to provide robust functionality such as **API Endpoints** and **Slash Commands** using the[ configuration accessor](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_iconfigurationextend.iconfigurationextend.html).
+* **`extendConfiguration`**: This method is executed as part of the app's default initialization procedure. The configuration accessor enables the app to provide robust functionality such as **API Endpoints** and **Slash Commands** using the[ configuration accessor](https://rocketchat.github.io/Rocket.Chat.Apps-engine/interfaces/accessors\_IConfigurationExtend.IConfigurationExtend.html).
 
 {% code overflow="wrap" %}
 ```typescript
@@ -31,7 +31,7 @@ async extendConfiguration(configuration: IConfigurationExtend, environment: IEnv
 ```
 {% endcode %}
 
-**`Enable`**: If the app parameters are configured correctly, the app will be enabled. This method is executed during the app's activation process. If it returns false, the Apps-Engine stops the enabling process and unloads the app's resources configured during initialization.
+**`Enable`**: The app will be enabled if the app parameters are configured correctly. This method is executed during the app's activation process. If it returns false, the Apps-Engine stops the enabling process and unloads the app's resources configured during initialization.
 
 * **`Auto_enabled`**: the app’s `onEnable()` function is called, returns true, and the app is enabled automatically (at system startup).&#x20;
 * **`Manually_enabled`**: the app’s `onEnable()` function is called, returns true, and the app is enabled by the user (such as installing a new app).&#x20;
@@ -76,7 +76,7 @@ async onSettingUpdated(setting: ISetting, configurationModify: IConfigurationMod
 ```
 {% endcode %}
 
-**`PreSettingUpdate`**: This is used to retrieve the before and after values of a modified parameter. Consider, for example, the JIRA app. If the user modifies the server URL, the app can attempt to connect to the new server to perform validations or seamlessly react to the change.&#x20;
+**`PreSettingUpdate`**: This retrieves a modified parameter's before and after values. For example, if the user modifies a server URL, the app can attempt to connect to the new server to perform validations or seamlessly react to the change.&#x20;
 
 {% code overflow="wrap" %}
 ```typescript
@@ -84,4 +84,4 @@ async onPreSettingUpdate(context: ISettingUpdateContext, configurationModify: IC
 ```
 {% endcode %}
 
-We have now taken a look at the various states of an app and the methods that represent them. With these methods, you can perform different actions for the states of the apps. In the next section, we will go through some of the app configuration settings when your app is ready to launch.
+We have now taken a look at the various states of an app and the methods that represent them. With these methods, you can perform different actions for the states of the apps.
