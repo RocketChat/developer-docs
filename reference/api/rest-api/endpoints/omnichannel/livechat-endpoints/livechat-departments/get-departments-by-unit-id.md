@@ -1,41 +1,32 @@
----
-description: Gives departments included in a specific unit id
----
-
-# Departments by Unit Id
+# Get Departments by Unit ID
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
+Gives departments included in a specific unit ID.
 
 {% hint style="warning" %}
 ![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-department-by-unit-id.md](../livechat-units/get-department-by-unit-id.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
-<table><thead><tr><th width="324">URL</th><th width="183.33333333333331">Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/departments.by-unit/:unitId</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
-
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/livechat/departments.by-unit/:unitId</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Path Variables
 
-| Argument | Example             | Required | Description |
-| -------- | ------------------- | -------- | ----------- |
-| `unitId` | `sriw2wmP2Zz2pPrre` | Required | Unit Id     |
+<table><thead><tr><th width="199.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>unitId</code><mark style="color:red;"><code>*</code></mark></td><td><code>sriw2wmP2Zz2pPrre</code></td><td>The unit ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000///api/v1/livechat/departments.by-unit/:unitId \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "departments": [
         {
@@ -46,7 +37,7 @@ curl --location --request GET 'http://localhost:3000///api/v1/livechat/departmen
             "showOnRegistration": false,
             "showOnOfflineForm": true,
             "requestTagBeforeClosingChat": false,
-            "email": "rogerio.saboia@rocket.chat",
+            "email": "roger.sab@test.comt",
             "maxNumberSimultaneousChat": "",
             "waitingQueueMessage": "TEST",
             "type": "d",
@@ -70,7 +61,7 @@ curl --location --request GET 'http://localhost:3000///api/v1/livechat/departmen
             "showOnRegistration": true,
             "showOnOfflineForm": true,
             "requestTagBeforeClosingChat": false,
-            "email": "maryna.vdovkina@rocket.chat",
+            "email": "maryna.vdov@test.com",
             "maxNumberSimultaneousChat": "",
             "waitingQueueMessage": "",
             "type": "d",
@@ -94,7 +85,7 @@ curl --location --request GET 'http://localhost:3000///api/v1/livechat/departmen
             "showOnRegistration": false,
             "showOnOfflineForm": false,
             "requestTagBeforeClosingChat": false,
-            "email": "karina.monarkh@rocket.chat",
+            "email": "karina.aes@hotmail.com",
             "chatClosingTags": [],
             "offlineMessageChannelName": "",
             "maxNumberSimultaneousChat": "",

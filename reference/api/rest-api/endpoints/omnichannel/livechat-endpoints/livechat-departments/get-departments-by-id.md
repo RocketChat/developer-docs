@@ -1,39 +1,36 @@
----
-description: Retrieves a list of departments by array of department ids
----
+# Get Departments by ID
 
-# Listing departments by ids
+Get a list of departments by department IDs.
 
-| URL                                    | Requires Auth | HTTP Method |
-| -------------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/department.listByIds` | `YES`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/department.listByIds</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+{% hint style="info" %}
+Permissions required:
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+* `view-livechat-departments`
+* `view-l-room`
+{% endhint %}
 
 ## Query Parameters
 
-| Argument | Example             | Required |               |
-| -------- | ------------------- | -------- | ------------- |
-| `ids`    | `4LCeYmCHHnQ3EDBgf` | Required | Department id |
-| `ids`    | `CAJioQNAvLnYWTy8i` | Required | Department id |
-| `ids`    | `mHcx4rbi7htAmCCR5` | Optional | Department id |
+<table><thead><tr><th width="209.33333333333331">Key</th><th width="243">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>ids</code><mark style="color:red;"><code>*</code></mark></td><td><code>4LCeYmCHHnQ3EDBgf</code></td><td>The department ID.</td></tr><tr><td><code>ids</code><mark style="color:red;"><code>*</code></mark></td><td><code>CAJioQNAvLnYWTy8i</code></td><td>The department ID.</td></tr><tr><td><code>ids</code></td><td><code>mHcx4rbi7htAmCCR5</code></td><td>The department ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-curl --location --request GET 'http://localhost:3000/api/v1/livechat/department.listByIds?ids=4LCeYmCHHnQ3EDBgf&ids=CAJioQNAvLnYWTy8i&ids=mHcx4rbi7htAmCCR5\
+{% code overflow="wrap" %}
+```powershell
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/department.listByIds?
+    ids=4LCeYmCHHnQ3EDBgf
+    &ids=CAJioQNAvLnYWTy8i
+    &ids=mHcx4rbi7htAmCCR5\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "departments": [
         {
