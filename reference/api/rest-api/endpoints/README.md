@@ -407,11 +407,11 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Business Hours
 
-| Url                                   | Short Description                                        | Details Page                                                                  |
-| ------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `api/v1/livechat/business-hour`       | Fetches the default business hours of a workspace        | [Link](omnichannel/livechat-endpoints/business-hours/business-hour-info-1.md) |
-| `api/v1/livechat/business-hours`      | Retrieves all the business hours attached to a workspace | [Link](omnichannel/livechat-endpoints/business-hours/business-hour-info.md)   |
-| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours              | [Link](omnichannel/livechat-endpoints/business-hours/business-hours-list.md)  |
+| Url                                   | Short Description                                        | Details Page                                                                       |
+| ------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `api/v1/livechat/business-hour`       | Fetches the default business hours of a workspace        | [Link](omnichannel/livechat-endpoints/business-hours/get-default-business-hour.md) |
+| `api/v1/livechat/business-hours`      | Retrieves all the business hours attached to a workspace | [Link](omnichannel/livechat-endpoints/business-hours/get-business-hours.md)        |
+| `api/v1/livechat/business-hours.list` | Retrieves a list of existing business hours              | [Link](omnichannel/livechat-endpoints/business-hours/business-hours-list.md)       |
 
 #### Livechat Dashboards
 

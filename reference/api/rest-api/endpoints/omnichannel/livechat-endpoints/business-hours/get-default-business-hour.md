@@ -1,33 +1,26 @@
-# Business Hour Info
+# Get Default Business Hour
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Fetches the default business hours of a workspace
+Fetches the default business hours of a workspace.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/business-hour</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 {% hint style="info" %}
-This requires the user making the call to have the `view-livechat-business-hours` permission
+Permission required: `view-livechat-business-hours`
 {% endhint %}
-
-<table><thead><tr><th width="352.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/business-hour</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
-
-## Headers
-
-| Argument       | Example                                    | Required | Description                                                    |
-| -------------- | ------------------------------------------ | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `xnqTv4GAcaCBW6H33`                        | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `VJsIfdGCNrzxOW1sHf3r_ebe6mVGKfmzcwaEPqEt` | Required | Your token (returned after you log in through the API)         |
 
 ## Example Call
 
-```bash
-
-
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hour\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-id'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
 ```json
 {
@@ -235,5 +228,5 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-ho
         "_updatedAt": "2023-01-02T18:30:31.632Z"
     },
     "success": true
-}s
+}
 ```

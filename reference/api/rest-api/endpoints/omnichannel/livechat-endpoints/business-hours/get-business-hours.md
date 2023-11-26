@@ -2,46 +2,49 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Retrieves all the business hours attached to a workspace
+Retrieves all the business hours attached to a workspace.
 
-<table><thead><tr><th width="352.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/business-hours</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/business-hours</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
-
-| Argument       | Example                                    | Required | Description                                                    |
-| -------------- | ------------------------------------------ | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `xnqTv4GAcaCBW6H33`                        | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `VJsIfdGCNrzxOW1sHf3r_ebe6mVGKfmzcwaEPqEt` | Required | Your token (returned after you log in through the API)         |
+{% hint style="info" %}
+Permission required: `view-livechat-business-hours`
+{% endhint %}
 
 ## Query Parameters
 
-<table><thead><tr><th width="125">Argument</th><th width="233">Example</th><th width="150">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>indian support time</code></td><td>Optional</td><td>name of the business hour</td></tr></tbody></table>
+This endpoint supports the optional [#pagination](../../../../#pagination "mention")query parameters. Additional optional parameters are as follows:
+
+<table><thead><tr><th width="168">Key</th><th width="280">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>indian support time</code></td><td>Name of the business hour.</td></tr></tbody></table>
 
 ## Example Call
 
 {% tabs %}
 {% tab title="General call" %}
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hours'\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-id'
 ```
+{% endcode %}
 {% endtab %}
 
-{% tab title="Call with name Parameter" %}
-```
+{% tab title="Call with name parameter" %}
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hours?name=indian support time ' \
 --header 'X-User-Id:  myauth-token' \
 --header 'X-Auth-Token: myuser-id'
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
-## Result
+## Example Response
 
 {% tabs %}
-{% tab title="General" %}
-```bash
+{% tab title="General Response" %}
+```json
 {
     "businessHours": [
         {
@@ -446,8 +449,8 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-ho
 ```
 {% endtab %}
 
-{% tab title="With name Parameter" %}
-```bash
+{% tab title="Response with name parameter" %}
+```json
 {
     "businessHours": [
         {

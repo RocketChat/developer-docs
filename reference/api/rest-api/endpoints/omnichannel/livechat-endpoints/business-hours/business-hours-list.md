@@ -7,27 +7,22 @@ description: Gives a list of existing business hours
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [business-hour-info.md](business-hour-info.md "mention") as from Rocket.Chat `5.0`
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-business-hours.md](get-business-hours.md "mention") from Rocket.Chat `5.0`
 {% endhint %}
 
-<table><thead><tr><th width="419.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/business-hours.list</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
-
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/business-hours.list</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/business-hours.list\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
 ```javascript
 {
