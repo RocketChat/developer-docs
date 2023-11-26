@@ -318,10 +318,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 | Url                           | Short Description                             | Details Page                                                                                    |
 | ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `livechat/custom.field`       | Sends a custom field                          | [Link](omnichannel/livechat-endpoints/custom-fields/send-a-livechat-custom-field.md)            |
+| `livechat/custom.field`       | Sends a custom field                          | [Link](omnichannel/livechat-endpoints/custom-fields/send-custom-field-value.md)                 |
 | `livechat/custom.fields`      | Sends an array of custom field                | [Link](omnichannel/livechat-endpoints/custom-fields/send-an-array-of-livechat-custom-fields.md) |
-| `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](omnichannel/livechat-endpoints/custom-fields/list-livechat-custom-fields.md)             |
-| `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](omnichannel/livechat-endpoints/custom-fields/get-info-about-a-custom-field.md)           |
+| `livechat/custom-fields`      | Retrieves a list of omnichannel custom fields | [Link](omnichannel/livechat-endpoints/custom-fields/get-livechat-custom-fields.md)              |
+| `livechat/custom-fields/:_id` | Retrieves info about a custom field           | [Link](omnichannel/livechat-endpoints/custom-fields/get-custom-field-information.md)            |
 
 #### Livechat Message
 
