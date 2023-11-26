@@ -368,9 +368,9 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Transfer
 
-| Url                              | Short Description                           | Details Page                                                                            |
-| -------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](omnichannel/livechat-endpoints/livechat-room/get-department-transfer-history.md) |
+| Url                              | Short Description                           | Details Page                                                              |
+| -------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------- |
+| `livechat/transfer.history/:rid` | Retrieves the conversation transfer history | [Link](omnichannel/livechat-endpoints/livechat-room/livechat-transfer.md) |
 
 #### Livechat Visitor
 
@@ -384,12 +384,12 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Agent Stats
 
-| Url                                                              | Short Description                                                               | Details Page                                                                          |
-| ---------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `api/v1/livechat/agents/:agentId/departments`                    | Returns all the departments associated with an agent                            | [Link](omnichannel/livechat-endpoints/agents/agents-departments.md)                   |
-| `api/v1/livechat/analytics/agents/average-service-time`          | Retrieves average service time per agent                                        | [Link](omnichannel/livechat-endpoints/agents/agents-average-service-time.md)          |
-| `api/v1/livechat/analytics/agents/total-service-time`            | Retrieves total service time sorted by agent                                    | [Link](omnichannel/livechat-endpoints/agents/agents-total-service-time.md)            |
-| `api/v1/livechat/analytics/agents/available-for-service-history` | Retrieves a list of agents and their available time for the provided time frame | [Link](omnichannel/livechat-endpoints/agents/agents-available-for-service-history.md) |
+| Url                                                              | Short Description                                                               | Details Page                                                                                 |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `api/v1/livechat/agents/:agentId/departments`                    | Returns all the departments associated with an agent                            | [Link](omnichannel/livechat-endpoints/agents/get-agent-departments.md)                       |
+| `api/v1/livechat/analytics/agents/average-service-time`          | Retrieves average service time per agent                                        | [Link](omnichannel/livechat-endpoints/agents/get-agent-average-service-time.md)              |
+| `api/v1/livechat/analytics/agents/total-service-time`            | Retrieves total service time sorted by agent                                    | [Link](omnichannel/livechat-endpoints/agents/get-agent-total-service-time.md)                |
+| `api/v1/livechat/analytics/agents/available-for-service-history` | Retrieves a list of agents and their available time for the provided time frame | [Link](omnichannel/livechat-endpoints/agents/get-history-of-agents-available-for-service.md) |
 
 #### Livechat Appearance
 

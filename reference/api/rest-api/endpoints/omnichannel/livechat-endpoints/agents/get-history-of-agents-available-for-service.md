@@ -1,64 +1,53 @@
----
-description: Return the list of agents and their available time for the provided time frame
----
-
-# Agents available for service history
+# Get History of Agents Available for Service
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-| URL                                                              | Requires Auth | HTTP Method |
-| ---------------------------------------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/analytics/agents/available-for-service-history` | `YES`         | `GET`       |
+Return the list of agents and their available time for the provided time frame.
 
-## Headers
+<table><thead><tr><th width="163">HTTP Method</th><th width="319">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/analytics/agents/available-for-service-history</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+{% hint style="info" %}
+Permission required: `view-livechat-manager`
+{% endhint %}
 
-## Parameters
+## Query Parameters
 
-| Argument     | Example                    | Required | Description                                                                                                                                        |
-| ------------ | -------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `start`      | `2020-09-09T00:11:22.345Z` | Required | start date                                                                                                                                         |
-| `end`        | `2020-09-10T23:59:22.345Z` | Required | end date                                                                                                                                           |
-| `fullReport` | `true`                     | Optional | If set to "true", then it will share the service history which will contain more granular data like about what time of the day agent was available |
+This endpoint supports the optional `offset` and `count` parameters from the [#pagination](../../../../#pagination "mention")query parameters. The other parameters are as follows:
 
-### Notes
-
-* \*\* The API will return a blank page if the correct headers are not sent
+<table><thead><tr><th width="208.33333333333331">Key</th><th width="221">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>start</code><mark style="color:red;"><code>*</code></mark></td><td><code>2020-09-09T00:11:22.345Z</code></td><td>start date</td></tr><tr><td><code>end</code><mark style="color:red;"><code>*</code></mark></td><td><code>2020-09-10T23:59:22.345Z</code></td><td>end date</td></tr><tr><td><code>fullReport</code></td><td><code>true</code></td><td>If set to <code>true</code>, it shares the service history which will contain more granular data such as the time of the day the agent was available.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/analytics/agents/available-for-service-history?start=2020-09-09T00:11:22.345Z&end=2020-09-10T23:59:22.345Z' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-Result without `fullReport` flag set to true. It will only return a high level consolidated data about total available time, per agent within the specified duration
+The response without the `fullReport` flag set to `false`. It only returns high-level consolidated data about the total available time for each agent within the specified duration.
 
-```javascript
+```json
 {
     "agents": [
         {
             "availableTimeInSeconds": 102117,
-            "username": "andres.mauricio"
+            "username": "kim.chaeyu"
         },
         {
             "availableTimeInSeconds": 280,
-            "username": "bruna.martins"
+            "username": "bruna.mar"
         },
         {
             "availableTimeInSeconds": 40242,
-            "username": "marina"
+            "username": "marina.dia"
         },
         {
             "availableTimeInSeconds": 1,
-            "username": "rogerio"
+            "username": "ro.kim"
         }
     ],
     "count": 4,
@@ -68,9 +57,9 @@ Result without `fullReport` flag set to true. It will only return a high level c
 }
 ```
 
-Result with `fullReport` flag set to true. Note: It will contain an extra property "serviceHistory".
+The response with the `fullReport` flag set to `true`. It contains an extra property `serviceHistory`.
 
-```javascript
+```json
 {
     "agents": [
         {
@@ -97,7 +86,7 @@ Result with `fullReport` flag set to true. Note: It will contain an extra proper
                 }
             ],
             "availableTimeInSeconds": 2115334,
-            "username": "murtaza98"
+            "username": "doe.john"
         },
         {
             "serviceHistory": [
@@ -127,7 +116,7 @@ Result with `fullReport` flag set to true. Note: It will contain an extra proper
                 }
             ],
             "availableTimeInSeconds": 7586,
-            "username": "john"
+            "username": "white.chris"
         },
         {
             "serviceHistory": [
@@ -137,14 +126,12 @@ Result with `fullReport` flag set to true. Note: It will contain an extra proper
                 }
             ],
             "availableTimeInSeconds": 1508,
-            "username": "max"
+            "username": "max.yui"
         }
     ],
-    "count": 6,
+    "count": 3,
     "offset": 0,
-    "total": 6,
+    "total": 3,
     "success": true
 }
 ```
-
-## Change Log

@@ -1,37 +1,30 @@
----
-description: Returns all the departments associated with an agent.
----
+# Get Agent Departments
 
-# Departments for an agent
+Returns the departments associated with an agent.
 
-| URL                                           | Requires Auth | HTTP Method |
-| --------------------------------------------- | ------------- | ----------- |
-| `api/v1/livechat/agents/:agentId/departments` | `YES`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="319">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/agents/:agentId/departments</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+{% hint style="info" %}
+Permission required: `view-l-room`
+{% endhint %}
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+## Path Variables
 
-## URL Parameters
-
-| Argument  | Example             | Required | Description |
-| --------- | ------------------- | -------- | ----------- |
-| `agentId` | `XycfA5CetCPuEjqxw` | Required | Agent ID    |
+<table><thead><tr><th width="207.33333333333331">Key</th><th width="242">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>agentId</code><mark style="color:red;"><code>*</code></mark></td><td><code>XycfA5CetCPuEjqxw</code></td><td>The agent ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/agents/:agentId/departments \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "departments": [
         {
@@ -42,7 +35,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/agents/:age
             "count": 0,
             "departmentEnabled": true,
             "order": 0,
-            "username": "faria.masood"
+            "username": "kim.baek"
         },
         {
             "_id": "4TnnwbRsBY2upkzjp",
@@ -52,7 +45,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/agents/:age
             "count": 0,
             "departmentEnabled": true,
             "order": 0,
-            "username": "faria.masood"
+            "username": "kim.baek"
         },
         {
             "_id": "wJTwJsAxRcZ8nc9sB",
@@ -62,7 +55,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/agents/:age
             "count": 0,
             "departmentEnabled": false,
             "order": 0,
-            "username": "faria.masood"
+            "username": "kim.baek"
         },
         {
             "_id": "ccjbvLEREZ6vwjBFk",
@@ -72,7 +65,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/agents/:age
             "count": 0,
             "departmentEnabled": false,
             "order": 0,
-            "username": "faria.masood"
+            "username": "kim.baek"
         }
     ],
     "success": true

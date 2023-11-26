@@ -1,3 +1,7 @@
+---
+description: Retrieve the conversation transfer history from one department to another.
+---
+
 # Get Department Transfer History
 
 Retrieve the department transfer history for a room.
