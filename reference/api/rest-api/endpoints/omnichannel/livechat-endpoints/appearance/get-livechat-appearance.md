@@ -1,24 +1,24 @@
----
-description: Get Livechat widget settings about appearance
----
-
 # Get Livechat Appearance
 
-| URL                           | Requires Auth | HTTP Method |
-| ----------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/appearance` | `yes`         | `GET`       |
+Get the settings about the widget appearance.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="304">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/appearance</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+{% hint style="info" %}
+Permission required: `view-livechat-manager`
+{% endhint %}
 
 ## Example Call
 
-```bash
+```powershell
 curl -L -X GET 'http://localhost:3000/api/v1/livechat/appearance' \
 -H 'x-auth-token: qlHA60g5JQjJJG7C_8MgXoFnOiRQ8X9TWVVq4AcQeFb' \
 -H 'x-user-id: rbAXPnMktTFbNpwtJ'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "appearance": [
         {

@@ -6,7 +6,7 @@ description: Retrieve the conversation transfer history from one department to a
 
 Retrieve the department transfer history for a room.
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="346">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/transfer.history/:rid</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="346">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/transfer.history/:rid</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 {% hint style="info" %}
 Permission required: `view-livechat-rooms`
@@ -18,7 +18,7 @@ Permission required: `view-livechat-rooms`
 
 ## Query Parameters
 
-This endpoint supports the optional [#pagination](../../../../#pagination "mention")query parameters.
+This endpoint supports the optional [#pagination](../../../#pagination "mention")query parameters.
 
 ## Example Call
 
