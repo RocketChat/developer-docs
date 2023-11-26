@@ -9,25 +9,23 @@
 * It requires the `request-pdf-transcript` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions). Omnichannel [managers](https://docs.rocket.chat/use-rocket.chat/omnichannel/managers) and [agents](https://docs.rocket.chat/use-rocket.chat/omnichannel/agents) have this permission by default.
 {% endhint %}
 
-<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>omnichannel/:rid/request-transcript</code></td><td><code>YES</code></td><td><code>POST</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/vi/omnichannel/:rid/request-transcript</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+## Path Variables
 
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
-
-## Path Parameters
-
-<table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>gLanBL8wSfXG7AqBo</code></td><td>Required</td><td>The <code>rid</code> of the Omnichannel room.</td></tr></tbody></table>
+<table><thead><tr><th width="175">Key</th><th width="275">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>gLanBL8wSfXG7AqBo</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request POST 'http://localhost:3000/api/v1/omnichannel/teSNo3QPv4ebudmab/request-transcript' \
 --header 'x-auth-token: fjiPBhtyFAn5JO3RDdDvKjkXToV2pd4_lb-nkdgJ_Q4' \
 --header 'x-user-id: rbAXPnMktTFbNpwtJ'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ### Success
 

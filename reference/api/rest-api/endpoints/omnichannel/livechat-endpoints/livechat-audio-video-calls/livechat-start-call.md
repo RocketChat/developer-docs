@@ -1,3 +1,7 @@
+---
+description: Starts a webrtc audio/video call.
+---
+
 # Start Call
 
 Start a WebRTC audio/video call in a room.

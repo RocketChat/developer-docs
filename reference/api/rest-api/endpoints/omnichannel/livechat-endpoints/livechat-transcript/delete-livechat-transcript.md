@@ -1,39 +1,32 @@
-# Delete Livechat Transcript Request
+# Delete Livechat Transcript
 
-This endpoint is used to cancel any transcript requests, meaning that the chat transcript won't be sent after the chat is closed. You can not [livechat-transcript-1.md](livechat-transcript-1.md "mention") twice at a time. You must delete the previous request with this endpoint before requesting again.
+This endpoint is used to cancel any transcript requests for an open room, meaning that the chat transcript won't be sent after the chat is closed. You can not [send-livechat-transcript.md](send-livechat-transcript.md "mention") twice at a time. You must delete the previous request with this endpoint before requesting again.
 
 {% hint style="info" %}
 * It requires the `send-omnichannel-chat-transcript` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
 {% endhint %}
 
-| URL                                | Requires Auth | HTTP Method |
-| ---------------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/transcript/:rid` | `YES`         | `DELETE`    |
+<table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>DELETE</code></td><td><code>/api/v1/livechat/transcript/:rid</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers <a href="#headers" id="headers"></a>
+## Path Variables
 
-| Argument       | Example        | Required | Description                |
-| -------------- | -------------- | -------- | -------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | The authenticated user ID. |
-| `X-Auth-Token` | `myauth-token` | Required | Auth token.                |
-
-## Path Parameters
-
-<table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>Required</td><td>The Id of the Live Chat room.</td></tr></tbody></table>
+<table><thead><tr><th width="152">Key</th><th width="261">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>tcbbSmWSLR5uo5PBW</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl -L -X DELETE 'http://localhost:3000/api/v1/livechat/transcript/WrosEi8fKFedLbQMe' \
 -H 'x-auth-token: 6gwMfYPDoQzMCAnwjP5iILveZINplU7V-1DYzkhhxsc' \
 -H 'x-user-id: rmbMnnpqkuxEbrajt'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
   "success": true
 }
@@ -45,7 +38,7 @@ Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: Occurs when the authenticated user doesn't have `send-omnichannel-chat-transcript` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-* **Transcript Not Requested:** Occurs when a there is no existing transcript request.
+* **Transcript Not Requested:** Occurs when there is no existing transcript request.
 
 {% tabs %}
 {% tab title="Authorization" %}

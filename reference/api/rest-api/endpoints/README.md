@@ -359,12 +359,12 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Transcript
 
-| Url                                   | Short Description                   | Details Page                                                                         |
-| ------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------ |
-| `livechat/transcript`                 | Send Livechat Transcript to Visitor | [Link](omnichannel/livechat-endpoints/livechat-transcript/livechat-transcript.md)    |
-| `/api/v1/livechat/transcript/:rid`    | Request Livechat transcript         | [Link](omnichannel/livechat-endpoints/livechat-transcript/livechat-transcript-1.md)  |
-| `/api/v1/livechat/transcript/:rid`    | Delete Livechat Transcript Request  | [Link](omnichannel/livechat-endpoints/livechat-transcript/livechat-transcript-2.md)  |
-| `omnichannel/:rid/request-transcript` | Request PDF Transcript              | [Link](omnichannel/livechat-endpoints/livechat-transcript/request-pdf-transcript.md) |
+| Url                                   | Short Description                   | Details Page                                                                              |
+| ------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
+| `livechat/transcript`                 | Send Livechat Transcript to Visitor | [Link](omnichannel/livechat-endpoints/livechat-transcript/request-livechat-transcript.md) |
+| `/api/v1/livechat/transcript/:rid`    | Request Livechat transcript         | [Link](omnichannel/livechat-endpoints/livechat-transcript/send-livechat-transcript.md)    |
+| `/api/v1/livechat/transcript/:rid`    | Delete Livechat Transcript Request  | [Link](omnichannel/livechat-endpoints/livechat-transcript/delete-livechat-transcript.md)  |
+| `omnichannel/:rid/request-transcript` | Request PDF Transcript              | [Link](omnichannel/livechat-endpoints/livechat-transcript/request-pdf-transcript.md)      |
 
 #### Livechat Transfer
 
