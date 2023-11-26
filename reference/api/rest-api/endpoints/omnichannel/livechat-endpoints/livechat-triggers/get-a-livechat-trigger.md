@@ -1,3 +1,7 @@
+---
+description: Get a Livechat Trigger by id.
+---
+
 # Get Livechat Trigger
 
 Get the details about a specific trigger.

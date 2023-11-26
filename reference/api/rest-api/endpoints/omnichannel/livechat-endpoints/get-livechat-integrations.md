@@ -1,24 +1,24 @@
----
-description: Retrieves a list of integration settings.
----
+# Get Livechat Integrations
 
-# Integrations
+Retrieves a list of integration settings.
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/integrations.settings` | `yes` | `GET` |
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/integrations.settings</code></td><td><a href="../../authentication-endpoints/">yes</a></td></tr></tbody></table>
+
+{% hint style="info" %}
+Permission required: `view-livechat-manager`
+{% endhint %}
 
 ## Example Call
 
-```bash
+```powershell
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      http://localhost:3000/api/v1/livechat/integrations.settings
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "settings": [
         {
@@ -49,6 +49,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 2.2.0 | Added |
-
+| ------- | ----------- |
+| 2.2.0   | Added       |

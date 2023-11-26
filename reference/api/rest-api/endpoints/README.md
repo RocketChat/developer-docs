@@ -463,15 +463,15 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Integrations
 
-| Url                                     | Short Description                        | Details Page                                                    |
-| --------------------------------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](omnichannel/livechat-endpoints/livechat-integrations.md) |
+| Url                                     | Short Description                        | Details Page                                                        |
+| --------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
+| `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](omnichannel/livechat-endpoints/get-livechat-integrations.md) |
 
 #### Livechat Queue
 
-| Url                     | Short Description          | Details Page                                             |
-| ----------------------- | -------------------------- | -------------------------------------------------------- |
-| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](omnichannel/livechat-endpoints/livechat-queue.md) |
+| Url                     | Short Description          | Details Page                                                 |
+| ----------------------- | -------------------------- | ------------------------------------------------------------ |
+| `api/v1/livechat/queue` | Retrieves the queued chats | [Link](omnichannel/livechat-endpoints/get-livechat-queue.md) |
 
 #### Livechat Rooms
 
@@ -493,7 +493,7 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 | Url                             | Short Description                  | Details Page                                                                              |
 | ------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------- |
 | `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-list-of-livechat-triggers.md) |
-| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-livechat-trigger.md)          |
+| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-a-livechat-trigger.md)        |
 
 #### Livechat Upload
 
