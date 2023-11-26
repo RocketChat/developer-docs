@@ -1,6 +1,6 @@
 # Delete Livechat Transcript
 
-This endpoint is used to cancel any transcript requests for an open room, meaning that the chat transcript won't be sent after the chat is closed. You can not [send-livechat-transcript.md](send-livechat-transcript.md "mention") twice at a time. You must delete the previous request with this endpoint before requesting again.
+This endpoint is used to cancel any transcript requests for an open room, meaning that the chat transcript won't be sent after the chat is closed. You can not [livechat-transcript-1.md](livechat-transcript-1.md "mention") twice at a time. You must delete the previous request with this endpoint before requesting again.
 
 {% hint style="info" %}
 * It requires the `send-omnichannel-chat-transcript` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).

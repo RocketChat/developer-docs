@@ -46,7 +46,7 @@ Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: Occurs when the authenticated user doesn't have `send-omnichannel-chat-transcript` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
-* **Transcript Requested:** Occurs when a transcript has been requested for this room. See [delete-livechat-transcript.md](delete-livechat-transcript.md "mention") and delete the current request before requesting the transcript again.
+* **Transcript Requested:** Occurs when a transcript has been requested for this room. See [livechat-transcript-2.md](livechat-transcript-2.md "mention") and delete the current request before requesting the transcript again.
 
 {% tabs %}
 {% tab title="Authorization" %}
