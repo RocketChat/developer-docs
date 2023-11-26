@@ -415,17 +415,17 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Dashboards
 
-| Url                                                                   | Short Description                                       | Details Page                                                                          |
-| --------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `api/v1/livechat/analytics/dashboards/conversation-totalizers`        | Retrieves conversation totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/get-conversation-metrics.md)         |
-| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](omnichannel/livechat-endpoints/dashboards/get-agent-service-time-metrics.md)   |
-| `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](omnichannel/livechat-endpoints/dashboards/get-chat-metrics.md)                 |
-| `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/get-chat-metrics-by-time.md)         |
-| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](omnichannel/livechat-endpoints/dashboards/get-chats-status.md)                 |
-| `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](omnichannel/livechat-endpoints/dashboards/get-chat-status-of-agents.md)        |
-| `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](omnichannel/livechat-endpoints/dashboards/get-status-of-agents.md)             |
-| `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](omnichannel/livechat-endpoints/dashboards/get-chats-status-for-departments.md) |
-| `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](omnichannel/livechat-endpoints/dashboards/get-chat-times.md)                   |
+| Url                                                                   | Short Description                                       | Details Page                                                                       |
+| --------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `api/v1/livechat/analytics/dashboards/conversation-totalizers`        | Retrieves conversation totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/conversation-totalizers.md)       |
+| `api/v1/livechat/analytics/dashboards/agents-productivity-totalizers` | Retrieves agent productivity totalizer for a department | [Link](omnichannel/livechat-endpoints/dashboards/agent-productivity-totalizers.md) |
+| `api/v1/livechat/analytics/dashboards/chats-totalizers`               | Retrieves chat totalizers for a department              | [Link](omnichannel/livechat-endpoints/dashboards/chat-totalizers.md)               |
+| `api/v1/livechat/analytics/dashboards/productivity-totalizers`        | Retrieves productivity totalizers for a department      | [Link](omnichannel/livechat-endpoints/dashboards/productivity-totalizers.md)       |
+| `api/v1/livechat/analytics/dashboards/charts/chats`                   | Retrieves chats chart for a department                  | [Link](omnichannel/livechat-endpoints/dashboards/chats-chart.md)                   |
+| `api/v1/livechat/analytics/dashboards/charts/chats-per-agent`         | Retrieves chats per agent for a department chart        | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-agent-chart.md)         |
+| `api/v1/livechat/analytics/dashboards/charts/agents-status`           | Retrieves agent's statuses chart                        | [Link](omnichannel/livechat-endpoints/dashboards/agents-statuses-chart.md)         |
+| `api/v1/livechat/analytics/dashboards/charts/chats-per-department`    | Retrieves chats per department chart                    | [Link](omnichannel/livechat-endpoints/dashboards/chats-per-department-chart.md)    |
+| `api/v1/livechat/analytics/dashboards/charts/timings`                 | Retrieves timing charts                                 | [Link](omnichannel/livechat-endpoints/dashboards/timings-charts.md)                |
 
 #### Livechat Departments
 
@@ -490,10 +490,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Triggers
 
-| Url                             | Short Description                  | Details Page                                                                       |
-| ------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------- |
-| `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](omnichannel/livechat-endpoints/livechat-triggers/list-livechat-triggers.md) |
-| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-a-livechat-trigger.md) |
+| Url                             | Short Description                  | Details Page                                                                              |
+| ------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| `api/v1/livechat/triggers`      | Lists all Livechat triggers        | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-list-of-livechat-triggers.md) |
+| `api/v1/livechat/triggers/:_id` | Retrieves a Livechat Trigger by id | [Link](omnichannel/livechat-endpoints/livechat-triggers/get-livechat-trigger.md)          |
 
 #### Livechat Upload
 

@@ -1,26 +1,26 @@
----
-description: Lists all Livechat triggers.
----
+# Get List of Livechat Triggers
 
-# List Livechat Triggers
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/triggers</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-&#x20;It supports the [#pagination](../../../../#pagination "mention") parameters.
+{% hint style="info" %}
+Permission required: `view-livechat-manager`
+{% endhint %}
 
-| URL                         | Requires Auth | HTTP Method |
-| --------------------------- | ------------- | ----------- |
-| `/api/v1/livechat/triggers` | `yes`         | `GET`       |
+## Query Parameters
+
+This supports the optional [#pagination](../../../../#pagination "mention") parameters.
 
 ## Example Call
 
-```bash
+```powershell
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      http://localhost:3000/api/v1/livechat/triggers
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "triggers": [
         {
@@ -59,5 +59,3 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 | Version | Description |
 | ------- | ----------- |
 | 2.2.0   | Added       |
-
-##
