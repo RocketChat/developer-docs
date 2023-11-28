@@ -2,27 +2,25 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-This resets all Priorities back to default.
+This endpoint resets all priorities back to default.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` permission.
 {% endhint %}
 
-<table><thead><tr><th width="371.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/priorities.reset</code></td><td><code>YES</code></td><td><code>POST</code></td></tr></tbody></table>
-
-## Headers
-
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated ouser ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="362">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>api/v1/livechat/priorities.reset</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 ## Example Call
 
+{% code overflow="wrap" %}
 ```powershell
 curl --location --request POST 'http://localhost:3000/api/v1/livechat/priorities.reset' \
 --header 'X-Auth-Token: sMmROZpdpCTbY43XwPT_bCsWJc-VW7v_e2urWhUM766' \
 --header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ### Success
 

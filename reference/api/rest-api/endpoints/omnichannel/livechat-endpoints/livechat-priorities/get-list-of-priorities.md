@@ -1,39 +1,30 @@
----
-description: Get a list of all priorities
----
-
-# Get Priorities
+# Get List of Priorities
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
-
-It supports the [#pagination](../../../../#pagination "mention") parameters.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` or `view-l-room permission`.
 {% endhint %}
 
-| URL                   | Requires Auth | HTTP Method |
-| --------------------- | ------------- | ----------- |
-| `livechat/priorities` | `YES`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/priorities</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-## Headers
+## Query Parameters
 
-| Argument       | Example        | Required | Description                                             |
-| -------------- | -------------- | -------- | ------------------------------------------------------- |
-| `X-User-Id`    | `myuser-id`    | Required | Your userId (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)  |
+This endpoint supports the optional [#pagination](../../../../#pagination "mention") parameters.
 
 ## Example Call
 
-```bash
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/priorities\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-id'
 ```
 
-## Result
+## Example Response
 
-```javascript
+### Success
+
+```json
 {
     "priorities": [
         {

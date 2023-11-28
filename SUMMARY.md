@@ -511,7 +511,7 @@
             * [List of Monitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/list-of-monitors.md)
             * [Get one Monitor](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/get-one-monitor.md)
           * [Livechat Priorities](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-priorities/README.md)
-            * [Get Priorities](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-priorities/get-priorities.md)
+            * [Get List of Priorities](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-priorities/get-list-of-priorities.md)
             * [Get a Priority](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-priorities/get-a-priority.md)
             * [Update Priority](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-priorities/update-priority.md)
             * [Reset Priorities](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-priorities/reset-priorities.md)

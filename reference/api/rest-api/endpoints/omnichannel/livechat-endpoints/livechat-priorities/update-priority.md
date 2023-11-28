@@ -2,28 +2,25 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Update an existing Priority.
+Update an existing priority.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` permission.
 {% endhint %}
 
-<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>livechat/priorities/:priorityId</code></td><td><code>YES</code></td><td><code>PUT</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="362">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>PUT</code></td><td><code>/api/v1/livechat/priorities/:priorityId</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-## Headers
+## Path Variables
 
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated ouser ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
+<table><thead><tr><th width="205">Key</th><th width="277">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>priorityId</code><mark style="color:red;"><code>*</code></mark></td><td><code>641daf3d7718f90c810429c8</code></td><td>The ID of the priority to update.</td></tr></tbody></table>
 
-## Path Parameters
+## Body Parameters
 
-<table><thead><tr><th width="152">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>priorityId</code></td><td><code>641daf3d7718f90c810429c8</code></td><td>Required</td><td>The Id of the Priority to update.</td></tr></tbody></table>
-
-## Payload
-
-<table><thead><tr><th width="216">Argument</th><th width="188">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>Very low</code></td><td>Optional</td><td>The name of the Priority.</td></tr></tbody></table>
+<table><thead><tr><th width="195">Key</th><th width="211">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>Very low</code></td><td>The name of the priority.</td></tr></tbody></table>
 
 ## Example Call
 
+{% code overflow="wrap" %}
 ```powershell
 curl --location --request PUT 'http://localhost:3000/api/v1/livechat/priorities/64007cc2fa0ed7dd905092e3' \
 --header 'X-Auth-Token: sMmROZpdpCTbY43XwPT_bCsWJc-VW7v_e2urWhUM766' \
@@ -33,8 +30,9 @@ curl --location --request PUT 'http://localhost:3000/api/v1/livechat/priorities/
     "name": "Very low"
 }'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ### Success
 

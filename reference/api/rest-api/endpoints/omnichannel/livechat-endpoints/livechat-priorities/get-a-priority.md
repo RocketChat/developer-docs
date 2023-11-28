@@ -1,43 +1,34 @@
----
-description: Get the details of a priority
----
-
 # Get a Priority
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
+Get the details of a specific priority.
 
 {% hint style="info" %}
 You are required to have the `manage-livechat-priorities` or `view-l-room permission`.
 {% endhint %}
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `livechat/priorities/:priorityId` | `YES`         | `GET`       |
-
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="163">HTTP Method</th><th width="362">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/priorities/:priorityId</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 ## Path Variables
 
-| Argument     | Example                    | Required | Description |
-| ------------ | -------------------------- | -------- | ----------- |
-| `priorityId` | `64007cc2fa0ed7dd905092e3` | Required | Priority ID |
+<table><thead><tr><th width="190.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>priorityId</code><mark style="color:red;"><code>*</code></mark></td><td><code>64007cc2fa0ed7dd905092e3</code></td><td>The priority ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location 'http://localhost:3000/api/v1/livechat/priorities/64007cc2fa0ed7dd905092e3' \
 --header 'X-Auth-Token: sMmROZpdpCTbY43XwPT_bCsWJc-VW7v_e2urWhUM766' \
 --header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+### Success
+
+```json
 {
     "_id": "64007cc2fa0ed7dd905092e3",
     "i18n": "Lowest",
