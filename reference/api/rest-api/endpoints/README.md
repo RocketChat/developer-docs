@@ -522,10 +522,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Monitors
 
-| Url                                  | Short Description | Details Page                                                              |
-| ------------------------------------ | ----------------- | ------------------------------------------------------------------------- |
-| `api/v1/livechat/monitors`           | List all monitors | [Link](omnichannel/livechat-endpoints/livechat-monitors/get-monitors.md)  |
-| `api/v1/livechat/monitors/:username` | Get a Monitor     | [Link](omnichannel/livechat-endpoints/livechat-monitors/get-a-monitor.md) |
+| Url                                  | Short Description | Details Page                                                                     |
+| ------------------------------------ | ----------------- | -------------------------------------------------------------------------------- |
+| `api/v1/livechat/monitors`           | List all monitors | [Link](omnichannel/livechat-endpoints/livechat-monitors/get-list-of-monitors.md) |
+| `api/v1/livechat/monitors/:username` | Get a Monitor     | [Link](omnichannel/livechat-endpoints/livechat-monitors/get-a-monitor.md)        |
 
 #### Livechat Priorities
 

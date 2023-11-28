@@ -7,7 +7,7 @@ description: Retrieves a list of monitors
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-monitors.md](get-monitors.md "mention") as from Rocket.Chat `5.0`
+<img src="../../../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="line"> This endpoint has been renamed to [get-list-of-monitors.md](get-list-of-monitors.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 | URL                             | Requires Auth | HTTP Method |

@@ -2,34 +2,31 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="404.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/monitors/:username</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
+Get details of a specific monitor.
 
-## Headers
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/monitors/:username</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+{% hint style="info" %}
+Permission required: `manage-livechat-monitors`
+{% endhint %}
 
-## Path Parameters
+## Path Variables
 
-| Argument   | Example   | Required | Description                           |
-| ---------- | --------- | -------- | ------------------------------------- |
-| `username` | `1-agent` | Required | The username of the person monitoring |
+<table><thead><tr><th width="216.33333333333331">Key</th><th width="220">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>username</code><mark style="color:red;"><code>*</code></mark></td><td><code>1-agent</code></td><td>The username of the person monitoring.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
-
-
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/monitors/1-agent' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "_id": "RSb7exHJsiKqwRjPF",
     "username": "1-agent",
@@ -43,7 +40,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/monitors/1-
     "name": "1-agent",
     "statusLivechat": "not-available",
     "livechat": {
-        "maxNumberSimultaneousChat": "-4"
+        "maxNumberSimultaneousChat": "4"
     },
     "success": true
 }

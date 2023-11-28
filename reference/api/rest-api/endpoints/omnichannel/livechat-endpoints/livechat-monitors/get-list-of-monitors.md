@@ -1,33 +1,30 @@
-# Get Monitors
-
-
+# Get List of Monitors
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Retrieves a list of monitors&#x20;
+Retrieves a list of monitors.
 
-<table><thead><tr><th width="290.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/monitors</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/monitors</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-## Headers
+{% hint style="info" %}
+Permission required: `manage-livechat-monitors`
+{% endhint %}
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+## Query Parameters
+
+This endpoint supports the optional [#pagination](../../../../#pagination "mention")query parameters.
 
 ## Example Call
 
-```bash
-
-
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/monitors' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "monitors": [
         {

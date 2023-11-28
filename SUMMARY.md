@@ -506,7 +506,7 @@
             * [Get List of Livechat Triggers](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-triggers/get-list-of-livechat-triggers.md)
             * [Get Livechat Trigger](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-triggers/get-a-livechat-trigger.md)
           * [Livechat Monitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/README.md)
-            * [Get Monitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/get-monitors.md)
+            * [Get List of Monitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/get-list-of-monitors.md)
             * [Get a Monitor](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/get-a-monitor.md)
             * [List of Monitors](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/list-of-monitors.md)
             * [Get one Monitor](reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-monitors/get-one-monitor.md)
