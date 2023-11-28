@@ -120,7 +120,7 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 ```
 {% endcode %}
 
-Now the button can only be seen in public and private channels and direct messages, by users that have the `create-d` permission and have both the `admin` and `moderator` roles.
+Now the button can only be seen in public and private channels and direct messages, by users that have the `create-d` permission and the `admin` role. The user must also be a `moderator` of the channel to see the action button for messages in that channel.&#x20;
 
 ## Add localization
 

@@ -1,29 +1,36 @@
 # App Internationalization
 
-One of the things you may have noticed when typing the slash command in the message composer box is that a weird description shows up. That's because we didn't create the localization file with proper entries for our slash command.&#x20;
+You can build your app in such a way that it can be adapted to different languages.
 
 Here's what you need to do:&#x20;
 
-* Create a folder named `i18n` at the root and create a `json` file with the abbreviation of the language. For example, `en.json`, `pt.json`.
-* You will be provided with all the keys of the app, and you just have to provide the corresponding text in the chosen language against each key. So in the UI, you can see the translated text.&#x20;
-* Once you have included English values for the i18n variables we specified on the slash command class, you can see it in the UI.&#x20;
-* For example, `submit.send` is a key for sending a message to the channel. This is how it will look like:&#x20;
+* Create a folder named `i18n` at the root and create `.json` files with the abbreviation of each language you want your app to support. For example, `en.json`, `pt.json`. You can call the same file to translate the content across several app interactions.
+* In the JSON files, provide the corresponding text in the chosen language against each key. This text is displayed on the UI.&#x20;
+* Define the keys that you want to create translations for. You can add these keys for functions such as slash commands, UIKit elements, or app settings.
+
+## Examples
+
+The following points illustrate some examples to show how you can use app internationalization for your apps:
+
+* While creating action buttons, in [#register-a-button](extend-app-capabilities/apps-engine-user-interface/action-buttons.md#register-a-button "mention"), we use the `labelI18n` parameter to name the action button with a key. Then in the [#add-localization](extend-app-capabilities/apps-engine-user-interface/action-buttons.md#add-localization "mention") section, we provide the value for this key which is displayed on the UI.
+* `submit.send` is a key to send a message to the channel with values as shown below:&#x20;
 
 {% code title="i18n/en.json" %}
 ```json
 English
 {
-    "Submit.send": "Send Message to Channel"
+    "submit.send": "Send Message to Channel"
 }
 ```
 {% endcode %}
 
 {% code title="i18n/pt.json" %}
 ```json
+Portuguese
 {
-    "Submit.send": "Enviar Mensagem para o Canal"
+    "submit.send": "Enviar Mensagem para o Canal"
 }
 ```
 {% endcode %}
 
-You need to create a separate `json` file for each language you want your app to support. These files should be organized under the `i18n` folder. You can call the same file to translate the content across several app interactions. Similarly, you can also define the values for other functions. For example, the `i18n` folder of the [Jitsi app](https://github.com/RocketChat/Apps.Jitsi/tree/master/i18n) contains the values for the supported languages.
+* The `i18n` folder of the [Jitsi app](https://github.com/RocketChat/Apps.Jitsi/tree/master/i18n) contains the keys and values for the supported languages.

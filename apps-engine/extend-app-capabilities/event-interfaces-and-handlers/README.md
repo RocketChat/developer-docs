@@ -1,6 +1,6 @@
 # Event Interfaces and Handlers
 
-An app can listen to certain events and react according to your requirements. You can implement an event interface to listen to an event and handle its payload. The Rocket.Chat Apps-Engine provides various event interfaces. Typically, each interface contains one method that will be called before or after a Rocket.Chat event. Here we will learn some concepts about event interfaces and handlers in Rocket.Chat.
+An app can listen to certain events and react according to your requirements. You can implement an event interface to listen to an event and handle its payload. The Rocket.Chat Apps-Engine provides various event interfaces. Typically, each interface contains methods that will be called before or after a Rocket.Chat event. Here we will learn some concepts about event interfaces and handlers in Rocket.Chat.
 
 ## Event interfaces
 
