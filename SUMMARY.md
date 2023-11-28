@@ -619,7 +619,6 @@
           * [Delete custom user status](reference/api/rest-api/endpoints/content-management/custom-user-status-endpoints/delete-custom-user-status.md)
           * [Update custom user status type](reference/api/rest-api/endpoints/content-management/custom-user-status-endpoints/update-custom-user-status-type.md)
       * [Statistics](reference/api/rest-api/endpoints/statistics/README.md)
-        * [Statistics list](reference/api/rest-api/endpoints/statistics/statistics-list.md)
         * [Stats Endpoints](reference/api/rest-api/endpoints/statistics/stats-endpoints/README.md)
           * [Get statistics](reference/api/rest-api/endpoints/statistics/stats-endpoints/get-statistics.md)
           * [Get statistics list](reference/api/rest-api/endpoints/statistics/stats-endpoints/get-statistics-list.md)
