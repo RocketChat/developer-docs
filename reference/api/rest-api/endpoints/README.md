@@ -452,13 +452,13 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Inquiries
 
-| Url                                | Short Description                        | Details Page                                                                           |
-| ---------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------- |
-| `api/v1/livechat/inquiries.list`   | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/get-inquiries-list.md)        |
-| `api/v1/livechat/inquiries.take`   | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry.md)              |
-| `api/v1/livechat/inquiries.queued` | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/list-queued-inquiries.md)     |
-| `api/v1/livechat/inquiries.getOne` | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/get-inquiry-by-room.md)       |
-| `api/v1/livechat/inquiry.setSLA`   | Set SLA to an inquiry.                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/set-sla-policy-to-inquiry.md) |
+| Url                                | Short Description                        | Details Page                                                                    |
+| ---------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------- |
+| `api/v1/livechat/inquiries.list`   | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-list.md)     |
+| `api/v1/livechat/inquiries.take`   | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry.md)       |
+| `api/v1/livechat/inquiries.queued` | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued.md)   |
+| `api/v1/livechat/inquiries.getOne` | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-get-one.md)    |
+| `api/v1/livechat/inquiry.setSLA`   | Set SLA to an inquiry.                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/set-sla-to-inquiry.md) |
 
 #### Livechat Integrations
 
@@ -496,9 +496,9 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Upload
 
-| Url                           | Short Description               | Details Page                                              |
-| ----------------------------- | ------------------------------- | --------------------------------------------------------- |
-| `api/v1/livechat/upload/:rid` | Uploads files on livechat room. | [Link](omnichannel/livechat-endpoints/livechat-upload.md) |
+| Url                           | Short Description               | Details Page                                                                 |
+| ----------------------------- | ------------------------------- | ---------------------------------------------------------------------------- |
+| `api/v1/livechat/upload/:rid` | Uploads files on livechat room. | [Link](omnichannel/livechat-endpoints/livechat-room/upload-files-to-room.md) |
 
 #### Livechat Users
 

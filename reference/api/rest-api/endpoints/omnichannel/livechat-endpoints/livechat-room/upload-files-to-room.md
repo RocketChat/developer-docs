@@ -1,60 +1,42 @@
----
-description: Uploads files on livechat room.
----
+# Upload Files to Room
 
-# Livechat Upload
+Upload files to a Livechat room.
 
-| URL                                      | Requires Auth           | HTTP Method |
-| ---------------------------------------- | ----------------------- | ----------- |
-| This occurs`api/v1/livechat/upload/:rid` | Yes with Visitors token | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/livechat/upload/:rid</code></td><td><code>yes</code> (with visitor token)</td></tr></tbody></table>
 
 ## Headers
 
-| Argument          | Example             | Required | Description           |
-| ----------------- | ------------------- | -------- | --------------------- |
-| `x-visitor-token` | `iNKE8a6k6cjyPyOyI` | Required | The visitor's `token` |
+<table><thead><tr><th>Key</th><th width="238.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>x-visitor-token</code><mark style="color:red;"><code>*</code></mark></td><td><code>iNKE8a6k6cjyPyOyI</code></td><td>The visitor token.</td></tr></tbody></table>
 
 ## Path Variables
 
-| Argument | Example             | Required | Description                |
-| -------- | ------------------- | -------- | -------------------------- |
-| `rid`    | `HkHAXmXTdvZigri2X` | Required | The Omnichannel room `_id` |
+<table><thead><tr><th width="182.33333333333331">Key</th><th width="263">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>HkHAXmXTdvZigri2X</code></td><td>The room ID.</td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument      | Example             | Required | Description             |
-| ------------- | ------------------- | -------- | ----------------------- |
-| `file`        | `image-file.jpg`    | Required | The file to be uploaded |
-| `description` | `image description` | Optional | File description        |
-
-## Example Payload
-
-```javascript
-{
-"file": "image-file.jpg",
-"descrption": "image file description"
-}
-```
+<table><thead><tr><th width="212.33333333333331">Key</th><th width="240">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>file</code><mark style="color:red;"><code>*</code></mark></td><td><code>image-file.jpg</code></td><td>The file to be uploaded.</td></tr><tr><td><code>description</code></td><td><code>image description</code></td><td>The file description.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request POST 'http://localhost:3000/api/v1/livechat/upload/HkHAXmXTdvZigri2X' \
 --header 'x-visitor-token: iNKE8a6k6cjyyyyyy' \
---form 'file=@"/home/rodriq/Desktop/cod.png"' \
---form 'description="image file description here"'
+    --form 'file=@"/home/rodriq/Desktop/cod.png"' \
+    --form 'description="image file description here"'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
-Returns a success true if the file was uploaded successfully.
+### Success
 
-```javascript
+```json
 {
     "_id": "CeswhhAKTQMsnEbc8",
     "rid": "cbjQCtywHbuTYzmLx",
     "msg": "",
-    "token": "932a1c3019aeeaa9b687bb04b979d3138458e3ab71308fac7d0e47821f76db44",
+    "token": "932a1c3019aeeaa9b687bb04b979d",
     "file": {
         "_id": "uredcLri4GdehDQnD",
         "name": "globe.png",
@@ -108,7 +90,7 @@ Returns a success true if the file was uploaded successfully.
 
 ### Errors
 
-Any of the following errors can occur upon the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **File type error**: Occurs when the file to be uploaded is of a type that has been blocked in the upload settings.
@@ -117,7 +99,7 @@ Any of the following errors can occur upon the endpoint.
 
 {% tabs %}
 {% tab title="Authorization" %}
-```javascript
+```json
 {
 "success": false,
     "error": "unauthorized"
@@ -126,7 +108,7 @@ Any of the following errors can occur upon the endpoint.
 {% endtab %}
 
 {% tab title="File Type" %}
-```javascript
+```json
 {
     "reason": "error-type-not-allowed",
     "success": false
@@ -135,7 +117,7 @@ Any of the following errors can occur upon the endpoint.
 {% endtab %}
 
 {% tab title="File Size" %}
-```javascript
+```json
 {
     "reason": "error-size-not-allowed",
     "success": false
@@ -144,7 +126,7 @@ Any of the following errors can occur upon the endpoint.
 {% endtab %}
 
 {% tab title="Invalid File" %}
-```javascript
+```json
 {
     "reason": "Invalid file",
     "success": false
