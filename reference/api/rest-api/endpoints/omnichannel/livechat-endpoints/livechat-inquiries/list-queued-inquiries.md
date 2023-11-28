@@ -1,31 +1,24 @@
----
-description: Lists queued inquiries
----
+# List Queued Inquiries
 
-# Inquiries Queued
+<table><thead><tr><th width="163">HTTP Method</th><th width="363">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/inquiries.queued</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/inquiries.queued` | `yes` | `GET` |
+## Query Parameters
 
-## Headers
+This endpoint supports the optional [#pagination](../../../../#pagination "mention")query parameters. Other optional parameters are as follows:
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `X-User-Id` | `myuser-name` | Required | Your username hash \(returned after you log in through the API\) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token \(returned after you log in through the API\) |
+<table><thead><tr><th width="197.33333333333331">Key</th><th width="239">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>department</code></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The department ID or name.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      http://localhost:3000/api/v1/livechat/inquiries.queued
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "inquiries": [
         {
@@ -51,7 +44,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
         {
             "_id": "g6FY2B8PNwneteRG9",
             "rid": "iZ7XDSgcjBgczqko9",
-            "name": "hk",
+            "name": "dk",
             "ts": "2021-07-22T14:28:07.350Z",
             "department": "CAJioQNAvLnYWTy8i",
             "message": "",
@@ -75,6 +68,3 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
     "success": true
 }
 ```
-
-
-

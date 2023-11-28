@@ -1,3 +1,7 @@
+---
+description: Retrieves a list of integration settings.
+---
+
 # Get Livechat Integrations
 
 Retrieves a list of integration settings.

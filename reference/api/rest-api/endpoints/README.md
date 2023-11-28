@@ -452,20 +452,19 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Inquiries
 
-| Url                                  | Short Description                        | Details Page                                                                    |
-| ------------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------- |
-| `api/v1/livechat/inquiries.list`     | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-list.md)     |
-| `api/v1/livechat/inquiries.take`     | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry.md)       |
-| `api/v1/livechat/inquiries.queued`   | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued.md)   |
-| `api/v1/livechat/inquiries.getOne`   | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-get-one.md)    |
-| `api/v1/livechat/inquiry.prioritize` | Sets the priority of an inquiry          | [Link](omnichannel/livechat-endpoints/livechat-inquiries/inquiry-prioritize.md) |
-| `api/v1/livechat/inquiry.setSLA`     | Set SLA to an inquiry.                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/set-sla-to-inquiry.md) |
+| Url                                | Short Description                        | Details Page                                                                           |
+| ---------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------- |
+| `api/v1/livechat/inquiries.list`   | Lists all of the open livechat inquiries | [Link](omnichannel/livechat-endpoints/livechat-inquiries/get-inquiries-list.md)        |
+| `api/v1/livechat/inquiries.take`   | Takes an open inquiry                    | [Link](omnichannel/livechat-endpoints/livechat-inquiries/take-inquiry.md)              |
+| `api/v1/livechat/inquiries.queued` | Lists queued inquiries                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/list-queued-inquiries.md)     |
+| `api/v1/livechat/inquiries.getOne` | Gets one inquiry by room id              | [Link](omnichannel/livechat-endpoints/livechat-inquiries/get-inquiry-by-room.md)       |
+| `api/v1/livechat/inquiry.setSLA`   | Set SLA to an inquiry.                   | [Link](omnichannel/livechat-endpoints/livechat-inquiries/set-sla-policy-to-inquiry.md) |
 
 #### Livechat Integrations
 
-| Url                                     | Short Description                        | Details Page                                                        |
-| --------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
-| `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](omnichannel/livechat-endpoints/get-livechat-integrations.md) |
+| Url                                     | Short Description                        | Details Page                                                    |
+| --------------------------------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| `api/v1/livechat/integrations.settings` | Retrieves a list of integration settings | [Link](omnichannel/livechat-endpoints/livechat-integrations.md) |
 
 #### Livechat Queue
 

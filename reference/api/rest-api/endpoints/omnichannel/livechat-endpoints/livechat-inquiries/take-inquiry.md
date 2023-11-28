@@ -1,58 +1,32 @@
----
-description: Takes an open inquiry.
----
-
 # Take Inquiry
 
-| URL | Requires Auth | HTTP Method |
-| :--- | :--- | :--- |
-| `/api/v1/livechat/inquiries.take` | `yes` | `POST` |
+Join an open inquiry.
 
-## Payload
+<table><thead><tr><th width="163">HTTP Method</th><th width="347">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/livechat/inquiries.take</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| Argument | Example | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `inquiryId` | `ByehQjC44FwMeiLbX` | Required | The inquiry's id |
-| `userId` | `ByehQjCfsd876sfd` | Optional | The user's \(agent\) id to take the inquiry. |
+## Body Parameters
+
+<table><thead><tr><th width="201">Key</th><th width="243">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>inquiryId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The inquiry ID.</td></tr><tr><td><code>userId</code></td><td><code>yuhehQjCfsd876sfd</code></td><td>The user's (agent) ID who is taking the inquiry. This is an optional parameter.</td></tr></tbody></table>
 
 {% hint style="info" %}
- If the user id is provided, the user must have the `view-l-room` permission.
+If the `userId` is provided, the user must have the `view-l-room` permission.
 {% endhint %}
 
 ## Example Call
 
-```bash
+```powershell
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
      http://localhost:3000/api/v1/livechat/inquiries.take \
-     -d '{ "inquiryId": "ByehQjC44FwMeiLbX" }'
+     -d '{ 
+          "inquiryId": "ByehQjC44FwMeiLbX"}'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
-    "inquiry": {
-        "_id": "wbKmn6pAZ8jyJuANG",
-        "rid": "S4wwL9WNY98uoHgJg",
-        "message": "test",
-        "name": "teste",
-        "ts": "2019-06-10T23:09:06.482Z",
-        "agents": [
-            "hjwGZafNqExtFNmN7",
-            "26KdXgrQXhddy2MfQ"
-        ],
-        "status": "open",
-        "v": {
-            "_id": "2iZSexGXjW7EJnRwM",
-            "username": "guest-3",
-            "token": "RtQzkfQYKG4WpNMEW",
-            "status": "online"
-        },
-        "t": "l",
-        "_updatedAt": "2019-06-10T23:09:07.480Z"
-    },
     "success": true
 }
 ```
@@ -60,6 +34,5 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ## Change Log
 
 | Version | Description |
-| :--- | :--- |
-| 1.2.0 | Added |
-
+| ------- | ----------- |
+| 1.2.0   | Added       |
