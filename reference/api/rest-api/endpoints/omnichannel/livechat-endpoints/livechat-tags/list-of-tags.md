@@ -7,7 +7,7 @@ description: Gives a list of tags
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-tags.md](get-tags.md "mention") as from Rocket.Chat `5.0`
+<img src="../../../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="line"> This endpoint has been renamed to [get-list-of-tags.md](get-list-of-tags.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 | URL                         | Requires Auth | HTTP Method |

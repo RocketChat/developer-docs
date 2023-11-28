@@ -1,28 +1,29 @@
-# Get Tags
+# Get List of Tags
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Get a list of all tags. It supports the [#pagination](../../../../#pagination "mention") parameters.
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/tags</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `api/v1/livechat/tags` | `YES`         | `GET`       |
+{% hint style="info" %}
+Permissions required:
 
-## Headers
+* `view-l-room`
+* `manage-livechat-tags`
+{% endhint %}
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+## Query Parameters
+
+This endpoint supports the optional [#pagination](../../../../#pagination "mention") parameters.
 
 ## Example Call
 
-<pre class="language-bash"><code class="lang-bash">curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags\
-<strong>--header 'X-Auth-Token: myauth-token' \
-</strong>--header 'X-User-Id: myuser-name'
-</code></pre>
+```powershell
+curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags\
+--header 'X-Auth-Token: myauth-token' \
+--header 'X-User-Id: myuser-name'
+```
 
-## Result
+## Example Response
 
 ```json
 {
@@ -68,5 +69,5 @@ Get a list of all tags. It supports the [#pagination](../../../../#pagination "m
     "offset": 0,
     "total": 4,
     "success": true
-}js
+}
 ```

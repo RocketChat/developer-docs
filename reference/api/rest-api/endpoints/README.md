@@ -538,10 +538,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 #### Livechat Tags
 
-| Url                    | Short Description        | Details Page                                                      |
-| ---------------------- | ------------------------ | ----------------------------------------------------------------- |
-| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](omnichannel/livechat-endpoints/livechat-tags/get-tags.md)  |
-| `livechat/tags/:tagId` | Get a tag.               | [Link](omnichannel/livechat-endpoints/livechat-tags/get-a-tag.md) |
+| Url                    | Short Description        | Details Page                                                             |
+| ---------------------- | ------------------------ | ------------------------------------------------------------------------ |
+| `api/v1/livechat/tags` | Retrieves a list of tags | [Link](omnichannel/livechat-endpoints/livechat-tags/get-list-of-tags.md) |
+| `livechat/tags/:tagId` | Get a tag.               | [Link](omnichannel/livechat-endpoints/livechat-tags/get-a-tag.md)        |
 
 #### Livechat Units
 

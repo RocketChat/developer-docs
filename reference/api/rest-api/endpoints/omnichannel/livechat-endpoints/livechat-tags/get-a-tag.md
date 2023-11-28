@@ -1,27 +1,21 @@
----
-description: Get the details of a tag
----
-
 # Get a Tag
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `livechat/tags/:tagId` | `YES`         | `GET`       |
+Get the details of a specific tag.
 
-## Headers
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/tags/:tagId</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+{% hint style="info" %}
+Permissions required:
 
-## Path Variable
+* `view-l-room`
+* `manage-livechat-tags`
+{% endhint %}
 
-| Argument | Example             | Required | Description |
-| -------- | ------------------- | -------- | ----------- |
-| `tagId`  | `pXkCRLGxD34y2FEZq` | Required | Tag ID      |
+## Path Variables
+
+<table><thead><tr><th width="214.33333333333331">Key</th><th width="245">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>tagId</code><mark style="color:red;"><code>*</code></mark></td><td><code>pXkCRLGxD34y2FEZq</code></td><td>The tag ID.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -31,9 +25,9 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags/:tagId
 --header 'X-User-Id: myuser-name'
 ```
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "_id": "nNJntq2n6GBdR8JC4",
     "name": "331",
@@ -43,7 +37,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/livechat/tags/:tagId
         "WRY3EFGAT9Xh5NFBv"
     ],
     "_updatedAt": "2022-11-28T07:17:31.973Z",
-    "description": "xfgh",
+    "description": "test",
     "success": true
 }
 ```

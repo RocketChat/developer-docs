@@ -7,7 +7,7 @@ description: Gives the details of a tag
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-tag.md](get-a-tag.md "mention") as from Rocket.Chat `5.0`
+<img src="../../../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="line"> This endpoint has been renamed to [get-a-tag.md](get-a-tag.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 | URL                    | Requires Auth | HTTP Method |
