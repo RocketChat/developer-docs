@@ -4,10 +4,10 @@ description: Gives the details of a unit
 
 # Get one Unit
 
-<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-a-unit.md](get-a-unit.md "mention") as from Rocket.Chat `5.0`
+<img src="../../../../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="line"> This endpoint has been renamed to [get-a-unit.md](../get-a-unit.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 | URL                            | Requires Auth | HTTP Method |

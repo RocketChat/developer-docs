@@ -1,29 +1,28 @@
-# Get Units
+# Get List of Units
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Gets the list of all Omnichannel units. This requires the `manage-livechat-units` permission.
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/units</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-It supports the [#pagination](../../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../../#query-and-fields "mention") parameters.
+{% hint style="info" %}
+Permission required: `manage-livechat-units`
+{% endhint %}
 
-<table><thead><tr><th width="268.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/units</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
+## Query Parameters
 
-## Headers
+This endpoint supports the optional[#pagination](../../../../#pagination "mention") parameters. Other optional parameters are as follows:
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="174">Key</th><th width="247">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>text</code></td><td><code>sales</code></td><td>Enter some text to filter the results.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/units\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
 
-## Result
+## Example Response
 
 ```json
 {

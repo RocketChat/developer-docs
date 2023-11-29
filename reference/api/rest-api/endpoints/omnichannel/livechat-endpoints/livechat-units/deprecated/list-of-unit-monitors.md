@@ -4,10 +4,10 @@ description: Gives a list of unit monitors
 
 # List of unit monitors
 
-<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-list-of-unit-monitors.md](get-list-of-unit-monitors.md "mention") as from Rocket.Chat `5.0`
+<img src="../../../../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="line"> This endpoint has been renamed to [get-list-of-unit-monitors.md](../get-list-of-unit-monitors.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 <table><thead><tr><th width="200">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/unitMonitors.list</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>

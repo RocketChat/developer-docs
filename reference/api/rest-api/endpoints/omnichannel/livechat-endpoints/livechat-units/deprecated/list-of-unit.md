@@ -4,10 +4,10 @@ description: Gives a list of units
 
 # List of Unit
 
-<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-units.md](get-units.md "mention") as from Rocket.Chat `5.0`
+<img src="../../../../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="line"> This endpoint has been renamed to [get-list-of-units.md](../get-list-of-units.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 | URL                          | Requires Auth | HTTP Method |

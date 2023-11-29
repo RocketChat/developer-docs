@@ -2,32 +2,37 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="378.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/units/:unitId/departments/available</code></td><td><code>YES</code></td><td><code>GET</code></td></tr></tbody></table>
+Gets all the available departments.
 
-## Headers
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/units/:unitId/departments/available</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+{% hint style="info" %}
+Permission required: `manage-livechat-units`
+{% endhint %}
 
 ## Path Variables
 
-| Argument | Example             | Required | Description |
-| -------- | ------------------- | -------- | ----------- |
-| `unitId` | `sriw2wmP2Zz2pPrre` | Required | Unit Id     |
+<table><thead><tr><th width="211.33333333333331">Key</th><th width="253">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>unitId</code><mark style="color:red;"><code>*</code></mark></td><td><code>sriw2wmP2Zz2pPrre</code></td><td>The unit ID.</td></tr></tbody></table>
+
+## Query Parameters
+
+This endpoint supports the optional `count` and `offset` [#pagination](../../../../#pagination "mention") parameters. Additional optional parameters are as follows:
+
+<table><thead><tr><th width="220.33333333333331">Key</th><th width="195">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>text</code></td><td><code>test</code></td><td>The text with which you want to filter the result.</td></tr><tr><td><code>onlyMyDepartments</code></td><td><code>true</code></td><td>Displays the departments that you are part of.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl --location --request GET 'http://localhost:3000/api/v1/livechat/units/TGjc7wN84KxQup9cF/departments/available' \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
     "departments": [
         {

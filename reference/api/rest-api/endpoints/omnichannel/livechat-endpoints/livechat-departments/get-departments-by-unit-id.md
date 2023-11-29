@@ -5,7 +5,7 @@
 Gives departments included in a specific unit ID.
 
 {% hint style="warning" %}
-![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-department-by-unit-id.md](../livechat-units/get-department-by-unit-id.md "mention") as from Rocket.Chat `5.0`
+![](../../../../../../../.gitbook/assets/Deprecated.png) This endpoint has been renamed to [get-departments-by-unit-id.md](../livechat-units/get-departments-by-unit-id.md "mention") as from Rocket.Chat `5.0`
 {% endhint %}
 
 <table><thead><tr><th width="163">HTTP Method</th><th width="305">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>api/v1/livechat/departments.by-unit/:unitId</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
