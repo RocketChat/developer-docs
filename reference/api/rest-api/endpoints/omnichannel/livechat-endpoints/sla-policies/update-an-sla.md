@@ -2,28 +2,25 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Update and existing SLA.
+Update an existing SLA policy.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>PUT</code></td><td><code>/api/v1/livechat/sla/:slaId</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-You are required to have the `manage-livechat-sla` permission.
+Permission required: `manage-livechat-sla`
 {% endhint %}
-
-<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/sla/:slaId</code></td><td><code>YES</code></td><td><code>PUT</code></td></tr></tbody></table>
-
-## Headers
-
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 ## Path Parameters
 
-<table><thead><tr><th width="134">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>slaId</code></td><td><code>641daf3d7718f90c810429c8</code></td><td>Required</td><td>The Id of the SLA to update.</td></tr></tbody></table>
+<table><thead><tr><th width="152">Key</th><th width="307">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>slaId</code><mark style="color:red;"><code>*</code></mark></td><td><code>641daf3d7718f90c810429c8</code></td><td>The ID of the SLA to update.</td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-<table><thead><tr><th width="216">Argument</th><th width="188">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>Minimal updated</code></td><td>Optional</td><td>The name of the SLA policy.</td></tr><tr><td><code>description</code></td><td><code>sla description updated</code></td><td>Optional</td><td>The SLA description.</td></tr><tr><td><code>dueTimeInMinutes</code></td><td>7</td><td>Optional</td><td>The SLA due time.</td></tr></tbody></table>
+<table><thead><tr><th width="229">Key</th><th width="228">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>Minimal updated</code></td><td>The name of the SLA policy.</td></tr><tr><td><code>description</code></td><td><code>sla description updated</code></td><td>The SLA description.</td></tr><tr><td><code>dueTimeInMinutes</code><mark style="color:red;"><code>*</code></mark></td><td><code>7</code></td><td>The SLA due time.</td></tr></tbody></table>
 
 ## Example Call
 
+{% code overflow="wrap" %}
 ```powershell
 curl --location --request PUT 'http://localhost:3000/api/v1/livechat/sla/641daf3d7718f90c810429c8' \
 --header 'X-Auth-Token: q2zjkgQt_OmYaBY4nEp50-r7yUAqVIoAqgo0jjBIws5' \
@@ -35,8 +32,9 @@ curl --location --request PUT 'http://localhost:3000/api/v1/livechat/sla/641daf3
     "dueTimeInMinutes": 7
 }'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ### Success
 
@@ -59,7 +57,7 @@ Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: This occurs when the authenticated user doesn't have `manage-livechat-sla` permission.
-* **Not Found**: This error gets returned when no SLA is found with the Id provided.
+* **Not Found**: This error gets returned when no SLA is found with the ID provided.
 
 {% tabs %}
 {% tab title=" Authorization" %}

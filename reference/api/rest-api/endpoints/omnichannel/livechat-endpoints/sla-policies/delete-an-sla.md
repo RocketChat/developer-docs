@@ -2,31 +2,27 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Delete an SLA.
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>DELETE</code></td><td><code>/api/v1/livechat/sla/:slaId</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-You are required to have the `manage-livechat-sla` permission.
+Permission required: `manage-livechat-sla`
 {% endhint %}
-
-<table><thead><tr><th width="356.3333333333333">URL</th><th>Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>api/v1/livechat/sla/:slaId</code></td><td><code>YES</code></td><td><code>DELETE</code></td></tr></tbody></table>
-
-## Headers
-
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
 
 ## Path Parameters
 
-<table><thead><tr><th width="134">Argument</th><th width="277">Example</th><th width="149">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>slaId</code></td><td><code>641daf3d7718f90c810429c8</code></td><td>Required</td><td>The Id of the SLA to delete.</td></tr></tbody></table>
+<table><thead><tr><th width="152">Key</th><th width="307">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>slaId</code><mark style="color:red;"><code>*</code></mark></td><td><code>641daf3d7718f90c810429c8</code></td><td>The ID of the SLA to delete.</td></tr></tbody></table>
 
 ## Example Call
 
+{% code overflow="wrap" %}
 ```powershell
 curl --location --request DELETE 'http://localhost:3000/api/v1/livechat/sla/641daf3d7718f90c810429c8' \
 --header 'X-Auth-Token: q2zjkgQt_OmYaBY4nEp50-r7yUAqVIoAqgo0jjBIws5' \
 --header 'X-User-Id: rYhzFRd2QZjNwAAXX'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ### Success
 
@@ -42,7 +38,7 @@ Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: This occurs when the authenticated user doesn't have `manage-livechat-sla` permission.
-* **Not Found**: This error gets returned when no SLA is found with the Id provided.
+* **Not Found**: This error gets returned when no SLA is found with the ID provided.
 
 {% tabs %}
 {% tab title=" Authorization" %}

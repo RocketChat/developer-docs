@@ -2,23 +2,15 @@
 
 <figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Create a new SLA Policy.
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>api/v1/livechat/sla</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-You are required to have the `manage-livechat-sla` permission.
+Permission required: `manage-livechat-sla`
 {% endhint %}
 
-| URL                   | Requires Auth | HTTP Method |
-| --------------------- | ------------- | ----------- |
-| `api/v1/livechat/sla` | `YES`         | `POST`      |
+## Body Parameters
 
-## Headers
-
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
-
-## Payload
-
-<table><thead><tr><th width="250">Argument</th><th width="188">Example</th><th width="158">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>grand</code></td><td>Required</td><td>The name of the SLA policy.</td></tr><tr><td><code>description</code></td><td><code>sla description</code></td><td>Required</td><td>The SLA description.</td></tr><tr><td><code>dueTimeInMinutes</code></td><td>4</td><td>Required</td><td>The SLA due time.</td></tr></tbody></table>
+<table><thead><tr><th width="234">Key</th><th width="207">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>grand</code></td><td>The name of the SLA policy.</td></tr><tr><td><code>description</code><mark style="color:red;"><code>*</code></mark></td><td><code>sla description</code></td><td>The SLA description.</td></tr><tr><td><code>dueTimeInMinutes</code><mark style="color:red;"><code>*</code></mark></td><td><code>4</code></td><td>The SLA due time.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -34,7 +26,7 @@ curl --location 'http://localhost:3000/api/v1/livechat/sla' \
 }'
 ```
 
-## Example Result
+## Example Response
 
 ### Success
 
@@ -42,7 +34,7 @@ curl --location 'http://localhost:3000/api/v1/livechat/sla' \
 {
     "sla": {
         "name": "Optimum",
-        "description": "Ptimum SLA",
+        "description": "Optimum SLA",
         "dueTimeInMinutes": 4,
         "_id": "641db89a7718f90c810429cc"
     },
@@ -57,7 +49,7 @@ Any of the following errors can occur on the endpoint.
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: This occurs when the authenticated user doesn't have  `manage-livechat-sla` permission.
 * **Invalid Parameter**: Occurs when a required parameter is not passed.
-* **Duplicate**: When an SLA is created having the same name or dueTimeInMinutes as an existing SLA.
+* **Duplicate**: When an SLA is created having the same `name` or `dueTimeInMinutes` as an existing SLA.
 
 {% tabs %}
 {% tab title=" Authorization" %}
