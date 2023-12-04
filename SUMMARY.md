@@ -727,7 +727,7 @@
           * [Get Maximum Active User](reference/api/rest-api/endpoints/miscellaneous/licenses/get-maximum-active-user.md)
         * [WhatsApp Endpoints](reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/README.md)
           * [WhatsApp omnichannel integration API](reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md)
-          * [Template Whatsapp message](reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/template-message.md)
+          * [Send a Template WhatsApp Message](reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/send-a-template-whatsapp-message.md)
         * [Video Conference Endpoints](reference/api/rest-api/endpoints/miscellaneous/video-conference-endpoints/README.md)
           * [Update Jitsi Timeout](reference/api/rest-api/endpoints/miscellaneous/video-conference-endpoints/jitsi-update-timeout.md)
         * [Commands Endpoints](reference/api/rest-api/endpoints/miscellaneous/commands-endpoints/README.md)
