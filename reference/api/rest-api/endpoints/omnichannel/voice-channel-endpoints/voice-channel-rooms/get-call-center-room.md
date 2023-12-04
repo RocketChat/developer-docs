@@ -1,38 +1,25 @@
----
-description: View information for VoIP room by ID
----
-
 # Get Call Center Room
 
-| **URL**         | **Requires Authentication** | **HTTP Method** |
-| --------------- | --------------------------- | --------------- |
-| `/v1/voip/room` | Yes                         | GET             |
+View information for VoIP room by room ID.
 
-### Request Headers
+<table><thead><tr><th width="163">HTTP Method</th><th width="307">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/voip/room</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| **Header**   | **Example**    | **Description**                                                |
-| ------------ | -------------- | -------------------------------------------------------------- |
-| X-Auth-Token | `myauth-token` | Your token (returned after you log in through the API)         |
-| X-User-Id    | `myuser-name`  | Your username hash (returned after you log in through the API) |
+## Query Parameters
 
-### Query Parameters
+<table><thead><tr><th width="196.33333333333331">Key</th><th width="224">Example Value</th><th>Descripition</th></tr></thead><tbody><tr><td><code>token</code><mark style="color:red;"><code>*</code></mark></td><td><code>867ad6a09fc4af29f6f1f2a9cf1deaba</code></td><td>The visitor token.</td></tr><tr><td><code>agentId</code><mark style="color:red;"><code>*</code></mark></td><td><code>6vHSSqdBHdm2R4gfi</code></td><td>The agent ID.</td></tr><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>c9YW3rejo7HeL6ZDW</code></td><td>The room ID.</td></tr></tbody></table>
 
-| **Argument** | **Example** | **Required** | **Description**                                                                         |
-| ------------ | ----------- | ------------ | --------------------------------------------------------------------------------------- |
-| `token`      | `string`    | Yes          | The unique token generated for the Example: `867ad6a09fc4af29f6f1f2a9cf1deaba`          |
-| `agentId`    | `string`    | Yes          | The unique identifier for the agent Example:`6vHSSqdBHdm2R4gfi`                         |
-| `rid`        | `string`    | Yes          | <p>The unique identifier for the room.</p><p>Example:<code>c9YW3rejo7HeL6ZDW</code></p> |
+## Example Call
 
-### Example Call
-
+{% code overflow="wrap" %}
 ```json
 curl --location --request GET 'localhost:3000/api/v1/voip/room?token=867ad6a09fc4af29f6f1f2a9cf1deaba&agentId=6vHSSqdBHdm2R4gfi' \
 --header 'X-Auth-Token: xS8jnLS2YzVy-_w8T_S0WnQm5SnADjACa7gbXmcOcLY' \
 --header 'X-User-Id: 6vHSSqdBHdm2R4gfi' \
 --header 'Content-Type: application/json' 
 ```
+{% endcode %}
 
-### Example Response
+## Example Response
 
 ```json
 {
@@ -116,7 +103,7 @@ curl --location --request GET 'localhost:3000/api/v1/voip/room?token=867ad6a09fc
         },
         "servedBy": {
             "_id": "XycfA5CetCPuEjqxw",
-            "username": "faria.masood",
+            "username": "kim.jane",
             "ts": "2021-07-09T20:19:29.422Z"
         },
         "waitingResponse": true
@@ -125,7 +112,3 @@ curl --location --request GET 'localhost:3000/api/v1/voip/room?token=867ad6a09fc
     "success": true
 }
 ```
-
-### Error Response
-
-401 Unauthorized

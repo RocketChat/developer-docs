@@ -1,41 +1,29 @@
----
-description: Use this endpoint to check the VoIP management server connection status
----
-
 # Check Management Server Connection
 
-## Check Management Server Connection Status
+Check the VoIP management server connection status.
 
-| **URL**                                                                    | **Requires Authentication** | **HTTP Method** |
-| -------------------------------------------------------------------------- | --------------------------- | --------------- |
-| `api/v1/voip/managementServer/checkConnection?host&port&username&password` | Yes                         | GET             |
+<table><thead><tr><th width="163">HTTP Method</th><th width="334">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/voip/managementServer/checkConnection</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-### Request Headers
+{% hint style="info" %}
+Permission required: `manage-voip-contact-center-settings`
+{% endhint %}
 
-| **Header**   | **Example**    | **Description**                                                |
-| ------------ | -------------- | -------------------------------------------------------------- |
-| X-Auth-Token | `myauth-token` | Your token (returned after you log in through the API)         |
-| X-User-Id    | `myuser-name`  | Your username hash (returned after you log in through the API) |
+## Query Parameters
 
-### Query Parameters
+<table><thead><tr><th width="187.33333333333331">Key</th><th width="212">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>host</code><mark style="color:red;"><code>*</code></mark></td><td><code>localhost</code></td><td>The hostname of the management server.</td></tr><tr><td><code>port</code><mark style="color:red;"><code>*</code></mark></td><td><code>3000</code></td><td>The port number of the management server.</td></tr><tr><td><code>username</code><mark style="color:red;"><code>*</code></mark></td><td><code>user1</code></td><td>The user name of the administrator user.</td></tr><tr><td><code>password</code><mark style="color:red;"><code>*</code></mark></td><td><code>idosfiejifc354</code></td><td>The password of the administrator user.</td></tr></tbody></table>
 
-| **Argument** | **Data Type** | **Required** | **Description**                          |
-| ------------ | ------------- | ------------ | ---------------------------------------- |
-| `host`       | `string`      | Yes          | The hostname of the management server.   |
-| `port`       | `string`      | Yes          | The port number of the management server |
-| `username`   | `string`      | Yes          | The user name of the administrator user. |
-| `password`   | `string`      | Yes          | The password of the administrator user.  |
+## Example Call <a href="#example-call" id="example-call"></a>
 
-### Example Call <a href="#example-call" id="example-call"></a>
-
+{% code overflow="wrap" %}
 ```json
-curl --location --request GET 'localhost:3000/api/v1/voip/managementServer/checkConnection?host=localhost&port=3000&username=christysujitha&password=' \
+curl --location --request GET 'localhost:3000/api/v1/voip/managementServer/checkConnection?host=localhost&port=3000&username=christystha&password=' \
 --header 'X-Auth-Token: aEoKaT8qus3IZHlr_OlAzcsnz46SzZLJeqoRbbctcDQ' \
 --header 'X-User-Id: 6vHSSqdBHdm2R4gfi' \
 --data-raw ''
 ```
+{% endcode %}
 
-### Example Response <a href="#example-result" id="example-result"></a>
+## Example Response <a href="#example-result" id="example-result"></a>
 
 ```json
 {
@@ -43,7 +31,3 @@ curl --location --request GET 'localhost:3000/api/v1/voip/managementServer/check
 	"error?": "string"
 }
 ```
-
-### Error Response
-
-401 Unauthorized

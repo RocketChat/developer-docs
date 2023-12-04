@@ -1,42 +1,30 @@
----
-description: To retrieve a list of VoIP rooms
----
+# Get List of Call Center Rooms
 
-# Get Call Center Rooms
+<table><thead><tr><th width="163">HTTP Method</th><th width="334">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/voip/rooms</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-| **URL**          | **Requires Authentication** | **HTTP Method** |
-| ---------------- | --------------------------- | --------------- |
-| `/v1/voip/rooms` | Yes                         | GET             |
+{% hint style="info" %}
+Permissions required:
 
-### Request Headers
+* For an admin: `view-livechat-rooms`
+* For an agent: `view-l-room`
+{% endhint %}
 
-| **Header**   | **Example**    | **Description**                                                |
-| ------------ | -------------- | -------------------------------------------------------------- |
-| X-Auth-Token | `myauth-token` | Your token (returned after you log in through the API)         |
-| X-User-Id    | `myuser-name`  | Your username hash (returned after you log in through the API) |
+## Query Parameters
 
-### Payload
+This endpoint supports the optional [#pagination](../../../../#pagination "mention") and [#query-and-fields](../../../../#query-and-fields "mention") parameters. Additional optional parameters are as follows:
 
-| **Argument** | **Example**    | **Required** | **Description**                             |
-| ------------ | -------------- | ------------ | ------------------------------------------- |
-| `agents`     | `string[]`     | No           | A list of agent information                 |
-| `Open`       | `true \|false` | No           | The status of the room                      |
-| `createdAt`  | `string`       | No           | The date and time when the room was created |
-| `closedAt`   | `string`       | No           | The date and time when the room was closed  |
-| `tags`       | `string[]`     | No           | A list of tag information                   |
-| `queue`      | `string`       | No           | The ID assigned to the call (opaque ID)     |
-| `visitorId`  | `string`       | No           | The unique identifier for the visitor       |
+<table><thead><tr><th width="191.33333333333331">Key</th><th width="210">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>agents</code></td><td><code>string[]</code></td><td>List of agent information.</td></tr><tr><td><code>open</code></td><td><code>true</code></td><td>The status of the room. The value can be <code>true</code> or <code>false</code>.</td></tr><tr><td><code>createdAt</code></td><td><code>2021-07-09T20:20:58.755Z</code></td><td>The date and time when the room was created.</td></tr><tr><td><code>closedAt</code></td><td><code>2021-07-09T21:20:58.755Z</code></td><td>The date and time when the room was closed.</td></tr><tr><td><code>tags</code></td><td><code>string[]</code></td><td>List of tag information.</td></tr><tr><td><code>queue</code></td><td><code>string</code></td><td>The ID assigned to the call (opaque ID).</td></tr><tr><td><code>visitorId</code></td><td><code>47Dajwh9DjpnTAugW</code></td><td>The visitor ID.</td></tr><tr><td><code>direction</code></td><td><code>inbound</code></td><td>The direction of the call.</td></tr><tr><td><code>roomName</code></td><td><code>Missing key</code></td><td>The name of the room.</td></tr></tbody></table>
 
-### Example Call <a href="#example-call" id="example-call"></a>
+## Example Call <a href="#example-call" id="example-call"></a>
 
-```json
+```powershell
 curl -X GET\
      -H "Content-type:application/json" \
-     http://localhost:3000/api//v1/voip/rooms \
+     http://localhost:3000/api/v1/voip/rooms \
      -d '{"open": true }'
 ```
 
-### Example Result
+## Example Response
 
 ```json
 {
@@ -120,7 +108,7 @@ curl -X GET\
         },
         "servedBy": {
             "_id": "XycfA5CetCPuEjqxw",
-            "username": "faria.masood",
+            "username": "kim.jane",
             "ts": "2021-07-09T20:19:29.422Z"
         },
         "waitingResponse": true
@@ -128,7 +116,3 @@ curl -X GET\
     "success": true
 }
 ```
-
-### Error Response
-
-401 Unauthorized

@@ -1,39 +1,26 @@
----
-description: Retrieves the Queue Membership Information
----
-
 # Get Call Center Queue Membership Information
 
-| **URL**                                             | **Requires Authentication** | **HTTP Method** |
-| --------------------------------------------------- | --------------------------- | --------------- |
-| `api/v1/voip/queues.getQueuedCallsForThisExtension` | Yes                         | GET             |
+<table><thead><tr><th width="163">HTTP Method</th><th width="337">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/voip/queues.getQueuedCallsForThisExtension</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-### Request Headers
+{% hint style="info" %}
+Permission required: `inbound-voip-calls`
+{% endhint %}
 
-| **Header**   | **Example**    | **Description**                                                |
-| ------------ | -------------- | -------------------------------------------------------------- |
-| X-Auth-Token | `myauth-token` | Your token (returned after you log in through the API)         |
-| X-User-Id    | `myuser-name`  | Your username hash (returned after you log in through the API) |
+## Query Parameters
 
-### Payload
+<table><thead><tr><th width="205.33333333333331">Key</th><th width="231">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>extension</code><mark style="color:red;"><code>*</code></mark></td><td><code>12234</code></td><td>The phone extension for VoIP.</td></tr></tbody></table>
 
-| **Argument** | **Data Type** | **Required** | **Description**              |
-| ------------ | ------------- | ------------ | ---------------------------- |
-| `extension`  | `string`      | Required     | The phone extension for VoIP |
+## Example Call <a href="#example-call" id="example-call"></a>
 
-### Example Call <a href="#example-call" id="example-call"></a>
-
-```json
-curl --location --request GET 'localhost:3000/api/v1/voip/queues.getQueuedCallsForThisExtension' \
---header 'X-Auth-Token: xS8jnLS2YzVy-_w8T_S0WnQm5SnADjACa7gbXmcOcLY' \
---header 'X-User-Id: 6vHSSqdBHdm2R4gfi' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "extension": "12234"
-}'
+{% code overflow="wrap" %}
+```powershell
+curl --location 'http://localhost:3000/api/v1/voip/queues.getQueuedCallsForThisExtension?extension=12234' \
+--header 'X-Auth-Token: NcQtu58azANDJ1FuCmGvGVO' \
+--header 'X-User-Id: CkCPNcvsvCDfmWL'
 ```
+{% endcode %}
 
-### Example Response <a href="#example-result" id="example-result"></a>
+## Example Response <a href="#example-result" id="example-result"></a>
 
 ```json
 {
@@ -42,7 +29,3 @@ curl --location --request GET 'localhost:3000/api/v1/voip/queues.getQueuedCallsF
   "callWaitingCount": "2"
  }
 ```
-
-### Error Response
-
-401 Unauthorized

@@ -1,28 +1,18 @@
----
-description: Use this endpoint to retrieve the Queue Membership Subscription Information
----
-
 # Get Call Center Queue Membership Subscription Information
 
-| **URL**                                        | **Requires Authentication** | **HTTP Method** |
-| ---------------------------------------------- | --------------------------- | --------------- |
-| `api/v1/voip/queues.getMembershipSubscription` | Yes                         | GET             |
+<table><thead><tr><th width="163">HTTP Method</th><th width="337">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/voip/queues.getMembershipSubscription</code></td><td><a href="../../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
-### Request Headers
+{% hint style="info" %}
+Permission required: `inbound-voip-calls`
+{% endhint %}
 
-| **Header**   | **Example**    | **Description**                                                |
-| ------------ | -------------- | -------------------------------------------------------------- |
-| X-Auth-Token | `myauth-token` | Your token (returned after you log in through the API)         |
-| X-User-Id    | `myuser-name`  | Your username hash (returned after you log in through the API) |
+## Query Parameters
 
-### Payload
+<table><thead><tr><th width="205.33333333333331">Key</th><th width="231">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>extension</code><mark style="color:red;"><code>*</code></mark></td><td><code>1293</code></td><td>The phone extension for VoIP.</td></tr></tbody></table>
 
-| **Argument** | **Data Type** | **Required** | **Description**                                    |
-| ------------ | ------------- | ------------ | -------------------------------------------------- |
-| `extension`  | `string`      | Required     | The phone extension for VoIP enabled node or user. |
+## Example Call
 
-### Example Call
-
+{% code overflow="wrap" %}
 ```json
 curl --location --request GET 'localhost:3000/api/v1/voip/queues.getMembershipSubscription' \
 --header 'X-Auth-Token: xS8jnLS2YzVy-_w8T_S0WnQm5SnADjACa7gbXmcOcLY' \
@@ -32,8 +22,9 @@ curl --location --request GET 'localhost:3000/api/v1/voip/queues.getMembershipSu
     "extension": "1293"
 }'
 ```
+{% endcode %}
 
-### Example Response <a href="#example-result" id="example-result"></a>
+## Example Response <a href="#example-result" id="example-result"></a>
 
 ```json
 {
@@ -49,7 +40,3 @@ curl --location --request GET 'localhost:3000/api/v1/voip/queues.getMembershipSu
 	"extension": "1293"
 }
 ```
-
-### Error Response
-
-401 Unauthorized
