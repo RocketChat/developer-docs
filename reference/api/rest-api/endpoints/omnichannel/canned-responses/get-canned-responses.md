@@ -2,35 +2,27 @@
 
 <figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace that belong to the current user scope. It is helpful for [omnichannel agents](https://docs.rocket.chat/use-rocket.chat/omnichannel/agents) to see all private canned responses that belong to them, canned responses in their departments, and all public canned responses. It supports the [#pagination](../../../#pagination "mention") parameters.
+Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace that belong to the current user scope.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/canned-responses.get</code></td><td><a href="../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-It requires only the `view-canned-responses` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).&#x20;
+Permission required: `view-canned-responses`
 {% endhint %}
-
-| URL                            | Requires Auth | HTTP Method |
-| ------------------------------ | ------------- | ----------- |
-| `/api/v1/canned-responses.get` | `yes`         | `GET`       |
-
-## Headers
-
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
-
-
 
 ## Example Call
 
-```bash
+```powershell
 curl --location 'http://localhost:3000/api/v1/canned-responses.get' \
 --header 'x-auth-token: heWTP8sY_9EPrmVHclUKT31tttCSpbLzE4JrOYR3qpD' \
 --header 'x-user-id: GonjPyg3gB3Z9ur9s'
 ```
 
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "responses": [
         {
@@ -54,7 +46,7 @@ curl --location 'http://localhost:3000/api/v1/canned-responses.get' \
             "departmentId": "64181a0728384134ed600dcc",
             "createdBy": {
                 "_id": "rbAXPnMktTFbNpwtJ",
-                "username": "funke.olasupo"
+                "username": "kim.jane"
             },
             "_createdAt": "2023-05-26T01:22:41.104Z",
             "_updatedAt": "2023-05-26T01:22:41.104Z"
@@ -67,7 +59,7 @@ curl --location 'http://localhost:3000/api/v1/canned-responses.get' \
             "departmentId": "64181a0728384134ed600dcc",
             "createdBy": {
                 "_id": "rbAXPnMktTFbNpwtJ",
-                "username": "funke.olasupo"
+                "username": "doe.john"
             },
             "_createdAt": "2023-05-26T01:23:07.374Z",
             "_updatedAt": "2023-05-26T01:23:07.374Z"

@@ -4,32 +4,19 @@
 
 Remove a [canned response](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses).
 
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>DELETE</code></td><td><code>/api/v1/canned-responses</code></td><td><a href="../../authentication-endpoints/">yes</a></td></tr></tbody></table>
+
 {% hint style="info" %}
-It requires the `remove-canned-responses`  [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
+Permission required: `remove-canned-responses`
 {% endhint %}
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/canned-responses` | `yes`         | `DELETE`    |
+## Body Parameters
 
-## Payload
-
-| Argument | Example             | Required | Description               |
-| -------- | ------------------- | -------- | ------------------------- |
-| `_id`    | `EwmbZ9nLSx7kFamYB` | Required | The canned response's id. |
-
-## Example payload
-
-```json
-{
-    "_id": "646c7350a8c3a3ba32d0e2e0"
-}
-
-```
+<table><thead><tr><th width="212.33333333333331">Key</th><th width="238">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>_id</code><mark style="color:red;"><code>*</code></mark></td><td><code>EwmbZ9nLSx7kFamYB</code></td><td>The canned response's ID.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location --request DELETE 'http://localhost:3000/api/v1/canned-responses' \
 --header 'X-User-Id: 2tTEqR7ZNMJ4HGGNa' \
 --header 'X-Auth-Token: A6PF2Qa-wXunBXi3j77OBY-T-gl1BvJ11jYiSMt6Z_G' \
@@ -38,7 +25,7 @@ curl --location --request DELETE 'http://localhost:3000/api/v1/canned-responses'
 }'
 ```
 
-## Example Result
+## Example Response
 
 ### Success
 

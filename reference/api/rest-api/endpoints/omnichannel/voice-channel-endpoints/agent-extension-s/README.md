@@ -1,4 +1,4 @@
-# Agent extension(s)
+# Agent Extensions
 
 {% content-ref url="get-omnichannel-agent-extension.md" %}
 [get-omnichannel-agent-extension.md](get-omnichannel-agent-extension.md)

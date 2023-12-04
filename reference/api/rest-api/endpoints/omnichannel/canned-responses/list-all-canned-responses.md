@@ -2,35 +2,36 @@
 
 <figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace. It is helpful for [omnichannel managers](https://docs.rocket.chat/use-rocket.chat/omnichannel/managers) to get all canned responses in the workspace, including private and departmental canned responses. It supports the [#pagination](../../../#pagination "mention") parameters.
+Get a list of all [canned responses](https://docs.rocket.chat/use-rocket.chat/omnichannel/canned-responses) in the workspace. It is helpful for [omnichannel managers](https://docs.rocket.chat/use-rocket.chat/omnichannel/managers) to get all canned responses in the workspace, including private and departmental canned responses.&#x20;
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/canned-responses</code></td><td><a href="../../authentication-endpoints/">yes</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-It requires the `view-canned-responses` and `view-all-canned-responses` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
+Permissions required:
+
+* `view-canned-responses`
+* `view-all-canned-responses`
 {% endhint %}
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/canned-responses` | `yes`         | `GET`       |
+## Query Parameters
 
-## Headers
+This endpoint supports the optional [#pagination](../../../#pagination "mention") parameters and the [#query-and-fields](../../../#query-and-fields "mention") parameters. Additional optional parameters are as follows:
 
-<table><thead><tr><th width="179">Argument</th><th width="169">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated  user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr></tbody></table>
-
-
+<table><thead><tr><th width="175">Key</th><th width="211">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>shortcut</code><mark style="color:red;"><code>*</code></mark></td><td><code>card-declined</code></td><td>The shortcut to trigger the message snippet.</td></tr><tr><td><code>text</code><mark style="color:red;"><code>*</code></mark></td><td><code>reasons for your card malfunction</code></td><td>The message snippet.</td></tr><tr><td><code>scope</code><mark style="color:red;"><code>*</code></mark></td><td><code>global</code></td><td>The scope of the canned response. It can either be <code>global</code>, <code>user</code> or <code>department</code>.</td></tr><tr><td><code>tags</code></td><td><code>card</code></td><td>The tags for your canned response.</td></tr><tr><td><code>departmentId</code></td><td><code>64181a0728384134ed600dcc</code></td><td>The <code>departmentId</code> where the canned response belongs to. It is required if the <code>scope</code> is <code>department</code>.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location 'http://localhost:3000/api/v1/canned-responses' \
---header 'x-auth-token: Ja29cTtF-wkmq32z2zmy8defFiezECIBCBysrknSoYf' \
+--header 'x-auth-token: Ja29cTtF-wkmIBCBysrknSoYf' \
 --header 'x-user-id: rbAXPnMktTFbNpwtJ'
 ```
 
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "cannedResponses": [
         {
@@ -40,7 +41,7 @@ curl --location 'http://localhost:3000/api/v1/canned-responses' \
             "scope": "global",
             "createdBy": {
                 "_id": "rbAXPnMktTFbNpwtJ",
-                "username": "funke.olasupo"
+                "username": "kim.jane"
             },
             "_createdAt": "2023-05-23T08:08:28.241Z",
             "_updatedAt": "2023-05-23T08:08:28.241Z"
@@ -56,7 +57,7 @@ curl --location 'http://localhost:3000/api/v1/canned-responses' \
             ],
             "createdBy": {
                 "_id": "rbAXPnMktTFbNpwtJ",
-                "username": "funke.olasupo"
+                "username": "doe.john"
             },
             "_createdAt": "2023-05-23T07:44:25.912Z",
             "_updatedAt": "2023-05-23T07:44:25.912Z"
@@ -72,7 +73,7 @@ curl --location 'http://localhost:3000/api/v1/canned-responses' \
             ],
             "createdBy": {
                 "_id": "rbAXPnMktTFbNpwtJ",
-                "username": "funke.olasupo"
+                "username": "jane.mary"
             },
             "_createdAt": "2023-05-23T08:03:28.148Z",
             "_updatedAt": "2023-05-23T08:03:28.148Z"
