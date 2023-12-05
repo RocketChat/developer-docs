@@ -2,7 +2,7 @@
 
 <figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
-This endpoint allows an authenticated user{ "success": false, "error": "User does not have the permissions required for this action \[error-unauthorized]" }{ "success": false, "error": "User does not have the permissions required for this action \[error-unauthorized]" } to log out any user's session on the workspace. It provides the capability to terminate sessions of other users, ensuring workspace security and management.
+This endpoint allows an authorized user to log out other user's session on the workspace. It provides the capability to terminate sessions of other users, ensuring workspace security and management.
 
 {% hint style="info" %}
 * It requires the`logout-device-management` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
@@ -84,7 +84,7 @@ Any of the following errors can occur on the endpoint.
 {% endtab %}
 
 {% tab title="Session not found" %}
-```
+```json
 {
     "success": false,
     "error": "Session not found"
