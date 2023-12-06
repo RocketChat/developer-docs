@@ -1,34 +1,30 @@
 # Login with Twitter
 
-Authenticate with Twitter.
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/login</code></td><td><code>no</code></td></tr></tbody></table>
 
-| URL             | Requires Auth | HTTP Method |
-| --------------- | ------------- | ----------- |
-| `/api/v1/login` | `no`          | `POST`      |
+## Body Parameters
 
-## Payload
-
-| Argument            | Example   | Required | Description                                   |
-| ------------------- | --------- | -------- | --------------------------------------------- |
-| `serviceName`       | `twitter` | Required | The desired OAuth service name                |
-| `accessToken`       | `hash`    | Required | Access token provided by twitter oauth        |
-| `accessTokenSecret` | `hash`    | Required | Access token secret provided by twitter oauth |
-| `appSecret`         | `hash`    | Required | The secret provided by twitter for app        |
-| `appId`             | `hash`    | Required | The id provided by twitter for app            |
-| `expiresIn`         | `200`     | Required | Lifetime of token(in seconds)                 |
+<table><thead><tr><th width="245.33333333333331">Key</th><th width="178">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>serviceName</code><mark style="color:red;"><code>*</code></mark></td><td><code>twitter</code></td><td>The desired OAuth service name. In this case, <code>twitter</code>.</td></tr><tr><td><code>accessToken</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>Access token provided by Twitter OAuth.</td></tr><tr><td><code>accessTokenSecret</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>The access token secret provided by Twitter OAuth.</td></tr><tr><td><code>appSecret</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>The app secret provided by Twitter.</td></tr><tr><td><code>appId</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>The app ID provided by Twitter.</td></tr><tr><td><code>expiresIn</code><mark style="color:red;"><code>*</code></mark></td><td><code>200</code></td><td>Lifetime of token (in seconds).</td></tr></tbody></table>
 
 ## Example Call - As JSON
 
+{% code overflow="wrap" %}
 ```bash
 curl -H "Content-type:application/json" \
       http://localhost:3000/api/v1/login \
-      -d '{ "serviceName": "twitter", "accessToken": "hash", accessTokenSecret: "hash",
-      "appSecret": "hash", "appId": "hash", "expiresIn": 200}'
+      -d '{ 
+            "serviceName": "twitter", 
+            "accessToken": "hash", 
+            "accessTokenSecret": "hash",
+            "appSecret": "hash", 
+            "appId": "hash", 
+            "expiresIn": 200}'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
   "status": "success",
   "data": {

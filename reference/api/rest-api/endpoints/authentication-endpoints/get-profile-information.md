@@ -1,10 +1,8 @@
-# Me
+# Get Profile Information
 
 Quick information about the authenticated user.
 
-| URL          | Requires Auth | HTTP Method |
-| ------------ | ------------- | ----------- |
-| `/api/v1/me` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/me</code></td><td><a href="./"><code>yes</code></a></td></tr></tbody></table>
 
 ## Example Call
 
@@ -14,9 +12,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/me
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "_id": "aobEdbYhXfu5hkeqG",
   "name": "Example User",
@@ -79,9 +77,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 }
 ```
 
-**Note**
-
-* The `customFields` will not be returned if it does not exist on the server.
+{% hint style="info" %}
+The `customFields` parameter will not be returned if it does not exist on the server.
+{% endhint %}
 
 ## Change Log
 

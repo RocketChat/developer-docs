@@ -2,9 +2,7 @@
 
 Invalidate your REST API authentication token.
 
-| URL              | Requires Auth | HTTP Method |
-| ---------------- | ------------- | ----------- |
-| `/api/v1/logout` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/logout</code></td><td><a href="./"><code>yes</code></a></td></tr></tbody></table>
 
 ## Example Call
 
@@ -14,7 +12,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -X POST http://localhost:3000/api/v1/logout
 ```
 
-## Result
+## Example Response
 
 ```javascript
 {

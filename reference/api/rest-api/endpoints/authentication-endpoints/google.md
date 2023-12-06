@@ -1,33 +1,27 @@
 # Login with Google
 
-Authenticate with Google.
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/login</code></td><td><code>no</code></td></tr></tbody></table>
 
-| URL             | Requires Auth | HTTP Method |
-| --------------- | ------------- | ----------- |
-| `/api/v1/login` | `no`          | `POST`      |
+## Body Parameters
 
-## Payload
-
-| Argument      | Example   | Required | Description                           |
-| ------------- | --------- | -------- | ------------------------------------- |
-| `serviceName` | `google`  | Required | The desired OAuth service name        |
-| `accessToken` | `hash`    | Required | Access token provided by google oauth |
-| `idToken`     | `hash`    | Required | Id token provided by google auth      |
-| `expiresIn`   | `200`     | Required | Lifetime of token(in seconds)         |
-| `scope`       | `profile` | Optional | Google scopes for API                 |
+<table><thead><tr><th width="228.33333333333331">Key</th><th width="176">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>serviceName</code><mark style="color:red;"><code>*</code></mark></td><td><code>google</code></td><td>The desired OAuth service name. In this case, <code>google</code>.</td></tr><tr><td><code>accessToken</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>Access token provided by Google OAuth.</td></tr><tr><td><code>idToken</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>The ID token provided by Google OAuth.</td></tr><tr><td><code>expiresIn</code><mark style="color:red;"><code>*</code></mark></td><td><code>200</code></td><td>Lifetime of token (in seconds).</td></tr><tr><td><code>scope</code></td><td><code>profile</code></td><td>Google scopes for API.</td></tr></tbody></table>
 
 ## Example Call - As JSON
 
 ```bash
 curl -H "Content-type:application/json" \
       http://localhost:3000/api/v1/login \
-      -d '{ "serviceName": "google", "accessToken": "hash",
-      "idToken": "hash", "expiresIn": 200, "scope": "profile" }'
+      -d '{ 
+            "serviceName": "google", 
+            "accessToken": "hash",
+            "idToken": "hash", 
+            "expiresIn": 200, 
+            "scope": "profile" }'
 ```
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
   "status": "success",
   "data": {

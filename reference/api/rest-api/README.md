@@ -1,12 +1,12 @@
 # REST API
 
-Welcome to the Rocket.Chat REST API documentation! This guide provides all the information you need to understand and use the REST API endpoints in Rocket.Chat. It allows you to interact with the Rocket.Chat server using code, enabling you to automate tasks and integrate Rocket.Chat with other systems.  It also allows you to control and extend Rocket.Chat with ease.
+Welcome to the Rocket.Chat REST API documentation! This guide provides all the information you need to understand and use the REST API endpoints in Rocket.Chat. It allows you to interact with the Rocket.Chat server using code, enabling you to automate tasks and integrate Rocket.Chat with other systems. It also allows you to control and extend Rocket.Chat with ease.
 
 The API is designed to follow the principles of [**Representational State Transfer (REST)**](https://en.wikipedia.org/wiki/Representational\_state\_transfer). It uses standard HTTP methods like **GET**, **POST**, **PUT**, and **DELETE** to perform operations on different resources.
 
 ## Production Security Concerns
 
-Using HTTPS with a valid SSL certificate when accessing the production server is vital to guarantee a secure connection with the Rocket.Chat REST API. It encrypts the communication and protects sensitive information. During [authentication](endpoints/authentication-endpoints), always use the [login API](endpoints/authentication-endpoints/login.md) over HTTPS to keep usernames and passwords confidential during transmission.
+Using HTTPS with a valid SSL certificate when accessing the production server is vital to guarantee a secure connection with the Rocket.Chat REST API. It encrypts the communication and protects sensitive information. During [authentication](endpoints/authentication-endpoints/), always use the [login API](endpoints/authentication-endpoints/login-with-username-and-password.md) over HTTPS to keep usernames and passwords confidential during transmission.
 
 Additionally, implement a strategy to regularly expire and refresh authorization tokens, reducing the risk of unauthorized access. Finally, configure user permissions carefully, granting only the necessary access rights for specific API operations to prevent unauthorized actions or data leakage.
 
@@ -14,7 +14,7 @@ Additionally, implement a strategy to regularly expire and refresh authorization
 
 Rate limiting is a vital mechanism implemented in the Rocket.Chat API to manage and control the rate at which API requests can be made. It helps maintain server stability, prevent abuse, and ensure fair usage among different API consumers. The rate limiter is enabled for all endpoints by default.
 
-To enable Rate Limiter,&#x20;
+To enable Rate Limiter,
 
 * Navigate to **Administration > Workspace > Settings > Rate Limiter > API Rate Limiter**.
 * Update the settings according to your needs:
@@ -44,7 +44,7 @@ Specific endpoints, such as `/api/v1/users.updateOwnBasicInfo`, may trigger the 
 
 To utilize the Rocket.Chat REST API without signing in, you can use personal access tokens. However, the administrator must grant your user role the `create-personal-access-tokens` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
 
-To generate personal access tokens, see[ **Personal Access Tokens** user guide](https://docs.rocket.chat/use-rocket.chat/user-guides/user-panel/my-account#personal-access-tokens). It's important to note that the generated tokens are irrecoverable, so storing them safely is essential. If a token is lost or forgotten, it can be regenerated or deleted.&#x20;
+To generate personal access tokens, see[ **Personal Access Tokens** user guide](https://docs.rocket.chat/use-rocket.chat/user-guides/user-panel/my-account#personal-access-tokens). It's important to note that the generated tokens are irrecoverable, so storing them safely is essential. If a token is lost or forgotten, it can be regenerated or deleted.
 
 {% hint style="info" %}
 When making calls to the API, include the generated token in the `X-Auth-Token` header and your user ID in the `X-User-Id` header to authenticate the requests.
@@ -74,13 +74,13 @@ This feature provides flexibility in controlling the number of results, paginati
 
 ### Sample Use Case
 
-To retrieve a specific page of results with five items per page, use the `count=5` and `offset=10` parameters in the API request.&#x20;
+To retrieve a specific page of results with five items per page, use the `count=5` and `offset=10` parameters in the API request.
 
 ```
 http://localhost:3000/api/v1/channels.list?count=5&offset=10
 ```
 
-To sort the results by `name` in descending order and `status` in ascending order,  use the sort parameter with the appropriate JSON syntax.
+To sort the results by `name` in descending order and `status` in ascending order, use the sort parameter with the appropriate JSON syntax.
 
 ```
  http://localhost:3000/api/v1/users.list?sort={"name":-1,"status":1}
@@ -98,13 +98,13 @@ Starting from version `0.49`, some endpoints in the Rocket.Chat API support quer
 https://localhost:3000/api/v1/users.list?query={ "name": { "$regex": "g" } } 
 ```
 
-* "**fields**": This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users:&#x20;
+* "**fields**": This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users:
 
 ```
 http://localhost:3000/api/v1/users.list?fields={ "username": 1 }
 ```
 
-It's important to note that the query parameter follows the [EJSON](https://docs.meteor.com/api/ejson.html) structure, similar to JSON, but with some differences in handling date and binary fields.&#x20;
+It's important to note that the query parameter follows the [EJSON](https://docs.meteor.com/api/ejson.html) structure, similar to JSON, but with some differences in handling date and binary fields.
 
 For queries involving date fields, you can use the following examples:
 

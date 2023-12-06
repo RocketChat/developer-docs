@@ -1,32 +1,26 @@
 # Login with Facebook
 
-Authenticate with Facebook.
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/login</code></td><td><code>no</code></td></tr></tbody></table>
 
-| URL             | Requires Auth | HTTP Method |
-| --------------- | ------------- | ----------- |
-| `/api/v1/login` | `no`          | `POST`      |
+## Body Parameters
 
-## Payload
+<table><thead><tr><th width="230.33333333333331">Key</th><th width="178">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>serviceName</code><mark style="color:red;"><code>*</code></mark></td><td><code>facebook</code></td><td>The desired OAuth service name. In this case, <code>facebook</code>.</td></tr><tr><td><code>accessToken</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>Access token provided by Facebook oauth.</td></tr><tr><td><code>secret</code><mark style="color:red;"><code>*</code></mark></td><td><code>hash</code></td><td>The secret provided by Facebook.</td></tr><tr><td><code>expiresIn</code><mark style="color:red;"><code>*</code></mark></td><td><code>200</code></td><td>Lifetime of token (in seconds).</td></tr></tbody></table>
 
-| Argument      | Example    | Required | Description                             |
-| ------------- | ---------- | -------- | --------------------------------------- |
-| `serviceName` | `facebook` | Required | The desired OAuth service name          |
-| `accessToken` | `hash`     | Required | Access token provided by facebook oauth |
-| `secret`      | `hash`     | Required | The secret provided by facebook for app |
-| `expiresIn`   | `200`      | Required | Lifetime of token(in seconds)           |
-
-## Example Call - As JSON
+## Example Call
 
 ```bash
 curl -H "Content-type:application/json" \
       http://localhost:3000/api/v1/login \
-      -d '{ "serviceName": "facebook", "accessToken": "hash",
-      "secret": "hash", "expiresIn": 200 }'
+      -d '{ 
+            "serviceName": "facebook", 
+            "accessToken": "hash",
+            "secret": "hash", 
+            "expiresIn": 200 }'
 ```
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
   "status": "success",
   "data": {
