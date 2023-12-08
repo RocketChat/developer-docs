@@ -2,22 +2,22 @@
 
 ## Authentication
 
-| Url              | Short Description                                  | Details Page                                                         |
-| ---------------- | -------------------------------------------------- | -------------------------------------------------------------------- |
-| `/api/v1/login`  | Authenticate with username and password.           | [Link](authentication-endpoints/login-with-username-and-password.md) |
-| `/api/v1/login`  | Authenticate with facebook.                        | [Link](authentication-endpoints/facebook.md)                         |
-| `/api/v1/login`  | Authenticate with google.                          | [Link](authentication-endpoints/google.md)                           |
-| `/api/v1/login`  | Authenticate with twitter.                         | [Link](authentication-endpoints/twitter.md)                          |
-| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](authentication-endpoints/logout.md)                           |
-| `/api/v1/me`     | Displays information about the authenticated user. | [Link](authentication-endpoints/get-profile-information.md)          |
+| Url              | Short Description                                  | Details Page                                 |
+| ---------------- | -------------------------------------------------- | -------------------------------------------- |
+| `/api/v1/login`  | Authenticate with username and password.           | [Link](authentication-endpoints/login.md)    |
+| `/api/v1/login`  | Authenticate with facebook.                        | [Link](authentication-endpoints/facebook.md) |
+| `/api/v1/login`  | Authenticate with google.                          | [Link](authentication-endpoints/google.md)   |
+| `/api/v1/login`  | Authenticate with twitter.                         | [Link](authentication-endpoints/twitter.md)  |
+| `/api/v1/logout` | Invalidate your REST API authentication token.     | [Link](authentication-endpoints/logout.md)   |
+| `/api/v1/me`     | Displays information about the authenticated user. | [Link](authentication-endpoints/me.md)       |
 
 ## User Management
 
 ### Avatar
 
-| URL                 | Short Description | Details Page                       |
-| ------------------- | ----------------- | ---------------------------------- |
-| `/avatar/{subject}` | Fetch room avatar | [Link](user-management/avatars.md) |
+| URL                 | Short Description | Details Page                           |
+| ------------------- | ----------------- | -------------------------------------- |
+| `/avatar/{subject}` | Fetch room avatar | [Link](user-management/get-avatars.md) |
 
 ### Users
 

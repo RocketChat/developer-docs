@@ -6,7 +6,7 @@ The API is designed to follow the principles of [**Representational State Transf
 
 ## Production Security Concerns
 
-Using HTTPS with a valid SSL certificate when accessing the production server is vital to guarantee a secure connection with the Rocket.Chat REST API. It encrypts the communication and protects sensitive information. During [authentication](endpoints/authentication-endpoints/), always use the [login API](endpoints/authentication-endpoints/login-with-username-and-password.md) over HTTPS to keep usernames and passwords confidential during transmission.
+Using HTTPS with a valid SSL certificate when accessing the production server is vital to guarantee a secure connection with the Rocket.Chat REST API. It encrypts the communication and protects sensitive information. During [authentication](endpoints/authentication-endpoints/), always use the [login API](endpoints/authentication-endpoints/login.md) over HTTPS to keep usernames and passwords confidential during transmission.
 
 Additionally, implement a strategy to regularly expire and refresh authorization tokens, reducing the risk of unauthorized access. Finally, configure user permissions carefully, granting only the necessary access rights for specific API operations to prevent unauthorized actions or data leakage.
 

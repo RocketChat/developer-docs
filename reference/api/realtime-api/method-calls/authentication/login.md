@@ -127,7 +127,7 @@ This success response format remains the same irrespective of the login method u
 ```
 
 {% hint style="info" %}
-If the `auth-token` is expired, send another[ login request](../../../rest-api/endpoints/authentication-endpoints/login-with-username-and-password.md) to get a new `authToken` with a new expiration date.
+If the `auth-token` is expired, send another[ login request](../../../rest-api/endpoints/authentication-endpoints/login.md) to get a new `authToken` with a new expiration date.
 {% endhint %}
 
 ## Using Authentication providers
