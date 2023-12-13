@@ -1,16 +1,15 @@
 # Regenerate Personal Access Token
 
-Regenerate a user personal access token. Requires `create-personal-access-tokens` permission.
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.regeneratePersonalAccessToken</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                                           | Requires Auth | HTTP Method |
-| --------------------------------------------- | ------------- | ----------- |
-| `/api/v1/users.regeneratePersonalAccessToken` | `yes`         | `POST`      |
+{% hint style="info" %}
+* Permission required: `create-personal-access-tokens`
+* This endpoint required 2FA. Refer to [#call-an-endpoint-with-2fa](../../authentication-endpoints/rest-two-factor-authentication.md#call-an-endpoint-with-2fa "mention")
+{% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument    | Example           | Required | Description            |
-| ----------- | ----------------- | -------- | ---------------------- |
-| `tokenName` | `mypersonaltoken` | Required | The name of the token. |
+<table><thead><tr><th width="235">Key</th><th width="206.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>tokenName</code><mark style="color:red;"><code>*</code></mark></td><td><code>mypersonaltoken</code></td><td>The name of the token.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -19,12 +18,13 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/users.regeneratePersonalAccessToken \
-     -d '{ "tokenName": "mypersonaltoken" }'
+     -d '{ 
+          "tokenName": "mypersonaltoken" }'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "token": "sSfSoNW8Pb7S8BHEz3uJXYRM3__ML9GxPY1PxGzqAcn",
     "success": true
@@ -33,6 +33,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description |
-| ------- | ----------- |
-| 0.69.0  | Added       |
+<table><thead><tr><th width="326">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.69.0</td><td>Added</td></tr></tbody></table>

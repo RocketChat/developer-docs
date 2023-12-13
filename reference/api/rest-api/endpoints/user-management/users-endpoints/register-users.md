@@ -1,34 +1,26 @@
----
-description: Register a user
----
-
 # Register User
 
-| URL                      | Requires Auth | HTTP Method |
-| ------------------------ | ------------- | ----------- |
-| `/api/v1/users.register` | `no`          | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.register</code></td><td><code>no</code></td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument    | Example             | Required | Description                                                                                               |
-| ----------- | ------------------- | -------- | --------------------------------------------------------------------------------------------------------- |
-| `username`  | `rogersmith`        | Required | The username for the user.                                                                                |
-| `email`     | `roger@example.com` | Required | The email for the user.                                                                                   |
-| `pass`      | `passw0rd`          | Required | The password for the user.                                                                                |
-| `name`      | `Roger Smith`       | Required | The name of the user. Can be `""` if `Require Name For Signup` is disabled in `Accounts` > `Registration` |
-| `secretURL` | `Jjwjg6gouWLXhMGKW` | Optional | String appended to secret registration URL (if using).                                                    |
+<table><thead><tr><th width="177">Key</th><th width="248">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>username</code><mark style="color:red;"><code>*</code></mark></td><td><code>rogersmith</code></td><td>The username for the user.</td></tr><tr><td><code>email</code><mark style="color:red;"><code>*</code></mark></td><td><code>roger@example.com</code></td><td>The email for the user.</td></tr><tr><td><code>password</code><mark style="color:red;"><code>*</code></mark></td><td><code>passw0rd</code></td><td>The password for the user.</td></tr><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>Roger Smith</code></td><td>The name of the user. <br>The value can be an empty string  <code>""</code> if <code>Require Name For Signup</code> is disabled in <code>Accounts</code> > <code>Registration</code></td></tr><tr><td><code>secretURL</code></td><td><code>Jjwjg6gouWLXhMGKW</code></td><td>String appended to secret registration URL.</td></tr></tbody></table>
 
 ## Example Call
 
 ```bash
 curl -H "Content-type:application/json" \
      http://localhost:3000/api/v1/users.register \
-     -d '{ "username": "rogersmith", "email": "roger@example.com", "pass": "passw0rd", "name": "Roger Smith"}'
+     -d '{ 
+          "username": "rogersmith", 
+          "email": "roger@example.com", 
+          "password": "passw0rd", 
+          "name": "Roger Smith"}'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "user": {
     "_id": "nSYqWzZ4GsKTX4dyK",

@@ -1,19 +1,10 @@
----
-description: Lists users teams
----
+# List User Teams
 
-# List users teams
+<table><thead><tr><th width="166">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.listTeams</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                      | Requires Auth | HTTP Method |
-| ------------------------ | ------------- | ----------- |
-| `api/v1/users.listTeams` | `YES`         | `GET`       |
+## Query Parameters
 
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="166">Key</th><th width="269">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>userId</code><mark style="color:red;"><code>*</code></mark></td><td><code>JxemcN9PDCdfzJe</code></td><td>The user ID.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -28,11 +19,11 @@ curl --location --request POST 'http://localhost:3000/api/v1/users.listTeams\
 If the caller has permission to view all teams, there's no need to filter the teams.
 {% endhint %}
 
-## Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "teams": [
         {
@@ -61,7 +52,7 @@ The following error can occur upon the endpoint.
 
 {% tabs %}
 {% tab title=" Authorization" %}
-```javascript
+```json
 {
     "status": "error",
     "message": "You must be logged in to do this."

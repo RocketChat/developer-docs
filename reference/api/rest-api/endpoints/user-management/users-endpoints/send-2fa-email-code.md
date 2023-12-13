@@ -1,8 +1,10 @@
-# Send 2fa code
+# Send 2FA Email Code
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `/api/v1/users.2fa.sendEmailCode` | `yes`         | `POST`      |
+<table><thead><tr><th width="166">HTTP Method</th><th width="347">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.2fa.sendEmailCode</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+## Body Parameters
+
+<table><thead><tr><th width="166">Key</th><th width="261">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>email</code> or <code>username</code></td><td><code>test@email.com</code></td><td>Enter the email or username.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -14,11 +16,11 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
       -d "emailOrUsername=email@rocket.chat"
 ```
 
-## Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "success": true
 }
@@ -26,13 +28,13 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
 
 ### Errors <a href="#errors" id="errors"></a>
 
-The following error can occur upon the endpoint.‌
+The following error can occur.
 
 * **Valid Email or Username**: Requires selector param for the request to be made.
 
 {% tabs %}
 {% tab title="Valid Email or Username " %}
-```javascript
+```json
 {
     "success": false,
     "error": "emailOrUsername is required [error-parameter-required]",

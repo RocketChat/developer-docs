@@ -1,73 +1,20 @@
 # Update Own Basic Information
 
-| URL                                | Requires Auth | HTTP Method |
-| ---------------------------------- | ------------- | ----------- |
-| `/api/v1/users.updateOwnBasicInfo` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="263">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.updateOwnBasicInfo</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-{% hint style="warning" %}
-* For changing email or password, you must confirm it using [TOTP](../../authentication-endpoints/rest-two-factor-authentication.md). If you don't have [2FA enabled](../../authentication-endpoints/rest-two-factor-authentication.md#calling-an-endpoint-with-two-factor) (token code or email), TOTP will require the [current password method](https://developer.rocket.chat/reference/api/rest-api/endpoints/authentication-endpoints/rest-two-factor-authentication#request-new-headers-1).
-* If you add the `currentPassword` encrypted in SHA256 to the payload, the request wont require TOTP again.
-* Before saving custom fields,  you must define them in [workspace admin settings](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/account-settings#registration).&#x20;
+{% hint style="info" %}
+* To change your email or password, you must confirm it using [TOTP](../../authentication-endpoints/rest-two-factor-authentication.md). If you don't have [2FA enabled](../../authentication-endpoints/rest-two-factor-authentication.md#calling-an-endpoint-with-two-factor) (token code or email), TOTP will require the [current password method](https://developer.rocket.chat/reference/api/rest-api/endpoints/authentication-endpoints/rest-two-factor-authentication#request-new-headers-1).
+* If you add the `currentPassword` encrypted in SHA256 to the payload, the request won't require TOTP again.
+* Before saving custom fields, you must define them in [workspace admin settings](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/account-settings#registration).&#x20;
 {% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument                                                                                             | Example                                                                                                                                                                                                                                                                                                                                                                                                                          | Required                       | Description                                              |
-| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
-| `data`                                                                                               | <pre><code> "data": {
-        "email": "funke@test.com",
-        "newPassword": "va77n796vi7ca32",
-        "currentPassword": "aai87908856615052ee58e557a294589088d53bc90a228915e7d7687ea250f3b4b1581d6e53",    "nickname": "baby girl",
-        "bio": "Auspicious baby",
-        "username": "roxie",
-        "name": "Funke Olasupo",
-       "statusType":"offline",
-        "statusText":"On a vacation"
-    }
-</code></pre> | Required                       | An object of user data to be updated                     |
-| <p></p><pre class="language-postman_json"><code class="lang-postman_json">customFields
-</code></pre> | <p></p><pre class="language-postman_json"><code class="lang-postman_json">{ twitter: '@example' }
-</code></pre>                                                                                                                                                                                                                                                                                                                  | Optional, Default: `undefined` | Any custom fields the user should have on their account. |
-
-**Data Object**
-
-| Argument                            | Example                                                                 | Required | Description                                                                       |
-| ----------------------------------- | ----------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------- |
-| `email`                             | `example@example.com`                                                   | Optional | The email address for the user.                                                   |
-| `name`                              | `Example User`                                                          | Optional | The display name of the user.                                                     |
-| `username`                          | `example`                                                               | Optional | The username for the user.                                                        |
-| `currentPassword`                   | `5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5@w0rd` | Optional | The password for the user encrypted in SHA256.                                    |
-| `newPassword`                       | `passw0rd`                                                              | Optional | The new password for the user                                                     |
-| `bio`                               | <pre><code>Auspicious baby
-</code></pre>                                | Optional | The bio of the user                                                               |
-| <pre><code>statusType
-</code></pre> | `offline`                                                               | Optional | The status type of the user. It can be  `online` , `busy` ,  `away` or `offline`. |
-| <pre><code>statusText
-</code></pre> | `On a vacation`                                                         | Optional | The status text of the user.                                                      |
-| `nickname`                          | `cakebaby`                                                              | Optional | The nickname of the user                                                          |
-
-## Example Payload
-
-```json
-{
-    "data": {
-        "email": "funke@test.com",
-        "newPassword": "testbb",
-        "currentPassword": "aa856615052ee58e557a2945d53bc90a228915e7d7687ea250f3b4b1581d6e53",    "nickname": "baby girl",
-        "bio": "Auspicious baby",
-        "username": "roxie",
-        "name": "Funke Olasupo",
-        "statusType":"offline",
-        "statusText":"On a vacation"
-       
-    },
-    "customFields": {}
-}
-```
+<table><thead><tr><th width="214.33333333333331">Key</th><th width="237">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>data</code><mark style="color:red;"><code>*</code></mark></td><td><code>"data": {}</code></td><td>An object of user data to be updated with the following parameters.</td></tr><tr><td><code>email</code></td><td><code>example@example.com</code></td><td>The email address for the user.</td></tr><tr><td><code>name</code></td><td><code>Example User</code></td><td>The display name of the user.</td></tr><tr><td><code>username</code></td><td><code>example</code></td><td>The username for the user.</td></tr><tr><td><code>currentPassword</code></td><td><code>5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5@w0rd</code></td><td>The password for the user encrypted in SHA256.</td></tr><tr><td><code>newPassword</code></td><td><code>passw0rd</code></td><td>The new password for the user.</td></tr><tr><td><code>bio</code></td><td><code>Engineer</code></td><td>The bio of the user.</td></tr><tr><td><code>statusType</code></td><td><code>offline</code></td><td>The status type of the user. It can be  <code>online</code> , <code>busy</code> ,  <code>away</code> or <code>offline</code>.</td></tr><tr><td><code>statusText</code></td><td><code>On a vacation</code></td><td>The status text of the user.</td></tr><tr><td><code>nickname</code></td><td><code>cakebaby</code></td><td>The nickname of the user.</td></tr><tr><td><code>customFields</code></td><td><code>{ "twitter": "@example" }</code></td><td>Any custom fields the user should have on their account.</td></tr></tbody></table>
 
 ## Example Call   &#x20;
 
-```bash
+```powershell
  curl -L -X POST 'http://localhost:3000/api/v1/users.updateOwnBasicInfo' \
 -H 'x-auth-token: nwH90MZqosB_BxeXNvny8MCa_PqDEY18vO9LDCFpNuB' \
 -H 'x-user-id: rbAXPnMktTFbNpwtJ' \
@@ -88,9 +35,9 @@
 }'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "user": {
         "_id": "rbAXPnMktTFbNpwtJ",
@@ -154,20 +101,6 @@
             "GENERAL",
             "siyr2oWQJBjQjhLwr",
             "6GFJ3tbmHiyHbahmC",
-            "JKa7R9zu2DinBhBN9",
-            "bfeqKDqQRxYM2tGXz",
-            "6NS2ZhZXQFvmEfxMe",
-            "huQs44zbCmozm4XtW",
-            "M58HfkJqaKbD2piHh",
-            "RcS8FunJvXFJJEP4j",
-            "JbX6GtLKsaTWqd5st",
-            "wgd7CYLyiMWgWSY5e",
-            "G8KgwWSRLua9bZETT",
-            "thzWsW9EKns2QMxkc",
-            "wYmpBgzn6rj3ET8J2",
-            "WDuJLFkjwk6L7LdFC",
-            "KoZ9KAKnQo3Z5iC5p",
-            "64adb09baa5ad4273bfc0cbf",
             "64f0f82c2c26843a68c1f7ba"
         ],
         "roles": [
@@ -199,150 +132,6 @@
                 "modifiers": [],
                 "read": true
             },
-            "versionUpdate-6_0_1": {
-                "id": "versionUpdate-6_0_1",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.0.1"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.0.1",
-                "modifiers": [],
-                "read": true
-            },
-            "versionUpdate-6_1_0": {
-                "id": "versionUpdate-6_1_0",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.0"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.0",
-                "modifiers": []
-            },
-            "versionUpdate-6_1_1": {
-                "id": "versionUpdate-6_1_1",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.1"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.1",
-                "modifiers": []
-            },
-            "versionUpdate-6_1_3": {
-                "id": "versionUpdate-6_1_3",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.3"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.3",
-                "modifiers": []
-            },
-            "versionUpdate-6_1_4": {
-                "id": "versionUpdate-6_1_4",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.4"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.4",
-                "modifiers": []
-            },
-            "versionUpdate-6_1_5": {
-                "id": "versionUpdate-6_1_5",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.5"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.5",
-                "modifiers": []
-            },
-            "versionUpdate-6_1_6": {
-                "id": "versionUpdate-6_1_6",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.6"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.6",
-                "modifiers": []
-            },
-            "versionUpdate-6_1_7": {
-                "id": "versionUpdate-6_1_7",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.1.7"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.1.7",
-                "modifiers": []
-            },
-            "versionUpdate-6_2_2": {
-                "id": "versionUpdate-6_2_2",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.2.2"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.2.2",
-                "modifiers": []
-            },
-            "versionUpdate-6_2_3": {
-                "id": "versionUpdate-6_2_3",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.2.3"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.2.3",
-                "modifiers": []
-            },
-            "versionUpdate-6_2_4": {
-                "id": "versionUpdate-6_2_4",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.2.4"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.2.4",
-                "modifiers": []
-            },
-            "versionUpdate-6_2_5": {
-                "id": "versionUpdate-6_2_5",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.2.5"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.2.5",
-                "modifiers": []
-            },
-            "versionUpdate-6_2_6": {
-                "id": "versionUpdate-6_2_6",
-                "priority": 10,
-                "title": "Update_your_RocketChat",
-                "text": "New_version_available_(s)",
-                "textArguments": [
-                    "6.2.6"
-                ],
-                "link": "https://github.com/RocketChat/Rocket.Chat/releases/tag/6.2.6",
-                "modifiers": []
-            },
             "versionUpdate-6_2_8": {
                 "id": "versionUpdate-6_2_8",
                 "priority": 10,
@@ -364,8 +153,8 @@
         "livechat": {
             "maxNumberSimultaneousChat": ""
         },
-        "bio": "Auspicious baby",
-        "nickname": "baby girl"
+        "bio": "Engineer",
+        "nickname": ""
     },
     "success": true
 }
@@ -373,7 +162,4 @@
 
 ## Change Log
 
-| Version | Description                            |
-| ------- | -------------------------------------- |
-| 0.62.2  | Added as `user.updateOwnBasicInfo`     |
-| 6.4.0   | Add `bio` and `statusType` parameters. |
+<table><thead><tr><th width="350">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.62.2</td><td>Added as <code>user.updateOwnBasicInfo</code></td></tr><tr><td>6.4.0</td><td>Add <code>bio</code> and <code>statusType</code> parameters.</td></tr></tbody></table>

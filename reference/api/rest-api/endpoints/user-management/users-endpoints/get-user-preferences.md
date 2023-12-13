@@ -1,7 +1,3 @@
----
-description: Gets all preferences of the user.
----
-
 # Get User Preferences
 
 | URL                            | Requires Auth | HTTP Method |

@@ -1,34 +1,29 @@
----
-description: Send email to reset your password.
----
-
 # Forgot Password
 
-| URL                            | Requires Auth | HTTP Method |
-| ------------------------------ | ------------- | ----------- |
-| `/api/v1/users.forgotPassword` | `no`          | `POST`      |
+Send an email to reset your password.
 
-**Note**
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.forgotPassword</code></td><td><code>no</code></td></tr></tbody></table>
 
-* Please ensure that you have completed the configuration of the Email; otherwise, your users will not receive the mail normally. Accessible from Administration -> Email.
+{% hint style="info" %}
+Please ensure that you have completed the configuration of the Email; otherwise, your users will not receive the mail normally. Accessible from Administration -> Email.
+{% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument | Example            | Required | Description                           |
-| -------- | ------------------ | -------- | ------------------------------------- |
-| `email`  | `email@rocket.cat` | Required | The email to send password reset link |
+<table><thead><tr><th width="199.33333333333331">Key</th><th width="226">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>email</code><mark style="color:red;"><code>*</code></mark></td><td><code>email@rocket.cat</code></td><td>The email to send password reset link.</td></tr></tbody></table>
 
-## Example Call - As JSON
+## Example Call
 
 ```bash
 curl -H "Content-type:application/json" \
       http://localhost:3000/api/v1/users.forgotPassword \
-      -d '{ "email": "email@rocket.cat" }'
+      -d '{ 
+            "email": "email@rocket.cat" }'
 ```
 
-## Result
+## Example Response
 
-```javascript
+```json
 {
   "status": "success"
 }

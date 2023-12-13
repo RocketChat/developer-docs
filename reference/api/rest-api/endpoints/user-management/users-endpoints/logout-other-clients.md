@@ -1,19 +1,6 @@
----
-description: Logs out other clients.
----
-
 # Logout Other Clients
 
-| URL                               | Requires Auth | HTTP Method |
-| --------------------------------- | ------------- | ----------- |
-| `api/v1/users.logoutOtherClients` | `YES`         | `POST`      |
-
-## Headers
-
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
+<table><thead><tr><th width="166">HTTP Method</th><th width="350">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.logoutOtherClients</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Example Call
 
@@ -23,7 +10,7 @@ curl --location --request POST http://localhost:3000/api/v1/users.logoutOtherCli
 --header 'X-User-Id: myuser-name'
 ```
 
-## Result
+## Example Response
 
 ### Success
 
@@ -37,7 +24,7 @@ curl --location --request POST http://localhost:3000/api/v1/users.logoutOtherCli
 
 ### Errors
 
-The following error can occur upon the endpoint.
+The following error can occur.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 

@@ -1,10 +1,10 @@
 # Get Personal Access Tokens
 
-Gets the user’s personal access tokens. Requires `create-personal-access-tokens` permission.
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.getPersonalAccessTokens</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                                     | Requires Auth | HTTP Method |
-| --------------------------------------- | ------------- | ----------- |
-| `/api/v1/users.getPersonalAccessTokens` | `yes`         | `GET`       |
+{% hint style="info" %}
+Permission required: `create-personal-access-tokens`
+{% endhint %}
 
 ## Example Call
 
@@ -15,9 +15,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/users.getPersonalAccessTokens
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "tokens": [
         {

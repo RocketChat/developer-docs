@@ -1,14 +1,10 @@
----
-description: Gets a suggestion a new username to user.
----
-
 # Get Username Suggestion
 
-| URL                                   | Requires Auth | HTTP Method |
-| ------------------------------------- | ------------- | ----------- |
-| `/api/v1/users.getUsernameSuggestion` | `yes`         | `GET`       |
+Gets a suggestion for a new username for the user.
 
-## Other Users Example Call
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.getUsernameSuggestion</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -16,9 +12,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/users.getUsernameSuggestion
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "result": "rocket.cat",
   "success": true

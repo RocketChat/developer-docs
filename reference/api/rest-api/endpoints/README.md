@@ -26,17 +26,17 @@
 | `/api/v1/users.create`                        | Creates a new user                               | [Link](user-management/users-endpoints/create-user.md)                   |
 | `/api/v1/users.delete`                        | Deletes an existing user                         | [Link](user-management/users-endpoints/delete-user.md)                   |
 | `/api/v1/users.deleteOwnAccount`              | Deletes your own user                            | [Link](user-management/users-endpoints/delete-own-account.md)            |
-| `/api/v1/users.getAvatar`                     | Gets the URL for a user’s avatar                 | [Link](user-management/users-endpoints/get-avatar.md)                    |
+| `/api/v1/users.getAvatar`                     | Gets the URL for a user’s avatar                 | [Link](user-management/users-endpoints/get-user-avatar.md)               |
 | `/api/v1/users.setActiveStatus`               | Sets user's active status                        | [Link](user-management/users-endpoints/set-users-status-active.md)       |
 | `/api/v1/users.deactivateIdle`                | Deactivates Idle users                           | [Link](user-management/users-endpoints/deactivate-idle-users.md)         |
-| `/api/v1/users.getPresence`                   | Gets a user's presence                           | [Link](user-management/users-endpoints/get-users-presence.md)            |
+| `/api/v1/users.getPresence`                   | Gets a user's presence                           | [Link](user-management/users-endpoints/get-specific-users-presence.md)   |
 | `/api/v1/users.info`                          | Retrieves information about a user               | [Link](user-management/users-endpoints/get-users-info.md)                |
 | `/api/v1/users.list`                          | Retrieves all of the users                       | [Link](user-management/users-endpoints/get-users-list.md)                |
 | `/api/v1/users.register`                      | Registers users                                  | [Link](user-management/users-endpoints/register-users.md)                |
 | `/api/v1/users.resetAvatar`                   | Resets avatar                                    | [Link](user-management/users-endpoints/reset-avatar.md)                  |
-| `/api/v1/users.setAvatar`                     | Sets avatar                                      | [Link](user-management/users-endpoints/set-avatar.md)                    |
-| `/api/v1/users.getStatus`                     | Gets a user's status                             | [Link](user-management/users-endpoints/get-status.md)                    |
-| `/api/v1/users.setStatus`                     | Sets a user status                               | [Link](user-management/users-endpoints/set-status.md)                    |
+| `/api/v1/users.setAvatar`                     | Sets avatar                                      | [Link](user-management/users-endpoints/set-user-avatar.md)               |
+| `/api/v1/users.getStatus`                     | Gets a user's status                             | [Link](user-management/users-endpoints/get-user-status.md)               |
+| `/api/v1/users.setStatus`                     | Sets a user status                               | [Link](user-management/users-endpoints/set-user-status.md)               |
 | `/api/v1/users.update`                        | Updates user                                     | [Link](user-management/users-endpoints/update-user.md)                   |
 | `/api/v1/users.updateOwnBasicInfo`            | Updates own basic information                    | [Link](user-management/users-endpoints/update-own-basic-information.md)  |
 | `/api/v1/users.createToken`                   | Creates a user authentication token              | [Link](user-management/users-endpoints/create-users-token.md)            |
@@ -48,18 +48,18 @@
 | `/api/v1/users.regeneratePersonalAccessToken` | Regenerates a user's personal access token       | [Link](user-management/users-endpoints/regeneratepersonalaccesstoken.md) |
 | `/api/v1/users.getPersonalAccessTokens`       | Gets the user’s personal access tokens           | [Link](user-management/users-endpoints/getpersonalaccesstokens.md)       |
 | `/api/v1/users.removePersonalAccessToken`     | Removes a personal access token                  | [Link](user-management/users-endpoints/removepersonalaccesstoken.md)     |
-| `/api/v1/users.2fa.enableEmail`               | Enables 2fa email                                | [Link](user-management/users-endpoints/enable-2fa-email.md)              |
+| `/api/v1/users.2fa.enableEmail`               | Enables 2fa email                                | [Link](user-management/users-endpoints/enable-2fa-with-email.md)         |
 | `/api/v1/users.2fa.disableEmail`              | Disables 2fa email                               | [Link](user-management/users-endpoints/disable-2fa-email.md)             |
-| `/api/v1/users.2fa.sendEmailCode`             | Sends 2fa code                                   | [Link](user-management/users-endpoints/send-2fa-code.md)                 |
-| `/api/v1/users.presence`                      | Gets all connected users presence                | [Link](user-management/users-endpoints/presence.md)                      |
+| `/api/v1/users.2fa.sendEmailCode`             | Sends 2fa code                                   | [Link](user-management/users-endpoints/send-2fa-email-code.md)           |
+| `/api/v1/users.presence`                      | Gets all connected users presence                | [Link](user-management/users-endpoints/get-users-presence.md)            |
 | `/api/v1/users.requestDataDownload`           | Requests the user's data for download            | [Link](user-management/users-endpoints/requestdatadownload.md)           |
 | `/api/v1/users.logoutOtherClients`            | Logs out other clients                           | [Link](user-management/users-endpoints/logout-other-clients.md)          |
 | `/api/v1/users.autocomplete`                  | Lists the user whose names match a given pattern | [Link](user-management/users-endpoints/autocomplete-user.md)             |
 | `/api/v1/users.removeOtherTokens`             | Removes other tokens                             | [Link](user-management/users-endpoints/remove-other-tokens.md)           |
 | `/api/v1/users.resetE2EKey`                   | Reset the E2E key for a user                     | [Link](user-management/users-endpoints/reset-users-e2e-key.md)           |
 | `/api/v1/users.resetTOTP`                     | Reset the Two-factor authentication via TOTP     | [Link](user-management/users-endpoints/reset-users-totp.md)              |
-| `/api/v1/users.listTeams`                     | Lists users teams                                | [Link](user-management/users-endpoints/list-users-teams.md)              |
-| `/api/v1/users.logout`                        | Logs user out                                    | [Link](user-management/users-endpoints/logout-user-endpoint.md)          |
+| `/api/v1/users.listTeams`                     | Lists users teams                                | [Link](user-management/users-endpoints/list-user-teams.md)               |
+| `/api/v1/users.logout`                        | Logs user out                                    | [Link](user-management/users-endpoints/logout-user.md)                   |
 | `/api/v1/moderation.reportUser`               | Report a user.                                   | [Link](user-management/users-endpoints/report-user.md)                   |
 
 ### LDAP

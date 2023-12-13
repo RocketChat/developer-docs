@@ -1,16 +1,14 @@
 # Get User's Info
 
-Retrieves information about a user, the result is only limited to what the callee has access to view.  It supports the field parameter for [#query-and-fields](../../../#query-and-fields "mention") with the `userRooms` field, that returns the rooms that the user is part of. The `rooms` field returns the `unread` property and this field is variable, based on the setting `Unread_Count` (`Admin Panel` => `General` => `Unread_Count`), this setting provides the ability to choose between options to count the unread messages.
+Retrieves information about a user.
 
-| URL                  | Requires Auth | HTTP Method |
-| -------------------- | ------------- | ----------- |
-| `/api/v1/users.info` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.info</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument               | Example             | Required | Description                     |
-| ---------------------- | ------------------- | -------- | ------------------------------- |
-| `userId` or `username` | `BsNr28znDkG8aeo7W` | Required | The id or username of the user. |
+<table><thead><tr><th>Key</th><th width="220.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>userId</code><mark style="color:red;"><code>*</code></mark> or <code>username</code><mark style="color:red;"><code>*</code></mark></td><td><code>BsNr28znDkG8aeo7W</code></td><td>The ID or username of the user.</td></tr></tbody></table>
+
+The result is only limited to what the callee has access to view. It supports the field parameter for [#query-and-fields](../../../#query-and-fields "mention") with the `userRooms` field, that returns the rooms that the user is part of. The `rooms` field returns the `unread` property and this field is variable, based on the setting `Unread_Count` (`Admin Panel` => `General` => `Unread_Count`), this setting provides the ability to choose between options to count the unread messages.
 
 ## Other Users Example Call
 
@@ -20,9 +18,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/users.info?userId=BsNr28znDkG8aeo7W
 ```
 
-## Example Result Regular User Callee
+## Example Response Regular User Callee
 
-```javascript
+```json
 {
     "user": {
         "_id": "5fRTXMt7DMJbpPJfh",
@@ -78,15 +76,17 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 }
 ```
 
-## Example Result Admin Callee that requests user's rooms
+## Example Response Admin Callee that requests user's rooms
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      http://localhost:3000/api/v1/users.info?userId=BsNr28znDkG8aeo7W&fields={"userRooms": 1}
 ```
+{% endcode %}
 
-```javascript
+```json
 {
     "user": {
         "_id": "5fRTXMt7DMJbpPJfh",
@@ -202,10 +202,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description                                                                                                 |
-| ------- | ----------------------------------------------------------------------------------------------------------- |
-| 3.4.0   | Added `unread` property inside `rooms` object                                                               |
-| 0.70.0  | Added `rooms` property to response if the user request it and has the `view-other-user-channels` permission |
-| 0.49.0  | Updated to support `userId` or `username`                                                                   |
-| 0.48.0  | Renamed to `users.info`                                                                                     |
-| 0.35.0  | Added as `user.info`                                                                                        |
+<table><thead><tr><th width="342">Version</th><th>Description</th></tr></thead><tbody><tr><td>3.4.0</td><td>Added <code>unread</code> property inside <code>rooms</code> object</td></tr><tr><td>0.70.0</td><td>Added <code>rooms</code> property to response if the user request it and has the <code>view-other-user-channels</code> permission</td></tr><tr><td>0.49.0</td><td>Updated to support <code>userId</code> or <code>username</code></td></tr><tr><td>0.48.0</td><td>Renamed to <code>users.info</code></td></tr><tr><td>0.35.0</td><td>Added as <code>user.info</code></td></tr></tbody></table>

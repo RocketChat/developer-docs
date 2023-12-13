@@ -1,19 +1,14 @@
 # Get Users List
 
-Gets all of the users in the system and their information, the result is only limited to what the callee has access to view. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+Gets all of the users in the system and their information, the result is only limited to what the request sender has access to view.
 
-| URL                  | Requires Auth | HTTP Method |
-| -------------------- | ------------- | ----------- |
-| `/api/v1/users.list` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="311">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.list</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument | Example                                            | Required | Description                                                   |
-| -------- | -------------------------------------------------- | -------- | ------------------------------------------------------------- |
-| `fields` | `{ name: 1, emails: 0 }`                           | Optional | Field include hash (value of `1` to include, `0` to exclude). |
-| `query`  | `{ active: true, type: { $in: ['user', 'bot'] } }` | Optional | Query filter hash.                                            |
+This endpoint supports the optional [#pagination](../../../#pagination "mention") parameters and the [#query-and-fields](../../../#query-and-fields "mention") parameters.
 
-## Other Users Example Call
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -21,9 +16,11 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/users.list
 ```
 
-## Example Result Regular User Callee
+## Example Response&#x20;
 
-```javascript
+If the request sender is a regular user:
+
+```json
 {
   "users": [
     {
@@ -46,7 +43,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 }
 ```
 
-## Example Result Admin Callee
+If the request sender is an admin:
 
 ```javascript
 {
@@ -115,7 +112,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description                                  |
-| ------- | -------------------------------------------- |
-| 0.49.0  | Count and offset query parameters supported. |
-| 0.35.0  | Added                                        |
+<table><thead><tr><th width="329">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.49.0</td><td>Count and offset query parameters supported.</td></tr><tr><td>0.35.0</td><td>Added</td></tr></tbody></table>

@@ -1,20 +1,12 @@
----
-description: Request the user's data for download.
----
-
 # Request Data Download
 
-| URL                                 | Requires Auth | HTTP Method |
-| ----------------------------------- | ------------- | ----------- |
-| `/api/v1/users.requestDataDownload` | `yes`         | `GET`       |
+<table><thead><tr><th width="166">HTTP Method</th><th width="367">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.requestDataDownload</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument     | Example           | Required                  | Description             |
-| ------------ | ----------------- | ------------------------- | ----------------------- |
-| `fullExport` | `true` or `false` | Optional, default `false` | If needs a full export. |
+<table><thead><tr><th width="193.33333333333331">Key</th><th width="210">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>fullExport</code></td><td><code>true</code> or <code>false</code></td><td>Whether you want a full export or not. By default, the value is <code>false</code>.</td></tr></tbody></table>
 
-## Other Users Example Call
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -22,9 +14,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/users.requestDataDownload
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "requested": false,
     "exportOperation": {

@@ -1,73 +1,39 @@
 # Create User
 
-Create a new user. Requires `create-user` permission.
+Create a new workspace user.
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/users.create` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.create</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-**Note**
+{% hint style="info" %}
+Permission required: `create-user`
+{% endhint %}
 
-* To save `customFields` you must first define the `customFields` in admin panel (Accounts -> Registration -> Custom fields).
+## Body Parameters
 
-## Payload
+<table><thead><tr><th width="267">Key</th><th width="208">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>email</code><mark style="color:red;"><code>*</code></mark></td><td><code>example@example.com</code></td><td>The email address for the user.</td></tr><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>Example User</code></td><td>The display name of the user.</td></tr><tr><td><code>password</code><mark style="color:red;"><code>*</code></mark></td><td><code>pass@w0rd</code></td><td>The password for the user.</td></tr><tr><td><code>username</code><mark style="color:red;"><code>*</code></mark></td><td><code>example</code></td><td>The username for the user.</td></tr><tr><td><code>active</code></td><td><code>false</code></td><td>Whether the user is active, which determines if they can login or not.<br>By default, the value is <code>true</code>.</td></tr><tr><td><code>bio</code></td><td><code>Enginer|GitHub Star</code></td><td>The bio of the user.</td></tr><tr><td><code>nickname</code></td><td><code>lola</code></td><td>The nickname of the user.</td></tr><tr><td><code>statusText</code></td><td><code>On a vacation</code></td><td>The status text of the user.</td></tr><tr><td><code>roles</code></td><td><code>["bot"]</code></td><td>The roles the user is assigned on creation. The default value is <code>user</code>.</td></tr><tr><td><code>joinDefaultChannels</code></td><td><code>false</code></td><td>Whether the user should join the default channels when created. The default value is <code>true</code>.</td></tr><tr><td><code>requirePasswordChange</code></td><td><code>true</code></td><td>Whether the user be required to change their password when they login. The default value is <code>false</code>.</td></tr><tr><td><code>setRandomPassword</code></td><td><code>true</code></td><td>Set random password for the user and send by email. If <code>setRandomPassword</code> is set to <code>true</code>, the password field can be left empty.</td></tr><tr><td><code>sendWelcomeEmail</code></td><td><code>true</code></td><td>Whether the user get a welcome email. The default value is <code>false</code>.</td></tr><tr><td><code>verified</code></td><td><code>true</code></td><td>Whether the user's email address be verified when created. The default value is <code>false</code>.</td></tr><tr><td><code>customFields</code></td><td><code>{ twitter: '@example' }</code></td><td>Any custom fields the user should have on their account. The default value is <code>undefined</code>.</td></tr></tbody></table>
 
-| Argument                | Example                   | Required                      | Description                                                                                                                        |
-| ----------------------- | ------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `email`                 | `example@example.com`     | Required                      | The email address for the user.                                                                                                    |
-| `name`                  | `Example User`            | Required                      | The display name of the user.                                                                                                      |
-| `password`              | `pass@w0rd`               | Required                      | The password for the user.                                                                                                         |
-| `username`              | `example`                 | Required                      | The username for the user.                                                                                                         |
-| `active`                | `false`                   | Optional Default: `true`      | Whether the user is active, which determines if they can login or not.                                                             |
-| `bio`                   | `Enginer\|GitHub Star`    | Optional                      | The bio of the user                                                                                                                |
-| `nickname`              | `lola`                    | Optional                      | The nickname of the user                                                                                                           |
-| `statusText`            | `On a vacation`           | Optional                      | The status text of the user.                                                                                                       |
-| `roles`                 | `["bot"]`                 | Optional Default: `['user']`  | The roles the user has assigned to them on creation.                                                                               |
-| `joinDefaultChannels`   | `false`                   | Optional Default: `true`      | Whether the user should join the default channels when created.                                                                    |
-| `requirePasswordChange` | `true`                    | Optional Default: `false`     | Should the user be required to change their password when they login?                                                              |
-| `setRandomPassword`     | `true`                    | Optional                      | Set random password for the user and send by email. If `setRandomPassword` is set to `true`, the password field can be left empty. |
-| `sendWelcomeEmail`      | `true`                    | Optional Default: `false`     | Should the user get a welcome email?                                                                                               |
-| `verified`              | `true`                    | Optional Default: `false`     | Should the user's email address be verified when created?                                                                          |
-| `customFields`          | `{ twitter: '@example' }` | Optional Default: `undefined` | Any custom fields the user should have on their account.                                                                           |
-
-## Example Payload
-
-<pre class="language-json"><code class="lang-json">{
-    "name": "name", 
-<strong>    "email": "email@user.tld", 
-</strong>    "password": "anypassyouwant", 
-    "username": "uniqueusername", 
-    "roles":["bot"]
-}
-
-</code></pre>
-
-**Example payload with `setRandomPassword`**
-
-```json
-
-{
-  "name": "testuser01", 
-  "email": "testuser01@demo-rocket.chat",
-  "username": "testuser01",
-  "setRandomPassword": "true",
-  "password": "",
-  "roles": ["bot"]
-}
-
-```
+{% hint style="info" %}
+To save `customFields` you must first define the `customFields` in the admin panel (**Administration** > **Settings** > **Accounts** > **Registration** > **Custom FIelds**).
+{% endhint %}
 
 ## Example Call
 
-```bash
+{% code overflow="wrap" %}
+```powershell
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/users.create \
-     -d '{"name": "name", "email": "email@user.tld", "password": "anypassyouwant", "username": "uniqueusername", "roles":["bot","user"]}'
+     -d '{
+          "name": "name", 
+          "email": "email@user.tld", 
+          "password": "anypassyouwant", 
+          "username": "uniqueusername", 
+          "roles":["bot","user"]}'
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
 ```javascript
 {
@@ -76,7 +42,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
       "createdAt": "2016-09-13T14:57:56.037Z",
       "services": {
          "password": {
-            "bcrypt": "$2a$10$5I5nUzqNEs8jKhi7BFS55uFYRf5TE4ErSUH8HymMNAbpMAvsOcl2C"
+            "bcrypt": "$2a$i7BFS55uFYRf5TE4ErSUH8HymMNAbpMAvsOcl2C"
          }
       },
       "username": "uniqueusername",
@@ -100,14 +66,6 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 }
 ```
 
-**Note**
-
-* The `customFields` will not be returned if it does not exist on the server.
-
 ## Change Log
 
-| Version | Description                                                                                        |
-| ------- | -------------------------------------------------------------------------------------------------- |
-| 0.48.0  | `role` property is now `roles` which is an array of strings for the roles to create the user with. |
-| 0.45.0  | Users created via this now join the default channels.                                              |
-| 0.40.0  | Added                                                                                              |
+<table><thead><tr><th width="321">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.48.0</td><td><code>role</code> property is now <code>roles</code> which is an array of strings for the roles to create the user with.</td></tr><tr><td>0.45.0</td><td>Users created via this now join the default channels.</td></tr><tr><td>0.40.0</td><td>Added</td></tr></tbody></table>

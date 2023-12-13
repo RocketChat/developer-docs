@@ -1,35 +1,21 @@
 # Reset Users TOTP
 
-Reset the Two-factor authentication via TOTP for a user in the workspace.
+Reset 2FA via TOTP for a user in the workspace.
 
 {% hint style="info" %}
 * It requires the edit-other-user-totp [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
 * It requires [two-factor authentication.](../../authentication-endpoints/rest-two-factor-authentication.md#calling-an-endpoint-with-two-factor)
 {% endhint %}
 
-| URL                       | Requires Auth | HTTP Method |
-| ------------------------- | ------------- | ----------- |
-| `/api/v1/users.resetTOTP` | `yes`         | `POST`      |
+<table><thead><tr><th width="166">HTTP Method</th><th width="346">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.resetTOTP</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Headers
+## Body Parameters
 
-<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
-
-## Payload
-
-<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>userId</code></td><td><code>Q29yYlEZEByCLOQa70-QGNLRjVRhshsN2Sky6-FLAlMXbhU</code></td><td>Required</td><td>The <code>userId</code> of the user whose e2e key you want to reset. You can also use username.</td></tr></tbody></table>
-
-## Example Payload
-
-```json
-{
-    "userId":"GonjPyg3gB3Z9ur9s"
-}
-```
+<table><thead><tr><th width="167.6537216828479">Key</th><th width="239">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>userId</code><mark style="color:red;"><code>*</code></mark></td><td><code>Q29yYlEZEByCLOQa70-QGNLRjVRhshsN2Sky6-FLAlMXbhU</code></td><td>The <code>userId</code> of the user whose TOTP you want to reset. You can also use the username.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location 'http://localhost:3000/api/v1/users.resetTOTP' \
 --header 'x-auth-token: Q29yYlEZEByCLOQa70-QGNLRjVRN2Sky6-FLAlMXbhU' \
 --header 'x-user-id: GonjPyg3gB3Z9ur9s' \
@@ -39,7 +25,7 @@ curl --location 'http://localhost:3000/api/v1/users.resetTOTP' \
 }'
 ```
 
-## Example Result
+## Example Response
 
 ```json
 {
@@ -49,7 +35,7 @@ curl --location 'http://localhost:3000/api/v1/users.resetTOTP' \
 
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: This occurs when the authenticated user doesn't have the `edit-other-user-totp` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).

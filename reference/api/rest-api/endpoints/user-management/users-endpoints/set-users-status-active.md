@@ -1,19 +1,21 @@
 # Set User's Status Active
 
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `/api/v1/users.setActiveStatus` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="279">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.setActiveStatus</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+{% hint style="info" %}
+Permissions required:
 
-| Argument            | Example             | Required                  | Description                                                           |
-| ------------------- | ------------------- | ------------------------- | --------------------------------------------------------------------- |
-| `activeStatus`      | `true`              | Required                  | The value of the active status.                                       |
-| `userId`            | `5HmCfpoB7jp2uibTC` | Required                  | The user's id to be changed.                                          |
-| `confirmRelinquish` | `true`              | Optional Default: `false` | Allows user to be deactivated even if it is the last owner of a room. |
+* `edit-other-user-active-status`
+* `manage-moderation-actions`
+{% endhint %}
 
-**Note:**\
+## Body Parameters
+
+<table><thead><tr><th width="238">Key</th><th width="210">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>activeStatus</code><mark style="color:red;"><code>*</code></mark></td><td><code>true</code></td><td>The value of the active status.</td></tr><tr><td><code>userId</code><mark style="color:red;"><code>*</code></mark></td><td><code>5HmCfpoB7jp2uibTC</code></td><td>The user ID whose status value is to be changed.</td></tr><tr><td><code>confirmRelinquish</code></td><td><code>true</code></td><td>Allows the user to be deactivated even if it is the last owner of a room. By default, the value is <code>false.</code></td></tr></tbody></table>
+
+{% hint style="info" %}
 If `activeStatus=false` & `confirmRelinquish=true` and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner.
+{% endhint %}
 
 ## Example call
 
@@ -22,12 +24,14 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/users.setActiveStatus \
-     -d '{"activeStatus": false, "userId": "5HmCfpoB7jp2uibTC"}'
+     -d '{
+          "activeStatus": false, 
+          "userId": "5HmCfpoB7jp2uibTC"}'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "user": {
         "_id": "jJNyu4BQFqdgEcqnR",

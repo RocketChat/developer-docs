@@ -1,74 +1,93 @@
-# Get User's Presence
+# Get Users Presence
 
-Gets a user's presence if the query string `userId` or `username` is provided, otherwise it gets the callee's.
+<table><thead><tr><th width="166">HTTP Method</th><th width="347">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.presence</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                         | Requires Auth | HTTP Method |
-| --------------------------- | ------------- | ----------- |
-| `/api/v1/users.getPresence` | `yes`         | `GET`       |
+{% hint style="info" %}
+If the **Presence\_broadcast\_disabled** setting is true, the endpoint returns an empty array.
+{% endhint %}
 
 ## Query Parameters
 
-| Argument               | Example             | Required | Description                                                                |
-| ---------------------- | ------------------- | -------- | -------------------------------------------------------------------------- |
-| `userId` or `username` | `BsNr28znDkG8aeo7W` | Optional | The id or username of the user. If not provided, the auth user is updated. |
+<table><thead><tr><th width="158">Key</th><th width="278">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>from</code></td><td><code>2019-05-22T12:11:45.392Z</code></td><td>The last date when the status was changed.<br>Format: ISO 8601 datetime. Timezone, milliseconds and seconds are optional</td></tr><tr><td><code>ids</code></td><td><code>J4sWseCgs8eEnWvhE</code></td><td>The user IDs whose status you want.</td></tr></tbody></table>
 
-## Other Users Example Call - Via userId
+## Example Call - Without Parameters
+
+If you don't pass `from` parameter, you'll get a list of all users' presence and the result will have a `full` field with value `true` .
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/users.getPresence?userId=BsNr28znDkG8aeo7W
+     http://localhost:3000/api/v1/users.presence
 ```
 
-## Example Result
+### Example Response
 
-```javascript
+```json
 {
-  "presence": "offline",
-  "success": true
+   "users":[
+      {
+         "_id":"rocket.cat",
+         "name":"Rocket.Cat",
+         "username":"rocket.cat",
+         "status":"online",
+         "utcOffset":0,
+         "avatarETag": "5BB9B5ny5DkKdrwkq"
+      },
+      {
+         "_id":"rocketchat.internal.admin.test",
+         "name":"RocketChat Internal Admin Test",
+         "username":"rocketchat.internal.admin.test",
+         "status":"online",
+         "utcOffset":-2,
+         "avatarETag": "iEbEm4bTT327NJjXt"
+      }
+   ],
+   "full": true,
+   "success":true
 }
 ```
 
-## Other Users Example Call - Via username
+## Example Call - With `from` Parameter
+
+If you pass the `from` parameter, you'll get only a list of users' presence that has changed after the time of `from` parameter. The `full` result field will then be `false`, indicating it's a partial result.
+
+If the value of `from` parameter is older than 10 minutes, the server will reply with a **full** result set.
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/users.getPresence?username=test
+     http://localhost:3000/api/v1/users.presence?from=2019-05-22T12:11:45.392Z
 ```
 
-## Example Result
+### Example Response
 
-```javascript
+```json
 {
-  "presence": "offline",
-  "success": true
-}
-```
-
-## Self Example Call
-
-```bash
-curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
-     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
-     http://localhost:3000/api/v1/users.getPresence
-```
-
-## Example Result
-
-```javascript
-{
-  "presence": "offline",
-  "connectionStatus": "offline",
-  "lastLogin": "2016-12-08T18:26:03.612Z",
-  "success": true
+   "users":[
+      {
+         "_id":"rocket.cat",
+         "name":"Rocket.Cat",
+         "username":"rocket.cat",
+         "status":"online",
+         "utcOffset":0,
+         "avatarETag": "5BB9B5ny5DkKdrwkq"
+      },
+      {
+         "_id":"rocketchat.internal.admin.test",
+         "name":"RocketChat Internal Admin Test",
+         "username":"rocketchat.internal.admin.test",
+         "status":"online",
+         "utcOffset":-2,
+         "avatarETag": "iEbEm4bTT327NJjXt"
+      }
+   ],
+   "full": false,
+   "success":true
 }
 ```
 
 ## Change Log
 
-| Version | Description                               |
-| ------- | ----------------------------------------- |
-| 0.49.0  | Updated to support `userId` or `username` |
-| 0.48.0  | Renamed to `users.getPresence`            |
-| 0.35.0  | Added as `user.getPresence`               |
+| Version | Description |
+| ------- | ----------- |
+| 1.1.0   | Added       |

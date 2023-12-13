@@ -1,30 +1,16 @@
 # Update User
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/users.update` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/users.update</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-**Note**
-
+{% hint style="info" %}
 * To save `customFields` you must first define the `customFields` in admin panel (Accounts -> Registration -> Custom fields)
-* To update the password for the user, "edit-other-user-password" permission must be set accordingly using an administrator account (Administration > Permissions).
+* To update the password for the user, `edit-other-user-password` permission must be set using an administrator account (Administration > Permissions).
+* This endpoint requires 2FA with your password. Refer to [#call-an-endpoint-with-2fa](../../authentication-endpoints/rest-two-factor-authentication.md#call-an-endpoint-with-2fa "mention")
+{% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument                     | Example                   | Required                      | Description                                                            |
-| ---------------------------- | ------------------------- | ----------------------------- | ---------------------------------------------------------------------- |
-| `userId`                     | `BsNr28znDkG8aeo7W`       | Required                      | The id of the user to update.                                          |
-| `data.email`                 | `example@example.com`     | Optional                      | The email address for the user.                                        |
-| `data.name`                  | `Example User`            | Optional                      | The display name of the user.                                          |
-| `data.password`              | `pass@w0rd`               | Optional                      | The password for the user.                                             |
-| `data.username`              | `example`                 | Optional                      | The username for the user.                                             |
-| `data.active`                | `false`                   | Optional Default: `true`      | Whether the user is active, which determines if they can login or not. |
-| `data.roles`                 | `['bot']`                 | Optional Default: `['user']`  | The roles the user has assigned to them.                               |
-| `data.joinDefaultChannels`   | `false`                   | Optional Default: `true`      | Whether the user should join the default channels.                     |
-| `data.requirePasswordChange` | `true`                    | Optional Default: `false`     | Should the user be required to change their password when they login?  |
-| `data.sendWelcomeEmail`      | `true`                    | Optional Default: `false`     | Should the user get a welcome email?                                   |
-| `data.verified`              | `true`                    | Optional Default: `false`     | Should the user's email address be verified?                           |
-| `data.customFields`          | `{ twitter: '@example' }` | Optional Default: `undefined` | Any custom fields the user should have on their account.               |
+<table><thead><tr><th width="220.33333333333331">Argument</th><th width="207">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>userId</code><mark style="color:red;"><code>*</code></mark></td><td><code>BsNr28znDkG8aeo7W</code></td><td>The user ID to update.</td></tr><tr><td><code>data</code><mark style="color:red;"><code>*</code></mark></td><td><code>"data" : {}</code></td><td>The object that includes the user information to update with the following parameters.<br><strong>Note:</strong> If you provide an empty object, the user details are returned.</td></tr><tr><td><code>email</code></td><td><code>example@example.com</code></td><td>The email address for the user.</td></tr><tr><td><code>name</code></td><td><code>Example User</code></td><td>The display name of the user.</td></tr><tr><td><code>password</code></td><td><code>pass@w0rd</code></td><td>The password for the user.</td></tr><tr><td><code>username</code></td><td><code>example</code></td><td>The username for the user.</td></tr><tr><td><code>active</code></td><td><code>false</code></td><td>Whether the user is active, which determines if they can login or not.</td></tr><tr><td><code>roles</code></td><td><code>['bot']</code></td><td>The roles the user has been assigned.</td></tr><tr><td><code>joinDefaultChannels</code></td><td><code>false</code></td><td>Whether the user should join the default channels.</td></tr><tr><td><code>requirePasswordChange</code></td><td><code>true</code></td><td>Whether the user should be required to change their password when they login.</td></tr><tr><td><code>sendWelcomeEmail</code></td><td><code>true</code></td><td>Whether the user should get a welcome email.</td></tr><tr><td><code>verified</code></td><td><code>true</code></td><td>Whether the user's email address should be verified.</td></tr><tr><td><code>customFields</code></td><td><code>{ twitter: '@example' }</code></td><td>Any custom fields the user should have on their account.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -33,12 +19,15 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type:application/json" \
      http://localhost:3000/api/v1/users.update \
-     -d '{"userId": "BsNr28znDkG8aeo7W", "data": { "name": "new name", "email": "newemail@user.tld" }}'
+     -d '{"userId": "BsNr28znDkG8aeo7W", 
+          "data": { 
+               "name": "new name", 
+               "email": "newemail@user.tld" }}'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
    "user":{
       "_id": "BsNr28znDkG8aeo7W",

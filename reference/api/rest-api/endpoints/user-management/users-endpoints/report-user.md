@@ -1,31 +1,14 @@
 # Report User
 
-Report a user.
+<table><thead><tr><th width="166">HTTP Method</th><th width="342">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/moderation.reportUser</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                             | Requires Auth | HTTP Method |
-| ------------------------------- | ------------- | ----------- |
-| `/api/v1/moderation.reportUser` | `yes`         | `POST`      |
+## Body Parameters <a href="#payload" id="payload"></a>
 
-### Payload <a href="#payload" id="payload"></a>
+<table><thead><tr><th width="199.33333333333331">Key</th><th width="237">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>userId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The ID of the user to be reported.</td></tr><tr><td><code>description</code><mark style="color:red;"><code>*</code></mark></td><td><code>test</code></td><td>The reason for reporting the user.</td></tr></tbody></table>
 
-| Argument      | Example             | Required | Description                        |
-| ------------- | ------------------- | -------- | ---------------------------------- |
-| `userId`      | `ByehQjC44FwMeiLbX` | Required | The id of the user to be reported. |
-| `description` | `test`              | Required | The reason for reporting the user. |
+## Example Call <a href="#example-call" id="example-call"></a>
 
-### Example Payload <a href="#example-call" id="example-call"></a>
-
-```json
-{
-    "userId":"kdgf7sgLvwBri9rtA",
-    "description":"Verbal abuse"
-
-}
-```
-
-### Example Call <a href="#example-call" id="example-call"></a>
-
-```json
+```powershell
 curl --location "http://localhost:3000/api/v1/moderation.reportUser" \
 --header 'x-auth-token: _209_8t5fK_W1tEMyFwWZCXR44QOWjgdSJ8Hg6oX3ns' \
 --header 'x-user-id: rmbMnnpqkuxEbrajt' \
@@ -38,7 +21,7 @@ curl --location "http://localhost:3000/api/v1/moderation.reportUser" \
 }'
 ```
 
-### Example Result <a href="#example-result" id="example-result"></a>
+## Example Response <a href="#example-result" id="example-result"></a>
 
 ### Success
 

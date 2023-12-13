@@ -1,18 +1,12 @@
----
-description: List the user whose names match a given pattern.
----
-
 # Autocomplete User
 
-| URL                          | Requires Auth | HTTP Method |
-| ---------------------------- | ------------- | ----------- |
-| `/api/v1/users.autocomplete` | `yes`         | `GET`       |
+List the users whose names match a given pattern.
 
-## Parameters
+<table><thead><tr><th width="166">HTTP Method</th><th width="321">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/users.autocomplete</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| Argument   | Example                | Required |
-| ---------- | ---------------------- | -------- |
-| `selector` | `{ "exceptions" : []}` | Required |
+## Query Parameters
+
+<table><thead><tr><th width="184.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>selector</code><mark style="color:red;"><code>*</code></mark></td><td><code>{ "exceptions" : [], "conditions": [], "term": "user"}</code></td><td>Filter the response with the parameters.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -23,11 +17,11 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
       'http://localhost:3000/api/v1/users.autocomplete'
 ```
 
-## Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "items": [
         {
