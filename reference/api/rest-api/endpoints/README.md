@@ -70,10 +70,10 @@
 
 ### Permissions
 
-| Url                           | Short Description                | Details Page                                                          |
-| ----------------------------- | -------------------------------- | --------------------------------------------------------------------- |
-| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](user-management/permissions-endpoints/list-all-permissions.md) |
-| `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](user-management/permissions-endpoints/update-permissions.md)   |
+| Url                           | Short Description                | Details Page                                                        |
+| ----------------------------- | -------------------------------- | ------------------------------------------------------------------- |
+| `/api/v1/permissions.listAll` | Lists permissions on the server. | [Link](user-management/permissions-endpoints/list-permissions.md)   |
+| `/api/v1/permissions.update`  | Edits permissions on the server. | [Link](user-management/permissions-endpoints/update-permissions.md) |
 
 ### Roles
 

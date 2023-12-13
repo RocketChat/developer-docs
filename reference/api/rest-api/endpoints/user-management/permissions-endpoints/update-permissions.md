@@ -1,18 +1,14 @@
----
-description: Edits permissions on the server.
----
+# Update Permissions
 
-# Update permissions
+<table><thead><tr><th width="163">HTTP Method</th><th width="308">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/permissions.update</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                          | Requires Auth | HTTP Method |
-| ---------------------------- | ------------- | ----------- |
-| `/api/v1/permissions.update` | `yes`         | `POST`      |
+{% hint style="info" %}
+Permission required: `access-permissions`
+{% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument      | Example                                               | Required | Description                      |
-| ------------- | ----------------------------------------------------- | -------- | -------------------------------- |
-| `permissions` | `[{"_id": "access-permissions", "roles": ["admin"]}]` | Required | The array of roles to overwrite. |
+<table><thead><tr><th width="209.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>permissions</code><mark style="color:red;"><code>*</code></mark></td><td><code>[{"_id": "access-permissions", "roles": ["admin"]}]</code></td><td>The array of roles to overwrite.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -24,7 +20,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -d '{"permissions": [{"_id": "access-permissions", "roles": ["admin"]}]}'
 ```
 
-## Example Result
+## Example Response
 
 ```javascript
 {
