@@ -1,43 +1,25 @@
-# Role Create
+# Create Role
 
 <figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 Create a new role in the system.
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/roles.create` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="319">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/roles.create</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-**Note:**
-
-* This endpoint **doesn't** update existing roles. See [create-1.md](create-1.md "mention").
-* You can't create new roles with the same name as existing roles. _For example,_ it is not possible to create a new role with the name `admin` .
+{% hint style="info" %}
+* This endpoint **doesn't** update existing roles. See [update-role.md](update-role.md "mention").
+* You can't create new roles with the same name as existing roles. For example, it is not possible to create a new role with the name `admin` .
 * The **scope** can either be `Users` or `Subscriptions`.
+* Permission required: `access-permissions`
+{% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument       | Example            | Required                  | Description                                                       |
-| -------------- | ------------------ | ------------------------- | ----------------------------------------------------------------- |
-| `name`         | `newRole`          | Required                  | The name of the new role.                                         |
-| `scope`        | `Subscriptions`    | Optional Default: `Users` | The scope of the new role.                                        |
-| `description`  | `Role description` | Optional                  | A description for the new role.                                   |
-| `mandatory2fa` | `true`             | Optional Default: `false` | Whether the role should have a mandatory 2 Factor Authentication. |
-
-## Example Payload
-
-```json
-{
-        "name": "Test Role",
-        "scope": "Users",
-        "description": "Testing Role for API",
-        "mandatory2fa": false
-
-    }
-```
+<table><thead><tr><th width="207.33333333333331">Key</th><th width="212">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>newRole</code></td><td>The name of the new role.</td></tr><tr><td><code>scope</code></td><td><code>Subscriptions</code></td><td>The scope of the new role. The default value is <code>Users</code>.</td></tr><tr><td><code>description</code></td><td><code>Role description</code></td><td>A description for the new role.</td></tr><tr><td><code>mandatory2fa</code></td><td><code>true</code></td><td>Whether the role should have mandatory 2FA. The default value is <code>false</code>.</td></tr></tbody></table>
 
 ## Example Call
 
-```bash
+```powershell
 curl --location 'http://localhost:3000/api/v1/roles.create' \
 --header 'X-User-Id: rbAXPnMktTFbNpwtJ' \
 --header 'X-Auth-Token: 3K3OqbQcU9H6FiZNEE5lxTTEfXyWxypWRJjvl_2ySOm' \
@@ -47,15 +29,14 @@ curl --location 'http://localhost:3000/api/v1/roles.create' \
         "scope": "Users",
         "description": "Testing Role for API",
         "mandatory2fa": false
-
     }'
 ```
 
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "role": {
         "_id": "646c431fa8c3a3ba32d0e1c4",
@@ -72,15 +53,15 @@ curl --location 'http://localhost:3000/api/v1/roles.create' \
 
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **Invalid Role Properties**: Occurs when the required [payload arguments](create.md#payload) are not provided when making the request.
+* **Invalid Role Properties**: Occurs when the required [payload arguments](create-role.md#payload) are not provided when making the request.
 * **Duplicate Role Names**: This occurs when the role's name already exists on the workspace.
 
 {% tabs %}
 {% tab title=" Authorization" %}
-```javascript
+```json
 {
     "success": false,
     "error": "unauthorized"

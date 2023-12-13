@@ -1,12 +1,8 @@
-# Role List
+# List Roles
 
-Gets all the roles in the system.
+<table><thead><tr><th width="163">HTTP Method</th><th width="319">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/roles.list</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                  | Requires Auth | HTTP Method |
-| -------------------- | ------------- | ----------- |
-| `/api/v1/roles.list` | `yes`         | `GET`       |
-
-## Example call to get all the roles
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -14,9 +10,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/roles.list
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "roles": [
     {
@@ -97,7 +93,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description                 |
-| ------- | --------------------------- |
-| 0.73.0  | Added mandatory2fa property |
-| 0.70.0  | Added                       |
+| Version | Description                   |
+| ------- | ----------------------------- |
+| 0.73.0  | Added `mandatory2fa` property |
+| 0.70.0  | Added                         |

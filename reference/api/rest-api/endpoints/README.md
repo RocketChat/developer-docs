@@ -77,16 +77,16 @@
 
 ### Roles
 
-| Url                                | Short Description                                  | Details Page                                              |
-| ---------------------------------- | -------------------------------------------------- | --------------------------------------------------------- |
-| `/api/v1/roles.list`               | Lists all roles on the server                      | [Link](user-management/roles-endpoints/list.md)           |
-| `/api/v1/roles.sync`               | Lists all roles on the server updated after a date | [Link](user-management/roles-endpoints/sync.md)           |
-| `/api/v1/roles.create`             | Creates a new role                                 | [Link](user-management/roles-endpoints/create.md)         |
-| `/api/v1/roles.addUserToRole`      | Edits permissions on the server                    | [Link](user-management/roles-endpoints/addusertorole.md)  |
-| `/api/v1/roles.getUsersInRole`     | Retrieves users that belong to a role              | [Link](user-management/roles-endpoints/getusersinrole.md) |
-| `/api/v1/roles.update`             | Updates an existing role in the system             | [Link](user-management/roles-endpoints/create-1.md)       |
-| `/api/v1/roles.delete`             | Deletes a role                                     | [Link](user-management/roles-endpoints/role-delete.md)    |
-| `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user                       | [Link](user-management/roles-endpoints/role-remove.md)    |
+| Url                                | Short Description                                  | Details Page                                                   |
+| ---------------------------------- | -------------------------------------------------- | -------------------------------------------------------------- |
+| `/api/v1/roles.list`               | Lists all roles on the server                      | [Link](user-management/roles-endpoints/list-roles.md)          |
+| `/api/v1/roles.sync`               | Lists all roles on the server updated after a date | [Link](user-management/roles-endpoints/get-updated-roles.md)   |
+| `/api/v1/roles.create`             | Creates a new role                                 | [Link](user-management/roles-endpoints/create-role.md)         |
+| `/api/v1/roles.addUserToRole`      | Edits permissions on the server                    | [Link](user-management/roles-endpoints/assign-role-to-user.md) |
+| `/api/v1/roles.getUsersInRole`     | Retrieves users that belong to a role              | [Link](user-management/roles-endpoints/getusersinrole.md)      |
+| `/api/v1/roles.update`             | Updates an existing role in the system             | [Link](user-management/roles-endpoints/update-role.md)         |
+| `/api/v1/roles.delete`             | Deletes a role                                     | [Link](user-management/roles-endpoints/delete-role.md)         |
+| `/api/v1/roles.removeUserFromRole` | Unassigns a role from a user                       | [Link](user-management/roles-endpoints/remove-role.md)         |
 
 ## Rooms
 
