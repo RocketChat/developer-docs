@@ -11,7 +11,7 @@ Get the role(s) of a user in a room. It can be used to identify key users in the
 ```javascript
 {
     "msg": "method",
-    "method": "listEmojiCustom",
+    "method": "getUserRoles",
     "id": "42",
     "params": []
 }

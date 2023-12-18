@@ -11,7 +11,7 @@ List all the [permissions](https://docs.rocket.chat/use-rocket.chat/workspace-ad
 ```javascript
 {
     "msg": "method",
-    "method": "sendMessage",
+    "method": "permissions/get",
     "id": "423",
     "params": [
         {

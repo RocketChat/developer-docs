@@ -2,9 +2,9 @@
 
 Creates a [private channel](https://docs.rocket.chat/use-rocket.chat/user-guides/rooms/channels#private-channels).
 
-| Name            | Requires Auth | Permission | Setting |
-| --------------- | ------------- | ---------- | ------- |
-| `createChannel` | Yes           | `create-p` |         |
+| Name                 | Requires Auth | Permission | Setting |
+| -------------------- | ------------- | ---------- | ------- |
+| `createPrivateGroup` | Yes           | `create-p` |         |
 
 ## Payload Parameters
 

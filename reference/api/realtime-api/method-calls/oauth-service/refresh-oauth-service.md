@@ -2,9 +2,9 @@
 
 Resfresh the [OAuth services](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/oauth) in a workspace.
 
-| Name              | Requires Auth | Permission          | Setting |
-| ----------------- | ------------- | ------------------- | ------- |
-| `addOAuthService` | Yes           | `add-oauth-service` | `None`  |
+| Name                  | Requires Auth | Permission          | Setting |
+| --------------------- | ------------- | ------------------- | ------- |
+| `refreshOAuthService` | Yes           | `add-oauth-service` | `None`  |
 
 ## Example call
 
