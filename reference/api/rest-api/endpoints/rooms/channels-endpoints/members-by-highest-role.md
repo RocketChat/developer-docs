@@ -1,4 +1,4 @@
-# Channel Members List
+# Channel Members List By Highest Role
 
 Lists all channel users sorted by their room scoped roles. It supports the [#pagination](../../../#pagination "mention") parameters.
 
@@ -12,18 +12,16 @@ The `highestRole` object also contains a `role` field, which has three possile v
 The list of elements a user can use to sort the list is limited. The current sortable element is:`username`
 {% endhint %}
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/channels.members` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="320">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/channels.members</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument            | Example                    | Required                   | Description                                                                                      |
-| ------------------- | -------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
-| `roomId`            | `ByehQjC44FwMeiLbX`        | Required (if no roomName)  | The channel's id                                                                                 |
-| `roomName`          | `general`                  | Required (if no roomId)    | The channel's name                                                                               |
-| `status`            | `['online', 'away']`       | Optional                   | The user's status (search filter).                                                               |
-| `filter`            | `my-nickname`              | Optional                   | Extra search filters to be applied to the fields defined in the `Accounts_SearchFields` setting. |
+| Argument   | Example              | Required                  | Description                                                                                      |
+| ---------- | -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------ |
+| `roomId`   | `ByehQjC44FwMeiLbX`  | Required (if no roomName) | The channel's id                                                                                 |
+| `roomName` | `general`            | Required (if no roomId)   | The channel's name                                                                               |
+| `status`   | `['online', 'away']` | Optional                  | The user's status (search filter).                                                               |
+| `filter`   | `my-nickname`        | Optional                  | Extra search filters to be applied to the fields defined in the `Accounts_SearchFields` setting. |
 
 ## Example Call
 

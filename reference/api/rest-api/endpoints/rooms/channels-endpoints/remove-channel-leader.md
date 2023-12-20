@@ -1,12 +1,12 @@
-# Remove Channel Moderator
+# Remove Channel Leader
 
-Removes the role of moderator from a user in the current channel.
+Removes the role of `leader` for a user in the current channel.
 
 {% hint style="info" %}
-It requires the `set-moderator` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
+It requires the `set-leader` permission.
 {% endhint %}
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="320">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/channels.removeModerator</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="320">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/channels.removeLeader</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Body Parameters
 
@@ -18,10 +18,10 @@ It requires the `set-moderator` [permission](https://docs.rocket.chat/use-rocket
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
-     https://localhost:3000/api/v1/channels.removeModerator \
-     -d '{ 
+     https://localhost:3000/api/v1/channels.removeLeader \
+     -d '{
           "roomId": "ByehQjC44FwMeiLbX", 
-          "userId": "nSYqWzZ4GsKTX4dyK" }'
+          "userId": "oCHkav5Zf6vmpu2W2"}'
 ```
 
 ## Example Response
@@ -36,11 +36,11 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
-* **Not Allowed**: This occurs when the authenticated user doesn't have the `set-moderator` permission.
-* **User is not a moderator**: This occurs when the user is not a moderator in the channel.
+* **Not Allowed**: This occurs when the authenticated user doesn't have the `set-leader` permission.
+* **User is not a leader**: This occurs when the user is not a leader in the channel.
 
 {% tabs %}
 {% tab title="Authorization" %}
@@ -59,21 +59,18 @@ Any of the following errors can occur on the endpoint.
     "error": "Not allowed [error-not-allowed]",
     "errorType": "error-not-allowed",
     "details": {
-        "method": "removeRoomModerator"
+        "method": "removeRoomLeader"
     }
 }
 ```
 {% endtab %}
 
-{% tab title="User is not a moderator" %}
+{% tab title="User is already a leader" %}
 ```json
 {
     "success": false,
-    "error": "User is not a moderator [error-user-not-moderator]",
-    "errorType": "error-user-not-moderator",
-    "details": {
-        "method": "removeRoomModerator"
-    }
+    "error": "User is not a leader [error-user-not-leader]",
+    "errorType": "error-user-not-leader"
 }
 ```
 {% endtab %}
@@ -83,4 +80,4 @@ Any of the following errors can occur on the endpoint.
 
 | Version | Description |
 | ------- | ----------- |
-| 0.49.4  | Added       |
+| 0.75.0  | Added.      |

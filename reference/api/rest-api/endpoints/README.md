@@ -138,51 +138,51 @@
 
 These methods apply to public channels only. Use `groups.*` methods for private channels.
 
-| URL                                            | Short Description                                                    | Details Page                                                    |
-| ---------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `/api/v1/channels.addAll`                      | Adds all users to a channel                                          | [Link](rooms/channels-endpoints/addall.md)                      |
-| `/api/v1/channels.addLeader`                   | Gives Leader role to a user in the current channel                   | [Link](rooms/channels-endpoints/addleader.md)                   |
-| `/api/v1/channels.addModerator`                | Gives moderator role to a user in a channel                          | [Link](rooms/channels-endpoints/addmoderator.md)                |
-| `/api/v1/channels.addOwner`                    | Gives owner role to a user in a channel                              | [Link](rooms/channels-endpoints/addowner.md)                    |
-| `/api/v1/channels.anonymousread`               | Gets messages in public channels for an anonymous user               | [Link](rooms/channels-endpoints/anonymousread.md)               |
-| `/api/v1/channels.archive`                     | Archives a channel                                                   | [Link](rooms/channels-endpoints/archive.md)                     |
-| `/api/v1/channels.close`                       | Removes a channel from a user's list                                 | [Link](rooms/channels-endpoints/close.md)                       |
-| `/api/v1/channels.counters`                    | Retrieves channel counters                                           | [Link](rooms/channels-endpoints/counters.md)                    |
-| `/api/v1/channels.create`                      | Creates a new channel                                                | [Link](rooms/channels-endpoints/create.md)                      |
-| `/api/v1/channels.delete`                      | Removes a channel                                                    | [Link](rooms/channels-endpoints/delete.md)                      |
-| `/api/v1/channels.getAllUserMentionsByChannel` | Retrieves mentions of a channel                                      | [Link](rooms/channels-endpoints/getallusermentionsbychannel.md) |
-| `/api/v1/channels.files`                       | Retrieves files from a channel                                       | [Link](rooms/channels-endpoints/files.md)                       |
-| `/api/v1/channels.getIntegrations`             | Retrieves channel integrations                                       | [Link](rooms/channels-endpoints/get-integrations-of-channel.md) |
-| `/api/v1/channels.history`                     | Retrieves messages from a channel                                    | [Link](rooms/channels-endpoints/history.md)                     |
-| `/api/v1/channels.info`                        | Gets channel information                                             | [Link](rooms/channels-endpoints/info.md)                        |
-| `/api/v1/channels.invite`                      | Adds a user to a channel                                             | [Link](rooms/channels-endpoints/invite.md)                      |
-| `/api/v1/channels.join`                        | Joins a channel                                                      | [Link](rooms/channels-endpoints/join.md)                        |
-| `/api/v1/channels.kick`                        | Removes a user from a channel                                        | [Link](rooms/channels-endpoints/kick.md)                        |
-| `/api/v1/channels.leave`                       | Removes the caller from a channel                                    | [Link](rooms/channels-endpoints/leave.md)                       |
-| `/api/v1/channels.list`                        | Retrieves all channels from the server                               | [Link](rooms/channels-endpoints/list.md)                        |
-| `/api/v1/channels.list.joined`                 | Retrieves joined channels of the calling user                        | [Link](rooms/channels-endpoints/list-joined.md)                 |
-| `/api/v1/channels.members`                     | Retrieves all channel users                                          | [Link](rooms/channels-endpoints/members.md)                     |
-| `/api/v1/channels.membersByHighestRole`        | Retrieves all channel users sorted by their most important room role | [Link](rooms/channels-endpoints/members-by-highest-role.md)     |
-| `/api/v1/channels.messages`                    | Retrieves all channel messages                                       | [Link](rooms/channels-endpoints/messages.md)                    |
-| `/api/v1/channels.moderators`                  | Lists all moderators of a channel                                    | [Link](rooms/channels-endpoints/moderators.md)                  |
-| `/api/v1/channels.online`                      | Lists all online users of a channel                                  | [Link](rooms/channels-endpoints/online.md)                      |
-| `/api/v1/channels.open`                        | Adds the channel back to the user's list                             | [Link](rooms/channels-endpoints/open.md)                        |
-| `/api/v1/channels.removeleader`                | Removes Leader role from a user in the current channel               | [Link](rooms/channels-endpoints/removeleader.md)                |
-| `/api/v1/channels.removeModerator`             | Removes moderator role from a user in a channel                      | [Link](rooms/channels-endpoints/removemoderator.md)             |
-| `/api/v1/channels.removeOwner`                 | Removes owner role from a user in a channel                          | [Link](rooms/channels-endpoints/removeowner.md)                 |
-| `/api/v1/channels.rename`                      | Changes a channel's name                                             | [Link](rooms/channels-endpoints/rename.md)                      |
-| `/api/v1/channels.roles`                       | Gets user's roles in the channel                                     | [Link](rooms/channels-endpoints/roles.md)                       |
-| `/api/v1/channels.setAnnouncement`             | Sets a channel's announcement                                        | [Link](rooms/channels-endpoints/setannouncement.md)             |
-| `/api/v1/channels.setCustomFields`             | Sets a channel's custom fields                                       | [Link](rooms/channels-endpoints/setcustomfields.md)             |
-| `/api/v1/channels.setDefault`                  | Sets a channel's default status                                      | [Link](rooms/channels-endpoints/setdefault.md)                  |
-| `/api/v1/channels.setDescription`              | Sets a channel's description                                         | [Link](rooms/channels-endpoints/setdescription.md)              |
-| `/api/v1/channels.setJoinCode`                 | Sets the channel's join code                                         | [Link](rooms/channels-endpoints/setjoincode.md)                 |
-| `/api/v1/channels.setPurpose`                  | Sets a channel's purpose                                             | [Link](rooms/channels-endpoints/setpurpose.md)                  |
-| `/api/v1/channels.setReadOnly`                 | Sets whether a channel is read-only or not                           | [Link](rooms/channels-endpoints/setreadonly.md)                 |
-| `/api/v1/channels.setTopic`                    | Sets a channel's topic                                               | [Link](rooms/channels-endpoints/settopic.md)                    |
-| `/api/v1/channels.setType`                     | Sets the type of room the channel should be                          | [Link](rooms/channels-endpoints/settype.md)                     |
-| `/api/v1/channels.unarchive`                   | Unarchives a channel                                                 | [Link](rooms/channels-endpoints/unarchive.md)                   |
-| `/api/v1/channels.convertToTeam`               | Converts channel to team                                             | [Link](rooms/channels-endpoints/convert-channel-to-team.md)     |
+| URL                                            | Short Description                                                    | Details Page                                                         |
+| ---------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `/api/v1/channels.addAll`                      | Adds all users to a channel                                          | [Link](rooms/channels-endpoints/add-all-users-to-a-channel.md)       |
+| `/api/v1/channels.addLeader`                   | Gives Leader role to a user in the current channel                   | [Link](rooms/channels-endpoints/set-channel-leader.md)               |
+| `/api/v1/channels.addModerator`                | Gives moderator role to a user in a channel                          | [Link](rooms/channels-endpoints/set-channel-moderator.md)            |
+| `/api/v1/channels.addOwner`                    | Gives owner role to a user in a channel                              | [Link](rooms/channels-endpoints/set-channel-ower.md)                 |
+| `/api/v1/channels.anonymousread`               | Gets messages in public channels for an anonymous user               | [Link](rooms/channels-endpoints/channel-anonymous-read.md)           |
+| `/api/v1/channels.archive`                     | Archives a channel                                                   | [Link](rooms/channels-endpoints/archive-channel.md)                  |
+| `/api/v1/channels.close`                       | Removes a channel from a user's list                                 | [Link](rooms/channels-endpoints/close-channel.md)                    |
+| `/api/v1/channels.counters`                    | Retrieves channel counters                                           | [Link](rooms/channels-endpoints/get-channel-counters.md)             |
+| `/api/v1/channels.create`                      | Creates a new channel                                                | [Link](rooms/channels-endpoints/create-channel.md)                   |
+| `/api/v1/channels.delete`                      | Removes a channel                                                    | [Link](rooms/channels-endpoints/delete-channel.md)                   |
+| `/api/v1/channels.getAllUserMentionsByChannel` | Retrieves mentions of a channel                                      | [Link](rooms/channels-endpoints/get-all-user-mentions-in-channel.md) |
+| `/api/v1/channels.files`                       | Retrieves files from a channel                                       | [Link](rooms/channels-endpoints/get-channel-files.md)                |
+| `/api/v1/channels.getIntegrations`             | Retrieves channel integrations                                       | [Link](rooms/channels-endpoints/get-channel-integrations.md)         |
+| `/api/v1/channels.history`                     | Retrieves messages from a channel                                    | [Link](rooms/channels-endpoints/get-channel-history.md)              |
+| `/api/v1/channels.info`                        | Gets channel information                                             | [Link](rooms/channels-endpoints/get-channel-information.md)          |
+| `/api/v1/channels.invite`                      | Adds a user to a channel                                             | [Link](rooms/channels-endpoints/invite-to-channel.md)                |
+| `/api/v1/channels.join`                        | Joins a channel                                                      | [Link](rooms/channels-endpoints/join-channel.md)                     |
+| `/api/v1/channels.kick`                        | Removes a user from a channel                                        | [Link](rooms/channels-endpoints/remove-user-from-channel.md)         |
+| `/api/v1/channels.leave`                       | Removes the caller from a channel                                    | [Link](rooms/channels-endpoints/leave-channel.md)                    |
+| `/api/v1/channels.list`                        | Retrieves all channels from the server                               | [Link](rooms/channels-endpoints/get-channel-list.md)                 |
+| `/api/v1/channels.list.joined`                 | Retrieves joined channels of the calling user                        | [Link](rooms/channels-endpoints/get-list-of-joined-channels.md)      |
+| `/api/v1/channels.members`                     | Retrieves all channel users                                          | [Link](rooms/channels-endpoints/get-members-of-a-channel.md)         |
+| `/api/v1/channels.membersByHighestRole`        | Retrieves all channel users sorted by their most important room role | [Link](rooms/channels-endpoints/members-by-highest-role.md)          |
+| `/api/v1/channels.messages`                    | Retrieves all channel messages                                       | [Link](rooms/channels-endpoints/get-channel-messages.md)             |
+| `/api/v1/channels.moderators`                  | Lists all moderators of a channel                                    | [Link](rooms/channels-endpoints/get-channel-moderators.md)           |
+| `/api/v1/channels.online`                      | Lists all online users of a channel                                  | [Link](rooms/channels-endpoints/get-online-users-of-channels.md)     |
+| `/api/v1/channels.open`                        | Adds the channel back to the user's list                             | [Link](rooms/channels-endpoints/add-channel-to-user-list.md)         |
+| `/api/v1/channels.removeleader`                | Removes Leader role from a user in the current channel               | [Link](rooms/channels-endpoints/remove-channel-leader.md)            |
+| `/api/v1/channels.removeModerator`             | Removes moderator role from a user in a channel                      | [Link](rooms/channels-endpoints/removemoderator.md)                  |
+| `/api/v1/channels.removeOwner`                 | Removes owner role from a user in a channel                          | [Link](rooms/channels-endpoints/remove-channel-owner.md)             |
+| `/api/v1/channels.rename`                      | Changes a channel's name                                             | [Link](rooms/channels-endpoints/rename-channel.md)                   |
+| `/api/v1/channels.roles`                       | Gets user's roles in the channel                                     | [Link](rooms/channels-endpoints/get-channel-roles.md)                |
+| `/api/v1/channels.setAnnouncement`             | Sets a channel's announcement                                        | [Link](rooms/channels-endpoints/set-channel-announcement.md)         |
+| `/api/v1/channels.setCustomFields`             | Sets a channel's custom fields                                       | [Link](rooms/channels-endpoints/set-channel-custom-fields.md)        |
+| `/api/v1/channels.setDefault`                  | Sets a channel's default status                                      | [Link](rooms/channels-endpoints/set-default-channel.md)              |
+| `/api/v1/channels.setDescription`              | Sets a channel's description                                         | [Link](rooms/channels-endpoints/set-channel-description.md)          |
+| `/api/v1/channels.setJoinCode`                 | Sets the channel's join code                                         | [Link](rooms/channels-endpoints/set-channel-join-code.md)            |
+| `/api/v1/channels.setPurpose`                  | Sets a channel's purpose                                             | [Link](rooms/channels-endpoints/channel-set-purpose.md)              |
+| `/api/v1/channels.setReadOnly`                 | Sets whether a channel is read-only or not                           | [Link](rooms/channels-endpoints/set-channel-read-only.md)            |
+| `/api/v1/channels.setTopic`                    | Sets a channel's topic                                               | [Link](rooms/channels-endpoints/set-channel-topic.md)                |
+| `/api/v1/channels.setType`                     | Sets the type of room the channel should be                          | [Link](rooms/channels-endpoints/settype.md)                          |
+| `/api/v1/channels.unarchive`                   | Unarchives a channel                                                 | [Link](rooms/channels-endpoints/unarchive-channel.md)                |
+| `/api/v1/channels.convertToTeam`               | Converts channel to team                                             | [Link](rooms/channels-endpoints/convert-channel-to-team.md)          |
 
 ### Room
 

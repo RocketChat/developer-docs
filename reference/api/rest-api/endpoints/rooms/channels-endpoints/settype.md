@@ -1,18 +1,12 @@
-# Channel Set Type
+# Set Channel Type
 
-Sets the type of room this channel should be.
+Set a channel as public or private.
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/channels.setType` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="320">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/channels.setType</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument   | Example             | Required | Description                                                                                            |
-| ---------- | ------------------- | -------- | ------------------------------------------------------------------------------------------------------ |
-| `roomId`   | `ByehQjC44FwMeiLbX` | Required | The channel's id                                                                                       |
-| `roomName` | `chat-room-name`    | Required | The channel's name                                                                                     |
-| `type`     | `c` _or_ `p`        | Required | The type of room this channel should be, either `c` or `p`. `c` is for channel and `p` is for private. |
+<table><thead><tr><th width="193">Key</th><th width="214.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark> or <code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> or <code>chat-room-name</code></td><td>The channel ID or name. You must enter at least one of the parameters.</td></tr><tr><td><code>type</code><mark style="color:red;"><code>*</code></mark></td><td><code>c</code> <em>or</em> <code>p</code></td><td><p>The type of room this channel should be, either <code>c</code> or <code>p</code>. </p><p><code>c</code> is for channel and <code>p</code> is for private.</p></td></tr></tbody></table>
 
 ## Example Call
 
@@ -21,7 +15,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
      https://localhost:3000/api/v1/channels.setType \
-     -d '{ "roomId": "ByehQjC44FwMeiLbX", "type": "p" }'
+     -d '{ 
+          "roomId": "ByehQjC44FwMeiLbX", 
+          "type": "p" }'
 
 or
 
@@ -29,12 +25,14 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
      https://localhost:3000/api/v1/channels.setType \
-     -d '{ "roomName": "chat-room-name", "type": "p" }'
+     -d '{      
+          "roomName": "chat-room-name", 
+          "type": "p" }'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "channel": {
         "_id": "ByehQjC44FwMeiLbX",
