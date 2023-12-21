@@ -1,30 +1,33 @@
----
-description: REST API Get Methods
----
-
 # Get Rooms
 
 Get all opened rooms (all joined public & private channels and all DMs) for this user.
 
-| URL                 | Requires Auth | HTTP Method |
-| ------------------- | ------------- | ----------- |
-| `/api/v1/rooms.get` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/rooms.get</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument       | Example                    | Required | Description        |
-| -------------- | -------------------------- | -------- | ------------------ |
-| `updatedSince` | `2017-11-25T15:08:17.248Z` | Optional | Date as ISO string |
+<table><thead><tr><th width="205.33333333333331">Key</th><th width="235">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>updatedSince</code></td><td><code>2017-11-25T15:08:17.248Z</code></td><td>Rooms that were updated after a specific date. Enter the date as ISO string.</td></tr></tbody></table>
 
-When you provide the `updatedSince` query parameter in the URL then the `update` and `remove` in the response will contain only those updated and removed since this date and time.
+When you provide the `updatedSince` query parameter in the URL, then the `update` and `remove` in the response will contain only those rooms updated and removed since this date and time.
 
-## Example Call to get all of the rooms
+## Example Call
+
+Without query parameters:
 
 ```bash
 curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
      -H "X-User-Id: hw5DThnhQmxDWnavu" \
      -H "Content-type: application/json" \
      http://localhost:3000/api/v1/rooms.get
+```
+
+With query parameter:
+
+```bash
+curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
+     -H "X-User-Id: hw5DThnhQmxDWnavu" \
+     -H "Content-type: application/json" \
+     http://localhost:3000/api/v1/rooms.get?updatedSince=2018-01-26T00:11:22.345Z
 ```
 
 ## Example Result
@@ -66,33 +69,6 @@ curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
          "_updatedAt": "2018-01-24T21:02:04.318Z",
          "customFields": {},
          "ro": false
-      }
-   ],
-   "remove": [],
-   "success": true
-}
-```
-
-## Example Call to get the rooms which have changed after the provided date
-
-```bash
-curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
-     -H "X-User-Id: hw5DThnhQmxDWnavu" \
-     -H "Content-type: application/json" \
-     http://localhost:3000/api/v1/rooms.get?updatedSince=2018-01-26T00:11:22.345Z
-```
-
-## Example Result
-
-```javascript
-{
-   "update": [
-      {
-         "_id": "GENERAL",
-         "name": "general",
-         "t": "c",
-         "_updatedAt": "2018-01-27T16:14:15.379Z",
-         "default": true
       }
    ],
    "remove": [],

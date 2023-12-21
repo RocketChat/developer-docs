@@ -1,44 +1,20 @@
----
-description: Export room to a file or email.
----
-
 # Export Room
+
+Export room to a file or email.
 
 {% hint style="info" %}
 This requires the user to have the `mail-messages` permission.
 {% endhint %}
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/rooms.export` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/rooms.export</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument   | Example             | Required | Description                           |
-| ---------- | ------------------- | -------- | ------------------------------------- |
-| `rid`      | `JZ8Y2dLfYhsg323Rf` | Required | The room Id.                          |
-| `type`     | `email` or `file`   | Required | How you want the room to be exported. |
-| `dateFrom` | `2020-01-13`        | Optional | Startdate to begin fetching.          |
-| `dateTo`   | `2021-12-13`        | Optional | End date for fetching.                |
-| `format`   | `html` or `json`    | Required | The file type to export as.           |
-
-### Example Payload
-
-```
-{
-    "rid": "iu7jtPAhvEeAS5tNq",
-    "type": "file",
-    "dateFrom": "2000-01-01",
-    "dateTo": "2021-11-25",
-    "format": "html"
-}
-```
+<table><thead><tr><th width="200.33333333333331">Key</th><th width="234">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>JZ8Y2dLfYhsg323Rf</code></td><td>The room ID.</td></tr><tr><td><code>type</code><mark style="color:red;"><code>*</code></mark></td><td><code>email</code> or <code>file</code></td><td>How you want the room to be exported.</td></tr><tr><td><code>dateFrom</code></td><td><code>2020-01-13</code></td><td>Start date to begin fetching.</td></tr><tr><td><code>dateTo</code></td><td><code>2021-12-13</code></td><td>End date for fetching.</td></tr><tr><td><code>format</code><mark style="color:red;"><code>*</code></mark></td><td><code>html</code> or <code>json</code></td><td>The file type to export as.</td></tr></tbody></table>
 
 ## Example Call
 
-{% tabs %}
-{% tab title="Curl" %}
-```
+```bash
 curl -L -X POST 'http://localhost:3000/api/v1/rooms.export' \
 -H 'X-User-Id: d26x6zSkaPSe5gCyy' \
 -H 'X-Auth-Token: Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92' \
@@ -51,98 +27,12 @@ curl -L -X POST 'http://localhost:3000/api/v1/rooms.export' \
     "format": "html"
 }'
 ```
-{% endtab %}
 
-{% tab title="Node.js" %}
-```
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'http://localhost:3000/api/v1/rooms.export',
-  'headers': {
-    'X-User-Id': 'd26x6zSkaPSe5gCyy',
-    'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"rid":"iu7jtPAhvEeAS5tNq","type":"file","dateFrom":"2000-01-01","dateTo":"2021-11-25","format":"html"})
-
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
-import requests
-
-url = "http://localhost:3000/api/v1/rooms.export"
-
-payload="{\n    \"rid\": \"iu7jtPAhvEeAS5tNq\",\n    \"type\": \"file\",\n    \"dateFrom\": \"2000-01-01\",\n    \"dateTo\": \"2021-11-25\",\n    \"format\": \"html\"\n}"
-headers = {
-  'X-User-Id': 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type': 'application/json'
-}
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
-```
-{% endtab %}
-
-{% tab title="PHP" %}
-```
-<?php
-require_once 'HTTP/Request2.php';
-$request = new HTTP_Request2();
-$request->setUrl('http://localhost:3000/api/v1/rooms.export');
-$request->setMethod(HTTP_Request2::METHOD_POST);
-$request->setConfig(array(
-  'follow_redirects' => TRUE
-));
-$request->setHeader(array(
-  'X-User-Id' => 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token' => 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type' => 'application/json'
-));
-$request->setBody('{\n    "rid": "iu7jtPAhvEeAS5tNq",\n    "type": "file",\n    "dateFrom": "2000-01-01",\n    "dateTo": "2021-11-25",\n    "format": "html"\n}');
-try {
-  $response = $request->send();
-  if ($response->getStatus() == 200) {
-    echo $response->getBody();
-  }
-  else {
-    echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-    $response->getReasonPhrase();
-  }
-}
-catch(HTTP_Request2_Exception $e) {
-  echo 'Error: ' . $e->getMessage();
-}
-```
-{% endtab %}
-
-{% tab title="Java" %}
-```
-Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/rooms.export")
-  .header("X-User-Id", "d26x6zSkaPSe5gCyy")
-  .header("X-Auth-Token", "Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92")
-  .header("Content-Type", "application/json")
-  .body("{\n    \"rid\": \"iu7jtPAhvEeAS5tNq\",\n    \"type\": \"file\",\n    \"dateFrom\": \"2000-01-01\",\n    \"dateTo\": \"2021-11-25\",\n    \"format\": \"html\"\n}")
-  .asString();
-```
-{% endtab %}
-{% endtabs %}
-
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "success": true
 }
@@ -150,7 +40,7 @@ HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/rooms
 
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **Invalid Params**: Occurs when one or more needed parameters are missing.
@@ -160,7 +50,7 @@ Any of the following errors can occur on the endpoint.
 
 {% tabs %}
 {% tab title=" Authorization" %}
-```javascript
+```json
 {
     "success": false,
     "error": "unauthorized"

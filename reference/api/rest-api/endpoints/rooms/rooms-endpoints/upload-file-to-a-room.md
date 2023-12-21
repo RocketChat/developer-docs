@@ -1,23 +1,16 @@
----
-description: REST API Upload Methods
----
-
 # Upload File to a Room
 
 Post a message with the attached file to a dedicated room.
 
-| URL                         | Requires Auth | HTTP Method |
-| --------------------------- | ------------- | ----------- |
-| `/api/v1/rooms.upload/:rid` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/rooms.upload/:rid</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Path Variables
 
-| Argument      | Example                         | Required | Description                                                   |
-| ------------- | ------------------------------- | -------- | ------------------------------------------------------------- |
-| `file`        | `$HOME/example.txt`             | Required | A file name to upload                                         |
-| `msg`         | `This is a message with a file` | Optional | A message text                                                |
-| `description` | `Simple text file`              | Optional | A description of the file                                     |
-| `tmid`        | `vg3h21v31v23`                  | Optional | The thread message id (if you want upload a file to a thread) |
+<table><thead><tr><th width="203.33333333333331">Key</th><th width="241">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>hdsjjd783hkd</code></td><td>The room ID to which you want to upload the file.</td></tr></tbody></table>
+
+## Body Parameters
+
+<table><thead><tr><th width="205.33333333333331">Key</th><th width="258">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>file</code><mark style="color:red;"><code>*</code></mark></td><td><code>$HOME/example.txt</code></td><td>A file name to upload.</td></tr><tr><td><code>msg</code></td><td><code>This is a message with a file</code></td><td>A message text.</td></tr><tr><td><code>description</code></td><td><code>Simple text file</code></td><td>A description of the file.</td></tr><tr><td><code>tmid</code></td><td><code>vg3h21v31v23</code></td><td>The thread message id (if you want upload a file to a thread).</td></tr></tbody></table>
 
 ## Example Call
 
@@ -31,12 +24,12 @@ curl "http://localhost:3000/api/v1/rooms.upload/GENERAL" \
 ```
 
 {% hint style="info" %}
-For some file types, when uploading via curl you may need to set the mime type.
+For some file types, when uploading via curl, you may need to set the mime type.
 
-With some file types, curl will upload the file as `application/octet-stream`. You can pass a custom mime type like this: `-F "file=@file.wav;type=audio/wav"` to specify the type
+With some file types, curl will upload the file as `application/octet-stream`. You can pass a custom mime type like this: `-F "file=@file.wav;type=audio/wav"` to specify the type.
 {% endhint %}
 
-## Example Result
+## Example Response
 
 ### Success
 
@@ -92,11 +85,9 @@ With some file types, curl will upload the file as `application/octet-stream`. Y
 }
 ```
 
-![Message with file upload](<../../../../../../.gitbook/assets/message with file upload>)
-
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **Invalid Field**: Occurs when the file parameter is invalid.
@@ -104,7 +95,7 @@ Any of the following errors can occur on the endpoint.
 
 {% tabs %}
 {% tab title=" Authorization" %}
-```javascript
+```json
 {
     "success": false,
     "error": "unauthorized"

@@ -1,24 +1,12 @@
----
-description: REST API Create Discussion Methods
----
-
 # Create Discussion
 
-Creates a new discussion for room. It requires at least one of the following permissions: `start-discussion` OR `start-discussion-other-user`, AND must be with the following setting enabled: `Discussion_enabled`.
+Creates a new discussion for the room. It requires at least one of the following permissions: `start-discussion` OR `start-discussion-other-user`, AND must be with the following setting enabled: `Discussion_enabled`.
 
-| URL                              | Requires Auth | HTTP Method |
-| -------------------------------- | ------------- | ----------- |
-| `/api/v1/rooms.createDiscussion` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/rooms.createDiscussion</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument | Example                    | Required | Description                                                                                                               |
-| -------- | -------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `prid`   | `GENERAL`                  | Required | Parent room id of the discussion.                                                                                         |
-| `t_name` | `discussion name`          | Required | Discussion name.                                                                                                          |
-| `users`  | `['rocket.cat']`           | Optional | Array of users to join in the discussion, if not provide will be an empty array (Note: if provided, it must be an array). |
-| `pmid`   | `aobEgbghXfe543keqG`       | Optional | Parent message id (if the discussion comes from a message).                                                               |
-| `reply`  | `reply of this discussion` | Optional | The reply of the discussion.                                                                                              |
+<table><thead><tr><th width="184.33333333333331">Key</th><th width="237">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>prid</code><mark style="color:red;"><code>*</code></mark></td><td><code>GENERAL</code></td><td>Parent room ID of the discussion.</td></tr><tr><td><code>t_name</code><mark style="color:red;"><code>*</code></mark></td><td><code>discussion name</code></td><td>Discussion name.</td></tr><tr><td><code>users</code></td><td><code>['rocket.cat']</code></td><td>Array of users to join in the discussion, if not provided, it will be an empty array. (Note: if provided, it must be an array).</td></tr><tr><td><code>pmid</code></td><td><code>aobEgbghXfe543keqG</code></td><td>Parent message ID (if the discussion comes from a message).</td></tr><tr><td><code>reply</code></td><td><code>reply of this discussion</code></td><td>The reply of the discussion.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -27,12 +15,14 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-Type: application/json" \
      http://localhost:3000/api/v1/rooms.createDiscussion  \
-     -d '{ "prid": "GENERAL", "t_name": "Discussion Name"}'
+     -d '{ 
+          "prid": "GENERAL", 
+          "t_name": "Discussion Name"}'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "discussion": {
         "rid": "cgk88DHLHexwMaFWh",

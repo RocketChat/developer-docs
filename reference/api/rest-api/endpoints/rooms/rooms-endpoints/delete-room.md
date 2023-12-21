@@ -2,15 +2,11 @@
 
 Delete a room from the workspace.
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/rooms.delete` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/rooms.delete</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument | Example                    | Required | Description   |
-| -------- | -------------------------- | -------- | ------------- |
-| `roomId` | `64adb09baa5ad4273bfc0cbf` | Required | The room's id |
+<table><thead><tr><th width="208.33333333333331">Key</th><th width="253">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -24,9 +20,9 @@ curl -L -X POST 'http://localhost:3000/api/v1/rooms.delete' \
 }'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "success": true
 }

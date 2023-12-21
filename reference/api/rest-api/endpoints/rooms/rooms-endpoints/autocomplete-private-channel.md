@@ -1,24 +1,22 @@
-# Autocomplete private channel
+# Autocomplete Private Channel
 
-| URL                                            | Requires Auth | HTTP Method |
-| ---------------------------------------------- | ------------- | ----------- |
-| `/api/v1/rooms.autocomplete.channelAndPrivate` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/rooms.autocomplete.channelAndPrivate</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Parameters
+## Query Parameters
 
-| Argument   | Example                | Required |
-| ---------- | ---------------------- | -------- |
-| `selector` | `{ "exceptions" : []}` | Required |
+<table><thead><tr><th width="203.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>selector</code><mark style="color:red;"><code>*</code></mark></td><td><code>{ "exceptions" : []}</code></td><td>Provide additional values to filter the results.</td></tr></tbody></table>
 
 ## Example Call
 
+{% code overflow="wrap" %}
 ```bash
 curl --location --request GET 'http://localhost:3000/api/v1/rooms.autocomplete.channelAndPrivate?selector=[]\
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
+{% endcode %}
 
-## Result
+## Example Response
 
 ### Success
 
@@ -68,7 +66,7 @@ curl --location --request GET 'http://localhost:3000/api/v1/rooms.autocomplete.c
 
 ### Errors <a href="#errors" id="errors"></a>
 
-The following error can occur upon the endpoint.‌
+The following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **Selector Param**: Requires selector param for the request to be made.

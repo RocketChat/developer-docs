@@ -1,20 +1,12 @@
----
-description: REST API Leave Methods
----
-
 # Leave Room
 
-Causes the caller to be removed from the room.
+Causes the request sender to be removed from the room.
 
-| URL                   | Requires Auth | HTTP Method |
-| --------------------- | ------------- | ----------- |
-| `/api/v1/rooms.leave` | `yes`         | `POST`      |
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/rooms.leave</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Body Parameters
 
-| Argument | Example             | Required | Description   |
-| -------- | ------------------- | -------- | ------------- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The room's id |
+<table><thead><tr><th width="208.33333333333331">Key</th><th width="253">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The room ID.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -23,12 +15,13 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      -H "Content-type: application/json" \
      http://localhost:3000/api/v1/rooms.leave \
-     -d '{ "roomId": "ByehQjC44FwMeiLbX" }'
+     -d '{ 
+          "roomId": "ByehQjC44FwMeiLbX" }'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "success": true
 }

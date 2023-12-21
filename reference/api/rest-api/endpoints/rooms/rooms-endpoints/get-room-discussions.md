@@ -1,14 +1,12 @@
----
-description: REST API Get Discussions Methods
----
+# Get Room Discussions
 
-# Get Discussions
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/rooms.getDiscussions</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-Get all the discussions of room. It supports the [#pagination](../../../#pagination "mention") parameters.
+## Query Parameters
 
-| URL                            | Requires Auth | HTTP Method |
-| ------------------------------ | ------------- | ----------- |
-| `/api/v1/rooms.getDiscussions` | `yes`         | `GET`       |
+This endpoint supports the[#pagination](../../../#pagination "mention") and the[#query-and-fields](../../../#query-and-fields "mention") parameters. Additional parameters are as follows:
+
+<table><thead><tr><th width="227.33333333333331">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark> or <code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> or <code>general</code></td><td>The room ID or name. You must enter at least one of the parameters.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -19,9 +17,9 @@ curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
      http://localhost:3000/api/v1/rooms.getDiscussions?roomId=GENERAL
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "discussions": [
         {
