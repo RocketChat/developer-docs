@@ -64,9 +64,9 @@
 
 ### LDAP
 
-| Url                    | Short Description | Details Page                                           |
-| ---------------------- | ----------------- | ------------------------------------------------------ |
-| `/api/v1/ldap.syncNow` | LDAP SyncNow      | [Link](user-management/ldap-endpoints/ldap-syncnow.md) |
+| Url                    | Short Description | Details Page                                        |
+| ---------------------- | ----------------- | --------------------------------------------------- |
+| `/api/v1/ldap.syncNow` | LDAP SyncNow      | [Link](user-management/ldap-endpoints/ldap-sync.md) |
 
 ### Permissions
 

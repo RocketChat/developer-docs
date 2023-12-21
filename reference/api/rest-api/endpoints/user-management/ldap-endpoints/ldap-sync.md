@@ -1,8 +1,4 @@
----
-description: Sync LDAP users
----
-
-# LDAP SyncNow
+# LDAP Sync
 
 <figure><img src="../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
@@ -13,13 +9,7 @@ Syncs your [LDAP data](https://docs.rocket.chat/use-rocket.chat/workspace-admini
 * It requires [two-factor authentication.](../../authentication-endpoints/rest-two-factor-authentication.md#calling-an-endpoint-with-two-factor)
 {% endhint %}
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/ldap.syncNow` | `yes`         | `POST`      |
-
-## Headers
-
-<table><thead><tr><th width="179">Argument</th><th width="239">Example</th><th width="136">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>X-User-Id</code></td><td><code>myuser-name</code></td><td>Required</td><td>The authenticated user ID.</td></tr><tr><td><code>X-Auth-Token</code></td><td><code>myauth-token</code></td><td>Required</td><td>Auth token.</td></tr><tr><td><code>x-2fa-code</code></td><td><code>148750</code></td><td>Required</td><td>The 2fa code.</td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="268">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/ldap.syncNow</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Example Call
 
@@ -30,7 +20,9 @@ curl --location --request POST 'http://localhost:3000/api/v1/ldap.syncNow' \
 --header 'x-2fa-code: 773917'
 ```
 
-## Example Result
+## Example Response
+
+### Success
 
 ```json
 {
@@ -41,7 +33,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/ldap.syncNow' \
 
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No Permission**: This occurs when the authenticated user doesn't have the `sync-auth-services-users` permission.
@@ -111,7 +103,4 @@ Any of the following errors can occur on the endpoint.
 
 ## Change Log
 
-| Version | Description                             |
-| ------- | --------------------------------------- |
-| 4.0.0   | Added                                   |
-| 5.2.0   | Include `syncAvatars` on `ldap.syncNow` |
+<table><thead><tr><th width="358">Version</th><th>Description</th></tr></thead><tbody><tr><td>4.0.0</td><td>Added</td></tr><tr><td>5.2.0</td><td>Include <code>syncAvatars</code> on <code>ldap.syncNow</code></td></tr></tbody></table>
