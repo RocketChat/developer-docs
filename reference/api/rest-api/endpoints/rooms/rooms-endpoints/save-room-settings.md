@@ -1,30 +1,14 @@
 # Save Room Settings
 
-This endpoint allows you to save the settings of a room.
+<table><thead><tr><th width="163">HTTP Method</th><th width="290">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/rooms.saveRoomSettings</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                              | Requires Auth | HTTP Method |
-| -------------------------------- | ------------- | ----------- |
-| `/api/v1/rooms.saveRoomSettings` | `yes`         | `POST`      |
+## Body Parameters
 
-## Payload
-
-<table data-header-hidden><thead><tr><th width="180">Argument</th><th width="182">Example</th><th width="139">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>JZ8Y2dLfYhsg323Rf</code></td><td>Required</td><td>The room id.</td></tr><tr><td><code>roomName</code></td><td><code>Test-Save-Room</code></td><td>Optional</td><td>The name of the room.</td></tr><tr><td><code>roomDescription</code></td><td><code>This is a test room.</code></td><td>Optional</td><td>The description of the room.</td></tr><tr><td>roomAvatar</td><td>https://example.com/image</td><td>Optional</td><td>The URL of the room avatar image.</td></tr><tr><td>featured</td><td>true</td><td>Optional</td><td>Whether the room is featured or not.</td></tr><tr><td>roomTopic</td><td>Discussion Topic</td><td>Optional</td><td>The topic of the room.</td></tr><tr><td>roomAnnouncement</td><td>Important Announcement</td><td>Optional</td><td>The announcement of the room.</td></tr><tr><td>roomCustomFields</td><td>{ "field1": "value1" }</td><td>Optional</td><td>The custom fields of the room.</td></tr><tr><td>roomType</td><td>"c"</td><td>Optional</td><td>The type of the room.</td></tr><tr><td>readOnly</td><td>true</td><td>Optional</td><td>Whether the room is read-only or not.</td></tr><tr><td>reactWhenReadOnly</td><td>true</td><td>Optional</td><td>Whether users can react when the room is read-only.</td></tr><tr><td>systemMessages</td><td>["changed-room-name"]</td><td>Optional</td><td>The system messages that the room supports.</td></tr><tr><td>default</td><td>true</td><td>Optional</td><td>Whether the room is the default room or not.</td></tr><tr><td>joinCode</td><td>"123456"</td><td>Optional</td><td>The join code of the room.</td></tr><tr><td>streamingOptions</td><td>{ "type": "live" }</td><td>Optional</td><td>The streaming options of the room.</td></tr><tr><td>retentionEnabled</td><td>true</td><td>Optional</td><td>Whether retention is enabled for the room or not.</td></tr><tr><td>retentionMaxAge</td><td>30</td><td>Optional</td><td>The maximum age (in days) of messages to be retained in the room.</td></tr><tr><td>retentionExcludePinned</td><td>true</td><td>Optional</td><td>Whether to exclude pinned messages from retention or not.</td></tr><tr><td>retentionFilesOnly</td><td>true</td><td>Optional</td><td>Whether to retain only files in the room or not.</td></tr><tr><td>retentionIgnoreThreads</td><td>true</td><td>Optional</td><td>Whether to ignore threads when retaining messages or not.</td></tr><tr><td>retentionOverrideGlobal</td><td>true</td><td>Optional</td><td>Whether to override the global retention settings for the room or not.</td></tr><tr><td>encrypted</td><td>true</td><td>Optional</td><td>Whether the room is encrypted or not.</td></tr><tr><td>favorite</td><td>{ "favorite": true, "defaultValue": false }</td><td>Optional</td><td>The favorite settings of the room. Whether the room is marked as favorite and whether it is set as the default room.</td></tr></tbody></table>
-
-### Example Payload
-
-```
-{
-    "rid": "JZ8Y2dLfYhsg323Rf",
-    "roomName": "Test-Save-Room",
-    "roomDescription": "This is a test for save-room settings."
-}
-```
+<table><thead><tr><th width="226">Key</th><th width="243">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code><mark style="color:red;"><code>*</code></mark></td><td><code>JZ8Y2dLfYhsg323Rf</code></td><td>The room ID.</td></tr><tr><td><code>roomName</code></td><td><code>Test-Save-Room</code></td><td>The name of the room.</td></tr><tr><td><code>roomDescription</code></td><td><code>This is a test room.</code></td><td>The description of the room.</td></tr><tr><td><code>roomAvatar</code></td><td><code>data:image/jpeg;base64,&#x3C;base64 code of your image></code></td><td>The base64 image.</td></tr><tr><td><code>featured</code></td><td><code>true</code></td><td>Whether the room is featured or not.</td></tr><tr><td><code>roomTopic</code></td><td><code>Discussion Topic</code></td><td>The topic of the room.</td></tr><tr><td><code>roomAnnouncement</code></td><td><code>Important Announcement</code></td><td>The announcement of the room.</td></tr><tr><td><code>roomCustomFields</code></td><td><code>{ "field1": "value1" }</code></td><td>The custom fields of the room.</td></tr><tr><td><code>roomType</code></td><td><code>"c"</code></td><td>The type of the room.</td></tr><tr><td><code>readOnly</code></td><td><code>true</code></td><td>Whether the room is read-only or not.</td></tr><tr><td><code>reactWhenReadOnly</code></td><td><code>true</code></td><td>Whether users can react when the room is read-only.</td></tr><tr><td><code>systemMessages</code></td><td><code>["changed-room-name"]</code></td><td>The system messages that the room supports.</td></tr><tr><td><code>default</code></td><td><code>true</code></td><td>Whether the room is the default room or not.</td></tr><tr><td><code>joinCode</code></td><td><code>"123456"</code></td><td>The join code of the room.</td></tr><tr><td><code>streamingOptions</code></td><td><code>{ "type": "live" }</code></td><td>The streaming options of the room.</td></tr><tr><td><code>retentionEnabled</code></td><td><code>true</code></td><td>Whether retention is enabled for the room or not.</td></tr><tr><td><code>retentionMaxAge</code></td><td><code>30</code></td><td>The maximum age (in days) of messages to be retained in the room.</td></tr><tr><td><code>retentionExcludePinned</code></td><td><code>true</code></td><td>Whether to exclude pinned messages from retention or not.</td></tr><tr><td><code>retentionFilesOnly</code></td><td><code>true</code></td><td>Whether to retain only files in the room or not.</td></tr><tr><td><code>retentionIgnoreThreads</code></td><td><code>true</code></td><td>Whether to ignore threads when retaining messages or not.</td></tr><tr><td><code>retentionOverrideGlobal</code></td><td><code>true</code></td><td>Whether to override the global retention settings for the room or not.</td></tr><tr><td><code>encrypted</code></td><td><code>true</code></td><td>Whether the room is encrypted or not.</td></tr><tr><td><code>favorite</code></td><td><code>{ "favorite": true, "defaultValue": false }</code></td><td>The favorite settings of the room. Whether the room is marked as favorite and whether it is set as the default room.</td></tr></tbody></table>
 
 ## Example Call
 
-{% tabs %}
-{% tab title="Curl" %}
-```
+```bash
 curl -L -X POST 'http://localhost:3000/api/v1/rooms.saveRoomSettings' \
 -H 'X-User-Id: d26x6zSkaPSe5gCyy' \
 -H 'X-Auth-Token: Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92' \
@@ -35,98 +19,12 @@ curl -L -X POST 'http://localhost:3000/api/v1/rooms.saveRoomSettings' \
     "roomDescription": "This is a test room."
 }'
 ```
-{% endtab %}
 
-{% tab title="Node.js" %}
-```
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'http://localhost:3000/api/v1/rooms.saveRoomSettings',
-  'headers': {
-    'X-User-Id': 'd26x6zSkaPSe5gCyy',
-    'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"rid":"JZ8Y2dLfYhsg323Rf"})
-
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
-import requests
-
-url = "http://localhost:3000/api/v1/rooms.saveRoomSettings"
-
-payload="{\n    \"rid\": \"JZ8Y2dLfYhsg323Rf\"\n}"
-headers = {
-  'X-User-Id': 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type': 'application/json'
-}
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
-```
-{% endtab %}
-
-{% tab title="PHP" %}
-```
-<?php
-require_once 'HTTP/Request2.php';
-$request = new HTTP_Request2();
-$request->setUrl('http://localhost:3000/api/v1/rooms.saveRoomSettings');
-$request->setMethod(HTTP_Request2::METHOD_POST);
-$request->setConfig(array(
-  'follow_redirects' => TRUE
-));
-$request->setHeader(array(
-  'X-User-Id' => 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token' => 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type' => 'application/json'
-));
-$request->setBody('{\n    "rid": "JZ8Y2dLfYhsg323Rf"\n}');
-try {
-  $response = $request->send();
-  if ($response->getStatus() == 200) {
-    echo $response->getBody();
-  }
-  else {
-    echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-    $response->getReasonPhrase();
-  }
-}
-catch(HTTP_Request2_Exception $e) {
-  echo 'Error: ' . $e->getMessage();
-}
-```
-{% endtab %}
-
-{% tab title="Java" %}
-```
-Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/rooms.saveRoomSettings")
-  .header("X-User-Id", "d26x6zSkaPSe5gCyy")
-  .header("X-Auth-Token", "Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92")
-  .header("Content-Type", "application/json")
-  .body("{\n    \"rid\": \"JZ8Y2dLfYhsg323Rf\"\n}")
-  .asString();
-```
-{% endtab %}
-{% endtabs %}
-
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "rid": "JZ8Y2dLfYhsg323Rf",
     "success": true
@@ -142,7 +40,7 @@ Any of the following errors can occur on the endpoint.
 
 {% tabs %}
 {% tab title=" Authorization" %}
-```javascript
+```json
 {
     "success": false,
     "error": "unauthorized"
