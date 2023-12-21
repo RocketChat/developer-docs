@@ -1,16 +1,23 @@
-# Get Integrations
+# Get Group Integrations
 
-Retrieves the integrations which the group has, requires at least one integration permission: `manage-incoming-integrations`, `manage-own-incoming-integrations`, `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on the user permission. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+Retrieves the integrations that the group/channel has.&#x20;
 
-| URL                              | Requires Auth | HTTP Method |
-| -------------------------------- | ------------- | ----------- |
-| `/api/v1/groups.getIntegrations` | `yes`         | `GET`       |
+At least one of the following integration permissions is required:&#x20;
+
+* `manage-incoming-integrations`
+* `manage-own-incoming-integrations`
+* `manage-outgoing-integrations`&#x20;
+* `manage-own-outgoing-integrations`
+
+It will return the integrations based on the user's permission.&#x20;
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="343">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/groups.getIntegrations</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument | Example             | Required | Description    |
-| -------- | ------------------- | -------- | -------------- |
-| `roomId` | `ByehQjC44FwMeiLbX` | Required | The group's id |
+This endpoint supports the [#pagination](../../../#pagination "mention") parameters, alongside the [#query-and-fields](../../../#query-and-fields "mention") parameters.
+
+<table><thead><tr><th width="179">Key</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The group ID.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -20,9 +27,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/groups.getIntegrations?roomId=ByehQjC44FwMeiLbX
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "integrations": [{
         "_id": "WMQDChpnYTRmFre9h",
@@ -63,7 +70,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description                                        |
-| ------- | -------------------------------------------------- |
-| 1.1.0   | Separate permissions in `incoming` and `outgoing`. |
-| 0.49.0  | Added                                              |
+<table><thead><tr><th width="335">Version</th><th>Description</th></tr></thead><tbody><tr><td>1.1.0</td><td>Separate permissions in <code>incoming</code> and <code>outgoing</code>.</td></tr><tr><td>0.49.0</td><td>Added</td></tr></tbody></table>

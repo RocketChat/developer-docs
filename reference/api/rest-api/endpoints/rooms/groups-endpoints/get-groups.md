@@ -1,10 +1,12 @@
-# Group List
+# Get Groups
 
-Lists all of the private groups the calling user has joined. It supports the [#pagination](../../../#pagination "mention") parameters.
+Lists all of the groups/channels the user has joined.
 
-| URL                   | Requires Auth | HTTP Method |
-| --------------------- | ------------- | ----------- |
-| `/api/v1/groups.list` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/groups.list</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+## Query Parameters
+
+This endpoint supports the[#pagination](../../../#pagination "mention") parameters.
 
 ## Example Call
 
@@ -14,9 +16,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/groups.list
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "groups": [
         {

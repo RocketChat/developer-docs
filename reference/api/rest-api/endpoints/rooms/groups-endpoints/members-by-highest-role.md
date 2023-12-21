@@ -1,27 +1,26 @@
 # Group Members By Highest Role
 
-Lists the participants of a private group sorted by their room scoped roles. It supports the [#pagination](../../../#pagination "mention") parameters.
+Lists the participants of a group/channel sorted by their room-scoped roles.&#x20;
 
 Room members are sorted by their most important role in the room. The following hierarchy is used: **Owner > Moderator > Other roles**. The information related to each user's highest role is returned in the `highestRole` object within each of them.
 
-The `highestRole` object contains a numeric `level` field which ranges from 0 to 2. Level 0 stands for room owners, while level 1 is assigned to moderators (that are not room owners) and level 2 is assigned to all other team members regardless of their room scoped roles.
+The `highestRole` object contains a numeric `level` field, which ranges from 0 to 2.&#x20;
 
-The `highestRole` object also contains a `role` field, which has three possile values: `owner`, `moderator` or `member`, which are assigned to levels 0, 1 and 2, respectively.
+* Level 0 stands for room owners.
+* Level 1 is assigned to moderators (who are not room owners).
+* Level 2 is assigned to all other team members regardless of their room-scoped roles.
 
-Requires `view-broadcast-member-list` if room is a broadcast.
+The `highestRole` object also contains a `role` field, which has three possible values: `owner`, `moderator` or `member`, which are assigned to levels 0, 1, and 2, respectively.
 
-| URL                                   | Requires Auth | HTTP Method |
-| ------------------------------------- | ------------- | ----------- |
-| `/api/v1/groups.membersByHighestRole` | `yes`         | `GET`       |
+Requires `view-broadcast-member-list` if the room is a broadcast.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/groups.membersByHighestRole</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument            | Example                    | Required                   | Description                                                                                      |
-| ------------------- | -------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
-| `roomId`            | `ByehQjC44FwMeiLbX`        | Required(if no `roomName`) | The group's id                                                                                   |
-| `roomName`          | `testChannel`              | Required(if no `roomId`)   | The group's name                                                                                 |
-| `status`            | `['online', 'away']`       | Optional                   | The user's status (search filter).                                                               |
-| `filter`            | `my-nickname`              | Optional                   | Extra search filters to be applied to the fields defined in the `Accounts_SearchFields` setting. |
+This endpoint supports the[#pagination](../../../#pagination "mention") parameters.
+
+<table><thead><tr><th width="197.33333333333331">Key</th><th width="230">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The group ID. The parameter is required if <code>roomName</code> is not provided.</td></tr><tr><td><code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>testChannel</code></td><td>The group name. The parameter is required if <code>roomId</code> is not provided. </td></tr><tr><td><code>status</code></td><td><code>['online', 'away']</code></td><td>The user's status (search filter).</td></tr><tr><td><code>filter</code></td><td><code>my-nickname</code></td><td>Extra search filters to be applied to the fields defined in the <code>Accounts_SearchFields</code> setting.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -31,7 +30,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/groups.membersByHighestRole?roomId=ByehQjC44FwMeiLbX
 ```
 
-## Example Result
+## Example Response
 
 ```json
 {

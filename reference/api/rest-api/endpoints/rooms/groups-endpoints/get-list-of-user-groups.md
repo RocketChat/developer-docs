@@ -1,24 +1,32 @@
-# Group List All
+# Get List of User Groups
 
-Lists all of the private groups of any users. The calling user requires to have 'view-room-administration' right.  It supports the [#pagination](../../../#pagination "mention") parameters, alongside the field parameter for [#query-and-fields](../../../#query-and-fields "mention").
+Lists all of the groups/channels of any users.
 
-| URL                      | Requires Auth | HTTP Method |
-| ------------------------ | ------------- | ----------- |
-| `/api/v1/groups.listAll` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/groups.listAll</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+{% hint style="info" %}
+Permission required: `view-room-administration`
+{% endhint %}
+
+## Query Parameters
+
+This endpoint supports the[#pagination](../../../#pagination "mention") parameters, alongside the field parameter for[#query-and-fields](../../../#query-and-fields "mention").
 
 ## Example Call
 
-This example shows a list of private groups filtered by "customFields.companyId" started with "org1" using a regular expression.
+This example shows a list of groups filtered by `customFields.companyId` starting with `org1` using a regular expression.
 
+{% code overflow="wrap" %}
 ```bash
 curl -H "X-Auth-Token: 8-gard51USVYskZ7AAqFF3SZuwg24VIdn9-HchYersg" \
      -H "X-User-Id: 3WpJQkDHhrWPBvXuW" \
      http://localhost:3000/api/v1/groups.listAll?query=%7B%20%22customFields.companyId%22%3A%20%7B%20%22%24regex%22%3A%20%22%5Eorg1%22%7D%20%7D
 ```
+{% endcode %}
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "groups": [
         {

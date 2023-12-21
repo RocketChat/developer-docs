@@ -1,17 +1,14 @@
-# Group Messages
+# Get Group Messages
 
-Lists all of the specific group messages on the server. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+Lists all of the specific groups/channels messages on the server.&#x20;
 
-| URL                       | Requires Auth | HTTP Method |
-| ------------------------- | ------------- | ----------- |
-| `/api/v1/groups.messages` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/groups.messages</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument   | Example             | Required                   | Description              |
-| ---------- | ------------------- | -------------------------- | ------------------------ |
-| `roomId`   | `ByehQjC44FwMeiLbX` | Required(if no `roomName`) | The private group's id   |
-| `roomName` | `testGroup`         | Required(if no `roomId`)   | The private group's name |
+This endpoint supports the[#pagination](../../../#pagination "mention") parameters, alongside the[#query-and-fields](../../../#query-and-fields "mention") parameters.
+
+<table><thead><tr><th width="195">Key</th><th width="237">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The group ID. The parameter is required if <code>roomName</code> is not provided.</td></tr><tr><td><code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>testGroup</code></td><td>The group name. The parameter is required if <code>roomId</code> is not provided.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -21,9 +18,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/groups.messages?roomId=ByehQjC44FwMeiLbX
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "messages": [
         {

@@ -94,43 +94,43 @@
 
 | Url                                   | Short Description                                                           | Details Page                                              |
 | ------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| `/api/v1/groups.addAll`               | Adds all users to a private group                                           | [Link](rooms/groups-endpoints/addall.md)                  |
-| `/api/v1/groups.addLeader`            | Gives Leader role to a user in the current group                            | [Link](rooms/groups-endpoints/addleader.md)               |
-| `/api/v1/groups.addModerator`         | Gives moderator role to a user in a group                                   | [Link](rooms/groups-endpoints/addmoderator.md)            |
-| `/api/v1/groups.addOwner`             | Gives owner role to a user in a group                                       | [Link](rooms/groups-endpoints/addowner.md)                |
+| `/api/v1/groups.addAll`               | Adds all users to a private group                                           | [Link](rooms/groups-endpoints/add-all-users-to-group.md)  |
+| `/api/v1/groups.addLeader`            | Gives Leader role to a user in the current group                            | [Link](rooms/groups-endpoints/add-group-leader.md)        |
+| `/api/v1/groups.addModerator`         | Gives moderator role to a user in a group                                   | [Link](rooms/groups-endpoints/add-group-moderator.md)     |
+| `/api/v1/groups.addOwner`             | Gives owner role to a user in a group                                       | [Link](rooms/groups-endpoints/add-group-owner.md)         |
 | `/api/v1/groups.archive`              | Archives a private group                                                    | [Link](rooms/groups-endpoints/archive.md)                 |
-| `/api/v1/groups.close`                | Removes a private group from the list of groups                             | [Link](rooms/groups-endpoints/close.md)                   |
-| `/api/v1/groups.counters`             | Retrieves group counters                                                    | [Link](rooms/groups-endpoints/counters.md)                |
-| `/api/v1/groups.create`               | Creates a new private group                                                 | [Link](rooms/groups-endpoints/create.md)                  |
-| `/api/v1/groups.delete`               | Removes a private group                                                     | [Link](rooms/groups-endpoints/delete.md)                  |
-| `/api/v1/groups.files`                | Retrieves files from a private group                                        | [Link](rooms/groups-endpoints/files.md)                   |
+| `/api/v1/groups.close`                | Removes a private group from the list of groups                             | [Link](rooms/groups-endpoints/close-group.md)             |
+| `/api/v1/groups.counters`             | Retrieves group counters                                                    | [Link](rooms/groups-endpoints/get-group-counters.md)      |
+| `/api/v1/groups.create`               | Creates a new private group                                                 | [Link](rooms/groups-endpoints/create-group.md)            |
+| `/api/v1/groups.delete`               | Removes a private group                                                     | [Link](rooms/groups-endpoints/delete-group.md)            |
+| `/api/v1/groups.files`                | Retrieves files from a private group                                        | [Link](rooms/groups-endpoints/get-groups-files.md)        |
 | `/api/v1/groups.getIntegrations`      | Retrieves integrations assigned to the group                                | [Link](rooms/groups-endpoints/getintegrations.md)         |
-| `/api/v1/groups.history`              | Retrieves messages from a private group                                     | [Link](rooms/groups-endpoints/history.md)                 |
-| `/api/v1/groups.info`                 | Retrieves information about a private group                                 | [Link](rooms/groups-endpoints/info.md)                    |
-| `/api/v1/groups.invite`               | Adds a user to the private group                                            | [Link](rooms/groups-endpoints/invite.md)                  |
-| `/api/v1/groups.kick`                 | Removes a user from a private group                                         | [Link](rooms/groups-endpoints/kick.md)                    |
-| `/api/v1/groups.leave`                | Removes the caller from the private group                                   | [Link](rooms/groups-endpoints/leave.md)                   |
-| `/api/v1/groups.list`                 | Lists private groups the caller is part of                                  | [Link](rooms/groups-endpoints/list.md)                    |
-| `/api/v1/groups.listAll`              | Lists all private groups                                                    | [Link](rooms/groups-endpoints/listall.md)                 |
-| `/api/v1/groups.moderators`           | Lists moderators of a group                                                 | [Link](rooms/groups-endpoints/moderators.md)              |
-| `/api/v1/groups.members`              | Retrieves users of a private group                                          | [Link](rooms/groups-endpoints/members.md)                 |
+| `/api/v1/groups.history`              | Retrieves messages from a private group                                     | [Link](rooms/groups-endpoints/get-group-history.md)       |
+| `/api/v1/groups.info`                 | Retrieves information about a private group                                 | [Link](rooms/groups-endpoints/get-group-information.md)   |
+| `/api/v1/groups.invite`               | Adds a user to the private group                                            | [Link](rooms/groups-endpoints/invite-users-to-group.md)   |
+| `/api/v1/groups.kick`                 | Removes a user from a private group                                         | [Link](rooms/groups-endpoints/remove-user-from-group.md)  |
+| `/api/v1/groups.leave`                | Removes the caller from the private group                                   | [Link](rooms/groups-endpoints/leave-group.md)             |
+| `/api/v1/groups.list`                 | Lists private groups the caller is part of                                  | [Link](rooms/groups-endpoints/get-groups.md)              |
+| `/api/v1/groups.listAll`              | Lists all private groups                                                    | [Link](rooms/groups-endpoints/get-list-of-user-groups.md) |
+| `/api/v1/groups.moderators`           | Lists moderators of a group                                                 | [Link](rooms/groups-endpoints/get-group-moderators.md)    |
+| `/api/v1/groups.members`              | Retrieves users of a private group                                          | [Link](rooms/groups-endpoints/get-group-members.md)       |
 | `/api/v1/groups.membersByHighestRole` | Retrieves users of a private group sorted by their most important room role | [Link](rooms/groups-endpoints/members-by-highest-role.md) |
 | `/api/v1/groups.messages`             | Retrieves all group messages                                                | [Link](rooms/groups-endpoints/messages.md)                |
-| `/api/v1/groups.online`               | Lists online users of a group                                               | [Link](rooms/groups-endpoints/group-online.md)            |
-| `/api/v1/groups.open`                 | Adds the private group back to the list of groups                           | [Link](rooms/groups-endpoints/open.md)                    |
-| `/api/v1/groups.removeLeader`         | Removes Leader role from a user in the current group                        | [Link](rooms/groups-endpoints/removeleader.md)            |
-| `/api/v1/groups.removeModerator`      | Removes moderator role from a user in a group                               | [Link](rooms/groups-endpoints/removemoderator.md)         |
+| `/api/v1/groups.online`               | Lists online users of a group                                               | [Link](rooms/groups-endpoints/get-online-group-users.md)  |
+| `/api/v1/groups.open`                 | Adds the private group back to the list of groups                           | [Link](rooms/groups-endpoints/add-group-to-list.md)       |
+| `/api/v1/groups.removeLeader`         | Removes Leader role from a user in the current group                        | [Link](rooms/groups-endpoints/remove-group-leader.md)     |
+| `/api/v1/groups.removeModerator`      | Removes moderator role from a user in a group                               | [Link](rooms/groups-endpoints/remove-group-moderator.md)  |
 | `/api/v1/groups.removeOwner`          | Removes owner role from a user in a group                                   | [Link](rooms/groups-endpoints/removeowner.md)             |
-| `/api/v1/groups.rename`               | Changes the name of the private group                                       | [Link](rooms/groups-endpoints/rename.md)                  |
+| `/api/v1/groups.rename`               | Changes the name of the private group                                       | [Link](rooms/groups-endpoints/rename-group.md)            |
 | `/api/v1/groups.roles`                | Retrieves user's roles in the private group                                 | [Link](rooms/groups-endpoints/roles.md)                   |
-| `/api/v1/groups.setAnnouncement`      | Sets a group's announcement                                                 | [Link](rooms/groups-endpoints/setannouncement.md)         |
+| `/api/v1/groups.setAnnouncement`      | Sets a group's announcement                                                 | [Link](rooms/groups-endpoints/set-group-announcement.md)  |
 | `/api/v1/groups.setCustomFields`      | Sets private group's custom fields                                          | [Link](rooms/groups-endpoints/setcustomfields.md)         |
-| `/api/v1/groups.setDescription`       | Sets a private group's description                                          | [Link](rooms/groups-endpoints/setdescription.md)          |
+| `/api/v1/groups.setDescription`       | Sets a private group's description                                          | [Link](rooms/groups-endpoints/set-group-description.md)   |
 | `/api/v1/groups.setPurpose`           | Sets a private group's purpose                                              | [Link](rooms/groups-endpoints/setpurpose.md)              |
-| `/api/v1/groups.setReadOnly`          | Sets whether the room is read-only or not                                   | [Link](rooms/groups-endpoints/setreadonly.md)             |
+| `/api/v1/groups.setReadOnly`          | Sets whether the room is read-only or not                                   | [Link](rooms/groups-endpoints/set-group-read-only.md)     |
 | `/api/v1/groups.setTopic`             | Sets a private group's topic                                                | [Link](rooms/groups-endpoints/settopic.md)                |
-| `/api/v1/groups.setType`              | Sets the type of room this group will be                                    | [Link](rooms/groups-endpoints/settype.md)                 |
-| `/api/v1/groups.unarchive`            | Unarchives a private group                                                  | [Link](rooms/groups-endpoints/unarchive.md)               |
+| `/api/v1/groups.setType`              | Sets the type of room this group will be                                    | [Link](rooms/groups-endpoints/set-group-type.md)          |
+| `/api/v1/groups.unarchive`            | Unarchives a private group                                                  | [Link](rooms/groups-endpoints/unarchive-group.md)         |
 | `/api/v1/groups.setEncrypted`         | Sets the encryption for a group                                             | [Link](rooms/groups-endpoints/group-set-encrypted.md)     |
 | `/api/v1/groups.convertToTeam`        | Converts a private group to a team                                          | [Link](rooms/groups-endpoints/group-converttoteam.md)     |
 
@@ -140,7 +140,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 | URL                                            | Short Description                                                    | Details Page                                                         |
 | ---------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `/api/v1/channels.addAll`                      | Adds all users to a channel                                          | [Link](rooms/channels-endpoints/add-all-users-to-a-channel.md)       |
+| `/api/v1/channels.addAll`                      | Adds all users to a channel                                          | [Link](rooms/channels-endpoints/addall.md)                           |
 | `/api/v1/channels.addLeader`                   | Gives Leader role to a user in the current channel                   | [Link](rooms/channels-endpoints/set-channel-leader.md)               |
 | `/api/v1/channels.addModerator`                | Gives moderator role to a user in a channel                          | [Link](rooms/channels-endpoints/set-channel-moderator.md)            |
 | `/api/v1/channels.addOwner`                    | Gives owner role to a user in a channel                              | [Link](rooms/channels-endpoints/set-channel-ower.md)                 |

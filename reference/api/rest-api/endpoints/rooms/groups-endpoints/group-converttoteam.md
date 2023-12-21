@@ -1,32 +1,14 @@
----
-description: Convert a private group to a team.
----
+# Convert Group to Team
 
-# Group convertToTeam
+<table><thead><tr><th width="176">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/groups.convertToTeam</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-|                                | Requires Auth | Method |
-| ------------------------------ | ------------- | ------ |
-| `/api/v1/groups.convertToTeam` | Yes           | POST   |
+## Body Parameters
 
-## Payload
-
-| Argument               | Example                           | Required | Description                                       |
-| ---------------------- | --------------------------------- | -------- | ------------------------------------------------- |
-| `roomID` or `roomName` | `JZ8Y2dLfYhsg323Rf` or `My Group` | Required | The name or id of the group to convert to a team. |
-
-### Example Payload
-
-```
-{
-    "roomId": "JZ8Y2dLfYhsg323Rf"
-}
-```
+<table><thead><tr><th width="180.33333333333331">Key</th><th width="265">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomID</code><mark style="color:red;"><code>*</code></mark> or <code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>JZ8Y2dLfYhsg323Rf</code> or <code>My Group</code></td><td>The name or ID of the group to convert to a team.</td></tr></tbody></table>
 
 ## Example Call
 
-{% tabs %}
-{% tab title="Curl" %}
-```
+```bash
 curl -L -X POST 'http://localhost:3000/api/v1/groups.convertToTeam' \
 -H 'X-User-Id: d26x6zSkaPSe5gCyy' \
 -H 'X-Auth-Token: Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92' \
@@ -35,98 +17,12 @@ curl -L -X POST 'http://localhost:3000/api/v1/groups.convertToTeam' \
     "roomId": "h3HLZkQdrWCPg2RN7"
 }'
 ```
-{% endtab %}
 
-{% tab title="Node.js" %}
-```
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'http://localhost:3000/api/v1/groups.convertToTeam',
-  'headers': {
-    'X-User-Id': 'd26x6zSkaPSe5gCyy',
-    'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"roomId":"h3HLZkQdrWCPg2RN7"})
-
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
-import requests
-
-url = "http://localhost:3000/api/v1/groups.convertToTeam"
-
-payload="{\n    \"roomId\": \"h3HLZkQdrWCPg2RN7\"\n}"
-headers = {
-  'X-User-Id': 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type': 'application/json'
-}
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
-```
-{% endtab %}
-
-{% tab title="PHP" %}
-```
-<?php
-require_once 'HTTP/Request2.php';
-$request = new HTTP_Request2();
-$request->setUrl('http://localhost:3000/api/v1/groups.convertToTeam');
-$request->setMethod(HTTP_Request2::METHOD_POST);
-$request->setConfig(array(
-  'follow_redirects' => TRUE
-));
-$request->setHeader(array(
-  'X-User-Id' => 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token' => 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type' => 'application/json'
-));
-$request->setBody('{\n    "roomId": "h3HLZkQdrWCPg2RN7"\n}');
-try {
-  $response = $request->send();
-  if ($response->getStatus() == 200) {
-    echo $response->getBody();
-  }
-  else {
-    echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-    $response->getReasonPhrase();
-  }
-}
-catch(HTTP_Request2_Exception $e) {
-  echo 'Error: ' . $e->getMessage();
-}
-```
-{% endtab %}
-
-{% tab title="Java" %}
-```
-Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/groups.convertToTeam")
-  .header("X-User-Id", "d26x6zSkaPSe5gCyy")
-  .header("X-Auth-Token", "Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92")
-  .header("Content-Type", "application/json")
-  .body("{\n    \"roomId\": \"h3HLZkQdrWCPg2RN7\"\n}")
-  .asString();
-```
-{% endtab %}
-{% endtabs %}
-
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "team": {
         "_id": "6172b15bc563fc000acc462e",
@@ -156,7 +52,7 @@ Any of the following errors can occur on the endpoint.
 
 {% tabs %}
 {% tab title=" Authorization" %}
-```javascript
+```json
 {
     "success": false,
     "error": "unauthorized"

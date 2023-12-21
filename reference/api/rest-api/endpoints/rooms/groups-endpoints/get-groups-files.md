@@ -1,18 +1,18 @@
-# Groups Files
+# Get Groups Files
 
-Retrieves the files from a private group. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+Retrieves the files from a group/channel.&#x20;
 
-| URL                    | Requires Auth | HTTP Method |
-| ---------------------- | ------------- | ----------- |
-| `/api/v1/groups.files` | `yes`         | `GET`       |
+<table><thead><tr><th width="176">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/groups.files</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument            | Example                    | Required | Description                 |
-| ------------------- | -------------------------- | -------- | --------------------------- |
-| `roomId` `roomName` | `ByehQjC44FwMeiLbX` `test` | Required | The room id. The room name. |
+This endpoint supports the[#pagination](../../../#pagination "mention") parameters, alongside the[#query-and-fields](../../../#query-and-fields "mention") parameters.
+
+<table><thead><tr><th width="212.33333333333331">Key</th><th width="222">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark> or  <code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> <br><code>test</code></td><td>The room ID or the room name.</td></tr></tbody></table>
 
 ## Example Call
+
+With the `roomId` parameter:
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -20,15 +20,17 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/groups.files?roomId=ByehQjC44FwMeiLbX
 ```
 
+With the `roomName` parameter:
+
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: aobEdbYhXfu5hkeqG" \
      http://localhost:3000/api/v1/groups.files?roomName=test
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "files": [
         {
@@ -66,7 +68,4 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Change Log
 
-| Version | Description                                  |
-| ------- | -------------------------------------------- |
-| 0.64.0  | Change `userId` to `user` object in response |
-| 0.59.0  | Added                                        |
+<table><thead><tr><th width="340">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.64.0</td><td>Change <code>userId</code> to <code>user</code> object in response</td></tr><tr><td>0.59.0</td><td>Added</td></tr></tbody></table>

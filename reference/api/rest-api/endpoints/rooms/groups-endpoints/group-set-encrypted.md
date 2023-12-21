@@ -1,34 +1,14 @@
----
-description: Sets the encryption for a group.
----
+# Set Group as Encrypted
 
-# Group Set Encrypted
+<table><thead><tr><th width="176">HTTP Method</th><th width="313">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/groups.setEncrypted</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                           | Requires Auth | HTTP Method |
-| ----------------------------- | ------------- | ----------- |
-| `/api/v1/groups.setEncrypted` | Yes           | POST        |
+## Body Parameters
 
-## Payload
-
-| Argument               | Example                           | Required | Description                                          |
-| ---------------------- | --------------------------------- | -------- | ---------------------------------------------------- |
-| `encrypted`            | `true`                            | Required | Whether or not to encrypt the room.                  |
-| `roomID` or `roomName` | `JZ8Y2dLfYhsg323Rf` or `My Group` | Required | The group id or name on which to set the encryption. |
-
-### Example Payload
-
-```
-{
-    "encrypted": false,
-    "roomId": "JZ8Y2dLfYhsg323Rf"
-}
-```
+<table><thead><tr><th width="227">Key</th><th width="215.33333333333331">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>encrypted</code><mark style="color:red;"><code>*</code></mark></td><td><code>true</code></td><td>Whether or not to encrypt the room.</td></tr><tr><td><code>roomID</code><mark style="color:red;"><code>*</code></mark> or <code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>JZ8Y2dLfYhsg323Rf</code> or <code>My Group</code></td><td>The group ID or name on which to set the encryption.</td></tr></tbody></table>
 
 ## Example Call
 
-{% tabs %}
-{% tab title="Curl" %}
-```
+```bash
 curl -L -X POST 'http://localhost:3000/api/v1/groups.setEncrypted' \
 -H 'X-User-Id: d26x6zSkaPSe5gCyy' \
 -H 'X-Auth-Token: Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92' \
@@ -38,99 +18,12 @@ curl -L -X POST 'http://localhost:3000/api/v1/groups.setEncrypted' \
     "roomId": "JZ8Y2dLfYhsg323Rf"
 }'
 ```
-{% endtab %}
 
-{% tab title="Node.js" %}
-```
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'http://localhost:3000/api/v1/groups.setEncrypted',
-  'headers': {
-    'X-User-Id': 'd26x6zSkaPSe5gCyy',
-    'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"encrypted":false,"roomId":"JZ8Y2dLfYhsg323Rf"})
-
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
-import requests
-
-url = "http://localhost:3000/api/v1/groups.setEncrypted"
-
-payload="{\n    \"encrypted\": false,\n    \"roomId\": \"JZ8Y2dLfYhsg323Rf\"\n}"
-headers = {
-  'X-User-Id': 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token': 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type': 'application/json'
-}
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
-```
-{% endtab %}
-
-{% tab title="PHP" %}
-```
-<?php
-require_once 'HTTP/Request2.php';
-$request = new HTTP_Request2();
-$request->setUrl('http://localhost:3000/api/v1/groups.setEncrypted');
-$request->setMethod(HTTP_Request2::METHOD_POST);
-$request->setConfig(array(
-  'follow_redirects' => TRUE
-));
-$request->setHeader(array(
-  'X-User-Id' => 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token' => 'Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92',
-  'Content-Type' => 'application/json'
-));
-$request->setBody('{\n    "encrypted": false,\n    "roomId": "JZ8Y2dLfYhsg323Rf"\n}');
-try {
-  $response = $request->send();
-  if ($response->getStatus() == 200) {
-    echo $response->getBody();
-  }
-  else {
-    echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-    $response->getReasonPhrase();
-  }
-}
-catch(HTTP_Request2_Exception $e) {
-  echo 'Error: ' . $e->getMessage();
-}
-```
-{% endtab %}
-
-{% tab title="Java" %}
-```
-Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/groups.setEncrypted")
-  .header("X-User-Id", "d26x6zSkaPSe5gCyy")
-  .header("X-Auth-Token", "Zu-Z6eKzIIz7MCCRGeHi29bYkXZCJ4SxFC0JAasqm92")
-  .header("Content-Type", "application/json")
-  .body("{\n    \"encrypted\": false,\n    \"roomId\": \"JZ8Y2dLfYhsg323Rf\"\n}")
-  .asString();
-```
-{% endtab %}
-{% endtabs %}
-
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "group": {
         "_id": "JZ8Y2dLfYhsg323Rf",
@@ -158,12 +51,12 @@ HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/group
 
 ### Error
 
-Any of the following errors can occur on the endpoint.
+Any of the following errors can occur:
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **No encrypted parameter**: Occurs when the endpoint is called without the encrypted body param.
-* **No Room Id or roomName**: Occurs when no `roomID or roomName` is given.
-* **Invalid Room**: Occurs when the given `room` is invalid.
+* **No Room Id or roomName**: Occurs when no `roomID` or `roomName` is given.
+* **Invalid Room**: Occurs when the given room is invalid.
 
 {% tabs %}
 {% tab title=" Authorization" %}
