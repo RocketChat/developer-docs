@@ -207,26 +207,26 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### Teams
 
-| Url                              | Short Description                                         | Details Page                                                  |
-| -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
-| `/api/v1/teams.list`             | Lists the public and private teams the caller is part of. | [Link](rooms/teams-endpoints/list-of-teams-of-caller.md)      |
-| `/api/v1/teams.listAll`          | Lists all of the teams and their information.             | [Link](rooms/teams-endpoints/list-all-teams-with-info.md)     |
-| `/api/v1/teams.create`           | Creates a new team.                                       | [Link](rooms/teams-endpoints/create-a-new-team.md)            |
-| `/api/v1/teams.convertToChannel` | Converts team to channel.                                 | [Link](rooms/teams-endpoints/convert-team-to-channel.md)      |
-| `/api/v1/teams.addRooms`         | Adds rooms to the team.                                   | [Link](rooms/teams-endpoints/add-rooms-to-a-team.md)          |
-| `/api/v1/teams.removeRoom`       | Removes a room from a team.                               | [Link](rooms/teams-endpoints/remove-a-room-from-team.md)      |
-| `/api/v1/teams.updateRoom`       | Updates a room from a team, limited to permissions.       | [Link](rooms/teams-endpoints/update-room-from-a-team.md)      |
-| `/api/v1/teams.listRooms`        | Lists all rooms of the team.                              | [Link](rooms/teams-endpoints/list-rooms-of-a-team.md)         |
-| `/api/v1/teams.listRoomsOfUser`  | Lists only the team's rooms the user has joined.          | [Link](rooms/teams-endpoints/list-rooms-of-user-of-a-team.md) |
-| `/api/v1/teams.members`          | Retrieves all team members.                               | [Link](rooms/teams-endpoints/get-teams-members.md)            |
-| `/api/v1/teams.addMembers`       | Adds members to the team.                                 | [Link](rooms/teams-endpoints/add-members.md)                  |
-| `/api/v1/teams.updateMember`     | Updates a team member's roles, limited to permissions.    | [Link](rooms/teams-endpoints/update-a-teams-member.md)        |
-| `/api/v1/teams.removeMember`     | Removes a member from a team.                             | [Link](rooms/teams-endpoints/remove-member-from-team.md)      |
-| `/api/v1/teams.leave`            | Leaves a team.                                            | [Link](rooms/teams-endpoints/leave-a-team.md)                 |
-| `/api/v1/teams.info`             | Gets a team's information.                                | [Link](rooms/teams-endpoints/get-teams-info.md)               |
-| `/api/v1/teams.delete`           | Removes a team.                                           | [Link](rooms/teams-endpoints/delete-a-team.md)                |
-| `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](rooms/teams-endpoints/autocomplete-team.md)            |
-| `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](rooms/teams-endpoints/update-a-team.md)                |
+| Url                              | Short Description                                         | Details Page                                               |
+| -------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------- |
+| `/api/v1/teams.list`             | Lists the public and private teams the caller is part of. | [Link](rooms/teams-endpoints/get-list-of-teams.md)         |
+| `/api/v1/teams.listAll`          | Lists all of the teams and their information.             | [Link](rooms/teams-endpoints/get-list-of-all-teams.md)     |
+| `/api/v1/teams.create`           | Creates a new team.                                       | [Link](rooms/teams-endpoints/create-new-team.md)           |
+| `/api/v1/teams.convertToChannel` | Converts team to channel.                                 | [Link](rooms/teams-endpoints/convert-team-to-channel.md)   |
+| `/api/v1/teams.addRooms`         | Adds rooms to the team.                                   | [Link](rooms/teams-endpoints/add-rooms-to-a-team.md)       |
+| `/api/v1/teams.removeRoom`       | Removes a room from a team.                               | [Link](rooms/teams-endpoints/remove-a-room-from-team.md)   |
+| `/api/v1/teams.updateRoom`       | Updates a room from a team, limited to permissions.       | [Link](rooms/teams-endpoints/update-room-in-a-team.md)     |
+| `/api/v1/teams.listRooms`        | Lists all rooms of the team.                              | [Link](rooms/teams-endpoints/list-rooms-of-a-team.md)      |
+| `/api/v1/teams.listRoomsOfUser`  | Lists only the team's rooms the user has joined.          | [Link](rooms/teams-endpoints/list-user-rooms-of-a-team.md) |
+| `/api/v1/teams.members`          | Retrieves all team members.                               | [Link](rooms/teams-endpoints/get-team-members.md)          |
+| `/api/v1/teams.addMembers`       | Adds members to the team.                                 | [Link](rooms/teams-endpoints/add-members.md)               |
+| `/api/v1/teams.updateMember`     | Updates a team member's roles, limited to permissions.    | [Link](rooms/teams-endpoints/update-a-teams-member.md)     |
+| `/api/v1/teams.removeMember`     | Removes a member from a team.                             | [Link](rooms/teams-endpoints/remove-member-from-team.md)   |
+| `/api/v1/teams.leave`            | Leaves a team.                                            | [Link](rooms/teams-endpoints/leave-a-team.md)              |
+| `/api/v1/teams.info`             | Gets a team's information.                                | [Link](rooms/teams-endpoints/get-team-information.md)      |
+| `/api/v1/teams.delete`           | Removes a team.                                           | [Link](rooms/teams-endpoints/delete-a-team.md)             |
+| `/api/v1/teams.autocomplete`     | Lists the teams whose names match a given pattern.        | [Link](rooms/teams-endpoints/autocomplete-team.md)         |
+| `/api/v1/teams.update`           | Updates an existing team (name and type).                 | [Link](rooms/teams-endpoints/update-a-team.md)             |
 
 ### Directory
 

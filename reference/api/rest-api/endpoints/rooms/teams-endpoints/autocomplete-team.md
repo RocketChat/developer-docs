@@ -1,18 +1,12 @@
----
-description: List the teams whose names match a given pattern.
----
-
 # Autocomplete Team
 
-| URL                          | Requires Auth | HTTP Method |
-| ---------------------------- | ------------- | ----------- |
-| `/api/v1/teams.autocomplete` | `yes`         | `GET`       |
+List the teams whose names match a given pattern.
+
+<table><thead><tr><th width="163">HTTP Method</th><th width="289">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/teams.autocomplete</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument | Example | Required | Description                                 |
-| -------- | ------- | -------- | ------------------------------------------- |
-| `name`   | `team`  | Required | The pattern (search filter for team names). |
+<table><thead><tr><th width="195.33333333333331">Key</th><th width="227">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>team</code></td><td>The pattern (search filter for team names).</td></tr></tbody></table>
 
 ## Example Call
 
@@ -23,9 +17,9 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
       'http://localhost:3000/api/v1/teams.autocomplete?name=team'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "teams": [
     {

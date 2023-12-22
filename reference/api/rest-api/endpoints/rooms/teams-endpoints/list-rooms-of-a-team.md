@@ -1,18 +1,14 @@
-# List Rooms of a team
+# List Rooms of a Team
 
-List all rooms of the team. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
+List all rooms of the team.
 
-| URL                       | Requires Auth | HTTP Method |
-| ------------------------- | ------------- | ----------- |
-| `/api/v1/teams.listRooms` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="272">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/teams.listRooms</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-| Argument            | Example                     | Required | Description                      |
-| ------------------- | --------------------------- | -------- | -------------------------------- |
-| `teamId` `teamName` | `ByehQjC44FwMeiLbX` `team1` | Required | The team id. The team name.      |
-| `filter`            | `Example Room Name`         | Optional | The room's name (search filter). |
-| `type`              | `autoJoin`                  | Optional | The room's type (search filter). |
+This endpoint supports the `offset` and `count` parameter for[#pagination](../../../#pagination "mention") parameters.
+
+<table><thead><tr><th width="196.33333333333331">Key</th><th width="245">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>teamId</code><mark style="color:red;"><code>*</code></mark> or <code>teamName</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> or <code>team1</code></td><td>The team ID or the team name. You must enter either one of these parameters.</td></tr><tr><td><code>filter</code></td><td><code>Example Room Name</code></td><td>The room's name (search filter).</td></tr><tr><td><code>type</code></td><td><code>autoJoin</code></td><td>The room's type (search filter).</td></tr></tbody></table>
 
 ## Example Call
 
@@ -23,9 +19,9 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
       'http://localhost:3000/api/v1/teams.listRooms?teamName=team1&type=autoJoin'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "rooms": [
     {

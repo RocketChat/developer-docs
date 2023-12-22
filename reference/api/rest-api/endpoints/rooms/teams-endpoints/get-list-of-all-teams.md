@@ -1,10 +1,16 @@
-# List All Teams with Info
+# Get List of All Teams
 
-Lists all of the teams and their information. Requires `view-all-teams` permission. It supports only the offset and count parameter for [#pagination](../../../#pagination "mention").
+Lists all the teams and their information.
 
-| URL                     | Requires Auth | HTTP Method |
-| ----------------------- | ------------- | ----------- |
-| `/api/v1/teams.listAll` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/teams.listAll</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+{% hint style="info" %}
+Permission required: `view-all-teams`
+{% endhint %}
+
+## Query Parameters
+
+This endpoint supports the `offset` and `count` parameters for[#pagination](../../../#pagination "mention").
 
 ## Example Call
 
@@ -15,9 +21,9 @@ curl  -H "X-Auth-Token: 8h2mKAwxB3AQrFSjLVKMooJyjdCFaA7W45sWlHP8IzO" \
       http://localhost:3000/api/v1/teams.listAll
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "teams": [
     {
@@ -56,4 +62,6 @@ curl  -H "X-Auth-Token: 8h2mKAwxB3AQrFSjLVKMooJyjdCFaA7W45sWlHP8IzO" \
 }
 ```
 
-**Note:** `roomId` is the team's main room's id.
+{% hint style="info" %}
+`roomId` is the team's main room ID.
+{% endhint %}

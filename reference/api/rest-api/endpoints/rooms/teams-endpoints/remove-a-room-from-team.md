@@ -1,17 +1,14 @@
-# Remove a room from team
+# Remove a Room from Team
 
-Removes a room from a team. Requires `remove-team-channel` permission.
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/teams.removeRoom</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/teams.removeRoom` | `yes`         | `POST`      |
+{% hint style="info" %}
+Permission required: `remove-team-channel`
+{% endhint %}
 
-## Payload
+## Body Parameters
 
-| Argument            | Example                     | Required | Description                            |
-| ------------------- | --------------------------- | -------- | -------------------------------------- |
-| `teamId` `teamName` | `ByehQjC44FwMeiLbX` `team1` | Required | The team id. The team name.            |
-| `roomId`            | `8Z7eRsibvD5AANfmK`         | Required | The room (id) to remove from the team. |
+<table><thead><tr><th width="195.33333333333331">Key</th><th width="240">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>teamId</code><mark style="color:red;"><code>*</code></mark> or  <code>teamName</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> or  <code>team1</code></td><td>The team ID or the team name. You must enter either one of these parameters.</td></tr><tr><td><code>roomId</code></td><td><code>8Z7eRsibvD5AANfmK</code></td><td>The room ID to be removed from the team.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -20,12 +17,14 @@ curl  -H 'X-Auth-Token: _2u_4MzRroRcnqc59GYUY_Kwgr9HgtZ9HCKn-2aIvMJ' \
       -H 'X-User-Id: FL2fZL4ERhwA3gWiS' \
       -H "Content-type: application/json" \
       http://localhost:3000/api/v1/teams.removeRoom \
-      -d '{ "teamName": "team1", "roomId": "8Z7eRsibvD5AANfmK" }'
+      -d '{ 
+            "teamName": "team1", 
+            "roomId": "8Z7eRsibvD5AANfmK" }'
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "room": {
     "_id": "8Z7eRsibvD5AANfmK",
