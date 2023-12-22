@@ -1,16 +1,16 @@
 # Directory
 
-A method, that searches by users or channels on all users and channels available on server. It supports the [#pagination](../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../#query-and-fields "mention") parameters.
+The endpoint searches by users or channels on all users and channels available on the workspace.
 
-| URL                 | Requires Auth | HTTP Method |
-| ------------------- | ------------- | ----------- |
-| `/api/v1/directory` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="250">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/directory</code></td><td><a href="../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Payload
+## Query Parameters
 
-| Argument | Example                                                     | Required | Description                                                                                                                                                                                                |
-| -------- | ----------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `query`  | `{"text": "rocket", "type": "users", "workspace": "local"}` | Required | When `type` is `users` you can send an additional `workspace` field, that can be `local` (default) or `all`. `workspace=all` will work only if [Federation](../settings/federation-endpoints/) is enabled. |
+This endpoint supports the[#pagination](../../#pagination "mention") parameters, alongside the[#query-and-fields](../../#query-and-fields "mention") parameters.
+
+## Body Parameters
+
+<table><thead><tr><th width="169.33333333333331">Key</th><th width="257">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>query</code><mark style="color:red;"><code>*</code></mark></td><td><code>{"text": "rocket", "type": "users", "workspace": "local"}</code></td><td>When <code>type</code> is <code>users</code>, you can send an additional <code>workspace</code> field, that can be <code>local</code> (default) or <code>all</code>. <code>workspace=all</code> will work only if <a href="../settings/federation-endpoints/">Federation</a> is enabled.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -19,10 +19,11 @@ curl -G -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
           -H "X-User-Id: hw5DThnhQmxDWnavu" \
           -H "Content-type: application/json" \
           http://localhost:3000/api/v1/directory \
-          --data-urlencode 'query={"text": "rocket", "type": "users", "workspace": "local"}'
+          --data-urlencode 
+                    'query={"text": "rocket", "type": "users", "workspace": "local"}'
 ```
 
-## Example Result
+## Example Response
 
 ```javascript
 {
@@ -44,37 +45,6 @@ curl -G -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
     "count": 1,
     "offset": 0,
     "total": 1,
-    "success": true
-}
-```
-
-## Example Call
-
-```bash
-curl -H "X-Auth-Token: ijFlJ1yfidXhwEYY284Anoq_iEsOeMMVCupzNhX22tB" \
-          -H "X-User-Id: hw5DThnhQmxDWnavu" \
-          -H "Content-type: application/json" \
- http://localhost:3000/api/v1/directory?query={"text": "gene", "type": "channels"}&count=1&offset=2
-```
-
-## Example Result
-
-```javascript
-{
-    "result": [
-        {
-            "_id": "GENERAL",
-            "ts": "2018-05-15T19:10:54.689Z",
-            "name": "general",
-            "usernames": [
-                "rocketchat.internal.admin.test",
-                "editedusernameuser.test.1526941091574"
-            ]
-        }
-    ],
-    "count": 1,
-    "offset": 2,
-    "total": 4,
     "success": true
 }
 ```
