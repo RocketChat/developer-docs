@@ -78,7 +78,7 @@ It contains a collection of objects that are reused on all of the client sides. 
 
 **`apps/meteor/packages/`**
 
-This directory houses any meteor packages used in the project or r customized for a specific purpose. Notable examples include the [meteor-accounts-linkedin](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/accounts-linkedin) for Linkedin login service, [rocketchat-i18n](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n) for internationalization, etc.
+This directory houses any meteor packages used in the project or customized for a specific purpose. Notable examples include the [meteor-accounts-linkedin](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/accounts-linkedin) for Linkedin login service, [rocketchat-i18n](https://github.com/RocketChat/Rocket.Chat/tree/develop/apps/meteor/packages/rocketchat-i18n) for internationalization, etc.
 
 **`apps/meteor/server/methods/`**
 
