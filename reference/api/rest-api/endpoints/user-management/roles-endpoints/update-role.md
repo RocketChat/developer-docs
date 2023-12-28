@@ -4,13 +4,9 @@
 
 <table><thead><tr><th width="163">HTTP Method</th><th width="319">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/roles.update</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-{% hint style="info" %}
-Permission required: `access-permissions`
-{% endhint %}
-
 ## Body Parameters
 
-<table><thead><tr><th width="201.33333333333331">Key</th><th width="230">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roleId</code><mark style="color:red;"><code>*</code></mark></td><td><code>646c431fa8c3a3ba32d0e1c4</code></td><td>The role ID that you want to update.</td></tr><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>newRole</code></td><td>The updated name of the role.</td></tr><tr><td><code>scope</code></td><td><code>Subscriptions</code></td><td>The updated  scope of the role. The default value is <code>Users</code>.</td></tr><tr><td><code>description</code></td><td><code>Role description</code></td><td>A updated description for the role.</td></tr><tr><td><code>mandatory2fa</code></td><td><code>true</code></td><td>Whether the role should have a mandatory 2FA. The default role is <code>false</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="201.33333333333331">Key</th><th width="230">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roleId</code><mark style="color:red;"><code>*</code></mark></td><td><code>646c431fa8c3a3ba32d0e1c4</code></td><td>The role ID that you want to update.</td></tr><tr><td><code>name</code><mark style="color:red;"><code>*</code></mark></td><td><code>newRole</code></td><td>The updated name of the role.</td></tr><tr><td><code>scope</code></td><td><code>Subscriptions</code></td><td>The updated  scope of the role. The default value is <code>Users</code>.</td></tr><tr><td><code>description</code></td><td><code>Role description</code></td><td>Updated description for the role.</td></tr><tr><td><code>mandatory2fa</code></td><td><code>true</code></td><td>Whether the role should have a mandatory 2FA. The default value is <code>false</code>.</td></tr></tbody></table>
 
 ## Example Call
 
