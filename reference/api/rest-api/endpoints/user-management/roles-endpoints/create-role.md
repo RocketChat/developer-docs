@@ -10,7 +10,6 @@ Create a new role in the system.
 * This endpoint **doesn't** update existing roles. See [update-role.md](update-role.md "mention").
 * You can't create new roles with the same name as existing roles. For example, it is not possible to create a new role with the name `admin` .
 * The **scope** can either be `Users` or `Subscriptions`.
-* Permission required: `access-permissions`
 {% endhint %}
 
 ## Body Parameters
