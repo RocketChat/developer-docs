@@ -2,7 +2,7 @@
 
 Retrieve specific livechat message information.
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td><code>/api/v1/livechat/message/:_id</code></td><td><code>no</code></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="332">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/livechat/message/:_id</code></td><td><code>no</code></td></tr></tbody></table>
 
 ## Path Variables
 
