@@ -1,32 +1,8 @@
-# Storing User Input
+# Storing User Input Example
 
-## Introduction
+In this example, we will show how to manage persistence methods with a class.&#x20;
 
-The Rocket.Chat Apps-Engine provides `persistenceRead: IPersistenceRead` and`persistence: IPersistence` to help you read and write data from or to the RocketChat database.
-
-We can get `persistenceRead: IPersistenceRead` through the following way:
-
-```typescript
-// Get a persistence reader if you are using it in a method
-// Here `this` means the main App class instance
-const persistenceRead = this.getAccessors().reader.getPersistenceReader();
-
-// Some methods provideds `read: IRead` parameter, so that you get a persistence
-// reader through this parameter too.
-const persistenceRead = read.getPersistenceRead();
-```
-
-For `persistence: IPersistence`, you can only obtain it through parameter approach, which means you can not persist data within a method (typically is an event handler that you are going to implement) if the method doesn't have a `persistence: IPersistence` parameter.
-
-```typescript
-function someMethod(context, read: IRead, persistence: IPersistence) {
-    console.log(persistence); // The only way to fetch a persistence writer object
-}
-```
-
-## Example
-
-Below is a complete example to show how we can manage persistence methods with a class. Consider that you are going to persist some messages. You can create a class called `MessagePersistence`. Then you can add a series of static methods as shown below to `add/remove/query` data from the database.
+Consider that you are going to persist some messages. Create a class called `MessagePersistence`. Then you can add a series of static methods as shown below to add, remove, and query data from the database.
 
 {% code overflow="wrap" lineNumbers="true" fullWidth="false" %}
 ```typescript
@@ -35,7 +11,7 @@ import { RocketChatAssociationModel, RocketChatAssociationRecord } from '@rocket
 import { IRoom } from '@rocket.chat/apps-engine/definition/rooms';
 
 export class MessagePersistence {
-    // add a record
+    // add records
     public static async persist(persis: IPersistence, room: IRoom, id: string): Promise<boolean> {
         const associations: Array<RocketChatAssociationRecord> = [
             new RocketChatAssociationRecord(RocketChatAssociationModel.MISC, 'message'), 
@@ -146,5 +122,3 @@ export class MessagePersistence {
 }
 ```
 {% endcode %}
-
-With this, you can now implement app data persistence in your apps, by managing your app's internal state and handling user inputs!
