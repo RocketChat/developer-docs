@@ -1,38 +1,14 @@
 # Get Integration
 
-Retrieves an integration by id.
+Retrieves an integration by ID.
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/integrations.get` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="324">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/integrations.get</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
-## Incoming Webhook
+## Query Parameters
 
-### Query Parameters
+<table><thead><tr><th width="213.33333333333331">Key</th><th width="228">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>integrationId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The integration ID.</td></tr><tr><td><code>createdBy</code></td><td><code>fn5u45ui34fvb</code></td><td>The user's ID who created the integration.</td></tr></tbody></table>
 
-| Argument        | Example             | Required | Description                               |
-| --------------- | ------------------- | -------- | ----------------------------------------- |
-| `integrationId` | `ByehQjC44FwMeiLbX` | Required | The integration's id                      |
-| `createdBy`     | `fn5u45ui34fvb`     | Optional | The user's id who created the integration |
-
-
-
-
-
-
-
-
-
-## Outgoing Webhook&#x20;
-
-### Query Parameters
-
-| Argument        | Example             | Required | Description                               |
-| --------------- | ------------------- | -------- | ----------------------------------------- |
-| `integrationId` | `ByehQjC44FwMeiLbX` | Required | The integration's id                      |
-| `createdBy`     | `fn5u45ui34fvb`     | Optional | The user's id who created the integration |
-
-### Example Call
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -40,9 +16,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/integrations.get?integrationId=ByehQjC44FwMeiLbX
 ```
 
-### Example Result
+## Example Response
 
-```javascript
+```json
 {
   "history": [
     {

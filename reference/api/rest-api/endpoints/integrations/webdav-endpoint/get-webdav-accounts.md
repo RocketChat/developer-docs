@@ -1,12 +1,10 @@
-# Get My Accounts
+# Get WebDAV Accounts
 
-Retrieves the user's webdav accounts.
+Retrieves the user's WebDAV accounts.
 
-| URL                            | Requires Auth | HTTP Method |
-| ------------------------------ | ------------- | ----------- |
-| `/api/v1/webdav.getMyAccounts` | `yes`         | `GET`       |
+<table><thead><tr><th>URL</th><th width="200.33333333333331">Requires Auth</th><th>HTTP Method</th></tr></thead><tbody><tr><td><code>/api/v1/webdav.getMyAccounts</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td><td><code>GET</code></td></tr></tbody></table>
 
-## Example call to get all the roles
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -14,9 +12,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/webdav.getMyAccounts
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "accounts": [
     {

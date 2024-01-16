@@ -1,10 +1,12 @@
-# List Server's Integrations
+# Get List of Integrations
 
-Lists all of the integrations on the server. Requires at least one integration permission: `manage-incoming-integrations`, `manage-own-incoming-integrations`, `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on the user permission. It supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+Requires at least one integration permission: `manage-incoming-integrations`, `manage-own-incoming-integrations`, `manage-outgoing-integrations` or `manage-own-outgoing-integrations`. It will return the integrations based on the user permissions.
 
-| URL                         | Requires Auth | HTTP Method |
-| --------------------------- | ------------- | ----------- |
-| `/api/v1/integrations.list` | `yes`         | `GET`       |
+<table><thead><tr><th width="163">HTTP Method</th><th width="324">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/integrations.list</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+
+## Query Parameters
+
+This endpoint supports the[#pagination](../../../#pagination "mention") parameters, alongside the[#query-and-fields](../../../#query-and-fields "mention") parameters.
 
 ## Example Call
 
@@ -15,9 +17,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/integrations.list
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
     "integrations": [
         {

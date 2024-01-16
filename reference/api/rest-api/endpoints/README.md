@@ -593,20 +593,20 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### Integration
 
-| Url                            | Short Description                               | Details Page                                          |
-| ------------------------------ | ----------------------------------------------- | ----------------------------------------------------- |
-| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](integrations/integration-endpoints/create.md)  |
-| `/api/v1/integrations.get`     | Gets an integration.                            | [Link](integrations/integration-endpoints/get.md)     |
-| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integrations/integration-endpoints/history.md) |
-| `/api/v1/integrations.list`    | Lists all of the integrations.                  | [Link](integrations/integration-endpoints/list.md)    |
-| `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](integrations/integration-endpoints/remove.md)  |
-| `/api/v1/integrations.update`  | Updates an integration.                         | [Link](integrations/integration-endpoints/update.md)  |
+| Url                            | Short Description                               | Details Page                                                           |
+| ------------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------- |
+| `/api/v1/integrations.create`  | Creates an integration.                         | [Link](integrations/integration-endpoints/create-integration.md)       |
+| `/api/v1/integrations.get`     | Gets an integration.                            | [Link](integrations/integration-endpoints/get-integration.md)          |
+| `/api/v1/integrations.history` | Lists all history of the specified integration. | [Link](integrations/integration-endpoints/get-integration-history.md)  |
+| `/api/v1/integrations.list`    | Lists all of the integrations.                  | [Link](integrations/integration-endpoints/get-list-of-integrations.md) |
+| `/api/v1/integrations.remove`  | Removes an integration.                         | [Link](integrations/integration-endpoints/remove-an-integration.md)    |
+| `/api/v1/integrations.update`  | Updates an integration.                         | [Link](integrations/integration-endpoints/update-an-integration.md)    |
 
 ### Webdav
 
-| URL                            | Short Description                    | Details Page                                          |
-| ------------------------------ | ------------------------------------ | ----------------------------------------------------- |
-| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts | [Link](integrations/webdav-endpoint/getmyaccounts.md) |
+| URL                            | Short Description                    | Details Page                                                |
+| ------------------------------ | ------------------------------------ | ----------------------------------------------------------- |
+| `/api/v1/webdav.getMyAccounts` | Retrieves the user's webdav accounts | [Link](integrations/webdav-endpoint/get-webdav-accounts.md) |
 
 ### OAuth App
 
