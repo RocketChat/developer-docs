@@ -610,10 +610,10 @@ From version 0.50.0 and on, you can call the methods using `dm` instead of `im`.
 
 ### OAuth App
 
-| Url                       | Short Description                          | Details Page                                     |
-| ------------------------- | ------------------------------------------ | ------------------------------------------------ |
-| `/api/v1/oauth-apps.get`  | Retrieves an OAuth App by id or client id. | [Link](integrations/oauthapps-endpoints/get.md)  |
-| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps.            | [Link](integrations/oauthapps-endpoints/list.md) |
+| Url                       | Short Description                          | Details Page                                                       |
+| ------------------------- | ------------------------------------------ | ------------------------------------------------------------------ |
+| `/api/v1/oauth-apps.get`  | Retrieves an OAuth App by id or client id. | [Link](integrations/oauthapps-endpoints/get-oauth-app.md)          |
+| `/api/v1/oauth-apps.list` | Retrieves a list of OAuth Apps.            | [Link](integrations/oauthapps-endpoints/get-list-of-oauth-apps.md) |
 
 ## Notifications
 

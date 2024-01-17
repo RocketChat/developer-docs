@@ -1,12 +1,16 @@
-# List
+# Get List of OAuth Apps
 
-Retrieves all OAuth Apss
+Retrieves all OAuth apps.
 
-| URL                       | Requires Auth | HTTP Method |
-| ------------------------- | ------------- | ----------- |
-| `/api/v1/oauth-apps.list` | `yes`         | `GET`       |
+| URL                       | Requires Auth                            | HTTP Method |
+| ------------------------- | ---------------------------------------- | ----------- |
+| `/api/v1/oauth-apps.list` | [`yes`](../../authentication-endpoints/) | `GET`       |
 
-## Example
+{% hint style="info" %}
+Permission required: `manage-oauth-apps`
+{% endhint %}
+
+## Example Call
 
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
@@ -14,9 +18,9 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      http://localhost:3000/api/v1/oauth-apps.list
 ```
 
-## Example Result
+## Example Response
 
-```javascript
+```json
 {
   "oauthApps": [
     {
