@@ -4,10 +4,7 @@ Stream room messages.
 
 ## Payload Parameters
 
-| Argument             | Example                    | Required | Description                        |
-| -------------------- | -------------------------- | -------- | ---------------------------------- |
-| `roomId`             | `64a1f373376181965ab77f54` | Required | The room id                        |
-| `back-compatibility` | `false`                    | Required | Boolean to set back-compatibility. |
+<table><thead><tr><th>Argument</th><th>Example</th><th width="152">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code></td><td><code>64a1f373376181965ab77f54</code></td><td>Required</td><td>The room id</td></tr><tr><td><code>back-compatibility</code></td><td><code>false</code></td><td>Required</td><td>Boolean to set back-compatibility.</td></tr></tbody></table>
 
 ## Example Call
 

@@ -19,7 +19,7 @@ To subscribe to a stream, you must send a message with msg: sub, a unique id, th
 You must be logged in before you send any subscription request.
 {% endhint %}
 
-Recent changes to the stream API aim to notify subscribers about changes more selectively, which could cause issues with existing drivers. To ensure compatibility, a boolean parameter is suggested as the last option. If set to `true`, subscribers will receive an "add" event whenever something new is created. This parameter allows subscribers to decide if they need to be notified about all changes or only specific ones, keeping things compatible with older drivers.
+Recent changes to the stream API aim to notify subscribers about changes more selectively, which could cause issues with existing drivers. To ensure compatibility, the `back-compatibility` boolean parameter is suggested as the last option. If set to `true`, subscribers will receive an "add" event whenever something new is created. This parameter allows subscribers to decide if they need to be notified about all changes or only specific ones, keeping things compatible with older drivers.
 
 ## Unsubscribe from a Stream
 
