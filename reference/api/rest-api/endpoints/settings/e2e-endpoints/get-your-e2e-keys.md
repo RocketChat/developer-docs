@@ -1,12 +1,10 @@
----
-description: Retrieves E2E keys of logged in user
----
+# Get your E2E Keys
 
-# Fetch your E2E Keys
+Retrieves E2E keys of logged-in user.
 
-| URL                      | Requires Auth | HTTP Method |
-| ------------------------ | ------------- | ----------- |
-| `api/v1/e2e.fetchMyKeys` | `YES`         | `GET`       |
+| URL                      | Requires Auth                            | HTTP Method |
+| ------------------------ | ---------------------------------------- | ----------- |
+| `api/v1/e2e.fetchMyKeys` | [`YES`](../../authentication-endpoints/) | `GET`       |
 
 ## Headers
 
@@ -23,15 +21,19 @@ curl --location --request POST 'http://localhost:3000/api/v1/e2e.fetchMyKeys\
 --header 'X-User-Id: myumser-id'
 ```
 
-## Result
+## Example Response
 
 ### Success
 
-```javascript
+{% code overflow="wrap" %}
+```json
 {
+    "public_key": "{\"alg\":\"RSA-OAEP-256\",\"e\":\"AQAB\",\"ext\":true,\"key_ops\":[\"encrypt\"],\"kty\":\"RSA\",\"n\":\"oP23XEagSGIdo18Yc7TUwsM1qoRDa-pMg64lEctMQ6Dx-Q\"}",
+    "private_key": "{\"$binary\":\"2j5AaYO39PcQNK7lT3h5Zv7j7y3rVKsqlERVgty+Z2pjzuG5pCMnx63WFJCrt8Sx2KDwWvYycGs0V5TzXJhKFEpE3l5hpoP51wO1Xztnfl9TdVtCZ5ERSDhXp+t3ays0QLdD2EtZu9M+Ffgiy2gqTasB0UFXAZyDA==\"}",
     "success": true
 }
 ```
+{% endcode %}
 
 ### Error
 

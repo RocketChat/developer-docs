@@ -8,7 +8,7 @@ Integrating Whatsapp business in your Rocket.Chat workspace offers valuable enha
 
 You can send a Whatsapp template message from your workspace via the following methods:
 
-1. **Sending template messages via endpoints**: Refer to the [Send a Template WhatsApp Message](../reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/send-a-template-whatsapp-message.md) API endpoint.
+1. **Sending template messages via endpoints**: Refer to the [Send a Template WhatsApp Message](send-a-template-whatsapp-message.md) API endpoint.
 2. **Slash commands and UI**: Send the template message in a more user-friendly way using the GUI form. To trigger the GUI, open a WhatsApp contact room and run the `/whatsapp send-template`command. This command opens up a modal where you can select the following:
 
 * The `Template` you wish to send,

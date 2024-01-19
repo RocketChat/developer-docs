@@ -743,7 +743,7 @@ You can get and update the settings via the REST API, only if you have permissio
 
 | URL                                       | Short Description                                               | Details Page                                                        |
 | ----------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `/api/v1/e2e.fetchMyKeys`                 | Retrieves E2E keys of logged in user                            | [Link](settings/e2e-endpoints/fetch-your-e2e-keys.md)               |
+| `/api/v1/e2e.fetchMyKeys`                 | Retrieves E2E keys of logged in user                            | [Link](settings/e2e-endpoints/get-your-e2e-keys.md)                 |
 | `/api/v1/e2e.getUsersOfRoomWithoutKey`    | Retrieves Users Of Room Without E2E Key                         | [Link](settings/e2e-endpoints/get-users-of-room-without-e2e-key.md) |
 | `/api/v1/e2e.setRoomKeyID`                | Sets the end-to-end encryption key ID for a room                | [Link](settings/e2e-endpoints/set-room-e2e-key.md)                  |
 | `/api/v1/e2e.setUserPublicAndPrivateKeys` | Sets the end-to-end encryption keys for the authenticated user. | [Link](settings/e2e-endpoints/set-users-key.md)                     |
@@ -863,7 +863,7 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### WhatsApp
 
-<table><thead><tr><th width="308.5">Description</th><th>Details Page</th></tr></thead><tbody><tr><td>WhatsApp Business API integration for Rocket.Chat</td><td><a href="../../../../omnichannel/whatsapp-omnichannel-integration-api.md">Link</a></td></tr><tr><td>Send a template message.</td><td><a href="miscellaneous/whatsapp-endpoints/send-a-template-whatsapp-message.md">Link</a></td></tr></tbody></table>
+<table><thead><tr><th width="308.5">Description</th><th>Details Page</th></tr></thead><tbody><tr><td>WhatsApp Business API integration for Rocket.Chat</td><td><a href="miscellaneous/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md">Link</a></td></tr><tr><td>Send a template message.</td><td><a href="miscellaneous/whatsapp-endpoints/send-a-template-whatsapp-message.md">Link</a></td></tr></tbody></table>
 
 ### Mailer
 

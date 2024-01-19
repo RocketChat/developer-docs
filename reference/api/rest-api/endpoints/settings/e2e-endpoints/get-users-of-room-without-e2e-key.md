@@ -4,22 +4,13 @@ description: Retrieves Users Of Room Without E2E Key
 
 # Get Users Of Room Without E2E Key
 
-| `URL`                                 | `Requires Auth` | `HTTP Method` |
-| ------------------------------------- | --------------- | ------------- |
-| `api/v1/e2e.getUsersOfRoomWithoutKey` | `YES`           | `GET`         |
+| URL                                   | Requires Auth                            | HTTP Method |
+| ------------------------------------- | ---------------------------------------- | ----------- |
+| `api/v1/e2e.getUsersOfRoomWithoutKey` | [`YES`](../../authentication-endpoints/) | `GET`       |
 
-## Headers
+## Query Parameters
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
-
-## Query Params
-
-| Argument | Example             | Required | Description     |
-| -------- | ------------------- | -------- | --------------- |
-| `rid`    | `zRAeTszXor8CCPceB` | Required | The room `_id`. |
+<table><thead><tr><th width="146">Argument</th><th>Example</th><th width="161">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>zRAeTszXor8CCPceB</code></td><td>Required</td><td>The room <code>_id</code>.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -29,11 +20,11 @@ curl --location --request GET 'http://localhost:3000/api/v1/e2e.getUsersOfRoomWi
 --header 'X-User-Id: myuser-name'
 ```
 
-## Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "users": [
         {

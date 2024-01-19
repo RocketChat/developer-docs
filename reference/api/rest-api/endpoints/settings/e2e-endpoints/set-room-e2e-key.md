@@ -2,40 +2,19 @@
 description: Sets the end-to-end encryption key ID for a room
 ---
 
-# Set Room E2E key
+# Set Room E2E Key
 
-| URL                        | Requires Auth | HTTP Method |
-| -------------------------- | ------------- | ----------- |
-| `/api/v1/e2e.setRoomKeyID` | `Yes`         | `POST`      |
+| URL                        | Requires Auth                            | HTTP Method |
+| -------------------------- | ---------------------------------------- | ----------- |
+| `/api/v1/e2e.setRoomKeyID` | [`Yes`](../../authentication-endpoints/) | `POST`      |
 
-## Headers
+## Body Parameters
 
-| Argument       | Example        | Required | Description                                                    |
-| -------------- | -------------- | -------- | -------------------------------------------------------------- |
-| `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
-| `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
-
-## Payload
-
-| Argument | Example             | Required | Description              |
-| -------- | ------------------- | -------- | ------------------------ |
-| `rid`    | `Qe3Wa3outaDMKzAZC` | Required | The Room Id              |
-| `keyID`  | `my-UniQu3_ke4_Id`  | Required | The key you wish to set. |
-
-### Example Payload
-
-```
-{
-    "rid": "Qe3Wa3outaDMKzAZC",
-    "keyID": "my-UniQu3_ke4_Id"
-}
-```
+<table><thead><tr><th width="157">Argument</th><th>Example</th><th width="142">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>rid</code></td><td><code>Qe3Wa3outaDMKzAZC</code></td><td>Required</td><td>The Room Id</td></tr><tr><td><code>keyID</code></td><td><code>my-UniQu3_ke4_Id</code></td><td>Required</td><td>The key you wish to set.</td></tr></tbody></table>
 
 ## Example Call
 
-{% tabs %}
-{% tab title="Curl" %}
-```
+```powershell
 curl --location --request POST 'http://localhost:3000/api/v1/e2e.setRoomKeyID' \
 --header 'X-User-Id: d26x6zSkaPSe5gCyy' \
 --header 'X-Auth-Token: Di9OKWzdu7V2vW3lHO0oYLOOr6P2Y0n9zQlx20qn2cU' \
@@ -45,98 +24,12 @@ curl --location --request POST 'http://localhost:3000/api/v1/e2e.setRoomKeyID' \
     "keyID": "my-UniQu3_ke4_Id"
 }'
 ```
-{% endtab %}
 
-{% tab title="Node.js" %}
-```
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'http://localhost:3000/api/v1/e2e.setRoomKeyID',
-  'headers': {
-    'X-User-Id': 'd26x6zSkaPSe5gCyy',
-    'X-Auth-Token': 'Di9OKWzdu7V2vW3lHO0oYLOOr6P2Y0n9zQlx20qn2cU',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"rid":"wCiXndNp5NqNY3uCc","keyID":"my-UniQu3_ke4_Id"})
-
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
-import requests
-
-url = "http://localhost:3000/api/v1/e2e.setRoomKeyID"
-
-payload="{\n    \"rid\": \"wCiXndNp5NqNY3uCc\",\n    \"keyID\": \"my-UniQu3_ke4_Id\"\n}"
-headers = {
-  'X-User-Id': 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token': 'Di9OKWzdu7V2vW3lHO0oYLOOr6P2Y0n9zQlx20qn2cU',
-  'Content-Type': 'application/json'
-}
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
-```
-{% endtab %}
-
-{% tab title="PHP" %}
-```
-<?php
-require_once 'HTTP/Request2.php';
-$request = new HTTP_Request2();
-$request->setUrl('http://localhost:3000/api/v1/e2e.setRoomKeyID');
-$request->setMethod(HTTP_Request2::METHOD_POST);
-$request->setConfig(array(
-  'follow_redirects' => TRUE
-));
-$request->setHeader(array(
-  'X-User-Id' => 'd26x6zSkaPSe5gCyy',
-  'X-Auth-Token' => 'Di9OKWzdu7V2vW3lHO0oYLOOr6P2Y0n9zQlx20qn2cU',
-  'Content-Type' => 'application/json'
-));
-$request->setBody('{\n    "rid": "wCiXndNp5NqNY3uCc",\n    "keyID": "my-UniQu3_ke4_Id"\n}');
-try {
-  $response = $request->send();
-  if ($response->getStatus() == 200) {
-    echo $response->getBody();
-  }
-  else {
-    echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-    $response->getReasonPhrase();
-  }
-}
-catch(HTTP_Request2_Exception $e) {
-  echo 'Error: ' . $e->getMessage();
-}
-```
-{% endtab %}
-
-{% tab title="Java" %}
-```
-Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("http://localhost:3000/api/v1/e2e.setRoomKeyID")
-  .header("X-User-Id", "d26x6zSkaPSe5gCyy")
-  .header("X-Auth-Token", "Di9OKWzdu7V2vW3lHO0oYLOOr6P2Y0n9zQlx20qn2cU")
-  .header("Content-Type", "application/json")
-  .body("{\n    \"rid\": \"wCiXndNp5NqNY3uCc\",\n    \"keyID\": \"my-UniQu3_ke4_Id\"\n}")
-  .asString();
-```
-{% endtab %}
-{% endtabs %}
-
-## Example Result
+## Example Response
 
 ### Success
 
-```javascript
+```json
 {
     "success": true
 }

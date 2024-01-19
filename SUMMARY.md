@@ -139,7 +139,7 @@
   * [Channel Apps](omnichannel/developing-omnichannel-apps/channel-apps.md)
   * [Chatbots](omnichannel/developing-omnichannel-apps/chatbots.md)
   * [CRM Apps](omnichannel/developing-omnichannel-apps/crm-apps.md)
-* [WhatsApp Business Omnichannel Integration](omnichannel/whatsapp-omnichannel-integration-api.md)
+* [WhatsApp Business Omnichannel Integration](reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md)
 
 ## Bots
 
@@ -665,9 +665,9 @@
           * [DNS Resolve txt](reference/api/rest-api/endpoints/settings/dns-endpoints/dns-resolve-txt.md)
           * [DNS Resolve srv](reference/api/rest-api/endpoints/settings/dns-endpoints/dns-resolve-txt-1.md)
         * [E2E Endpoints](reference/api/rest-api/endpoints/settings/e2e-endpoints/README.md)
-          * [Fetch your E2E Keys](reference/api/rest-api/endpoints/settings/e2e-endpoints/fetch-your-e2e-keys.md)
+          * [Get your E2E Keys](reference/api/rest-api/endpoints/settings/e2e-endpoints/get-your-e2e-keys.md)
           * [Get Users Of Room Without E2E Key](reference/api/rest-api/endpoints/settings/e2e-endpoints/get-users-of-room-without-e2e-key.md)
-          * [Set Room E2E key](reference/api/rest-api/endpoints/settings/e2e-endpoints/set-room-e2e-key.md)
+          * [Set Room E2E Key](reference/api/rest-api/endpoints/settings/e2e-endpoints/set-room-e2e-key.md)
           * [Set Users Key](reference/api/rest-api/endpoints/settings/e2e-endpoints/set-users-key.md)
           * [Update User E2E Key in Room](reference/api/rest-api/endpoints/settings/e2e-endpoints/update-user-e2e-key-in-room.md)
         * [Import Endpoints](reference/api/rest-api/endpoints/settings/import-endpoints/README.md)
