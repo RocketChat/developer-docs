@@ -1,8 +1,8 @@
----
-description: Starts a webrtc audio/video call.
----
-
 # Start Call
+
+{% hint style="danger" %}
+WebRTC is no longer supported with Omnichannel Livechat. To configure audio/video calls, see [Omnichannel Audio/Video Call Configuration](https://docs.rocket.chat/use-rocket.chat/rocket.chat-conference-call/omnichannel-video-audio-call-configuration).
+{% endhint %}
 
 Start a WebRTC audio/video call in a room.
 

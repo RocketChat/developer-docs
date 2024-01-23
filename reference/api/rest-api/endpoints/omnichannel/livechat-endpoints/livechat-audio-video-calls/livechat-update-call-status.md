@@ -1,5 +1,9 @@
 # Update Call Status
 
+{% hint style="danger" %}
+WebRTC is no longer supported with Omnichannel Livechat. To configure audio/video calls, see [Omnichannel Audio/Video Call Configuration](https://docs.rocket.chat/use-rocket.chat/rocket.chat-conference-call/omnichannel-video-audio-call-configuration).
+{% endhint %}
+
 Update the call status of an existing WebRTC audio/video call.
 
 <table><thead><tr><th width="163">HTTP Method</th><th width="310">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>PUT</code></td><td><code>/api/v1/livechat/webrtc.call/:callId</code></td><td><a href="../../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
