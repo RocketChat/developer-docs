@@ -16,8 +16,8 @@ Close a chat session.
 
 ## Payload
 
-<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>action</code></td><td><code>close-chat</code></td><td>Required</td><td>App id</td></tr><tr><td><code>sessionId</code></td><td><pre><code>2Sfq8wXw4fYPMf6r4
-</code></pre></td><td>Required</td><td>Session Id is the same session of Rasa</td></tr></tbody></table>
+<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>action</code></td><td><code>close-chat</code></td><td>Required</td><td>The action</td></tr><tr><td><code>sessionId</code></td><td><pre><code>2Sfq8wXw4fYPMf6r4
+</code></pre></td><td>Required</td><td>The id of the Rasa session</td></tr></tbody></table>
 
 ## Example Call
 

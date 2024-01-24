@@ -12,7 +12,7 @@ Send emails to users from your workspace.
 
 ## Payload Parameter
 
-<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>_id</code></td><td><code>c6Lsa9SFVFxJLR56H</code></td><td>Required</td><td>The user id of the user that created the mailer</td></tr><tr><td><code>createdAt</code></td><td><code>1692284808957</code></td><td>Required</td><td>The user id of the user that created the mailer.</td></tr></tbody></table>
+<table><thead><tr><th width="144">Argument</th><th width="318">Example</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>_id</code></td><td><code>c6Lsa9SFVFxJLR56H</code></td><td>Required</td><td>The user id of the user that created the mailer</td></tr><tr><td><code>createdAt</code></td><td><code>1692284808957</code></td><td>Required</td><td>The time the mailer was created</td></tr></tbody></table>
 
 ### Example Payload <a href="#query-parameters" id="query-parameters"></a>
 

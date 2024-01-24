@@ -854,12 +854,12 @@ You can get and update the settings via the REST API, only if you have permissio
 
 ### Others
 
-| URL                    | Short Description                                        | Details Page                                  |
-| ---------------------- | -------------------------------------------------------- | --------------------------------------------- |
-| `/api/apps`            | Install a private app via URL                            | [Link](miscellaneous/install-private-apps.md) |
-| `/api/v1/shield.svg`   | Get the the shield svg(badge)                            | [Link](miscellaneous/shield-svg.md)           |
-| `/api/v1/spotlight`    | Searches for users or rooms that are visible to the user | [Link](miscellaneous/spotlight.md)            |
-| `/api/v1/stdout.queue` | Retrieves last 1000 lines of server logs                 | [Link](miscellaneous/get-stdout-queue.md)     |
+| URL                    | Short Description                                        | Details Page                                                |
+| ---------------------- | -------------------------------------------------------- | ----------------------------------------------------------- |
+| `/api/apps`            | Install a private app via URL                            | [Link](miscellaneous/apps-endpoint/install-private-apps.md) |
+| `/api/v1/shield.svg`   | Get the the shield svg(badge)                            | [Link](miscellaneous/shield-svg.md)                         |
+| `/api/v1/spotlight`    | Searches for users or rooms that are visible to the user | [Link](miscellaneous/spotlight.md)                          |
+| `/api/v1/stdout.queue` | Retrieves last 1000 lines of server logs                 | [Link](miscellaneous/get-stdout-queue.md)                   |
 
 ### WhatsApp
 

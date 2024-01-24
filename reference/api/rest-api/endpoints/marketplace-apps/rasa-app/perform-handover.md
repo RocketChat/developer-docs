@@ -40,7 +40,7 @@ curl "http://localhost:3000/api/apps/public/646b8e7d-f1e1-419e-9478-10d0f5bc74d9
 
 ```json
  {
-      "msg": " Close chat request handled successfully",
+      "msg": "Perform Handover request handled successfullyy",
 
   }
 ```

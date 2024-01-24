@@ -19,7 +19,7 @@ Requires the `create-invite-links` permission.
 | `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
-## Payload
+## Path Parameters
 
 | Argument | Example    | Required | Description                         |
 | -------- | ---------- | -------- | ----------------------------------- |

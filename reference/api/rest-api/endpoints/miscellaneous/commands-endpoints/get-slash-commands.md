@@ -8,7 +8,7 @@ description: Get specification of the slash command.
 | ---------------------- | ------------- | ----------- |
 | `/api/v1/commands.get` | `yes`         | `GET`       |
 
-## Payload
+## Query Parameters
 
 | Argument  | Example | Required | Description              |
 | --------- | ------- | -------- | ------------------------ |

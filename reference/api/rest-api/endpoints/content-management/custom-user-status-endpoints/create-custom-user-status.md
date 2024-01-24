@@ -15,13 +15,25 @@ description: Creates custom user status
 | `X-User-Id`    | `myuser-name`  | Required | Your username hash (returned after you log in through the API) |
 | `X-Auth-Token` | `myauth-token` | Required | Your token (returned after you log in through the API)         |
 
+## ayload
+
+| Argument                            | Example  | Required | Description                                                                                             |
+| ----------------------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| `name`                              | `vacay1` | Required | The name of the custom status.                                                                          |
+| <pre><code>statusType
+</code></pre> | `online` | Required | The `statusType` of the custom status. Valid status type includes: `Online`, `Busy`, `Away`, `Offline`. |
+
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/custom-user-status.create\
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
- -d "name=In a meeting$statusType:"
+curl --location 'http://localhost:3000/api/v1/custom-user-status.create' \
+--header 'x-auth-token: Tkezshpjs9bi_kO09J4PcQM72UESdz9Dit6tT1uEzYMLnqzI' \
+--header 'x-user-id: KDgshs2PcfJn8suegn69Mo' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name":"vacay1",
+    "statusType":"online"
+}'
 ```
 
 ## Result
