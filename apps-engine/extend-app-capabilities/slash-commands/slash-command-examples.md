@@ -41,7 +41,7 @@ import {
 import { IUser } from '@rocket.chat/apps-engine/definition/users';
 
 export class StatusUpdateCmd implements ISlashCommand {
-   public command: 'st';
+   public command = 'st';
    public i18nParamsExample: string = 'status_update_command_params_example';
    public i18nDescription: string = 'status_update_command_description';
    public providesPreview: boolean = false;

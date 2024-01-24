@@ -30,10 +30,11 @@ import { IPreMessageSentPrevent } from '@rocket.chat/apps-engine/definition/mess
 ```typescript
 checkPreMessageSentPrevent?(message: IMessage, read: IRead, http: IHttp): Promise<boolean> {
         throw new Error('Method not implemented.');
-    }
-    executePreMessageSentPrevent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence): Promise<boolean> {
-        throw new Error('Method not implemented.');
-    }
+}
+
+executePreMessageSentPrevent(message: IMessage, read: IRead, http: IHttp, persistence: IPersistence): Promise<boolean> {
+    throw new Error('Method not implemented.');
+}
 ```
 
 5. With the `checkPreMessageSentPrevent` method, we will only check the messages from channels other than **general**. Visual Studio helps you navigate through the APIs of the classes of the objects by suggesting the available methods. For this example, you can see that the method variable `message` has a room attribute which has a `slugifiedName` string attribute. Update the method as follows:
@@ -41,7 +42,7 @@ checkPreMessageSentPrevent?(message: IMessage, read: IRead, http: IHttp): Promis
 ```typescript
 checkPreMessageSentPrevent?(message: IMessage, read: IRead, http: IHttp): Promise<boolean> {
         return message.room.slugifiedName != 'general';
-    }
+}
 ```
 
 6. Now Visual Studio displays an error that the method signature is not compatible with returning a `Promise<boolean>`. To fix this issue, add `async` to the method signature.
@@ -135,7 +136,9 @@ export class HelloWorldApp extends App implements IPostMessageSent {
        }
        const msg = `@${message.sender.username} said "${message.text}" in #${message.room.displayName}`;
        const author = await read.getUserReader().getAppUser();
-       await this.sendMessage(general, msg, author?author:message.sender, modify);
+       if (general.id != message.room.id) { // prevent this for running on #general channel
+           await this.sendMessage(general, msg, author?author:message.sender, modify);
+       }
    }
    
    private async sendMessage(room: IRoom, textMessage: string, author: IUser, modify: IModify) {
@@ -190,7 +193,7 @@ import { IFileUploadContext, IPreFileUpload } from '@rocket.chat/apps-engine/def
 import { IUser } from '@rocket.chat/apps-engine/definition/users/IUser';
 
 export class HelloWorldApp extends App implements IPreMessageSentPrevent, IPostMessageSent, IPreFileUpload {
-    public async [AppMethod.EXECUTE_PRE_FILE_UPLOAD](context: IFileUploadContext, read: IRead, http: IHttp, persis: IPersistence, modify: IModify): Promise<void> {
+    public async executePreFileUpload(context: IFileUploadContext, read: IRead, http: IHttp, persis: IPersistence, modify: IModify): Promise<void> {
         console.log('ContentInspectionExampleAppApp - File Uploaded - Name: ' + context.file.name);
         console.log('ContentInspectionExampleAppApp - File Uploaded - Type: ' + context.file.type);
         console.log('ContentInspectionExampleAppApp - File Uploaded - Size: ' + context.file.size);
@@ -199,7 +202,7 @@ export class HelloWorldApp extends App implements IPreMessageSentPrevent, IPostM
         if (context.file.type == 'text/plain') {
             console.log('ContentInspectionExampleAppApp - File Uploaded - Content: ' +
                 String.fromCharCode.apply(null, context.content));
-        }3. 
+        }
 
         //if file was bad we could throw an exception
         //throw new FileUploadNotAllowedException('File is Bad');
