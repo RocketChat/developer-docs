@@ -1,5 +1,7 @@
 # List Active Users
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieve the metrics of active users in the workspace during a specific period.
 
 {% hint style="info" %}

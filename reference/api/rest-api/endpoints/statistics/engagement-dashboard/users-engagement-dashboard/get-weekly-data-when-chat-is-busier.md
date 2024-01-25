@@ -1,5 +1,7 @@
 # Get Weekly Data When Chat is Busier
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieves weekly data when chat is busier.&#x20;
 
 {% hint style="info" %}

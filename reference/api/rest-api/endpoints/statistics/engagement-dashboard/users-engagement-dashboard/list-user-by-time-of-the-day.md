@@ -1,5 +1,7 @@
 # List User By Time of the Day
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieve users by hours at a particular time of the day in a week.
 
 {% hint style="info" %}

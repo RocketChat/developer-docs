@@ -1,5 +1,7 @@
 # Get Hourly Data When Chat is Busier
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieve Hourly Data When Chat is Busier.
 
 {% hint style="info" %}

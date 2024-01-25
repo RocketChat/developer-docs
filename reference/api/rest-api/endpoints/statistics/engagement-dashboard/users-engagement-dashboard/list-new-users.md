@@ -1,5 +1,7 @@
 # List New Users
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieve the metrics of newly registered users during a specific period.
 
 {% hint style="info" %}
