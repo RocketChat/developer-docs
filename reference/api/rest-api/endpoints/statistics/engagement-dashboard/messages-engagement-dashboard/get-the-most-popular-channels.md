@@ -1,5 +1,7 @@
 # Get the Most Popular Channels
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieves the top 5 popular channels in your workspace by the number of messages sent.
 
 {% hint style="info" %}

@@ -1,5 +1,7 @@
 # Get Messages Sent
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Retrieve the number of messages sent daily during a specific period.
 
 {% hint style="info" %}

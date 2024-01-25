@@ -1,5 +1,7 @@
 # Get Origin of Message Sent
 
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
 Get the origin of messages sent during a specific period. It highlights the number of messages sent in private channels, private chats, and public channels.
 
 {% hint style="info" %}

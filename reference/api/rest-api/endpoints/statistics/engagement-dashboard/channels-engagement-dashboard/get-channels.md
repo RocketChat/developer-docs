@@ -1,6 +1,8 @@
 # Get Channels
 
-Retrieve all channels and the number of messages in each channel within a specific period. It supports only the offset and count parameter for [#pagination](../../../../#pagination "mention").
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
+
+Retrieve all channels and the number of messages in each channel within a specific period. It supports only the offset and count parameters for [#pagination](../../../../#pagination "mention").
 
 {% hint style="info" %}
 It requires `view-engagement-dashboard` [permission](https://docs.rocket.chat/use-rocket.chat/workspace-administration/permissions).
