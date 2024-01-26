@@ -12,8 +12,8 @@ A simple method, requires no authentication, that returns the shield svg(badge) 
 | --------- | ------------- | -------- | ----------------------------------------- |
 | `type`    | `online`      | Optional | Can be one of `online`, `user`, `channel` |
 | `icon`    | `false`       | Optional |                                           |
-| `channel` | `general`     | Optional | Name of the channel                       |
-| `name`    | `Rocket.Chat` | Optional | Name to show                              |
+| `channel` | `general`     | Required | Name of the channel                       |
+| `name`    | `Rocket.Chat` | Required | Name to show                              |
 
 ## Example Call
 

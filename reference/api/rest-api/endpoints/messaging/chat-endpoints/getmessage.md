@@ -6,7 +6,7 @@ Retrieves a single chat message by the provided id. Callee must have permission 
 | ------------------------- | ------------- | ----------- |
 | `/api/v1/chat.getMessage` | `yes`         | `GET`       |
 
-## Payload
+## Path Variables
 
 | Argument | Example             | Required | Description                   |
 | -------- | ------------------- | -------- | ----------------------------- |

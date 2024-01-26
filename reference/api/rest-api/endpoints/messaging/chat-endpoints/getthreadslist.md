@@ -6,7 +6,7 @@ List threads in a room. It supports the [#pagination](../../../#pagination "ment
 | ----------------------------- | ------------- | ----------- |
 | `/api/v1/chat.getThreadsList` | `yes`         | `GET`       |
 
-## Payload
+## Path Variables
 
 | Argument | Example             | Required | Description         |
 | -------- | ------------------- | -------- | ------------------- |

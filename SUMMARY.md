@@ -751,7 +751,6 @@
           * [Find or Create Invite](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/findorcreateinvite.md)
           * [List Invites](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/listinvites.md)
           * [Delete invite by id](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/delete-invite-by-id.md)
-          * [Remove Invite](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/removeinvite.md)
           * [Report use Invite Token](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/report-use-invite-token.md)
           * [Validate Invite Token](reference/api/rest-api/endpoints/miscellaneous/invite-endpoints/validateinvitetoken.md)
   * [Realtime API](reference/api/realtime-api/README.md)

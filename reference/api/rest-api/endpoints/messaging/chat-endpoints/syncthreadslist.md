@@ -1,6 +1,6 @@
 # Sync Thread List
 
-List all custom emojis available. It supports the [#pagination](../../../#pagination "mention") parameters.
+&#x20;It supports the [#pagination](../../../#pagination "mention") parameters.
 
 | URL                            | Requires Auth | HTTP Method |
 | ------------------------------ | ------------- | ----------- |
