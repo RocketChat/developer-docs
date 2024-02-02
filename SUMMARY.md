@@ -241,7 +241,6 @@
           * [Get List of User Groups](reference/api/rest-api/endpoints/rooms/groups-endpoints/get-list-of-user-groups.md)
           * [Get Groups](reference/api/rest-api/endpoints/rooms/groups-endpoints/get-groups.md)
           * [Get Group Members](reference/api/rest-api/endpoints/rooms/groups-endpoints/get-group-members.md)
-          * [Group Members By Highest Role](reference/api/rest-api/endpoints/rooms/groups-endpoints/members-by-highest-role.md)
           * [Get Group Messages](reference/api/rest-api/endpoints/rooms/groups-endpoints/messages.md)
           * [Get Group Moderators](reference/api/rest-api/endpoints/rooms/groups-endpoints/get-group-moderators.md)
           * [Add Group to List](reference/api/rest-api/endpoints/rooms/groups-endpoints/add-group-to-list.md)

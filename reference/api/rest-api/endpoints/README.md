@@ -114,7 +114,7 @@
 | `/api/v1/groups.listAll`              | Lists all private groups                                                    | [Link](rooms/groups-endpoints/get-list-of-user-groups.md) |
 | `/api/v1/groups.moderators`           | Lists moderators of a group                                                 | [Link](rooms/groups-endpoints/get-group-moderators.md)    |
 | `/api/v1/groups.members`              | Retrieves users of a private group                                          | [Link](rooms/groups-endpoints/get-group-members.md)       |
-| `/api/v1/groups.membersByHighestRole` | Retrieves users of a private group sorted by their most important room role | [Link](rooms/groups-endpoints/members-by-highest-role.md) |
+| `/api/v1/groups.membersByHighestRole` | Retrieves users of a private group sorted by their most important room role | [Link](broken-reference)                                  |
 | `/api/v1/groups.messages`             | Retrieves all group messages                                                | [Link](rooms/groups-endpoints/messages.md)                |
 | `/api/v1/groups.online`               | Lists online users of a group                                               | [Link](rooms/groups-endpoints/get-online-group-users.md)  |
 | `/api/v1/groups.open`                 | Adds the private group back to the list of groups                           | [Link](rooms/groups-endpoints/add-group-to-list.md)       |
