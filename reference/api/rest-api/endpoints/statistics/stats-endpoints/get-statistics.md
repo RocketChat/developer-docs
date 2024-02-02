@@ -24,9 +24,9 @@ Statistics about the Rocket.Chat server. Requires `view-statistics` permission.
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/statistics\
---header 'X-Auth-Token: myauth-token' \
---header 'X-User-Id: myuser-name'
+curl --location 'http://localhost:3000/api/v1/statistics' \
+--header 'X-User-Id: CkCPNcvsvCDfmWLqC' \
+--header 'X-Auth-Token: voliRzf0JsrQeLsZoWEgZs2LKXOhdy6VV_-soivGVDf'
 ```
 
 ## Result
