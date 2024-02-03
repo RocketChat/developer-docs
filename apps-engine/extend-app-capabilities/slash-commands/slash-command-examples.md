@@ -52,14 +52,14 @@ export class StatusUpdateCmd implements ISlashCommand {
        const room: IRoom = context.getRoom();
        
        if (!params || params.length == 0) {
-           return notifyMessage(room, read, user, "At least one status argument is mandatory. A second argument can be passed as status text.");
+           return this.notifyMessage(room, read, user, "At least one status argument is mandatory. A second argument can be passed as status text.");
        }
        
        let status = params[0];
        let statusText = params.length > 1 ? params.slice(1).join(' ') : '';
        
        await modify.getUpdater().getUserUpdater().updateStatus(user, statusText, status);
-       await notifyMessage(room, read, user, "Status updated to " + status + " (" + statusText + ").");
+       await this.notifyMessage(room, read, user, "Status updated to " + status + " (" + statusText + ").");
    }
    
    private async notifyMessage(room: IRoom, read: IRead, sender: IUser, message: string): Promise<void> {
