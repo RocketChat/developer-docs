@@ -1,6 +1,6 @@
 # Get Conversation by Agents
 
-<figure><img src="../../../../../../../.gitbook/assets/enterprise.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Premium.svg" alt=""><figcaption></figcaption></figure>
 
 View the metrics of omnichannel conversations in your workspace during a selected time range based on the agents in your workspace.
 
