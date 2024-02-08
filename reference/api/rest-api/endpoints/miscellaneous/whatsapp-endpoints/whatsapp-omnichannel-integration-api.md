@@ -4,7 +4,7 @@ description: WhatsApp Business Integration for Rocket.Chat
 
 # WhatsApp Business Omnichannel Integration
 
-Integrating Whatsapp business in your Rocket.Chat workspace offers valuable enhancements to simplify your business communication workflows. The [Whatsapp business integration](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-cloud-app) allows you to send template messages to a targeted user.
+Integrating Whatsapp business in your Rocket.Chat workspace offers valuable enhancements to simplify your business communication workflows. The Whatsapp business integration allows you to send template messages to a targeted user.
 
 You can send a Whatsapp template message from your workspace via the following methods:
 
