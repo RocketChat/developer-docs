@@ -306,7 +306,7 @@
           * [Convert Channel to Team](reference/api/rest-api/endpoints/rooms/channels-endpoints/convert-channel-to-team.md)
         * [Rooms Endpoints](reference/api/rest-api/endpoints/rooms/rooms-endpoints/README.md)
           * [Set Room Notifications](reference/api/rest-api/endpoints/rooms/rooms-endpoints/set-room-notifications.md)
-          * [Get Room Admins](reference/api/rest-api/endpoints/rooms/rooms-endpoints/get-room-admins.md)
+          * [Get Admin Rooms](reference/api/rest-api/endpoints/rooms/rooms-endpoints/get-room-admins.md)
           * [Clear Room History](reference/api/rest-api/endpoints/rooms/rooms-endpoints/clear-room-history.md)
           * [Get Room Information](reference/api/rest-api/endpoints/rooms/rooms-endpoints/get-room-information.md)
           * [Get Room Discussions](reference/api/rest-api/endpoints/rooms/rooms-endpoints/get-room-discussions.md)

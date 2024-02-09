@@ -40,7 +40,7 @@ Any of the following errors can occur on the endpoint.
 
 * **Authorization**: Requires an authentication token for the request to be made.
 * **Not Allowed**: This occurs when the authenticated user doesn't have the `set-owner` permission.
-* **User is already a moderator**: This occurs when the user is already a owner in the channel.
+* **User is already an owner**: This occurs when the user is already a owner in the channel.
 
 {% tabs %}
 {% tab title="Authorization" %}
