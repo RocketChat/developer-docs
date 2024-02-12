@@ -139,7 +139,7 @@
   * [Channel Apps](omnichannel/developing-omnichannel-apps/channel-apps.md)
   * [Chatbots](omnichannel/developing-omnichannel-apps/chatbots.md)
   * [CRM Apps](omnichannel/developing-omnichannel-apps/crm-apps.md)
-* [WhatsApp Business Omnichannel Integration](reference/api/rest-api/endpoints/miscellaneous/whatsapp-endpoints/whatsapp-omnichannel-integration-api.md)
+* [WhatsApp Business Template Messages](omnichannel/whatsapp-business-template-messages.md)
 
 ## Bots
 
