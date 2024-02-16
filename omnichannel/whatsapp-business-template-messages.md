@@ -75,6 +75,10 @@ To send a WhatsApp template message from your workspace, you can use any of the 
 If parameters are present within the template message, kindly ensure you substitute all of them before sending the message. Failure to do so will result in an error.
 {% endhint %}
 
+{% hint style="warning" %}
+To send template messages on the[ Whatsapp Cloud App](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-cloud-app), you can only use the API endpoint.
+{% endhint %}
+
 **Getting the status of messages sent**
 
 To receive real-time status updates for outbound messages, navigate to the **Settings** tab of the Whatsapp App and set the _**Message Status Endpoint URL**_. The app sends a request to this URL each time your message status changes to one of the following: **queued**, **failed**, **sent**, **delivered**, **read**, or if some error occurs.
