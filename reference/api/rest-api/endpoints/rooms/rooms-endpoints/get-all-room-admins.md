@@ -1,6 +1,6 @@
-# Get Room Admins
+# Get All Room Admins
 
-Retrieves all rooms.
+Retrieves all rooms and admin information.
 
 <table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/rooms.adminRooms</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
@@ -12,7 +12,7 @@ Permission required: `view-room-administration`
 
 This endpoint supports the[#pagination](../../../#pagination "mention") parameters. Additional parameters are as follows:
 
-<table><thead><tr><th width="198.33333333333331">Key</th><th width="194">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>types</code></td><td><code>['c']</code></td><td>The room types. The value must be an array.</td></tr><tr><td><code>filter</code></td><td><code>general</code></td><td>The rooms's name.</td></tr></tbody></table>
+<table><thead><tr><th width="198.33333333333331">Key</th><th width="194">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>types</code></td><td><code>c</code></td><td><p>The room types. The possible room types are:</p><ul><li><code>d</code>: Direct chat</li><li><code>c</code>: Chat</li><li><code>p</code>: Private chat</li><li><code>l</code>: Livechat</li></ul></td></tr><tr><td><code>filter</code></td><td><code>general</code></td><td>The rooms's name.</td></tr></tbody></table>
 
 ## Example Call
 
