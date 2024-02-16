@@ -71,7 +71,7 @@ curl --location --request POST 'http://localhost:3000/api/v1/users.2fa.sendEmail
 
 ### Body Parameters
 
-* **sendEmailCode**: (string) The user's username or email.
+* `emailOrUsername`: (string) The user's username or email.
 
 ### Result
 
