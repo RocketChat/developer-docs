@@ -1,6 +1,6 @@
 # Send a Template WhatsApp Message
 
-<table><thead><tr><th width="229">HTTP Method</th><th>URL</th></tr></thead><tbody><tr><td><code>POST</code></td><td>REST API URL can be found in the <strong>Details</strong> tab of the <strong>App Info page</strong>.<br>For example, <br><code>http://localhost:3000/api/apps/public/30bf52a3-d65b-4ab1-9b11-7cfdddf1ef29/templateMessage</code></td></tr></tbody></table>
+<table><thead><tr><th width="229">HTTP Method</th><th>URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>POST</code></td><td>Navigate to the <strong>Details</strong> tab of the <strong>App Info page</strong> to get the URL for your workspace. <br>For example, <br><code>http://localhost:3000/api/apps/public/30bf52a3-d65b-4ab1-9b11-7cfdddf1ef29/templateMessage</code></td><td><a href="https://developer.rocket.chat/reference/api/rest-api/endpoints/authentication-endpoints">no</a></td></tr></tbody></table>
 
 ## Body Parameters
 

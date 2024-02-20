@@ -2,11 +2,11 @@
 
 Integrating Whatsapp business in your Rocket.Chat workspace offers valuable enhancements to simplify your business communication workflows. The Whatsapp business integration allows you to send template messages to targeted contacts from your workspace.
 
-Template messages on WhatsApp serve as a proactive means for organizations to engage with their WhatsApp contacts.   These messages can be related to appointment reminders, delivery updates, issue resolution, or payment updates.  They also act as notifications, encouraging users to respond and kickstart conversations to foster interaction between organizations and their audiences. Kindly visit the official guide for more details on [Whatsapp Template Messages](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/).
+Template messages on WhatsApp serve as a proactive means for organizations to engage with their WhatsApp contacts. These messages can be related to appointment reminders, delivery updates, issue resolution, or payment updates.  They also act as notifications, encouraging users to respond and kickstart conversations to foster interaction between organizations and their audiences. Kindly refer the official guide for more details on [Whatsapp Template Messages](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/).
 
-**Creating Template Messages on your Whatsapp Business Account**
+**Creating Template Messages on Your Whatsapp Business Account**
 
-You need to have template messages on your WhatsApp business account before sending them to customers from your Rocket.Chat workspace.
+You need to have template messages on your WhatsApp business account before you can send them to contacts from your Rocket.Chat workspace.
 
 {% hint style="warning" %}
 Before you proceed, refer to the [Meta Template Guide](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/) for a comprehensive understanding of template messages.
@@ -14,7 +14,7 @@ Before you proceed, refer to the [Meta Template Guide](https://developers.facebo
 
 In this guide, we'll be creating a simple shipping reminder template message. To create the template message,
 
-* Go to your **Business Account** and navigate to **Whatsapp Manager.**
+* Go to your **Business Account** and navigate to **WhatsApp Manager.**
 * Navigate to **Account tools  > Message templates** and click **Create template**.
 * Add the **category**, **name**, and **language** of the template message.&#x20;
   * **Category**: Select **Utitlity** for this example guide.
@@ -25,13 +25,17 @@ In this guide, we'll be creating a simple shipping reminder template message. To
 * Put a random integer in the **Samples for body content.**
 * Click **Submit.**
 
-The template message is now sent for review. Once it has been approved, you can now start sending template messages from your workspace.
+The template message is now sent for review. Once it has been approved, you can now start [sending template messages to contacts from your workspace](whatsapp-business-template-messages.md#sending-whatsapp-template-messages-from-your-workspace).
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Visit this[ quick guide ](https://web.facebook.com/business/help/2055875911147364?id=2129163877102343&\_rdc=1&\_rdr)to learn more about **creating WhatsApp template messages**.
 {% endhint %}
 
 #### Sending WhatsApp template messages from your workspace
+
+{% hint style="warning" %}
+You need to have template messages on your WhatsApp business account before you can send them to contacts from your Rocket.Chat workspace.
+{% endhint %}
 
 To send a WhatsApp template message from your workspace, you can use any of the following methods:
 
@@ -76,7 +80,7 @@ If parameters are present within the template message, kindly ensure you substit
 {% endhint %}
 
 {% hint style="warning" %}
-To send template messages on the[ Whatsapp Cloud App](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-cloud-app), you can only use the API endpoint.
+Sending template messages on the[ Whatsapp Cloud App](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-cloud-app) is exclusively available via the API endpoint.
 {% endhint %}
 
 **Getting the status of messages sent**
