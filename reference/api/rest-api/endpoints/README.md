@@ -162,7 +162,7 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 | `/api/v1/channels.list`                        | Retrieves all channels from the server                               | [Link](rooms/channels-endpoints/get-channel-list.md)                 |
 | `/api/v1/channels.list.joined`                 | Retrieves joined channels of the calling user                        | [Link](rooms/channels-endpoints/get-list-of-joined-channels.md)      |
 | `/api/v1/channels.members`                     | Retrieves all channel users                                          | [Link](rooms/channels-endpoints/get-members-of-a-channel.md)         |
-| `/api/v1/channels.membersByHighestRole`        | Retrieves all channel users sorted by their most important room role | [Link](rooms/channels-endpoints/members-by-highest-role.md)          |
+| `/api/v1/channels.membersByHighestRole`        | Retrieves all channel users sorted by their most important room role | [Link](broken-reference)                                             |
 | `/api/v1/channels.messages`                    | Retrieves all channel messages                                       | [Link](rooms/channels-endpoints/get-channel-messages.md)             |
 | `/api/v1/channels.moderators`                  | Lists all moderators of a channel                                    | [Link](rooms/channels-endpoints/get-channel-moderators.md)           |
 | `/api/v1/channels.online`                      | Lists all online users of a channel                                  | [Link](rooms/channels-endpoints/get-online-users-of-channels.md)     |

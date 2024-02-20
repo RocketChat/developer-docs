@@ -281,7 +281,6 @@
           * [Get List of Joined Channels](reference/api/rest-api/endpoints/rooms/channels-endpoints/get-list-of-joined-channels.md)
           * [Get Channel List](reference/api/rest-api/endpoints/rooms/channels-endpoints/get-channel-list.md)
           * [Get Members of a Channel](reference/api/rest-api/endpoints/rooms/channels-endpoints/get-members-of-a-channel.md)
-          * [Channel Members List By Highest Role](reference/api/rest-api/endpoints/rooms/channels-endpoints/members-by-highest-role.md)
           * [Get Channel Messages](reference/api/rest-api/endpoints/rooms/channels-endpoints/get-channel-messages.md)
           * [Get Channel Moderators](reference/api/rest-api/endpoints/rooms/channels-endpoints/get-channel-moderators.md)
           * [Get Online Users of Channels](reference/api/rest-api/endpoints/rooms/channels-endpoints/get-online-users-of-channels.md)
