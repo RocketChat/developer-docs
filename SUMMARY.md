@@ -36,8 +36,8 @@
 ## Customize and Embed
 
 * [Embedded Layout](customize-and-embed/embedded-layout.md)
-* [White Labeling](customize-and-embed/white-labelling/README.md)
-  * [Customizing Colors](customize-and-embed/white-labelling/customizing-colors.md)
+* [White Labeling](customize-and-embed/white-labeling/README.md)
+  * [Customizing Colors](customize-and-embed/white-labeling/customizing-colors.md)
 * [Iframe Integration](customize-and-embed/iframe-integration/README.md)
   * [Configuring iFrame auth](customize-and-embed/iframe-integration/configuring-iframe-auth/README.md)
     * [Testing the iFrame Authentication](rocket.chat/iframe-integration/configuring-iframe-auth/testing-the-iframe-authentication.md)
