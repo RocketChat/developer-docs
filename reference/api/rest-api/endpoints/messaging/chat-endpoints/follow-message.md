@@ -19,7 +19,7 @@ description: Follow a message.
 ```bash
 curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
      -H "X-User-Id: Z3cpiYN6CNK2oXWKv" \
-     -H "Content-type:application/json" \
+     -H "Content-type: application/json" \
      http://localhost:3000/api/v1/chat.followMessage \
      -d '{ "mid": "7aDSXtjMA3KPLxLjt" }'
 ```
