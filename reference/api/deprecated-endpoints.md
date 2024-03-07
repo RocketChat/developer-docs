@@ -14,12 +14,7 @@ The methods and endpoints of the **Realtime API** and **Rest API** that have bee
 
 ### Endpoints to be deprecated
 
-| Endpoint                                                                                                                                                          | Description                                      | Release removed |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------------- |
-| [`/licenses.get`](https://developer.rocket.chat/reference/api/rest-api/endpoints/miscellaneous/licenses/get-licenses)                                             | The endpoint will be renamed to `/licenses.info` | 7.0.0           |
-| [`/licenses.isEnterprise`](https://developer.rocket.chat/reference/api/rest-api/endpoints/miscellaneous/licenses/confirm-enterprise-license)                      | The endpoint will be renamed to `/licenses.info` | 7.0.0           |
-| [`/livechat/room.visitor`](https://developer.rocket.chat/reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/update-room-visitor-info)  | The endpoint will be removed.                    | 7.0.0           |
-| [`/livechat/inquiries.queued`](https://developer.rocket.chat/reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued) | The endpoint will be removed.                    | 7.0.0           |
+<table><thead><tr><th>Endpoint</th><th>Description</th><th width="181">Release deprecated</th><th>Release removed</th></tr></thead><tbody><tr><td><a href="https://developer.rocket.chat/reference/api/rest-api/endpoints/miscellaneous/licenses/get-licenses"><code>/licenses.get</code></a></td><td>The endpoint is replaced by <code>/licenses.info</code></td><td>6.5.0</td><td>7.0.0</td></tr><tr><td><a href="https://developer.rocket.chat/reference/api/rest-api/endpoints/miscellaneous/licenses/confirm-enterprise-license"><code>/licenses.isEnterprise</code></a></td><td>The endpoint is replaced by <code>/licenses.info</code></td><td>6.5.0</td><td>7.0.0</td></tr><tr><td><a href="https://developer.rocket.chat/reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-room/update-room-visitor-info"><code>/livechat/room.visitor</code></a></td><td>The endpoint will be removed.</td><td>6.5.0</td><td>7.0.0</td></tr><tr><td><a href="https://developer.rocket.chat/reference/api/rest-api/endpoints/omnichannel/livechat-endpoints/livechat-inquiries/inquiries-queued"><code>/livechat/inquiries.queued</code></a></td><td>The endpoint will be removed.</td><td>6.5.0</td><td>7.0.0</td></tr></tbody></table>
 
 ### Removed endpoints
 
