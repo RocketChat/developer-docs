@@ -177,12 +177,23 @@ If `yarn` is failing on the link step for fibers with a log similar to:
     ```shell
     npm install node-gyp --global
     ```
+
+    {% hint style="warning" %}
+    `node-gyp` introduced breaking changes in Oct 2023 for v10.0.0+ and supports node `^16.14.0 || >=18.0.0`.
+    If you are experiencing incompatible node version issues because of this, install `node-gyp@9.4.1` or older.
+    See [recent releases](https://github.com/nodejs/node-gyp/releases) for more information. 
+    {% endhint %}
 *   Rebuild fibers for the system architecture manually
 
     ```shell
     cd node_modules/fibers
     node-gyp rebuild --arch=arm64
     ```
+
+    {% hint style="warning" %}
+    Depending on your `node-gyp` version, it may utilize the `distutils` package, which is deprecated in Python version `3.12`+. If you are
+    experiencing issues at this step set your Python environment to an older version.
+    {% endhint %}
 *   Copy binary to the correct location
 
     ```shell
