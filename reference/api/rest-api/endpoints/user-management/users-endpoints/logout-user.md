@@ -5,7 +5,7 @@
 ## Example Call
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/v1/users.logout\
+curl --location --request POST http://localhost:3000/api/v1/users.logout \
 --header 'X-Auth-Token: myauth-token' \
 --header 'X-User-Id: myuser-name'
 ```
