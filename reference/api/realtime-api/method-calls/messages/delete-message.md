@@ -1,10 +1,14 @@
 # Delete Message
 
+<figure><img src="../../../../../.gitbook/assets/Deprecated.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+This method is planned to be removed by 7.0.0. Use the [`/chat.delete`](https://developer.rocket.chat/reference/api/rest-api/endpoints/messaging/chat-endpoints/delete) endpoint instead.
+{% endhint %}
+
 Delete a message by the message id.
 
-| Name            | Requires Auth | Permission       | Setting                                            |
-| --------------- | ------------- | ---------------- | -------------------------------------------------- |
-| `deleteMessage` | Yes           | `delete-message` | `Message_AllowDeleting` - "Allow Message Deleting" |
+<table><thead><tr><th>Name</th><th width="150">Requires Auth</th><th>Permission</th><th>Setting</th></tr></thead><tbody><tr><td><code>deleteMessage</code></td><td>Yes</td><td><code>delete-message</code></td><td><code>Message_AllowDeleting</code> - "Allow Message Deleting"</td></tr></tbody></table>
 
 ## Settings
 

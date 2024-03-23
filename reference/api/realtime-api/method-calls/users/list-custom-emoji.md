@@ -1,10 +1,16 @@
 # List Custom Emoji
 
+<figure><img src="../../../../../.gitbook/assets/Deprecated.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+This method is planned to be removed by 7.0.0. Use the [`/emoji-custom.list`](https://developer.rocket.chat/reference/api/rest-api/endpoints/content-management/custom-emoji-endpoints/list-custom-emojis) endpoint instead.
+{% endhint %}
+
 Returns a list of [custom emoji ](https://docs.rocket.chat/use-rocket.chat/workspace-administration/custom-emoji)registered in the workspace.
 
-| Name              | Requires Auth | Permission | Setting |
-| ----------------- | ------------- | ---------- | ------- |
-| `listEmojiCustom` | Yes           |            |         |
+| Name              | Requires Auth |
+| ----------------- | ------------- |
+| `listEmojiCustom` | Yes           |
 
 ### Example Call
 

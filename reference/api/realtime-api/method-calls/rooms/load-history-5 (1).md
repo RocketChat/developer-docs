@@ -1,10 +1,16 @@
 # Check If Room Name Exists
 
+<figure><img src="../../../../../.gitbook/assets/Deprecated.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+This method is planned to be removed by 7.0.0. Use the `/rooms.roomNameExists` endpoint instead.
+{% endhint %}
+
 Check if a room name exists in a workspace.
 
-| Name             | Requires Auth | Permission | Setting |
-| ---------------- | ------------- | ---------- | ------- |
-| `roomNameExists` | Yes           |            |         |
+| Name             | Requires Auth |
+| ---------------- | ------------- |
+| `roomNameExists` | Yes           |
 
 ### Payload Parameters <a href="#payload-parameters" id="payload-parameters"></a>
 
