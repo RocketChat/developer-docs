@@ -6,9 +6,9 @@ Lists all of the specific channel messages.&#x20;
 
 ## Query Parameters
 
-This endpoint supports the [#pagination](../../../#pagination "mention") parameters, alongside the  [#query-and-fields](../../../#query-and-fields "mention") parameters.
+This endpoint supports the [#pagination](../../../#pagination "mention") parameters, alongside the `query` parameter for [Query and Fields](https://developer.rocket.chat/reference/api/rest-api#query-and-fields) .
 
-<table><thead><tr><th width="190">Key</th><th width="251">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark> or <code>roomName</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> or <code>general</code></td><td>The channel ID or name. You must enter at least one of these parameters.</td></tr></tbody></table>
+<table><thead><tr><th width="190">Key</th><th width="251">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code> or <code>general</code></td><td>The channel ID</td></tr></tbody></table>
 
 ## Example Call
 

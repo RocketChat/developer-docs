@@ -1,12 +1,14 @@
 # Get Channel History
 
-Retrieves the messages from a channel.
+Retrieves the history of a channel.
 
 <table><thead><tr><th width="163">HTTP Method</th><th width="325">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/channels.history</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
-<table><thead><tr><th width="212">Key</th><th width="234">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId</code><mark style="color:red;"><code>*</code></mark></td><td><code>ByehQjC44FwMeiLbX</code></td><td>The channel ID.</td></tr><tr><td><code>latest</code></td><td><code>2016-09-30T13:42:25.304Z</code></td><td>The end of time range of messages to retrieve. The default value is the current date and time.</td></tr><tr><td><code>oldest</code></td><td><code>2016-05-30T13:42:25.304Z</code></td><td>The start of the time range of messages to retrieve</td></tr><tr><td><code>inclusive</code></td><td><code>true</code></td><td>Whether messages which land on the latest and oldest dates should be included. The default value is <code>false</code>.</td></tr><tr><td><code>offset</code></td><td><code>10</code></td><td>The offset of the list messages to retrieve. By default, the value is <code>0</code>.</td></tr><tr><td><code>count</code></td><td><code>100</code></td><td>The number of messages to retrieve. By default, the value is <code>20</code>.</td></tr><tr><td><code>unreads</code></td><td><code>false</code></td><td>Whether the number of unread messages should be included. The default value is <code>false</code>.</td></tr></tbody></table>
+This endpoint supports the [Pagination](https://developer.rocket.chat/reference/api/rest-api#pagination) parameters.
+
+<table><thead><tr><th width="212">Key</th><th width="234">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>roomId*</code> or <code>roomName*</code></td><td><code>ByehQjC44FwMeiLbX</code> or <code>general</code></td><td>The channel ID or name. You must enter at least one of these parameters.</td></tr><tr><td><code>latest</code></td><td><code>2016-09-30T13:42:25.304Z</code></td><td>The end of time range of messages to retrieve. The default value is the current date and time.</td></tr><tr><td><code>oldest</code></td><td><code>2016-05-30T13:42:25.304Z</code></td><td>The start of the time range of messages to retrieve</td></tr><tr><td><code>inclusive</code></td><td><code>true</code></td><td>Whether messages which land on the latest and oldest dates should be included. The default value is <code>false</code>.</td></tr><tr><td><code>unreads</code></td><td><code>false</code></td><td>Whether the number of unread messages should be included. The default value is <code>false</code>.</td></tr><tr><td><code>showThreadMessages</code></td><td><code>true</code></td><td>Whether thread messages should be included in the response.</td></tr></tbody></table>
 
 ## Example Call
 
