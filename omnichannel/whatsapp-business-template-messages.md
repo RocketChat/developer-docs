@@ -17,7 +17,7 @@ In this guide, we'll be creating a simple shipping reminder template message. To
 * Go to your **Business Account** and navigate to **WhatsApp Manager.**
 * Navigate to **Account tools  > Message templates** and click **Create template**.
 * Add the **category**, **name**, and **language** of the template message.&#x20;
-  * **Category**: Select **Utitlity** for this example guide.
+  * **Category**: Select **Utility** for this example guide.
   * **Name**:  Add a **name** for the template message.
   * **Language**: Select **English** for this example guide.
 * Click **Continue**.
