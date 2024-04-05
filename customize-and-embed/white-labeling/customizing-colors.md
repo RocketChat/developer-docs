@@ -31,6 +31,16 @@ button-background-primary-default
 
 To customize colors, navigate to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**
 
+**Overwrite existing Variables**
+
+Append the `!important` rule if you want to overwrite existing CSS fields.
+
+```css
+.rcx-sidebar--main {
+  --rcx-color-surface-sidebar: #5c030c !important;
+}
+```
+
 **Variables List**
 
 ```css
