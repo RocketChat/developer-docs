@@ -12,28 +12,24 @@ One of the key aspects of white-labeling your Rocket.Chat workspace is the abili
 
 Rocket.Chat provides a comprehensive list of color variables that you can adjust to match your brand's color scheme. These variables control various workspace elements, including stroke colors, surface colors, font colors, status colors, shadow colors, and button colors.
 
+Colors are customizable through the custom CSS field in the admin panel. Go to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**.
 
-
-**Token name**
+## **Token name**
 
 ```css
 button-background-primary-default
 ```
 
-**Token anatomy**
+## **Token anatomy**
 
 * `button`: UI elements it's responsible for.
 * `background`: part of this UI element.
 * `primary`: type of UI element.
 * `default`: state of this UI element.
 
-**Where and How to customize colors**: Colors are customizable through the custom CSS field in the admin panel.
+## **Overwrite existing variables**
 
-To customize colors, navigate to **Administration** > **Workspace** > **Settings** > **Layout** > **Custom CSS**
-
-**Overwrite existing Variables**
-
-Append the `!important` rule if you want to overwrite existing CSS fields.
+Append `!important` if you want to overwrite existing CSS fields. This is due to the [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) rules. For details, refer to [!important](https://developer.mozilla.org/en-US/docs/Web/CSS/important).&#x20;
 
 ```css
 .rcx-sidebar--main {
@@ -41,7 +37,7 @@ Append the `!important` rule if you want to overwrite existing CSS fields.
 }
 ```
 
-**Variables List**
+## **Variable list**
 
 ```css
 .rcx-content--main {
