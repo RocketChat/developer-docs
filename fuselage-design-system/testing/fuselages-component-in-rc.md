@@ -30,7 +30,7 @@ We've created a convenient helper script to streamline the testing and deploymen
 This script is designed to be utilized using the command `yarn fuselage -a [action] -p [package]`, offering a flexible way to perform various actions. Actions are specified using the `-a | --action` flag, and the available options are: `[link|undo|unlink|next|latest|next-all|latest-all]`.
 
 * &#x20;`link` : Creates a symbolic link for the fuselage package&#x20;
-* &#x20;`undo` or `unlink` : Removes the symbolic li nk for the fuselage package&#x20;
+* &#x20;`undo` or `unlink` : Removes the symbolic link for the fuselage package&#x20;
 * &#x20;`next` : Update dependencies with the @next npm package version&#x20;
 * &#x20;`latest` : Update dependencies with the @latest npm package version&#x20;
 * &#x20;`next-all` : Update ALL fuselage dependencies with the @next npm packages version&#x20;
