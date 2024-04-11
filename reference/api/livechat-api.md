@@ -12,17 +12,20 @@ You can call multiple Livechat Widget APIs on the same page.
 
 To set a custom field for a visitor, you can use the following:
 
+{% code overflow="wrap" %}
 ```javascript
 RocketChat(function() {
     this.setCustomField('fieldName1', 'Any value you want to store');
     this.setCustomField('fieldName2', 'A value set just once', false); // you can pass false as the third parameter to not overwrite an already set value
 });
 ```
+{% endcode %}
 
 ### Set theme options
 
 To change the color of the online status on the Livechat widget, use the following:
 
+{% code overflow="wrap" %}
 ```javascript
 RocketChat(function() {
     this.setTheme({
@@ -31,6 +34,26 @@ RocketChat(function() {
         iconColor: '#1d74f5', // widget icon color
         title: "Welcome to Rocket.Chat", // default widget title when the status of service is online
         offlineTitle: "Service is offline", // default widget title when the status of service is online
+        position: 'right', // Already mentioned, can be left or right
+        background: 'red', // Already mentioned, follows CSS standards
+        guestBubbleBackgroundColor: 'blue', // Changes the background color of the message bubble for the guest. Accepts simple colors like hexadecimal and valid color names.
+        agentBubbleBackgroundColor: 'green', // Changes the background color of the message bubble for the agent. Accepts simple colors like hexadecimal and valid color names.
+        hideGuestAvatar: true, // Hides/shows guest avatar. It can be either true or false. Default is false.
+        hideAgentAvatar: false, // Hides/shows agent avatar. It can be either true or false. Default is true.
+    });
+});
+```
+{% endcode %}
+
+### Remove theme options
+
+To remove the theme options, set the field value as `undefined`. Note that omitting the field itself does not remove the customization value.
+
+```javascript
+RocketChat(function() {
+    this.setTheme({
+        color: undefined,
+        fontColor: '#FFFFFF',
     });
 });
 ```
@@ -200,6 +223,22 @@ To clear any connected business unit on the widget, use this:
 RocketChat(function() {
     this.clearBusinessUnit();
 });
+```
+
+### Hide system messages ![](../../.gitbook/assets/Premium.svg)
+
+You can hide specific system messages in the livechat widget conversation. Use the method as follows:
+
+```javascript
+RocketChat(function() {
+  this.setHiddenSystemMessages(
+    ['uj' // User joined
+     'ul' // User left
+     'livechat-close' // Chat closed
+     'livechat-started' // Chat started
+     'livechat_transfer_history' // Chat transferred ]
+  )}
+);
 ```
 
 ## Events
