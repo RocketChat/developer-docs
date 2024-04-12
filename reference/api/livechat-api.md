@@ -3,7 +3,7 @@
 The Livechat Widget API allows developers to integrate Livechat widget functionalities into their apps seamlessly. The code must be after the[ Livechat Widget installation](https://docs.rocket.chat/use-rocket.chat/omnichannel/livechat-widget-installation) script and wrapped as a callback of `RocketChat();` function.
 
 {% hint style="info" %}
-You can call multiple Livechat Widget APIs on the same page.
+You can call multiple Livechat Widget APIs on the same page. The Widget API information is stored in the local storage of the browser.
 {% endhint %}
 
 ## Methods
@@ -117,6 +117,18 @@ RocketChat(function() {
 });
 ```
 
+### Set Guest Metadata ![](../../.gitbook/assets/Premium.svg)
+
+To determine a list of attributes and their corresponding values for a guest:
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>RocketChat(function () {
+</strong>    this.setGuestMetadata({
+        name: 'Johnnie Walker',
+        serviceID: '3455566'
+    });
+});
+</code></pre>
+
 ### Set Language for Widget
 
 To select a language for the widget, use this:
@@ -161,6 +173,7 @@ RocketChat(function() {
         department: 'sales',
         guestToken: 'FHwaLnp8fzjMupSAj',
         language: 'en',
+        setGuestMetadata: { name: 'Johnnie Walker', serviceID: '3455566'},
   });
 });
 ```
@@ -398,6 +411,7 @@ RocketChat(function() {
 
 | Version | Description                                                                                                                                            |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 6.7.0   | Added `setGuestMetadata` method.                                                                                                                       |
 | 3.1.0   | Added `setAgent` and `initialize` methods. Also, improved the `setTheme` method adding more options to customize the widget                            |
 | 3.0.0   | Added `onServiceOffline` callback                                                                                                                      |
 | 2.2.0   | Added `maximizeWidget` and `minimizeWidget` methods.                                                                                                   |
