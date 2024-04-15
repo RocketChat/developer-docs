@@ -140,6 +140,10 @@ To determine a list of attributes and their corresponding values for a guest:
 });
 </code></pre>
 
+{% hint style="info" %}
+This method is essential when using an [external service to send livechat trigger messages](https://docs.rocket.chat/use-rocket.chat/omnichannel/livechat-triggers#omnichannel-livechat-trigger-actions).
+{% endhint %}
+
 ### Set Language for Widget
 
 To select a language for the widget, use this:
