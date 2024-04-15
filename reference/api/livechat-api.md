@@ -45,6 +45,17 @@ RocketChat(function() {
 ```
 {% endcode %}
 
+{% hint style="info" %}
+The following theme options are exclusively available to workspaces subscribed to any of Rocket.Chat's [premium plans](https://docs.rocket.chat/readme/our-plans):
+
+* agentBubbleBackgroundColor
+* guestBubbleBackgroundColor
+* background
+* hideAgentAvatar&#x20;
+* hideGuestAvatar&#x20;
+* position
+{% endhint %}
+
 ### Remove theme options
 
 To remove the theme options, set the field value as `undefined`. Note that omitting the field itself does not remove the customization value.
@@ -169,6 +180,8 @@ RocketChat(function() {
             iconColor: '#1d74f5',
             title: "Welcome to Rocket.Chat",
            offlineTitle: "Service is offline",
+           hideGuestAvatar: false, 
+           hideAgentAvatar: true
         },
         department: 'sales',
         guestToken: 'FHwaLnp8fzjMupSAj',
