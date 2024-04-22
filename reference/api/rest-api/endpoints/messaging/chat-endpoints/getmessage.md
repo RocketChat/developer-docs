@@ -1,6 +1,6 @@
 # Get Message
 
-Retrieves a single chat message by the provided id. Callee must have permission to access the room where the message resides.
+Retrieves a single chat message for the message ID. You must have permission to access the room where the message is.
 
 | URL                       | Requires Auth | HTTP Method |
 | ------------------------- | ------------- | ----------- |
@@ -8,9 +8,7 @@ Retrieves a single chat message by the provided id. Callee must have permission 
 
 ## Path Variables
 
-| Argument | Example             | Required | Description                   |
-| -------- | ------------------- | -------- | ----------------------------- |
-| `msgId`  | `7aDSXtjMA3KPLxLjt` | Required | The id of the message to get. |
+<table><thead><tr><th width="169">Argument</th><th>Example</th><th width="162">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>msgId</code></td><td><code>7aDSXtjMA3KPLxLjt</code></td><td>Required</td><td>The ID of the message to get.</td></tr></tbody></table>
 
 ## Example Call
 
@@ -23,7 +21,7 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 
 ## Example Result
 
-```javascript
+```json
 {
   "message": {
     "_id": "7aDSXtjMA3KPLxLjt",
