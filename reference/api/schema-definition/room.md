@@ -169,10 +169,13 @@ The Room object has these fields
 
 ### Room Types
 
-* `d`: Direct chat
-* `c`: Chat
-* `p`: Private chat
+* `d`: Direct messages
+* `c`: Public channel
+* `p`: Private channel
+* `discussions`: Team or channel discussions
+* `teams`: Workspace teams
 * `l`: Livechat
+* `v`: Omnichannel VoIP rooms
 
 The information that comes with the room object changes according to its type.
 

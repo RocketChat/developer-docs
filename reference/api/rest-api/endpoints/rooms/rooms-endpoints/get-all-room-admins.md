@@ -10,9 +10,9 @@ Permission required: `view-room-administration`
 
 ## Query Parameters
 
-This endpoint supports the[#pagination](../../../#pagination "mention") parameters. Additional parameters are as follows:
+This endpoint supports the [#pagination](../../../#pagination "mention") parameters. Additional parameters are as follows:
 
-<table><thead><tr><th width="198.33333333333331">Key</th><th width="194">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>types</code></td><td><code>c</code></td><td><p>The room types. The possible room types are:</p><ul><li><code>d</code>: Direct chat</li><li><code>c</code>: Chat</li><li><code>p</code>: Private chat</li><li><code>l</code>: Livechat</li></ul></td></tr><tr><td><code>filter</code></td><td><code>general</code></td><td>The rooms's name.</td></tr></tbody></table>
+<table><thead><tr><th width="179.33333333333331">Key</th><th width="194">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>types</code></td><td><code>c</code></td><td><p>The room types. The possible room types are:</p><ul><li><code>d</code>: Direct messages</li><li><code>c</code>: Public channel</li><li><code>p</code>: Private channel</li><li><code>discussions</code>: Team or channel discussions</li><li><code>teams</code>: Workspace teams</li><li><code>l</code>: Livechat</li><li><code>v</code>: Omnichannel VoIP rooms</li></ul></td></tr><tr><td><code>filter</code></td><td><code>general</code></td><td>The rooms's name.</td></tr></tbody></table>
 
 ## Example Call
 
