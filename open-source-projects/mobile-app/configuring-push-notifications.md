@@ -5,14 +5,42 @@ You can manually configure push notifications to your customized App build witho
 ## Configuring Gateway
 
 * Navigate to **Administration > Workspace > Settings** > **Push** on your workspace.
-* Disable **Gateway** and click **Save changes.**
+* Disable **Gateway**.
 * Disable **Production** if you’re trying in debug mode.
 
 ## Configuring Android
 
+#### Generating FCM Service Account
+
 * Navigate to the **Cloud Messaging** tab on the Firebase project.
-* Copy the **Server Key** token from Firebase to the **GCM API Key** field in your workspace **Push > Certificates and Keys** settings.
-* Copy the **Sender ID** from Firebase to **GCM Project Number** in your workspace **Push > Certificates and Keys** settings.
+* Under **Firebase Cloud Messaging API**, tap on **Manage Service Accounts** to be redirected to Google Cloud Console.
+* Go to **Create Service Account**, fill name and ID and click **Create and Continue**
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-04-23 at 10.18.48 AM.png" alt=""><figcaption><p>Create service account</p></figcaption></figure>
+
+* On **Grant this service account access to project**, filter for a role called **Firebase Cloud Messaging API Admin**
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-04-23 at 10.19.03 AM.png" alt=""><figcaption><p>Filter Cloud Messaging role</p></figcaption></figure>
+
+* Click **Done** and navigate to the Service Account you just created
+* Go to **Keys > Add Key**
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-04-23 at 10.20.05 AM.png" alt=""><figcaption><p>Service account > Keys</p></figcaption></figure>
+
+* Select **JSON** and click **Create**
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-04-23 at 10.19.52 AM.png" alt=""><figcaption><p>Generate service account JSON</p></figcaption></figure>
+
+* This JSON file is going to be used to send push notifications
+
+#### Configuring FCM on Rocket.Chat
+
+* Navigate to **Administration > Workspace > Settings** > **Push**
+* Make sure **Use legacy notification provider** is turned off
+* On **Certificates and Keys**, copy the **Service Account** content you just created to **Google FCM API Credentials**
+* Save and restart your workspace.
+* Log into the server as the same user on your mobile device and close it (it won’t receive push notification if it’s open).
+* Navigate to  **Administration > Workspace > Settings** > **Push** and click on  the **Send a test push to my user** button**.**
 
 ## Configuring iOS
 
@@ -56,7 +84,7 @@ openssl pkcs12 -nocerts -out PushKey.pem -in yourP12File.p12
 cat PushKey.pem
 ```
 
-* Save and restart your server.
+* Save and restart your workspace.
 * Log into the server as the same user on your mobile device and close it (it won’t receive push notification if it’s open).
 * Navigate to  **Administration > Workspace > Settings** > **Push** and click on  the **Send a test push to my user** button**.**
 
