@@ -172,6 +172,7 @@
           * [Update Own Basic Information](reference/api/rest-api/endpoints/user-management/users-endpoints/update-own-basic-information.md)
           * [Get User's Info](reference/api/rest-api/endpoints/user-management/users-endpoints/get-users-info.md)
           * [Get Users List](reference/api/rest-api/endpoints/user-management/users-endpoints/get-users-list.md)
+          * [List users by Status](reference/api/rest-api/endpoints/user-management/users-endpoints/list-users-by-status.md)
           * [Set User Avatar](reference/api/rest-api/endpoints/user-management/users-endpoints/set-user-avatar.md)
           * [Get User Avatar](reference/api/rest-api/endpoints/user-management/users-endpoints/get-user-avatar.md)
           * [Reset Avatar](reference/api/rest-api/endpoints/user-management/users-endpoints/reset-avatar.md)
