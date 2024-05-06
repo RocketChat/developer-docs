@@ -205,6 +205,7 @@
           * [List User Teams](reference/api/rest-api/endpoints/user-management/users-endpoints/list-user-teams.md)
           * [Report User](reference/api/rest-api/endpoints/user-management/users-endpoints/report-user.md)
           * [Logout User](reference/api/rest-api/endpoints/user-management/users-endpoints/logout-user.md)
+          * [Send User Welcome Email ](reference/api/rest-api/endpoints/user-management/users-endpoints/send-user-welcome-email.md)
         * [LDAP Endpoints](reference/api/rest-api/endpoints/user-management/ldap-endpoints/README.md)
           * [LDAP Sync](reference/api/rest-api/endpoints/user-management/ldap-endpoints/ldap-sync.md)
           * [Test LDAP Connection](reference/api/rest-api/endpoints/user-management/ldap-endpoints/test-ldap-connection.md)
