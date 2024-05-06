@@ -35,7 +35,7 @@ A folder with the app name is created in the current working directory (in this 
 {% hint style="info" %}
 **Troubleshooting tip**
 
-If you receive the error message '**TypeError: Cannot read properties of undefined \[reading 'message']**', do not be alarmed. You can disregard this and use the `cd test` command to determine if a folder for your application was created in Visual Studio.&#x20;
+If you receive the error message '**TypeError: Cannot read properties of undefined \[reading 'message']**', do not be alarmed. You can disregard this and use the `cd <folder-name>` command to determine if a folder for your application was created.
 {% endhint %}
 
 ### Step 2: Open the app folder in Visual Studio
@@ -133,8 +133,8 @@ In the command line, go to the `hello-world` app folder that was created in [#st
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
 ```
 
-* The `<server_url>` parameter is the URL of your Rocket.Chat server.&#x20;
-* Replace the placeholders with the URL, username, and password for your server, respectively.&#x20;
+* Replace `<server_url>`  with the URL of your Rocket.Chat workspace.&#x20;
+* Replace `<user>` and  `<pwd>` with your username and password, respectively.&#x20;
 
 After executing this command, your application will be deployed to the server.
 

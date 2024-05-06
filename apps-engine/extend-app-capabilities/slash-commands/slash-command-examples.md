@@ -5,12 +5,12 @@ In this section, we'll look at two slash command examples:
 * Update user status value and text.
 * Extend messages to include an image attachment and custom field.
 
-## Update user status&#x20;
+## Update user status
 
-To update the user status, we will create a new slash command that takes two parameters:&#x20;
+To update the user status, we will create a new slash command that takes two parameters:
 
 * The first parameter is the status value - online, away, busy, etc.
-* The second contains the status text.&#x20;
+* The second contains the status text.
 
 We will refer to the status slash command as `st` to execute code such as:
 
@@ -23,7 +23,7 @@ We will refer to the status slash command as `st` to execute code such as:
 To implement this, follow these steps:
 
 1. Create a new class named `StatusUpdateCmd.ts` and place it in the same subdirectory `commands` that we created in the [previous section](./).
-2. Now, add the following code for the status update:&#x20;
+2. Now, add the following code for the status update:
 
 {% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
 ```typescript
@@ -90,6 +90,10 @@ public async extendConfiguration(configuration: IConfigurationExtend) {
 }
 ```
 
+{% hint style="warning" %}
+You can only have one `extendConfiguration` method in your app's main class. Therefore, make sure to add all your slash commands to this method.&#x20;
+{% endhint %}
+
 Make sure to import the slash command class in the main class:
 
 ```typescript
@@ -100,21 +104,21 @@ All that remains is deployment and testing!
 
 ### Step 3: Deploy the app
 
-In the command line, go to the app folder and run:&#x20;
+In the command line, go to the app folder and run:
 
 ```
 rc-apps deploy --url <server_url> -u <user> -p <pwd>
 ```
 
-* The `<server_url>` parameter is the URL of your Rocket.Chat server.&#x20;
-* Replace the placeholders with the URL, username, and password for your server, respectively.&#x20;
+* The `<server_url>` parameter is the URL of your Rocket.Chat server.
+* Replace the placeholders with the URL, username, and password for your server, respectively.
 
 After executing this command, your application will be deployed to the server.
 
 {% hint style="info" %}
 **Packaging your app**
 
-Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.&#x20;
+Alternatively, you can execute the `rc-apps package` command. This gives you a compressed zip file of your app that you can upload as a private app to your Rocket.Chat server.
 {% endhint %}
 
 ### Step 4: Test the app
@@ -133,9 +137,9 @@ If we execute `/st` with no input, we receive the notification:
 
 ## Extend messages
 
-This example explains how to modify messages to include custom fields and attachments. We will construct an app that is invoked via a slash command, sends a message, and is extended to include an image and a custom field.&#x20;
+This example explains how to modify messages to include custom fields and attachments. We will construct an app that is invoked via a slash command, sends a message, and is extended to include an image and a custom field.
 
-### Step 1: Add attachments&#x20;
+### Step 1: Add attachments
 
 Rocket.Chat supports numerous attachments (and applicable customizations for these attachments). For instance, you can attach images, documents, videos, and audio files to messages. The first step in doing so is to create your own attachment class.
 
@@ -168,7 +172,7 @@ The audio and video formats that are supported in the Rocket.Chat message attach
 To implement this, follow these steps:
 
 1. Create a new class named `ExtendMessageCommand.ts` and place it in the same subdirectory `commands` that we created in the [previous section](./).
-2. Now, add the following code:&#x20;
+2. Now, add the following code:
 
 {% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
 ```typescript
@@ -211,7 +215,7 @@ The main actions performed by the code above are:
 
 Custom fields are structures linked to messages in which each field is organized as if it were an entry in a dictionary. That is, each field must contain a key and corresponding value. These elements are retained in the server's database along with the corresponding messages so that they can be retrieved later.
 
-### Step 3: Create auxiliary methods&#x20;
+### Step 3: Create auxiliary methods
 
 It is beneficial to define a few additional methods within our slash command class so that our code remains concise and straightforward.
 
@@ -279,7 +283,7 @@ export class RocketChatTester extends App {
 ```
 {% endcode %}
 
-Here, we import our new slash command class and register it in the app's configuration.&#x20;
+Here, we import our new slash command class and register it in the app's configuration.
 
 ### Step 5: Deploy the app
 

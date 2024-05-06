@@ -81,7 +81,7 @@ export class HelloWorldApp extends App implements IPreMessageSentPrevent {
 {% endcode %}
 
 9. Save the file and deploy your app.&#x20;
-10. If we send the `‘test’` message in a channel other than **general**, it should not be published (it will appear grayed out). If the message is something different it will get sent. As for the room **general**, all messages will be sent including `‘test’` as shown in the following screenshots:
+10. If we send the `test` message in a channel other than **general**, it should not be published (it will appear grayed out). If the message is something different it will get sent. As for the room **general**, all messages will be sent including `test` as shown in the following screenshots:
 
 <div align="left">
 
@@ -224,7 +224,7 @@ export class HelloWorldApp extends App implements IPreMessageSentPrevent, IPostM
 ```
 {% endcode %}
 
-3. Save the file, deploy, and test the app. The notification is like a temporary private message visible only to the user who sent the attachment (if you refresh the page, the notification is gone).&#x20;
+3. Save the file and deploy the app. Send an attachment to a room to test the app. The notification is like a temporary private message visible only to the user who sent the attachment (if you refresh the page, the notification is gone).&#x20;
 
 <div align="left">
 

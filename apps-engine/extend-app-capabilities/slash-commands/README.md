@@ -31,7 +31,7 @@ public async extendConfiguration(configuration: IConfigurationExtend) {
 ```
 {% endcode %}
 
-2. Then, import the new slash command class by adding the following import statements to your file:
+2. To import the new slash command class, replace the import statements with the following:
 
 {% code lineNumbers="true" %}
 ```typescript
@@ -121,9 +121,9 @@ Alternatively, you can execute the `rc-apps package` command. This gives you a c
 
 ### Step 4: Test your new slash command
 
-After deploying the app, you can input `/phone text` or `/phone call` on any channel. The app logs `"Texting!"` or `"Calling!"` to the **Logs** section, respectively.
+After deploying the app, you can input `/phone text` or `/phone call` on any channel. To view the command response, go to **Administration** > **Workspace** > **Reports >** [**Logs**](https://docs.rocket.chat/use-rocket.chat/workspace-administration/reports#logs)**.** The response `"Texting!"` or `"Calling!"` is displayed based on your input.
 
-If you want to send it to the channel, follow these steps:&#x20;
+If you want to send the command response to the channel, follow these steps:&#x20;
 
 1. Add the following method to the `PhoneCommand` class:
 
