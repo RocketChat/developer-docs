@@ -713,7 +713,7 @@
           * [Close Chat](reference/api/rest-api/endpoints/marketplace-apps/rasa-app/close-chat.md)
           * [Perform Handover](reference/api/rest-api/endpoints/marketplace-apps/rasa-app/perform-handover.md)
         * [WhatsApp Endpoints](reference/api/rest-api/endpoints/marketplace-apps/whatsapp-endpoints/README.md)
-          * [Send a Template WhatsApp Message](reference/api/rest-api/endpoints/marketplace-apps/whatsapp-endpoints/send-a-template-whatsapp-message.md)
+          * [Send a WhatsApp Template Message](reference/api/rest-api/endpoints/marketplace-apps/whatsapp-endpoints/send-a-template-whatsapp-message.md)
       * [Miscellaneous](reference/api/rest-api/endpoints/miscellaneous/README.md)
         * [Auto Translate Endpoints](reference/api/rest-api/endpoints/miscellaneous/auto-translate-endpoints/README.md)
           * [Get Supported Languages](reference/api/rest-api/endpoints/miscellaneous/auto-translate-endpoints/getsupportedlanguages.md)

@@ -1,10 +1,10 @@
 # WhatsApp Business Template Messages
 
-Integrating Whatsapp business in your Rocket.Chat workspace offers valuable enhancements to simplify your business communication workflows. The Whatsapp business integration allows you to send template messages to targeted contacts from your workspace.
+Integrating Whatsapp business in your Rocket.Chat workspace offers valuable enhancements to simplify your business communication workflows. The WhatsApp business integration allows you to send template messages to targeted contacts from your workspace.
 
-Template messages on WhatsApp serve as a proactive means for organizations to engage with their WhatsApp contacts. These messages can be related to appointment reminders, delivery updates, issue resolution, or payment updates.  They also act as notifications, encouraging users to respond and kickstart conversations to foster interaction between organizations and their audiences. Kindly refer the official guide for more details on [Whatsapp Template Messages](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/).
+Template messages on WhatsApp serve as a proactive means for organizations to engage with their WhatsApp contacts. These messages can be related to appointment reminders, delivery updates, issue resolution, or payment updates. They also act as notifications, encouraging users to respond and kickstart conversations to foster interaction between organizations and their audiences. Kindly refer the official documentation for more details on [Whatsapp Template Messages](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/).
 
-**Creating Template Messages on Your Whatsapp Business Account**
+#### **Creating Template Messages on Your WhatsApp Business Account**
 
 You need to have template messages on your WhatsApp business account before you can send them to contacts from your Rocket.Chat workspace.
 
@@ -15,10 +15,10 @@ Before you proceed, refer to the [Meta Template Guide](https://developers.facebo
 In this guide, we'll be creating a simple shipping reminder template message. To create the template message,
 
 * Go to your **Business Account** and navigate to **WhatsApp Manager.**
-* Navigate to **Account tools  > Message templates** and click **Create template**.
-* Add the **category**, **name**, and **language** of the template message.&#x20;
+* Navigate to **Account tools > Message templates** and click **Create template**.
+* Add the **category**, **name**, and **language** of the template message.
   * **Category**: Select **Utility** for this example guide.
-  * **Name**:  Add a **name** for the template message.
+  * **Name**: Add a **name** for the template message.
   * **Language**: Select **English** for this example guide.
 * Click **Continue**.
 * For this example guide, add this simple text in the **Body** : _"Your package has been shipped. It will be delivered in \{{1\}} business days."_
@@ -33,15 +33,11 @@ Visit this[ quick guide ](https://web.facebook.com/business/help/205587591114736
 
 #### Sending WhatsApp template messages from your workspace
 
-{% hint style="warning" %}
-You need to have template messages on your WhatsApp business account before you can send them to contacts from your Rocket.Chat workspace.
-{% endhint %}
+Once you've created template messages in your WhatsApp Business Account, you can send them to targeted contacts within your workspace using any WhatsApp App available on the Rocket.Chat marketplace.
 
-To send a WhatsApp template message from your workspace, you can use any of the following methods:
+To send a WhatsApp template message from your workspace, use any of the following methods:
 
-1.  **Sending template messages via endpoint**: Refer to the [Send a Template WhatsApp Message](../reference/api/rest-api/endpoints/marketplace-apps/whatsapp-endpoints/send-a-template-whatsapp-message.md) API endpoint.  Below is a sample JSON body parameter for using the example template we created earlier to send a template message via API: &#x20;
-
-
+1.  **Sending template messages via endpoint**: Refer to the [Send a Template WhatsApp Message](../reference/api/rest-api/endpoints/marketplace-apps/whatsapp-endpoints/send-a-template-whatsapp-message.md) API endpoint. Below is a sample JSON body parameter for using the example template [created earlier](whatsapp-business-template-messages.md#creating-template-messages-on-your-whatsapp-business-account) to send a template message via API:
 
     ```json
     {
@@ -69,21 +65,16 @@ To send a WhatsApp template message from your workspace, you can use any of the 
         }
     }
     ```
-2. **Slash commands and UI**: Send the template message in a more user-friendly way using the GUI form. To trigger the GUI, open a WhatsApp contact room and run the `/whatsapp send-template`command. This command opens up a modal where you can select the following:
-
-* The `Template` you wish to send,
-* The `Language` you wish to send the template in,
-* And also substitute `parameters` within the message, if present
+2. **Slash commands and UI**: Send the template message using the GUI form in your workspace. To trigger the GUI, open a WhatsApp contact room and run the respective `send-template` command for the WhatsApp app.
+   * [WhatsApp Sandbox](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-sandbox): Run the `/whatsapp-sandbox send-template`  command in the room. A pop-up modal is displayed prompting you to select the template name, language and other required details for the selected template. Click **Confirm** to send the template message to the sandbox number. Visit the [official documentation](https://docs.360dialog.com/docs/waba-messaging/sandbox#id-5.-send-a-template-message-optional) to learn more about the available WhatsApp Sandbox template messages.
 
 {% hint style="info" %}
-If parameters are present within the template message, kindly ensure you substitute all of them before sending the message. Failure to do so will result in an error.
+* If your template message includes parameters, make sure to replace all of them with the appropriate information before sending. Failure to do so may lead to an error.
+* Sending template messages on the[ WhatsApp Cloud App](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-cloud-app) is exclusively available via the API endpoint.
+* In [WhatsApp Sandbox](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-sandbox), there are only three pre-defined message templates available for use. It's not possible to create new templates or modify the existing ones. Refer to the the [official documentation](https://docs.360dialog.com/docs/waba-messaging/sandbox#id-5.-send-a-template-message-optional) for more details.
 {% endhint %}
 
-{% hint style="warning" %}
-Sending template messages on the[ Whatsapp Cloud App](https://docs.rocket.chat/extend-rocket.chat-capabilities/rocket.chat-marketplace/rocket.chat-public-apps-guides/omnichannel-apps/whatsapp-cloud-app) is exclusively available via the API endpoint.
-{% endhint %}
-
-**Getting the status of messages sent**
+#### **Getting the status of messages sent**
 
 To receive real-time status updates for outbound messages, navigate to the **Settings** tab of the Whatsapp App and set the _**Message Status Endpoint URL**_. The app sends a request to this URL each time your message status changes to one of the following: **queued**, **failed**, **sent**, **delivered**, **read**, or if some error occurs.
 
@@ -100,4 +91,4 @@ The table below highlights the payload format you will receive on the endpoint.
 |         type        |                          String                          |                   `Template-Message` or `Regular-Message`                  |
 |      timestamp      |                          String                          |                            Timestamp of request                            |
 
-In conclusion, the ability to send template messages through WhatsApp Business Integration enables businesses to maintain a consistent and professional communication approach with their audience.&#x20;
+In conclusion, the ability to send template messages through WhatsApp Business Integration enables businesses to maintain a consistent and professional communication approach with their audience.
