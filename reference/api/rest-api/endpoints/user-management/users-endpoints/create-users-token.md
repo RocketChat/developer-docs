@@ -1,5 +1,7 @@
 # Create Users Token
 
+<figure><img src="../../../../../../.gitbook/assets/Deprecated.png" alt=""><figcaption></figcaption></figure>
+
 As a workspace admin, you can create temporary authentication tokens for users. This is the same type of session authentication token a user gets via [login.md](../../../../realtime-api/method-calls/authentication/login.md "mention") and expires the same way.
 
 {% hint style="info" %}
