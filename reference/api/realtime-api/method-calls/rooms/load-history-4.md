@@ -1,5 +1,9 @@
 # Mute User In a Room
 
+{% hint style="warning" %}
+<img src="../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="original"> Use the [mute-user-in-room.md](../../../rest-api/endpoints/rooms/rooms-endpoints/mute-user-in-room.md "mention") endpoint instead.
+{% endhint %}
+
 Mute a user in a room.
 
 | Name             | Requires Auth | Permission  | Setting |

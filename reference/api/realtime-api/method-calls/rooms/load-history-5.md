@@ -1,5 +1,9 @@
 # Unmute User In a Room
 
+{% hint style="warning" %}
+<img src="../../../../../.gitbook/assets/Deprecated.png" alt="" data-size="original"> Use the [unmute-user-in-room.md](../../../rest-api/endpoints/rooms/rooms-endpoints/unmute-user-in-room.md "mention") endpoint instead.
+{% endhint %}
+
 Unmute a user in a room.
 
 | Name               | Requires Auth | Permission  | Setting |

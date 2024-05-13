@@ -322,6 +322,8 @@
           * [Save Room Settings](reference/api/rest-api/endpoints/rooms/rooms-endpoints/save-room-settings.md)
           * [Change Room Archive State](reference/api/rest-api/endpoints/rooms/rooms-endpoints/change-room-archive-state.md)
           * [Export Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/export-room.md)
+          * [Mute User in Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/mute-user-in-room.md)
+          * [Unmute User in Room](reference/api/rest-api/endpoints/rooms/rooms-endpoints/unmute-user-in-room.md)
           * [Create Discussion](reference/api/rest-api/endpoints/rooms/rooms-endpoints/creatediscussion.md)
         * [Teams Endpoints](reference/api/rest-api/endpoints/rooms/teams-endpoints/README.md)
           * [Create New Team](reference/api/rest-api/endpoints/rooms/teams-endpoints/create-new-team.md)
