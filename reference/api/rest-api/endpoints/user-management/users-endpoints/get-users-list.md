@@ -110,6 +110,25 @@ If the request sender is an admin:
 }
 ```
 
+Note that the response does not return the custom fields for users. To view the custom field information, you must add the `query` and `fields` [parameters](https://developer.rocket.chat/reference/api/rest-api#query-and-fields).&#x20;
+
+For example, you want to view the users having the custom field `clearance` with the value `High`. To do this, update the request URL as follows:
+
+* Add the `query` parameter: `query={"customFields.clearance" : "High"}`
+* Add the `fields` parameter: `fields={"customFields" : 1}`
+
+{% code overflow="wrap" %}
+```bash
+curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
+     -H "X-User-Id: aobEdbYhXfu5hkeqG" \
+     http://localhost:3000/api/v1/users.list?query={"customFields.clearance" : "High"}&fields={"customFields" : 1}
+```
+{% endcode %}
+
+{% hint style="info" %}
+To save and view the custom fields, you must first define the **Custom Fields** in the admin panel of your workspace (**Administration** > **Settings** > **Accounts** > **Registration** > [**Custom Fields**](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/accounts/custom-fields)).
+{% endhint %}
+
 ## Change Log
 
 <table><thead><tr><th width="329">Version</th><th>Description</th></tr></thead><tbody><tr><td>0.49.0</td><td>Count and offset query parameters supported.</td></tr><tr><td>0.35.0</td><td>Added</td></tr></tbody></table>
