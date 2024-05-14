@@ -125,8 +125,44 @@ curl -H "X-Auth-Token: 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq" \
 ```
 {% endcode %}
 
+The response looks something like this:
+
+```json
+{
+    "users": [
+        {
+            "_id": "ebKHhqGzw3Mu4KeBw",
+            "username": "ciel",
+            "emails": [
+                {
+                    "address": "example@test.com",
+                    "verified": false
+                }
+            ],
+            "type": "user",
+            "roles": [
+                "user"
+            ],
+            "status": "offline",
+            "active": true,
+            "name": "Ciel",
+            "customFields": {
+                "clearance": "High",
+                "team": "Queen"
+            },
+            "nameInsensitive": "ciel"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1,
+    "success": true
+}
+```
+
 {% hint style="info" %}
-To save and view the custom fields, you must first define the **Custom Fields** in the admin panel of your workspace (**Administration** > **Settings** > **Accounts** > **Registration** > [**Custom Fields**](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/accounts/custom-fields)).
+* To save and view the custom fields, you must first define the **Custom Fields** in the admin panel of your workspace (**Administration** > **Settings** > **Accounts** > **Registration** > [**Custom Fields**](https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/accounts/custom-fields)).
+* See the [Create User](https://developer.rocket.chat/reference/api/rest-api/endpoints/user-management/users-endpoints/create-user) and [Update User](https://developer.rocket.chat/reference/api/rest-api/endpoints/user-management/users-endpoints/update-user) endpoints to add custom fields for new and existing users, respectively.
 {% endhint %}
 
 ## Change Log
