@@ -84,17 +84,20 @@ Then, let's implement the method `post`, which will be executed every time the A
 
 ## Test the result
 
-Deploy your app. You can check the complete endpoint URL you registered for the app on the **App Info** page.
+[Deploy your app](../getting-started/creating-an-app.md). You can check the complete endpoint URL you registered for the app on the **App Info** page.
 
 ![](<../../.gitbook/assets/image (19) (1).png>)
 
-Open the terminal and use curl to post some data to the endpoint. The result should be as follows:
+Open the terminal and use curl to post some data to the endpoint. For example, use the following command snippet:
 
 {% code overflow="wrap" %}
 ```bash
-> curl --data 'Jack=Hello :)&Lucy=Hi!' -X POST http://localhost:3000/api/apps/public/bc4dd4a1-bf9b-408e-83a4-aba7eba0bf02/api
-{"messageId":"dREmKaR7qHyN98rtZ"}
+curl -X POST http://localhost:3000/api/apps/public/0b57f89a-5753-4298-9695-caba6eb21e12/api \
+-H "Content-Type: application/json" \
+-d '{"Jack":"Hello :)", "Lucy":"Hi!"}'
 ```
 {% endcode %}
+
+It returns a response with the `messageId` similar to `{"messageId":"NNWbiDHbpa5Tn27XB"}`. The app bot also sends the message to the general channel as shown below:
 
 ![](<../../.gitbook/assets/image (20).png>)

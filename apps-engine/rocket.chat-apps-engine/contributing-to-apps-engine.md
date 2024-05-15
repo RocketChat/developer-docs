@@ -26,10 +26,7 @@ npm install
 npm run compile
 ```
 
-3. Setup your Rocket.Chat environment following the guide on:
-
-[rocket.chat-server](../../rocket.chat/rocket.chat-server "mention")
-
+3. Setup your Rocket.Chat environment following the guide on [server-environment-setup](../../open-source-projects/server/server-environment-setup/ "mention")
 4. After setting up, go to the directory and run the following command:
 
 ```bash

@@ -22,6 +22,15 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 ```
 {% endcode %}
 
+{% hint style="info" %}
+Add the following import statement to your file for `UIActionButtonContext`:
+
+```
+import {UIActionButtonContext } from '@rocket.chat/apps-engine/definition/ui';
+
+```
+{% endhint %}
+
 Registering a button requires `ui.registerButton` permission. Add it to your app manifest file (`app.json`) as shown below:
 
 {% code title="app.json" %}
@@ -119,6 +128,14 @@ protected async extendConfiguration(configuration: IConfigurationExtend, environ
 }
 ```
 {% endcode %}
+
+{% hint style="info" %}
+Add the following import statement to your file for `UIActionButtonContext` and `RoomTypeFilter`:
+
+```
+import { RoomTypeFilter, UIActionButtonContext } from '@rocket.chat/apps-engine/definition/ui';
+```
+{% endhint %}
 
 Now the button can only be seen in public and private channels and direct messages, by users that have the `create-d` permission and the `admin` role. The user must also be a `moderator` of the channel to see the action button for messages in that channel.&#x20;
 

@@ -98,7 +98,7 @@ Learn more about the module details from the [Rocket.Chat Apps Typescript Defini
 
 ### Step 4: Implement the app functionality
 
-For this example, the app records "Hello, World!" in the Rocket.Chat administration interface.&#x20;
+For this example, the app records "Hello, World!" in the app's log.
 
 To log data, you must first have access to the logger, that is, an object of type `ILogger`. The parent class logs data to the administration interface using an `ILogger` object. We only require access to this object. Since the logger object is private to the `App` class, the `this` keyword cannot be used to access it directly.
 
