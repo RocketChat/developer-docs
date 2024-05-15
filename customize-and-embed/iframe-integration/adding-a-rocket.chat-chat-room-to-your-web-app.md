@@ -94,148 +94,157 @@ app.use(bodyParser.json());
 
 // CORS in case you need
 app.use((req, res, next) => {
- res.set('Access-Control-Allow-Origin', 'http://localhost:3000'); // this is the rocket.chat URL
- res.set('Access-Control-Allow-Credentials', 'true');
+  res.set('Access-Control-Allow-Origin', 'http://localhost:3000'); // this is the rocket.chat URL
+  res.set('Access-Control-Allow-Credentials', 'true');
 
- next();
+  next();
 });
 
 // this is the endpoint configured as API URL
 app.post('/sso', function (req, res) {
+  // add your own app logic here to validate user session (check cookies, headers, etc)
 
- // add your own app logic here to validate user session (check cookies, headers, etc)
+  // if the user is not already logged in on your system, respond with a 401 status
+  var notLoggedIn = false;
+  if (notLoggedIn) {
+    return res.sendStatus(401);
+  }
 
- // if the user is not already logged in on your system, respond with a 401 status
- var notLoggedIn = false;
- if (notLoggedIn) {
- return res.sendStatus(401);
- }
+  // you can save the token on your database as well, if so just return it
+  // MongoDB - services.iframe.token
+  var savedToken = null;
+  if (savedToken) {
+    return res.json({
+      token: savedToken,
+    });
+  }
 
- // you can save the token on your database as well, if so just return it
- // MongoDB - services.iframe.token
- var savedToken = null;
- if (savedToken) {
- return res.json({
- token: savedToken
- });
- }
-
- // if dont have the user created on rocket.chat end yet, you can now create it
- var currentUsername = true;
- if (!currentUsername) {
- axios.post('http://localhost:3000/api/v1/users.register', {
- username: 'new-user',
- email: 'mynewuser@email.com',
- pass: 'new-users-passw0rd',
- name: 'New User'
- }).then(function (response) {
-
- // after creation you need to log the user in to get the `authToken`
- if (response.data.success) {
- return axios.post('http://localhost:3000/api/v1/login', {
- username: 'new-user',
- password: 'new-users-passw0rd'
- });
- }
- }).then(function (response) {
- if (response.data.status === 'success') {
- res.json({
- loginToken: response.data.data.authToken
- });
- }
- }).catch(function (error) {
- res.sendStatus(401);
- });
- } else {
-
- // otherwise create a rocket.chat session using rocket.chat's API
- axios.post('http://localhost:3000/api/v1/login', {
- username: 'new-user',
- password: 'new-users-passw0rd'
- }).then(function (response) {
- if (response.data.status === 'success') {
- res.json({
- loginToken: response.data.data.authToken
- });
- }
- }).catch(function() {
- res.sendStatus(401);
- });
- }
+  // if dont have the user created on rocket.chat end yet, you can now create it
+  var currentUsername = true;
+  if (!currentUsername) {
+    axios
+      .post('http://localhost:3000/api/v1/users.register', {
+        username: 'new-user',
+        email: 'mynewuser@email.com',
+        pass: 'new-users-passw0rd',
+        name: 'New User',
+      })
+      .then(function (response) {
+        // after creation you need to log the user in to get the `authToken`
+        if (response.data.success) {
+          return axios.post('http://localhost:3000/api/v1/login', {
+            username: 'new-user',
+            password: 'new-users-passw0rd',
+          });
+        }
+      })
+      .then(function (response) {
+        if (response.data.status === 'success') {
+          res.json({
+            loginToken: response.data.data.authToken,
+          });
+        }
+      })
+      .catch(function (error) {
+        res.sendStatus(401);
+      });
+  } else {
+    // otherwise create a rocket.chat session using rocket.chat's API
+    axios
+      .post('http://localhost:3000/api/v1/login', {
+        username: 'new-user',
+        password: 'new-users-passw0rd',
+      })
+      .then(function (response) {
+        if (response.data.status === 'success') {
+          res.json({
+            loginToken: response.data.data.authToken,
+          });
+        }
+      })
+      .catch(function () {
+        res.sendStatus(401);
+      });
+  }
 });
 
 // just render the form for the user authenticate with us
 app.get('/login', function (req, res) {
- res.set('Content-Type', 'text/html');
- fs.createReadStream('login.html').pipe(res);
+  res.set('Content-Type', 'text/html');
+  fs.createReadStream('login.html').pipe(res);
 });
 
 app.get('/home', function (req, res) {
- res.set('Content-Type', 'text/html');
- fs.createReadStream('home.html').pipe(res);
+  res.set('Content-Type', 'text/html');
+  fs.createReadStream('home.html').pipe(res);
 });
 
 // receives login information
 app.post('/login', function (req, res) {
+  // do your own authentication process
 
- // do your own authentication process
+  // after the user is authenticated we can proceed with authenticating him on rocket.chat side
 
- // after the user is authenticated we can proceed with authenticating him on rocket.chat side
+  //
+  //
+  // the code below is exactly the same as the on /sso endpoint, except for its response
+  // it was duplicated for understanding purpose
+  // the authentication process and is a well-designed app =)
+  //
+  //
 
- //
- //
- // the code below is exactly the same as the on /sso endpoint, except for its response
- // it was duplicated for understanding purpose
- // the authentication process and is a well-designed app =)
- //
- //
-
- // if dont have the user created on rocket.chat end yet, you can now create it
- var currentUsername = null;
- if (!currentUsername) {
- axios.post('http://localhost:3000/api/v1/users.register', {
- username: 'new-user',
- email: 'mynewuser@email.com',
- pass: 'new-users-passw0rd',
- name: 'New User'
- }).then(function (response) {
-
- // after creation you need to log the user in to get the `authToken`
- if (response.data.success) {
- return axios.post('http://localhost:3000/api/v1/login', {
- username: 'new-user',
- password: 'new-users-passw0rd'
- });
- }
- }).then(function (response) {
- if (response.data.status === 'success') {
- res.redirect('/home')
- }
- }).catch(function (error) {
- res.sendStatus(401);
- });
- } else {
-
- // otherwise create a rocket.chat session using rocket.chat's API
- axios.post('http://localhost:3000/api/v1/login', {
- username: 'username-set-previously',
- password: 'password-set-previously'
- }).then(function (response) {
- if (response.data.status === 'success') {
-
- // since this endpoint is loaded within the iframe, we need to communicate back to rocket.chat using `postMessage` API
- res.set('Content-Type', 'text/html');
- res.send(`<script>
- window.parent.postMessage({
- event: 'login-with-token',
- loginToken: '${ response.data.data.authToken }'
- }, 'http://localhost:3000'); // rocket.chat's URL
- </script>`);
- }
- }).catch(function() {
- res.sendStatus(401);
- });
- }
+  // if dont have the user created on rocket.chat end yet, you can now create it
+  var currentUsername = null;
+  if (!currentUsername) {
+    axios
+      .post('http://localhost:3000/api/v1/users.register', {
+        username: 'new-user',
+        email: 'mynewuser@email.com',
+        pass: 'new-users-passw0rd',
+        name: 'New User',
+      })
+      .then(function (response) {
+        // after creation you need to log the user in to get the `authToken`
+        if (response.data.success) {
+          return axios.post('http://localhost:3000/api/v1/login', {
+            username: 'new-user',
+            password: 'new-users-passw0rd',
+          });
+        }
+      })
+      .then(function (response) {
+        if (response.data.status === 'success') {
+          res.redirect('/home');
+        }
+      })
+      .catch(function (error) {
+        res.sendStatus(401);
+      });
+  } else {
+    // otherwise create a rocket.chat session using rocket.chat's API
+    axios
+      .post('http://localhost:3000/api/v1/login', {
+        username: 'username-set-previously',
+        password: 'password-set-previously',
+      })
+      .then(function (response) {
+        if (response.data.status === 'success') {
+          // since this endpoint is loaded within the iframe, we need to communicate back to rocket.chat using `postMessage` API
+          res.set('Content-Type', 'text/html');
+          res.send(
+            `<script>
+                window.parent.postMessage({
+                event: 'login-with-token',
+                loginToken: '${response.data.data.authToken}'
+                }, 'http://localhost:3000'); // rocket.chat's URL
+            </script>`
+          );
+        }
+      })
+      .catch(function () {
+        res.sendStatus(401);
+      });
+  }
 });
 
 app.listen(3030, function () {
@@ -281,7 +290,7 @@ The demo backend for handling the Rocket.Chat server is  `/sso` `POST`  request.
 
 In _index.js_, the `app.post('/sso' ... )` function in the backend only runs once the user has been on the page containing the iframe, which is _home.html_ in the demo. It also verifies that the user is logged in to Rocket.Chat.
 
-The `axios.post('http://localhost:3000/api/v1/users.register'....)` function makes a `POST` request to the Rocket.Chat server API with the user's credentials to create a new user and log the user in to obtain the `authToken`.
+The  `axios.post('http://localhost:3000/api/v1/users.register'....)` function makes a `POST` request to the Rocket.Chat server API with the user's credentials to create a new user and log the user in to obtain the `authToken`.
 
 The  `axios.post('http://localhost:3000/api/v1/login' ....)` function onwards makes a `POST` request to the Rocket.Chat server API with the user's credentials to create a rocket.chat session for the user.
 
@@ -346,13 +355,11 @@ To use these commands, you must change a setting in your Rocket.Chat server.&#x2
 
 ```javascript
 document.querySelector("iframe").contentWindow.postMessage(
-{
-externalCommand: "go",
-path: "/channel/general/?layout-embedded"
-},
-"
-http://localhost:3000
- <Your server URL>"
+  {
+    externalCommand: "go",
+    path: "/channel/general/?layout-embedded",
+  },
+  "http://localhost:3000/<Your server URL>"
 );
 ```
 
