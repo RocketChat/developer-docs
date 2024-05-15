@@ -5,7 +5,7 @@ description: Ensure your Rocket.Chat workspace has a unique color palette.
 # Customizing Colors
 
 {% hint style="info" %}
-Customizing colors are applicable from Rocket.Chat `v 6.0`
+Customizing colors are applicable from Rocket.Chat `v6.0`
 {% endhint %}
 
 One of the key aspects of white-labeling your Rocket.Chat workspace is the ability to customize colors. This feature allows you to ensure that your Rocket.Chat workspace aligns with your brand's color palette, further enhancing the sense of brand consistency and identity.

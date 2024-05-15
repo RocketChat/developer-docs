@@ -13,7 +13,7 @@ To **enable the top navbar of the room in the embedded layout,**&#x20;
 
 When a URL is set to embedded mode, the view will be restricted to a single [room](https://docs.rocket.chat/use-rocket.chat/user-guides/rooms), as the user won't have access to the channel lists. When combined with [Iframe integration](iframe-integration/), the embedded layout works as expected because you can authenticate the user and only show a specified channel embedded in the application.
 
-You can test this feature by going to  [_https://open.rocket.chat/channel/general?layout=embedded_](https://open.rocket.chat/channel/general?layout=embedded).
+You can test this feature by going to [_https://open.rocket.chat/channel/general?layout=embedded_](https://open.rocket.chat/channel/general?layout=embedded).
 
 {% hint style="warning" %}
 To prevent users from accessing other channels, relying on the embedded layout alone won't suffice. Users could alter the URL using browser tools. Therefore, it's recommended to edit the user permissions to restrict access to other channels.

@@ -1,6 +1,6 @@
 # Testing the iFrame Authentication
 
-After you've successfully completed [configuring-iframe-auth](../../../customize-and-embed/iframe-integration/configuring-iframe-auth/ "mention") , it's essential to confirm its functionality by testing. This guide offers a concise outline for testing iFrame authentication within Rocket.Chat. The process entails utilizing a test tool created by the Rocket.Chat team. The test service can be used as an example of how to set up the iFrame auth calls to Rocket.Chat.
+After you've successfully completed [configuring-iframe-auth](../../../customize-and-embed/iframe-integration/configuring-iframe-auth/ "mention"), it's essential to confirm its functionality by testing. This guide offers a concise outline for testing iFrame authentication within Rocket.Chat. The process entails utilizing a test tool created by the Rocket.Chat team. The test service can be used as an example of how to set up the iFrame auth calls to Rocket.Chat.
 
 {% hint style="warning" %}
 This test tool is designed for your localhost enviroment.
@@ -23,16 +23,16 @@ The project is running on port 3030.
 
 ![](../../../.gitbook/assets/84309416-78b60580-ab36-11ea-9777-f2c0138a9677.png)
 
-* Navigate to the login page of the test project, which is accessible at _localhost:3030/login_ for this example. Proceed to test the iFrame  auth by submitting a **username** and **password.**
+* Navigate to the login page of the test project, which is accessible at _localhost:3030/login_ for this example. Proceed to test the iFrame auth by submitting a **username** and **password.**
 
 {% hint style="warning" %}
-The test project  requires the following hardcoded credentials for login:&#x20;
+The test project requires the following hardcoded credentials for login:&#x20;
 
 Username: `new-user`&#x20;
 
 Password: `new-users-passw0rd`
 
-Change the `currentUsername` to '**true**' at line 105 in the index.js  to enable re-login with the same user. Note that modifying the code allows any existing Rocket.Chat user to be used.
+Change the `currentUsername` to '**true**' at line 105 in the index.js to enable re-login with the same user. Note that modifying the code allows any existing Rocket.Chat user to be used.
 
 To learn more, see this [pull request](https://github.com/RocketChat/Rocket.Chat.ReactNative/pull/2184).
 {% endhint %}

@@ -6,7 +6,7 @@ Rocket.Chat's Two-Factor Authentication (2FA) is a robust security feature that 
 
 1. **Authenticator App**: Users can configure apps like Google Authenticator or Authy to generate the 2FA code.
 2. **Email**: Users with verified emails cann receive the 2FA code via email.
-3. **Password**:Although not a two-factor method in itself, the password serves as a fallback for cases where the user has no other 2FA option configured. However, this password fallback is disabled for the login process to prevent the system from requiring the password twice when the user has no other 2FA method configured.
+3. **Password**: Although not a two-factor method in itself, the password serves as a fallback for cases where the user has no other 2FA option configured. However, this password fallback is disabled for the login process to prevent the system from requiring the password twice when the user has no other 2FA method configured.
 
 **API Calls and Two-Factor Authentication**: Any DDP Method or REST call may require two-factor authentication. Therefore, it's recommended to create a wrapper for your calls to handle the errors and execute the request again, passing the required info.
 
