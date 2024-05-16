@@ -8,7 +8,7 @@ Rocket.Chat's iframe integration goes beyond embedding – it lets you seamlessl
 
 Some key features of Rocket.Chat iFrame includes the following:
 
-1. [**Iframe User Authentication**](configuring-iframe-auth/)**:** To authenticate users via iframe integration, navigate to **Administration > Workspace > Settings > Accounts > Iframe**. Toggle on the **Enabled** option and proceed with [configuring the iframe auth](configuring-iframe-auth/).  It allows you to set up user authentication through your own login page.
+1. [**Iframe User Authentication**](configuring-iframe-auth/)**:** To authenticate users via iframe integration, navigate to **Administration > Workspace > Settings > Accounts > Iframe**. Toggle on the **Enabled** option and proceed with [configuring the iframe auth](configuring-iframe-auth/). It allows you to set up user authentication through your own login page.
 2. [**Embedding Rocket.Chat**](../embedded-layout.md)**:** Depending on your needs, you can embed Rocket.Chat in your application using an iframe. This provides a seamless integration of Rocket.Chat's features into your application's interface.
 3. [**Event Listening**](iframe-events.md)**:** While embedding Rocket.Chat in your app, you can listen to events. To do this, navigate to **Administration > Settings > General > Iframe Integration.** You can enable [send (events) or receive (commands)](iframe-integration-sending-commands.md) depending on your needs. This feature allows your application to interact with Rocket.Chat, providing a dynamic and interactive user experience.
 

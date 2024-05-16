@@ -18,9 +18,9 @@ Thank you for your interest in contributing to Rocket.Chat documentation. Here's
    * Fork and clone the [user docs](https://github.com/RocketChat/docs) or [developers docs](https://github.com/RocketChat/developer-docs) repository
    * Open the project in VSCode and start making your changes
 4. **Creating a New Pull Request (PR)**: PRs should follow the following naming convention:
-   * When adding new documentation, add _New Documentation\*\*:\*\*_ before the title. E.g. `New Documentation: Authentication Guide`
+   * When adding new documentation, add _New Documentation:_ before the title. E.g. `New Documentation: Authentication Guide`
    * When fixing documentation, add _Fix Documentation:_ before the title. E.g. `Fix Documentation: Authentication Guide`
-   * When updating documentation, add _Update Documentation\*\*:\*\*_ before the title. E.g. `Update Documentation: Authentication Guide`
+   * When updating documentation, add _Update Documentation:_ before the title. E.g. `Update Documentation: Authentication Guide`
    * If your PR closes an issue, indicate so with "Closes #ISSUE\_NUMBER".
 5. **Creating Drafts**: If you can't complete full documentation for a new feature, create a draft as a single file PR with the necessary information.
 6. **Testing Changes**: You can test your changes:

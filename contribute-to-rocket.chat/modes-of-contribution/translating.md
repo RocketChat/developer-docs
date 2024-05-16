@@ -2,7 +2,7 @@
 
 We appreciate your interest in contributing to the translation of Rocket.Chat. Our aim is to make Rocket.Chat accessible to users worldwide, and your help in this endeavor is invaluable.
 
-Rocket.Chat utilizes  [Lingohub](https://translate.lingohub.com/rocketchat/dashboard), a leading platform for collaborative translation projects. Currently, we have translations in over 80 languages, a testament to the global reach and diversity of our user base.
+Rocket.Chat utilizes [Lingohub](https://translate.lingohub.com/rocketchat/dashboard), a leading platform for collaborative translation projects. Currently, we have translations in over 80 languages, a testament to the global reach and diversity of our user base.
 
 If you're interested in joining this global effort, here's how you can contribute:
 

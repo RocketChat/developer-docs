@@ -70,7 +70,7 @@ When crafting the long description, make sure to:
 It is important to note that the description should be concise, as most users only read between 300 and 500 characters. It is advised to avoid using technical jargon and to refrain from generically discussing the app or product.
 
 {% hint style="info" %}
-You can refer to the long descriptions of our apps in the [Marketplace](https://www.rockhttps/www.rocket.chat/marketplaceet.chat/marketplace). Use any one of them as your reference.&#x20;
+You can refer to the long descriptions of our apps in the [Marketplace](https://www.rocket.chat/marketplace). Use any one of them as your reference.&#x20;
 {% endhint %}
 
 ### Technical documentation
