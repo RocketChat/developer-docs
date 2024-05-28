@@ -186,24 +186,24 @@ These methods apply to public channels only. Use `groups.*` methods for private 
 
 ### Room
 
-| Url                                            | Short Description                                        | Details Page                                                     |
-| ---------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------- |
-| `/api/v1/rooms.adminRooms`                     | Retrieves all rooms (requires special permission).       | [Link](rooms/rooms-endpoints/get-all-room-admins.md)             |
-| `/api/v1/rooms.cleanHistory`                   | Cleans up a room's history, requires special permission. | [Link](rooms/rooms-endpoints/clear-room-history.md)              |
-| `/api/v1/rooms.createDiscussion`               | Creates a new discussion.                                | [Link](rooms/rooms-endpoints/creatediscussion.md)                |
-| `/api/v1/rooms.favorite`                       | Favorites/Unfavorites room.                              | [Link](rooms/rooms-endpoints/favorite-unfavourite-a-room.md)     |
-| `/api/v1/rooms.get`                            | Retrieves rooms.                                         | [Link](rooms/rooms-endpoints/get-rooms.md)                       |
-| `/api/v1/rooms.getDiscussions`                 | Retrieves room's discussions.                            | [Link](rooms/rooms-endpoints/get-room-discussions.md)            |
-| `/api/v1/rooms.info`                           | Gets info from a room.                                   | [Link](rooms/rooms-endpoints/get-room-information.md)            |
-| `/api/v1/rooms.leave`                          | Leaves a room.                                           | [Link](rooms/rooms-endpoints/leave-room.md)                      |
-| `/api/v1/rooms.saveNotification`               | Sets the notification settings of a specific channel.    | [Link](rooms/rooms-endpoints/set-room-notifications.md)          |
-| `/api/v1/rooms.upload/:rid`                    | Uploads a message with the attached file.                | [Link](rooms/rooms-endpoints/upload-file-to-a-room.md)           |
-| `/api/v1/rooms.adminRooms.getRoom`             | Retrieves all admin rooms                                | [Link](rooms/rooms-endpoints/get-admin-of-room.md)               |
-| `/api/v1/rooms.autocomplete.channelAndPrivate` | Autocompletes private channel                            | [Link](rooms/rooms-endpoints/autocomplete-private-channel.md)    |
-| `/api/v1/rooms.autocomplete.availableForTeams` | Autocompletes room name available for conversion to team | [Link](rooms/rooms-endpoints/autocomplete-room-name-for-team.md) |
-| `/api/v1/rooms.saveRoomSettings`               | Save the settings of a room                              | [Link](rooms/rooms-endpoints/save-room-settings.md)              |
-| `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                      | [Link](rooms/rooms-endpoints/change-room-archive-state.md)       |
-| `/api/v1/rooms.export`                         | Export room to a file or email.                          | [Link](rooms/rooms-endpoints/export-room.md)                     |
+| Url                                            | Short Description                                        | Details Page                                                                         |
+| ---------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `/api/v1/rooms.adminRooms`                     | Retrieves all rooms (requires special permission).       | [Link](rooms/rooms-endpoints/get-all-room-admins.md)                                 |
+| `/api/v1/rooms.cleanHistory`                   | Cleans up a room's history, requires special permission. | [Link](rooms/rooms-endpoints/clear-room-history.md)                                  |
+| `/api/v1/rooms.createDiscussion`               | Creates a new discussion.                                | [Link](rooms/rooms-endpoints/creatediscussion.md)                                    |
+| `/api/v1/rooms.favorite`                       | Favorites/Unfavorites room.                              | [Link](rooms/rooms-endpoints/favorite-unfavourite-a-room.md)                         |
+| `/api/v1/rooms.get`                            | Retrieves rooms.                                         | [Link](rooms/rooms-endpoints/get-rooms.md)                                           |
+| `/api/v1/rooms.getDiscussions`                 | Retrieves room's discussions.                            | [Link](rooms/rooms-endpoints/get-room-discussions.md)                                |
+| `/api/v1/rooms.info`                           | Gets info from a room.                                   | [Link](rooms/rooms-endpoints/get-room-information.md)                                |
+| `/api/v1/rooms.leave`                          | Leaves a room.                                           | [Link](rooms/rooms-endpoints/leave-room.md)                                          |
+| `/api/v1/rooms.saveNotification`               | Sets the notification settings of a specific channel.    | [Link](rooms/rooms-endpoints/set-room-notifications.md)                              |
+| `/api/v1/rooms.upload/:rid`                    | Uploads a message with the attached file.                | [Link](rooms/rooms-endpoints/upload-file-to-a-room.md)                               |
+| `/api/v1/rooms.adminRooms.getRoom`             | Retrieves all admin rooms                                | [Link](rooms/rooms-endpoints/get-admin-of-room.md)                                   |
+| `/api/v1/rooms.autocomplete.channelAndPrivate` | Autocompletes private channel                            | [Link](rooms/rooms-endpoints/autocomplete-room-name-for-private-and-public-rooms.md) |
+| `/api/v1/rooms.autocomplete.availableForTeams` | Autocompletes room name available for conversion to team | [Link](rooms/rooms-endpoints/autocomplete-room-name-for-team.md)                     |
+| `/api/v1/rooms.saveRoomSettings`               | Save the settings of a room                              | [Link](rooms/rooms-endpoints/save-room-settings.md)                                  |
+| `/api/v1/rooms.changeArchivationState`         | Change the Archive state of a room.                      | [Link](rooms/rooms-endpoints/change-room-archive-state.md)                           |
+| `/api/v1/rooms.export`                         | Export room to a file or email.                          | [Link](rooms/rooms-endpoints/export-room.md)                                         |
 
 ### Teams
 
