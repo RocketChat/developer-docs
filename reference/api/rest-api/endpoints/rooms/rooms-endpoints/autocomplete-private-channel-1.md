@@ -1,8 +1,8 @@
-# Autocomplete Room Name for Private and Public Rooms
+# Admin Autocomplete Room Name for Private and Public Rooms
 
-List the public and private rooms whose names match a given string, excluding [discussions](https://docs.rocket.chat/use-rocket.chat/user-guides/rooms/discussions), [DMs](https://docs.rocket.chat/use-rocket.chat/user-guides/rooms/direct-messages), and [omnichannel rooms](https://docs.rocket.chat/use-rocket.chat/omnichannel). The endpoint is valuable when performing search operations. It returns only rooms that the user belongs to.
+List public and private rooms whose names match a given string, excluding [DMs](https://docs.rocket.chat/use-rocket.chat/user-guides/rooms/direct-messages) and [omnichannel rooms](https://docs.rocket.chat/use-rocket.chat/omnichannel). This endpoint is valuable when performing search operations. Only workspace administrators can use it.
 
-<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/rooms.autocomplete.channelAndPrivate</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
+<table><thead><tr><th width="163">HTTP Method</th><th width="298">URL</th><th>Requires Auth</th></tr></thead><tbody><tr><td><code>GET</code></td><td><code>/api/v1/rooms.autocomplete.adminRooms</code></td><td><a href="../../authentication-endpoints/"><code>yes</code></a></td></tr></tbody></table>
 
 ## Query Parameters
 
@@ -26,6 +26,12 @@ curl --location --request GET 'http://localhost:3000/api/v1/rooms.autocomplete.c
 {
     "items": [
         {
+            "_id": "664f0d815df46832f75b1877",
+            "fname": "rangig",
+            "name": "Ch9xkYwGHnsLe7CQR",
+            "t": "c"
+        },
+        {
             "_id": "664f0d525df46832f75b1860",
             "fname": "rancher",
             "name": "rancher",
@@ -36,12 +42,6 @@ curl --location --request GET 'http://localhost:3000/api/v1/rooms.autocomplete.c
             "fname": "random",
             "name": "random",
             "t": "c"
-        },
-        {
-            "_id": "664f148f5df46832f75b18b2",
-            "fname": "ranmowe",
-            "name": "ranmowe",
-            "t": "p"
         }
     ],
     "success": true
