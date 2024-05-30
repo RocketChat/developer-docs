@@ -65,7 +65,13 @@ Here is an example of how to handle it:
 {% code overflow="wrap" lineNumbers="true" fullWidth="false" %}
 ```typescript
 export class MyApp extends App implements IUIKitInteractionHandler {
-    public async executeActionButtonHandler(
+    protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
+    configuration.ui.registerButton({
+        actionId: 'my-action-id', // this identifies your button in the interaction event
+        labelI18n: 'my-action-name', // key of the i18n string containing the name of the button
+        context: UIActionButtonContext.MESSAGE_ACTION, // the context in which the action button will be displayed on the UI
+    });
+}    public async executeActionButtonHandler(
         context: UIKitActionButtonInteractionContext,
         read: IRead,
         http: IHttp,
