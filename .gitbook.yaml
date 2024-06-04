@@ -5,3 +5,4 @@ redirects:
     apps-engine/rocket.chat-apps-engine: apps-engine/rocket.chat-apps-and-apps-engine.md
     apps-engine/testing-your-app: apps-engine/rocket.chat-apps-and-apps-engine.md
     apps-engine/slack-compatibility: apps-engine/rocket.chat-apps-and-apps-engine.md
+    docs/responsible-disclosure-policy: contribute-to-rocket.chat/modes-of-contribution/security-issues/responsible-disclosure-policy.md
