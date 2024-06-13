@@ -4,7 +4,7 @@
 
 ## Body Parameters
 
-<table><thead><tr><th width="195.33333333333331">Key</th><th width="261">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>user</code></td><td><code>foo@bar.com</code> OR <code>myusername</code></td><td>Your username or email.</td></tr><tr><td><code>password</code></td><td><code>my$up3erP@ssw0rd</code></td><td>Your password.</td></tr><tr><td><code>resume</code></td><td><code>9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq</code></td><td>Yor previously issued <code>authToken</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="195.33333333333331">Key</th><th width="261">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>user</code></td><td><code>foo@bar.com</code> OR <code>myusername</code></td><td>Your username or email.</td></tr><tr><td><code>password</code></td><td><code>my$up3erP@ssw0rd</code></td><td>Your password.</td></tr><tr><td><code>resume</code></td><td><code>9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq</code></td><td>Your previously issued <code>authToken</code>.</td></tr></tbody></table>
 
 {% hint style="info" %}
 * Whilst none of the arguments are required in every request, every request requires some arguments to be provided. You MUST provide either `user` AND `password`, or provide `resume`.
