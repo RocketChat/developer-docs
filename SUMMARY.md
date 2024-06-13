@@ -13,7 +13,7 @@
 ## Contribute to Rocket.Chat
 
 * [Code of Conduct](contribute-to-rocket.chat/code\_of\_conduct.md)
-* [Code Review Process](contribute-to-rocket.chat/code-review-process.md)
+* [Contribution Process](contribute-to-rocket.chat/rocket.chat-core-developers/code-review.md)
 * [Modes of Contribution](contribute-to-rocket.chat/modes-of-contribution/README.md)
   * [Participate in Rocket.Chat Development](contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/README.md)
     * [Development Workflow](contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/development-workflow.md)
@@ -32,6 +32,12 @@
   * [Translation Contribution Guidelines](contribute-to-rocket.chat/modes-of-contribution/translating.md)
   * [Promote Rocket.Chat](contribute-to-rocket.chat/modes-of-contribution/promote-rocket.chat.md)
   * [Contribute to Rocket.Chat FAQs](contribute-to-rocket.chat/modes-of-contribution/contribute-to-rocket.chat-faqs.md)
+
+
+## For Core Developers
+* [Code Review](contribute-to-rocket.chat/rocket.chat-core-developers/code-review.md)
+* [Development Workflow](contribute-to-rocket.chat/rocket.chat-core-developers/development-workflow.md)
+
 
 ## Customize and Embed
 
