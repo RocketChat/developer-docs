@@ -35,8 +35,8 @@
 
 
 ## For Core Developers
-* [Code Review](contribute-to-rocket.chat/rocket.chat-core-developers/code-review.md)
 * [Development Workflow](contribute-to-rocket.chat/rocket.chat-core-developers/development-workflow.md)
+* [Code Review](contribute-to-rocket.chat/rocket.chat-core-developers/code-review.md)
 
 
 ## Customize and Embed
