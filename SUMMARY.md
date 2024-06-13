@@ -13,7 +13,7 @@
 ## Contribute to Rocket.Chat
 
 * [Code of Conduct](contribute-to-rocket.chat/code\_of\_conduct.md)
-* [Contribution Process](contribute-to-rocket.chat/rocket.chat-core-developers/code-review.md)
+* [Contribution Process](contribute-to-rocket.chat/contribution.md)
 * [Modes of Contribution](contribute-to-rocket.chat/modes-of-contribution/README.md)
   * [Participate in Rocket.Chat Development](contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/README.md)
     * [Development Workflow](contribute-to-rocket.chat/modes-of-contribution/participate-in-rocket.chat-development/development-workflow.md)
