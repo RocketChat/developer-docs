@@ -138,6 +138,8 @@ rc-apps deploy --url <server_url> -u <user> -p <pwd>
 
 After executing this command, your application will be deployed to the server.
 
+To explore alternative authentication options for deploying your app, such as using 2FA codes or personal access tokens, run the `rc-apps deploy --help`  command.
+
 {% hint style="info" %}
 **Packaging your app**
 
